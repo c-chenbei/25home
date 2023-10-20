@@ -1,0 +1,396 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "907cef5b-a392-4eee-a648-d1d703b05b97": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "package",
+            "text": "For customized products, please get in touch with our customer service."
+          }
+        },
+        "7a36cbc1-0f7a-4fef-bd00-911917166768": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "leaf",
+            "text": "EXCLUSIVE CODE: PIANO"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "7d5b8ffc-0906-4cf1-be2a-8234ac628adb": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "4324e561-4147-44cb-8662-bce6959f660f": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/pay.jpg"
+          }
+        },
+        "984a68ac-5826-4e74-84c4-701d88e7684e": {
+          "type": "text",
+          "settings": {
+            "text": "Piano Sofa, made with genuine leather. The modular sofa combinations resemble a piano keyboard, complete with storage side tables suitable for different room layouts. Picture cozying up on the ergonomic sofa after a long day, sinking into its plush cushions contoured to your body. The sturdy solid wood frame and springs keep their shape for over a decade of kids and pets playing. Feel the luxury of the soft leather that provides ultimate comfort."
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
+          "type": "tab",
+          "settings": {
+            "title": "Materials",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.materials.value }}"
+          }
+        },
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Size Chart",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.size_chart.value }}"
+          }
+        },
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36": {
+          "type": "tab",
+          "settings": {
+            "title": "Key Features",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.key_feature.value }}"
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Care & Shipping",
+            "content": "<p><\/p><p><\/p>",
+            "page": "care-shipping"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "907cef5b-a392-4eee-a648-d1d703b05b97",
+        "price",
+        "separator",
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4",
+        "7a36cbc1-0f7a-4fef-bd00-911917166768",
+        "variant_picker",
+        "sales_point",
+        "inventory_status",
+        "7d5b8ffc-0906-4cf1-be2a-8234ac628adb",
+        "buy_buttons",
+        "4324e561-4147-44cb-8662-bce6959f660f",
+        "984a68ac-5826-4e74-84c4-701d88e7684e",
+        "description",
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0",
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "<p>Create a welcoming social area with the spacious seated design made for relaxing conversations.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/1_705d97f9-eb36-44d4-b087-feb60dbd81a8.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 550,
+        "framed": true,
+        "parallax": false
+      }
+    },
+    "text-and-image": {
+      "type": "text-and-image",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_5e67dc9f-c9e4-4bf6-abe6-ad0e95f44581.jpg",
+        "image2": "shopify:\/\/shop_images\/8_f1d84bd2-6e81-4fba-95d8-a5383c5904a8.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Genuine leather",
+        "text": "<p>Durable and tear-resistant, crafted with high-quality materials for extended longevity. It is breathable and offers a luxurious leather feel, and providing a skin-friendly experience.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "c1e2a991-ad27-44f4-9ed7-7bcbf1447338": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Materials-3_f2e9082f-175e-41ea-b003-a64085d46924.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1": {
+          "type": "html",
+          "settings": {
+            "code": "<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<h1>\n\tFillings\n<\/h1>\n<p>\n\t<br>\n<\/p>\n<h3>\n<\/h3>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2>\n<\/h2>\n<p>\n\t<strong>cushion filling: <\/strong>Sponge<br>\n<strong> backrest filling: <\/strong>fluffy feather+Sponge\n<\/p>\n<p>\n\twhich provides the sofa with better shape retention, support, and resilience.\n<\/p>\n<p>\n\t<strong>Sturdy solid wood frame + serpentine springs<\/strong> \n<\/p>\n<p>\n\tIncredibly Sturdy: from the durable fabric to the solid woodframe, every part of our furniture is well-chosenand assembled for durability. The maximumweight capacity is 500 pounds per seat.\n<\/p>\n<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-image-1",
+        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "text-and-image2": {
+      "type": "text-and-image",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/12_d4c4f5fe-d7a2-4002-a675-aebbddbf5c75.jpg",
+        "image2": "shopify:\/\/shop_images\/1_7d269cf2-8a89-4e51-be7c-2611fd093e02.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Modular design",
+        "text": "<p>The segmented design breaks the rigid block shape, bringing a sense of fullness, like a soft sponge cake. The modular sofa can be combined according to different room needs, with high adaptability. <\/p><p>The semi-enclosed armrests seamlessly integrate with the backrest in an aesthetically pleasing width, satisfying visual appeal.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_5e67dc9f-c9e4-4bf6-abe6-ad0e95f44581.jpg",
+        "image2": "shopify:\/\/shop_images\/11_267f4017-6d07-4e04-a010-209c07dfc7ce.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "multifunction",
+        "text": "<p>Matching with a minimalist, wooden storage coffee table, the spacious interior design lets you enjoy leisurely moments.<\/p><p>The sofa's low base height and high seat cushions give a casual, carefree feel. Paired with a rug, it provides a sense of luxury and laziness.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials-0",
+        "testimonials-1",
+        "testimonials-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Testimonials",
+        "testimonial-subhedading": "We love seeing how you customized it. Show us how it started and how it’s going by tagging #25home.",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+      }
+    },
+    "1652410876b776606e": {
+      "type": "apps",
+      "blocks": {
+        "e13cef9d-2017-4252-8d6d-7873814950e5": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "e13cef9d-2017-4252-8d6d-7873814950e5"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "background-image-text",
+    "text-and-image",
+    "c1e2a991-ad27-44f4-9ed7-7bcbf1447338",
+    "text-and-image2",
+    "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
+    "product-recommendations",
+    "testimonials",
+    "recently-viewed",
+    "collection-return",
+    "1652410876b776606e"
+  ]
+}

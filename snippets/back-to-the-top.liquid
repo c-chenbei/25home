@@ -1,0 +1,89 @@
+{% comment %}
+  Reduce below value if you need the back to the top button to appear higher up on the page.
+  That value is in pixels.
+{% endcomment %}
+{% assign vertical_offset_for_trigger = 300 %}
+
+{% comment %}
+  Vertical offset from bottom of browser for the position of the button.
+{% endcomment %}
+{% assign position_from_bottom = '8em' %}
+
+<a id="BackToTop" href="#" title="TOP" class="back-to-top hide">
+  {% comment %} <span>TOP</span>  {% endcomment %}
+  <i class="fa fa-arrow-circle-o-up fa-2x"></i>
+</a>
+{{ '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' | stylesheet_tag }}
+<style>
+  .back-to-top {
+    position: fixed;
+    {% comment %} bottom: {{ position_from_bottom }}; {% endcomment %}
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: #b08a6d;
+    {% comment %} background-color: #ffffff; {% endcomment %}
+    font-size: 16px;
+    padding: 0.3em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px; /* Safari, Chrome 和新版 Edge */
+    -moz-border-radius: 30px; /* Firefox */
+    -ms-border-radius: 30px; /* 旧版 Edge */
+    z-index: 60000;
+    background-color: #ffffff;
+  }
+  .back-to-top i {
+    vertical-align: middle;
+    transform:scale(1.8);
+  }
+  .back-to-top span {
+    padding-left: 0.5em;
+  }
+  .back-to-top i + span {
+    padding-left: 0;
+  }
+  .back-to-top:hover {
+    text-decoration: none;
+    color: #8d6e57;
+  }
+  .hide {
+    display: none!important;
+  }
+  @media only screen and (max-width:768px){
+    .back-to-top{
+      padding: 0px;
+      bottom: 25px;
+      right: 25px;
+    }
+    .back-to-top i{
+      transform:scale(1.2);
+    }
+  }
+</style>
+<script>
+    (function() {
+    function trackScroll() {
+        var scrolled = window.pageYOffset;
+        var coords = {{ vertical_offset_for_trigger }};
+
+        if (scrolled > coords) {
+        goTopBtn.classList.remove('hide');
+        }
+        if (scrolled < coords) {
+        goTopBtn.classList.add('hide');
+        }
+    }
+
+    function backToTop() {
+        if (window.pageYOffset > 0) {
+        window.scrollBy(0, -80);
+        setTimeout(backToTop, 0);
+        }
+    }
+
+    var goTopBtn = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', trackScroll);
+    goTopBtn.addEventListener('click', backToTop);
+    })();
+</script>

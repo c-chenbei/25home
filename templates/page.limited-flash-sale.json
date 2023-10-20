@@ -1,0 +1,24 @@
+{
+    "sections": {
+        "main": {
+            "type": "main-page-full-width",
+            "settings": {}
+        },
+        "e24c609d-aaa7-42bd-a646-b3362bbd15a8": {
+            "type": "featured-collection",
+            "settings": {
+                "title": "",
+                "home_featured_products": "limited-flash-sale",
+                "per_row": 4,
+                "rows": 5,
+                "mobile_scrollable": true,
+                "view_all": true,
+                "divider": false
+            }
+        }
+    },
+    "order": [
+        "main",
+        "e24c609d-aaa7-42bd-a646-b3362bbd15a8"
+    ]
+}
