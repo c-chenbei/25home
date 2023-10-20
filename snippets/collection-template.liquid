@@ -33,13 +33,13 @@
           {%- endif -%}
         {%- when 'product_grid' -%}
           <div class="collection-filter">
-            {%- liquid
+            {% comment %} {%- liquid
               assign current_filter_size = 0
 
               for filter in collection.filters
                 assign current_filter_size = current_filter_size | plus: filter.active_values.size
               endfor
-            -%}
+            -%} {% endcomment %}
             <div class="collection-filter__item collection-filter__item--drawer">
               <button
                 type="button"
@@ -110,7 +110,6 @@
           >
             {%- liquid
               assign grid_item_width = 'small--one-half medium-up--one-third'
-
               case per_row
                 when 2
                   assign grid_item_width = 'medium-up--one-half'
@@ -125,8 +124,7 @@
 
             {%- for product in collection.products -%}
               {% if product.handle contains 'docapp-free-gift-' %}{% continue %}{% endif %}
-
-              {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width, per_row: per_row -%}
+              {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width, per_row: per_row,collection_name: collection.title -%}
             {%- else -%}
               <div class="grid__item">
                 <p>{{ 'collections.general.no_matches' | t }}</p>

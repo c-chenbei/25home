@@ -25,8 +25,11 @@
       endif
     endfor
   endif
+  assign collection_SALE = false
+  if collection_name == 'LIMITED FLASH SALE'
+    assign collection_SALE = true
+  endif
 -%}
-
 <div
   class="grid__item grid-product {{ grid_item_width }}{% if settings.quick_shop_enable %} grid-product__has-quick-shop{% endif %}"
   data-aos="row-of-{{ per_row }}"
@@ -34,15 +37,25 @@
   data-product-id="{{ product.id }}"
 >
   {% comment %} 活动角标 {% endcomment %}
-  {% unless product.metafields.custom.sale_tag_text == blank %}
-  <div class="grid-card__content">
-    <span class="grid-card__badge" 
-      style="{% if product.metafields.custom.sale_tag_color %}color:{{ product.metafields.custom.sale_tag_color }}{% endif %};
-      {% if product.metafields.custom.sale_tag_bg %}background-color:{{ product.metafields.custom.sale_tag_bg }}{% endif %};">
-      {{ product.metafields.custom.sale_tag_text }}
-    </span>
-  </div>
-  {% endunless %}
+  {% if collection_SALE == true %}
+    <div class="grid-card__content">
+      <span class="grid-card__badge" 
+        style="color:#fff;background-color:red;font-weight:600">
+        {% comment %} 百分比显示优惠多少 {% endcomment %}
+        Flash Sale {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}% OFF
+      </span>
+    </div>
+  {% else %}
+    {% unless product.metafields.custom.sale_tag_text == blank %}
+      <div class="grid-card__content">
+        <span class="grid-card__badge" 
+          style="{% if product.metafields.custom.sale_tag_color %}color:{{ product.metafields.custom.sale_tag_color }}{% endif %};
+          {% if product.metafields.custom.sale_tag_bg %}background-color:{{ product.metafields.custom.sale_tag_bg }}{% endif %};">
+          {{ product.metafields.custom.sale_tag_text }}
+        </span>
+      </div>
+    {% endunless %}
+  {% endif %}
   {% comment %} product.metafields.custom.keywords {% endcomment %}
   <div class="grid-product__content">
     {%- if has_custom_label -%}

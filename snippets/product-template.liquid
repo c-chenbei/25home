@@ -160,7 +160,7 @@
                       -%}
                     </div>
                   {%- when 'price' -%}
-                    <div>
+                    {% comment %} <div> {% endcomment %}
                       <div class="product-block product-block--price" {{ block.shopify_attributes }}>
                         {%- assign hide_sale_price = true -%}
                         {%- if product.compare_at_price_max > product.price -%}
@@ -257,7 +257,7 @@
                       >
                         25Home Offers FREE SHIPPING On Every Order
                       </div>
-                      <div class="product-block">
+                      {% comment %} <div class="product-block">
                         {%- render 'product-form',
                           form_id: form_id,
                           product: product,
@@ -265,7 +265,7 @@
                           current_variant: current_variant
                         -%}
                       </div>
-                    </div>
+                    </div> {% endcomment %}
                   {%- when 'quantity_selector' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       <div class="product__quantity">
