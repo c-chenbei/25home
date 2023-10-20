@@ -1,1 +1,104 @@
-{"sections":{"collection-header":{"type":"collection-header","settings":{"enable":true,"collection_image_enable":true,"parallax":true}},"1645173779f26ecbf5":{"type":"promo-grid","blocks":{"8f9fd4ec-c2df-41e9-815e-388589d926a6":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/halloween-PLUME-pc.jpg","link":"shopify:\/\/collections\/plume-sofa","width":"100"}}},"block_order":["8f9fd4ec-c2df-41e9-815e-388589d926a6"],"settings":{"full_width":true,"gutter_size":0,"space_above":true,"space_below":true}},"main-collection":{"type":"main-collection","blocks":{"collection_description":{"type":"collection_description","settings":{}},"subcollections":{"type":"subcollections","settings":{"subcollections_per_row":5}},"product_grid":{"type":"product_grid","settings":{"enable_collection_count":true,"per_row":4,"rows_per_page":20,"mobile_flush_grid":false}}},"block_order":["collection_description","subcollections","product_grid"],"settings":{"enable_sidebar":true,"collapsed":true,"filter_style":"drawer","enable_color_swatches":false,"enable_sort":true}},"479b4007-2342-476d-8729-d09b7cc5f3f2":{"type":"rich-text","blocks":{"template--16736758890723__479b4007-2342-476d-8729-d09b7cc5f3f2-heading-1":{"type":"heading","settings":{"title":""}},"template--16736758890723__479b4007-2342-476d-8729-d09b7cc5f3f2-text-1":{"type":"text","settings":{"enlarge_text":false,"text":"<p><strong>What is a plume sectional sofa?<\/strong><\/p><p>This modular sectional sofa comes with removable and washable covers, offering a <a href=\"https:\/\/25home.com\/pages\/care-clean\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/care-clean\">hassle-free cleaning<\/a> experience. You can customize your sofa by selecting from a variety of materials and combination forms, ensuring it perfectly suits your style and needs. <\/p><p>The plume sectional Sofa is designed with durability in mind. Its material is wear-resistant and scratch-resistant, ensuring a long-lasting and pristine appearance even with regular use. When it's time for a refresh, you can effortlessly remove the covers for cleaning or <a href=\"https:\/\/25home.com\/collections\/covers-feathers-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/covers-feathers-sofa\">replacement<\/a>, making maintenance a breeze.<\/p><p> <strong>What advantages does a Plume sectional sofa offer? <\/strong><\/p><ul><li><strong>Scratch-Resistant<\/strong>: The sofa is designed to be scratch-resistant, ensuring it maintains its pristine appearance even with regular use.<\/li><li><strong>Wrinkle-Resistant<\/strong>: The sofa's material is wrinkle-resistant, ensuring it stays smooth and neat.<\/li><li><strong>Waterproof<\/strong>: The <a href=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-vegan-leather-plume-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-vegan-leather-plume-sofa\">air leather plume sofas<\/a> are waterproof, making it easy to clean and maintain.<\/li><li><strong>Removable and Washable Covers<\/strong>: The standout feature of this sofa is its removable and washable covers. The entire sofa cover can be easily taken off and washed, ensuring hassle-free cleaning and keeping the sofa looking fresh.<\/li><li><strong>Variety of Colors and Combinations<\/strong>: The Plume sectional sofa offers a wide range of color options for the covers, allowing you to choose the one that best complements your interior decor. It also comes in different sectional combinations, including Sectional, U-Sectional, Sofa, Sofa + Ottoman, Armchair, and more, providing versatile seating options to suit your space and needs.<\/li><\/ul><p><strong>How many types of sofa materials are there, and how to make the selection?<\/strong><\/p><p>There are four types of materials, polyester, air leather, boucle white, linen white.<\/p><p>When choosing the material for your <a href=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-white-plume-double-chaise-sectional\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-white-plume-double-chaise-sectional\">plume sectional sofa<\/a>, consider the following factors:<\/p><ul><li><strong>Polyester<\/strong>: If you prioritize durability and stain-resistance, polyester is an excellent choice. It's a high-strength fiber known for its scratch-resistance and anti-fouling properties, making it ideal for households with kids or pets.<\/li><li><a href=\"https:\/\/25home.com\/blogs\/news\/the-future-of-leather-introduction-to-leathaire\" target=\"_blank\" title=\"https:\/\/25home.com\/blogs\/news\/the-future-of-leather-introduction-to-leathaire\"><strong>Air Leather<\/strong><\/a>: If you desire a luxurious and low-maintenance option, Air Leather is a high-strength material that offers scratch-resistance, wrinkle-resistance, and easy cleaning. It provides a premium leather-like appearance without the need for regular conditioning.<\/li><li><strong>Boucle White<\/strong>: For a sophisticated and textured look, Boucle White is a great option. This fabric adds a touch of elegance to your sofa, and its light color can brighten up your living space.<\/li><li><strong>Linen White<\/strong>: If you prefer a breathable and versatile material, Linen White is an excellent choice. It's skin-friendly and suitable for all seasons, offering a comfortable seating experience.<\/li><\/ul><p>Ultimately, your choice of material depends on your lifestyle, preferences, and the overall aesthetic you want to achieve in your living space. Consider factors such as durability, ease of maintenance, style, and comfort to select the perfect material that aligns with your needs and enhances the appeal of your modern sectional sofa.<\/p>"}}},"block_order":["template--16736758890723__479b4007-2342-476d-8729-d09b7cc5f3f2-heading-1","template--16736758890723__479b4007-2342-476d-8729-d09b7cc5f3f2-text-1"],"settings":{"align_text":"left","narrow_column":false,"divider":true}}},"order":["collection-header","1645173779f26ecbf5","main-collection","479b4007-2342-476d-8729-d09b7cc5f3f2"]}
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true
+      }
+    },
+    "1645173779f26ecbf5": {
+      "type": "promo-grid",
+      "blocks": {
+        "8f9fd4ec-c2df-41e9-815e-388589d926a6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/halloween-collection.jpg",
+            "link": "shopify:\/\/collections\/plume-sofa",
+            "width": "100"
+          }
+        }
+      },
+      "block_order": [
+        "8f9fd4ec-c2df-41e9-815e-388589d926a6"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "drawer",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "479b4007-2342-476d-8729-d09b7cc5f3f2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16736758890723__479b4007-2342-476d-8729-d09b7cc5f3f2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--16736758890723__479b4007-2342-476d-8729-d09b7cc5f3f2-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>What is a plume sectional sofa?<\/strong><\/p><p>This modular sectional sofa comes with removable and washable covers, offering a <a href=\"https:\/\/25home.com\/pages\/care-clean\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/care-clean\">hassle-free cleaning<\/a> experience. You can customize your sofa by selecting from a variety of materials and combination forms, ensuring it perfectly suits your style and needs. <\/p><p>The plume sectional Sofa is designed with durability in mind. Its material is wear-resistant and scratch-resistant, ensuring a long-lasting and pristine appearance even with regular use. When it's time for a refresh, you can effortlessly remove the covers for cleaning or <a href=\"https:\/\/25home.com\/collections\/covers-feathers-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/covers-feathers-sofa\">replacement<\/a>, making maintenance a breeze.<\/p><p> <strong>What advantages does a Plume sectional sofa offer? <\/strong><\/p><ul><li><strong>Scratch-Resistant<\/strong>: The sofa is designed to be scratch-resistant, ensuring it maintains its pristine appearance even with regular use.<\/li><li><strong>Wrinkle-Resistant<\/strong>: The sofa's material is wrinkle-resistant, ensuring it stays smooth and neat.<\/li><li><strong>Waterproof<\/strong>: The <a href=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-vegan-leather-plume-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-vegan-leather-plume-sofa\">air leather plume sofas<\/a> are waterproof, making it easy to clean and maintain.<\/li><li><strong>Removable and Washable Covers<\/strong>: The standout feature of this sofa is its removable and washable covers. The entire sofa cover can be easily taken off and washed, ensuring hassle-free cleaning and keeping the sofa looking fresh.<\/li><li><strong>Variety of Colors and Combinations<\/strong>: The Plume sectional sofa offers a wide range of color options for the covers, allowing you to choose the one that best complements your interior decor. It also comes in different sectional combinations, including Sectional, U-Sectional, Sofa, Sofa + Ottoman, Armchair, and more, providing versatile seating options to suit your space and needs.<\/li><\/ul><p><strong>How many types of sofa materials are there, and how to make the selection?<\/strong><\/p><p>There are four types of materials, polyester, air leather, boucle white, linen white.<\/p><p>When choosing the material for your <a href=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-white-plume-double-chaise-sectional\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-white-plume-double-chaise-sectional\">plume sectional sofa<\/a>, consider the following factors:<\/p><ul><li><strong>Polyester<\/strong>: If you prioritize durability and stain-resistance, polyester is an excellent choice. It's a high-strength fiber known for its scratch-resistance and anti-fouling properties, making it ideal for households with kids or pets.<\/li><li><a href=\"https:\/\/25home.com\/blogs\/news\/the-future-of-leather-introduction-to-leathaire\" target=\"_blank\" title=\"https:\/\/25home.com\/blogs\/news\/the-future-of-leather-introduction-to-leathaire\"><strong>Air Leather<\/strong><\/a>: If you desire a luxurious and low-maintenance option, Air Leather is a high-strength material that offers scratch-resistance, wrinkle-resistance, and easy cleaning. It provides a premium leather-like appearance without the need for regular conditioning.<\/li><li><strong>Boucle White<\/strong>: For a sophisticated and textured look, Boucle White is a great option. This fabric adds a touch of elegance to your sofa, and its light color can brighten up your living space.<\/li><li><strong>Linen White<\/strong>: If you prefer a breathable and versatile material, Linen White is an excellent choice. It's skin-friendly and suitable for all seasons, offering a comfortable seating experience.<\/li><\/ul><p>Ultimately, your choice of material depends on your lifestyle, preferences, and the overall aesthetic you want to achieve in your living space. Consider factors such as durability, ease of maintenance, style, and comfort to select the perfect material that aligns with your needs and enhances the appeal of your modern sectional sofa.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16736758890723__479b4007-2342-476d-8729-d09b7cc5f3f2-heading-1",
+        "template--16736758890723__479b4007-2342-476d-8729-d09b7cc5f3f2-text-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "1645173779f26ecbf5",
+    "main-collection",
+    "479b4007-2342-476d-8729-d09b7cc5f3f2"
+  ]
+}
