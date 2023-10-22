@@ -65,7 +65,6 @@
         },
         "a5510342-8f2e-49e7-8cc0-3ccae8d41652": {
           "type": "sales_point",
-          "disabled": true,
           "settings": {
             "icon": "leaf",
             "text": "EXTRA 15% OFF CODE: SUPER15"
