@@ -285,6 +285,9 @@ if(window.location.href.includes("/cart")){
   {{ content_for_header }}
 
   <script src="{{ 'vendor-scripts-v10.js' | asset_url | split: '?' | first }}" defer="defer"></script>
+  {% comment %} <link rel="stylesheet" href="{{ 'iconfont.css' | asset_url | split: '?' | first}}"> {% endcomment %}
+  <link rel="stylesheet" href="{{ 'iconfont.css' | asset_url }}" type="text/css">
+
 
   {%- if shop.enabled_currencies.size > 1 -%}
     <link rel="preload" as="style" href="{{ 'currency-flags.css' | asset_url | split: '?' | first }}" onload="this.onload=null;this.rel='stylesheet'">
@@ -344,7 +347,6 @@ if(window.location.href.includes("/cart")){
 <script>(() => {const installerKey = 'docapp-free-gift-auto-install'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(installerKey)) {window.sessionStorage.setItem(installerKey, JSON.stringify({integrationId: urlParams.get('docapp-integration-id'), divClass: urlParams.get('docapp-install-class'), check: urlParams.get('docapp-check')}));}})();</script>
 
 <script>(() => {const previewKey = 'docapp-free-gift-test'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(previewKey)) {window.sessionStorage.setItem(previewKey, JSON.stringify({active: true, integrationId: urlParams.get('docapp-free-gift-inst-test')}));}})();</script>
-<link rel="stylesheet" href="{{ 'iconfont.css' | asset_url | split: '?' | first}}">
 
 </head>
 
