@@ -1,11 +1,11 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1697618253405') format('truetype');
+  src: url('iconfont.ttf?t=1698041655384') format('truetype');
 }
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,5 +13,9 @@
 
 .icon-yinxingqia:before {
   content: "\e637";
+}
+
+.icon-naozhong:before {
+  content: "\e890";
 }
 

@@ -11,6 +11,13 @@
       "font_class": "yinxingqia",
       "unicode": "e637",
       "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "2076264",
+      "name": "闹钟",
+      "font_class": "naozhong",
+      "unicode": "e890",
+      "unicode_decimal": 59536
     }
   ]
 }

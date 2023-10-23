@@ -1,17 +1,12 @@
 <div class="header-countdown" style="background-color:{{ block.countdown_target_bg}};">
     {% if block.countdown_target_link %}
-        <a
-            href="{{ block.countdown_target_link }}"
+        <a href="{{ block.countdown_target_link }}"
             class="hander_countdowns-text {% if block.countdown_target_flashing %} hander_countdowns_blinking{% endif %}"
-            style="color:{{ block.countdown_target__color}}"
         >
     {% else %}
-        <a
-            class="hander_countdowns-text {% if block.countdown_target_flashing %} hander_countdowns_blinking{% endif %}"
-            style="color:{{ block.countdown_target__color}}"
-        >
+        <a  class="hander_countdowns-text {% if block.countdown_target_flashing %} hander_countdowns_blinking{% endif %}">
     {% endif %}
-    <div class="countdown_target_content">{{ block.countdown_target_content }}</div>
+    <div class="countdown_target_content" ><i class="iconfont icon-naozhong"></i> Flash Sale</div>
     <div id="hander_countdowns" data-count-time="{{ block.countdown_target_datetime}}">
         Ends in
       <span class="number" id="countdowns_days">00</span>:
@@ -21,6 +16,7 @@
     </div>
   </a>
 </div>
+<div class="flash-title" style="color:{{ block.countdown_target__color}}">{{ block.countdown_target_content }}</div>
 <script src="{{ 'carouselslide.js' | asset_url }}" defer="defer"></script>
 <style>
   .header-countdown {
@@ -41,12 +37,15 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 600;
+
  }
   .hander_countdowns-text #hander_countdowns{
     display: inline-block;
     align-items: center;
     min-width: 170px;
     white-space: nowrap;
+    font-weight: 600;
   }
 
   .hander_countdowns-text #hander_countdowns .number {
@@ -76,4 +75,7 @@
       opacity: 1;
     }
   }
+  .flash-title{
+    font-size:12px;
+}
 </style>
