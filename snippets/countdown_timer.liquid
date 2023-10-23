@@ -1,0 +1,51 @@
+<div class="header-countdown" style="background-color:{{ block.countdown_target_bg}};">
+  <a
+    class="hander_countdowns-text {% if block.countdown_target_flashing %} hander_countdowns_blinking{% endif%}"
+    href="{{ block.countdown_target_link }}"
+    style="color:{{ block.countdown_target__color}}"
+  >
+    <div>{{ block.countdown_target_content }}&nbsp;&nbsp;</div>
+    <div id="hander_countdowns" data-count-time="{{ block.countdown_target_datetime}}">
+      <span class="number" id="countdowns_days">00</span>days
+      <span class="number" id="countdowns_hours">00</span>hrs
+      <span class="number" id="countdowns_minutes">00</span>min
+      <span class="number" id="countdowns_seconds">00</span>sec
+    </div>
+  </a>
+</div>
+<script src="{{ 'carouselslide.js' | asset_url }}" defer="defer"></script>
+<style>
+  .header-countdown {
+    border-radius: 5px;
+    /* background-color: rgb(222, 181, 140); */
+    {% comment %} color: #fff; {% endcomment %}
+  }
+  .hander_countdowns-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+  }
+
+  .hander_countdowns-text #hander_countdowns .number {
+    font-weight: 600;
+  }
+
+  .hander_countdowns_blinking {
+    animation: blink 0.8s infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
