@@ -36,3 +36,7 @@ const timers = setInterval(updateCountdown, 1000);
 
 // 初始化倒计时
 updateCountdown();
+{/* <span class="number" id="countdowns_days">00</span>days
+      <span class="number" id="countdowns_hours">00</span>hrs
+      <span class="number" id="countdowns_minutes">00</span>min
+      <span class="number" id="countdowns_seconds">00</span>sec */}
