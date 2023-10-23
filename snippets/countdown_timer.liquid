@@ -1,4 +1,4 @@
-<div class="header-countdown" style="background-color:{{ block.countdown_target_bg}};">
+<div class="header-countdown" style="background:{{ block.countdown_target_bg}};">
     {% if block.countdown_target_link %}
         <a href="{{ block.countdown_target_link }}"
             class="hander_countdowns-text {% if block.countdown_target_flashing %} hander_countdowns_blinking{% endif %}"
@@ -8,10 +8,12 @@
     {% endif %}
     <div class="countdown_target_content" ><i class="iconfont icon-naozhong"></i> Flash Sale</div>
     <div id="hander_countdowns" data-count-time="{{ block.countdown_target_datetime}}">
+        <img src="{{ 'shandian.png' | asset_url }}" alt="icon">
         Ends in
-      <span class="number" id="countdowns_days">00</span>:
-      <span class="number" id="countdowns_hours">00</span>:
-      <span class="number" id="countdowns_minutes">00</span>:
+        <span class="dian"></span>
+      <span class="number" id="countdowns_days">00</span><span class="dian">:</span>
+      <span class="number" id="countdowns_hours">00</span><span class="dian">:</span>
+      <span class="number" id="countdowns_minutes">00</span><span class="dian">:</span>
       <span class="number" id="countdowns_seconds">00</span>
     </div>
   </a>
@@ -29,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: 0px 10px;
     flex-wrap: wrap;
   }
   .hander_countdowns-text .countdown_target_content {
@@ -41,21 +43,34 @@
 
  }
   .hander_countdowns-text #hander_countdowns{
-    display: inline-block;
+    display: flex;
     align-items: center;
-    min-width: 170px;
+    {% comment %} min-width: 199px; {% endcomment %}
     white-space: nowrap;
     font-weight: 600;
+  }
+  .hander_countdowns-text #hander_countdowns img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
   }
 
   .hander_countdowns-text #hander_countdowns .number {
     font-weight: 600;
-    padding: 5px;
     background-color: #fff;
     border-radius: 3px;
-    line-height: 15px;
-    width: 25px;
-    display: inline-block;
+    line-height: 18px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+  }
+  .hander_countdowns-text #hander_countdowns .dian {
+    padding: 0px 3px;
   }
 
   .hander_countdowns_blinking {
