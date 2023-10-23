@@ -8,28 +8,23 @@ const day = parseInt(targetDateParts[2]);
 const hours = parseInt(targetDateParts[3]);
 const minutes = parseInt(targetDateParts[4]);
 const seconds = parseInt(targetDateParts[5]);
-const targetDate = new Date(year, month, day, hours, minutes,seconds).getTime();
+const targetDate = new Date(year, month, day, hours, minutes, seconds).getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
     const timeRemaining = targetDate - now;
+    console.log(targetDate,now,'55555555')
     if (timeRemaining <= 0) {
         window.clearTimeout(timers);
     } else {
-        // const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        // const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        // const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        // const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-        // document.getElementById("countdowns_days").textContent = formatTimeValue(days);
-        // document.getElementById("countdowns_hours").textContent = formatTimeValue(hours);
-        // document.getElementById("countdowns_minutes").textContent = formatTimeValue(minutes);
-        // document.getElementById("countdowns_seconds").textContent = formatTimeValue(seconds);
-        const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
+        const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
+        // const days = Math.floor(totalHours / 24); // 将小时转换为天
+        const hours = totalHours; // 获取不满一天的小时数
         const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
         const seconds = Math.floor((timeRemaining / 1000) % 60);
         const milliseconds = timeRemaining % 1000;
 
+        // document.getElementById("countdowns_days").textContent = formatTimeValue(days);
         document.getElementById("countdowns_hours").textContent = formatTimeValue(hours);
         document.getElementById("countdowns_minutes").textContent = formatTimeValue(minutes);
         document.getElementById("countdowns_seconds").textContent = formatTimeValue(seconds);

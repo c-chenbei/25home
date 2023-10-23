@@ -56,7 +56,7 @@
           "settings": {
             "countdown_target_content": "<span style=\"font-weight:600\">Flash sale items can't be applied to discount code<\/span>",
             "countdown_target_flashing": false,
-            "countdown_target_datetime": "2023\/10\/26\/15\/00\/00",
+            "countdown_target_datetime": "2023\/10\/27\/15\/00\/00",
             "countdown_target_link": "",
             "countdown_target_bg": "#deb58c",
             "countdown_target__color": "#a81527"
