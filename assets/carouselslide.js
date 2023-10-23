@@ -7,7 +7,8 @@ const month = parseInt(targetDateParts[1]) - 1; // 月份从 0 开始
 const day = parseInt(targetDateParts[2]);
 const hours = parseInt(targetDateParts[3]);
 const minutes = parseInt(targetDateParts[4]);
-const targetDate = new Date(year, month, day, hours, minutes).getTime();
+const seconds = parseInt(targetDateParts[5]);
+const targetDate = new Date(year, month, day, hours, minutes,seconds).getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -15,24 +16,36 @@ function updateCountdown() {
     if (timeRemaining <= 0) {
         window.clearTimeout(timers);
     } else {
-        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        // const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        // const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        // const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        // const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-        document.getElementById("countdowns_days").textContent = formatTimeValue(days);
+        // document.getElementById("countdowns_days").textContent = formatTimeValue(days);
+        // document.getElementById("countdowns_hours").textContent = formatTimeValue(hours);
+        // document.getElementById("countdowns_minutes").textContent = formatTimeValue(minutes);
+        // document.getElementById("countdowns_seconds").textContent = formatTimeValue(seconds);
+        const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
+        const seconds = Math.floor((timeRemaining / 1000) % 60);
+        const milliseconds = timeRemaining % 1000;
+
         document.getElementById("countdowns_hours").textContent = formatTimeValue(hours);
         document.getElementById("countdowns_minutes").textContent = formatTimeValue(minutes);
         document.getElementById("countdowns_seconds").textContent = formatTimeValue(seconds);
+        document.getElementById("countdowns_milliseconds").textContent = formatmilliseconds(milliseconds);
     }
 }
 
 function formatTimeValue(value) {
     return value < 10 ? "0" + value : value;
 }
+function formatmilliseconds(value) {
+    return value < 10 ? value : parseInt(value.toString()[0]);
+}
 
 // 更新倒计时每秒钟
-const timers = setInterval(updateCountdown, 1000);
+const timers = setInterval(updateCountdown, 100);
 
 // 初始化倒计时
 updateCountdown();

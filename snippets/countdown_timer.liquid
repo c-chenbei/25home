@@ -11,21 +11,31 @@
         <img src="{{ 'shandian.png' | asset_url }}" alt="icon">
         Ends in
         <span class="dian"></span>
-      <span class="number" id="countdowns_days">00</span><span class="dian">:</span>
+      {% comment %} <span class="number" id="countdowns_days">00</span><span class="dian">:</span> {% endcomment %}
       <span class="number" id="countdowns_hours">00</span><span class="dian">:</span>
       <span class="number" id="countdowns_minutes">00</span><span class="dian">:</span>
-      <span class="number" id="countdowns_seconds">00</span>
+      <span class="number" id="countdowns_seconds">00</span><span class="dian">:</span>
+      <span class="number" id="countdowns_milliseconds">0</span>
     </div>
   </a>
 </div>
 <div class="flash-title" style="color:{{ block.countdown_target__color}}">{{ block.countdown_target_content }}</div>
 <script src="{{ 'carouselslide.js' | asset_url }}" defer="defer"></script>
 <style>
-  .header-countdown {
-    border-radius: 5px;
-    /* background-color: rgb(222, 181, 140); */
-    {% comment %} color: #fff; {% endcomment %}
-    font-size: 12px;
+@media only screen and (min-width: 601px) {
+    .header-countdown {
+        border-radius: 5px;
+        font-size: 12px;
+        width: 75%;
+    }
+}
+
+  @media only screen and (max-width:600px){
+    .header-countdown {
+        border-radius: 5px;
+        font-size: 12px;
+        width: 100%;
+    }
   }
   .hander_countdowns-text {
     display: flex;

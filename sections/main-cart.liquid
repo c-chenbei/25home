@@ -25,6 +25,7 @@
           {% for item in cart.items %}
             {%- render 'cart-item', product: item -%}
           {%- endfor -%}
+          <div class="code-hint">Flash sale items can't be applied to discount code</div>
         </div>
         {% comment %} 购物车页面结算{% endcomment %}
         <div class="cart__page-col">
@@ -136,7 +137,6 @@
   const expressageTypeElement = document.querySelectorAll('#cart_expressage_type');
   if (expressageTypeElement.length > 0) {
     expressageTypeElement.forEach(item => {
-      console.log(item,'itemssssssssssssss')
       const dataGetValue = item.getAttribute('data-get-value');
       // 解析日期范围
       const dateRangeMatch = dataGetValue.match(/(\d{1,2}-\d{1,2}) business days delivery/);
@@ -175,3 +175,20 @@
     })
   }
 </script>
+<style>
+  @media only screen and (min-width: 601px) {
+    .code-hint{
+      font-weight:600;
+      font-size:18px;
+      margin-bottom: 10px;
+    }
+  }
+  @media only screen and (max-width:600px){
+    .code-hint{
+      font-weight:600;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+  
+</style>
