@@ -51,17 +51,6 @@
           "settings": {
           }
         },
-        "46d3d793-ffab-4baa-accb-ba3bb7f81f85": {
-          "type": "countdown_timer",
-          "settings": {
-            "countdown_target_content": "<span style=\"font-weight:600\">Flash sale items can't be applied to discount code<\/span>",
-            "countdown_target_flashing": false,
-            "countdown_target_datetime": "2023\/10\/27\/15\/00\/00",
-            "countdown_target_link": "",
-            "countdown_target_bg": "#deb58c",
-            "countdown_target__color": "#a81527"
-          }
-        },
         "separator": {
           "type": "separator",
           "settings": {
