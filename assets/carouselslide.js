@@ -16,7 +16,7 @@ function updateCountdown() {
     const now = new Date().getTime();
     const timeRemaining = targetDate - now;
     if (timeRemaining <= 0) {
-        window.clearTimeout(timers);
+        window.clearlnterval(timers);
         document.getElementById("countdowns_milliseconds").textContent = '0'
     } else {
         const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
@@ -43,7 +43,7 @@ function formatmilliseconds(value) {
 }
 
 // 更新倒计时每秒钟
-const timers = setInterval(updateCountdown, 300);
+const timers = setInterval(updateCountdown, 350);
 
 // 初始化倒计时
 updateCountdown();

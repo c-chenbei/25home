@@ -237,34 +237,6 @@
         "space_below": false
       }
     },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Rich text"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "disabled": true,
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
     "16541605899760848b": {
       "type": "featured-collection",
       "settings": {
@@ -940,8 +912,8 @@
   "order": [
     "slideshow",
     "a8c5aae9-e652-461e-bf73-ce0f0328ce67",
+    "28d25f2e-2654-4707-9ea0-624b3b468500",
     "promo-grid2",
-    "rich-text",
     "16541605899760848b",
     "39a54d10-36aa-449e-89ef-c69365226a80",
     "976c332f-9325-4e60-98e2-e7576f5c249d",

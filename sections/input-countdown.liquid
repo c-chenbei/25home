@@ -1,0 +1,80 @@
+<div id="input-countdowns" data-input-countdowns="{{section.settings.countdown_target_datetimes}}"></div>
+{% schema %}
+{
+  "name": "全局倒计时",
+  "max_blocks": 12,
+  "class": "index-section--hidden",
+  "settings": [
+    {
+      "type": "text",
+      "label": "倒计时目标日期时间",
+      "id": "countdown_target_datetimes",
+      "default": "2023/10/24/18/30/30",
+      "info": "请输入倒计时的目标日期和时间，格式为 'YYYY/MM/DD/HH/mm/ss'。"
+    }
+  ],
+  "blocks": []
+}
+{% endschema %}
+<script>
+  var timerss = null
+
+    //倒计时
+  const element = document.getElementById("input-countdowns");
+  {% comment %} console.log(element,'targetDateStrtargetDateStr') {% endcomment %}
+  const targetDateStr = element.getAttribute("data-input-countdowns");
+  {% comment %} console.log(targetDateStr,'targetDateStrtargetDateStr') {% endcomment %}
+  const targetDateParts = targetDateStr.split("/");
+  const year = parseInt(targetDateParts[0]);
+  const month = parseInt(targetDateParts[1]) - 1; // 月份从 0 开始
+  const day = parseInt(targetDateParts[2]);
+  const hours = parseInt(targetDateParts[3]);
+  const minutes = parseInt(targetDateParts[4]);
+  const seconds = parseInt(targetDateParts[5]);
+  const targetDate = new Date(year, month, day, hours, minutes, seconds).getTime();
+
+  function updateCountdown() {
+      const now = new Date().getTime();
+      const timeRemaining = targetDate - now;
+
+      if (timeRemaining <= 0) {
+          window.clearlnterval(timerss);
+          document.getElementById("countdowns_milliseconds").textContent = '0'
+      } else {
+          const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
+          // const days = Math.floor(totalHours / 24); // 将小时转换为天
+          // const hours = totalHours % 24; // 获取不满一天的小时数
+          const hours = totalHours; // 获取不满一天的小时数
+          const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
+          const seconds = Math.floor((timeRemaining / 1000) % 60);
+          const milliseconds = timeRemaining % 1000;
+
+          // document.getElementById("countdowns_days").textContent = formatTimeValue(days);
+          if (document.getElementById("countdowns_hours") && formatTimeValue(hours)) {
+            document.getElementById("countdowns_hours").textContent = formatTimeValue(hours);
+          }
+          if (document.getElementById("countdowns_minutes") && formatTimeValue(minutes)) {
+            document.getElementById("countdowns_minutes").textContent = formatTimeValue(minutes);
+          }
+          if (document.getElementById("countdowns_seconds") && formatTimeValue(seconds)) {
+            document.getElementById("countdowns_seconds").textContent = formatTimeValue(seconds);
+          }
+          if (document.getElementById("countdowns_milliseconds") && formatmilliseconds(milliseconds)) {
+            document.getElementById("countdowns_milliseconds").textContent = formatmilliseconds(milliseconds);
+          }
+      }
+  }
+
+  function formatTimeValue(value) {
+      return value < 10 ? "0" + value : value;
+  }
+  function formatmilliseconds(value) {
+      return value < 10 ? value : parseInt(value.toString()[0]);
+  }
+
+  // 更新倒计时每秒钟
+  timerss = setInterval(updateCountdown, 350);
+
+  // 初始化倒计时
+  {% comment %} updateCountdown(); {% endcomment %}
+</script>
