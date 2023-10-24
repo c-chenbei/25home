@@ -9,7 +9,7 @@
       "type": "text",
       "label": "倒计时目标日期时间",
       "id": "countdown_target_datetimes",
-      "default": "2023/10/24/18/30/30",
+      "default": "2023/10/24/17/32/30",
       "info": "请输入倒计时的目标日期和时间，格式为 'YYYY/MM/DD/HH/mm/ss'。"
     }
   ],
@@ -17,8 +17,6 @@
 }
 {% endschema %}
 <script>
-  var timerss = null
-
     //倒计时
   const element = document.getElementById("input-countdowns");
   {% comment %} console.log(element,'targetDateStrtargetDateStr') {% endcomment %}
@@ -36,10 +34,9 @@
   function updateCountdown() {
       const now = new Date().getTime();
       const timeRemaining = targetDate - now;
-
       if (timeRemaining <= 0) {
-          window.clearlnterval(timerss);
           document.getElementById("countdowns_milliseconds").textContent = '0'
+          window.clearInterval(timer);
       } else {
           const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
           // const days = Math.floor(totalHours / 24); // 将小时转换为天
@@ -73,7 +70,7 @@
   }
 
   // 更新倒计时每秒钟
-  timerss = setInterval(updateCountdown, 350);
+  const timer = setInterval(updateCountdown, 350);
 
   // 初始化倒计时
   {% comment %} updateCountdown(); {% endcomment %}
