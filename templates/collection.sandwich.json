@@ -1,1 +1,105 @@
-{"sections":{"collection-header":{"type":"collection-header","settings":{"enable":true,"collection_image_enable":true,"parallax":true}},"1645173779f26ecbf5":{"type":"promo-grid","blocks":{"8f9fd4ec-c2df-41e9-815e-388589d926a6":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/sandwich-offer-pc_c97d9e3c-2bf3-4871-bf13-d7ee69dfc5de.jpg","link":"","width":"100"}}},"block_order":["8f9fd4ec-c2df-41e9-815e-388589d926a6"],"settings":{"full_width":true,"gutter_size":0,"space_above":true,"space_below":true}},"main-collection":{"type":"main-collection","blocks":{"collection_description":{"type":"collection_description","settings":{}},"subcollections":{"type":"subcollections","settings":{"subcollections_per_row":5}},"product_grid":{"type":"product_grid","settings":{"enable_collection_count":true,"per_row":4,"rows_per_page":7,"mobile_flush_grid":false}}},"block_order":["collection_description","subcollections","product_grid"],"settings":{"enable_sidebar":true,"collapsed":true,"filter_style":"sidebar","enable_color_swatches":false,"enable_sort":true}},"fed6b8bf-4424-4995-ac81-844cca8fa10d":{"type":"rich-text","blocks":{"template--16153614254307__fed6b8bf-4424-4995-ac81-844cca8fa10d-heading-1":{"type":"heading","disabled":true,"settings":{"title":"Rich text"}},"template--16153614254307__fed6b8bf-4424-4995-ac81-844cca8fa10d-text-1":{"type":"text","settings":{"enlarge_text":false,"text":"<p><strong>What is a Sandwich Sofa?<\/strong><\/p><p>The Sandwich Sofa is crafted with cutting-edge air leather material known for its high-strength, scratch-resistant, non-wrinkle, and non-pilling properties. This sofa is also waterproof and antifouling, ensuring easy cleaning and long-lasting durability. This sofa is the perfect choice for pet owners, ensuring durability and protection against pet scratches. With its fashionable and modern design, our Sandwich Sofa is the perfect fit for any room. Experience ultimate comfort and style with this innovative furniture piece!<\/p><p><strong>Type of  Sofa<\/strong><\/p><ul><li><a href=\"https:\/\/25home.com\/collections\/sandwich\/products\/salo-air-leather-sectional-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/sandwich\/products\/salo-air-leather-sectional-sofa\"><strong>Sectional Sofas<\/strong><\/a><strong>: <\/strong>Versatile and great for larger spaces, sectional sofas consist of multiple pieces that can be arranged in various configurations.<\/li><li><strong>Sleeper Sofas: <\/strong>Also known as <a href=\"https:\/\/25home.com\/collections\/sofa\/products\/aalto-chic-sponge-convertible-sofa-bed\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/sofa\/products\/aalto-chic-sponge-convertible-sofa-bed\">sofa beds<\/a>, these sofas have a hidden pull-out mattress, providing extra sleeping space for guests.<\/li><li><strong>Loveseats: <\/strong>Smaller than <a href=\"https:\/\/25home.com\/collections\/sandwich\/products\/sandwich-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/sandwich\/products\/sandwich-sofa\">traditional sofas<\/a>, loveseats can comfortably seat two people and are ideal for compact spaces.<\/li><li><strong>Reclining Sofas: <\/strong>These sofas have a mechanism that allows you to recline the backrest and extend the footrest for added comfort.<\/li><li><strong>Chesterfield Sofas: <\/strong>Known for their elegant tufted design and rolled arms, Chesterfield sofas offer a classic and luxurious look.<\/li><\/ul><p><strong>What factors should I consider before purchasing a Sandwich Sofa?<\/strong><\/p><ul><li><strong>Size and Configuration<\/strong>: Ensure the sofa fits your room and explore the different arrangements available to find the perfect fit.<\/li><li><strong>Comfort and Support<\/strong>: Test the cushions to ensure they offer the level of comfort and support you desire.<\/li><li><strong>Style and Aesthetics<\/strong>: Consider how the contemporary look of the Sandwich Sofa complements your existing decor.<\/li><li><strong>Quality Materials<\/strong>: Look for durable materials and craftsmanship to ensure the longevity of your investment.<\/li><li><strong>Reviews and Ratings<\/strong>: Check customer reviews and ratings of the Sandwich Sofa to gain insights into its performance and overall satisfaction among users.<\/li><li><a href=\"https:\/\/25home.com\/pages\/warranty-policy\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/warranty-policy\"><strong>Warranty<\/strong><\/a><strong> and <\/strong><a href=\"https:\/\/25home.com\/pages\/return-and-refund-policy\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/return-and-refund-policy\"><strong>Return Policy<\/strong><\/a>: Review the warranty terms and return policy to ensure you have appropriate coverage and options in case of any issues.<\/li><\/ul><p><strong>How should I maintain my Sandwich Sofa?<\/strong><\/p><ul><li><strong>Regular Cleaning<\/strong>: Vacuum the sofa regularly using a soft brush attachment to remove dust and debris.<\/li><li><strong>Spot Cleaning<\/strong>: Address spills promptly by gently blotting them with a clean cloth to prevent stains.<\/li><li><strong>Fluff and Rotate<\/strong>: Regularly fluff and rotate the cushions to maintain their shape and ensure even wear.<\/li><li><strong>Sun Protection<\/strong>: Avoid placing your Sandwich Sofa in direct sunlight to prevent fading and damage to the fabric.<\/li><li><strong>Rotate Cushions<\/strong>: Regularly rotate and flip the cushions to ensure even wear and maintain their shape.<\/li><li><a href=\"https:\/\/25home.com\/pages\/care-clean\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/care-clean\"><strong>Manufacturer's Guidelines<\/strong><\/a>: Follow the care instructions provided by the manufacturer for specific cleaning and maintenance advice.<\/li><\/ul><p>By considering its features, balancing important factors while making the purchase, and taking excellent care of your new piece of furniture, you may enjoy the comfort and contemporary appeal the <a href=\"https:\/\/25home.com\/blogs\/news\/25home-sandwich-sofa-satisfy-customers-whole-family\" target=\"_blank\" title=\"https:\/\/25home.com\/blogs\/news\/25home-sandwich-sofa-satisfy-customers-whole-family\">Sandwich Sofa<\/a> brings to your living room for many years to come.<\/p>"}}},"block_order":["template--16153614254307__fed6b8bf-4424-4995-ac81-844cca8fa10d-heading-1","template--16153614254307__fed6b8bf-4424-4995-ac81-844cca8fa10d-text-1"],"settings":{"align_text":"left","narrow_column":false,"divider":true}}},"order":["collection-header","1645173779f26ecbf5","main-collection","fed6b8bf-4424-4995-ac81-844cca8fa10d"]}
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true
+      }
+    },
+    "1645173779f26ecbf5": {
+      "type": "promo-grid",
+      "blocks": {
+        "8f9fd4ec-c2df-41e9-815e-388589d926a6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sandwich-offer-pc_7d62bb80-ed84-4a95-8d7b-c0d02a56fdca.jpg",
+            "link": "",
+            "width": "100"
+          }
+        }
+      },
+      "block_order": [
+        "8f9fd4ec-c2df-41e9-815e-388589d926a6"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "fed6b8bf-4424-4995-ac81-844cca8fa10d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16153614254307__fed6b8bf-4424-4995-ac81-844cca8fa10d-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "template--16153614254307__fed6b8bf-4424-4995-ac81-844cca8fa10d-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>What is a Sandwich Sofa?<\/strong><\/p><p>The Sandwich Sofa is crafted with cutting-edge air leather material known for its high-strength, scratch-resistant, non-wrinkle, and non-pilling properties. This sofa is also waterproof and antifouling, ensuring easy cleaning and long-lasting durability. This sofa is the perfect choice for pet owners, ensuring durability and protection against pet scratches. With its fashionable and modern design, our Sandwich Sofa is the perfect fit for any room. Experience ultimate comfort and style with this innovative furniture piece!<\/p><p><strong>Type of  Sofa<\/strong><\/p><ul><li><a href=\"https:\/\/25home.com\/collections\/sandwich\/products\/salo-air-leather-sectional-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/sandwich\/products\/salo-air-leather-sectional-sofa\"><strong>Sectional Sofas<\/strong><\/a><strong>: <\/strong>Versatile and great for larger spaces, sectional sofas consist of multiple pieces that can be arranged in various configurations.<\/li><li><strong>Sleeper Sofas: <\/strong>Also known as <a href=\"https:\/\/25home.com\/collections\/sofa\/products\/aalto-chic-sponge-convertible-sofa-bed\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/sofa\/products\/aalto-chic-sponge-convertible-sofa-bed\">sofa beds<\/a>, these sofas have a hidden pull-out mattress, providing extra sleeping space for guests.<\/li><li><strong>Loveseats: <\/strong>Smaller than <a href=\"https:\/\/25home.com\/collections\/sandwich\/products\/sandwich-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/sandwich\/products\/sandwich-sofa\">traditional sofas<\/a>, loveseats can comfortably seat two people and are ideal for compact spaces.<\/li><li><strong>Reclining Sofas: <\/strong>These sofas have a mechanism that allows you to recline the backrest and extend the footrest for added comfort.<\/li><li><strong>Chesterfield Sofas: <\/strong>Known for their elegant tufted design and rolled arms, Chesterfield sofas offer a classic and luxurious look.<\/li><\/ul><p><strong>What factors should I consider before purchasing a Sandwich Sofa?<\/strong><\/p><ul><li><strong>Size and Configuration<\/strong>: Ensure the sofa fits your room and explore the different arrangements available to find the perfect fit.<\/li><li><strong>Comfort and Support<\/strong>: Test the cushions to ensure they offer the level of comfort and support you desire.<\/li><li><strong>Style and Aesthetics<\/strong>: Consider how the contemporary look of the Sandwich Sofa complements your existing decor.<\/li><li><strong>Quality Materials<\/strong>: Look for durable materials and craftsmanship to ensure the longevity of your investment.<\/li><li><strong>Reviews and Ratings<\/strong>: Check customer reviews and ratings of the Sandwich Sofa to gain insights into its performance and overall satisfaction among users.<\/li><li><a href=\"https:\/\/25home.com\/pages\/warranty-policy\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/warranty-policy\"><strong>Warranty<\/strong><\/a><strong> and <\/strong><a href=\"https:\/\/25home.com\/pages\/return-and-refund-policy\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/return-and-refund-policy\"><strong>Return Policy<\/strong><\/a>: Review the warranty terms and return policy to ensure you have appropriate coverage and options in case of any issues.<\/li><\/ul><p><strong>How should I maintain my Sandwich Sofa?<\/strong><\/p><ul><li><strong>Regular Cleaning<\/strong>: Vacuum the sofa regularly using a soft brush attachment to remove dust and debris.<\/li><li><strong>Spot Cleaning<\/strong>: Address spills promptly by gently blotting them with a clean cloth to prevent stains.<\/li><li><strong>Fluff and Rotate<\/strong>: Regularly fluff and rotate the cushions to maintain their shape and ensure even wear.<\/li><li><strong>Sun Protection<\/strong>: Avoid placing your Sandwich Sofa in direct sunlight to prevent fading and damage to the fabric.<\/li><li><strong>Rotate Cushions<\/strong>: Regularly rotate and flip the cushions to ensure even wear and maintain their shape.<\/li><li><a href=\"https:\/\/25home.com\/pages\/care-clean\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/care-clean\"><strong>Manufacturer's Guidelines<\/strong><\/a>: Follow the care instructions provided by the manufacturer for specific cleaning and maintenance advice.<\/li><\/ul><p>By considering its features, balancing important factors while making the purchase, and taking excellent care of your new piece of furniture, you may enjoy the comfort and contemporary appeal the <a href=\"https:\/\/25home.com\/blogs\/news\/25home-sandwich-sofa-satisfy-customers-whole-family\" target=\"_blank\" title=\"https:\/\/25home.com\/blogs\/news\/25home-sandwich-sofa-satisfy-customers-whole-family\">Sandwich Sofa<\/a> brings to your living room for many years to come.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16153614254307__fed6b8bf-4424-4995-ac81-844cca8fa10d-heading-1",
+        "template--16153614254307__fed6b8bf-4424-4995-ac81-844cca8fa10d-text-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "1645173779f26ecbf5",
+    "main-collection",
+    "fed6b8bf-4424-4995-ac81-844cca8fa10d"
+  ]
+}

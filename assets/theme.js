@@ -1519,7 +1519,7 @@ lazySizesConfig.expFactor = 4;
       if (!form) {
         return;
       }
-  
+      console.log(form,'formformform');
       this.form = form;
       this.wrapper = form.parentNode;
       this.location = form.dataset.location;
@@ -1731,7 +1731,9 @@ lazySizesConfig.expFactor = 4;
   
     return CartForm;
   })();
-  
+  /**
+   * endCartForm
+   */
   // Either collapsible containers all acting individually,
   // or tabs that can only have one open at a time
   theme.collapsibles = (function() {

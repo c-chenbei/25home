@@ -51,6 +51,17 @@
           "settings": {
           }
         },
+        "47ad3e88-ce91-4af7-823e-502df48a648c": {
+          "type": "countdown_timer",
+          "settings": {
+            "countdown_target_content": "<span style=\"font-weight:600\">Flash sale items can't be applied to discount code<\/span>",
+            "countdown_target_flashing": false,
+            "countdown_target_datetime": "2023\/10\/26\/15\/00\/00",
+            "countdown_target_link": "",
+            "countdown_target_bg": "rgb(222, 181, 140)",
+            "countdown_target__color": "#a81527"
+          }
+        },
         "separator": {
           "type": "separator",
           "settings": {
@@ -169,7 +180,7 @@
         "0d889340-e9c9-4824-9cd0-192bb3e9c045",
         "907cef5b-a392-4eee-a648-d1d703b05b97",
         "price",
-        "46d3d793-ffab-4baa-accb-ba3bb7f81f85",
+        "47ad3e88-ce91-4af7-823e-502df48a648c",
         "separator",
         "fd32b768-1267-4926-a44b-97e212417fdd",
         "a5510342-8f2e-49e7-8cc0-3ccae8d41652",

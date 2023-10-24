@@ -25,7 +25,7 @@
           {% for item in cart.items %}
             {%- render 'cart-item', product: item -%}
           {%- endfor -%}
-          <div class="code-hint">Flash sale items can't be applied to discount code</div>
+          {% comment %} <div class="code-hint">Flash sale items can't be applied to discount code</div> {% endcomment %}
         </div>
         {% comment %} 购物车页面结算{% endcomment %}
         <div class="cart__page-col">
@@ -133,6 +133,8 @@
   })();
 </script>
 <script>
+  //const cart_discount = JSON.parse(localStorage.getItem('asCartContents'));
+  //console.log(cart_discount,'cart_discountcart_discount')
   // 获取包含日期范围的 data-get-value 属性内容
   const expressageTypeElement = document.querySelectorAll('#cart_expressage_type');
   if (expressageTypeElement.length > 0) {
@@ -177,17 +179,27 @@
 </script>
 <style>
   @media only screen and (min-width: 601px) {
-    .code-hint{
+    {% comment %} .code-hint{
       font-weight:600;
       font-size:18px;
       margin-bottom: 10px;
+    } {% endcomment %}
+    .code-hint{
+      flex: 1 1 100%;
+      text-align: right;
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: #cb2929;
     }
   }
   @media only screen and (max-width:600px){
     .code-hint{
       font-weight:600;
       font-size: 12px;
-      margin-bottom: 10px;
+      line-height: 12px;
+      margin: 10px 0px;
+      color: #cb2929;
     }
   }
   

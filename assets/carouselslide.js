@@ -10,16 +10,18 @@ const minutes = parseInt(targetDateParts[4]);
 const seconds = parseInt(targetDateParts[5]);
 const targetDate = new Date(year, month, day, hours, minutes, seconds).getTime();
 
+
+
 function updateCountdown() {
     const now = new Date().getTime();
     const timeRemaining = targetDate - now;
-    console.log(targetDate,now,'55555555')
     if (timeRemaining <= 0) {
         window.clearTimeout(timers);
         document.getElementById("countdowns_milliseconds").textContent = '0'
     } else {
         const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
         // const days = Math.floor(totalHours / 24); // 将小时转换为天
+        // const hours = totalHours % 24; // 获取不满一天的小时数
         const hours = totalHours; // 获取不满一天的小时数
         const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
         const seconds = Math.floor((timeRemaining / 1000) % 60);
@@ -41,11 +43,11 @@ function formatmilliseconds(value) {
 }
 
 // 更新倒计时每秒钟
-const timers = setInterval(updateCountdown, 100);
+const timers = setInterval(updateCountdown, 300);
 
 // 初始化倒计时
 updateCountdown();
 {/* <span class="number" id="countdowns_days">00</span>days
-      <span class="number" id="countdowns_hours">00</span>hrs
-      <span class="number" id="countdowns_minutes">00</span>min
-      <span class="number" id="countdowns_seconds">00</span>sec */}
+    <span class="number" id="countdowns_hours">00</span>hrs
+    <span class="number" id="countdowns_minutes">00</span>min
+    <span class="number" id="countdowns_seconds">00</span>sec */}
