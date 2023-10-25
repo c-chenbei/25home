@@ -282,6 +282,12 @@
           "hide_homepage": false,
           "image_size": "wide"
         }
+      },
+      "input-countdown": {
+        "type": "input-countdown",
+        "settings": {
+          "countdown_target_datetimes": "2023\/10\/26\/15\/00\/00"
+        }
       }
     },
     "content_for_index": [

@@ -3,13 +3,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "loox-rating": {
+        "907cef5b-a392-4eee-a648-d1d703b05b97": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
             "contentSize": 16,
             "pattern": "",
@@ -22,9 +18,29 @@
             "emptyRatingWidget": false
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "separator": {
           "type": "separator",
           "settings": {
+          }
+        },
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "package",
+            "text": "For customized products, please get in touch with our customer service."
+          }
+        },
+        "7a36cbc1-0f7a-4fef-bd00-911917166768": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "text": ""
           }
         },
         "variant_picker": {
@@ -64,24 +80,35 @@
             "surface_pickup_enable": true
           }
         },
-        "a0fbc1bc-8d78-4502-94b3-1f745f71812c": {
+        "4324e561-4147-44cb-8662-bce6959f660f": {
           "type": "trust_badge",
           "settings": {
             "trust_image": "shopify:\/\/shop_images\/pay.jpg"
           }
         },
-        "description": {
-          "type": "description",
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
+          "type": "tab",
           "settings": {
-            "is_tab": false
+            "title": "Materials",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.materials.value }}"
           }
         },
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Size Chart",
             "content": "",
             "page": "{{ product.metafields.my_fields.size_chart.value }}"
+          }
+        },
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36": {
+          "type": "tab",
+          "settings": {
+            "title": "Key Features",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.key_feature.value }}"
           }
         },
         "tab": {
@@ -94,9 +121,16 @@
         },
         "contact": {
           "type": "contact",
+          "disabled": true,
           "settings": {
             "title": "Ask a question",
             "phone": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
           }
         },
         "share": {
@@ -106,19 +140,23 @@
         }
       },
       "block_order": [
+        "907cef5b-a392-4eee-a648-d1d703b05b97",
         "price",
-        "loox-rating",
         "separator",
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4",
+        "7a36cbc1-0f7a-4fef-bd00-911917166768",
         "variant_picker",
         "sales_point",
         "inventory_status",
         "7d5b8ffc-0906-4cf1-be2a-8234ac628adb",
         "buy_buttons",
-        "a0fbc1bc-8d78-4502-94b3-1f745f71812c",
-        "description",
+        "4324e561-4147-44cb-8662-bce6959f660f",
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0",
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
         "contact",
+        "description",
         "share"
       ],
       "settings": {
@@ -133,61 +171,10 @@
         "product_video_style": "muted"
       }
     },
-    "34053edd-c2b1-4f52-9ebd-eb4bd355b4ed": {
-      "type": "featured-product",
-      "blocks": {
-        "template--15867369685219__34053edd-c2b1-4f52-9ebd-eb4bd355b4ed-1677051178e372a655-0": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--15867369685219__34053edd-c2b1-4f52-9ebd-eb4bd355b4ed-1677051178e372a655-2": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_labels": true,
-            "picker_type": "button",
-            "color_swatches": false
-          }
-        },
-        "template--15867369685219__34053edd-c2b1-4f52-9ebd-eb4bd355b4ed-1677051178e372a655-3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
-        },
-        "template--15867369685219__34053edd-c2b1-4f52-9ebd-eb4bd355b4ed-1677051178e372a655-1": {
-          "type": "description",
-          "settings": {
-            "is_tab": true
-          }
-        }
-      },
-      "block_order": [
-        "template--15867369685219__34053edd-c2b1-4f52-9ebd-eb4bd355b4ed-1677051178e372a655-0",
-        "template--15867369685219__34053edd-c2b1-4f52-9ebd-eb4bd355b4ed-1677051178e372a655-2",
-        "template--15867369685219__34053edd-c2b1-4f52-9ebd-eb4bd355b4ed-1677051178e372a655-3",
-        "template--15867369685219__34053edd-c2b1-4f52-9ebd-eb4bd355b4ed-1677051178e372a655-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "featured_product": "mattress",
-        "divider": false,
-        "sku_enable": false,
-        "image_position": "left",
-        "image_size": "medium",
-        "product_zoom_enable": true,
-        "thumbnail_position": "beside",
-        "thumbnail_arrows": false,
-        "mobile_layout": "partial",
-        "enable_video_looping": true,
-        "product_video_style": "muted"
-      }
-    },
-    "loox-product-reviews-app-section": {
+    "1652410876b776606e": {
       "type": "apps",
       "blocks": {
-        "loox-product-reviews": {
+        "e13cef9d-2017-4252-8d6d-7873814950e5": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
@@ -199,7 +186,7 @@
         }
       },
       "block_order": [
-        "loox-product-reviews"
+        "e13cef9d-2017-4252-8d6d-7873814950e5"
       ],
       "settings": {
       }
@@ -209,8 +196,8 @@
       "blocks": {
         "1647505584ec46177c-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/pay_c93a6250-0380-48d2-9fff-7e8a80d4a3ab.png",
             "link": "",
             "width": "50%",
             "alignment": "top-middle"
@@ -358,111 +345,11 @@
       "type": "collection-return",
       "settings": {
       }
-    },
-    "987c96a7-a315-438f-8bce-77609c8890c2": {
-      "type": "promo-grid",
-      "blocks": {
-        "template--15867369685219__987c96a7-a315-438f-8bce-77609c8890c2-167705129666ae8602-0": {
-          "type": "advanced",
-          "disabled": true,
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        },
-        "template--15867369685219__987c96a7-a315-438f-8bce-77609c8890c2-167705129666ae8602-1": {
-          "type": "advanced",
-          "disabled": true,
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        },
-        "57b1d878-5688-4fda-93e1-f481c31c279e": {
-          "type": "product",
-          "settings": {
-            "product": "mattress",
-            "subheading": "Full\/Twin\/King\/Queen\/California King Size",
-            "heading": "25Home Medium Firm Mattress",
-            "textarea": "Our best mattress features premium coils for adaptive support and additional layers of foam for comfort. Three ergonomic zones help support your spine for the best relief. Enjoy your sweet dream on our mattress. You will be cradled in soothing comfort.",
-            "link_label": "Learn more",
-            "label": "",
-            "enable_price": false,
-            "width": "100",
-            "text_size": 65,
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "framed": false
-          }
-        },
-        "e648e150-bcb0-4b5e-b94e-89cf49bdb860": {
-          "type": "sale_collection",
-          "disabled": true,
-          "settings": {
-            "sale_collection": "mattress",
-            "top_text": "Up to",
-            "middle_text": "35% off",
-            "bottom_text": "Medium Firm Mattress",
-            "width": "100",
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "boxed": false,
-            "framed": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15867369685219__987c96a7-a315-438f-8bce-77609c8890c2-167705129666ae8602-0",
-        "template--15867369685219__987c96a7-a315-438f-8bce-77609c8890c2-167705129666ae8602-1",
-        "57b1d878-5688-4fda-93e1-f481c31c279e",
-        "e648e150-bcb0-4b5e-b94e-89cf49bdb860"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "gutter_size": 20,
-        "space_above": true,
-        "space_below": true
-      }
-    },
-    "1629746450643786911": {
-      "type": "areviews-section",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
-    "34053edd-c2b1-4f52-9ebd-eb4bd355b4ed",
-    "loox-product-reviews-app-section",
+    "1652410876b776606e",
     "16475055848fed5fca",
     "sub",
     "background-image-text",
@@ -471,8 +358,6 @@
     "testimonials",
     "product-recommendations",
     "recently-viewed",
-    "collection-return",
-    "987c96a7-a315-438f-8bce-77609c8890c2",
-    "1629746450643786911"
+    "collection-return"
   ]
 }

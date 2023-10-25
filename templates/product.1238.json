@@ -88,7 +88,7 @@
         "984a68ac-5826-4e74-84c4-701d88e7684e": {
           "type": "text",
           "settings": {
-            "text": "Piano Sofa, made with genuine leather. The modular sofa combinations resemble a piano keyboard, complete with storage side tables suitable for different room layouts. Picture cozying up on the ergonomic sofa after a long day, sinking into its plush cushions contoured to your body. The sturdy solid wood frame and springs keep their shape for over a decade of kids and pets playing. Feel the luxury of the soft leather that provides ultimate comfort."
+            "text": "After a long day, sink into the soft Leather Sofa. The high-quality genuine leather envelops you in luxury with wide armrests perfect for resting your arms. Plush down and dense foam fill the cushions to contour to your shape for maximum comfort. Feel the stress of the day melt away as you relax into the ergonomic support. Watch a movie with the family and lean into the spacious modular design built for lounging. The solid wood frame withstands years of kids and pets without deformation."
           }
         },
         "description": {
@@ -108,7 +108,6 @@
         },
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": "Size Chart",
             "content": "",
@@ -190,15 +189,45 @@
       "settings": {
         "subtitle": "",
         "title": "",
-        "text": "<p>Create a welcoming social area with the spacious seated design made for relaxing conversations.<\/p>",
+        "text": "<p>Choose your own configuration to custom fit your living space. This genuine leather sofa provides the ultimate refined relaxation.<\/p>",
         "button_label": "",
         "button_link": "",
         "image": "shopify:\/\/shop_images\/Introduction-1.jpg",
         "focal_point": "center",
         "layout": "left",
-        "height": 550,
+        "height": 750,
         "framed": true,
         "parallax": false
+      }
+    },
+    "5a1293d8-8d37-4784-ba3e-c70feb0fe813": {
+      "type": "advanced-content",
+      "blocks": {
+        "858cc6e8-1dbe-4401-ab92-a4f38ec4aff6": {
+          "type": "html",
+          "settings": {
+            "code": "<h1>\n\t<span style='color:#374151;font-family:Söhne, ui-sans-serif, system-ui, -apple-system, \"font-size:16px;background-color:#F7F7F8;'>Timeless Luxury<\/span>\n<\/h1>\n<p>\n\tThe sofa features high-quality, seamless genuine leather for an indulgent feel. Absent of seams that may weaken over time, the continuous leather retains its integrity to prevent splitting or cracking. Its high-quality composition repels scratches and scuffs, maintaining its refined patina after years of use. \n<\/p>\n<p>\n\tProviding long-lasting comfort and style, the genuine leather material offers uninterrupted luxury that is resistant to daily wear. Sink into its sensual feel knowing the leather will only look better with age.\n<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "66a30ffe-7978-4eab-824c-9ccd2ff034f3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_70feba45-5809-4799-9394-a85bd5e8cd03.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "858cc6e8-1dbe-4401-ab92-a4f38ec4aff6",
+        "66a30ffe-7978-4eab-824c-9ccd2ff034f3"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     },
     "text-and-image": {
@@ -207,12 +236,12 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_0007_6.jpg",
-        "image2": "shopify:\/\/shop_images\/1_0001_12.jpg",
+        "image": "shopify:\/\/shop_images\/1_0002_11.jpg",
+        "image2": "shopify:\/\/shop_images\/1_0007_6.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Genuine leather",
-        "text": "<p>Durable and tear-resistant, crafted with high-quality materials for extended longevity. It is breathable and offers a luxurious leather feel, and providing a skin-friendly experience.<\/p>",
+        "title": "Broad armrests",
+        "text": "<p>The expansive armrests extend outward with ample room to rest your arms in comfort. Their generous width provides a stable surface for convenient side placement of drinks, books, and more while lounging.<\/p><p>Flowing seamlessly from the sophistication of the linear back cushions, the armrests complete the tailored silhouette in style. Their rounded edges soften the visual lines for a refined modern look.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -238,7 +267,7 @@
         "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1": {
           "type": "html",
           "settings": {
-            "code": "<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<h1>\n\tFillings\n<\/h1>\n<p>\n\t<br>\n<\/p>\n<h3>\n<\/h3>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2>\n<\/h2>\n<p>\n\t<strong>cushion filling: <\/strong>Sponge<br>\n<strong> backrest filling: <\/strong>fluffy feather+Sponge\n<\/p>\n<p>\n\twhich provides the sofa with better shape retention, support, and resilience.\n<\/p>\n<p>\n\t<strong>Sturdy solid wood frame + serpentine springs<\/strong> \n<\/p>\n<p>\n\tIncredibly Sturdy: from the durable fabric to the solid woodframe, every part of our furniture is well-chosenand assembled for durability. The maximumweight capacity is 500 pounds per seat.\n<\/p>\n<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>",
+            "code": "<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<h1>\n\tFillings\n<\/h1>\n<p>\n\t<br>\n<\/p>\n<h3>\n<\/h3>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2>\n<\/h2>\n<p>\n\t<strong>cushion filling: <\/strong>High density foam+5A grade down<br>\n<strong> backrest filling: <\/strong><span>5A grade down<\/span>\n<\/p>\n<p>\n\twhich provides the sofa with better shape retention, support, and resilience.\n<\/p>\n<p>\n\t<strong>Sturdy solid wood frame + serpentine springs<\/strong> \n<\/p>\n<p>\n\tIncredibly Sturdy: from the durable fabric to the solid woodframe, every part of our furniture is well-chosenand assembled for durability. The maximumweight capacity is 500 pounds per seat.\n<\/p>\n<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>",
             "width": "50%",
             "alignment": "center"
           }
@@ -259,12 +288,12 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_0010_3.jpg",
-        "image2": "shopify:\/\/shop_images\/1_0011_2.jpg",
+        "image": "shopify:\/\/shop_images\/1_0001_12_d294723e-8f13-4656-b8a6-a537e7430851.jpg",
+        "image2": "shopify:\/\/shop_images\/1_0011_2_e344f2c5-0a1c-4eda-8058-9a92cf633d5b.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Modular design",
-        "text": "<p>The segmented design breaks the rigid block shape, bringing a sense of fullness, like a soft sponge cake. The modular sofa can be combined according to different room needs, with high adaptability. <\/p><p>The semi-enclosed armrests seamlessly integrate with the backrest in an aesthetically pleasing width, satisfying visual appeal.<\/p>",
+        "title": "Plush Comfort",
+        "text": "<p>The sofa's seat cushions brim with a plush combination of high-density foam and down filling. This optimized blend contours to your shape, cushioning pressure points with its malleable support. <\/p><p>The foam provides a firm yet softly resilient base, avoiding that sinking feeling while maintaining comfort. Quilted down implants add loft for a pillowy feel that embodies lounge-worthy luxury. Together the seat cushions provide lasting fullness that gently envelops you in sublime softness and ergonomic comfort.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -282,8 +311,8 @@
         "image2": "shopify:\/\/shop_images\/1_0005_8.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "multifunction",
-        "text": "<p>Matching with a minimalist, wooden storage coffee table, the spacious interior design lets you enjoy leisurely moments.<\/p><p>The sofa's low base height and high seat cushions give a casual, carefree feel. Paired with a rug, it provides a sense of luxury and laziness.<\/p>",
+        "title": "Easy Assembly",
+        "text": "<p>With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -384,6 +413,7 @@
     "main",
     "sub",
     "background-image-text",
+    "5a1293d8-8d37-4784-ba3e-c70feb0fe813",
     "text-and-image",
     "c1e2a991-ad27-44f4-9ed7-7bcbf1447338",
     "text-and-image2",
