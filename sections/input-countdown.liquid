@@ -30,6 +30,9 @@
   const minutes = parseInt(targetDateParts[4]);
   const seconds = parseInt(targetDateParts[5]);
   const targetDate = new Date(year, month, day, hours, minutes, seconds).getTime();
+  let detectionIndex = 0
+  
+
 
   function updateCountdown() {
       const now = new Date().getTime();
@@ -38,6 +41,7 @@
           document.getElementById("countdowns_milliseconds").textContent = '0'
           window.clearInterval(timer);
       } else {
+          detectionIndex++;
           const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
           // const days = Math.floor(totalHours / 24); // 将小时转换为天
           // const hours = totalHours % 24; // 获取不满一天的小时数
@@ -46,8 +50,42 @@
           const seconds = Math.floor((timeRemaining / 1000) % 60);
           const milliseconds = timeRemaining % 1000;
 
+          const countdowns_hours = document.querySelectorAll("#countdowns_hours")
+          const countdowns_minutes = document.querySelectorAll("#countdowns_minutes")
+          const countdowns_seconds = document.querySelectorAll("#countdowns_seconds")
+          const countdowns_milliseconds = document.querySelectorAll("#countdowns_milliseconds")
+
+          if (countdowns_hours.length == 0 && detectionIndex == 20) {
+            detectionIndex = 0
+            window.clearInterval(timer);
+            return
+          }
+
+
+          if (countdowns_hours.length > 0 && formatTimeValue(hours)) {
+            countdowns_hours.forEach(function(element) {
+              element.textContent = formatTimeValue(hours)
+            });
+          }
+          if (countdowns_minutes.length > 0 && formatTimeValue(minutes)) {
+            countdowns_minutes.forEach(function(element) {
+              element.textContent = formatTimeValue(minutes)
+            });
+          }
+          if (countdowns_seconds.length > 0 && formatTimeValue(seconds)) {
+            countdowns_seconds.forEach(function(element) {
+              element.textContent = formatTimeValue(seconds)
+            });
+          }
+          if (countdowns_milliseconds.length > 0 && formatmilliseconds(milliseconds)) {
+            countdowns_milliseconds.forEach(function(element) {
+              element.textContent = formatmilliseconds(milliseconds)
+            });
+          }
+
           // document.getElementById("countdowns_days").textContent = formatTimeValue(days);
-          if (document.getElementById("countdowns_hours") && formatTimeValue(hours)) {
+          {% comment %} if (document.getElementById("countdowns_hours") && formatTimeValue(hours)) {
+            console.log(document.getElementById("countdowns_hours"),'document.getElementById("countdowns_hours")')
             document.getElementById("countdowns_hours").textContent = formatTimeValue(hours);
           }
           if (document.getElementById("countdowns_minutes") && formatTimeValue(minutes)) {
@@ -58,7 +96,7 @@
           }
           if (document.getElementById("countdowns_milliseconds") && formatmilliseconds(milliseconds)) {
             document.getElementById("countdowns_milliseconds").textContent = formatmilliseconds(milliseconds);
-          }
+          } {% endcomment %}
       }
   }
 
