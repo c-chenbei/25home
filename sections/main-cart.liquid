@@ -176,15 +176,6 @@
       }
     })
   }
-  const priceTypeElement = document.querySelectorAll('#detection_price');
-  if (priceTypeElement.length > 0) {
-    priceTypeElement.forEach(item => {
-      const dataGetValue = item.getAttribute('data-detection_price');
-      if (dataGetValue == 0) {
-        item.style.display = 'block';
-      }
-    })
-  }
 </script>
 <style>
   @media only screen and (min-width: 601px) {
@@ -229,7 +220,6 @@
     padding: 0px 3px;
   }
   .cj_compare_at_price{
-    display:none;
     text-decoration: line-through;
     color: #cb2929;
   }

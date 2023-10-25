@@ -105,8 +105,11 @@
             {{ product.original_price | money }}
           </span>
         {% endif %}
-
-        <p id="detection_price" class="cj_compare_at_price" data-detection_price="{{product.original_price}}">{{ product.product.compare_at_price | money }}</p>
+        {% comment %} product.original_price=0 就是赠品 显示他的划线价  {% endcomment %}
+        {% if product.original_price == 0 %}
+          <p class="cj_compare_at_price" data-detection_price="{{product.original_price}}">{{ product.product.compare_at_price | money }}</p>
+        {% endif %}
+        
 
         {%- if product.line_level_discount_allocations != blank -%}
           {%- for discount_allocation in product.line_level_discount_allocations -%}
