@@ -124,9 +124,19 @@
         ],
         "settings": {
           "main_menu_link_list": "main-menu",
+          "countdown_target_show": true,
+          "countdown_target_content": "Halloween Party🎃UP TO 55% OFF🎃Secret Code:",
+          "countdown_target_link": "",
+          "countdown_target_bg": "#deb58c",
+          "countdown_target__color": "#000000",
+          "show_scroll_bar": true,
+          "scroll_bar_content": "<div>Free Shipping Sitewide | 30-Day Returns<\/div><div>Afterpay | 4 interest-free | Buy Now Pay Later→<\/div><div>Limited Flash Sale: UP TO 65% OFF | shop now→<\/div>",
+          "hander-autoplay-Speed": "3000",
+          "scroll_background": "#000000",
+          "scroll_text": "#ffffff",
           "mega_menu_images": true,
           "main_menu_alignment": "center-left",
-          "header_style": "normal",
+          "header_style": "sticky",
           "sticky_index": false,
           "sticky_collection": false,
           "announcement_compact": true,
@@ -286,7 +296,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2023\/10\/26\/15\/00\/00"
+          "countdown_target_datetimes": "2023\/10\/30\/15\/00\/00"
         }
       }
     },
@@ -427,6 +437,10 @@
           ],
           "settings": {
             "main_menu_link_list": "main-menu",
+            "countdown_target_bg": "rgb(222, 181, 140)",
+            "countdown_target__color": "#000",
+            "scroll_background": "#000",
+            "scroll_text": "#fff",
             "main_menu_alignment": "center-split",
             "header_style": "sticky",
             "sticky_index": false,
@@ -589,6 +603,10 @@
           ],
           "settings": {
             "main_menu_link_list": "main-menu",
+            "countdown_target_bg": "rgb(222, 181, 140)",
+            "countdown_target__color": "#000",
+            "scroll_background": "#000",
+            "scroll_text": "#fff",
             "mega_menu_images": true,
             "main_menu_alignment": "left-center",
             "header_style": "sticky",
@@ -824,6 +842,10 @@
           ],
           "settings": {
             "main_menu_link_list": "main-menu",
+            "countdown_target_bg": "rgb(222, 181, 140)",
+            "countdown_target__color": "#000",
+            "scroll_background": "#000",
+            "scroll_text": "#fff",
             "main_menu_alignment": "left-center",
             "header_style": "normal",
             "sticky_index": true,

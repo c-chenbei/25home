@@ -38,8 +38,11 @@
       const now = new Date().getTime();
       const timeRemaining = targetDate - now;
       if (timeRemaining <= 0) {
-          document.getElementById("countdowns_milliseconds").textContent = '0'
-          window.clearInterval(timer);
+        window.clearInterval(timer);
+        let millis = document.getElementById("#countdowns_milliseconds")
+        if (millis){
+          millis.textContent = '0'
+        }
       } else {
           detectionIndex++;
           const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));

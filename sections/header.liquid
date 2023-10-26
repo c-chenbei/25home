@@ -83,7 +83,6 @@
     color: #fff;
     height: 30px; /* 轮播容器的高度 */
     opacity: 0;
-    user-select: none;
   }
   .carousel-container {
     display: flex;
@@ -113,6 +112,7 @@
     cursor: pointer;
     font-size: 16px;
     color: #fff;
+    user-select: none;
 }
 
 .prev-button {
@@ -186,38 +186,6 @@
   <div class="header-sticky-wrapper">
     <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--sticky is-light{% endif %}">
 
-      {% comment %} 倒计时  {% endcomment %}
-      {%- if section.settings.countdown_target_show -%}
-        <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
-              <a class="hander_countdowns-text"
-                href="{{ section.settings.countdown_target_link }}"
-                style='color:{{ section.settings.countdown_target__color}}'>
-                <div class="hander_countdowns-cont">{{ section.settings.countdown_target_content }}</div> 
-                <div id='hander_countdowns' data-count-time="{{ section.settings.countdown_target_datetime}}">
-                  {% comment %} <span class="number" id="countdowns_days">00</span>day {% endcomment %}
-                  <span class="number" id="countdowns_hours">00</span>hr
-                  <span class="number" id="countdowns_minutes">00</span>min
-                  <span class="number" id="countdowns_seconds">00</span>sec
-                </div>
-              </a>
-        </div>
-      {%- endif -%}  
-
-      {% comment %} 滚动模块  {% endcomment %}
-      {%- if section.settings.show_scroll_bar -%}
-        <div class="header-text-scroll" style='background-color: {{section.settings.scroll_background}};'>
-          <div class="carousel-container" data-scroll-time="{{section.settings.hander-autoplay-Speed}}" style="color:{{section.settings.scroll_text}}">
-            <span class="prev-button"><</span>
-              {{ section.settings.scroll_bar_content }}
-            {% comment %} <div>Very long text that should be truncated with ellipsis</div>
-            <div>Another long text that should be truncated with ellipsis</div>
-            <div>Short text</div>
-            <div>More long text to test ellipsis</div> {% endcomment %}
-            <span class="next-button">></span>
-          </div>
-        </div>
-      {%- endif -%}
-
 
       {%- if overlay_header -%}
         {%- if section.settings.show_locale_selector or section.settings.show_currency_selector or section.settings.toolbar_social or section.settings.toolbar_menu != blank -%}
@@ -233,6 +201,41 @@
         class="site-header{% if settings.type_navigation_style == 'heading' %} site-header--heading-style{% endif %}"
         data-sticky="{{ sticky_header }}"
         data-overlay="{{ overlay_header }}">
+
+ {% comment %} 倒计时  {% endcomment %}
+ {%- if section.settings.countdown_target_show -%}
+  <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
+        <a class="hander_countdowns-text"
+          href="{{ section.settings.countdown_target_link }}"
+          style='color:{{ section.settings.countdown_target__color}}'>
+          <div class="hander_countdowns-cont">{{ section.settings.countdown_target_content }}</div> 
+          <div id='hander_countdowns' data-count-time="{{ section.settings.countdown_target_datetime}}">
+            {% comment %} <span class="number" id="countdowns_days">00</span>day {% endcomment %}
+            <span class="number" id="countdowns_hours">00</span>hr
+            <span class="number" id="countdowns_minutes">00</span>min
+            <span class="number" id="countdowns_seconds">00</span>sec
+          </div>
+        </a>
+  </div>
+{%- endif -%}  
+
+{% comment %} 滚动模块  {% endcomment %}
+{%- if section.settings.show_scroll_bar -%}
+  <div class="header-text-scroll" style='background-color: {{section.settings.scroll_background}};'>
+    <div class="carousel-container" data-scroll-time="{{section.settings.hander-autoplay-Speed}}" style="color:{{section.settings.scroll_text}}">
+      <span class="prev-button"><</span>
+        {{ section.settings.scroll_bar_content }}
+      {% comment %} <div>Very long text that should be truncated with ellipsis</div>
+      <div>Another long text that should be truncated with ellipsis</div>
+      <div>Short text</div>
+      <div>More long text to test ellipsis</div> {% endcomment %}
+      <span class="next-button">></span>
+    </div>
+  </div>
+{%- endif -%}
+
+
+
         <div class="page-width">
           <div
             class="header-layout header-layout--{{ section.settings.main_menu_alignment }}"
