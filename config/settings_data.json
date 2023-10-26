@@ -125,12 +125,12 @@
         "settings": {
           "main_menu_link_list": "main-menu",
           "countdown_target_show": true,
-          "countdown_target_content": "Halloween Party🎃UP TO 55% OFF🎃Secret Code:",
+          "countdown_target_content": "Halloween Party🎃UP TO 55% OFF🎃Secret Code: HALLO",
           "countdown_target_link": "",
           "countdown_target_bg": "#deb58c",
           "countdown_target__color": "#000000",
           "show_scroll_bar": true,
-          "scroll_bar_content": "<div>Free Shipping Sitewide | 30-Day Returns<\/div><div>Afterpay | 4 interest-free | Buy Now Pay Later→<\/div><div>Limited Flash Sale: UP TO 65% OFF | shop now→<\/div>",
+          "scroll_bar_content": "<div><a href=\"https:\/\/25home.com\/pages\/return-and-refund-policy\" target=\"_blank\" style=\"color: inherit\">Free Shipping Sitewide | 30-Day Returns<\/a><\/div>\n      <div><a href=\"https:\/\/25home.com\/pages\/buy-now-pay-later\" target=\"_blank\" style=\"color: inherit\">Afterpay | 4 interest-free | Buy Now Pay Later→<\/a><\/div>\n      <div><a href=\"https:\/\/25home.com\/collections\/limited-flash-sale\" target=\"_blank\" style=\"color: inherit\">Limited Flash Sale: UP TO 65% OFF | shop now→<\/a><\/div>",
           "hander-autoplay-Speed": "3000",
           "scroll_background": "#000000",
           "scroll_text": "#ffffff",
@@ -296,7 +296,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2023\/10\/30\/15\/00\/00"
+          "countdown_target_datetimes": "2023\/11\/02\/00\/00\/00"
         }
       }
     },

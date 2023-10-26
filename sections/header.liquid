@@ -123,22 +123,17 @@
     right: 0;
 }
 
-.header-wrapper .header-countdown{
-  /* background-color: rgb(222, 181, 140); */
-  color: #fff;
-  
-}
 .header-wrapper .hander_countdowns-text{
   display: flex;
   justify-content: center;
   align-items: center;
-  {% comment %} padding: 5px 10px; {% endcomment %}
+  min-height: 35px;
 }
 .header-wrapper .hander_countdowns-text .hander_countdowns-cont{
   margin-right: 10px;
 }
 
-.header-wrapper .hander_countdowns-text #hander_countdowns .number{
+.header-wrapper .hander_countdowns-text #hander_countdowns-time .number{
   display: inline-block;
   font-weight: 600;
   background-color: hsla(0,0%,100%,.5);
@@ -205,17 +200,17 @@
         {% comment %} 倒计时  {% endcomment %}
         {%- if section.settings.countdown_target_show -%}
           <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
-                <a class="hander_countdowns-text"
-                  href="{{ section.settings.countdown_target_link }}"
-                  style='color:{{ section.settings.countdown_target__color}}'>
-                  <div class="hander_countdowns-cont">{{ section.settings.countdown_target_content }}</div> 
-                  <div id='hander_countdowns' data-count-time="{{ section.settings.countdown_target_datetime}}">
-                    <span class="number" id="hander_countdowns_days">00</span>day
-                    <span class="number" id="hander_countdowns_hours">00</span>hr
-                    <span class="number" id="hander_countdowns_minutes">00</span>min
-                    {% comment %} <span class="number" id="hander_countdowns_seconds">00</span>sec {% endcomment %}
-                  </div>
-                </a>
+            <a class="hander_countdowns-text"
+              href="{{ section.settings.countdown_target_link }}"
+              style='color:{{ section.settings.countdown_target__color}}'>
+              <div class="hander_countdowns-cont">{{ section.settings.countdown_target_content }}</div> 
+              <div id='hander_countdowns-time' data-hander-time="{{ section.settings.countdown_target_datetime}}">
+                <span class="number" id="hander_countdowns_days">00</span>day
+                <span class="number" id="hander_countdowns_hours">00</span>hr
+                <span class="number" id="hander_countdowns_minutes">00</span>min
+                {% comment %} <span class="number" id="hander_countdowns_seconds">00</span>sec {% endcomment %}
+              </div>
+            </a>
           </div>
         {%- endif -%}  
 
@@ -381,13 +376,13 @@
         "label": "倒计时文案",
         "default": "Halloween Party🎃UP TO 55% OFF🎃Secret Code: "
       },
-      /*{
+      {
         "type": "text",
         "label": "倒计时目标日期时间",
         "id": "countdown_target_datetime",
-        "default": "2023/10/10/16/30/30",
+        "default": "2023/10/28/00/00/00",
         "info": "请输入倒计时的目标日期和时间，格式为 'YYYY/MM/DD/HH/mm/ss'。"
-      },*/
+      },
       {
         "type": "url",
         "id": "countdown_target_link",
@@ -683,96 +678,73 @@
 {% endschema %}
 
 <script>
-const element2 = document.getElementById("input-countdowns");
-console.log(element2,'elementelement')
-{% comment %} console.log(element,'targetDateStrtargetDateStr') {% endcomment %}
-const targetDateStr2 = element2.getAttribute("data-input-countdowns");
-{% comment %} console.log(targetDateStr,'targetDateStrtargetDateStr') {% endcomment %}
-const targetDateParts2 = targetDateStr.split("/");
-const year2 = parseInt(targetDateParts[0]);
-const month2 = parseInt(targetDateParts[1]) - 1; // 月份从 0 开始
-const day2 = parseInt(targetDateParts[2]);
-const hours2 = parseInt(targetDateParts[3]);
-const minutes2 = parseInt(targetDateParts[4]);
-const seconds2 = parseInt(targetDateParts[5]);
+const element2 = document.getElementById("hander_countdowns-time");
+const targetDateStr2 = element2.getAttribute("data-hander-time");
+const targetDateParts2 = targetDateStr2.split("/");
+const year2 = parseInt(targetDateParts2[0]);
+const month2 = parseInt(targetDateParts2[1]) - 1; // 月份从 0 开始
+const day2 = parseInt(targetDateParts2[2]);
+const hours2 = parseInt(targetDateParts2[3]);
+const minutes2 = parseInt(targetDateParts2[4]);
+const seconds2 = parseInt(targetDateParts2[5]);
 const targetDate2 = new Date(year2, month2, day2, hours2, minutes2, seconds2).getTime();
 let detectionIndex2 = 0
 
 
 
-function updateCountdown() {
-    const now = new Date().getTime();
-    const timeRemaining = targetDate - now;
-    if (timeRemaining <= 0) {
-      window.clearInterval(timer);
-      {% comment %} let millis = document.getElementById("#countdowns_milliseconds")
+function updateCountdown2() {
+    const now2 = new Date().getTime();
+    const timeRemaining2 = targetDate2 - now2;
+    if (timeRemaining2 <= 0) {
+      window.clearInterval(timer2);
+      let millis = document.getElementById("hander_countdowns_minutes")
       if (millis){
-        millis.textContent = '0'
-      } {% endcomment %}
+        millis.textContent = '00'
+      }
     } else {
         detectionIndex2++;
-        const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
+        const totalHours2 = Math.floor(timeRemaining2 / (1000 * 60 * 60));
 
         // 显示days 就用days和hourss
-        const days = Math.floor(totalHours / 24); // 将小时转换为天
-        const hours = totalHours % 24; // 获取不满一天的小时数
-        // 不显示days 就用hours = totalHours
-        {% comment %} const hours = totalHours; {% endcomment %}
+        const days2 = Math.floor(totalHours2 / 24); // 将小时转换为天
+        const hours2 = totalHours2 % 24; // 获取不满一天的小时数
+        const minutes2 = Math.floor((timeRemaining2 / (1000 * 60)) % 60);
+      
+        const countdowns_days2 = document.querySelectorAll("#hander_countdowns_days")
+        const countdowns_hours2 = document.querySelectorAll("#hander_countdowns_hours")
+        const countdowns_minutes2 = document.querySelectorAll("#hander_countdowns_minutes")
 
-        const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
-        const seconds = Math.floor((timeRemaining / 1000) % 60);
-        const milliseconds = timeRemaining % 1000;
-
-        const countdowns_days = document.querySelectorAll("#hander_countdowns_days")
-        const countdowns_hours = document.querySelectorAll("#hander_countdowns_hours")
-        const countdowns_minutes = document.querySelectorAll("#hander_countdowns_minutes")
-        {% comment %} const countdowns_seconds = document.querySelectorAll("#hander_countdowns_seconds") {% endcomment %}
-        {% comment %} const countdowns_milliseconds = document.querySelectorAll("#countdowns_milliseconds") {% endcomment %}
-
-        if (countdowns_days.length == 0 && detectionIndex2 == 20) {
+        if (countdowns_days2.length > 0 && detectionIndex2 == 20) {
           detectionIndex2 = 0
           window.clearInterval(timer);
           return
         }
 
-        if (countdowns_days.length > 0 && formatTimeValue(days)) {
-          countdowns_days.forEach(function(element) {
-            element.textContent = formatTimeValue(days)
+        if (countdowns_days2.length > 0 && formatTimeValue(days2)) {
+          countdowns_days2.forEach(function(element2) {
+            element2.textContent = formatTimeValue2(days2)
           });
         }
-        if (countdowns_hours.length > 0 && formatTimeValue(hours)) {
-          countdowns_hours.forEach(function(element) {
-            element.textContent = formatTimeValue(hours)
+        if (countdowns_hours2.length > 0 && formatTimeValue(hours2)) {
+          countdowns_hours2.forEach(function(element2) {
+            element2.textContent = formatTimeValue2(hours2)
           });
         }
-        if (countdowns_minutes.length > 0 && formatTimeValue(minutes)) {
-          countdowns_minutes.forEach(function(element) {
-            element.textContent = formatTimeValue(minutes)
+        if (countdowns_minutes2.length > 0 && formatTimeValue(minutes2)) {
+          countdowns_minutes2.forEach(function(element2) {
+            element2.textContent = formatTimeValue2(minutes2)
           });
         }
-        {% comment %} if (countdowns_seconds.length > 0 && formatTimeValue(seconds)) {
-          countdowns_seconds.forEach(function(element) {
-            element.textContent = formatTimeValue(seconds)
-          });
-        } {% endcomment %}
-        {% comment %} if (countdowns_milliseconds.length > 0 && formatmilliseconds(milliseconds)) {
-          countdowns_milliseconds.forEach(function(element) {
-            element.textContent = formatmilliseconds(milliseconds)
-          });
-        } {% endcomment %}
     }
 }
 
-function formatTimeValue(value) {
+function formatTimeValue2(value) {
     return value < 10 ? "0" + value : value;
-}
-function formatmilliseconds(value) {
-    return value < 10 ? value : parseInt(value.toString()[0]);
 }
 
 // 更新倒计时每秒钟
-const timer2 = setInterval(updateCountdown, 10000);
-
+const timer2 = setInterval(updateCountdown2, 10000);
+updateCountdown2()
 
 
   const textscroll = document.querySelector('.header-text-scroll');
