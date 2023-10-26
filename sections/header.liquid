@@ -202,37 +202,37 @@
         data-sticky="{{ sticky_header }}"
         data-overlay="{{ overlay_header }}">
 
- {% comment %} 倒计时  {% endcomment %}
- {%- if section.settings.countdown_target_show -%}
-  <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
-        <a class="hander_countdowns-text"
-          href="{{ section.settings.countdown_target_link }}"
-          style='color:{{ section.settings.countdown_target__color}}'>
-          <div class="hander_countdowns-cont">{{ section.settings.countdown_target_content }}</div> 
-          <div id='hander_countdowns' data-count-time="{{ section.settings.countdown_target_datetime}}">
-            {% comment %} <span class="number" id="countdowns_days">00</span>day {% endcomment %}
-            <span class="number" id="countdowns_hours">00</span>hr
-            <span class="number" id="countdowns_minutes">00</span>min
-            <span class="number" id="countdowns_seconds">00</span>sec
+        {% comment %} 倒计时  {% endcomment %}
+        {%- if section.settings.countdown_target_show -%}
+          <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
+                <a class="hander_countdowns-text"
+                  href="{{ section.settings.countdown_target_link }}"
+                  style='color:{{ section.settings.countdown_target__color}}'>
+                  <div class="hander_countdowns-cont">{{ section.settings.countdown_target_content }}</div> 
+                  <div id='hander_countdowns' data-count-time="{{ section.settings.countdown_target_datetime}}">
+                    <span class="number" id="hander_countdowns_days">00</span>day
+                    <span class="number" id="hander_countdowns_hours">00</span>hr
+                    <span class="number" id="hander_countdowns_minutes">00</span>min
+                    {% comment %} <span class="number" id="hander_countdowns_seconds">00</span>sec {% endcomment %}
+                  </div>
+                </a>
           </div>
-        </a>
-  </div>
-{%- endif -%}  
+        {%- endif -%}  
 
-{% comment %} 滚动模块  {% endcomment %}
-{%- if section.settings.show_scroll_bar -%}
-  <div class="header-text-scroll" style='background-color: {{section.settings.scroll_background}};'>
-    <div class="carousel-container" data-scroll-time="{{section.settings.hander-autoplay-Speed}}" style="color:{{section.settings.scroll_text}}">
-      <span class="prev-button"><</span>
-        {{ section.settings.scroll_bar_content }}
-      {% comment %} <div>Very long text that should be truncated with ellipsis</div>
-      <div>Another long text that should be truncated with ellipsis</div>
-      <div>Short text</div>
-      <div>More long text to test ellipsis</div> {% endcomment %}
-      <span class="next-button">></span>
-    </div>
-  </div>
-{%- endif -%}
+        {% comment %} 滚动模块  {% endcomment %}
+        {%- if section.settings.show_scroll_bar -%}
+          <div class="header-text-scroll" style='background-color: {{section.settings.scroll_background}};'>
+            <div class="carousel-container" data-scroll-time="{{section.settings.hander-autoplay-Speed}}" style="color:{{section.settings.scroll_text}}">
+              <span class="prev-button"><</span>
+                {{ section.settings.scroll_bar_content }}
+              {% comment %} <div>Very long text that should be truncated with ellipsis</div>
+              <div>Another long text that should be truncated with ellipsis</div>
+              <div>Short text</div>
+              <div>More long text to test ellipsis</div> {% endcomment %}
+              <span class="next-button">></span>
+            </div>
+          </div>
+        {%- endif -%}
 
 
 
@@ -683,6 +683,98 @@
 {% endschema %}
 
 <script>
+const element2 = document.getElementById("input-countdowns");
+console.log(element2,'elementelement')
+{% comment %} console.log(element,'targetDateStrtargetDateStr') {% endcomment %}
+const targetDateStr2 = element2.getAttribute("data-input-countdowns");
+{% comment %} console.log(targetDateStr,'targetDateStrtargetDateStr') {% endcomment %}
+const targetDateParts2 = targetDateStr.split("/");
+const year2 = parseInt(targetDateParts[0]);
+const month2 = parseInt(targetDateParts[1]) - 1; // 月份从 0 开始
+const day2 = parseInt(targetDateParts[2]);
+const hours2 = parseInt(targetDateParts[3]);
+const minutes2 = parseInt(targetDateParts[4]);
+const seconds2 = parseInt(targetDateParts[5]);
+const targetDate2 = new Date(year2, month2, day2, hours2, minutes2, seconds2).getTime();
+let detectionIndex2 = 0
+
+
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const timeRemaining = targetDate - now;
+    if (timeRemaining <= 0) {
+      window.clearInterval(timer);
+      {% comment %} let millis = document.getElementById("#countdowns_milliseconds")
+      if (millis){
+        millis.textContent = '0'
+      } {% endcomment %}
+    } else {
+        detectionIndex2++;
+        const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
+
+        // 显示days 就用days和hourss
+        const days = Math.floor(totalHours / 24); // 将小时转换为天
+        const hours = totalHours % 24; // 获取不满一天的小时数
+        // 不显示days 就用hours = totalHours
+        {% comment %} const hours = totalHours; {% endcomment %}
+
+        const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
+        const seconds = Math.floor((timeRemaining / 1000) % 60);
+        const milliseconds = timeRemaining % 1000;
+
+        const countdowns_days = document.querySelectorAll("#hander_countdowns_days")
+        const countdowns_hours = document.querySelectorAll("#hander_countdowns_hours")
+        const countdowns_minutes = document.querySelectorAll("#hander_countdowns_minutes")
+        {% comment %} const countdowns_seconds = document.querySelectorAll("#hander_countdowns_seconds") {% endcomment %}
+        {% comment %} const countdowns_milliseconds = document.querySelectorAll("#countdowns_milliseconds") {% endcomment %}
+
+        if (countdowns_days.length == 0 && detectionIndex2 == 20) {
+          detectionIndex2 = 0
+          window.clearInterval(timer);
+          return
+        }
+
+        if (countdowns_days.length > 0 && formatTimeValue(days)) {
+          countdowns_days.forEach(function(element) {
+            element.textContent = formatTimeValue(days)
+          });
+        }
+        if (countdowns_hours.length > 0 && formatTimeValue(hours)) {
+          countdowns_hours.forEach(function(element) {
+            element.textContent = formatTimeValue(hours)
+          });
+        }
+        if (countdowns_minutes.length > 0 && formatTimeValue(minutes)) {
+          countdowns_minutes.forEach(function(element) {
+            element.textContent = formatTimeValue(minutes)
+          });
+        }
+        {% comment %} if (countdowns_seconds.length > 0 && formatTimeValue(seconds)) {
+          countdowns_seconds.forEach(function(element) {
+            element.textContent = formatTimeValue(seconds)
+          });
+        } {% endcomment %}
+        {% comment %} if (countdowns_milliseconds.length > 0 && formatmilliseconds(milliseconds)) {
+          countdowns_milliseconds.forEach(function(element) {
+            element.textContent = formatmilliseconds(milliseconds)
+          });
+        } {% endcomment %}
+    }
+}
+
+function formatTimeValue(value) {
+    return value < 10 ? "0" + value : value;
+}
+function formatmilliseconds(value) {
+    return value < 10 ? value : parseInt(value.toString()[0]);
+}
+
+// 更新倒计时每秒钟
+const timer2 = setInterval(updateCountdown, 10000);
+
+
+
   const textscroll = document.querySelector('.header-text-scroll');
   const container = document.querySelector('.carousel-container');
   const scrollTime = container.getAttribute("data-scroll-time");
