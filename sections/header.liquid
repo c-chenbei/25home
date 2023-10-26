@@ -82,7 +82,7 @@
     background-color: #000;
     color: #fff;
     height: 30px; /* 轮播容器的高度 */
-    display: none;
+    opacity: 0;
     user-select: none;
   }
   .carousel-container {
@@ -110,7 +110,6 @@
 
 .prev-button,
 .next-button {
-    border: none;
     cursor: pointer;
     font-size: 16px;
     color: #fff;
@@ -142,7 +141,7 @@
 .header-wrapper .hander_countdowns-text #hander_countdowns .number{
   display: inline-block;
   font-weight: 600;
-  background-color: #fff;
+  background-color: hsla(0,0%,100%,.5);
   border-radius: 3px;
   line-height: 18px;
   width: 25px;
@@ -156,7 +155,8 @@
       width: 90%;
   }
   .carousel-container div {
-      padding: 0px 40px;
+      padding: 0px 15px;
+      font-size: 11px;
   }
   .header-wrapper .hander_countdowns-text{
     display: block;
@@ -187,7 +187,7 @@
     <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--sticky is-light{% endif %}">
 
       {% comment %} 倒计时  {% endcomment %}
-      {% if section.settings.countdown_target_show %}
+      {%- if section.settings.countdown_target_show -%}
         <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
               <a class="hander_countdowns-text"
                 href="{{ section.settings.countdown_target_link }}"
@@ -201,10 +201,10 @@
                 </div>
               </a>
         </div>
-      {% endif %}  
+      {%- endif -%}  
 
       {% comment %} 滚动模块  {% endcomment %}
-      {% if section.settings.show_scroll_bar %}
+      {%- if section.settings.show_scroll_bar -%}
         <div class="header-text-scroll" style='background-color: {{section.settings.scroll_background}};'>
           <div class="carousel-container" data-scroll-time="{{section.settings.hander-autoplay-Speed}}" style="color:{{section.settings.scroll_text}}">
             <span class="prev-button"><</span>
@@ -216,7 +216,7 @@
             <span class="next-button">></span>
           </div>
         </div>
-      {% endif %}
+      {%- endif -%}
 
 
       {%- if overlay_header -%}
@@ -370,13 +370,13 @@
         "type": "checkbox",
         "label": "倒计时",
         "id": "countdown_target_show",
-        "default": false
+        "default": true
       },
       {
         "type": "html",
         "id": "countdown_target_content",
         "label": "倒计时文案",
-        "default": "<b>Four-Day Clearance Flash Sale</b> | Take an Extra 5% Off All Clearance Furniture"
+        "default": "Halloween Party🎃UP TO 55% OFF🎃Secret Code: "
       },
       /*{
         "type": "text",
@@ -410,19 +410,19 @@
         "type": "checkbox",
         "id": "show_scroll_bar",
         "label": "显示滚动条模块",
-        "default": false
+        "default": true
       },
       {
         "type": "html",
         "id": "scroll_bar_content",
         "label": "滚动条内容",
-        "default": "<div>1</div><div>2</div><div>3</div>"
+        "default": "<div>Free Shipping Sitewide | 30-Day Returns</div><div>Afterpay | 4 interest-free | Buy Now Pay Later→</div><div>Limited Flash Sale: UP TO 65% OFF | shop now→</div>"
       },
       {
         "type": "select",
         "id": "hander-autoplay-Speed",
         "label": "轮播速度",
-        "default": "2000",
+        "default": "3000",
         "options": [
           {
             "value": "1000",
@@ -681,60 +681,58 @@
 
 <script>
   const textscroll = document.querySelector('.header-text-scroll');
-  if(textscroll != null) {
-    const container = document.querySelector('.carousel-container');
-    const scrollTime = container.getAttribute("data-scroll-time");
-    const prevButton = container.querySelector('.prev-button');
-    const nextButton = container.querySelector('.next-button');
-    const slides = container.querySelectorAll('div');
-    let currentSlide = 0;
-    let autoSlideInterval;
-    let delayTimeout;
-  
-    function nextSlide() {
-        slides[currentSlide].style.display = 'none';
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].style.display = 'block';
-    }
-  
-    function prevSlide() {
-        slides[currentSlide].style.display = 'none';
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        slides[currentSlide].style.display = 'block';
-    }
-  
-    function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, scrollTime); // 自动轮播每2秒切换一次
-    }
-  
-    function stopAutoSlide() {
-        clearInterval(autoSlideInterval);
-    }
-  
-    prevButton.addEventListener('click', function() {
-        prevSlide();
-        stopAutoSlide();
-        if (delayTimeout) {
-          clearTimeout(delayTimeout);
-        }
-        delayTimeout = setTimeout(startAutoSlide, scrollTime);
-    });
-  
-    nextButton.addEventListener('click', function() {
-        nextSlide();
-        stopAutoSlide();
-        if (delayTimeout) {
-          clearTimeout(delayTimeout);
-        }
-        delayTimeout = setTimeout(startAutoSlide, scrollTime);
-    });
-  
-    delayTimeout = setTimeout(function() {
-      textscroll.style.display = 'block';
-      slides[0].style.display = 'block';
-      if (slides.length > 1) {
-        startAutoSlide();
-      }
-    }, 1000);
+  const container = document.querySelector('.carousel-container');
+  const scrollTime = container.getAttribute("data-scroll-time");
+  const prevButton = container.querySelector('.prev-button');
+  const nextButton = container.querySelector('.next-button');
+  const slides = container.querySelectorAll('div');
+  let currentSlide = 0;
+  let autoSlideInterval;
+  let delayTimeout;
+
+  function nextSlide() {
+      slides[currentSlide].style.display = 'none';
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].style.display = 'block';
   }
+
+  function prevSlide() {
+      slides[currentSlide].style.display = 'none';
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      slides[currentSlide].style.display = 'block';
+  }
+
+  function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, scrollTime); // 自动轮播每2秒切换一次
+  }
+
+  function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+  }
+
+  prevButton.addEventListener('click', function() {
+      prevSlide();
+      stopAutoSlide();
+      if (delayTimeout) {
+        clearTimeout(delayTimeout);
+      }
+      delayTimeout = setTimeout(startAutoSlide, scrollTime);
+  });
+
+  nextButton.addEventListener('click', function() {
+      nextSlide();
+      stopAutoSlide();
+      if (delayTimeout) {
+        clearTimeout(delayTimeout);
+      }
+      delayTimeout = setTimeout(startAutoSlide, scrollTime);
+  });
+
+  delayTimeout = setTimeout(function() {
+    textscroll.style.opacity = 1;
+    slides[0].style.display = 'block';
+    if (slides.length > 1) {
+      startAutoSlide();
+    }
+  }, 1000);
 </script>
