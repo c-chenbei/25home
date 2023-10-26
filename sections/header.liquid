@@ -77,6 +77,95 @@
       border-bottom: 1px solid;
     }
   {%- endif -%}
+
+  .header-text-scroll{
+    background-color: #000;
+    color: #fff;
+    height: 30px; /* 轮播容器的高度 */
+    display: none;
+    user-select: none;
+  }
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 70%; /* 在桌面端显示时宽度为70% */
+    height: 100%;
+    margin: 0 auto; /* 水平居中 */
+    align-items: center;
+}
+
+.carousel-container div {
+    width: 100%; /* 轮播项的宽度为100%，适用于移动端 */
+    text-align: center;
+    display: none; /* 初始隐藏所有轮播项 */
+    white-space: nowrap; /* 防止内容换行 */
+    overflow: hidden; /* 隐藏溢出内容 */
+    text-overflow: ellipsis; /* 显示省略号 */
+    padding: 0px 100px;
+}
+
+{% comment %} .carousel-container div:first-child {
+    display: block; /* 初始只显示第一个轮播项 */
+} {% endcomment %}
+
+.prev-button,
+.next-button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+.header-wrapper .header-countdown{
+  /* background-color: rgb(222, 181, 140); */
+  color: #fff;
+  
+}
+.header-wrapper .hander_countdowns-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  {% comment %} padding: 5px 10px; {% endcomment %}
+}
+.header-wrapper .hander_countdowns-text .hander_countdowns-cont{
+  margin-right: 10px;
+}
+
+.header-wrapper .hander_countdowns-text #hander_countdowns .number{
+  display: inline-block;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 3px;
+  line-height: 18px;
+  width: 25px;
+  height: 18px;
+  text-align: center;
+  margin-right: 3px;
+}
+@media (max-width: 768px) {
+  /* 在移动端（宽度小于等于768px）设置容器宽度为100% */
+  .carousel-container {
+      width: 90%;
+  }
+  .carousel-container div {
+      padding: 0px 40px;
+  }
+  .header-wrapper .hander_countdowns-text{
+    display: block;
+    text-align: center;
+    padding: 3px 5px;
+    line-height: 17px;
+    font-size: 12px;
+  }
+}
 </style>
 
 <div data-section-id="{{ section.id }}" data-section-type="header">
@@ -97,8 +186,37 @@
   <div class="header-sticky-wrapper">
     <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--sticky is-light{% endif %}">
 
+      {% comment %} 倒计时  {% endcomment %}
+      {% if section.settings.countdown_target_show %}
+        <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
+              <a class="hander_countdowns-text"
+                href="{{ section.settings.countdown_target_link }}"
+                style='color:{{ section.settings.countdown_target__color}}'>
+                <div class="hander_countdowns-cont">{{ section.settings.countdown_target_content }}</div> 
+                <div id='hander_countdowns' data-count-time="{{ section.settings.countdown_target_datetime}}">
+                  {% comment %} <span class="number" id="countdowns_days">00</span>day {% endcomment %}
+                  <span class="number" id="countdowns_hours">00</span>hr
+                  <span class="number" id="countdowns_minutes">00</span>min
+                  <span class="number" id="countdowns_seconds">00</span>sec
+                </div>
+              </a>
+        </div>
+      {% endif %}  
 
-      {% comment %} <div>12345678999999999</div> {% endcomment %}
+      {% comment %} 滚动模块  {% endcomment %}
+      {% if section.settings.show_scroll_bar %}
+        <div class="header-text-scroll" style='background-color: {{section.settings.scroll_background}};'>
+          <div class="carousel-container" data-scroll-time="{{section.settings.hander-autoplay-Speed}}" style="color:{{section.settings.scroll_text}}">
+            <span class="prev-button"><</span>
+              {{ section.settings.scroll_bar_content }}
+            {% comment %} <div>Very long text that should be truncated with ellipsis</div>
+            <div>Another long text that should be truncated with ellipsis</div>
+            <div>Short text</div>
+            <div>More long text to test ellipsis</div> {% endcomment %}
+            <span class="next-button">></span>
+          </div>
+        </div>
+      {% endif %}
 
 
       {%- if overlay_header -%}
@@ -243,6 +361,122 @@
         "id": "main_menu_link_list",
         "label": "Navigation",
         "default": "main-menu"
+      },
+      {
+        "type": "paragraph",
+        "content": " ----- 倒计时 ----- "
+      },
+      {
+        "type": "checkbox",
+        "label": "倒计时",
+        "id": "countdown_target_show",
+        "default": false
+      },
+      {
+        "type": "html",
+        "id": "countdown_target_content",
+        "label": "倒计时文案",
+        "default": "<b>Four-Day Clearance Flash Sale</b> | Take an Extra 5% Off All Clearance Furniture"
+      },
+      /*{
+        "type": "text",
+        "label": "倒计时目标日期时间",
+        "id": "countdown_target_datetime",
+        "default": "2023/10/10/16/30/30",
+        "info": "请输入倒计时的目标日期和时间，格式为 'YYYY/MM/DD/HH/mm/ss'。"
+      },*/
+      {
+        "type": "url",
+        "id": "countdown_target_link",
+        "label": "添加连接"
+      },
+      {
+        "type": "color",
+        "label": "背景颜色",
+        "id": "countdown_target_bg",
+        "default": "rgb(222, 181, 140)"
+      },
+      {
+        "type": "color",
+        "id": "countdown_target__color",
+        "label": "文字颜色",
+        "default": "#000"
+      }, 
+      {
+        "type": "paragraph",
+        "content": " ----- 滚动条 ----- "
+      },
+      {
+        "type": "checkbox",
+        "id": "show_scroll_bar",
+        "label": "显示滚动条模块",
+        "default": false
+      },
+      {
+        "type": "html",
+        "id": "scroll_bar_content",
+        "label": "滚动条内容",
+        "default": "<div>1</div><div>2</div><div>3</div>"
+      },
+      {
+        "type": "select",
+        "id": "hander-autoplay-Speed",
+        "label": "轮播速度",
+        "default": "2000",
+        "options": [
+          {
+            "value": "1000",
+            "label": "1s"
+          },
+          {
+            "value": "2000",
+            "label": "2s"
+          },
+          {
+            "value": "3000",
+            "label": "3s"
+          },
+          {
+            "value": "4000",
+            "label": "4s"
+          },
+          {
+            "value": "5000",
+            "label": "5s"
+          },
+          {
+            "value": "6000",
+            "label": "6s"
+          },
+          {
+            "value": "7000",
+            "label": "7s"
+          },
+          {
+            "value": "8000",
+            "label": "8s"
+          },
+          {
+            "value": "9000",
+            "label": "9s"
+          },
+          {
+            "value": "10000",
+            "label": "10s"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "id": "scroll_background",
+        "label": "背景颜色",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "scroll_text",
+        "label": "文字颜色",
+        "default": "#fff"
       },
       {
         "type": "checkbox",
@@ -444,3 +678,63 @@
     }
   }
 {% endschema %}
+
+<script>
+  const textscroll = document.querySelector('.header-text-scroll');
+  if(textscroll != null) {
+    const container = document.querySelector('.carousel-container');
+    const scrollTime = container.getAttribute("data-scroll-time");
+    const prevButton = container.querySelector('.prev-button');
+    const nextButton = container.querySelector('.next-button');
+    const slides = container.querySelectorAll('div');
+    let currentSlide = 0;
+    let autoSlideInterval;
+    let delayTimeout;
+  
+    function nextSlide() {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.display = 'block';
+    }
+  
+    function prevSlide() {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        slides[currentSlide].style.display = 'block';
+    }
+  
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, scrollTime); // 自动轮播每2秒切换一次
+    }
+  
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+  
+    prevButton.addEventListener('click', function() {
+        prevSlide();
+        stopAutoSlide();
+        if (delayTimeout) {
+          clearTimeout(delayTimeout);
+        }
+        delayTimeout = setTimeout(startAutoSlide, scrollTime);
+    });
+  
+    nextButton.addEventListener('click', function() {
+        nextSlide();
+        stopAutoSlide();
+        if (delayTimeout) {
+          clearTimeout(delayTimeout);
+        }
+        delayTimeout = setTimeout(startAutoSlide, scrollTime);
+    });
+  
+    delayTimeout = setTimeout(function() {
+      textscroll.style.display = 'block';
+      slides[0].style.display = 'block';
+      if (slides.length > 1) {
+        startAutoSlide();
+      }
+    }, 1000);
+  }
+</script>

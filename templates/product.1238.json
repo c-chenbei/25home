@@ -37,6 +37,7 @@
         },
         "7a36cbc1-0f7a-4fef-bd00-911917166768": {
           "type": "sales_point",
+          "disabled": true,
           "settings": {
             "icon": "leaf",
             "text": ""
@@ -88,7 +89,7 @@
         "984a68ac-5826-4e74-84c4-701d88e7684e": {
           "type": "text",
           "settings": {
-            "text": "After a long day, sink into the soft Leather Sofa. The high-quality genuine leather envelops you in luxury with wide armrests perfect for resting your arms. Plush down and dense foam fill the cushions to contour to your shape for maximum comfort. Feel the stress of the day melt away as you relax into the ergonomic support. Watch a movie with the family and lean into the spacious modular design built for lounging. The solid wood frame withstands years of kids and pets without deformation."
+            "text": "After a long day, sink into the soft leather modular sectional. The high-quality genuine leather envelops you in luxury with wide armrests perfect for resting your arms. Plush down and dense foam fill the cushions to contour to your shape for maximum comfort. Feel the stress of the day melt away as you relax into the ergonomic support. Watch a movie with the family and lean into the spacious modular design built for lounging. The solid wood frame withstands years of kids and pets without deformation."
           }
         },
         "description": {
@@ -108,6 +109,7 @@
         },
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Size Chart",
             "content": "",
@@ -189,7 +191,7 @@
       "settings": {
         "subtitle": "",
         "title": "",
-        "text": "<p>Choose your own configuration to custom fit your living space. This genuine leather sofa provides the ultimate refined relaxation.<\/p>",
+        "text": "<p>Choose your own configuration to custom fit your living space. This genuine leather modular sectional provides the ultimate refined relaxation.<\/p>",
         "button_label": "",
         "button_link": "",
         "image": "shopify:\/\/shop_images\/Introduction-1.jpg",
@@ -267,7 +269,7 @@
         "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1": {
           "type": "html",
           "settings": {
-            "code": "<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<h1>\n\tFillings\n<\/h1>\n<p>\n\t<br>\n<\/p>\n<h3>\n<\/h3>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2>\n<\/h2>\n<p>\n\t<strong>cushion filling: <\/strong>High density foam+5A grade down<br>\n<strong> backrest filling: <\/strong><span>5A grade down<\/span>\n<\/p>\n<p>\n\twhich provides the sofa with better shape retention, support, and resilience.\n<\/p>\n<p>\n\t<strong>Sturdy solid wood frame + serpentine springs<\/strong> \n<\/p>\n<p>\n\tIncredibly Sturdy: from the durable fabric to the solid woodframe, every part of our furniture is well-chosenand assembled for durability. The maximumweight capacity is 500 pounds per seat.\n<\/p>\n<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>",
+            "code": "<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<h1>\n\tFillings\n<\/h1>\n<p>\n\t<br>\n<\/p>\n<h3>\n<\/h3>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2>\n<\/h2>\n<p>\n\t<strong>cushion filling: <\/strong>High density foam+5A grade down<br>\n<strong> backrest filling: <\/strong><span>5A grade down<\/span> \n<\/p>\n<p>\n\twhich provides the sectional with better shape retention, support, and resilience.\n<\/p>\n<p>\n\t<strong>Sturdy solid wood frame + serpentine springs<\/strong> \n<\/p>\n<p>\n\tIncredibly Sturdy: from the durable fabric to the solid wood frame, every part of our furniture is well-chosen and assembled for durability. The maximum weight capacity is 500 pounds per seat.\n<\/p>\n<p>\n\t<br>\n<\/p>",
             "width": "50%",
             "alignment": "center"
           }
@@ -293,7 +295,7 @@
         "image_width": 700,
         "subtitle": "",
         "title": "Plush Comfort",
-        "text": "<p>The sofa's seat cushions brim with a plush combination of high-density foam and down filling. This optimized blend contours to your shape, cushioning pressure points with its malleable support. <\/p><p>The foam provides a firm yet softly resilient base, avoiding that sinking feeling while maintaining comfort. Quilted down implants add loft for a pillowy feel that embodies lounge-worthy luxury. Together the seat cushions provide lasting fullness that gently envelops you in sublime softness and ergonomic comfort.<\/p>",
+        "text": "<p>The sectional's seat cushions brim with a plush combination of high-density foam and down filling. This optimized blend contours to your shape, cushioning pressure points with its malleable support. <\/p><p>The foam provides a firm yet softly resilient base, avoiding that sinking feeling while maintaining comfort. Quilted down implants add loft for a pillow feel that embodies lounge-worthy luxury. Together the seat cushions provide lasting fullness that gently envelops you in sublime softness and ergonomic comfort.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",

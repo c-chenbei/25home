@@ -43,13 +43,18 @@
       } else {
           detectionIndex++;
           const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
-          // const days = Math.floor(totalHours / 24); // 将小时转换为天
-          // const hours = totalHours % 24; // 获取不满一天的小时数
-          const hours = totalHours; // 获取不满一天的小时数
+
+          // 显示days 就用days和hourss
+          const days = Math.floor(totalHours / 24); // 将小时转换为天
+          const hourss = totalHours % 24; // 获取不满一天的小时数
+          // 不显示days 就用hours = totalHours
+          const hours = totalHours;
+
           const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
           const seconds = Math.floor((timeRemaining / 1000) % 60);
           const milliseconds = timeRemaining % 1000;
 
+          //const countdowns_days = document.querySelectorAll("#countdowns_days")
           const countdowns_hours = document.querySelectorAll("#countdowns_hours")
           const countdowns_minutes = document.querySelectorAll("#countdowns_minutes")
           const countdowns_seconds = document.querySelectorAll("#countdowns_seconds")
