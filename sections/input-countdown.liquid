@@ -47,10 +47,10 @@
           detectionIndex++;
           const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
 
-          // 显示days 就用days和hourss
-          const days = Math.floor(totalHours / 24); // 将小时转换为天
-          const hourss = totalHours % 24; // 获取不满一天的小时数
-          // 不显示days 就用hours = totalHours
+          // // 显示days 就用days和hourss
+          {% comment %} const days = Math.floor(totalHours / 24); // 将小时转换为天
+          const hourss = totalHours % 24; // 获取不满一天的小时数 {% endcomment %}
+          //  // 不显示days 就用hours = totalHours
           const hours = totalHours;
 
           const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);

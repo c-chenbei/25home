@@ -208,7 +208,7 @@
                 <span class="number" id="hander_countdowns_days">00</span>day
                 <span class="number" id="hander_countdowns_hours">00</span>hr
                 <span class="number" id="hander_countdowns_minutes">00</span>min
-                {% comment %} <span class="number" id="hander_countdowns_seconds">00</span>sec {% endcomment %}
+                <span class="number" id="hander_countdowns_seconds">00</span>sec
               </div>
             </a>
           </div>
@@ -697,7 +697,7 @@ function updateCountdown2() {
     const timeRemaining2 = targetDate2 - now2;
     if (timeRemaining2 <= 0) {
       window.clearInterval(timer2);
-      let millis = document.getElementById("hander_countdowns_minutes")
+      let millis = document.getElementById("hander_countdowns_seconds")
       if (millis){
         millis.textContent = '00'
       }
@@ -709,10 +709,12 @@ function updateCountdown2() {
         const days2 = Math.floor(totalHours2 / 24); // 将小时转换为天
         const hours2 = totalHours2 % 24; // 获取不满一天的小时数
         const minutes2 = Math.floor((timeRemaining2 / (1000 * 60)) % 60);
+        const seconds2 = Math.floor((timeRemaining2 / 1000) % 60);
       
         const countdowns_days2 = document.querySelectorAll("#hander_countdowns_days")
         const countdowns_hours2 = document.querySelectorAll("#hander_countdowns_hours")
         const countdowns_minutes2 = document.querySelectorAll("#hander_countdowns_minutes")
+        const countdowns_seconds2 = document.querySelectorAll("#hander_countdowns_seconds")
 
         if (countdowns_days2.length > 0 && detectionIndex2 == 20) {
           detectionIndex2 = 0
@@ -735,6 +737,11 @@ function updateCountdown2() {
             element2.textContent = formatTimeValue2(minutes2)
           });
         }
+        if (countdowns_seconds2.length > 0 && formatTimeValue(seconds2)) {
+          countdowns_seconds2.forEach(function(element) {
+            element.textContent = formatTimeValue(seconds2)
+          });
+        }
     }
 }
 
@@ -743,8 +750,7 @@ function formatTimeValue2(value) {
 }
 
 // 更新倒计时每秒钟
-const timer2 = setInterval(updateCountdown2, 10000);
-updateCountdown2()
+const timer2 = setInterval(updateCountdown2, 1000);
 
 
   const textscroll = document.querySelector('.header-text-scroll');
