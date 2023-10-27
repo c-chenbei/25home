@@ -160,8 +160,8 @@
                       -%}
                     </div>
                   {%- when 'price' -%}
-                    {% comment %} <div> {% endcomment %}
-                      <div class="product-block product-block--price" {{ block.shopify_attributes }}>
+                    <div id="priceSuspension">
+                        <div class="product-block product-block--price product-block--sticky" {{ block.shopify_attributes }}>
                         {%- assign hide_sale_price = true -%}
                         {%- if product.compare_at_price_max > product.price -%}
                           {%- if current_variant.compare_at_price > current_variant.price -%}
@@ -232,7 +232,7 @@
                           {%- endcapture -%}
 
                           <span data-unit-price>{{ current_variant.unit_price | money }}</span>/
-                          {{- unit_price_base_unit }}
+                          {{ unit_price_base_unit }}
                         </div>
 
                         <div
@@ -245,7 +245,7 @@
                         >
                           25Home Offers FREE SHIPPING On Every Order
                         </div>
-                      </div>
+                        </div>
                       {% comment %}
                         {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                           <div class="product__policies rte small--text-center">
@@ -258,15 +258,16 @@
                           </div>
                         {%- endif -%}
                       {% endcomment %}
-                      {% comment %} <div class="product-block">
+                      <div id="buttonSuspension">
                         {%- render 'product-form',
                           form_id: form_id,
                           product: product,
                           show_dynamic_checkout: block.settings.show_dynamic_checkout,
                           current_variant: current_variant
                         -%}
+                        {{ form | payment_button }}
                       </div>
-                    </div> {% endcomment %}
+                    </div> 
                   {%- when 'quantity_selector' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       <div class="product__quantity">
@@ -347,7 +348,7 @@
                     {% endcomment %}
 
                   {%- when 'buy_buttons' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    <div class="product-block" {{ block.shopify_attributes }} id="product-form-button">
                       {%- unless product.empty? -%}
                         <div class="product-block">
                           {%- render 'product-form',
@@ -528,7 +529,93 @@
     </div>
   </div>
 </div>
-<style></style>
+<style>
+#priceSuspension{
+  display: flex;
+  justify-content: space-between;
+  {% comment %} align-items: center; {% endcomment %}
+  background-color: var(--colorBody);
+  z-index: 20;
+}
+
+@media screen and (min-width:1001px){
+  #buttonSuspension{
+    display: none;
+  }
+  #buttonSuspension .payment-buttons{
+    {% comment %} display: flex;
+    align-items: center; {% endcomment %}
+    margin-top: 10px;
+  }
+  #buttonSuspension .payment-buttons .add-to-cart{
+    min-height: 30px;
+    line-height: 30px;
+    width: 200px;
+    padding: 0;
+    letter-spacing: 0;
+    font-weight: 0;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  #buttonSuspension .payment-buttons .shopify-payment-button{
+    min-height: auto;
+    margin-top: 0px;
+  }
+  #buttonSuspension .payment-buttons .shopify-payment-button__button{
+    min-height: 30px;
+    line-height: 30px;
+    width: 200px;
+    padding: 0;
+    letter-spacing: 0;
+    font-weight: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .product-block--sticky {
+    margin-top: 0px !important;
+  }
+  #buttonSuspension{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  #buttonSuspension .product-single__form{
+    width: 100%;
+  }
+  #buttonSuspension .payment-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #buttonSuspension .payment-buttons .add-to-cart{
+    min-height: 35px;
+    line-height: 35px;
+    width: 70%;
+    padding: 0;
+    letter-spacing: 0;
+    font-weight: 0;
+    background-color: var(--colorBtnPrimary);
+    color: #fff;
+    {% comment %} margin-right: 5px; {% endcomment %}
+  }
+  #buttonSuspension .payment-buttons .shopify-payment-button{
+    min-height: auto;
+    margin-top: 0px;
+    display: none;
+  }
+  {% comment %} #buttonSuspension .payment-buttons .shopify-payment-button__button{
+    min-height: 30px;
+    line-height: 30px;
+    width: 100px;
+    padding: 0;
+    letter-spacing: 0;
+    font-weight: 0;
+  } {% endcomment %}
+}
+
+</style>
 <script>
   var expressageBox = document.getElementById('expressage_box');
   var paragraphTags = expressageBox.getElementsByTagName("p");
@@ -551,15 +638,49 @@
     console.log('未找到包含 JSON 数据的 <textarea> 元素。');
   }
 
-    {% comment %} 点击按钮切换货期显示 {% endcomment %}
-    document.addEventListener('variant:change', function(evt) {
-      {% comment %} console.log(evt.detail.variant,'555555',paragraphTags); {% endcomment %}
-      currentvariant.forEach(function(item,index) {
-        if (evt.detail.variant.id == item.id) {
-          paragraphTags[index].classList.remove('expressage_none');
-        } else{
-          paragraphTags[index].classList.add('expressage_none');
-        }
-      })
-    });
+  {% comment %} 点击按钮切换货期显示 {% endcomment %}
+  document.addEventListener('variant:change', function(evt) {
+    {% comment %} console.log(evt.detail.variant,'555555',paragraphTags); {% endcomment %}
+    currentvariant.forEach(function(item,index) {
+      if (evt.detail.variant.id == item.id) {
+        paragraphTags[index].classList.remove('expressage_none');
+      } else{
+        paragraphTags[index].classList.add('expressage_none');
+      }
+    })
+  });
+
+
+let headerElement = document.getElementById("SiteHeader"); // header
+let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
+// 检查元素是否存在
+if (headerElement && priceSuspensionElement) {
+  // 获取元素的高度
+  var headerHeight = headerElement.offsetHeight;
+  priceSuspensionElement.style.position = 'sticky'
+  priceSuspensionElement.style.top = headerHeight + 'px'
+  {% comment %} console.log("SiteHeader 的高度是：" + headerHeight + " 像素"); {% endcomment %}
+} else {
+  console.log("未找到具有 ID 为 SiteHeader 的元素");
+}
+  let productformbutton = document.getElementById("product-form-button"); // 原架构按钮
+  var distanceToTop = productformbutton.getBoundingClientRect().top + window.scrollY;
+    {% comment %} console.log("距离顶部的位置：" + distanceToTop + " 像素"); {% endcomment %}
+
+  let buttonSuspension = document.getElementById("buttonSuspension"); // 新添加浮动按钮
+
+    // 添加滚动事件监听器
+  window.addEventListener("scroll", function() {
+    // 获取当前滚动条的垂直位置
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    // 检查是否滚动超过780像素
+    if (scrollTop > distanceToTop) {
+      // 滚动超过780像素时执行的代码
+      buttonSuspension.style.display = 'block'
+    } else {
+      buttonSuspension.style.display = 'none'
+    }
+  });
+
 </script>

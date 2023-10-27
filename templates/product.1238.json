@@ -205,14 +205,6 @@
     "5a1293d8-8d37-4784-ba3e-c70feb0fe813": {
       "type": "advanced-content",
       "blocks": {
-        "858cc6e8-1dbe-4401-ab92-a4f38ec4aff6": {
-          "type": "html",
-          "settings": {
-            "code": "<h1>\n\t<span style='color:#374151;font-family:Söhne, ui-sans-serif, system-ui, -apple-system, \"font-size:16px;background-color:#F7F7F8;'>Timeless Luxury<\/span>\n<\/h1>\n<p>\n\tThe sofa features high-quality, seamless genuine leather for an indulgent feel. Absent of seams that may weaken over time, the continuous leather retains its integrity to prevent splitting or cracking. Its high-quality composition repels scratches and scuffs, maintaining its refined patina after years of use. \n<\/p>\n<p>\n\tProviding long-lasting comfort and style, the genuine leather material offers uninterrupted luxury that is resistant to daily wear. Sink into its sensual feel knowing the leather will only look better with age.\n<\/p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
         "66a30ffe-7978-4eab-824c-9ccd2ff034f3": {
           "type": "image",
           "settings": {
@@ -221,11 +213,19 @@
             "width": "50%",
             "alignment": "top-middle"
           }
+        },
+        "858cc6e8-1dbe-4401-ab92-a4f38ec4aff6": {
+          "type": "html",
+          "settings": {
+            "code": "<h1>\n\t<span style='color:#374151;font-family:Söhne, ui-sans-serif, system-ui, -apple-system, \"font-size:16px;background-color:#F7F7F8;'>Timeless Luxury<\/span>\n<\/h1>\n<p>\n\tThe sofa features high-quality, seamless genuine leather for an indulgent feel. Absent of seams that may weaken over time, the continuous leather retains its integrity to prevent splitting or cracking. Its high-quality composition repels scratches and scuffs, maintaining its refined patina after years of use. \n<\/p>\n<p>\n\tProviding long-lasting comfort and style, the genuine leather material offers uninterrupted luxury that is resistant to daily wear. Sink into its sensual feel knowing the leather will only look better with age.\n<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
-        "858cc6e8-1dbe-4401-ab92-a4f38ec4aff6",
-        "66a30ffe-7978-4eab-824c-9ccd2ff034f3"
+        "66a30ffe-7978-4eab-824c-9ccd2ff034f3",
+        "858cc6e8-1dbe-4401-ab92-a4f38ec4aff6"
       ],
       "settings": {
         "full_width": false,
@@ -302,7 +302,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -321,7 +321,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },

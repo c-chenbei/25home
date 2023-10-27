@@ -1,12 +1,14 @@
 {%- form 'product', product, id: form_id, class: 'product-single__form' -%}
 
-  {%- liquid
+  {% comment %} {%- liquid
     assign enable_dynamic_buttons = false
     if show_dynamic_checkout and template != 'product.preorder'
       assign enable_dynamic_buttons = true
     endif
+  -%} {% endcomment %}
+  {%- liquid
+    assign enable_dynamic_buttons = true
   -%}
-
   {%- if enable_dynamic_buttons -%}
     <div class="payment-buttons">
   {%- endif -%}
