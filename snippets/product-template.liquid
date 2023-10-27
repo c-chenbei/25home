@@ -573,6 +573,7 @@
 @media screen and (max-width: 1000px) {
   .product-block--sticky {
     margin-top: 0px !important;
+    margin-bottom: 0px !important;
   }
   #buttonSuspension{
     display: none;
@@ -663,24 +664,21 @@ if (headerElement && priceSuspensionElement) {
 } else {
   console.log("未找到具有 ID 为 SiteHeader 的元素");
 }
-  let productformbutton = document.getElementById("product-form-button"); // 原架构按钮
-  var distanceToTop = productformbutton.getBoundingClientRect().top + window.scrollY;
-    {% comment %} console.log("距离顶部的位置：" + distanceToTop + " 像素"); {% endcomment %}
 
-  let buttonSuspension = document.getElementById("buttonSuspension"); // 新添加浮动按钮
-
-    // 添加滚动事件监听器
-  window.addEventListener("scroll", function() {
-    // 获取当前滚动条的垂直位置
-    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-    // 检查是否滚动超过780像素
-    if (scrollTop > distanceToTop) {
-      // 滚动超过780像素时执行的代码
-      buttonSuspension.style.display = 'block'
-    } else {
-      buttonSuspension.style.display = 'none'
-    }
-  });
-
+let productformbutton = document.getElementById("product-form-button"); // 原架构按钮
+var distanceToTop = productformbutton.getBoundingClientRect().top + window.scrollY;
+  {% comment %} console.log("距离顶部的位置：" + distanceToTop + " 像素"); {% endcomment %}
+let buttonSuspension = document.getElementById("buttonSuspension"); // 新添加浮动按钮
+  // 添加滚动事件监听器
+window.addEventListener("scroll", function() {
+  // 获取当前滚动条的垂直位置
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+  // 检查是否滚动超过780像素
+  if (scrollTop > distanceToTop) {
+    // 滚动超过780像素时执行的代码
+    buttonSuspension.style.display = 'block'
+  } else {
+    buttonSuspension.style.display = 'none'
+  }
+});
 </script>

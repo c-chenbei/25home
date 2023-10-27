@@ -222,9 +222,53 @@
         "divider": false
       }
     },
+    "708b5192-fc51-4d11-9912-d9f7d78e8b18": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Materials-5_bf8775ac-a8f2-47e9-bb8d-99b52d760233.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "SUSTAINABLY-BUILT & NON-TOXIC",
+        "text": "<p>From the durable fabric to the solid wood frame, every part of our furniture is well-chosen and assembled for durability. The sofa's frame is craftfully constructed from raw, solid wood that is non-toxic and environmentally friendly. The maximum weight capacity is 500 pounds per seat.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "6e674af9-855e-4fa5-b22e-b552e9d45a0a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Materials-6.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Fillings",
+        "text": "<p><strong>cushion filling: <\/strong>high-density foam<br\/><strong>backrest filling: <\/strong>fluffy down+foam<\/p><p>These high-density foam and down <a href=\"https:\/\/25home.com\/pages\/sofa-filling-guide\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/sofa-filling-guide\"><em><strong>fillings<\/strong><\/em><\/a> provide the sofa with superior shape retention, support, and resilience. The durable, thick foam padding maintains the structure and contour of the cushions for years to come. Combined with the plush down stuffing, the cushions gently yield to your body's natural curves, enveloping you in sublime comfort and support.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "c1e2a991-ad27-44f4-9ed7-7bcbf1447338": {
       "type": "advanced-content",
       "blocks": {
+        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1": {
+          "type": "html",
+          "settings": {
+            "code": "<h1>\n\tFillings\n<\/h1>\n<p>\n\t<br>\n<\/p>\n<h3>\n<\/h3>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2>\n<\/h2>\n<p>\n\t<strong>cushion filling: <\/strong>Sponge<br>\n<strong> backrest filling: <\/strong>fluffy feather+Sponge\n<\/p>\n<p>\n\twhich provides the sofa with better shape retention, support, and resilience.\n<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
         "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-image-1": {
           "type": "image",
           "settings": {
@@ -233,20 +277,13 @@
             "width": "50%",
             "alignment": "top-middle"
           }
-        },
-        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1": {
-          "type": "html",
-          "settings": {
-            "code": "<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<h1>\n\tFillings\n<\/h1>\n<p>\n\t<br>\n<\/p>\n<h3>\n<\/h3>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2>\n<\/h2>\n<p>\n\t<strong>cushion filling: <\/strong>Sponge<br>\n<strong> backrest filling: <\/strong>fluffy feather+Sponge\n<\/p>\n<p>\n\twhich provides the sofa with better shape retention, support, and resilience.\n<\/p>\n<p>\n\t<strong>Sturdy solid wood frame + serpentine springs<\/strong> \n<\/p>\n<p>\n\tIncredibly Sturdy: from the durable fabric to the solid woodframe, every part of our furniture is well-chosenand assembled for durability. The maximumweight capacity is 500 pounds per seat.\n<\/p>",
-            "width": "50%",
-            "alignment": "center"
-          }
         }
       },
       "block_order": [
-        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-image-1",
-        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1"
+        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1",
+        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-image-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
@@ -270,13 +307,21 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
     "135b36e7-34c1-4b27-9e1a-89640cec7d06": {
       "type": "advanced-content",
       "blocks": {
+        "8d8810a2-7f3e-400a-987f-d5a50cf1e0f2": {
+          "type": "html",
+          "settings": {
+            "code": "<p>\n\t<br>\n\t<\/p><h1>\n\t\tErgonomic design\n\t<\/h1>\n\t<p>\n\t\t<br>\n\t<\/p>\n\n<p>\n\tThe spacious and expansive sofa configuration provides ample usable space, allowing you to find a comfortable angle in any pose. Quick & easy assembly in 10-15 minutes per seat makes it even more convenient. This sofa is ergonomically designed, with support contours that fit the curves of the body. Paired with genuine leather material, it provides a highly comfortable sitting experience.\n<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
         "f3f24f1e-b63f-4e96-9af3-8b59cd1c8200": {
           "type": "image",
           "settings": {
@@ -285,19 +330,11 @@
             "width": "50%",
             "alignment": "top-middle"
           }
-        },
-        "8d8810a2-7f3e-400a-987f-d5a50cf1e0f2": {
-          "type": "html",
-          "settings": {
-            "code": "<p>\n\t<br>\n\t<\/p><h1>\n\t\tErgonomic design\n\t<\/h1>\n\t<p>\n\t\t<br>\n\t<\/p>\n\n<p>\n\tThe spacious and expansive sofa configuration provides ample usable space, allowing you to find a comfortable angle in any pose. Quick & easy assembly in 10-15 minutes per seat makes it even more convenient. This sofa is ergonomically designed, with support contours that fit the curves of the body. Paired with genuine leather material, it provides a highly comfortable sitting experience.\n<\/p>",
-            "width": "50%",
-            "alignment": "center"
-          }
         }
       },
       "block_order": [
-        "f3f24f1e-b63f-4e96-9af3-8b59cd1c8200",
-        "8d8810a2-7f3e-400a-987f-d5a50cf1e0f2"
+        "8d8810a2-7f3e-400a-987f-d5a50cf1e0f2",
+        "f3f24f1e-b63f-4e96-9af3-8b59cd1c8200"
       ],
       "settings": {
         "full_width": false,
@@ -319,7 +356,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -430,6 +467,8 @@
     "sub",
     "background-image-text",
     "text-and-image",
+    "708b5192-fc51-4d11-9912-d9f7d78e8b18",
+    "6e674af9-855e-4fa5-b22e-b552e9d45a0a",
     "c1e2a991-ad27-44f4-9ed7-7bcbf1447338",
     "text-and-image2",
     "135b36e7-34c1-4b27-9e1a-89640cec7d06",
