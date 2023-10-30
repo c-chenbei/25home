@@ -1,4 +1,5 @@
 {%- liquid
+  assign current_variant = product.selected_or_first_available_variant
   unless grid_item_width
     assign grid_item_width = 'medium-up--one-quarter small--one-half'
   endunless
@@ -210,28 +211,34 @@
         {%- if settings.vendor_enable -%}
           <div class="grid-product__vendor">{{ product.vendor }}</div>
         {%- endif -%}
-        <div class="grid-product__price" style="color:#000 !important;font-weight:bold;">
-          {%- if on_sale -%}
-            <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-            <span class="grid-product__price--original" style="color:#000 !important;font-weight:normal;">
-              {{- product.compare_at_price | money -}}
-            </span>
-            <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-          {%- endif -%}
+
+        <div class="grid-product__price">
+          {% comment %} 正常价 {% endcomment %}
           {%- if product.price_varies -%}
-            {%- assign price = product.price_min | money -%}
-            {{ 'products.general.from_text_html' | t: price: price }}
+            {%- assign price = current_variant.price | money -%}
+            <span class="grid-product__price--savings-mod">{{ 'products.general.from_text_html' | t: price: price }}</span>
           {%- else -%}
             {{ product.price | money }}
           {%- endif -%}
+
+          {% comment %} 划线价 {% endcomment %}
+          {%- if on_sale -%}
+            <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+            <span class="grid-product__price--original" style="color:#000 !important;font-weight:normal;">
+              {{- current_variant.compare_at_price | money -}}
+            </span>
+            <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+          {%- endif -%}
+          
+          {% comment %} 相差多少价格 {% endcomment %}
           {%- if on_sale -%}
             {%- if settings.product_save_amount -%}
               {%- if settings.product_save_type == 'dollar' -%}
-                {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
+                {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
               {%- else -%}
-                {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{%- endcapture -%}
+                {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
               {%- endif -%}
-              <span class="grid-product__price--savings">
+              <span style="color:#a81527">
                 {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
               </span>
             {%- endif -%}

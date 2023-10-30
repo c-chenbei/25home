@@ -33,13 +33,15 @@
           {%- endif -%}
         {%- when 'product_grid' -%}
           <div class="collection-filter">
-            {% comment %} {%- liquid
-              assign current_filter_size = 0
+            {% comment %}
+              {%- liquid
+                assign current_filter_size = 0
 
-              for filter in collection.filters
-                assign current_filter_size = current_filter_size | plus: filter.active_values.size
-              endfor
-            -%} {% endcomment %}
+                for filter in collection.filters
+                  assign current_filter_size = current_filter_size | plus: filter.active_values.size
+                endfor
+              -%}
+            {% endcomment %}
             <div class="collection-filter__item collection-filter__item--drawer">
               <button
                 type="button"
@@ -123,10 +125,13 @@
             -%}
 
             {%- for product in collection.products -%}
-{% if product.handle contains "docapp-free-gift-" %}{% continue %}{% endif %}
-
               {% if product.handle contains 'docapp-free-gift-' %}{% continue %}{% endif %}
-              {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width, per_row: per_row,collection_name: collection.title -%}
+              {%- render 'product-grid-item',
+                product: product,
+                grid_item_width: grid_item_width,
+                per_row: per_row,
+                collection_name: collection.title
+              -%}
             {%- else -%}
               <div class="grid__item">
                 <p>{{ 'collections.general.no_matches' | t }}</p>
@@ -140,10 +145,7 @@
 
           {%- if settings.quick_shop_enable -%}
             {%- for product in collection.products -%}
-{% if product.handle contains "docapp-free-gift-" %}{% continue %}{% endif %}
-
               {% if product.handle contains 'docapp-free-gift-' %}{% continue %}{% endif %}
-
               {%- render 'quick-shop-modal', product: product -%}
             {%- endfor -%}
           {%- endif -%}
