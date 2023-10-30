@@ -295,8 +295,8 @@ if(window.location.href.includes("/cart")){
   {%- endif -%}
 
   
-  <script src="{{ 'theme.min.js' | asset_url }}" defer="defer"></script>
-  {% comment %} <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+  <!-- <script src="{{ 'theme.min.js' | asset_url }}" defer="defer"></script> -->
+ <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
   {{ 'device.js' | asset_url | script_tag }}
 
   
@@ -365,7 +365,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <main class="main-content" id="MainContent">
         {{ content_for_layout }}
       </main>
-
+      
       {%- section 'footer-promotions' -%}
       {%- section 'footer' -%}
 
@@ -498,3 +498,4 @@ var afterpay_js_snippet_version = '1.1.5';
   // 第一次设置一个 setTimeout，开始等待
   timeoutId = setTimeout(tryAddCloseButton, 1000);
 </script>
+

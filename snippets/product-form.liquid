@@ -1,18 +1,18 @@
 {%- form 'product', product, id: form_id, class: 'product-single__form' -%}
 
-  {% comment %} {%- liquid
+  {%- liquid
     assign enable_dynamic_buttons = false
     if show_dynamic_checkout and template != 'product.preorder'
       assign enable_dynamic_buttons = true
     endif
-  -%} {% endcomment %}
-  {%- liquid
-    assign enable_dynamic_buttons = true
   -%}
+  {% comment %} {%- liquid
+    assign enable_dynamic_buttons = true
+  -%} {% endcomment %}
   {%- if enable_dynamic_buttons -%}
     <div class="payment-buttons">
   {%- endif -%}
-<div class='delivery_date_shortcode'></div>
+  <div class='delivery_date_shortcode'></div>
     {%- liquid
       assign default_text = 'products.product.add_to_cart' | t
       assign button_text = 'products.product.add_to_cart' | t
@@ -35,7 +35,6 @@
         {{ button_text }}
       </span>
     </button>
-
     {%- if enable_dynamic_buttons -%}
       {{ form | payment_button }}
     {%- endif -%}

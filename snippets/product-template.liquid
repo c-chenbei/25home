@@ -160,114 +160,131 @@
                       -%}
                     </div>
                   {%- when 'price' -%}
-                    <div id="priceSuspension">
+                    <div id="priceSuspension" >
+                      <div id="priceSuspension-cont">
                         <div class="product-block product-block--price product-block--sticky" {{ block.shopify_attributes }}>
-                        {%- assign hide_sale_price = true -%}
-                        {%- if product.compare_at_price_max > product.price -%}
-                          {%- if current_variant.compare_at_price > current_variant.price -%}
-                            {%- assign hide_sale_price = false -%}
-                          {%- endif -%}
-                          <span
-                            data-a11y-price
-                            class="visually-hidden"
-                            aria-hidden="{{ hide_sale_price }}"
-                          >
-                            {{ 'products.general.regular_price' | t }}
-                          </span>
-                          <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
-                            <span data-compare-price class="product__price product__price--compare">
-                              {%- if current_variant.compare_at_price > current_variant.price -%}
-                                {{ current_variant.compare_at_price | money }}
-                              {%- endif -%}
+                          {%- assign hide_sale_price = true -%}
+                          {%- if product.compare_at_price_max > product.price -%}
+                            {%- if current_variant.compare_at_price > current_variant.price -%}
+                              {%- assign hide_sale_price = false -%}
+                            {%- endif -%}
+                            <span
+                              data-a11y-price
+                              class="visually-hidden"
+                              aria-hidden="{{ hide_sale_price }}"
+                            >
+                              {{ 'products.general.regular_price' | t }}
                             </span>
-                          </span>
-                          <span data-compare-price-a11y class="visually-hidden">
-                            {{- 'products.general.sale_price' | t -}}
-                          </span>
-                        {%- else -%}
-                          <span data-a11y-price class="visually-hidden">
-                            {{- 'products.general.regular_price' | t -}}
-                          </span>
-                        {%- endif -%}
-
-                        <span
-                          id="price-fallback-selectors"
-                          data-product-price
-                          class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}"
-                        >
-                          {%- unless product.empty? -%}
-                            {{ current_variant.price | money }}
+                            <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
+                              <span data-compare-price class="product__price product__price--compare">
+                                {%- if current_variant.compare_at_price > current_variant.price -%}
+                                  {{ current_variant.compare_at_price | money }}
+                                {%- endif -%}
+                              </span>
+                            </span>
+                            <span data-compare-price-a11y class="visually-hidden">
+                              {{- 'products.general.sale_price' | t -}}
+                            </span>
                           {%- else -%}
-                            {{ 1999 | money }}
-                          {%- endunless -%}
-                        </span>
-
-                        {%- if settings.product_save_amount -%}
-                          {%- if settings.product_save_type == 'dollar' -%}
-                            {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
-                          {%- else -%}
-                            {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
+                            <span data-a11y-price class="visually-hidden">
+                              {{- 'products.general.regular_price' | t -}}
+                            </span>
                           {%- endif -%}
-                          <span data-save-price class="product__price-savings{% if hide_sale_price %} hide{% endif %}">
-                            {%- unless hide_sale_price -%}
-                              {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+
+                          <span
+                            id="price-fallback-selectors"
+                            data-product-price
+                            class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}"
+                          >
+                            {%- unless product.empty? -%}
+                              {{ current_variant.price | money }}
+                            {%- else -%}
+                              {{ 1999 | money }}
                             {%- endunless -%}
                           </span>
-                        {%- endif -%}
-                        <div id="product-prices"></div>
 
-                        <div
-                          data-unit-price-wrapper
-                          class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}"
-                        >
-                          {%- capture unit_price_base_unit -%}
-                            <span data-unit-base>
-                              {%- if current_variant.unit_price_measurement -%}
-                                {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
-                                  {{ current_variant.unit_price_measurement.reference_value }}
-                                {%- endif -%}
-                                {{ current_variant.unit_price_measurement.reference_unit }}
-                              {%- endif -%}
+                          {%- if settings.product_save_amount -%}
+                            {%- if settings.product_save_type == 'dollar' -%}
+                              {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
+                            {%- else -%}
+                              {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
+                            {%- endif -%}
+                            <span data-save-price class="product__price-savings{% if hide_sale_price %} hide{% endif %}">
+                              {%- unless hide_sale_price -%}
+                                {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                              {%- endunless -%}
                             </span>
-                          {%- endcapture -%}
+                          {%- endif -%}
+                          <div id="product-prices"></div>
 
-                          <span data-unit-price>{{ current_variant.unit_price | money }}</span>/
-                          {{ unit_price_base_unit }}
-                        </div>
+                          <div
+                            data-unit-price-wrapper
+                            class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}"
+                          >
+                            {%- capture unit_price_base_unit -%}
+                              <span data-unit-base>
+                                {%- if current_variant.unit_price_measurement -%}
+                                  {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+                                    {{ current_variant.unit_price_measurement.reference_value }}
+                                  {%- endif -%}
+                                  {{ current_variant.unit_price_measurement.reference_unit }}
+                                {%- endif -%}
+                              </span>
+                            {%- endcapture -%}
 
-                        <div
-                          class="product__policies rte small--text-center"
-                          style="
-                            color:#000;
-                            font-size: 12px;
-                            font-weight: 400;
-                          "
-                        >
-                          25Home Offers FREE SHIPPING On Every Order
-                        </div>
-                        </div>
-                      {% comment %}
-                        {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-                          <div class="product__policies rte small--text-center">
-                            {%- if shop.taxes_included -%}
-                              {{ 'products.product.include_taxes' | t }}
-                            {%- endif -%}
-                            {%- if shop.shipping_policy.body != blank -%}
-                              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                            {%- endif -%}
+                            <span data-unit-price>{{ current_variant.unit_price | money }}</span>/
+                            {{ unit_price_base_unit }}
                           </div>
-                        {%- endif -%}
-                      {% endcomment %}
-                      <div id="buttonSuspension">
-                        {%- render 'product-form',
-                          form_id: form_id,
-                          product: product,
-                          show_dynamic_checkout: block.settings.show_dynamic_checkout,
-                          current_variant: current_variant
-                        -%}
-                        {{ form | payment_button }}
+
+                          <div
+                            class="product__policies rte small--text-center"
+                            style="
+                              color:#000;
+                              font-size: 12px;
+                              font-weight: 400;
+                            "
+                          >
+                            25Home Offers FREE SHIPPING On Every Order
+                          </div>
+                        </div>
+                        {% comment %}
+                          {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                            <div class="product__policies rte small--text-center">
+                              {%- if shop.taxes_included -%}
+                                {{ 'products.product.include_taxes' | t }}
+                              {%- endif -%}
+                              {%- if shop.shipping_policy.body != blank -%}
+                                {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                              {%- endif -%}
+                            </div>
+                          {%- endif -%}
+                        {% endcomment %}
+                        <div id="buttonSuspension">
+                          {%- liquid
+                            assign default_text = 'products.product.add_to_cart' | t
+                            assign button_text = 'products.product.add_to_cart' | t
+                            if template == 'product.preorder'
+                              assign default_text = 'products.product.preorder' | t
+                              assign button_text = 'products.product.preorder' | t
+                            endif
+                            unless current_variant.available
+                              assign button_text = 'products.product.sold_out' | t
+                            endunless
+                          -%}
+                          <button
+                            id="custom-add-cart"
+                            type="button"
+                            name="add"
+                            data-add-to-cart
+                            class="btn btn--full add-to-cart btn--secondary"
+                            {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+                            <span data-add-to-cart-text data-default-text="{{ default_text }}">
+                              {{ button_text }}
+                            </span>
+                          </button>
+                        </div>
                       </div>
-                    </div> 
+                    </div>
                   {%- when 'quantity_selector' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       <div class="product__quantity">
@@ -490,10 +507,7 @@
                     </div>
                   {%- when 'countdown_timer' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
-                      {%- render 'countdown_timer',
-                        product: product,
-                        block: block.settings
-                      -%}
+                      {%- render 'countdown_timer', product: product, block: block.settings -%}
                     </div>
                 {%- endcase -%}
               {%- else -%}
@@ -508,6 +522,7 @@
             </div>
           </div>
         </div>
+        
 
         {%- unless image_position == 'left' -%}
           <div class="grid__item {{ product_image_width }} product-single__sticky">
@@ -530,155 +545,177 @@
   </div>
 </div>
 <style>
-#priceSuspension{
-  display: flex;
-  justify-content: space-between;
-  {% comment %} align-items: center; {% endcomment %}
-  background-color: var(--colorBody);
-  z-index: 20;
-}
-
-@media screen and (min-width:1001px){
-  #buttonSuspension{
-    display: none;
+  #priceSuspension{
+    background-color: var(--colorBody);
   }
-  #buttonSuspension .payment-buttons{
-    {% comment %} display: flex;
-    align-items: center; {% endcomment %}
-    margin-top: 10px;
-  }
-  #buttonSuspension .payment-buttons .add-to-cart{
-    min-height: 30px;
-    line-height: 30px;
-    width: 200px;
-    padding: 0;
-    letter-spacing: 0;
-    font-weight: 0;
-    margin-right: 5px;
-    margin-bottom: 10px;
-  }
-  #buttonSuspension .payment-buttons .shopify-payment-button{
-    min-height: auto;
-    margin-top: 0px;
-  }
-  #buttonSuspension .payment-buttons .shopify-payment-button__button{
-    min-height: 30px;
-    line-height: 30px;
-    width: 200px;
-    padding: 0;
-    letter-spacing: 0;
-    font-weight: 0;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .product-block--sticky {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-  }
-  #buttonSuspension{
-    display: none;
+  .suspension-class{
     position: fixed;
-    bottom: 0px;
-    left: 0px;
     width: 100%;
+    right: 0px;
+    z-index: 20;
   }
-  #buttonSuspension .product-single__form{
-    width: 100%;
+  @media screen and (min-width:1001px){
+    .priceSuspension-cont{
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #buttonSuspension{
+      display: none;
+    }
+    #buttonSuspension .payment-buttons{
+      {% comment %} display: flex;
+      align-items: center; {% endcomment %}
+      margin-top: 10px;
+    }
+    #buttonSuspension .payment-buttons .add-to-cart{
+      min-height: 30px;
+      line-height: 30px;
+      width: 200px;
+      padding: 0;
+      letter-spacing: 0;
+      font-weight: 0;
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+    #buttonSuspension .payment-buttons .shopify-payment-button{
+      min-height: auto;
+      margin-top: 0px;
+    }
+    #buttonSuspension .payment-buttons .shopify-payment-button__button{
+      min-height: 30px;
+      line-height: 30px;
+      width: 200px;
+      padding: 0;
+      letter-spacing: 0;
+      font-weight: 0;
+    }
   }
-  #buttonSuspension .payment-buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @media screen and (max-width: 1000px) {
+    .priceSuspension-cont{
+      padding: 0 17px;
+      text-align: left;
+    }
+    .product-block--sticky {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+    #buttonSuspension{
+      display: none;
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      text-align: center;
+    }
+    #buttonSuspension .add-to-cart{
+      min-height: 35px;
+      line-height: 35px;
+      width: 70%;
+      padding: 0;
+      letter-spacing: 0;
+      font-weight: 0;
+      background-color: var(--colorBtnPrimary);
+      color: #fff;
+    }
   }
-  #buttonSuspension .payment-buttons .add-to-cart{
-    min-height: 35px;
-    line-height: 35px;
-    width: 70%;
-    padding: 0;
-    letter-spacing: 0;
-    font-weight: 0;
-    background-color: var(--colorBtnPrimary);
-    color: #fff;
-    {% comment %} margin-right: 5px; {% endcomment %}
-  }
-  #buttonSuspension .payment-buttons .shopify-payment-button{
-    min-height: auto;
-    margin-top: 0px;
-    display: none;
-  }
-  {% comment %} #buttonSuspension .payment-buttons .shopify-payment-button__button{
-    min-height: 30px;
-    line-height: 30px;
-    width: 100px;
-    padding: 0;
-    letter-spacing: 0;
-    font-weight: 0;
-  } {% endcomment %}
-}
-
 </style>
 <script>
-  var expressageBox = document.getElementById('expressage_box');
-  var paragraphTags = expressageBox.getElementsByTagName("p");
-  var defs = document.querySelector('textarea[data-current-variant-json]');
-  var variant = document.querySelector('textarea[data-variant-json]');
-  var currentdefault;
-  var currentvariant;
-  if (defs && variant) {
-      currentdefault = JSON.parse(defs.textContent);
-      currentvariant = JSON.parse(variant.textContent);
-      {% comment %} console.log(currentdefault,'currentdefault')
-      console.log(currentvariant,'currentvariant') {% endcomment %}
-      {% comment %} 首次进入默认展示货期 {% endcomment %}
+    var expressageBox = document.getElementById('expressage_box');
+    var paragraphTags = expressageBox.getElementsByTagName("p");
+    var defs = document.querySelector('textarea[data-current-variant-json]');
+    var variant = document.querySelector('textarea[data-variant-json]');
+    var currentdefault;
+    var currentvariant;
+    if (defs && variant) {
+        currentdefault = JSON.parse(defs.textContent);
+        currentvariant = JSON.parse(variant.textContent);
+        {% comment %} console.log(currentdefault,'currentdefault')
+        console.log(currentvariant,'currentvariant') {% endcomment %}
+        {% comment %} 首次进入默认展示货期 {% endcomment %}
+        currentvariant.forEach(function(item,index) {
+          if (currentdefault.id == item.id) {
+            paragraphTags[index].classList.remove('expressage_none');
+          }
+        })
+    } else {
+      console.log('未找到包含 JSON 数据的 <textarea> 元素。');
+    }
+
+    {% comment %} 点击按钮切换货期显示 {% endcomment %}
+    document.addEventListener('variant:change', function(evt) {
+      {% comment %} console.log(evt.detail.variant,'555555',paragraphTags); {% endcomment %}
       currentvariant.forEach(function(item,index) {
-        if (currentdefault.id == item.id) {
+        if (evt.detail.variant.id == item.id) {
           paragraphTags[index].classList.remove('expressage_none');
+        } else{
+          paragraphTags[index].classList.add('expressage_none');
         }
       })
+    });
+
+
+  let headerElement = document.getElementById("SiteHeader"); // header
+  let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
+  let priceSuspensionCont = document.getElementById("priceSuspension-cont"); // 悬浮盒子
+  var elementsWithClassName = priceSuspensionCont.getElementsByClassName("product-block");
+
+  // 检查元素是否存在
+  if (headerElement && priceSuspensionElement) {
+    // 获取元素的高度
+    {% comment %} var headerHeight = headerElement.offsetHeight; {% endcomment %}
+    {% comment %} priceSuspensionElement.style.position = 'sticky'
+    priceSuspensionElement.style.top = headerHeight + 'px' {% endcomment %}
+    {% comment %} console.log("SiteHeader 的高度是：" + headerHeight + " 像素"); {% endcomment %}
   } else {
-    console.log('未找到包含 JSON 数据的 <textarea> 元素。');
+    console.log("未找到具有 ID 为 SiteHeader 的元素");
   }
 
-  {% comment %} 点击按钮切换货期显示 {% endcomment %}
-  document.addEventListener('variant:change', function(evt) {
-    {% comment %} console.log(evt.detail.variant,'555555',paragraphTags); {% endcomment %}
-    currentvariant.forEach(function(item,index) {
-      if (evt.detail.variant.id == item.id) {
-        paragraphTags[index].classList.remove('expressage_none');
-      } else{
-        paragraphTags[index].classList.add('expressage_none');
-      }
-    })
+
+  let productformbutton = document.getElementById("product-form-button"); // 原架构按钮
+  var distanceToTop = productformbutton.getBoundingClientRect().top + window.scrollY;
+    {% comment %} console.log("距离顶部的位置：" + distanceToTop + " 像素"); {% endcomment %}
+  let buttonSuspension = document.getElementById("buttonSuspension"); // 新添加浮动按钮
+    // 添加滚动事件监听器
+  window.addEventListener("scroll", function() {
+    // 获取当前滚动条的垂直位置
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    // 检查是否滚动超过780像素
+    if (scrollTop > distanceToTop) {
+      // 滚动超过780像素时执行的代码
+      priceSuspensionElement.classList.add("suspension-class");
+      priceSuspensionCont.classList.add("priceSuspension-cont");
+      elementsWithClassName[0].style.marginBottom = '0px';
+      var headerHeight = headerElement.offsetHeight;
+      priceSuspensionElement.style.top = headerHeight + 'px'
+      buttonSuspension.style.display = 'block'
+    } else {
+      priceSuspensionElement.classList.remove("suspension-class");
+      priceSuspensionCont.classList.remove("priceSuspension-cont");
+      elementsWithClassName[0].style.marginBottom = '25px'
+      buttonSuspension.style.display = 'none'
+    }
   });
-
-
-let headerElement = document.getElementById("SiteHeader"); // header
-let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
-// 检查元素是否存在
-if (headerElement && priceSuspensionElement) {
-  // 获取元素的高度
-  var headerHeight = headerElement.offsetHeight;
-  priceSuspensionElement.style.position = 'sticky'
-  priceSuspensionElement.style.top = headerHeight + 'px'
-  {% comment %} console.log("SiteHeader 的高度是：" + headerHeight + " 像素"); {% endcomment %}
-} else {
-  console.log("未找到具有 ID 为 SiteHeader 的元素");
-}
-
-let productformbutton = document.getElementById("product-form-button"); // 原架构按钮
-var distanceToTop = productformbutton.getBoundingClientRect().top + window.scrollY;
-  {% comment %} console.log("距离顶部的位置：" + distanceToTop + " 像素"); {% endcomment %}
-let buttonSuspension = document.getElementById("buttonSuspension"); // 新添加浮动按钮
-  // 添加滚动事件监听器
-window.addEventListener("scroll", function() {
-  // 获取当前滚动条的垂直位置
-  var scrollTop = window.scrollY || document.documentElement.scrollTop;
-  // 检查是否滚动超过780像素
-  if (scrollTop > distanceToTop) {
-    // 滚动超过780像素时执行的代码
-    buttonSuspension.style.display = 'block'
-  } else {
-    buttonSuspension.style.display = 'none'
-  }
-});
+  let btn2 = document.getElementById("custom-add-cart");
+  // 添加点击事件监听器
+  btn2.addEventListener('click', function() {
+     // 或者执行其他操作，如跳转到另一个页面或触发其他 JavaScript 事件
+     let addToCartForm = document.querySelector('form[action$="/cart/add"]');
+     let formData = new FormData(addToCartForm);
+     fetch(window.Shopify.routes.root + 'cart/add.js', {
+       method: 'POST',
+       body: formData
+     })
+     .then(response => {
+       window.location.href = '/cart'
+       return response.json();
+     })
+     .catch((error) => {
+       console.error('Error:', error);
+     });
+  });
 </script>

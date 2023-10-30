@@ -6403,27 +6403,47 @@ lazySizesConfig.expFactor = 4;
   
       updateCartButton: function(evt) {
         var variant = evt.detail.variant;
-        var cartBtn = this.container.querySelector(this.selectors.addToCart);
-        var cartBtnText = this.container.querySelector(this.selectors.addToCartText);
-  
+        var cartBtn = this.container.querySelectorAll(this.selectors.addToCart);
+        var cartBtnText = this.container.querySelectorAll(this.selectors.addToCartText);
         if (variant) {
           if (variant.available) {
             // Available, enable the submit button and change text
-            cartBtn.classList.remove(classes.disabled);
-            cartBtn.disabled = false;
-            var defaultText = cartBtnText.dataset.defaultText;
-            cartBtnText.textContent = defaultText;
+            // cartBtn.classList.remove(classes.disabled);
+            // cartBtn.disabled = false;
+            // var defaultText = cartBtnText.dataset.defaultText;
+            // cartBtnText.textContent = defaultText;
+            cartBtn.forEach(item => {
+              item.classList.remove(classes.disabled);
+              item.disabled = false;
+            })
+            cartBtnText.forEach(item => {
+              item.textContent = item.dataset.defaultText;
+            })
           } else {
             // Sold out, disable the submit button and change text
-            cartBtn.classList.add(classes.disabled);
-            cartBtn.disabled = true;
-            cartBtnText.textContent = theme.strings.soldOut;
+            // cartBtn.classList.add(classes.disabled);
+            // cartBtn.disabled = true;
+            // cartBtnText.textContent = theme.strings.soldOut;
+            cartBtn.forEach(item => {
+              item.classList.add(classes.disabled);
+              item.disabled = true;
+            })
+            cartBtnText.forEach(item => {
+              item.textContent = theme.strings.soldOut;
+            })
           }
         } else {
           // The variant doesn't exist, disable submit button
-          cartBtn.classList.add(classes.disabled);
-          cartBtn.disabled = true;
-          cartBtnText.textContent = theme.strings.unavailable;
+          // cartBtn.classList.add(classes.disabled);
+          // cartBtn.disabled = true;
+          // cartBtnText.textContent = theme.strings.unavailable;
+          cartBtn.forEach(item => {
+            item.classList.add(classes.disabled);
+            item.disabled = true;
+          })
+          cartBtnText.forEach(item => {
+            item.textContent = theme.strings.unavailable;
+          })
         }
       },
   
