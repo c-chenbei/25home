@@ -80,6 +80,8 @@
             <div class="product-recommendations">
               <div class="grid grid--uniform" data-aos="overflow__animation">
                 {%- for product in related_collection.products -%}
+{% if product.handle contains "docapp-free-gift-" %}{% continue %}{% endif %}
+
                   {% if product.handle contains 'docapp-free-gift-' %}{% continue %}{% endif %}
 
                   {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width -%}
@@ -88,6 +90,8 @@
 
               {%- if settings.quick_shop_enable -%}
                 {%- for product in related_collection.products -%}
+{% if product.handle contains "docapp-free-gift-" %}{% continue %}{% endif %}
+
                   {% if product.handle contains 'docapp-free-gift-' %}{% continue %}{% endif %}
 
                   {%- render 'quick-shop-modal', product: product -%}
