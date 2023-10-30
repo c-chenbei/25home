@@ -39,18 +39,32 @@
   {% comment %} 活动角标 {% endcomment %}
   {% if collection_SALE == true %}
     <div class="grid-card__content">
-      <span class="grid-card__badge" 
-        style="color:#fff;background-color:red;font-weight:600">
+      <span
+        class="grid-card__badge"
+        style="color:#fff;background-color:red;font-weight:600"
+      >
         {% comment %} 百分比显示优惠多少 {% endcomment %}
-        Flash Sale {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}% OFF
+        Flash Sale
+        {{
+          product.compare_at_price
+          | minus: product.price
+          | times: 100.0
+          | divided_by: product.compare_at_price
+          | round
+        -}}
+        % OFF
       </span>
     </div>
   {% else %}
     {% unless product.metafields.custom.sale_tag_text == blank %}
       <div class="grid-card__content">
-        <span class="grid-card__badge" 
-          style="{% if product.metafields.custom.sale_tag_color %}color:{{ product.metafields.custom.sale_tag_color }}{% endif %};
-          {% if product.metafields.custom.sale_tag_bg %}background-color:{{ product.metafields.custom.sale_tag_bg }}{% endif %};">
+        <span
+          class="grid-card__badge"
+          style="
+            {% if product.metafields.custom.sale_tag_color %}color:{{ product.metafields.custom.sale_tag_color }}{% endif %};
+            {% if product.metafields.custom.sale_tag_bg %}background-color:{{ product.metafields.custom.sale_tag_bg }}{% endif %};
+          "
+        >
           {{ product.metafields.custom.sale_tag_text }}
         </span>
       </div>

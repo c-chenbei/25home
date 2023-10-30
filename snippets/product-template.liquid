@@ -168,6 +168,19 @@
                             {%- if current_variant.compare_at_price > current_variant.price -%}
                               {%- assign hide_sale_price = false -%}
                             {%- endif -%}
+                            {% comment %} 正常价 {% endcomment %}
+                            <span
+                              id="price-fallback-selectors"
+                              data-product-price
+                              class="product__price product__price-savings"
+                            >
+                              {%- unless product.empty? -%}
+                                {{ current_variant.price | money }}
+                              {%- else -%}
+                                {{ 1999 | money }}
+                              {%- endunless -%}
+                            </span>
+                            {% comment %} 划线价格 {% endcomment %}
                             <span
                               data-a11y-price
                               class="visually-hidden"
@@ -176,7 +189,7 @@
                               {{ 'products.general.regular_price' | t }}
                             </span>
                             <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
-                              <span data-compare-price class="product__price product__price--compare">
+                              <span data-compare-price class="product__price--compare">
                                 {%- if current_variant.compare_at_price > current_variant.price -%}
                                   {{ current_variant.compare_at_price | money }}
                                 {%- endif -%}
@@ -191,25 +204,14 @@
                             </span>
                           {%- endif -%}
 
-                          <span
-                            id="price-fallback-selectors"
-                            data-product-price
-                            class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}"
-                          >
-                            {%- unless product.empty? -%}
-                              {{ current_variant.price | money }}
-                            {%- else -%}
-                              {{ 1999 | money }}
-                            {%- endunless -%}
-                          </span>
-
+                          {% comment %} 相差多少价格 {% endcomment %}
                           {%- if settings.product_save_amount -%}
                             {%- if settings.product_save_type == 'dollar' -%}
                               {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
                             {%- else -%}
                               {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
                             {%- endif -%}
-                            <span data-save-price class="product__price-savings{% if hide_sale_price %} hide{% endif %}">
+                            <span data-save-price class="{% if hide_sale_price %} hide{% endif %}" style="color:#a81527">
                               {%- unless hide_sale_price -%}
                                 {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
                               {%- endunless -%}
