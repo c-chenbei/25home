@@ -129,7 +129,7 @@
 {%- if section.settings.divider -%}</div>{%- endif -%}
 
 {% render 'pe-disco-sale-tag', collection_products: collections[section.settings.home_featured_products].products %}
-<script>
+{% comment %} <script>
   // 测试提交
   // pc端 产品跳转新页面
   if (getDeviceType() == false) {
@@ -143,7 +143,7 @@
       }
     });
   }
-</script>
+</script> {% endcomment %}
 {% schema %}
 {
   "name": "Featured collection",

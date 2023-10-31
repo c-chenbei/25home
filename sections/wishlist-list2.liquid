@@ -1,0 +1,45 @@
+<div>11111111111111111111</div>
+<h2>{{ section.settings.title }}</h2>
+{% comment %} {%- render 'wishlist-list2-1', section: section -%} {% endcomment %}
+{% schema %}
+  {
+    "name": "wishlist list2",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      }
+    ],
+    "blocks" : [
+      {
+        "type": "heading",
+        "name": "Heading",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Rich text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
