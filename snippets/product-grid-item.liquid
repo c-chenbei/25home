@@ -218,7 +218,7 @@
             {%- assign price = current_variant.price | money -%}
             <span class="grid-product__price--savings-mod">{{ 'products.general.from_text_html' | t: price: price }}</span>
           {%- else -%}
-            {{ product.price | money }}
+            <span class="grid-product__price--savings-mod">{{ product.price | money }}</span>
           {%- endif -%}
 
           {% comment %} 划线价 {% endcomment %}
