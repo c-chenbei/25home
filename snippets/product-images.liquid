@@ -45,6 +45,21 @@
             </span>
           </button>
         {%- endif -%}
+
+        {% comment %} 活动角标 {% endcomment %}
+        {%- unless product.metafields.custom.sale_tag_text == blank -%}
+          <div class="product-img_content">
+            <span
+              class="product-img_badge"
+              style="
+                {% if product.metafields.custom.sale_tag_color %}color:{{ product.metafields.custom.sale_tag_color }};{% endif %}
+                {% if product.metafields.custom.sale_tag_bg %}background-color:{{ product.metafields.custom.sale_tag_bg }};{% endif %}
+              "
+            >
+              {{ product.metafields.custom.sale_tag_text }}
+            </span>
+          </div>
+        {%- endunless -%}
       </div>
 
       <div

@@ -57,19 +57,19 @@
       </span>
     </div>
   {% else %}
-    {% unless product.metafields.custom.sale_tag_text == blank %}
+    {%- unless product.metafields.custom.sale_tag_text == blank -%}
       <div class="grid-card__content">
         <span
           class="grid-card__badge"
           style="
-            {% if product.metafields.custom.sale_tag_color %}color:{{ product.metafields.custom.sale_tag_color }}{% endif %};
-            {% if product.metafields.custom.sale_tag_bg %}background-color:{{ product.metafields.custom.sale_tag_bg }}{% endif %};
+            {% if product.metafields.custom.sale_tag_color %}color:{{ product.metafields.custom.sale_tag_color }};{% endif %}
+            {% if product.metafields.custom.sale_tag_bg %}background-color:{{ product.metafields.custom.sale_tag_bg }};{% endif %}
           "
         >
           {{ product.metafields.custom.sale_tag_text }}
         </span>
       </div>
-    {% endunless %}
+    {%- endunless -%}
   {% endif %}
   {% comment %} product.metafields.custom.keywords {% endcomment %}
   <div class="grid-product__content">
