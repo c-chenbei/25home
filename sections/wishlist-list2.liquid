@@ -1,5 +1,5 @@
 <div>11111111111111111111</div>
-<h2>{{ section.settings.title }}</h2>
+<h2>{{ section.settings.wis_align_text }}</h2>
 {% comment %} {%- render 'wishlist-list2-1', section: section -%} {% endcomment %}
 {% schema %}
   {
@@ -8,7 +8,7 @@
     "settings": [
       {
         "type": "select",
-        "id": "align_text",
+        "id": "wis_align_text",
         "label": "Text alignment",
         "default": "center",
         "options": [
@@ -34,7 +34,7 @@
         "settings": [
           {
             "type": "text",
-            "id": "title",
+            "id": "wis_title",
             "label": "Heading",
             "default": "Rich text"
           }
