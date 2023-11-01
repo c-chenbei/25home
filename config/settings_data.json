@@ -115,12 +115,21 @@
               "link_text": "30-day postage paid returns",
               "link": ""
             }
+          },
+          "ba0c68b1-0dee-4366-918b-354cf496aaff": {
+            "type": "menu_img",
+            "settings": {
+              "img_name": "ALL",
+              "image_with_text_image1": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+              "image_with_text_image2": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg"
+            }
           }
         },
         "block_order": [
           "1524770014057",
           "1524770292306",
-          "1524770296206"
+          "1524770296206",
+          "ba0c68b1-0dee-4366-918b-354cf496aaff"
         ],
         "settings": {
           "main_menu_link_list": "main-menu",

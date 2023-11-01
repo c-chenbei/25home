@@ -230,7 +230,6 @@
         {%- endif -%}
 
 
-
         <div class="page-width">
           <div
             class="header-layout header-layout--{{ section.settings.main_menu_alignment }}"
@@ -247,6 +246,7 @@
                 {%- render 'header-desktop-nav', main_menu: main_menu, dropdown_alignment: dropdown_alignment -%}
               </div>
             {%- endif -%}
+
             {%- if logo_alignment == 'center' -%}
               <div class="header-item header-item--left header-item--navigation">
                 {%- if section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-split' -%}
@@ -261,7 +261,7 @@
                 {%- endif -%}
 
                 {%- if section.settings.main_menu_alignment == 'center-left' -%}
-                  {%- render 'header-desktop-nav', main_menu: main_menu, dropdown_alignment: dropdown_alignment -%}
+                  {%- render 'header-desktop-nav2', main_menu: main_menu, dropdown_alignment: dropdown_alignment,section: section -%}
                 {%- endif -%}
 
                 <div class="site-nav{% unless section.settings.main_menu_alignment == 'center-drawer' %} medium-up--hide{% endunless %}">
@@ -667,6 +667,52 @@
             "type": "url",
             "id": "link",
             "label": "Link"
+          }
+        ]
+      },
+      {
+        "type": "menu_img",
+        "name": "导航栏添加图片",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "text",
+            "id": "img_name",
+            "label": "Heading",
+            "info": "输入对应导航栏菜单标题",
+            "default": "ALL"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_with_text_image1",
+            "label": "图片1"
+          },
+          {
+            "type": "text",
+            "id": "image_with_text1",
+            "label": "图片1标题",
+            "default": "图片1标题"
+          },
+          {
+            "type": "url",
+            "id": "image_with_link1",
+            "label": "图片1连接"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_with_text_image2",
+            "label": "图片2"
+          },
+          {
+            "type": "text",
+            "id": "image_with_text2",
+            "label": "图片2标题",
+            "default": "图片2标题"
+          },
+          {
+            "type": "url",
+            "id": "image_with_link2",
+            "label": "图片2连接"
           }
         ]
       }
