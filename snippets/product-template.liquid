@@ -360,6 +360,16 @@
                         {% endif %}
                       {% endfor %}
                     </div>
+                    {% comment %} <div class="zi" style="margin-bottom: 15px;">
+                      <label for="options">Full-Service Delivery: $99 - $119</label>
+                      <select id="options" name="selected_option">
+                        <option value="option1">Fri, Nov 03 (8am - 6pm) $99</option>
+                        <option value="option2">Sat, Nov 04 (8am - 6pm) $119</option>
+                        <option value="option3">Sun, Nov 05 (8am -6pm) $119</option>
+                        <option value="option4">Mon, Nov 06 (8am - 6pm) $109</option>
+                        <!-- 添加更多日期和时间范围的选项 -->
+                      </select>
+                    </div> {% endcomment %}
                     {% comment %}
                       {% unless product.metafields.custom.stock==blank %}
                         <p style="font-size:1.0em;font-weight:bold;margin-bottom:5px;"><b style="font-size:1.0em">•</b> {{product.metafields.custom.stock}}</p>

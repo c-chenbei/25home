@@ -56,7 +56,7 @@
     "enable_swatches": false,
     "swatch_style": "square",
     "collection_grid_style": "overlaid",
-    "collection_grid_shape": "square",
+    "collection_grid_shape": "landscape",
     "collection_grid_image": "collection",
     "collection_grid_text_align": "center",
     "collection_grid_tint": "#000000",
@@ -297,7 +297,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2023\/11\/02\/15\/00\/00"
+          "countdown_target_datetimes": "2023\/11\/06\/15\/00\/00"
         }
       }
     },

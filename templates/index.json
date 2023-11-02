@@ -73,8 +73,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Flash-Sale.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Flash-Sale-mob.jpg",
+            "image": "shopify:\/\/shop_images\/Flash-Sale_3d7fd448-15ea-4269-9866-e76c32447820.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Flash-Sale-mob_b28fd450-e056-4c44-b0bd-205471d97b65.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -130,112 +130,6 @@
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
-      }
-    },
-    "promo-grid2": {
-      "type": "promo-grid",
-      "blocks": {
-        "promo2-0": {
-          "type": "advanced",
-          "disabled": true,
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "shopify:\/\/collections\/all",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "100",
-            "height": 720,
-            "text_size": 120,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "80% 50%",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        },
-        "promo2-1": {
-          "type": "sale_collection",
-          "settings": {
-            "sale_collection": "crazy-friday",
-            "top_text": "Get Extra",
-            "middle_text": "15% off",
-            "bottom_text": "Crazy Friday SALE",
-            "width": "100",
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "boxed": false,
-            "framed": false
-          }
-        },
-        "promo2-2": {
-          "type": "sale_collection",
-          "disabled": true,
-          "settings": {
-            "sale_collection": "",
-            "top_text": "Up to",
-            "middle_text": "50% off",
-            "bottom_text": "Select products",
-            "width": "50",
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "boxed": false,
-            "framed": true
-          }
-        },
-        "a8eebd32-9ba5-4123-8993-6f8349577017": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "aalto-air-leather-oval-lounge-chair",
-            "subheading": "Limited time",
-            "heading": "Announce your product",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "link_label": "Learn more",
-            "label": "New",
-            "enable_price": true,
-            "width": "100",
-            "text_size": 100,
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "framed": false
-          }
-        },
-        "ba4db20d-ef26-46ad-b0af-07b057e1c6e5": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "aalto-boutique-beige-and-grey-plume-loveseat",
-            "subheading": "Limited time",
-            "heading": "Announce your product",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "link_label": "Learn more",
-            "label": "New",
-            "enable_price": true,
-            "width": "100",
-            "text_size": 100,
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "framed": false
-          }
-        }
-      },
-      "block_order": [
-        "promo2-0",
-        "promo2-1",
-        "promo2-2",
-        "a8eebd32-9ba5-4123-8993-6f8349577017",
-        "ba4db20d-ef26-46ad-b0af-07b057e1c6e5"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "gutter_size": 20,
-        "space_above": true,
-        "space_below": false
       }
     },
     "16541605899760848b": {
@@ -363,19 +257,6 @@
         "divider": false
       }
     },
-    "16457918389a3781ba": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Pad & Box Sofas",
-        "home_featured_products": "pad-sofa",
-        "per_row": 4,
-        "rows": 2,
-        "mobile_scrollable": false,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d": {
       "type": "featured-collection",
       "settings": {
@@ -386,6 +267,86 @@
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
+      }
+    },
+    "166123871604845a26": {
+      "type": "slideshow",
+      "blocks": {
+        "645742b5-edec-4413-8dbb-c9af84475c78": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/products\/crawford-leather-lounge-modular-sectional",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/1238-new-arrival-2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/1238-new-arrival-1-mob.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "1661238716ba9313fd-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/hygge-sofas-sectionals",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fcf4ef",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/1003-2.png",
+            "image_mobile": "shopify:\/\/shop_images\/2_4fb2ca33-e56e-4184-b94f-67cde912796e.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "1661238716ba9313fd-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "Pad & Box Collection",
+            "title": "",
+            "title_size": 40,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/pad-sofa",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/2_d1646135-d09a-4af0-baa8-d2f223871386.png",
+            "image_mobile": "shopify:\/\/shop_images\/2-m_7c4db3b5-4f74-4ba5-b1c4-74aa0164bdfe.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "645742b5-edec-4413-8dbb-c9af84475c78",
+        "1661238716ba9313fd-1",
+        "1661238716ba9313fd-0"
+      ],
+      "custom_css": [
+        ".hero__link a.btn {color: #e8a06c !important;}"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "dots",
+        "autoplay": true,
+        "autoplay_speed": 5
       }
     },
     "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4": {
@@ -419,90 +380,11 @@
         "enable_gutter": true
       }
     },
-    "166123871604845a26": {
-      "type": "slideshow",
-      "blocks": {
-        "1661238716ba9313fd-1": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/hygge-sofas-sectionals",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#fcf4ef",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/1003-2.png",
-            "image_mobile": "shopify:\/\/shop_images\/2_4fb2ca33-e56e-4184-b94f-67cde912796e.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "645742b5-edec-4413-8dbb-c9af84475c78": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "Hygge Collection",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/hygge-sofas-sectionals",
-            "link_text": "Shop Now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#fcf4ef",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/1003-1.png",
-            "image_mobile": "shopify:\/\/shop_images\/1_89762851-35c5-44dd-8540-7d71b3f6c634.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "1661238716ba9313fd-0": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "Pad & Box Collection",
-            "title": "",
-            "title_size": 40,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/pad-sofa",
-            "link_text": "Shop Now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/2_d1646135-d09a-4af0-baa8-d2f223871386.png",
-            "image_mobile": "shopify:\/\/shop_images\/2-m_7c4db3b5-4f74-4ba5-b1c4-74aa0164bdfe.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "1661238716ba9313fd-1",
-        "645742b5-edec-4413-8dbb-c9af84475c78",
-        "1661238716ba9313fd-0"
-      ],
-      "custom_css": [
-        ".hero__link a.btn {color: #e8a06c !important;}"
-      ],
-      "settings": {
-        "section_height": "natural",
-        "mobile_height": "auto",
-        "parallax": false,
-        "style": "dots",
-        "autoplay": true,
-        "autoplay_speed": 5
-      }
-    },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Hygge Sofas & Sectionals",
-        "home_featured_products": "hygge-sofas-sectionals",
+        "title": "Living Room Set",
+        "home_featured_products": "living-room-set",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": false,
@@ -516,7 +398,7 @@
         "b3b310f4-a34c-4363-9306-4f11b8f958ba": {
           "type": "button",
           "settings": {
-            "link": "shopify:\/\/collections\/hygge-sofas-sectionals",
+            "link": "shopify:\/\/collections\/living-room-set",
             "link_text": "VIEW ALL"
           }
         }
@@ -722,6 +604,22 @@
         "divider": false
       }
     },
+    "1698895512aae66a04": {
+      "type": "apps",
+      "blocks": {
+        "ae77543c-6a99-43dd-b339-827dede42fea": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "ae77543c-6a99-43dd-b339-827dede42fea"
+      ],
+      "settings": {
+      }
+    },
     "76b8716c-4de2-4a93-b467-ab06cf1dd51b": {
       "type": "rich-text",
       "blocks": {
@@ -891,17 +789,15 @@
   "order": [
     "slideshow",
     "a8c5aae9-e652-461e-bf73-ce0f0328ce67",
-    "promo-grid2",
     "16541605899760848b",
     "39a54d10-36aa-449e-89ef-c69365226a80",
     "976c332f-9325-4e60-98e2-e7576f5c249d",
     "b10af564-5ea1-4cfc-a965-0519a30a30ca",
     "ba9aef6b-b619-427d-b916-5bd5eb2924f0",
     "1645791937abcdc3ed",
-    "16457918389a3781ba",
     "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d",
-    "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4",
     "166123871604845a26",
+    "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4",
     "featured-collection",
     "f2dc5a74-1c36-4a8c-8f8e-04da262027b0",
     "1661238415653f32c5",
@@ -911,6 +807,7 @@
     "165778003649565f02",
     "blog-posts",
     "16560549040e4cf3a8",
+    "1698895512aae66a04",
     "76b8716c-4de2-4a93-b467-ab06cf1dd51b",
     "1657779980755d45ad",
     "0650ef4b-b7b6-4833-abd1-14ce428ab75c"
