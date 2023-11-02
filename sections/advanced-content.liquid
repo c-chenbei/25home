@@ -28,6 +28,10 @@
           {%- when 'html' -%}
             {%- if block.settings.code != blank -%}
               <div class="rte">
+                {% comment %} <h2 style="text-align:center">Shop The Look</h2>
+                <div id="evm-lookbook-9547"></div>
+                {{ 'embed.js' | asset_url | script_tag }} {% endcomment %}
+
                 {{ block.settings.code }}
               </div>
             {%- else -%}

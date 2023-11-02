@@ -261,7 +261,7 @@
                 {%- endif -%}
 
                 {%- if section.settings.main_menu_alignment == 'center-left' -%}
-                  {%- render 'header-desktop-nav2', main_menu: main_menu, dropdown_alignment: dropdown_alignment,section: section -%}
+                  {%- render 'header-desktop-nav', main_menu: main_menu, dropdown_alignment: dropdown_alignment,section: section -%}
                 {%- endif -%}
 
                 <div class="site-nav{% unless section.settings.main_menu_alignment == 'center-drawer' %} medium-up--hide{% endunless %}">

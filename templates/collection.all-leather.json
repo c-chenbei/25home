@@ -1,1 +1,106 @@
-{"sections":{"collection-header":{"type":"collection-header","settings":{"enable":true,"collection_image_enable":true,"parallax":true}},"1645173779f26ecbf5":{"type":"promo-grid","blocks":{"8f9fd4ec-c2df-41e9-815e-388589d926a6":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/allleather-offer-pc_96e13373-280d-45f8-9137-b9a4e3a6fb95.jpg","link":"","width":"100"}}},"block_order":["8f9fd4ec-c2df-41e9-815e-388589d926a6"],"settings":{"full_width":true,"gutter_size":0,"space_above":true,"space_below":true}},"main-collection":{"type":"main-collection","blocks":{"collection_description":{"type":"collection_description","settings":{}},"subcollections":{"type":"subcollections","settings":{"subcollections_per_row":5}},"product_grid":{"type":"product_grid","settings":{"enable_collection_count":true,"per_row":4,"rows_per_page":7,"mobile_flush_grid":false}}},"block_order":["collection_description","subcollections","product_grid"],"settings":{"enable_sidebar":true,"collapsed":true,"filter_style":"sidebar","enable_color_swatches":false,"enable_sort":true}},"9fa17592-4b66-48a7-93a1-8f98544896ed":{"type":"rich-text","blocks":{"template--16187532935395__9fa17592-4b66-48a7-93a1-8f98544896ed-heading-1":{"type":"heading","settings":{"title":""}},"template--16187532935395__9fa17592-4b66-48a7-93a1-8f98544896ed-text-1":{"type":"text","settings":{"enlarge_text":false,"text":"<p><strong>What makes the all leather sofas stand out from the rest?<\/strong><\/p><p>The <a href=\"https:\/\/25home.com\/blogs\/news\/25home-all-leather-sectional-review\" target=\"_blank\" title=\"https:\/\/25home.com\/blogs\/news\/25home-all-leather-sectional-review\">all leather sofa<\/a> features top-grain luxury leather, known for its exquisite quality and durability. The leather sofa is scratch-resistant and crack-resistant, ensuring a long-lasting and pristine appearance even with regular use. Its breathable and pliable nature adds to the overall comfort, making it an excellent choice for relaxation.<\/p><p><strong>How does the waterproof process benefit the all leather sofa?<\/strong><\/p><p>The all leather sofa undergoes a thoughtful waterproof process, providing an added layer of protection against spills and stains. This feature makes cleaning the sofa a breeze, as any accidental spills can be easily wiped off without leaving any lasting marks or damage.<\/p><p><strong>What should I consider when buying a all leather sofa?<\/strong><\/p><ul><li><strong>Leather Type<\/strong>: Pay attention to the type of leather used in the sofa. Top-grain leather is considered the highest quality and most durable, while genuine leather and bonded leather may be more affordable but have different characteristics.<\/li><li><strong>Comfort and Support<\/strong>: Test the sofa for comfort and support. Sit on it to gauge the level of comfort and ensure it provides adequate support for your back and body.<\/li><li><strong>Durability<\/strong>: Check the sofa's durability and resistance to scratches, stains, and wear. Top-grain leather is generally more durable and resistant to damage, making it ideal for high-traffic areas.<\/li><li><strong>Size and Configuration<\/strong>: Measure your space and choose a sofa size and configuration that fits well in your room. Determine whether you need a <a href=\"https:\/\/25home.com\/collections\/all-leather\/products\/salo-all-leather-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/all-leather\/products\/salo-all-leather-sofa\">standard sofa<\/a>, <a href=\"https:\/\/25home.com\/collections\/all-leather\/products\/all-leather-sectional\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/all-leather\/products\/all-leather-sectional\">sectional<\/a>, or other layout options to maximize seating and space utilization.<\/li><li><strong>Budget<\/strong>: Set a budget and look for options within your price range. Keep in mind that higher-quality leather sofas may be more expensive but offer better longevity and comfort.<\/li><li><strong>Maintenance<\/strong>: Understand the maintenance requirements of the leather sofa. Some may require regular conditioning or cleaning, while others may be more low-maintenance.<\/li><li><a href=\"https:\/\/25home.com\/pages\/warranty-policy\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/warranty-policy\"><strong>Warranty<\/strong><\/a><strong> and <\/strong><a href=\"https:\/\/25home.com\/pages\/return-and-refund-policy\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/return-and-refund-policy\"><strong>Return Policy<\/strong><\/a>: Check the warranty and return policy to ensure you are protected in case of any issues or defects with the sofa.<\/li><\/ul><p><\/p><p><strong>What sectional options are available in the all leather series?<\/strong><\/p><p>The all leather series offers a wide range of sectional configurations to cater to different needs and room sizes. You can choose from traditional sofas, versatile <a href=\"https:\/\/25home.com\/collections\/all-leather\/products\/all-leather-u-sectional\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/all-leather\/products\/all-leather-u-sectional\">u-sectional sofas<\/a>, and stylish ottomans. Our all-leather modern sofas are available in a range of sectional options to suit any living space.<\/p><p>You may confidently pick a couch that suits your living area and enriches your entire living experience by evaluating the great quality, comfort, practical features, and sectional diversity of the all leather series.<\/p>"}}},"block_order":["template--16187532935395__9fa17592-4b66-48a7-93a1-8f98544896ed-heading-1","template--16187532935395__9fa17592-4b66-48a7-93a1-8f98544896ed-text-1"],"settings":{"align_text":"left","narrow_column":false,"divider":true}}},"order":["collection-header","1645173779f26ecbf5","main-collection","9fa17592-4b66-48a7-93a1-8f98544896ed"]}
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true
+      }
+    },
+    "1645173779f26ecbf5": {
+      "type": "promo-grid",
+      "blocks": {
+        "8f9fd4ec-c2df-41e9-815e-388589d926a6": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/allleather-offer-pc_96e13373-280d-45f8-9137-b9a4e3a6fb95.jpg",
+            "link": "",
+            "width": "100"
+          }
+        }
+      },
+      "block_order": [
+        "8f9fd4ec-c2df-41e9-815e-388589d926a6"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "9fa17592-4b66-48a7-93a1-8f98544896ed": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16187532935395__9fa17592-4b66-48a7-93a1-8f98544896ed-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--16187532935395__9fa17592-4b66-48a7-93a1-8f98544896ed-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>What makes the all leather sofas stand out from the rest?<\/strong><\/p><p>The <a href=\"https:\/\/25home.com\/blogs\/news\/25home-all-leather-sectional-review\" target=\"_blank\" title=\"https:\/\/25home.com\/blogs\/news\/25home-all-leather-sectional-review\">all leather sofa<\/a> features top-grain luxury leather, known for its exquisite quality and durability. The leather sofa is scratch-resistant and crack-resistant, ensuring a long-lasting and pristine appearance even with regular use. Its breathable and pliable nature adds to the overall comfort, making it an excellent choice for relaxation.<\/p><p><strong>How does the waterproof process benefit the all leather sofa?<\/strong><\/p><p>The all leather sofa undergoes a thoughtful waterproof process, providing an added layer of protection against spills and stains. This feature makes cleaning the sofa a breeze, as any accidental spills can be easily wiped off without leaving any lasting marks or damage.<\/p><p><strong>What should I consider when buying a all leather sofa?<\/strong><\/p><ul><li><strong>Leather Type<\/strong>: Pay attention to the type of leather used in the sofa. Top-grain leather is considered the highest quality and most durable, while genuine leather and bonded leather may be more affordable but have different characteristics.<\/li><li><strong>Comfort and Support<\/strong>: Test the sofa for comfort and support. Sit on it to gauge the level of comfort and ensure it provides adequate support for your back and body.<\/li><li><strong>Durability<\/strong>: Check the sofa's durability and resistance to scratches, stains, and wear. Top-grain leather is generally more durable and resistant to damage, making it ideal for high-traffic areas.<\/li><li><strong>Size and Configuration<\/strong>: Measure your space and choose a sofa size and configuration that fits well in your room. Determine whether you need a <a href=\"https:\/\/25home.com\/collections\/all-leather\/products\/salo-all-leather-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/all-leather\/products\/salo-all-leather-sofa\">standard sofa<\/a>, <a href=\"https:\/\/25home.com\/collections\/all-leather\/products\/all-leather-sectional\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/all-leather\/products\/all-leather-sectional\">sectional<\/a>, or other layout options to maximize seating and space utilization.<\/li><li><strong>Budget<\/strong>: Set a budget and look for options within your price range. Keep in mind that higher-quality leather sofas may be more expensive but offer better longevity and comfort.<\/li><li><strong>Maintenance<\/strong>: Understand the maintenance requirements of the leather sofa. Some may require regular conditioning or cleaning, while others may be more low-maintenance.<\/li><li><a href=\"https:\/\/25home.com\/pages\/warranty-policy\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/warranty-policy\"><strong>Warranty<\/strong><\/a><strong> and <\/strong><a href=\"https:\/\/25home.com\/pages\/return-and-refund-policy\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/return-and-refund-policy\"><strong>Return Policy<\/strong><\/a>: Check the warranty and return policy to ensure you are protected in case of any issues or defects with the sofa.<\/li><\/ul><p><\/p><p><strong>What sectional options are available in the all leather series?<\/strong><\/p><p>The all leather series offers a wide range of sectional configurations to cater to different needs and room sizes. You can choose from traditional sofas, versatile <a href=\"https:\/\/25home.com\/collections\/all-leather\/products\/all-leather-u-sectional\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/all-leather\/products\/all-leather-u-sectional\">u-sectional sofas<\/a>, and stylish ottomans. Our all-leather modern sofas are available in a range of sectional options to suit any living space.<\/p><p>You may confidently pick a couch that suits your living area and enriches your entire living experience by evaluating the great quality, comfort, practical features, and sectional diversity of the all leather series.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16187532935395__9fa17592-4b66-48a7-93a1-8f98544896ed-heading-1",
+        "template--16187532935395__9fa17592-4b66-48a7-93a1-8f98544896ed-text-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "1645173779f26ecbf5",
+    "main-collection",
+    "9fa17592-4b66-48a7-93a1-8f98544896ed"
+  ]
+}

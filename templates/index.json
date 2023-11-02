@@ -16,27 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/halloween-pc_5539e0b4-167c-4233-9b84-a88575be982e.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/halloween-750_fc4b487d-0d40-48e2-b7ff-d41c03d1fc97.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "1c54d0f8-f3f9-4143-b388-6b881e214c6d": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/all-leather",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/halloween-All-leather-pc_43dc3963-f5d5-488c-b16c-c0771a877b82.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/halloween-All-leather-750_b247e99a-22df-4da0-a32e-9073d14d1d62.jpg",
+            "image": "shopify:\/\/shop_images\/Thanksgiving-Day.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Thanksgiving-Day-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -48,19 +29,19 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/collections\/industrial",
+            "link": "shopify:\/\/products\/piano-sofa",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/halloween-The-Industrial-pc_97300db6-6b7f-4d5d-80c6-6e5d99637367.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/halloween-The-Industrial-750_359d0f9d-05f9-4a33-b202-66d5422e497b.jpg",
+            "image": "shopify:\/\/shop_images\/piano-NEW-ARRIVAL.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/piano-NEW-ARRIVAL-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
         },
-        "de956e8a-ef55-498f-bf05-5a6d86f3452e": {
+        "1c54d0f8-f3f9-4143-b388-6b881e214c6d": {
           "type": "image",
           "settings": {
             "top_subheading": "",
@@ -73,14 +54,34 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/halloween-PLUME-pc-1_15812ed6-7dff-42ba-a4f0-06bb2a595480.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/halloween-PLUME-750-1_5d2f1fb3-4fab-4975-9391-6d2cdc4d427d.jpg",
+            "image": "shopify:\/\/shop_images\/PLUME-SOFA-SURPRISE-DISCOUNT.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/PLUME-SOFA-SURPRISE-DISCOUNT-mob.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "de956e8a-ef55-498f-bf05-5a6d86f3452e": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/limited-flash-sale",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Flash-Sale.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Flash-Sale-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
         },
         "2f3dc6ea-f7d6-44d8-90a2-7f03159efad9": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
@@ -101,8 +102,8 @@
       },
       "block_order": [
         "slideshow-1",
-        "1c54d0f8-f3f9-4143-b388-6b881e214c6d",
         "slideshow-0",
+        "1c54d0f8-f3f9-4143-b388-6b881e214c6d",
         "de956e8a-ef55-498f-bf05-5a6d86f3452e",
         "2f3dc6ea-f7d6-44d8-90a2-7f03159efad9"
       ],
@@ -349,84 +350,9 @@
         "divider": false
       }
     },
-    "d270f170-b870-41fa-9063-eb80aaa576cb": {
-      "type": "slideshow",
-      "blocks": {
-        "31894592-8fda-40e1-b0f7-3be95bd3e4b7": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "shopify:\/\/products\/piano-sofa",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#fcf4ef",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/piano-1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/piano-mob-1.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "0871e8b2-9d84-4c35-b6a0-0e8475bedc1d": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "shopify:\/\/products\/piano-sofa",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#fcf4ef",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/piano-2.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/piano-mob-2.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "83712431-c870-4cd8-ae75-8b59e83c3938": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "Pad & Box Collection",
-            "title": "",
-            "title_size": 40,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/pad-sofa",
-            "link_text": "Shop Now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/2_d1646135-d09a-4af0-baa8-d2f223871386.png",
-            "image_mobile": "shopify:\/\/shop_images\/2-m_7c4db3b5-4f74-4ba5-b1c4-74aa0164bdfe.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "31894592-8fda-40e1-b0f7-3be95bd3e4b7",
-        "0871e8b2-9d84-4c35-b6a0-0e8475bedc1d",
-        "83712431-c870-4cd8-ae75-8b59e83c3938"
-      ],
-      "settings": {
-        "section_height": "natural",
-        "mobile_height": "auto",
-        "parallax": false,
-        "style": "dots",
-        "autoplay": true,
-        "autoplay_speed": 5
-      }
-    },
     "1645791937abcdc3ed": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Sandwich",
         "home_featured_products": "sandwich",
@@ -439,6 +365,7 @@
     },
     "16457918389a3781ba": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Pad & Box Sofas",
         "home_featured_products": "pad-sofa",
@@ -447,6 +374,49 @@
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
+      }
+    },
+    "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Promotion",
+        "home_featured_products": "promotion",
+        "per_row": 4,
+        "rows": 2,
+        "mobile_scrollable": false,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16800481509603__e6b99ded-9769-4aa8-ac8c-2def66d6a4b4-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "table-chairs",
+            "title": "Dining Room",
+            "focal_point": "center center"
+          }
+        },
+        "template--16800481509603__e6b99ded-9769-4aa8-ac8c-2def66d6a4b4-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "bed",
+            "title": "Bedroom",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16800481509603__e6b99ded-9769-4aa8-ac8c-2def66d6a4b4-collection-1",
+        "template--16800481509603__e6b99ded-9769-4aa8-ac8c-2def66d6a4b4-collection-2"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false,
+        "per_row": 2,
+        "enable_gutter": true
       }
     },
     "166123871604845a26": {
@@ -534,9 +504,29 @@
         "title": "Hygge Sofas & Sectionals",
         "home_featured_products": "hygge-sofas-sectionals",
         "per_row": 4,
-        "rows": 3,
+        "rows": 1,
         "mobile_scrollable": false,
-        "view_all": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "f2dc5a74-1c36-4a8c-8f8e-04da262027b0": {
+      "type": "rich-text",
+      "blocks": {
+        "b3b310f4-a34c-4363-9306-4f11b8f958ba": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections\/hygge-sofas-sectionals",
+            "link_text": "VIEW ALL"
+          }
+        }
+      },
+      "block_order": [
+        "b3b310f4-a34c-4363-9306-4f11b8f958ba"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
         "divider": false
       }
     },
@@ -548,18 +538,6 @@
         "home_featured_products": "plume-sofa",
         "per_row": 4,
         "rows": 2,
-        "mobile_scrollable": false,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "d41ece77-c85e-441e-9ef6-fdd19d9e9392": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Dining Tables & Chairs",
-        "home_featured_products": "table-chairs",
-        "per_row": 4,
-        "rows": 1,
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
@@ -580,6 +558,7 @@
     },
     "83bbedbd-bce5-4405-a19b-9142a198f6cc": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Beds",
         "home_featured_products": "bed",
@@ -918,13 +897,14 @@
     "976c332f-9325-4e60-98e2-e7576f5c249d",
     "b10af564-5ea1-4cfc-a965-0519a30a30ca",
     "ba9aef6b-b619-427d-b916-5bd5eb2924f0",
-    "d270f170-b870-41fa-9063-eb80aaa576cb",
     "1645791937abcdc3ed",
     "16457918389a3781ba",
+    "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d",
+    "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4",
     "166123871604845a26",
     "featured-collection",
+    "f2dc5a74-1c36-4a8c-8f8e-04da262027b0",
     "1661238415653f32c5",
-    "d41ece77-c85e-441e-9ef6-fdd19d9e9392",
     "1662091818f72278f9",
     "83bbedbd-bce5-4405-a19b-9142a198f6cc",
     "background-image-text",

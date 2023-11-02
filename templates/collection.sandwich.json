@@ -23,6 +23,7 @@
       "block_order": [
         "8f9fd4ec-c2df-41e9-815e-388589d926a6"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,
