@@ -395,7 +395,7 @@
           "type": "collection",
           "settings": {
             "collection": "table-chairs",
-            "title": "Dining Room",
+            "title": "",
             "focal_point": "center center"
           }
         },
@@ -403,7 +403,7 @@
           "type": "collection",
           "settings": {
             "collection": "bed",
-            "title": "Bedroom",
+            "title": "",
             "focal_point": "center center"
           }
         }

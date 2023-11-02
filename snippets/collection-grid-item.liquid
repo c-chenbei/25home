@@ -9,6 +9,11 @@
 
   if block.settings.title != blank
     assign title_output = block.settings.title
+  endif
+-%}
+{% comment %} title_output 去除默认值  {% endcomment %}
+{% comment %} if block.settings.title != blank
+    assign title_output = block.settings.title
   else
     if collection.empty?
       assign title_output = 'home_page.onboarding.collection_title' | t
@@ -17,8 +22,7 @@
     else
       assign title_output = collection.title | escape
     endif
-  endif
--%}
+  endif {% endcomment %}
 
 <div class="grid__item {{ grid_item_width }}">
   <a href="{{ collection.url }}" class="collection-item collection-item--{{ settings.collection_grid_style }}" data-aos="row-of-{{ per_row }}">

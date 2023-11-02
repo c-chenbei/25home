@@ -161,6 +161,22 @@
     font-size: 12px;
   }
 }
+@keyframes flash1 {
+  0%, 100% {
+    color: red;
+  }
+  50% {
+    color: #2f2e33;
+  }
+}
+
+.flash-text-shandong {
+  font-weight: 800;
+  animation: flash1 1s infinite;
+}
+.flash-text-shandong:hover {
+  animation: none;
+}
 </style>
 
 <div data-section-id="{{ section.id }}" data-section-type="header">
