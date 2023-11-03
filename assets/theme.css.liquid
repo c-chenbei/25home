@@ -5,7 +5,7 @@
 */
 
 :root{
-  --colorBtnPrimary: {{ settings.color_button | default: "#000" }};
+  --colorBtnPrimary: {{ settings.color_button | default: "#000" }}
   --colorBtnPrimaryLight: {{ settings.color_button | default: "#000" | color_lighten: 10 }};
   --colorBtnPrimaryDim: {{ settings.color_button | default: "#000" | color_darken: 5 }};
   --colorBtnPrimaryText: {{ settings.color_button_text | default: "#fff" }};
@@ -58,6 +58,9 @@
   --color-body-text: {{ settings.color_body_text | default: "#1c1d1d" }};
   --color-body: {{ settings.color_body_bg | default: "#fff" }};
   --color-bg: {{ settings.color_body_bg | default: "#fff" }};
+  --ico-select: url({{ 'ico-select.svg' | asset_url | split: '?' | first }});
+  --ico-select-white: url({{ "ico-select-white.svg" | asset_url | split: '?' | first }});
+  --ico-select-footer: url({{ "ico-select-footer.svg" | asset_url | split: '?' | first }})
 }
 
 @media only screen and (min-width:769px){
@@ -1670,6 +1673,7 @@ button[disabled],html input[disabled]{
   border:1px solid transparent;
   -webkit-user-select:none;
           user-select:none;
+  appearance:none;
   -webkit-appearance:none;
   -moz-appearance:none;
   border-radius: var(--buttonRadius);
@@ -2378,6 +2382,7 @@ form{
 }
 
 button,input,textarea{
+  appearance:none;
   -webkit-appearance:none;
   -moz-appearance:none;
 }
@@ -2432,11 +2437,13 @@ input[type=checkbox],input[type=radio]{
 }
 
 input[type=checkbox]{
+  appearance:checkbox;
   -webkit-appearance:checkbox;
   -moz-appearance:checkbox;
 }
 
 input[type=radio]{
+  appearance:radio;
   -webkit-appearance:radio;
   -moz-appearance:radio;
 }
@@ -2462,11 +2469,11 @@ select{
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 11px;
-  background-image: url({{ "ico-select.svg" | asset_url | split: '?' | first }});
+  background-image: var(--ico-select);
 }
 
 .is-light select{
-    background-image:url({{ "ico-select-white.svg" | asset_url | split: '?' | first }})
+    background-image: var(--ico-select-white);
 }
 
 .faux-select .icon{
@@ -3718,17 +3725,17 @@ form+.footer__social{
     }
 
 .site-footer select{
-    background-image:url({{ "ico-select-footer.svg" | asset_url | split: '?' | first }});
+    background-image: var(--ico-select-footer);
   }
 
 [data-center-text=true] .payment-icons{
-    text-align:center
+    text-align:center;
 }
 
 .payment-icons{
   -webkit-user-select:none;
           user-select:none;
-  cursor:default
+  cursor:default;
 }
 
 .payment-icons li{
@@ -4080,8 +4087,7 @@ form+.footer__social{
 .site-header{
   position:relative;
   padding:0px 0;
-  background:{{ settings.color_header | default: "#fff" }};
-  background:var(--colorNav)
+  background: var(--colorNav);
 }
 
 @media only screen and (min-width:769px){
@@ -4872,8 +4878,7 @@ form+.footer__social{
 }
 
 .mobile-nav>.mobile-nav__item{
-    background-color:{{ settings.color_drawer_background | default: "#1c1d1d" }};
-    background-color:var(--colorDrawers)
+    background-color: var(--colorDrawers);
 }
 
 .mobile-nav__item:after{
@@ -5475,7 +5480,6 @@ form+.footer__social{
 .js-qty__adjust .icon{
     display:block;
     font-size:8px;
-    vertical-align:middle;
     width:10px;
     height:10px;
     fill:inherit;
@@ -5723,8 +5727,9 @@ form+.footer__social{
   overflow:hidden;
   touch-action:none;
   z-index:1500;
-  -webkit-text-size-adjust:100%;
-  -webkit-backface-visibility:hidden;
+  -webkit-text-size-adjust: 100%;
+  backface-visibility: visible;
+  -webkit-backface-visibility: hidden;
   outline:none;
 }
 
@@ -5758,7 +5763,9 @@ form+.footer__social{
   background:var(--colorBody);
   opacity:0;
   transform:translateZ(0);
-  -webkit-backface-visibility:hidden; }
+  backface-visibility: visible;
+  -webkit-backface-visibility:hidden; 
+}
 
 .pswp__scroll-wrap{
   position:absolute;
@@ -5796,7 +5803,9 @@ form+.footer__social{
   transition:none; }
 
 .pswp__container,.pswp__zoom-wrap{
-  -webkit-backface-visibility:hidden; }
+  backface-visibility: visible;
+  -webkit-backface-visibility:hidden; 
+}
 
 .pswp__item{
   position:absolute;
@@ -5814,7 +5823,9 @@ form+.footer__social{
   left:0; }
 
 .pswp__img--placeholder{
-  -webkit-backface-visibility:hidden; }
+  backface-visibility: visible;
+  -webkit-backface-visibility:hidden; 
+}
 
 .pswp--ie .pswp__img{
   width:100% !important;
@@ -6753,7 +6764,6 @@ input[type=image]{
 .hero__subtitle{
   font-size:1.3em;
   display:block;
-  vertical-align:middle;
   margin-top:5px;
   margin-bottom:5px;
 }
