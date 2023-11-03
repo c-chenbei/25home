@@ -5,7 +5,7 @@
 */
 
 :root{
-  --colorBtnPrimary: {{ settings.color_button | default: "#000" }}
+  --colorBtnPrimary: {{ settings.color_button | default: "#000" }};
   --colorBtnPrimaryLight: {{ settings.color_button | default: "#000" | color_lighten: 10 }};
   --colorBtnPrimaryDim: {{ settings.color_button | default: "#000" | color_darken: 5 }};
   --colorBtnPrimaryText: {{ settings.color_button_text | default: "#fff" }};
@@ -6680,9 +6680,9 @@ input[type=image]{
 }
 
 .hero__slide-link:hover~.hero__text-wrap .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse){
-      /* background:{{ settings.color_button | default: "#000" | color_lighten: 10 }}; */
-      background:var(--colorBtnPrimaryLight);
-      transition-delay:0.25s
+      /* background: {{ settings.color_button | default: "#000" | color_lighten: 10 }}; */
+      background: var(--colorBtnPrimaryLight);
+      transition-delay: 0.25s;
     }
 
 .hero__slide-link:hover~.hero__text-wrap .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):after{
@@ -6690,8 +6690,8 @@ input[type=image]{
       }
 
 [data-button_style=angled] .hero__slide-link:hover~.hero__text-wrap .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):after{
-          animation:none;
-        }
+    animation:none;
+}
 
 .hero__text-wrap{
   position:relative;
