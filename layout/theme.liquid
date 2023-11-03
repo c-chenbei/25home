@@ -33,7 +33,6 @@
     {% render 'pagefly-head' %}
     {% include 'best-option-initializer' %}
     <meta name="google-site-verification" content="HkYHzDu-JcQFXee6yfAI84Ev3hCCj4s4tQ3s6qORJ3A">
-
     <meta name="google-site-verification" content="p_U8lyaV_jfy4AhXjGO0_lVCKuskSovkSOkchewH0cE">
     <!-- Hotjar Tracking Code for https://25home.com/ -->
     <script>
@@ -274,6 +273,8 @@
     <!-- End Meta Pixel Code -->
     <meta name="facebook-domain-verification" content="3zqxv6ho7hzfjgpqainfowdhuolvfa">
     <meta name="p:domain_verify" content="aed0438ede4c17dfe7d436a23af39136">
+    <script src="{{ 'vendor-scripts-v10.js' | asset_url | split: '?' | first }}" async></script>
+
     <!-- Global site tag (gtag.js) - Google Ads: 10865344192 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10865344192"></script>
     <script>
@@ -421,7 +422,6 @@
 
     {{ content_for_header }}
 
-    <script src="{{ 'vendor-scripts-v10.js' | asset_url | split: '?' | first }}" defer="defer"></script>
     {% comment %} <link rel="stylesheet" href="{{ 'iconfont.css' | asset_url | split: '?' | first}}"> {% endcomment %}
     <link rel="stylesheet" href="{{ 'iconfont.css' | asset_url }}" type="text/css">
 

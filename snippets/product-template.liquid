@@ -199,8 +199,8 @@
                               {{- 'products.general.sale_price' | t -}}
                             </span>
                           {%- else -%}
-                            <span data-a11y-price class="visually-hidden">
-                              {{- 'products.general.regular_price' | t -}}
+                            <span id="price-fallback-selectors" data-product-price class="product__price product__price-savings">
+                                {{ current_variant.price | money }}
                             </span>
                           {%- endif -%}
 
