@@ -197,7 +197,6 @@
   <div class="header-sticky-wrapper">
     <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--sticky is-light{% endif %}">
 
-
       {%- if overlay_header -%}
         {%- if section.settings.show_locale_selector or section.settings.show_currency_selector or section.settings.toolbar_social or section.settings.toolbar_menu != blank -%}
           {%- render 'toolbar',
@@ -215,7 +214,11 @@
 
         {% comment %} 倒计时  {% endcomment %}
         {%- if section.settings.countdown_target_show -%}
-          <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
+          {%- if section.settings.countdown_target_img  != blank -%}
+            <div class='header-countdown' style="background-image: url({{ section.settings.countdown_target_img | img_url }});background-repeat: no-repeat;background-size: cover">
+          {%- else -%}
+            <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
+          {%- endif -%}
             <a class="hander_countdowns-text"
               href="{{ section.settings.countdown_target_link }}"
               style='color:{{ section.settings.countdown_target__color}}'>
@@ -403,6 +406,11 @@
         "type": "url",
         "id": "countdown_target_link",
         "label": "添加连接"
+      },
+      {
+        "type": "image_picker",
+        "label": "背景图片",
+        "id": "countdown_target_img"
       },
       {
         "type": "color",
@@ -751,7 +759,6 @@ const minutes2 = parseInt(targetDateParts2[4]);
 const seconds2 = parseInt(targetDateParts2[5]);
 const targetDate2 = new Date(year2, month2, day2, hours2, minutes2, seconds2).getTime();
 let detectionIndex2 = 0
-
 
 
 function updateCountdown2() {
