@@ -215,7 +215,7 @@
         {% comment %} 倒计时  {% endcomment %}
         {%- if section.settings.countdown_target_show -%}
           {%- if section.settings.countdown_target_img  != blank -%}
-            <div class='header-countdown' style="background-image: url({{ section.settings.countdown_target_img | img_url }});background-repeat: no-repeat;background-size: cover">
+            <div class='header-countdown' style="background-image: url({{ section.settings.countdown_target_img | img_url: '1920x35' }});background-repeat: no-repeat;background-size: cover">
           {%- else -%}
             <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
           {%- endif -%}
