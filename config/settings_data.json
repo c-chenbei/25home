@@ -125,13 +125,13 @@
         "settings": {
           "main_menu_link_list": "main-menu",
           "countdown_target_show": true,
-          "countdown_target_content": "Thanksgiving Day🍁UP TO 48% OFF🍁Code: <b>THANKS<\/b>",
-          "countdown_target_datetime": "2023\/11\/06\/15\/00\/00",
-          "countdown_target_link": "",
+          "countdown_target_content": "Black Friday🔥UP TO 55% OFF🔥Code: <b>BLACK<\/b>",
+          "countdown_target_datetime": "2023\/11\/13\/16\/00\/00",
+          "countdown_target_link": "shopify:\/\/collections\/best-sellers",
           "countdown_target_bg": "#deb58c",
           "countdown_target__color": "#000000",
           "show_scroll_bar": true,
-          "scroll_bar_content": "<div><a href=\"https:\/\/25home.com\/pages\/return-and-refund-policy\" target=\"_blank\" style=\"color: inherit\">Free Shipping Sitewide | 30-Day Returns<\/a><\/div>\n      <div><a href=\"https:\/\/25home.com\/pages\/buy-now-pay-later\" target=\"_blank\" style=\"color: inherit\">Afterpay | 4 interest-free | Buy Now Pay Later→<\/a><\/div>\n      <div><a href=\"https:\/\/25home.com\/collections\/limited-flash-sale\" target=\"_blank\" style=\"color: inherit\">Limited Flash Sale: UP TO 65% OFF | shop now→<\/a><\/div>",
+          "scroll_bar_content": "<div><a href=\"https:\/\/25home.com\/pages\/return-and-refund-policy\" target=\"_blank\" style=\"color: inherit\">Free Shipping Sitewide | 30-Day Returns<\/a><\/div>\n<div>Price Guarantee Until the End of Black Friday<\/div>\n      <div><a href=\"https:\/\/25home.com\/pages\/buy-now-pay-later\" target=\"_blank\" style=\"color: inherit\">Afterpay | 4 interest-free | Buy Now Pay Later→<\/a><\/div>\n      <div><a href=\"https:\/\/25home.com\/collections\/limited-flash-sale\" target=\"_blank\" style=\"color: inherit\">Limited Flash Sale: UP TO 65% OFF | shop now→<\/a><\/div>",
           "hander-autoplay-Speed": "3000",
           "scroll_background": "#000000",
           "scroll_text": "#ffffff",
@@ -297,7 +297,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2023\/11\/06\/15\/00\/00"
+          "countdown_target_datetimes": "2023\/11\/09\/15\/00\/00"
         }
       }
     },
@@ -327,6 +327,24 @@
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
+        }
+      },
+      "11468047240823483236": {
+        "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/checkout-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+        "disabled": true,
+        "settings": {
+          "heading": "Sezzle Checkout Button",
+          "template": "Checkout with %%logo%%",
+          "mode": "light"
+        }
+      },
+      "12608439564960700138": {
+        "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+        "disabled": true,
+        "settings": {
+          "heading": "Sezzle Widget",
+          "font_size": 18,
+          "font_family": "inherit"
         }
       }
     }

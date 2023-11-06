@@ -83,20 +83,7 @@
           document.getElementsByTagName('head')[0].appendChild(t);
       })();
     </script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-NV9862J');
-    </script>
-    <!-- End Google Tag Manager -->
+    
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -274,24 +261,12 @@
     <meta name="facebook-domain-verification" content="3zqxv6ho7hzfjgpqainfowdhuolvfa">
     <meta name="p:domain_verify" content="aed0438ede4c17dfe7d436a23af39136">
 
-    <!-- Global site tag (gtag.js) - Google Ads: 10865344192 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10865344192"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'AW-10865344192');
-    </script>
     <!-- Event snippet for 添加到购物车 conversion page -->
     <script>
       if (window.location.href.includes('/cart')) {
         gtag('event', 'conversion', { send_to: 'AW-10865344192/iAzHCJrbz8MDEMD9_7wo' });
       }
     </script>
-
     <!-- Event snippet for 开始结帐 conversion page -->
     <script>
       window.addEventListener('load', function () {
@@ -303,6 +278,33 @@
       });
     </script>
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NV9862J');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 10865344192 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10865344192"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-10865344192');
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11366525832"></script>
     <script>
@@ -311,7 +313,6 @@
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-
       gtag('config', 'AW-11366525832');
     </script>
 
@@ -444,8 +445,23 @@
     {%- endif -%}
 
     {{ shop.metafields.loox.global_html_head }}
-    {% render 'edt_p' %}
-    {% include 'sm-red' %}
+
+    {% comment %} 插件文件 {% endcomment %}
+    {% comment %} {% render 'edt_p' %} {% endcomment %}
+    {% comment %} {% include 'sm-red' %} {% endcomment %}
+    {% render 'pe-disco-countdown-timer' %}
+    {% include 'upsellio' %}
+    {% if template == 'cart' %}
+      {% include 'revy-bundle-script' %}
+    {% endif %}
+    {% render 'digismoothie-giftbox' %}
+    {% render 'gsf-conversion-pixels' %}
+    {% include 'revy-bundle-script' %}
+    {% render 'special-offers' %}
+    {% render 'special-offers-ajax-lib' %}
+    {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
+    {% include 'revy-discounts-script' %}
+
     {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}
     {% unless boostersnippet contains 'Liquid error' %}{{ boostersnippet }}{% endunless %}
     {% if content_for_header contains 'hga.helloshopowner.com' %}
@@ -456,13 +472,11 @@
     {% include 'sliderule-data' %}
     <!-- SlideRule Script End -->
 
-    {% if template == 'cart' %}{% include 'revy-bundle-script' %}{% endif %}
 
     {% if content_for_header contains 'fastbundle.co' %}
       {% render 'fast_bundle_service' %}
     {% endif %}
 
-    {% include 'upsellio' %}
     <script>
       (() => {
         const installerKey = 'docapp-discount-auto-install';
@@ -506,8 +520,6 @@
         document.getElementById('docapp-volume-speedup').after(script);
       })();
     </script>
-
-    {% render 'digismoothie-giftbox' %}
 
     <script id="docapp-cart">
       window.docappCart = {{ cart | json }}; window.docappCart.currency = "{{ 0 | money_with_currency | slice: -3, 3 }}"; window.docappCart.shop_currency = "{{ shop.currency }}";
@@ -575,7 +587,6 @@
     </script>
     <!-- End Vibe Code -->
 
-    {% render 'gsf-conversion-pixels' %}
   </head>
 
   <body
@@ -627,25 +638,8 @@
     {% if content_for_header contains 'hga.helloshopowner.com' -%}
       {%- render 'hso-hello-google-analytics-event' -%}
     {%- endif %}
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NV9862J"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
-    {% render 'pe-disco-countdown-timer' %}
-    {% include 'revy-bundle-script' %}
-
-    {% render 'special-offers' %}
-
-    {% render 'special-offers-ajax-lib' %}
-    {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
-    {% include 'revy-discounts-script' %}
+    {% comment %} 返回顶部 {% endcomment %}
     {% render 'back-to-the-top' %}
   </body>
 </html>
@@ -704,6 +698,9 @@
   <!-- Afterpay disabled: {{ cart.currency.iso_code }} != {{ shop.currency }} -->
 {% endif %}
 <!-- End Shopify-Afterpay JavaScript Snippet (v1.1.5) -->
+
+<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=b1f48f46-3973-4f53-94f2-3ca2da1ae60c"></script>
+
 
 <script>
   var timeoutId; // 用于跟踪 setTimeout 的标识
