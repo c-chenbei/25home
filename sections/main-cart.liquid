@@ -9,7 +9,7 @@
       {%- endif -%}
       <p>{{ 'cart.general.continue_browsing_html' | t: url: routes.all_products_collection_url }}</p>
     </div>
-    <div class="cart_explain_title" style="text-align: left;">
+    <div class="cart_explain_title">
       <p><i class="fa fa-check"></i> Free Shipping: Free shipping for curbside delivery</p>
       <p><i class="fa fa-check"></i> 30-Day Hassle-Free Returns: You have a full 30 days to return it hassle-free</p>
       <p><i class="fa fa-check"></i> Warranty: One-year limited warranty</p>
@@ -177,5 +177,18 @@
   }
 </script>
 <style>
-
+  .cart_explain_title{
+    text-align: left;
+    background: #f3ede3;
+    padding: 2px 5px;
+    width: 60%;
+  }
+  @media screen and (max-width: 1000px) {
+    .cart_explain_title{
+      width: 100%;
+    }
+    .cart_explain_title p{
+      line-height: 16px;
+    }
+  }
 </style>
