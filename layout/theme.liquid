@@ -449,17 +449,17 @@
     {% comment %} 插件文件 {% endcomment %}
     {% comment %} {% render 'edt_p' %} {% endcomment %}
     {% comment %} {% include 'sm-red' %} {% endcomment %}
-    {% render 'pe-disco-countdown-timer' %}
+    {% comment %} {% render 'pe-disco-countdown-timer' %} {% endcomment %}
     {% include 'upsellio' %}
-    {% if template == 'cart' %}
+    {% comment %} {% if template == 'cart' %}
       {% include 'revy-bundle-script' %}
-    {% endif %}
+    {% endif %} {% endcomment %}
     {% render 'digismoothie-giftbox' %}
     {% render 'gsf-conversion-pixels' %}
-    {% include 'revy-bundle-script' %}
     {% render 'special-offers' %}
     {% render 'special-offers-ajax-lib' %}
     {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
+    {% include 'revy-bundle-script' %}
     {% include 'revy-discounts-script' %}
 
     {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}
