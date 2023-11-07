@@ -9,16 +9,18 @@
       {%- endif -%}
       <p>{{ 'cart.general.continue_browsing_html' | t: url: routes.all_products_collection_url }}</p>
     </div>
+    <p class="form_title_mod form_title">Price Guarantee Until the End of Black Friday</p>
     <div class="cart_explain_title">
       <p><i class="fa fa-check"></i> Free Shipping: Free shipping for curbside delivery</p>
       <p><i class="fa fa-check"></i> 30-Day Hassle-Free Returns: You have a full 30 days to return it hassle-free</p>
       <p><i class="fa fa-check"></i> Warranty: One-year limited warranty</p>
-      <p><i class="fa fa-check"></i> Price Guarantee Until the End of Black Friday</p>
     <div>
   </header>
 
 
   {%- if cart.item_count > 0 -%}
+    <p class="form_title_pc form_title">Price Guarantee Until the End of Black Friday</p>
+
     <form action="{{ routes.cart_url }}" method="post" novalidate data-location="page" id="CartPageForm">
       <div class="cart__page">
         {% comment %} 购物车页面产品列表 {% endcomment %}
@@ -102,7 +104,7 @@
             <p>Your payment information is safe with us. 25Home does not share your information with others.</p>
           </div>
           <ul class="inline-list payment-icons footer__section">
-            {% assign enabled_payment_types = 'american_express,apple_pay,diners_club,discover,jcb,master,paypal,venmo,visa,sezzle' | remove: ' ' | split: ',' %}
+            {% assign enabled_payment_types = 'american_express,apple_pay,diners_club,discover,jcb,master,paypal,venmo,visa,sezzle,afterpay' | remove: ' ' | split: ',' %}
             {% for type in enabled_payment_types %}
               <li class="icon--payment">
                 {{ type | payment_type_svg_tag }}
@@ -185,12 +187,31 @@
     padding: 2px 5px;
     width: 60%;
   }
+ 
+  .form_title{
+    font-weight: 800;
+    color: #a81527;
+  }
   @media screen and (max-width: 1000px) {
     .cart_explain_title{
       width: 100%;
     }
     .cart_explain_title p{
       line-height: 16px;
+    }
+    .form_title_mod{
+      text-align: left;
+    }
+    .form_title_pc{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1001px) {
+    .form_title_pc{
+      text-align: right;
+    }
+    .form_title_mod{
+      display: none;
     }
   }
 </style>
