@@ -13,6 +13,7 @@
       <p><i class="fa fa-check"></i> Free Shipping: Free shipping for curbside delivery</p>
       <p><i class="fa fa-check"></i> 30-Day Hassle-Free Returns: You have a full 30 days to return it hassle-free</p>
       <p><i class="fa fa-check"></i> Warranty: One-year limited warranty</p>
+      <p><i class="fa fa-check"></i> Price Guarantee Until the End of Black Friday</p>
     <div>
   </header>
 
@@ -101,7 +102,8 @@
             <p>Your payment information is safe with us. 25Home does not share your information with others.</p>
           </div>
           <ul class="inline-list payment-icons footer__section">
-            {%- for type in shop.enabled_payment_types -%}
+            {% assign enabled_payment_types = 'american_express,apple_pay,diners_club,discover,jcb,master,paypal,venmo,visa,sezzle' | remove: ' ' | split: ',' %}
+            {% for type in enabled_payment_types %}
               <li class="icon--payment">
                 {{ type | payment_type_svg_tag }}
               </li>

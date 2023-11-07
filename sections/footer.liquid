@@ -92,7 +92,8 @@
     {%- if section.settings.show_payment_icons -%}
       {%- unless shop.enabled_payment_types == empty -%}
         <ul class="inline-list payment-icons footer__section">
-          {%- for type in shop.enabled_payment_types -%}
+          {% assign enabled_payment_types = 'american_express,apple_pay,diners_club,discover,jcb,master,paypal,venmo,visa,sezzle' | remove: ' ' | split: ',' %}
+          {% for type in enabled_payment_types %}
             <li class="icon--payment">
               {{ type | payment_type_svg_tag }}
             </li>
