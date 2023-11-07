@@ -219,8 +219,44 @@
                           {%- endif -%}
                           {% comment %} afterpay {% endcomment %}
                           <div id="product-prices"></div>
-                          {% comment %} sezzle {% endcomment %}
-                          <div id="sezzle-modal-return"></div>
+                          <!-- Sezzle Static Widget -->
+                          <div id="sezzle-widget"></div>
+                          {{ 'sezzle-static-widget.js' | asset_url | script_tag }}
+                          <script>
+                            var renderSezzle = new AwesomeSezzle({
+                                amount: '{{ product.selected_or_first_available_variant.price | money }}',
+                                theme: 'light',
+                                modalTheme: 'color',
+                                {% comment %} maxWidth: 400, {% endcomment %}
+                                marginTop: 0,
+                                marginBottom: 0,
+                                marginLeft: 0,
+                                marginRight: 0,
+                                alignment: 'left',
+                                alignmentSwitchMinWidth: 576,
+                                alignmentSwitchType: 'center',
+                                textColor: '#111',
+                                fontFamily: 'Comfortaa, sans-serif',
+                                fontSize: 14,
+                                logoSize: 1.0,
+                                logoStyle: {},
+                                {% comment %} numberOfPayments: 12, {% endcomment %}
+                                language: 'en',
+                                parseMode: 'default',
+                                merchantLocale: 'North America',
+                                widgetTemplate: {en: 'Pay in 4 interest-free payments of %%price%% with %%logo%% %%info%%', fr: 'Payez en 4 versements sans intérêt de %%price%% avec %%logo%% %%info%%'},
+                                ineligibleWidgetTemplate: '%%logo%% Pay in 4 interest-free payments on purchases $35-$2,500. %%info%%',
+                                {% comment %} widgetTemplate: {en: 'Starting at %%price%% /mo or 0% APR with %%logo%% %%info%%'}, {% endcomment %}
+                                minPrice: 3500, // Amount in cents
+                                maxPrice: 400000 // Amount in cents
+                            })
+                            renderSezzle.init();
+                            document.onchange = function(){
+                              var newPrice = document.getElementById("price-fallback-selectors");
+                              renderSezzle.alterPrice(newPrice.textContent);
+                            }
+                          </script>
+                          <!-- End Sezzle Static Widget -->
                           <div
                             data-unit-price-wrapper
                             class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}"
@@ -733,4 +769,5 @@
        console.error('Error:', error);
      });
   });
+
 </script>

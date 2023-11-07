@@ -1,8 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
   <head>
-    {% render 'pagefly-head' %}
-    {% include 'best-option-initializer' %}
     <meta name="google-site-verification" content="HkYHzDu-JcQFXee6yfAI84Ev3hCCj4s4tQ3s6qORJ3A">
     <meta name="google-site-verification" content="p_U8lyaV_jfy4AhXjGO0_lVCKuskSovkSOkchewH0cE">
     <!-- Hotjar Tracking Code for https://25home.com/ -->
@@ -449,8 +447,12 @@
     {% comment %} 插件文件 {% endcomment %}
     {% comment %} {% render 'edt_p' %} {% endcomment %}
     {% comment %} {% include 'sm-red' %} {% endcomment %}
-    {% comment %} {% render 'pe-disco-countdown-timer' %} {% endcomment %}
-    {% include 'upsellio' %}
+    {% comment %} {% render 'pe-disco-countdown-timer' %} 已删除文件 {% endcomment %}
+    {% comment %} {% render 'pagefly-head' %} 已删除文件 {% endcomment %}
+    {% comment %} {% include 'upsellio' %} 已删除文件 {% endcomment %}
+
+    {% comment %} {% include 'best-option-initializer' %}  {% endcomment %}
+
     {% comment %} {% if template == 'cart' %}
       {% include 'revy-bundle-script' %}
     {% endif %} {% endcomment %}
@@ -699,8 +701,7 @@
 {% endif %}
 <!-- End Shopify-Afterpay JavaScript Snippet (v1.1.5) -->
 
-<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=b1f48f46-3973-4f53-94f2-3ca2da1ae60c"></script>
-
+{% comment %} <script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=b1f48f46-3973-4f53-94f2-3ca2da1ae60c"></script> {% endcomment %}
 
 <script>
   var timeoutId; // 用于跟踪 setTimeout 的标识

@@ -65,6 +65,35 @@
             </div>
           </div>
 
+          <!-- Sezzle Static Widget -->
+          <div id="sezzle-widget"></div>
+          {{ 'sezzle-static-widget.js' | asset_url | script_tag }}
+          <script>
+            var renderSezzle = new AwesomeSezzle({
+              amount: '{{ cart.total_price | money }}',
+              alignment: 'auto',
+              marginTop: 0,
+              marginBottom: 0,
+              marginLeft: 0,
+              marginRight: 0,
+              textColor: '#111',
+              fontFamily: 'Comfortaa, sans-serif',
+              fontSize: 14,
+              logoSize: 0.8,
+              logoStyle: {},
+              language: 'en',
+              parseMode: 'default',
+              merchantLocale: 'North America',
+              widgetTemplate: {en: 'Pay in 4 interest-free payments of %%price%% with %%logo%% %%info%%', fr: 'Payez en 4 versements sans intérêt de %%price%% avec %%logo%% %%info%%'},
+              ineligibleWidgetTemplate: '%%logo%% Pay in 4 interest-free payments on purchases $35-$2,500. %%info%%',
+              {% comment %} widgetTemplate: {en: 'Starting at %%price%% /mo or 0% APR with %%logo%% %%info%%'}, {% endcomment %}
+              minPrice: 3500, // Amount in cents
+              maxPrice: 400000 // Amount in cents
+            })
+            renderSezzle.init();
+          </script>
+          <!-- End Sezzle Static Widget -->
+
           {% if settings.cart_terms_conditions_enable %}
             <div class="cart__item-row cart__terms">
               <input type="checkbox" id="CartTerms" class="cart__terms-checkbox">
@@ -208,7 +237,7 @@
   }
   @media screen and (min-width: 1001px) {
     .form_title_pc{
-      text-align: right;
+      text-align: center;
     }
     .form_title_mod{
       display: none;
