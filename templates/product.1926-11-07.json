@@ -39,7 +39,7 @@
           "type": "sales_point",
           "settings": {
             "icon": "leaf",
-            "text": "EXCLUSIVE CODE: PIANO"
+            "text": "EXTRA 15% OFF CODE: SUPER15"
           }
         },
         "variant_picker": {
@@ -88,11 +88,12 @@
         "984a68ac-5826-4e74-84c4-701d88e7684e": {
           "type": "text",
           "settings": {
-            "text": "Piano sectional, the affordable contemporary luxury, made with genuine leather. The modular sofa combinations resemble a piano keyboard, complete with storage side tables suitable for different room layouts. Picture cozying up on the ergonomic sofa after a long day, sinking into its plush cushions contoured to your body. The sturdy solid wood frame and springs keep their shape for over a decade of kids and pets playing. Feel the luxury of the soft leather that provides ultimate comfort."
+            "text": "With removable and washable covers, the Plume feather sofa offers the most perfect solution for hassle-free cleaning. Also The feathers sofa is an original design by 25home and it is incomparably soft! The high-density foam and fluffy feathers embrace your body, making it your favorite place to relax in the next decades."
           }
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "is_tab": false
           }
@@ -107,7 +108,6 @@
         },
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": "Size Chart",
             "content": "",
@@ -192,10 +192,10 @@
         "text": "<p>Modern compared with comfy, this feather loveseat is designed for a quality life.<\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/0110.png",
+        "image": "shopify:\/\/shop_images\/01101.png",
         "focal_point": "center",
         "layout": "left",
-        "height": 650,
+        "height": 750,
         "framed": true,
         "parallax": false
       }
@@ -309,57 +309,27 @@
         "divider": false
       }
     },
-    "135b36e7-34c1-4b27-9e1a-89640cec7d06": {
-      "type": "advanced-content",
-      "blocks": {
-        "8d8810a2-7f3e-400a-987f-d5a50cf1e0f2": {
-          "type": "html",
-          "settings": {
-            "code": "<p>\n\t<br>\n\t<\/p><h1>\n\t\tErgonomic design\n\t<\/h1>\n\t<p>\n\t\t<br>\n\t<\/p>\n\n<p>\n\tThe spacious and expansive sofa configuration provides ample usable space, allowing you to find a comfortable angle in any pose. Quick & easy assembly in 10-15 minutes per seat makes it even more convenient. This sofa is ergonomically designed, with support contours that fit the curves of the body. Paired with genuine leather material, it provides a highly comfortable sitting experience.\n<\/p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "f3f24f1e-b63f-4e96-9af3-8b59cd1c8200": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/002_0001.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "top-middle"
-          }
-        }
-      },
-      "block_order": [
-        "8d8810a2-7f3e-400a-987f-d5a50cf1e0f2",
-        "f3f24f1e-b63f-4e96-9af3-8b59cd1c8200"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/003_38a1e29f-6343-4326-bf2d-ecbf5b942b31.jpg",
-        "image2": "shopify:\/\/shop_images\/03_cc7e9575-c135-4568-aadd-cca008112cea.jpg",
+        "image": "shopify:\/\/shop_images\/10001.gif",
         "image_width": 700,
         "subtitle": "",
-        "title": "multifunction",
-        "text": "<p>Matching with a minimalist, wooden storage coffee table, the spacious interior design lets you enjoy leisurely moments.<\/p><p>The leather couch's low base height and high seat cushions give a casual, carefree feel. Paired with a rug, it provides a sense of luxury and laziness.<\/p>",
+        "title": "VERSATILE SOFA LEGS",
+        "text": "<p>Free Sofa Legs Included! The sofa legs come with 2 installation options: flush with the ground or 3inches above the ground, providing convenience for using a robotic vacuum cleaner and other tools for easy cleaning.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
     "182d5f2c-98f1-4a9d-9d87-11539d1e79fa": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "",
@@ -370,6 +340,58 @@
         "focal_point": "center",
         "layout": "left",
         "height": 650,
+        "framed": true,
+        "parallax": false
+      }
+    },
+    "e98f6446-12e0-4de3-8e8b-c6abd33c8571": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1926g.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Line and Curve in Harmony",
+        "text": "<p>The perfect balance of chic line on the front view and curved silhouette on the side view makes it versatile for any space and style. Modern compared with comfy, Plume Sectionals designed for a quality life.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "2dbda7cb-8b91-4d98-b6ed-65d727630e0b": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11111.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "EASY ASSEMBLY",
+        "text": "<p>With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks. A one-step solution that frees your hands, without the burden of instruction manual.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "f29adaa4-3414-4aff-9b1d-01fd981fe423": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/11_97a32b64-cec0-446d-b0e0-fb42a54a5214.png",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 750,
         "framed": true,
         "parallax": false
       }
@@ -469,9 +491,11 @@
     "6e674af9-855e-4fa5-b22e-b552e9d45a0a",
     "c1e2a991-ad27-44f4-9ed7-7bcbf1447338",
     "text-and-image2",
-    "135b36e7-34c1-4b27-9e1a-89640cec7d06",
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
     "182d5f2c-98f1-4a9d-9d87-11539d1e79fa",
+    "e98f6446-12e0-4de3-8e8b-c6abd33c8571",
+    "2dbda7cb-8b91-4d98-b6ed-65d727630e0b",
+    "f29adaa4-3414-4aff-9b1d-01fd981fe423",
     "product-recommendations",
     "testimonials",
     "recently-viewed",
