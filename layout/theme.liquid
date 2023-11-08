@@ -262,8 +262,8 @@
     {% comment %} {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %} 已删除代码 {% endcomment %}
     {% comment %} {% include 'revy-bundle-script' %}
     {% include 'revy-discounts-script' %} {% endcomment %}
-    {% comment %} {%- render 'css-variables' -%} {% endcomment %}
-    {% comment %} {%- render 'font-face' -%} {% endcomment %}
+    {%- render 'css-variables' -%}
+    {%- render 'font-face' -%} 
     {% comment %} {%- render 'social-meta-tags' -%} {% endcomment %}
 
     {% render 'special-offers' %}

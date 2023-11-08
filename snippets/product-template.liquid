@@ -556,7 +556,7 @@
                       </div>
                     </div>
                   {%- when 'countdown_timer' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    <div>
                       {%- render 'countdown_timer', product: product, block: block.settings -%}
                     </div>
                 {%- endcase -%}
