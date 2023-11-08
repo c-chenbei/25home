@@ -1734,6 +1734,7 @@ lazySizesConfig.expFactor = 4;
   /**
    * endCartForm
    */
+
   // Either collapsible containers all acting individually,
   // or tabs that can only have one open at a time
   theme.collapsibles = (function() {
@@ -1757,6 +1758,7 @@ lazySizesConfig.expFactor = 4;
   
     function init(scope) {
       var el = scope ? scope : document;
+
       el.querySelectorAll(selectors.trigger).forEach(trigger => {
         var state = trigger.classList.contains(classes.open);
         trigger.setAttribute('aria-expanded', state);
@@ -7510,6 +7512,32 @@ lazySizesConfig.expFactor = 4;
     theme.collapsibles.init();
     theme.videoModal();
   }
+  // faq 手风车
+  theme.windmill = function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+      const header = item.querySelector('.accordion-header');
+      const content = item.querySelector('.accordion-content');
+      const toggleIcon = header.querySelector('.toggle-icon');
+  
+      header.addEventListener('click', () => {
+        accordionItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.querySelector('.accordion-content').style.display = 'none';
+            otherItem.querySelector('.toggle-icon').textContent = '+';
+          }
+        });
+  
+        if (content.style.display === 'block') {
+          content.style.display = 'none';
+          toggleIcon.textContent = '+';
+        } else {
+          content.style.display = 'block';
+          toggleIcon.textContent = '-';
+        }
+      });
+    });
+  }
 
   DOMready(function(){
     theme.sections = new theme.Sections();
@@ -7535,6 +7563,7 @@ lazySizesConfig.expFactor = 4;
     theme.initGlobals();
     theme.initQuickShop();
     theme.rteInit();
+    theme.windmill();
 
     if (document.body.classList.contains('template-cart')) {
       var cartPageForm = document.getElementById('CartPageForm');

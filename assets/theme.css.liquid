@@ -6713,7 +6713,8 @@ form+.footer__social {
 }
 
 .rte.collapsible-content__inner--faq {
-  padding-bottom: 30px;
+  padding-left: 26px;
+  padding-bottom: 20px;
 }
 
 .collapsible-trigger[aria-expanded=true] .collapsible-label__closed {
@@ -7375,7 +7376,7 @@ input[type=image] {
 
 @media only screen and (min-width:769px) {
   .index-section {
-    margin: 75px 0;
+    margin: 40px 0;
   }
 
   .index-section--small {
@@ -12539,3 +12540,68 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
 .plus_icon {
   border-radius: 50% !important;
 }
+
+/* faq手风车 */
+.faq-box-accordion {
+  width: 100%;
+  display: flex;
+}
+
+.accordion-item-left {
+  width: 40%
+}
+.accordion-item-left .h3{
+  font-size: 22px;
+  line-height: 27px;
+  color: #333;
+  font-weight: 500;
+  text-transform: none;
+}
+.accordion-item-left a{
+  font-size: 14px;
+  color: #9c9c9c;
+  text-decoration: underline;
+}
+.accordion-item-right{
+  width: 60%;
+  padding-right: 10px;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3px 0px;
+  cursor: pointer;
+  /*font-family: Rove,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif !important;*/
+}
+.accordion-header .toggle-icon{
+  font-weight: 800;
+  transform: scale(1.2);
+}
+.accordion-content {
+  display: none;
+}
+@media only screen and (max-width:1000px) {
+  .faq-box-accordion {
+    flex-direction: column;
+  }
+  .accordion-item-left{
+    width: 100%;
+  }
+  .accordion-item-left .h3{
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .accordion-item-left .p{
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .accordion-item-right{
+    width: 100%;
+    border-top: 1px solid #dbcbb9;
+  }
+  .cbb-frequently-bought-container .cbb-frequently-bought-title{
+    font-size: 18px !important;
+  }
+}
+/* faq手风车结束 */

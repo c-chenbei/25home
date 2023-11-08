@@ -86,6 +86,12 @@
             "trust_image": "shopify:\/\/shop_images\/pay.jpg"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
         "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
           "type": "tab",
           "settings": {
@@ -105,6 +111,7 @@
         },
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Key Features",
             "content": "",
@@ -127,12 +134,6 @@
             "phone": false
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "is_tab": false
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -151,12 +152,12 @@
         "7d5b8ffc-0906-4cf1-be2a-8234ac628adb",
         "buy_buttons",
         "4324e561-4147-44cb-8662-bce6959f660f",
+        "description",
         "e9e4f437-3585-4e39-b542-0e25739e9ed0",
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
         "contact",
-        "description",
         "share"
       ],
       "settings": {
@@ -229,30 +230,14 @@
         "max_width": true
       }
     },
-    "background-image-text": {
-      "type": "background-image-text",
-      "disabled": true,
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "About your brand",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "focal_point": "center",
-        "layout": "left",
-        "height": 550,
-        "framed": false,
-        "parallax": false
-      }
-    },
     "text-and-image": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
+        "image": "shopify:\/\/shop_images\/1_0002_Capture_One_Catalog8681.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "title": "Cage Base",
+        "text": "<p>Underneath, the white dining table is supported by a striking gold metal base consisting of curved beams that join together to form an open cage-like structure.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -265,12 +250,12 @@
     },
     "text-and-image2": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
+        "image": "shopify:\/\/shop_images\/1_0006_CaptureOneCatalog8656.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "title": "Turntable",
+        "text": "<p><\/p><p>In the center, a handy rotating lazy susan turns for easy passing of dishes. With its balance of elegance and utility, this visually striking table is sure to become a cherished gathering place.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -278,6 +263,25 @@
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
+        "divider": false
+      }
+    },
+    "580ce2ac-f55e-46eb-8c20-a5781cc3f920": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Capture_One_Catalog8482.jpg",
+        "image2": "shopify:\/\/shop_images\/8423.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "PU Leather Chair",
+        "text": "<p>Sink into the sleek leather Chair, PU leather hugging your body as you relax into its ergonomic curves. Durable carbon steel legs provide a slim yet sturdy base, with its eco-conscious materials and elegant form, the Gullichsen Chair brings sustainable comfort to you.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -352,9 +356,9 @@
     "1652410876b776606e",
     "16475055848fed5fca",
     "sub",
-    "background-image-text",
     "text-and-image",
     "text-and-image2",
+    "580ce2ac-f55e-46eb-8c20-a5781cc3f920",
     "testimonials",
     "product-recommendations",
     "recently-viewed",

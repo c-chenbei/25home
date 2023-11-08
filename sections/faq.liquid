@@ -1,7 +1,5 @@
-{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
-
+{% comment %} {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 <div class="page-width page-width--narrow">
-
   {%- if section.settings.title != blank -%}
     <header class="section-header">
       <h2 class="section-header__title">
@@ -55,6 +53,70 @@
     </div>
   {%- endif -%}
 </div>
+{%- if section.settings.divider -%}</div>{%- endif -%} {% endcomment %}
+
+{% comment %} 新版 {% endcomment %}
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+<div class="page-width">
+  {%- if section.settings.title != blank -%}
+    <header class="section-header">
+      <h2 class="section-header__title">
+        {{ section.settings.title | escape }}
+      </h2>
+    </header>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="faq-box-accordion">
+      <div class="accordion-item-left">
+        <h3 class="h3">Frequently Asked Questions</h3>
+        <p class="p">Still having questions? Visit our <a href="/pages/faqs" target="_blank">FAQ page</a> or <a href="/pages/contact" target="_blank">contact us</a>.</p>
+      </div>
+      <div class="accordion-item-right">
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+              {% comment %} {% when 'rich-text'%}
+                <div class="index-section index-section--faq">
+                  <div class="text-{{ block.settings.align_text }}">
+                    {%- if block.settings.title != blank -%}
+                      <p class="h2">
+                        {{ block.settings.title | escape }}
+                      </p>
+                    {%- endif -%}
+                    {%- if block.settings.text != blank -%}
+                      <div class="rte">
+                        {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
+                          {{ block.settings.text }}
+                        {%- if block.settings.enlarge_text %}</div>{% endif -%}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                </div> {% endcomment %}
+              {% when 'question'%}
+                <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <button type="button" class="collapsible-trigger--inline collapsible--auto-height text-left accordion-header" aria-controls="FAQ-content-{{ block.id }}">
+                    {% comment %} {%- render 'collapsible-icons-alt', no_circle: true -%} {% endcomment %}
+                    <span itemprop="name">{{ block.settings.title }}</span>
+                    <span class="toggle-icon">+</span>
+                  </button>
+                  <div id="FAQ-content-{{ block.id }}" class="accordion-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div class="collapsible-content__inner collapsible-content__inner--faq rte" itemprop="text">
+                      {{ block.settings.text }}
+                    </div>
+                  </div>
+                </div>
+            {% endcase %}
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if section.blocks.size == 0 -%}
+    <div class="placeholder-noblocks">
+      {{ 'home_page.onboarding.no_content' | t }}
+    </div>
+  {%- endif -%}
+</div>
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
 
@@ -71,7 +133,7 @@
       }
     ],
     "blocks": [
-      {
+      /*/{
         "type": "rich-text",
         "name": "Rich text",
         "settings": [
@@ -108,7 +170,7 @@
             ]
           }
         ]
-      },
+      },*/
       {
         "type": "question",
         "name": "Question",

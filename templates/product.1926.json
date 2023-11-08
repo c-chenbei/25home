@@ -24,9 +24,7 @@
             "margin_top_mobile": 16,
             "margin_bottom_mobile": 16,
             "show_lower_limit": true,
-            "min_order": 10,
             "show_upper_limit": true,
-            "max_order": 8000,
             "show_if_outside_limits": true,
             "product": "{{product}}"
           }
@@ -372,6 +370,33 @@
       "type": "collection-return",
       "settings": {
       }
+    },
+    "a7def26e-72a7-4b4d-9122-1342d4520a5e": {
+      "type": "faq",
+      "blocks": {
+        "template--16800482361571__a7def26e-72a7-4b4d-9122-1342d4520a5e-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "template--16800482361571__a7def26e-72a7-4b4d-9122-1342d4520a5e-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16800482361571__a7def26e-72a7-4b4d-9122-1342d4520a5e-question-1",
+        "template--16800482361571__a7def26e-72a7-4b4d-9122-1342d4520a5e-question-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
@@ -385,6 +410,7 @@
     "testimonials",
     "product-recommendations",
     "recently-viewed",
-    "collection-return"
+    "collection-return",
+    "a7def26e-72a7-4b4d-9122-1342d4520a5e"
   ]
 }

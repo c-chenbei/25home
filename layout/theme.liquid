@@ -281,13 +281,13 @@
     {% unless boostersnippet contains 'Liquid error' %}{{ boostersnippet }}{% endunless %}
 
     {% comment %} 2023/11/08 {% endcomment %}
-    {% comment %} {% if content_for_header contains 'hga.helloshopowner.com' %}
+    {% if content_for_header contains 'hga.helloshopowner.com' %}
       {% render 'hso-hello-google-analytics' %}
-    {% endif %} {% endcomment %}
-    {% comment %} <script src="//code.tidio.co/45vxys51vlmmpmrasbvy8j5dp9fbp4ne.js" async></script> {% endcomment %}
-    {% comment %} {% if content_for_header contains 'hga.helloshopowner.com' -%}
+    {% endif %}
+    <script src="//code.tidio.co/45vxys51vlmmpmrasbvy8j5dp9fbp4ne.js" async></script>
+    {% if content_for_header contains 'hga.helloshopowner.com' -%}
       {%- render 'hso-hello-google-analytics-event' -%}
-    {%- endif %} {% endcomment %}
+    {%- endif %}
 
     <!-- SlideRule Script Start -->
     {% include 'sliderule-data' %}
