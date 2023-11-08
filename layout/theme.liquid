@@ -1,8 +1,31 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_button }}">
     <meta name="google-site-verification" content="HkYHzDu-JcQFXee6yfAI84Ev3hCCj4s4tQ3s6qORJ3A">
     <meta name="google-site-verification" content="p_U8lyaV_jfy4AhXjGO0_lVCKuskSovkSOkchewH0cE">
+    <meta name="google-site-verification" content="e0q5vwPOJb3eVidxgSjPCzb3NJlCs6eHzymJqytuFSQ">
+    <meta name="facebook-domain-verification" content="3zqxv6ho7hzfjgpqainfowdhuolvfa">
+    <meta name="p:domain_verify" content="aed0438ede4c17dfe7d436a23af39136">
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+    {%- if {{product.metafields.custom.keywords}} -%}
+      <meta name="keywords" content="{{product.metafields.custom.keywords}}">
+    {%- endif -%}
+    {%- if canonical_url != blank -%}<link rel="canonical" href="{{ canonical_url }}">{%- endif -%}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="preconnect" href="https://fonts.shopifycdn.com">
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+    <link rel="dns-prefetch" href="https://maps.googleapis.com">
+    <link rel="dns-prefetch" href="https://maps.gstatic.com">
+    {%- if settings.favicon != blank -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {%- endif -%}
+
     <!-- Hotjar Tracking Code for https://25home.com/ -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -40,6 +63,7 @@
           i.parentNode.insertBefore(n, i);
       })(window, document, 'script', '//bat.bing.com/bat.js', 'uetq');
     </script>
+    
     <!-- Safeopt -->
     <script type="text/javascript">
       var AddShoppersWidgetOptions = { loadCss: false, pushResponse: false };
@@ -53,9 +77,7 @@
       })();
     </script>
     
-    
-    <meta name="facebook-domain-verification" content="3zqxv6ho7hzfjgpqainfowdhuolvfa">
-    <meta name="p:domain_verify" content="aed0438ede4c17dfe7d436a23af39136">
+
 
     <!-- Event snippet for 添加到购物车 conversion page -->
     <script>
@@ -146,33 +168,6 @@
     </script>
     <!-- End of Taboola Pixel Code -->
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="{{ settings.color_button }}">
-    <meta name="google-site-verification" content="e0q5vwPOJb3eVidxgSjPCzb3NJlCs6eHzymJqytuFSQ">
-    <meta name="google-site-verification" content="HkYHzDu-JcQFXee6yfAI84Ev3hCCj4s4tQ3s6qORJ3A">
-    {%- if canonical_url != blank -%}<link rel="canonical" href="{{ canonical_url }}">{%- endif -%}
-    <link rel="preconnect" href="https://cdn.shopify.com">
-    <link rel="preconnect" href="https://fonts.shopifycdn.com">
-    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
-    <link rel="dns-prefetch" href="https://maps.googleapis.com">
-    <link rel="dns-prefetch" href="https://maps.gstatic.com">
-
-    {%- if settings.favicon != blank -%}
-      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
-    {%- endif -%}
-
-    {%- render 'seo-title' -%}
-
-    {%- if page_description -%}
-      <meta name="description" content="{{ page_description | escape }}">
-    {%- endif -%}
-
-    {%- if {{product.metafields.custom.keywords}} -%}
-      <meta name="keywords" content="{{product.metafields.custom.keywords}}">
-    {%- endif -%}
-
 
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -230,8 +225,10 @@
     {%- endif -%}
 
 
+    {%- render 'seo-title' -%}
 
     {{ 'theme.css' | asset_url | stylesheet_tag }}
+    
     <link rel="stylesheet" href="{{ 'iconfont.css' | asset_url }}" type="text/css">
 
 
@@ -285,7 +282,7 @@
       {% render 'fast_bundle_service' %}
     {% endif %}
 
-    <script>
+    {% comment %} <script>
       (() => {
         const installerKey = 'docapp-discount-auto-install';
         const urlParams = new URLSearchParams(window.location.search);
@@ -300,9 +297,9 @@
           );
         }
       })();
-    </script>
+    </script> {% endcomment %}
 
-    <script>
+    {% comment %} <script>
       (() => {
         const previewKey = 'docapp-discount-test';
         const urlParams = new URLSearchParams(window.location.search);
@@ -313,9 +310,9 @@
           );
         }
       })();
-    </script>
+    </script> {% endcomment %}
 
-    <script id="docapp-volume-speedup">
+    {% comment %} <script id="docapp-volume-speedup">
       (() => {
         if (
           !document.documentElement.innerHTML.includes('\\/shop' + '\\/js' + '\\/shopdocs-volume-discounts.min.js') ||
@@ -327,9 +324,9 @@
           'https://d2e5xyzdl0rkli.cloudfront.net/shop/js/shopdocs-volume-discounts.min.js?shop=25home.myshopify.com';
         document.getElementById('docapp-volume-speedup').after(script);
       })();
-    </script>
+    </script> {% endcomment %}
 
-    <script id="docapp-cart">
+    {% comment %} <script id="docapp-cart">
       window.docappCart = {{ cart | json }}; window.docappCart.currency = "{{ 0 | money_with_currency | slice: -3, 3 }}"; window.docappCart.shop_currency = "{{ shop.currency }}";
     </script>
     <script id="docapp-free-item-speedup">
@@ -344,9 +341,9 @@
           'https://d2fk970j0emtue.cloudfront.net/shop/js/free-gift-cart-upsell-pro.min.js?shop=25home.myshopify.com';
         document.getElementById('docapp-free-item-speedup').after(script);
       })();
-    </script>
+    </script> {% endcomment %}
 
-    <script>
+    {% comment %} <script>
       (() => {
         const installerKey = 'docapp-free-gift-auto-install';
         const urlParams = new URLSearchParams(window.location.search);
@@ -361,9 +358,9 @@
           );
         }
       })();
-    </script>
+    </script> {% endcomment %}
 
-    <script>
+    {% comment %} <script>
       (() => {
         const previewKey = 'docapp-free-gift-test';
         const urlParams = new URLSearchParams(window.location.search);
@@ -374,7 +371,7 @@
           );
         }
       })();
-    </script>
+    </script> {% endcomment %}
 
     <!-- Start Vibe Code -->
     <script>
@@ -422,7 +419,7 @@
     <a class="in-page-link visually-hidden skip-link" href="#MainContent">
       {{- 'general.accessibility.skip_to_content' | t -}}
     </a>
-
+    {% comment %} 秒杀倒计时 {% endcomment %}
     {%- section 'input-countdown' -%}
     <div id="PageContainer" class="page-container">
       <div class="transition-body">
