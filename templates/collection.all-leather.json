@@ -13,9 +13,8 @@
       "blocks": {
         "8f9fd4ec-c2df-41e9-815e-388589d926a6": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/allleather-offer-pc_96e13373-280d-45f8-9137-b9a4e3a6fb95.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-new-2.jpg",
             "link": "",
             "width": "100"
           }
@@ -24,7 +23,6 @@
       "block_order": [
         "8f9fd4ec-c2df-41e9-815e-388589d926a6"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,

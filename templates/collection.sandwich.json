@@ -14,7 +14,7 @@
         "8f9fd4ec-c2df-41e9-815e-388589d926a6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sandwich-offer-pc_7d62bb80-ed84-4a95-8d7b-c0d02a56fdca.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-new.jpg",
             "link": "",
             "width": "100"
           }
@@ -23,7 +23,6 @@
       "block_order": [
         "8f9fd4ec-c2df-41e9-815e-388589d926a6"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,
