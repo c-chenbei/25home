@@ -231,7 +231,6 @@
     
     <link rel="stylesheet" href="{{ 'iconfont.css' | asset_url }}" type="text/css">
 
-
     <script src="{{ 'vendor-scripts-v10.js' | asset_url | split: '?' | first }}" defer="defer"></script>
     <!-- <script src="{{ 'theme.min.js' | asset_url }}" defer="defer"></script> -->
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
@@ -259,19 +258,26 @@
     {% comment %} {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %} 已删除代码 {% endcomment %}
     {% comment %} {% include 'revy-bundle-script' %}
     {% include 'revy-discounts-script' %} {% endcomment %}
-    {%- render 'css-variables' -%}
-    {%- render 'font-face' -%} 
     {% comment %} {%- render 'social-meta-tags' -%} {% endcomment %}
 
+    {%- render 'css-variables' -%}
+    {%- render 'font-face' -%} 
     {% render 'special-offers' %}
     {% render 'special-offers-ajax-lib' %}
   
 
     {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}
+
     {% unless boostersnippet contains 'Liquid error' %}{{ boostersnippet }}{% endunless %}
-    {% if content_for_header contains 'hga.helloshopowner.com' %}
+
+    {% comment %} 2023/11/08 {% endcomment %}
+    {% comment %} {% if content_for_header contains 'hga.helloshopowner.com' %}
       {% render 'hso-hello-google-analytics' %}
-    {% endif %}
+    {% endif %} {% endcomment %}
+    {% comment %} <script src="//code.tidio.co/45vxys51vlmmpmrasbvy8j5dp9fbp4ne.js" async></script> {% endcomment %}
+    {% comment %} {% if content_for_header contains 'hga.helloshopowner.com' -%}
+      {%- render 'hso-hello-google-analytics-event' -%}
+    {%- endif %} {% endcomment %}
 
     <!-- SlideRule Script Start -->
     {% include 'sliderule-data' %}
@@ -297,9 +303,9 @@
           );
         }
       })();
-    </script> {% endcomment %}
+    </script>
 
-    {% comment %} <script>
+    <script>
       (() => {
         const previewKey = 'docapp-discount-test';
         const urlParams = new URLSearchParams(window.location.search);
@@ -310,9 +316,9 @@
           );
         }
       })();
-    </script> {% endcomment %}
+    </script>
 
-    {% comment %} <script id="docapp-volume-speedup">
+    <script id="docapp-volume-speedup">
       (() => {
         if (
           !document.documentElement.innerHTML.includes('\\/shop' + '\\/js' + '\\/shopdocs-volume-discounts.min.js') ||
@@ -324,9 +330,9 @@
           'https://d2e5xyzdl0rkli.cloudfront.net/shop/js/shopdocs-volume-discounts.min.js?shop=25home.myshopify.com';
         document.getElementById('docapp-volume-speedup').after(script);
       })();
-    </script> {% endcomment %}
+    </script>
 
-    {% comment %} <script id="docapp-cart">
+    <script id="docapp-cart">
       window.docappCart = {{ cart | json }}; window.docappCart.currency = "{{ 0 | money_with_currency | slice: -3, 3 }}"; window.docappCart.shop_currency = "{{ shop.currency }}";
     </script>
     <script id="docapp-free-item-speedup">
@@ -341,9 +347,9 @@
           'https://d2fk970j0emtue.cloudfront.net/shop/js/free-gift-cart-upsell-pro.min.js?shop=25home.myshopify.com';
         document.getElementById('docapp-free-item-speedup').after(script);
       })();
-    </script> {% endcomment %}
+    </script>
 
-    {% comment %} <script>
+    <script>
       (() => {
         const installerKey = 'docapp-free-gift-auto-install';
         const urlParams = new URLSearchParams(window.location.search);
@@ -358,9 +364,9 @@
           );
         }
       })();
-    </script> {% endcomment %}
+    </script>
 
-    {% comment %} <script>
+    <script>
       (() => {
         const previewKey = 'docapp-free-gift-test';
         const urlParams = new URLSearchParams(window.location.search);
@@ -439,12 +445,7 @@
       render 'video-modal'
       render 'photoswipe-template'
     -%}
-    <script src="//code.tidio.co/45vxys51vlmmpmrasbvy8j5dp9fbp4ne.js" async></script>
     {{ shop.metafields.loox.global_html_body }}
-    {% if content_for_header contains 'hga.helloshopowner.com' -%}
-      {%- render 'hso-hello-google-analytics-event' -%}
-    {%- endif %}
-
     {% comment %} 返回顶部 {% endcomment %}
     {% render 'back-to-the-top' %}
   </body>
