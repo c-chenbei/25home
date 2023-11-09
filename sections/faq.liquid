@@ -70,7 +70,7 @@
     <div class="faq-box-accordion">
       <div class="accordion-item-left">
         <h3 class="h3">Frequently Asked Questions</h3>
-        <p class="p">Still having questions? Visit our <a href="/pages/faqs" target="_blank">FAQ page</a> or <a href="/pages/contact" target="_blank">contact us</a>.</p>
+        <p class="p">Still having questions? Visit our <a href="/pages/faqs" target="_blank">FAQs</a> or <a href="/pages/contact" target="_blank">Contact Us</a>.</p>
       </div>
       <div class="accordion-item-right">
         {%- for block in section.blocks -%}
@@ -96,7 +96,7 @@
                 <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <button type="button" class="collapsible-trigger--inline collapsible--auto-height text-left accordion-header" aria-controls="FAQ-content-{{ block.id }}">
                     {% comment %} {%- render 'collapsible-icons-alt', no_circle: true -%} {% endcomment %}
-                    <span itemprop="name">{{ block.settings.title }}</span>
+                    <span itemprop="name" class="toggle-title">{{ block.settings.title }}</span>
                     <span class="toggle-icon">+</span>
                   </button>
                   <div id="FAQ-content-{{ block.id }}" class="accordion-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
@@ -123,7 +123,7 @@
 {% schema %}
   {
     "name": "FAQ",
-    "class": "index-section",
+    "class": "index-section-faq",
     "settings": [
       {
         "type": "text",
