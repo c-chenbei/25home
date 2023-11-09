@@ -310,8 +310,8 @@
 }
 
 .hero .flickity-button {
-  color: var(--colorTextBody);
-  background-color: var(--colorBody);
+  color: #ffffff;
+  background-color: rgb(159, 123, 99);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -448,28 +448,6 @@
   z-index: 5
 }
 
-.hero[data-arrows=true] .flickity-prev-next-button {
-  top: auto;
-  bottom: -20px;
-  transform: none;
-}
-
-.hero[data-arrows=true] .flickity-prev-next-button:hover {
-  transform: scale(1.12);
-}
-
-.hero[data-arrows=true] .flickity-prev-next-button:active {
-  transform: scale(1);
-}
-
-.hero[data-arrows=true] .flickity-previous {
-  left: auto;
-  right: 90px;
-}
-
-.hero[data-arrows=true] .flickity-next {
-  right: 40px;
-}
 
 .hero[data-arrows=true].flickity-rtl .flickity-previous {
   right: auto;
@@ -480,22 +458,13 @@
   right: auto;
   left: 40px;
 }
-
 @media only screen and (max-width:768px) {
   .hero[data-arrows=true] .flickity-prev-next-button {
     bottom: -16px;
   }
 
-  .hero[data-arrows=true] .flickity-previous {
-    right: 60px;
-  }
-
-  .hero[data-arrows=true] .flickity-next {
-    right: 20px;
-  }
-
   .hero[data-arrows=true].flickity-rtl .flickity-previous {
-    left: 60px;
+    left: 20px;
   }
 
   .hero[data-arrows=true].flickity-rtl .flickity-next {
