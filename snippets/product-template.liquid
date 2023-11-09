@@ -676,6 +676,10 @@
   }
 </style>
 <script>
+    {% comment %} let collectionsss1 = {{ product | json }}
+    console.log(collectionsss1,'productproductproductproductproduct')
+    let collectionsss = {{ collections['Bundle'].products | json }}
+    console.log(collectionsss,'collectionssscollectionssscollectionsss') {% endcomment %}
     var expressageBox = document.getElementById('expressage_box');
     var paragraphTags = expressageBox.getElementsByTagName("p");
     var defs = document.querySelector('textarea[data-current-variant-json]');

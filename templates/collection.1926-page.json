@@ -26,7 +26,7 @@
         "b54cb5d7-cfc3-4acb-9a3e-410e5b4a9983": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/halloween-collection.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-new-3_549132fa-b851-411b-940c-91a499c85431.jpg",
             "link": "",
             "width": "100"
           }
@@ -87,12 +87,87 @@
         "enable_color_swatches": false,
         "enable_sort": true
       }
+    },
+    "a1bd1e3b-68b1-47a7-a1b5-d5b632c816e7": {
+      "type": "faq",
+      "blocks": {
+        "template--16800480624867__a1bd1e3b-68b1-47a7-a1b5-d5b632c816e7-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "What is Feathers Sofa?",
+            "text": "<p>The design philosophy of this Feathers Sofa emphasizes comfort and luxury. It features feather filling for a soft and relaxed sitting experience. Its modular design allows it to adapt to various spaces and requirements. This sofa prioritizes comfort, flexibility, and a sense of luxury.<\/p>"
+          }
+        },
+        "template--16800480624867__a1bd1e3b-68b1-47a7-a1b5-d5b632c816e7-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "What is a modular sofa?",
+            "text": "<p>A modular sofa is a type of sofa composed of individual seat components or modules that can be arranged to create various seating configurations, such as a <a href=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-white-plume-loveseat\"><em><strong>loveseat<\/strong><\/em><\/a><em><strong>, <\/strong><\/em><a href=\"https:\/\/25home.com\/products\/aalto-boutique-plume-sectional\"><em><strong>L-shaped sectional<\/strong><\/em><\/a><strong>, <\/strong>and<strong> <\/strong><a href=\"https:\/\/25home.com\/products\/aalto-boutique-plume-double-chaise-sectional\"><em><strong>U-shaped sectional<\/strong><\/em><\/a>, among others. These modules typically include corner units, armless chairs, <a href=\"https:\/\/25home.com\/products\/aalto-boutique-plume-ottoman\"><em><strong>ottomans<\/strong><\/em><\/a>, and chaise lounges, allowing you to assemble them in different ways to meet your living spaces and seating requirements. Shop all our Feathers modular designs.<\/p>"
+          }
+        },
+        "35763b5b-c2fe-4c18-82ce-7d79d38360d9": {
+          "type": "question",
+          "settings": {
+            "title": "What color and fabric options are available for the sofa?",
+            "text": "<p>Our sofa is offered in a variety of colors, including beige, gray, light gray, dark gray, white, black, brown, and camel. Additionally, you can customize the sofa with different fabrics such as polyester, air leather, linen, and boucle. These color and fabric choices provide flexibility to match your sofa with your home decor and personal style while considering comfort and aesthetics.<\/p>"
+          }
+        },
+        "ce884e65-09b3-4938-8083-847f3824a342": {
+          "type": "question",
+          "settings": {
+            "title": "Can I customize the sofa?",
+            "text": "<p>Yes, our sofa can be customized to match your specific preferences. You can choose custom dimensions, colors, or fabrics to better meet your needs. For more details, please contact our customer service team.<\/p>"
+          }
+        },
+        "adf6597a-d04e-4285-8ed2-7833daddd4cf": {
+          "type": "question",
+          "settings": {
+            "title": "Is this sofa easy to clean?",
+            "text": "<p>Yes, our sofa is designed for easy maintenance. Sofa covers are designed to be removable and machine washable, making maintenance and cleaning convenient.<\/p>"
+          }
+        },
+        "6f6da8d3-8fe0-496f-a8e0-8539a25635ef": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer matching furniture pieces?",
+            "text": "<p>Absolutely, we provide complementary furniture pieces like sofa covers, TV stands, coffee tables, and side tables. You can select additional furniture items to complete your home decor.<\/p>"
+          }
+        },
+        "64670802-7325-40ad-9de6-e43dba608637": {
+          "type": "question",
+          "settings": {
+            "title": "What are the sofa's dimensions?",
+            "text": "<p>The sofa's dimensions vary based on the chosen configuration. Please refer to our product page for detailed size information to ensure it fits your space.<\/p>"
+          }
+        },
+        "42232780-e0a3-49d7-91dd-c00e8d12ec3a": {
+          "type": "question",
+          "settings": {
+            "title": "Is there a warranty for the sofa?",
+            "text": "<p>Yes, we offer a limited product <a href=\"https:\/\/25home.com\/pages\/warranty-policy\"><em><strong>warranty<\/strong><\/em><\/a> for a specific period. Check our product page or contact our customer service for detailed warranty information.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16800480624867__a1bd1e3b-68b1-47a7-a1b5-d5b632c816e7-question-1",
+        "template--16800480624867__a1bd1e3b-68b1-47a7-a1b5-d5b632c816e7-question-2",
+        "35763b5b-c2fe-4c18-82ce-7d79d38360d9",
+        "ce884e65-09b3-4938-8083-847f3824a342",
+        "adf6597a-d04e-4285-8ed2-7833daddd4cf",
+        "6f6da8d3-8fe0-496f-a8e0-8539a25635ef",
+        "64670802-7325-40ad-9de6-e43dba608637",
+        "42232780-e0a3-49d7-91dd-c00e8d12ec3a"
+      ],
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
     "c02fe0a6-7581-405f-aced-77a1c9fe7fb5",
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
     "collection-header",
-    "main-collection"
+    "main-collection",
+    "a1bd1e3b-68b1-47a7-a1b5-d5b632c816e7"
   ]
 }

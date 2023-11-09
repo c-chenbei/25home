@@ -81,20 +81,19 @@
         },
         "2f3dc6ea-f7d6-44d8-90a2-7f03159efad9": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/collections\/pad-sofa",
+            "link": "shopify:\/\/pages\/military-discount",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/halloween-The-pad-sofa-pc_17211a0f-75f2-43e5-a50b-61e9bcc52aec.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/halloween-The-pad-sofa-750_fb7dfef7-debf-4489-8a86-dee61be30011.jpg",
+            "image": "shopify:\/\/shop_images\/lQDPJxcJAwBs8MzNA3rNB4CwRv-yA4yD9jIFPnhZDMC1AQ_1920_890.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/lQDPJwyyYdQhEMzNBEzNAu6wC8RvdPB9XDAFPnhZDMC1AA_750_1100.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -114,7 +113,7 @@
         "section_height": "natural",
         "mobile_height": "auto",
         "parallax": false,
-        "style": "dots",
+        "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 5
       }
@@ -279,7 +278,7 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/products\/piano-sofa",
+            "link": "shopify:\/\/collections\/new-arrivals",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
@@ -347,6 +346,18 @@
         "style": "dots",
         "autoplay": true,
         "autoplay_speed": 5
+      }
+    },
+    "1662091818f72278f9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "home_featured_products": "new-arrivals",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": false,
+        "view_all": true,
+        "divider": false
       }
     },
     "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4": {
@@ -420,19 +431,6 @@
         "home_featured_products": "plume-sofa",
         "per_row": 4,
         "rows": 2,
-        "mobile_scrollable": false,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "1662091818f72278f9": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "sideboards & nightstands",
-        "home_featured_products": "sideboards-nightstands",
-        "per_row": 4,
-        "rows": 1,
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
@@ -797,11 +795,11 @@
     "1645791937abcdc3ed",
     "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d",
     "166123871604845a26",
+    "1662091818f72278f9",
     "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4",
     "featured-collection",
     "f2dc5a74-1c36-4a8c-8f8e-04da262027b0",
     "1661238415653f32c5",
-    "1662091818f72278f9",
     "83bbedbd-bce5-4405-a19b-9142a198f6cc",
     "background-image-text",
     "165778003649565f02",

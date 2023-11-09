@@ -6,7 +6,7 @@
         "329637ea-0fed-483c-9ac2-494a8ef4de5e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-new_61f6801d-8f44-4678-8811-3c2a21ae4df2.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-new-2_8e050a9c-4eb1-46c6-b380-3e1143b6f073.jpg",
             "link": "",
             "width": "100"
           }
@@ -15,7 +15,6 @@
       "block_order": [
         "329637ea-0fed-483c-9ac2-494a8ef4de5e"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,

@@ -3,32 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "0d889340-e9c9-4824-9cd0-192bb3e9c045": {
-          "type": "shopify:\/\/apps\/afterpay-on-site-messaging\/blocks\/payments-messaging\/f45a5524-d177-4475-bf59-281efd2215a8",
-          "settings": {
-            "text_align": "left",
-            "margin_top": 16,
-            "margin_bottom": 16,
-            "color": "",
-            "size": "md",
-            "intro_text": "Pay",
-            "show_interest_free": true,
-            "payment_amount_is_bold": true,
-            "show_with": true,
-            "logo_type": "badge",
-            "logo_theme": "black-on-mint",
-            "modal_link_style": "circled-info-icon",
-            "modal_theme": "mint",
-            "breakpoint": 1980,
-            "text_align_mobile": "inherit",
-            "margin_top_mobile": 16,
-            "margin_bottom_mobile": 16,
-            "show_lower_limit": true,
-            "show_upper_limit": true,
-            "show_if_outside_limits": true,
-            "product": "{{product}}"
-          }
-        },
         "907cef5b-a392-4eee-a648-d1d703b05b97": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
@@ -54,15 +28,16 @@
           "settings": {
           }
         },
-        "fd32b768-1267-4926-a44b-97e212417fdd": {
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4": {
           "type": "sales_point",
           "settings": {
             "icon": "package",
             "text": "For customized products, please get in touch with our customer service."
           }
         },
-        "a5510342-8f2e-49e7-8cc0-3ccae8d41652": {
+        "7a36cbc1-0f7a-4fef-bd00-911917166768": {
           "type": "sales_point",
+          "disabled": true,
           "settings": {
             "icon": "leaf",
             "text": "EXTRA 15% OFF CODE: SUPER15"
@@ -117,14 +92,6 @@
             "is_tab": false
           }
         },
-        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
-          "type": "tab",
-          "settings": {
-            "title": "Size Chart",
-            "content": "",
-            "page": "{{ product.metafields.my_fields.size_chart.value }}"
-          }
-        },
         "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
           "type": "tab",
           "settings": {
@@ -133,8 +100,17 @@
             "page": "{{ product.metafields.my_fields.materials.value }}"
           }
         },
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
+          "type": "tab",
+          "settings": {
+            "title": "Size Chart",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.size_chart.value }}"
+          }
+        },
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Key Features",
             "content": "",
@@ -151,6 +127,7 @@
         },
         "contact": {
           "type": "contact",
+          "disabled": true,
           "settings": {
             "title": "Ask a question",
             "phone": false
@@ -163,12 +140,11 @@
         }
       },
       "block_order": [
-        "0d889340-e9c9-4824-9cd0-192bb3e9c045",
         "907cef5b-a392-4eee-a648-d1d703b05b97",
         "price",
         "separator",
-        "fd32b768-1267-4926-a44b-97e212417fdd",
-        "a5510342-8f2e-49e7-8cc0-3ccae8d41652",
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4",
+        "7a36cbc1-0f7a-4fef-bd00-911917166768",
         "variant_picker",
         "sales_point",
         "inventory_status",
@@ -176,8 +152,8 @@
         "buy_buttons",
         "4324e561-4147-44cb-8662-bce6959f660f",
         "description",
-        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "e9e4f437-3585-4e39-b542-0e25739e9ed0",
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
         "contact",
@@ -193,80 +169,6 @@
         "mobile_layout": "full",
         "enable_video_looping": false,
         "product_video_style": "muted"
-      }
-    },
-    "d90abeab-7dbd-4a01-9b1f-892d23e3158f": {
-      "type": "faq",
-      "blocks": {
-        "template--16822580347107__d90abeab-7dbd-4a01-9b1f-892d23e3158f-question-1": {
-          "type": "question",
-          "settings": {
-            "title": "What is Feathers Sofa?",
-            "text": "<p>The design philosophy of this Feathers Sofa emphasizes comfort and luxury. It features feather filling for a soft and relaxed sitting experience. Its <strong>modular<\/strong> design allows it to adapt to various spaces and requirements. This sofa prioritizes comfort, flexibility, and a sense of luxury.<\/p>"
-          }
-        },
-        "template--16822580347107__d90abeab-7dbd-4a01-9b1f-892d23e3158f-question-2": {
-          "type": "question",
-          "settings": {
-            "title": "What is a modular sofa?",
-            "text": "<p>A modular sofa is a type of sofa composed of individual seat components or modules that can be arranged to create various seating configurations, such as a <a href=\"https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-white-plume-loveseat\"><em><strong>loveseat<\/strong><\/em><\/a><em><strong>, <\/strong><\/em><a href=\"https:\/\/25home.com\/products\/aalto-boutique-plume-sectional\"><em><strong>L-shaped sectional<\/strong><\/em><\/a><strong>, <\/strong>and<strong> <\/strong><a href=\"https:\/\/25home.com\/products\/aalto-boutique-plume-double-chaise-sectional\"><em><strong>U-shaped sectional<\/strong><\/em><\/a>, among others. These modules typically include corner units, armless chairs, <a href=\"https:\/\/25home.com\/products\/aalto-boutique-plume-ottoman\"><em><strong>ottomans<\/strong><\/em><\/a>, and chaise lounges, allowing you to assemble them in different ways to meet your living spaces and seating requirements. Shop all our Feathers modular designs.<\/p>"
-          }
-        },
-        "393a5b94-dd73-4303-9d42-05cc5c928822": {
-          "type": "question",
-          "settings": {
-            "title": "What color and fabric options are available for the sofa?",
-            "text": "<p>Our sofa is offered in a variety of colors, including beige, gray, light gray, dark gray, white, black, brown, and camel. Additionally, you can customize the sofa with different fabrics such as polyester, air leather, linen, and boucle. These color and fabric choices provide flexibility to match your sofa with your home decor and personal style while considering comfort and aesthetics.<\/p>"
-          }
-        },
-        "857fdd87-3502-4c2c-9a5f-4907eeb0d952": {
-          "type": "question",
-          "settings": {
-            "title": "Can I customize the sofa?",
-            "text": "<p>Yes, our sofa can be customized to match your specific preferences. You can choose custom dimensions, colors, or fabrics to better meet your needs. For more details, please contact our customer service team.<\/p>"
-          }
-        },
-        "113fe566-f72d-4591-b55a-b810c20d9c71": {
-          "type": "question",
-          "settings": {
-            "title": "Is this sofa easy to clean?",
-            "text": "<p>Yes, our sofa is designed for easy maintenance. Sofa covers are designed to be removable and machine washable, making maintenance and cleaning convenient.<\/p>"
-          }
-        },
-        "e7549601-90a2-4352-bf25-0b0d38ca96f8": {
-          "type": "question",
-          "settings": {
-            "title": "Do you offer matching furniture pieces?",
-            "text": "<p>Absolutely, we provide complementary furniture pieces like sofa covers, TV stands, coffee tables, and side tables. You can select additional furniture items to complete your home decor.<\/p>"
-          }
-        },
-        "f413d46e-d797-4037-bd8b-8b17dac25ef6": {
-          "type": "question",
-          "settings": {
-            "title": "What are the sofa's dimensions?",
-            "text": "<p>The sofa's dimensions vary based on the chosen configuration. Please refer to our product page for detailed size information to ensure it fits your space.<\/p>"
-          }
-        },
-        "255f633a-219d-4395-a23d-c40bb16c240e": {
-          "type": "question",
-          "settings": {
-            "title": "Is there a warranty for the sofa?",
-            "text": "<p>Yes, we offer a limited product <a href=\"https:\/\/25home.com\/pages\/warranty-policy\"><em><strong>warranty<\/strong><\/em><\/a> for a specific period. Check our product page or contact our customer service for detailed warranty information.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16822580347107__d90abeab-7dbd-4a01-9b1f-892d23e3158f-question-1",
-        "template--16822580347107__d90abeab-7dbd-4a01-9b1f-892d23e3158f-question-2",
-        "393a5b94-dd73-4303-9d42-05cc5c928822",
-        "857fdd87-3502-4c2c-9a5f-4907eeb0d952",
-        "113fe566-f72d-4591-b55a-b810c20d9c71",
-        "e7549601-90a2-4352-bf25-0b0d38ca96f8",
-        "f413d46e-d797-4037-bd8b-8b17dac25ef6",
-        "255f633a-219d-4395-a23d-c40bb16c240e"
-      ],
-      "settings": {
-        "title": ""
       }
     },
     "1652410876b776606e": {
@@ -327,30 +229,14 @@
         "max_width": true
       }
     },
-    "background-image-text": {
-      "type": "background-image-text",
-      "disabled": true,
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "About your brand",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "focal_point": "center",
-        "layout": "left",
-        "height": 550,
-        "framed": false,
-        "parallax": false
-      }
-    },
     "text-and-image": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
+        "image": "shopify:\/\/shop_images\/5_d63739b6-797c-4b48-a957-13a8b63f73d8.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "title": "Soft Fabric",
+        "text": "<p>We choose the optimal Berber Fleece that is skin-friendly, soft, breathable, wear-resistant, and easy to clean. Run your hands across the smooth, pumpkin-hued exterior, as rich and vibrant as an autumn harvest.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -363,12 +249,12 @@
     },
     "text-and-image2": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
+        "image": "shopify:\/\/shop_images\/1_b2376a95-5ebc-4977-8756-66f328503c1d.gif",
         "image_width": 700,
         "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "title": "Versatile Comfort",
+        "text": "<p>With its unique metal base allowing for a full 360° swivel, the Pumpkin Chair offers unparalleled versatility and comfort. Whether you're working, relaxing, or entertaining, it provides the convenience you need. Its sleek design and cozy seating make it an ideal addition to your living room, office, or study. <\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -376,6 +262,25 @@
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
+        "divider": false
+      }
+    },
+    "580ce2ac-f55e-46eb-8c20-a5781cc3f920": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_06ce1609-c19c-4d9f-a119-7181b6a94760.jpg",
+        "image2": "shopify:\/\/shop_images\/7_abe4214f-5ce0-4d7f-b1dc-903969cc3340.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "ERGONOMIC DESIGN",
+        "text": "<p>The Pumpkin Chair redefines relaxation with its ergonomic design, offering a comfortable and inviting seat covered in soft Berber Fleece material. Crafted to provide optimal support for your body, this chair is a true testament to thoughtful design<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -447,13 +352,12 @@
   },
   "order": [
     "main",
-    "d90abeab-7dbd-4a01-9b1f-892d23e3158f",
     "1652410876b776606e",
     "16475055848fed5fca",
     "sub",
-    "background-image-text",
     "text-and-image",
     "text-and-image2",
+    "580ce2ac-f55e-46eb-8c20-a5781cc3f920",
     "testimonials",
     "product-recommendations",
     "recently-viewed",
