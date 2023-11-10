@@ -37,6 +37,7 @@
         },
         "7a36cbc1-0f7a-4fef-bd00-911917166768": {
           "type": "sales_point",
+          "disabled": true,
           "settings": {
             "icon": "leaf",
             "text": "EXCLUSIVE CODE: PIANO"
