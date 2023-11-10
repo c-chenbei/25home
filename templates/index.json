@@ -297,14 +297,14 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/collections\/new-arrivals",
+            "link": "shopify:\/\/products\/piano-sofa",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-NEW-ARRIVAL_52573fb8-da7b-4d3c-9485-3a85e83e79cb.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-NEW-ARRIVAL-mob_c3341b82-2700-4754-a99c-ca4e9eaffff5.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-Contemporary-Luxury.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-Contemporary-Luxury-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -640,14 +640,22 @@
     },
     "76b8716c-4de2-4a93-b467-ab06cf1dd51b": {
       "type": "rich-text",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "cd232ac3-399b-4b5f-aa63-b17dfe48020b": {
+      "type": "rich-text",
       "blocks": {
-        "template--15867369324771__76b8716c-4de2-4a93-b467-ab06cf1dd51b-1666001572f5e49034-0": {
+        "template--16800481509603__cd232ac3-399b-4b5f-aa63-b17dfe48020b-heading-1": {
           "type": "heading",
           "settings": {
             "title": "25Home in the real world"
           }
         },
-        "template--15867369324771__76b8716c-4de2-4a93-b467-ab06cf1dd51b-1666001572f5e49034-1": {
+        "72d28872-965a-4232-b90d-f183a4f16ba1": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
@@ -656,13 +664,13 @@
         }
       },
       "block_order": [
-        "template--15867369324771__76b8716c-4de2-4a93-b467-ab06cf1dd51b-1666001572f5e49034-0",
-        "template--15867369324771__76b8716c-4de2-4a93-b467-ab06cf1dd51b-1666001572f5e49034-1"
+        "template--16800481509603__cd232ac3-399b-4b5f-aa63-b17dfe48020b-heading-1",
+        "72d28872-965a-4232-b90d-f183a4f16ba1"
       ],
       "settings": {
         "align_text": "center",
         "narrow_column": true,
-        "divider": true
+        "divider": false
       }
     },
     "1657779980755d45ad": {
@@ -827,6 +835,7 @@
     "37737e18-9209-4fa4-9cb5-b0cef5e767f7",
     "1698895512aae66a04",
     "76b8716c-4de2-4a93-b467-ab06cf1dd51b",
+    "cd232ac3-399b-4b5f-aa63-b17dfe48020b",
     "1657779980755d45ad",
     "0650ef4b-b7b6-4833-abd1-14ce428ab75c"
   ]
