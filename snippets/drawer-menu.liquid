@@ -61,7 +61,7 @@
                 {%- endif -%}
               </div>
             {%- else -%}
-              <a href="{{ link.url }}" class="mobile-nav__link mobile-nav__link--top-level"{% if link.active %} data-active="true"{% endif %}>{{ link.title }}</a>
+              <a href="{{ link.url }}" class="mobile-nav__link mobile-nav__link--top-level {% if link.title == "FLASH SALE" or link.title == "Black Friday" %} flash-text-shandong{% endif %}"{% if link.active %} data-active="true"{% endif %}>{{ link.title }}</a>
             {%- endif -%}
 
             {%- if has_dropdown -%}
