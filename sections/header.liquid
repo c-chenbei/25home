@@ -169,13 +169,24 @@
     color: #2f2e33;
   }
 }
-
+@keyframes flash2 {
+  0%, 100% {
+    color: #f4c117;
+  }
+  50% {
+    color: #ef1c1c;
+  }
+}
 .flash-text-shandong {
   font-weight: 800;
   animation: flash1 1s infinite;
 }
-.flash-text-shandong:hover {
+{% comment %} .flash-text-shandong:hover {
   animation: none;
+} {% endcomment %}
+.flash-text-shandong2 {
+  font-weight: 800;
+  animation: flash2 1s infinite;
 }
 </style>
 
@@ -766,9 +777,9 @@ function updateCountdown2() {
     const timeRemaining2 = targetDate2 - now2;
     if (timeRemaining2 <= 0) {
       window.clearInterval(timer2);
-      let millis2 = document.getElementById("hander_countdowns_seconds")
-      if (millis2){
-        millis2.textContent = '00'
+      let millis = document.getElementById("hander_countdowns_seconds")
+      if (millis){
+        millis.textContent = '00'
       }
     } else {
         detectionIndex2++;
@@ -785,9 +796,9 @@ function updateCountdown2() {
         const countdowns_minutes2 = document.querySelectorAll("#hander_countdowns_minutes")
         const countdowns_seconds2 = document.querySelectorAll("#hander_countdowns_seconds")
 
-        if (countdowns_days2.length == 0 && detectionIndex2 == 20) {
+        if (countdowns_days2.length > 0 && detectionIndex2 == 20) {
           detectionIndex2 = 0
-          window.clearInterval(timer2);
+          window.clearInterval(timer);
           return
         }
 

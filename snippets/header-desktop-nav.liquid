@@ -29,7 +29,8 @@
 
       <a href="{{ link.url }}" class="site-nav__link site-nav__link--underline
         {% if has_dropdown %} site-nav__link--has-dropdown{% endif %} 
-        {% if link.title == "FLASH SALE" or link.title == "Black Friday" %} flash-text-shandong{% endif %}">
+        {% if link.title == "FLASH SALE" %} flash-text-shandong{% endif %}
+        {% if link.title == "Black Friday" %} flash-text-shandong2{% endif %}">
         {{ link.title }}
       </a>
       {%- if is_megamenu -%}
