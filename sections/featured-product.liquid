@@ -17,7 +17,8 @@
   video_style: section.settings.product_video_style
 -%}
 
-{%- if section.settings.divider -%}{% render 'pe-disco-countdown-timer-featured-product', product: product %}
+{%- if section.settings.divider -%}
+  {% comment %} {% render 'pe-disco-countdown-timer-featured-product', product: product %} {% endcomment %}
 </div>{%- endif -%}
 
 {% schema %}
