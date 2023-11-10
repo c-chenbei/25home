@@ -143,19 +143,6 @@
         "divider": false
       }
     },
-    "39a54d10-36aa-449e-89ef-c69365226a80": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Industrial",
-        "home_featured_products": "industrial",
-        "per_row": 4,
-        "rows": 2,
-        "mobile_scrollable": false,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "976c332f-9325-4e60-98e2-e7576f5c249d": {
       "type": "rich-text",
       "blocks": {
@@ -193,6 +180,37 @@
         "divider": false
       }
     },
+    "76415bed-98c0-4afe-ba11-c3022a0bfb24": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16800481509603__76415bed-98c0-4afe-ba11-c3022a0bfb24-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CUSTOMIZE-YOUR-SOFA_51972837-c7fb-42ed-ad26-4b61eb7f845a.jpg",
+            "link": "shopify:\/\/pages\/collection-page",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "90f0d791-e0d6-4641-9969-fdf5f9f3a7e2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/65081506b5126_eb9a2153-28ef-4144-a59b-3fa6c8f7127b.gif",
+            "link": "shopify:\/\/pages\/collection-page",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--16800481509603__76415bed-98c0-4afe-ba11-c3022a0bfb24-image-1",
+        "90f0d791-e0d6-4641-9969-fdf5f9f3a7e2"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "b10af564-5ea1-4cfc-a965-0519a30a30ca": {
       "type": "advanced-content",
       "blocks": {
@@ -218,6 +236,7 @@
         "template--15867369324771__b10af564-5ea1-4cfc-a965-0519a30a30ca-image-1",
         "template--15867369324771__b10af564-5ea1-4cfc-a965-0519a30a30ca-html-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
@@ -436,19 +455,6 @@
         "divider": false
       }
     },
-    "83bbedbd-bce5-4405-a19b-9142a198f6cc": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Beds",
-        "home_featured_products": "bed",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "background-image-text": {
       "type": "background-image-text",
       "disabled": true,
@@ -512,94 +518,108 @@
     },
     "16560549040e4cf3a8": {
       "type": "logo-list",
-      "blocks": {
-        "cdef697c-6ac6-46af-b015-7ece9a19807b": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/furnituretodaylogo400_300.png",
-            "link": "https:\/\/www.furnituretoday.com\/business-news\/25home-is-providing-affordable-and-modern-furniture-and-decor-for-any-home\/?utm_source=FTSite&utm_medium=SponConModule&utm_campaign=25%20Home&utm_term=November2022&utm_content=25home-is-providing"
-          }
-        },
-        "03909626-e0cd-45cc-a8b3-fafc063e7e61": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/lQDPJxZxWdljERrNASzNAZCwC42-cW8Ud_cCusfRQ0CdAQ_400_300.jpg",
-            "link": "https:\/\/markets.businessinsider.com\/news\/stocks\/25home-sandwich-sofa-satisfy-customer-s-whole-family-1031546409"
-          }
-        },
-        "165605490417313c3f-0": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/logos4.jpg",
-            "link": "https:\/\/www.asiaone.com\/business\/industrial-new-stunning-line-industry-leading-furniture-manufacturer-25homecom"
-          }
-        },
-        "165605490417313c3f-2": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/logos.jpg",
-            "link": "https:\/\/www.benzinga.com\/pressreleases\/22\/10\/ab29163235\/25home-provides-affordable-and-modern-furniture-and-decor-for-any-home"
-          }
-        },
-        "b9f8c7f9-40c0-43bb-83ba-3e0f2be2f7a4": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/logos5.jpg",
-            "link": "https:\/\/www.cbs42.com\/business\/press-releases\/cision\/20221104CN24222\/industrial-is-the-new-stunning-line-from-industry-leading-furniture-manufacturer-25home-com\/"
-          }
-        },
-        "1585b0cd-65bf-4b85-844a-27dcba8f0eb8": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/logos6.jpg",
-            "link": "https:\/\/finance.yahoo.com\/news\/25home-hits-park-again-air-101900564.html"
-          }
-        },
-        "da72978d-03c7-4891-84f5-37d748c318c4": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/logos3.jpg",
-            "link": "https:\/\/www.wicz.com\/story\/47455068\/25home-provides-yet-another-stunning-line-with-their-allleather-product-style"
-          }
-        },
-        "165605490417313c3f-1": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/logos7.jpg",
-            "link": "https:\/\/apnews.com\/article\/climate-and-environment-2e89cabeb044521ea69731873bc5735f"
-          }
-        },
-        "165605490417313c3f-3": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/logos2.jpg",
-            "link": "https:\/\/www.nbc15.com\/prnewswire\/2022\/10\/17\/25home-hits-it-out-park-again-with-their-air-leather-pad-sofa\/"
-          }
-        },
-        "67476de0-0d0d-4af6-b68b-627faec3b40e": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cision_Ltd_logo_svg.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "cdef697c-6ac6-46af-b015-7ece9a19807b",
-        "03909626-e0cd-45cc-a8b3-fafc063e7e61",
-        "165605490417313c3f-0",
-        "165605490417313c3f-2",
-        "b9f8c7f9-40c0-43bb-83ba-3e0f2be2f7a4",
-        "1585b0cd-65bf-4b85-844a-27dcba8f0eb8",
-        "da72978d-03c7-4891-84f5-37d748c318c4",
-        "165605490417313c3f-1",
-        "165605490417313c3f-3",
-        "67476de0-0d0d-4af6-b68b-627faec3b40e"
-      ],
       "settings": {
         "title": "Featured On",
         "logo_opacity": 76,
         "divider": false
+      }
+    },
+    "37737e18-9209-4fa4-9cb5-b0cef5e767f7": {
+      "type": "slideshow",
+      "blocks": {
+        "68e01ef3-6ed9-40ca-a99a-7aedcaa664a3": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/logo-1_fb769a93-fed1-4462-a2a7-583a9980fc2e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/logo-mob-1.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "e46dbf6f-8e9c-48ef-8a36-670b9052d74f": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/logo-2_104d7230-b4bd-4728-9197-8015e19a17dc.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/logo-mob-2.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        },
+        "eddbbed3-0da0-46be-9e27-5b0cb116671e": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/logo-3_daa03f57-edde-4ef4-9a37-ce6182df2726.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/logo-mob-3.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "cc676dbf-0432-45f6-aead-98cdc40a44b1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/logo-4_df5e0f6c-1e19-4c90-a88c-aa16eef53017.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/logo-mob-4.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "68e01ef3-6ed9-40ca-a99a-7aedcaa664a3",
+        "e46dbf6f-8e9c-48ef-8a36-670b9052d74f",
+        "eddbbed3-0da0-46be-9e27-5b0cb116671e",
+        "cc676dbf-0432-45f6-aead-98cdc40a44b1"
+      ],
+      "custom_css": [
+        ".slideshow-wrapper {margin-bottom: 80px;}"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 5
       }
     },
     "1698895512aae66a04": {
@@ -657,6 +677,7 @@
         },
         "a240a3c5-205e-4d7b-845a-252a67fd9bc5": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
             "max_width": 1920,
             "text_color": "#000000",
@@ -672,9 +693,8 @@
         },
         "f4a17c2f-23aa-451c-be31-dce194cd51f2": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
           "settings": {
-            "maxWidth": 1100,
+            "maxWidth": 1400,
             "borderRadius": 8,
             "itemsPerView": 4,
             "maxNumberOfCharacters": 100,
@@ -686,7 +706,7 @@
             "starsBackgroundColor": "#ffffff",
             "arrows_backgroundColor": "#ffffff",
             "arrows_iconColor": "#9a9a9a",
-            "shadow": "offset-dark",
+            "shadow": "none",
             "border_active": false,
             "border_width": 2,
             "border_color": "#000000",
@@ -788,8 +808,8 @@
     "slideshow",
     "a8c5aae9-e652-461e-bf73-ce0f0328ce67",
     "16541605899760848b",
-    "39a54d10-36aa-449e-89ef-c69365226a80",
     "976c332f-9325-4e60-98e2-e7576f5c249d",
+    "76415bed-98c0-4afe-ba11-c3022a0bfb24",
     "b10af564-5ea1-4cfc-a965-0519a30a30ca",
     "ba9aef6b-b619-427d-b916-5bd5eb2924f0",
     "1645791937abcdc3ed",
@@ -800,11 +820,11 @@
     "featured-collection",
     "f2dc5a74-1c36-4a8c-8f8e-04da262027b0",
     "1661238415653f32c5",
-    "83bbedbd-bce5-4405-a19b-9142a198f6cc",
     "background-image-text",
     "165778003649565f02",
     "blog-posts",
     "16560549040e4cf3a8",
+    "37737e18-9209-4fa4-9cb5-b0cef5e767f7",
     "1698895512aae66a04",
     "76b8716c-4de2-4a93-b467-ab06cf1dd51b",
     "1657779980755d45ad",
