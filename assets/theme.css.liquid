@@ -7346,10 +7346,19 @@ input[type=image] {
   border-top: 1px solid;
   border-top-color: var(--colorBorder);
 }
-
+@media only screen and (max-width:768px) {
+  #MainContent .index-section:nth-last-child(3) {
+    /* 25Home in the real world样式规则 */
+    margin-bottom: 10px;
+  }
+}
 @media only screen and (min-width:769px) {
-  .index-section {
+  /* .index-section {
     margin: 40px 0;
+  } */
+  #MainContent .index-section:nth-last-child(3) {
+    /* 25Home in the real world样式规则 */
+    margin-bottom: 20px;
   }
 
   .index-section--small {

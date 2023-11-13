@@ -10,7 +10,7 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/pages\/black-friday-sale",
+            "link": "shopify:\/\/collections\/sandwich",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
@@ -81,6 +81,7 @@
         },
         "2f3dc6ea-f7d6-44d8-90a2-7f03159efad9": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
@@ -640,22 +641,14 @@
     },
     "76b8716c-4de2-4a93-b467-ab06cf1dd51b": {
       "type": "rich-text",
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
-    "cd232ac3-399b-4b5f-aa63-b17dfe48020b": {
-      "type": "rich-text",
       "blocks": {
-        "template--16800481509603__cd232ac3-399b-4b5f-aa63-b17dfe48020b-heading-1": {
+        "90777115-add7-4af0-8c97-cc7d7f6ceab3": {
           "type": "heading",
           "settings": {
             "title": "25Home in the real world"
           }
         },
-        "72d28872-965a-4232-b90d-f183a4f16ba1": {
+        "a63ee69a-b705-4da6-a817-c29c7c5052e0": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
@@ -664,8 +657,8 @@
         }
       },
       "block_order": [
-        "template--16800481509603__cd232ac3-399b-4b5f-aa63-b17dfe48020b-heading-1",
-        "72d28872-965a-4232-b90d-f183a4f16ba1"
+        "90777115-add7-4af0-8c97-cc7d7f6ceab3",
+        "a63ee69a-b705-4da6-a817-c29c7c5052e0"
       ],
       "settings": {
         "align_text": "center",
@@ -835,7 +828,6 @@
     "37737e18-9209-4fa4-9cb5-b0cef5e767f7",
     "1698895512aae66a04",
     "76b8716c-4de2-4a93-b467-ab06cf1dd51b",
-    "cd232ac3-399b-4b5f-aa63-b17dfe48020b",
     "1657779980755d45ad",
     "0650ef4b-b7b6-4833-abd1-14ce428ab75c"
   ]
