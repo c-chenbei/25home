@@ -273,7 +273,8 @@ if(window.location.href.includes("/cart")){
   {%- endif -%}
 
 	{{ shop.metafields.loox["global_html_head"] }}
-  {% render 'edt_p' %} {% include 'sm-red' %}{% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+  {% comment %} {% render 'edt_p' %} {% endcomment %}
+   {% include 'sm-red' %}{% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
 {% if content_for_header contains "hga.helloshopowner.com" %} 
  
  {% render 'hso-hello-google-analytics' %} 
