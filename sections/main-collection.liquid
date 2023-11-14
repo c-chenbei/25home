@@ -39,6 +39,21 @@
   "name": {{ collection.title | json }}
 }
 </script>
+<script>
+  gtag('event', 'view_item_list', {
+    items: [
+    {% for product in collection.products %}
+      {
+        item_id: '{{ product.id }}',
+        item_name: '{{ product.title }}',
+        item_category: '{{ product.type }}',
+        item_variant: '{{ product.first_available_variant }}',
+        price: {{ product.price | divided_by: 100.0 }}
+      },      
+      {% endfor %}      
+      ]  
+  });
+</script>
 
 {% schema %}
   {

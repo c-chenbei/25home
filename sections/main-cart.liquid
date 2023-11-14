@@ -109,6 +109,7 @@
 
           <div class="cart__item-row cart__checkout-wrapper">
             <button
+              onclick="act2()"
               type="submit"
               name="checkout"
               data-terms-required="{{ settings.cart_terms_conditions_enable }}"
@@ -151,7 +152,28 @@
   "name": "Cart page"
 }
 {% endschema %}
-
+<script>
+  function act2(){
+    gtag('event', 'begin_checkout', {
+      value: '{{ cart.total_price| divided_by: 100.0 }}',
+      currency: '{{ shop.currency }}',
+      items: [
+       {% for item in cart.items %}
+         {
+           item_id: '{{ item.product_id }}',
+           item_name: '{{ item.product.title }}',
+           currency: '{{ shop.currency }}',
+           item_brand: '{{product.vendor}}',
+           item_category: '{{ item.product.type }}',
+           item_variant: '{{ item.product.first_available_variant }}',
+           price: {{ item.product.price | divided_by: 100.0 }},
+           quantity: '{{item.quantity}}'
+         }
+        {% endfor %}
+        ]
+     });
+   };
+</script>
 <script id="docapp-discount-speedup">
   (() => {
     if (

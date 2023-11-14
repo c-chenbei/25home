@@ -26,6 +26,8 @@
     -%}
 
     <button
+      id="AddToCart"
+      onclick="atc();" 
       {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
       name="add"
       data-add-to-cart
@@ -72,3 +74,30 @@
     {{ current_variant | json }}
   </textarea>
 {%- endform -%}
+<script>  
+  gtag('event', 'view_item', {
+    currency: '{{ shop.currency }}',
+    value: {{ product.price | divided_by: 100.0 }},
+    items: [{
+      item_id: '{{ product.id }}',
+      item_name: '{{ product.title }}',
+      item_category: '{{ product.type }}',
+      item_variant: '{{ product.first_available_variant }}',
+      quantity: 1,
+      price: {{ product.price | divided_by: 100.0 }}
+    }]
+  });
+  function atc(){
+    gtag('event', 'add_to_cart', {
+      currency: '{{ shop.currency }}',
+      items: [{
+        item_id: '{{ product.id }}',
+        item_name: '{{ product.title }}',
+        item_category: '{{ product.type }}',
+        item_variant: '{{ product.first_available_variant }}',
+        quantity: 1,
+        price: {{ product.price | divided_by: 100.0 }}
+      }]
+  });
+};
+</script>
