@@ -1,0 +1,99 @@
+{
+  "sections": {
+    "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467": {
+      "type": "promo-grid",
+      "blocks": {
+        "329637ea-0fed-483c-9ac2-494a8ef4de5e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-new_61f6801d-8f44-4678-8811-3c2a21ae4df2.jpg",
+            "link": "",
+            "width": "100"
+          }
+        }
+      },
+      "block_order": [
+        "329637ea-0fed-483c-9ac2-494a8ef4de5e"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": true,
+        "space_below": true
+      }
+    },
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "drawer",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "eb2e4990-a0ce-4a2e-a35e-c0953e725d6d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15867369095395__eb2e4990-a0ce-4a2e-a35e-c0953e725d6d-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>What is pad & box sofa?<\/strong><\/p><p>Pad & box sofa with removable cushions covers, offers three distinct material options for your comfort and style preferences. Polyester, air leather, and cotton-linen. Also, this modern sofa provides breathability, and skin-friendly comfort, and is perfect for all seasons. Choose from these modern sectional sofas to create your ideal sofa.<\/p><p><strong>How many material options are available for the pad&box sofa？<\/strong><\/p><ul><li><a href=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/salo-wide-armrest-box-sofa-and-ottoman\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/salo-wide-armrest-box-sofa-and-ottoman\"><strong>Polyester Sofa<\/strong><\/a><strong> Series<\/strong>: The backrest and armrest of this series are filled with fluffy feathers.<\/li><li><a href=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/salo-classic-air-leather-pad-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/salo-classic-air-leather-pad-sofa\"><strong>Air Leather Sofa<\/strong><\/a><strong> Series<\/strong>: The cushion filling for this series consists of golden-ratio foam and cotton.<\/li><li><a href=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/gullichsen-air-leather-sectional\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/gullichsen-air-leather-sectional\"><strong>Cotton-Linen Sofa<\/strong><\/a><strong> Series<\/strong>: The cushion filling for this series is high-density sponge, and the back cushion filling is a combination of Down and preferred velvet cotton.<\/li><\/ul><p><strong>How to choose a style for the pad & box sofa？<\/strong><\/p><p>Choosing a style for the padded sofa depends on several factors to ensure it complements your living space and reflects your personal preferences. <\/p><p>Firstly, consider the overall theme and decor of your room. If your home features a modern and minimalist design, opt for a sleek and clean-lined sofa, and our <a href=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/salo-beige-wide-armrest-box-sofa\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/salo-beige-wide-armrest-box-sofa\">beige wide armrest box sofa<\/a> would be a perfect choice. For a more traditional or classic setting, go for a sofa with ornate details and elegant curves.<\/p><p>Also, think about the color scheme. Select a sofa color that harmonizes with the existing palette or acts as a standout focal point, depending on your desired visual effect. Neutral tones like beige, gray, or white offer versatility and timelessness, while bold colors or patterns can add a touch of vibrancy and personality. As a bold color, you can choose our<a href=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/salo-wide-armrest-box-sectional\" target=\"_blank\" title=\"https:\/\/25home.com\/collections\/pad-sofa\/products\/salo-wide-armrest-box-sectional\"> jade green sectional<\/a> which will surely not disappoint you!<\/p><p>Finally, take into account the size of the room and the sofa. Measure the available space to ensure the sofa fits comfortably without overwhelming the area. Consider the number of seats you need and whether a sectional or loveseat would better suit your lifestyle and seating requirements.<\/p><p><strong>To properly maintain your pad & box sofa and keep it in optimal condition, follow these essential care tips:<\/strong><\/p><ul><li><strong>Regular Cleaning<\/strong>: Vacuum your sofa regularly using a soft brush attachment to remove dust, dirt, and debris. For fabric sofas, consider using a lint roller to tackle pet hair and lint.<\/li><li><strong>Spot Cleaning<\/strong>: Address spills and stains promptly by blotting them with a clean cloth or paper towel. Avoid rubbing, as it may spread the stain. Use a mild detergent or a fabric cleaner specifically designed for your sofa's material, following the manufacturer's instructions.<\/li><li><strong>Fluff and Rotate Cushions<\/strong>: To maintain the shape and comfort of your sofa, fluff and rotate the cushions regularly. This ensures even wear and prevents sagging in specific spots.<\/li><li><strong>Follow <\/strong><a href=\"https:\/\/25home.com\/pages\/care-clean\" target=\"_blank\" title=\"https:\/\/25home.com\/pages\/care-clean\"><strong>Manufacturer's Instructions<\/strong><\/a>: Adhere to the care guidelines provided by the manufacturer for your specific sofa model. Each material may have specific cleaning and maintenance requirements.<\/li><li><strong>Professional Cleaning<\/strong>: Consider professional sofa cleaning every 12 to 18 months, especially for fabric sofas, to deeply remove dirt and maintain freshness.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15867369095395__eb2e4990-a0ce-4a2e-a35e-c0953e725d6d-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": true
+      }
+    }
+  },
+  "order": [
+    "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
+    "collection-header",
+    "main-collection",
+    "eb2e4990-a0ce-4a2e-a35e-c0953e725d6d"
+  ]
+}

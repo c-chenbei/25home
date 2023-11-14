@@ -1,1 +1,143 @@
-{"sections":{"collection-header":{"type":"collection-header","disabled":true,"settings":{"enable":true,"collection_image_enable":true,"parallax":true}},"1645173779f26ecbf5":{"type":"promo-grid","blocks":{"8f9fd4ec-c2df-41e9-815e-388589d926a6":{"type":"image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/s1.jpg","link":"","width":"100"}},"4449e5a0-3925-41c8-9716-6bae8b2c3507":{"type":"sale_collection","disabled":true,"settings":{"sale_collection":"","top_text":"Limited Flash Sale Up to 65% off","middle_text":"","bottom_text":"","width":"100","color_tint":"#000000","color_tint_opacity":18,"boxed":true,"framed":true}}},"block_order":["8f9fd4ec-c2df-41e9-815e-388589d926a6","4449e5a0-3925-41c8-9716-6bae8b2c3507"],"settings":{"full_width":true,"gutter_size":0,"space_above":false,"space_below":false}},"main-collection":{"type":"main-collection","blocks":{"collection_description":{"type":"collection_description","settings":{}},"subcollections":{"type":"subcollections","settings":{"subcollections_per_row":5}},"product_grid":{"type":"product_grid","settings":{"enable_collection_count":true,"per_row":4,"rows_per_page":20,"mobile_flush_grid":false}}},"block_order":["collection_description","subcollections","product_grid"],"settings":{"enable_sidebar":true,"collapsed":true,"filter_style":"sidebar","enable_color_swatches":false,"enable_sort":true}},"7be3130a-2242-4b8f-9b08-08f7592ad34f":{"type":"featured-collections","blocks":{"1f41f15f-be2e-4696-8ae5-691e1d989d1f":{"type":"collection","settings":{"collection":"flash-sale-feather-sofa","title":"","focal_point":"center center"}},"template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-2":{"type":"collection","settings":{"collection":"flash-sale-tables-chairs","title":"","focal_point":"center center"}},"template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-3":{"type":"collection","settings":{"collection":"flash-sale-air-leather","title":"","focal_point":"center center"}},"template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-1":{"type":"collection","settings":{"collection":"flash-sale-sofas","title":"","focal_point":"center center"}}},"block_order":["1f41f15f-be2e-4696-8ae5-691e1d989d1f","template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-2","template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-3","template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-1"],"settings":{"title":"","divider":false,"per_row":4,"enable_gutter":true}}},"order":["collection-header","1645173779f26ecbf5","main-collection","7be3130a-2242-4b8f-9b08-08f7592ad34f"]}
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true
+      }
+    },
+    "1645173779f26ecbf5": {
+      "type": "promo-grid",
+      "blocks": {
+        "8f9fd4ec-c2df-41e9-815e-388589d926a6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1920x890.jpg",
+            "link": "",
+            "width": "100"
+          }
+        },
+        "4449e5a0-3925-41c8-9716-6bae8b2c3507": {
+          "type": "sale_collection",
+          "disabled": true,
+          "settings": {
+            "sale_collection": "",
+            "top_text": "Limited Flash Sale Up to 65% off",
+            "middle_text": "",
+            "bottom_text": "",
+            "width": "100",
+            "color_tint": "#000000",
+            "color_tint_opacity": 18,
+            "boxed": true,
+            "framed": true
+          }
+        }
+      },
+      "block_order": [
+        "8f9fd4ec-c2df-41e9-815e-388589d926a6",
+        "4449e5a0-3925-41c8-9716-6bae8b2c3507"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 20,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "7be3130a-2242-4b8f-9b08-08f7592ad34f": {
+      "type": "featured-collections",
+      "blocks": {
+        "1f41f15f-be2e-4696-8ae5-691e1d989d1f": {
+          "type": "collection",
+          "settings": {
+            "collection": "flash-sale-feather-sofa",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "flash-sale-tables-chairs",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "flash-sale-air-leather",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "flash-sale-sofas",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1f41f15f-be2e-4696-8ae5-691e1d989d1f",
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-2",
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-3",
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-1"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "1645173779f26ecbf5",
+    "main-collection",
+    "7be3130a-2242-4b8f-9b08-08f7592ad34f"
+  ]
+}
