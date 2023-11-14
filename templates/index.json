@@ -132,6 +132,38 @@
         "divider": false
       }
     },
+    "69e5f742-4404-4724-831f-62c720ad05de": {
+      "type": "two-img-comparison",
+      "blocks": {
+        "template--16883888980195__69e5f742-4404-4724-831f-62c720ad05de-strongs-1": {
+          "type": "strongs",
+          "settings": {
+            "title": "20+ clooections",
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 40 24\" width=\"40\" height=\"24\" class=\"svg-icon--sofa\" aria-hidden=\"true\"><path d=\"M34.3,18.74c.33.06,1.29.49,1.45.87a22.44,22.44,0,0,1,.73,3.89V18.74h0\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M20,1.47V15H5.06a1,1,0,0,1-1.06-1V1.47A1,1,0,0,1,5.06.5H18.92A1,1,0,0,1,20,1.47Z\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M36,7.82h2.47a1,1,0,0,1,1,1l0,7a3,3,0,0,1-3,2.91H3.5a3,3,0,0,1-3-2.91l0-7a1,1,0,0,1,1-1H4\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M4,11.64a29.59,29.59,0,0,1,8-1.44,30.11,30.11,0,0,1,8,1.43\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M20,15H34.88a1,1,0,0,0,1.07-1V1.48a1,1,0,0,0-1.06-1H21.12a1.08,1.08,0,0,0-1.13,1\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M20,11.64a29.37,29.37,0,0,1,8-1.43,29.62,29.62,0,0,1,8,1.44\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M5.67,18.74a2.74,2.74,0,0,0-1.45.87A22.19,22.19,0,0,0,3.5,23.5V18.74h0\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><\/svg>",
+            "image1": "shopify:\/\/shop_images\/ss.png",
+            "title1": "Image1下方名称",
+            "image2": "shopify:\/\/shop_images\/ss02.png",
+            "title2": "Image2下方名称"
+          }
+        },
+        "4b106b20-cb73-4a49-b145-1cfe6aa8e984": {
+          "type": "strongs",
+          "settings": {
+            "title": "125+ fabrics",
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 40 24\" width=\"40\" height=\"24\" class=\"svg-icon--sofa\" aria-hidden=\"true\"><path d=\"M34.3,18.74c.33.06,1.29.49,1.45.87a22.44,22.44,0,0,1,.73,3.89V18.74h0\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M20,1.47V15H5.06a1,1,0,0,1-1.06-1V1.47A1,1,0,0,1,5.06.5H18.92A1,1,0,0,1,20,1.47Z\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M36,7.82h2.47a1,1,0,0,1,1,1l0,7a3,3,0,0,1-3,2.91H3.5a3,3,0,0,1-3-2.91l0-7a1,1,0,0,1,1-1H4\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M4,11.64a29.59,29.59,0,0,1,8-1.44,30.11,30.11,0,0,1,8,1.43\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M20,15H34.88a1,1,0,0,0,1.07-1V1.48a1,1,0,0,0-1.06-1H21.12a1.08,1.08,0,0,0-1.13,1\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M20,11.64a29.37,29.37,0,0,1,8-1.43,29.62,29.62,0,0,1,8,1.44\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M5.67,18.74a2.74,2.74,0,0,0-1.45.87A22.19,22.19,0,0,0,3.5,23.5V18.74h0\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><\/svg>",
+            "title1": "Image1下方名称",
+            "title2": "Image2下方名称"
+          }
+        }
+      },
+      "block_order": [
+        "template--16883888980195__69e5f742-4404-4724-831f-62c720ad05de-strongs-1",
+        "4b106b20-cb73-4a49-b145-1cfe6aa8e984"
+      ],
+      "settings": {
+        "title": "测试"
+      }
+    },
     "16541605899760848b": {
       "type": "featured-collection",
       "settings": {
@@ -808,6 +840,7 @@
   "order": [
     "slideshow",
     "a8c5aae9-e652-461e-bf73-ce0f0328ce67",
+    "69e5f742-4404-4724-831f-62c720ad05de",
     "16541605899760848b",
     "976c332f-9325-4e60-98e2-e7576f5c249d",
     "76415bed-98c0-4afe-ba11-c3022a0bfb24",

@@ -245,6 +245,7 @@
     <!-- <script src="{{ 'theme.min.js' | asset_url }}" defer="defer"></script> -->
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     {{ 'device.js' | asset_url | script_tag }}
+    <script src="{{ 'twoimg-comparison.js' | asset_url }}" defer="defer"></script>
 
     {%- if request.page_type contains 'customers/' -%}
       <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
@@ -297,97 +298,6 @@
     {% if content_for_header contains 'fastbundle.co' %}
       {% render 'fast_bundle_service' %}
     {% endif %}
-
-    {% comment %} <script>
-      (() => {
-        const installerKey = 'docapp-discount-auto-install';
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get(installerKey)) {
-          window.sessionStorage.setItem(
-            installerKey,
-            JSON.stringify({
-              integrationId: urlParams.get('docapp-integration-id'),
-              divClass: urlParams.get('docapp-install-class'),
-              check: urlParams.get('docapp-check'),
-            })
-          );
-        }
-      })();
-    </script>
-
-    <script>
-      (() => {
-        const previewKey = 'docapp-discount-test';
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get(previewKey)) {
-          window.sessionStorage.setItem(
-            previewKey,
-            JSON.stringify({ active: true, integrationId: urlParams.get('docapp-discount-inst-test') })
-          );
-        }
-      })();
-    </script>
-
-    <script id="docapp-volume-speedup">
-      (() => {
-        if (
-          !document.documentElement.innerHTML.includes('\\/shop' + '\\/js' + '\\/shopdocs-volume-discounts.min.js') ||
-          window.shopdocsVolumeDiscountsAppLoaded
-        )
-          return;
-        let script = document.createElement('script');
-        script.src =
-          'https://d2e5xyzdl0rkli.cloudfront.net/shop/js/shopdocs-volume-discounts.min.js?shop=25home.myshopify.com';
-        document.getElementById('docapp-volume-speedup').after(script);
-      })();
-    </script>
-
-    <script id="docapp-cart">
-      window.docappCart = {{ cart | json }}; window.docappCart.currency = "{{ 0 | money_with_currency | slice: -3, 3 }}"; window.docappCart.shop_currency = "{{ shop.currency }}";
-    </script>
-    <script id="docapp-free-item-speedup">
-      (() => {
-        if (
-          !document.documentElement.innerHTML.includes('\\/shop' + '\\/js' + '\\/free-gift-cart-upsell-pro.min.js') ||
-          window.freeGiftCartUpsellProAppLoaded
-        )
-          return;
-        let script = document.createElement('script');
-        script.src =
-          'https://d2fk970j0emtue.cloudfront.net/shop/js/free-gift-cart-upsell-pro.min.js?shop=25home.myshopify.com';
-        document.getElementById('docapp-free-item-speedup').after(script);
-      })();
-    </script>
-
-    <script>
-      (() => {
-        const installerKey = 'docapp-free-gift-auto-install';
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get(installerKey)) {
-          window.sessionStorage.setItem(
-            installerKey,
-            JSON.stringify({
-              integrationId: urlParams.get('docapp-integration-id'),
-              divClass: urlParams.get('docapp-install-class'),
-              check: urlParams.get('docapp-check'),
-            })
-          );
-        }
-      })();
-    </script>
-
-    <script>
-      (() => {
-        const previewKey = 'docapp-free-gift-test';
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get(previewKey)) {
-          window.sessionStorage.setItem(
-            previewKey,
-            JSON.stringify({ active: true, integrationId: urlParams.get('docapp-free-gift-inst-test') })
-          );
-        }
-      })();
-    </script> {% endcomment %}
 
     <!-- Start Vibe Code -->
     <script>

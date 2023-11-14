@@ -126,7 +126,7 @@
           "main_menu_link_list": "main-menu",
           "countdown_target_show": true,
           "countdown_target_content": "Black Friday🔥UP TO 55% OFF🔥Code: <b>BLACK<\/b>",
-          "countdown_target_datetime": "2023\/11\/13\/16\/00\/00",
+          "countdown_target_datetime": "2023\/11\/20\/16\/00\/00",
           "countdown_target_link": "shopify:\/\/pages\/black-friday-sale",
           "countdown_target_bg": "#deb58c",
           "countdown_target__color": "#000000",
@@ -297,7 +297,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2023\/11\/13\/16\/00\/00"
+          "countdown_target_datetimes": "2023\/11\/16\/16\/00\/00"
         }
       }
     },

@@ -1,0 +1,297 @@
+<div class="page-width">
+  {%- if section.settings.title != blank -%}
+    <header class="section-header">
+      <h2 class="section-header__title">
+        {{ section.settings.title | escape }}
+      </h2>
+    </header>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="sliderexample">
+      <div class="slider-example-text">
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+              {% when 'strongs' %}
+                <div class="slider-selector" data-target="slider{{ forloop.index }}">
+                  <span class="slider-selector-icon-wrapper">
+                    {{ block.settings.svg }}
+                  </span>
+                  <span class="slider-selector-icon-text">
+                    {{ block.settings.title }}
+                  </span>
+                </div>
+            {% endcase %}
+        {%- endfor -%}
+      </div>
+      <div class="slider-example-box">
+        {%- for block in section.blocks -%}
+          <div {{ block.shopify_attributes }}>
+            {% case block.type %}
+              {% when 'strongs' %}
+                {% if block.settings.image1 != blank %}
+                  <div class="slider-example-img" id="slider{{ forloop.index }}">
+                      <two-img-comparison class="slider-example-focus">
+                        <img
+                          class="lazyload"
+                          width="100%"
+                          slot="first"
+                          data-src="{{ block.settings.image1 | img_url: 'x438' }}"
+                          alt="{{ block.settings.title1 | escape }}"
+                        >
+                        <img
+                          class="lazyload"
+                          width="100%"
+                          slot="second"
+                          data-src="{{ block.settings.image2 | img_url: 'x438' }}"
+                          alt="{{ block.settings.title2 | escape }}"
+                        >
+                      </two-img-comparison>
+                      <div class="slider-example-img-title">
+                        <span class="swiper--products-caption-left"> {{ block.settings.title1 }} </span>
+                        <span class="swiper--products-caption-right"> {{ block.settings.title2 }} </span>
+                      </div>
+                  </div>
+                  <div class="slider-example--tooltip"  aria-hidden="true">
+                    <svg viewBox="0 0 19 12" width="19" height="12" style="transform: rotate(180deg)">
+                      <path d="M10.6 1.4 14.2 5H0v2h14.2l-3.6 3.6L12 12l6-6-6-6-1.4 1.4z" fill="currentColor"></path>
+                    </svg>
+                    Drag to explore
+                    <svg viewBox="0 0 19 12" width="19" height="12">
+                      <path d="M10.6 1.4 14.2 5H0v2h14.2l-3.6 3.6L12 12l6-6-6-6-1.4 1.4z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+              {% endif %}
+            {% endcase %}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+<style>
+  two-img-comparison {
+    visibility: hidden;
+  }
+
+  two-img-comparison [slot='second'] {
+    display: none;
+  }
+
+  two-img-comparison.rendered {
+    visibility: inherit;
+  }
+
+  two-img-comparison.rendered [slot='second'] {
+    display: unset;
+  }
+  .sliderexample {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slider-example-text{
+    padding-right: 22px;
+  }
+  .slider-selector{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .slider-selector-icon-wrapper{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #9f7b63;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .slider-selector-icon-wrapper svg{
+    width: 31px;
+    height: 18px;
+  }
+  .slider-selector-icon-text{
+    flex: 1;
+  }
+  .slider-selector-icon-active{
+    color: #fff;
+    background-color: #9f7b63;
+    border: 1px solid #9f7b63;
+  }
+  .slider-example-box{
+    position: relative;
+    {% comment %} flex: 0 0 auto; {% endcomment %}
+  }
+  .slider-example-focus:focus {
+    outline: none;
+  }
+  .slider-example-img-title{
+    display: flex;
+    padding: 0px 10px;
+  }
+  .swiper--products-caption-left{
+    width: 50%;
+    text-align: left;
+  }
+  .swiper--products-caption-right{
+    width: 50%;
+    text-align: right;
+  }
+  .slider-example--tooltip {
+    padding: 10px;
+    z-index: 2;
+    background: rgba(21,21,21,0.5);
+    border-radius: 5px;
+    color: #fff;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    white-space: nowrap;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate3d(-50%, -100%, 0);
+    margin-top: calc((49.2134831461%) / 2 + 80px);
+  }
+  @media only screen and (max-width:1000px) {
+    .sliderexample {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+    }
+    .slider-example-text{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 45px 0 0;
+    }
+    .slider-selector{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+    }
+    .slider-example--tooltip {
+      padding: 5px;
+      z-index: 2;
+      background: rgba(21,21,21,0.5);
+      border-radius: 5px;
+      color: #fff;
+      pointer-events: none;
+      -webkit-touch-callout: none;
+      white-space: nowrap;
+      font-size: 14px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate3d(-50%, -100%, 0);
+      margin: calc(49.2957746479% - 50px) 0 0;
+    }
+  }
+</style>
+<script>
+  const sliders = document.querySelectorAll('.slider-selector');
+  sliders.forEach(function (slider) {
+    slider.addEventListener('click', function (data) {
+      document.querySelectorAll('.slider-selector-icon-wrapper').forEach(function (iconWrapper) {
+          iconWrapper.classList.remove('slider-selector-icon-active');
+      });
+
+      const iconWrapper = this.querySelector('.slider-selector-icon-wrapper');
+      if (iconWrapper) {
+          iconWrapper.classList.add('slider-selector-icon-active');
+      }
+
+      const targetSliderId = this.getAttribute('data-target');
+
+      document.querySelectorAll('.slider-example-img').forEach(function (slider) {
+        slider.style.display = 'none';
+      });
+
+      const targetSlider = document.getElementById(targetSliderId);
+      if (targetSlider) {
+        targetSlider.style.display = 'block';
+      }
+    });
+  });
+
+  sliders[0].click();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const twoimgcomparison = document.querySelector('two-img-comparison');
+    const sliderexampletooltip = document.querySelector('.slider-example--tooltip');
+    twoimgcomparison.addEventListener('slide', (event) => {
+      sliderexampletooltip.style.display = 'none';
+    });
+  });
+  
+</script>
+{% schema %}
+{
+  "name": "two-img-comparison",
+  "class": "index-section",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "测试"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "strongs",
+      "name": "strongs",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title",
+          "default": "20+ clooections"
+        },
+        {
+          "type": "html",
+          "id": "svg",
+          "label": "svg图标",
+          "default": "<svg viewBox='0 0 40 24' width='40' height='24' class='svg-icon--sofa' aria-hidden='true'><path d='M34.3,18.74c.33.06,1.29.49,1.45.87a22.44,22.44,0,0,1,.73,3.89V18.74h0' fill='none' stroke='currentColor' stroke-linejoin='round' fill-rule='evenodd' vector-effect='non-scaling-stroke'></path><path d='M20,1.47V15H5.06a1,1,0,0,1-1.06-1V1.47A1,1,0,0,1,5.06.5H18.92A1,1,0,0,1,20,1.47Z' fill='none' stroke='currentColor' stroke-miterlimit='10' fill-rule='evenodd' vector-effect='non-scaling-stroke'></path><path d='M36,7.82h2.47a1,1,0,0,1,1,1l0,7a3,3,0,0,1-3,2.91H3.5a3,3,0,0,1-3-2.91l0-7a1,1,0,0,1,1-1H4' fill='none' stroke='currentColor' stroke-miterlimit='10' fill-rule='evenodd' vector-effect='non-scaling-stroke'></path><path d='M4,11.64a29.59,29.59,0,0,1,8-1.44,30.11,30.11,0,0,1,8,1.43' fill='none' stroke='currentColor' stroke-miterlimit='10' fill-rule='evenodd' vector-effect='non-scaling-stroke'></path><path d='M20,15H34.88a1,1,0,0,0,1.07-1V1.48a1,1,0,0,0-1.06-1H21.12a1.08,1.08,0,0,0-1.13,1' fill='none' stroke='currentColor' stroke-linejoin='round' fill-rule='evenodd' vector-effect='non-scaling-stroke'></path><path d='M20,11.64a29.37,29.37,0,0,1,8-1.43,29.62,29.62,0,0,1,8,1.44' fill='none' stroke='currentColor' stroke-miterlimit='10' fill-rule='evenodd' vector-effect='non-scaling-stroke'></path><path d='M5.67,18.74a2.74,2.74,0,0,0-1.45.87A22.19,22.19,0,0,0,3.5,23.5V18.74h0' fill='none' stroke='currentColor' stroke-linejoin='round' fill-rule='evenodd' vector-effect='non-scaling-stroke'></path></svg>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image1"
+        },
+        {
+          "type": "text",
+          "id": "title1",
+          "label": "Image1-name",
+          "default": "Image1下方名称"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image2"
+        },
+        {
+          "type": "text",
+          "id": "title2",
+          "label": "Image2-name",
+          "default": "Image2下方名称"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "two-img-comparison",
+      "blocks": [
+        {
+          "type": "strongs"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
