@@ -152,40 +152,6 @@
       gtag('js', new Date());
       gtag('config', 'G-J1Q21S8S4S');
     </script>
-    
-    <!-- Taboola Pixel Code -->
-    <script type="text/javascript">
-      window._tfa = window._tfa || [];
-      window._tfa.push({ notify: 'event', name: 'page_view', id: 1526330 });
-      !(function (t, f, a, x) {
-        if (!document.getElementById(x)) {
-          t.async = 1;
-          t.src = a;
-          t.id = x;
-          f.parentNode.insertBefore(t, f);
-        }
-      })(
-        document.createElement('script'),
-        document.getElementsByTagName('script')[0],
-        '//cdn.taboola.com/libtrc/unip/1526330/tfa.js',
-        'tb_tfa_script'
-      );
-    </script>
-    <script>
-      if (window.location.href.includes('/cart')) {
-        _tfa.push({ notify: 'event', name: 'add_to_cart', id: 1526330 });
-      }
-    </script>
-    <script>
-      window.addEventListener('load', function () {
-        document.querySelectorAll("button[name*='checkout']").forEach(function (e) {
-          e.addEventListener('click', function (e) {
-            _tfa.push({ notify: 'event', name: 'start_checkout', id: 1526330 });
-          });
-        });
-      });
-    </script>
-    <!-- End of Taboola Pixel Code -->
 
 
     <script>

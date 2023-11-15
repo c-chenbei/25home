@@ -386,7 +386,6 @@
                         </div>
                       {%- endif -%}
                     </div>
-                    {% comment %} <div id="edt-p"></div> {% endcomment %}
 
                     {% comment %} 展示变体 多元素 metafields {% endcomment %}
                     <div id="expressage_box">
@@ -398,16 +397,7 @@
                         {% endif %}
                       {% endfor %}
                     </div>
-                    {% comment %} <div class="zi" style="margin-bottom: 15px;">
-                      <label for="options">Full-Service Delivery: $99 - $119</label>
-                      <select id="options" name="selected_option">
-                        <option value="option1">Fri, Nov 03 (8am - 6pm) $99</option>
-                        <option value="option2">Sat, Nov 04 (8am - 6pm) $119</option>
-                        <option value="option3">Sun, Nov 05 (8am -6pm) $119</option>
-                        <option value="option4">Mon, Nov 06 (8am - 6pm) $109</option>
-                        <!-- 添加更多日期和时间范围的选项 -->
-                      </select>
-                    </div> {% endcomment %}
+
                     {% comment %}
                       {% unless product.metafields.custom.stock==blank %}
                         <p style="font-size:1.0em;font-weight:bold;margin-bottom:5px;"><b style="font-size:1.0em">•</b> {{product.metafields.custom.stock}}</p>
@@ -417,6 +407,22 @@
                   {%- when 'buy_buttons' -%}
                     <div class="product-block" {{ block.shopify_attributes }} id="product-form-button">
                       {%- unless product.empty? -%}
+                        <div class="whitegloves">
+                          <div class="whitegloves-title">
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Scales</label>
+                          </div>
+                          <div class="whitegloves-list">
+                            <label for="options">Full-Service Delivery: $99 - $119</label>
+                            <select id="options" name="selected_option">
+                              <option value="option1">Fri, Nov 03 (8am - 6pm) $99</option>
+                              <option value="option2">Sat, Nov 04 (8am - 6pm) $119</option>
+                              <option value="option3">Sun, Nov 05 (8am -6pm) $119</option>
+                              <option value="option4">Mon, Nov 06 (8am - 6pm) $109</option>
+                            </select>
+                          </div>
+                        </div>
+                        
                         <div class="product-block">
                           {%- render 'product-form',
                             form_id: form_id,
@@ -595,6 +601,21 @@
   </div>
 </div>
 <style>
+  .whitegloves{
+    display: none;
+    margin-bottom: 15px;
+  }
+  .whitegloves-title{
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+  .whitegloves-title label{
+    display: inline;
+    margin: 0px;
+    text-transform: none;
+    font-size: 14px;
+  }
   #priceSuspension{
     background-color: var(--colorBody);
   }
@@ -674,62 +695,53 @@
       border: none;
     }
   }
+  .whitegloves-list {
+    display: none;
+  }
 </style>
 <script>
-    {% comment %} let collectionsss1 = {{ product | json }}
-    console.log(collectionsss1,'productproductproductproductproduct')
-    let collectionsss = {{ collections['Bundle'].products | json }}
-    console.log(collectionsss,'collectionssscollectionssscollectionsss') {% endcomment %}
-    var expressageBox = document.getElementById('expressage_box');
-    var paragraphTags = expressageBox.getElementsByTagName("p");
-    var defs = document.querySelector('textarea[data-current-variant-json]');
-    var variant = document.querySelector('textarea[data-variant-json]');
-    var currentdefault;
-    var currentvariant;
-    if (defs && variant) {
-        currentdefault = JSON.parse(defs.textContent);
-        currentvariant = JSON.parse(variant.textContent);
-        {% comment %} console.log(currentdefault,'currentdefault')
-        console.log(currentvariant,'currentvariant') {% endcomment %}
-        {% comment %} 首次进入默认展示货期 {% endcomment %}
-        currentvariant.forEach(function(item,index) {
-          if (currentdefault.id == item.id) {
-            paragraphTags[index].classList.remove('expressage_none');
-          }
-        })
+  var scalesCheckbox = document.getElementById("scales");
+  var whiteglovesList = document.querySelector(".whitegloves-list");
+  
+  scalesCheckbox.addEventListener("change", function() {
+    if (scalesCheckbox.checked) {
+      whiteglovesList.style.display = "block";
     } else {
-      console.log('未找到包含 JSON 数据的 <textarea> 元素。');
+      whiteglovesList.style.display = "none";
     }
+  });
+  let collectionsss1 = {{ product | json }}
+  console.log(collectionsss1,'productproductproductproductproduct')
+  {% comment %} let collectionsss = {{ collections['Bundle'].products | json }}
+  console.log(collectionsss,'collectionssscollectionssscollectionsss') {% endcomment %}
+  var expressageBox = document.getElementById('expressage_box');
+  var paragraphTags = expressageBox.getElementsByTagName("p");
+  var currentdefault = {{ current_variant | json }};
+  var currentvariant = {{ product.variants | json }};
+  {% comment %} 首次进入默认展示货期 {% endcomment %}
+  currentvariant.forEach(function(item,index) {
+    if (currentdefault.id == item.id) {
+      paragraphTags[index].classList.remove('expressage_none');
+    }
+  })
 
-    {% comment %} 点击按钮切换货期显示 {% endcomment %}
-    document.addEventListener('variant:change', function(evt) {
-      {% comment %} console.log(evt.detail.variant,'555555',paragraphTags); {% endcomment %}
-      currentvariant.forEach(function(item,index) {
-        if (evt.detail.variant.id == item.id) {
-          paragraphTags[index].classList.remove('expressage_none');
-        } else{
-          paragraphTags[index].classList.add('expressage_none');
-        }
-      })
-    });
+  {% comment %} 点击按钮切换货期显示 {% endcomment %}
+  document.addEventListener('variant:change', function(evt) {
+    {% comment %} console.log(evt.detail.variant,'555555',paragraphTags); {% endcomment %}
+    currentvariant.forEach(function(item,index) {
+      if (evt.detail.variant.id == item.id) {
+        paragraphTags[index].classList.remove('expressage_none');
+      } else{
+        paragraphTags[index].classList.add('expressage_none');
+      }
+    })
+  });
 
 
   let headerElement = document.getElementById("SiteHeader"); // header
   let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
   let priceSuspensionCont = document.getElementById("priceSuspension-cont"); // 悬浮盒子
   var elementsWithClassName = priceSuspensionCont.getElementsByClassName("product-block");
-
-  // 检查元素是否存在
-  if (headerElement && priceSuspensionElement) {
-    // 获取元素的高度
-    {% comment %} var headerHeight = headerElement.offsetHeight; {% endcomment %}
-    {% comment %} priceSuspensionElement.style.position = 'sticky'
-    priceSuspensionElement.style.top = headerHeight + 'px' {% endcomment %}
-    {% comment %} console.log("SiteHeader 的高度是：" + headerHeight + " 像素"); {% endcomment %}
-  } else {
-    console.log("未找到具有 ID 为 SiteHeader 的元素");
-  }
-
 
   let productformbutton = document.getElementById("product-form-button"); // 原架构按钮
   var distanceToTop = productformbutton.getBoundingClientRect().top + window.scrollY;
@@ -745,8 +757,7 @@
       priceSuspensionElement.classList.add("suspension-class");
       priceSuspensionCont.classList.add("priceSuspension-cont");
       elementsWithClassName[0].style.marginBottom = '0px';
-      var headerHeight = headerElement.offsetHeight;
-      priceSuspensionElement.style.top = headerHeight + 'px'
+      priceSuspensionElement.style.top = headerElement.offsetHeight + 'px'
       buttonSuspension.style.display = 'block'
     } else {
       priceSuspensionElement.classList.remove("suspension-class");
@@ -773,5 +784,23 @@
        console.error('Error:', error);
      });
   });
-
+  // 发送Ajax请求
+  {% comment %} $.ajax({
+    type: 'POST',
+    url: apiUrl,
+    headers: {
+      'X-Shopify-Storefront-Access-Token': accessToken,
+      'Content-Type': 'application/json',
+    },
+    data: JSON.stringify({ query: graphqlQuery }),
+    success: function(response) {
+      // 处理API响应
+      console.log('Product by ID:', response.data.productById);
+      console.log('Product by Name:', response.data.productByName.edges[0].node);
+    },
+    error: function(error) {
+      // 处理错误
+      console.error(error);
+    }
+  }); {% endcomment %}
 </script>

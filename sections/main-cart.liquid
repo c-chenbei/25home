@@ -180,21 +180,21 @@
       value: '{{ cart.total_price| divided_by: 100.0 }}',
       currency: '{{ shop.currency }}',
       items: [
-       {% for item in cart.items %}
-         {
-           item_id: '{{ item.product_id }}',
-           item_name: '{{ item.product.title }}',
-           currency: '{{ shop.currency }}',
-           item_brand: '{{product.vendor}}',
-           item_category: '{{ item.product.type }}',
-           item_variant: '{{ item.product.first_available_variant }}',
-           price: {{ item.product.price | divided_by: 100.0 }},
-           quantity: '{{item.quantity}}'
-         }
+        {% for item in cart.items %}
+          {
+            item_id: '{{ item.product_id }}',
+            item_name: '{{ item.product.title }}',
+            currency: '{{ shop.currency }}',
+            item_brand: '{{product.vendor}}',
+            item_category: '{{ item.product.type }}',
+            item_variant: '{{ item.product.first_available_variant }}',
+            price: {{ item.product.price | divided_by: 100.0 }},
+            quantity: '{{item.quantity}}'
+          }
         {% endfor %}
         ]
-     });
-   };
+    });
+  };
 </script>
 <script id="docapp-discount-speedup">
   (() => {

@@ -203,6 +203,24 @@
         "parallax": false
       }
     },
+    "a68b65f6-fb9a-4ab2-b71e-ca134410e138": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/01_5b7813f0-ce49-48e9-9579-0880919c6fe9.gif",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "MODULAR DESIGN",
+        "text": "<p>Modular sofas adapt as your needs change. Reconfigure the layout, add new components, or take sections apart to move through tight spaces. With easy DIY assembly, you can construct and reconstruct our modular sofas with absolute flexibility.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "5a1293d8-8d37-4784-ba3e-c70feb0fe813": {
       "type": "advanced-content",
       "blocks": {
@@ -431,6 +449,7 @@
     "main",
     "sub",
     "background-image-text",
+    "a68b65f6-fb9a-4ab2-b71e-ca134410e138",
     "5a1293d8-8d37-4784-ba3e-c70feb0fe813",
     "text-and-image",
     "c1e2a991-ad27-44f4-9ed7-7bcbf1447338",

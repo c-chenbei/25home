@@ -6,9 +6,7 @@
       assign enable_dynamic_buttons = true
     endif
   -%}
-  {% comment %} {%- liquid
-    assign enable_dynamic_buttons = true
-  -%} {% endcomment %}
+
   {%- if enable_dynamic_buttons -%}
     <div class="payment-buttons">
   {%- endif -%}
@@ -62,14 +60,11 @@
     {%- endfor -%}
   </select>
 
-  <textarea data-variant-json class="hide" aria-hidden="true" aria-label="Product JSON">
-    {{ product.variants | json }}
-  </textarea>
-  {% comment %} {%- if product.options.size > 1 -%}
-    <textarea data-current-variant-json class="hide" aria-hidden="true" aria-label="Variant JSON">
-      {{ current_variant | json }}
+  {%- if product.options.size > 1 -%}
+    <textarea data-variant-json class="hide" aria-hidden="true" aria-label="Product JSON">
+      {{ product.variants | json }}
     </textarea>
-  {%- endif -%} {% endcomment %}
+  {%- endif -%}
   <textarea data-current-variant-json class="hide" aria-hidden="true" aria-label="Variant JSON">
     {{ current_variant | json }}
   </textarea>
@@ -98,6 +93,6 @@
         quantity: 1,
         price: {{ product.price | divided_by: 100.0 }}
       }]
-  });
-};
+    });
+  };
 </script>
