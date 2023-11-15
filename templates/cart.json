@@ -1,1 +1,46 @@
-{"sections":{"main":{"type":"main-cart","settings":{}},"recently-viewed":{"type":"recently-viewed","settings":{"recent_count":5}},"featured-collection":{"type":"featured-collection","settings":{"title":"Popular picks","home_featured_products":"maiden-voyage","per_row":4,"rows":1,"mobile_scrollable":true,"view_all":true,"divider":false}},"166123733281eda635":{"type":"apps","settings":{}},"1693380114a1e593a2":{"type":"apps","blocks":{"0cc758f6-d37b-4464-a7e5-76856a051d10":{"type":"shopify:\/\/apps\/cartking-auto-add-free-gifts\/blocks\/app-block\/4831ea51-9f80-493d-8541-da4662a9e219","settings":{"autoAdd":true,"disallowUponAddition":false,"ineligibleGiftRemove":true,"cardColor":"#ffffff","cardTextColor":"#000000","buttonColor":"#000000","title":"Offers","cta":"Add offer","postAddTxt":"gift(s) added"}}},"block_order":["0cc758f6-d37b-4464-a7e5-76856a051d10"],"settings":{}}},"order":["main","recently-viewed","featured-collection","166123733281eda635","1693380114a1e593a2"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "title": "Tax Information",
+        "text": "<p>·Online purchases are subject to applicable sales taxes.<\/p><p>·The sales tax for your order is based on state and local tax rates as well as the shipping and\/or service location of your order.<\/p><p>·Please consult a tax professional for more information regarding applicable sales taxes on your order.<\/p><p><\/p>"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Popular picks",
+        "home_featured_products": "maiden-voyage",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "166123733281eda635": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "1693380114a1e593a2": {
+      "type": "apps",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recently-viewed",
+    "featured-collection",
+    "166123733281eda635",
+    "1693380114a1e593a2"
+  ]
+}

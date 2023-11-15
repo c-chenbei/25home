@@ -3313,14 +3313,14 @@ symbol.icon:not(.icon--full-color) rect {
 .icon-circle-checkmark polygon,
 .icon-circle-checkmark polyline,
 .icon-circle-checkmark rect,
-.icon-close circle,
-.icon-close ellipse,
-.icon-close g,
-.icon-close line,
-.icon-close path,
-.icon-close polygon,
-.icon-close polyline,
-.icon-close rect,
+.icon-taxes-modal-close circle,
+.icon-taxes-modal-close ellipse,
+.icon-taxes-modal-close g,
+.icon-taxes-modal-close line,
+.icon-taxes-modal-close path,
+.icon-taxes-modal-close polygon,
+.icon-taxes-modal-close polyline,
+.icon-taxes-modal-close rect,
 .icon-email circle,
 .icon-email ellipse,
 .icon-email g,
@@ -3560,7 +3560,7 @@ symbol.icon:not(.icon--full-color) rect {
   }
 }
 
-.drawer__close,
+.drawer__taxes-modal-close,
 .drawer__title {
   display: table-cell;
   vertical-align: middle;
@@ -3570,12 +3570,12 @@ symbol.icon:not(.icon--full-color) rect {
   width: 100%;
 }
 
-.drawer__close {
+.drawer__taxes-modal-close {
   width: 1%;
   text-align: center;
 }
 
-.drawer__close-button {
+.drawer__taxes-modal-close-button {
   position: relative;
   height: 100%;
   right: -20px;
@@ -3585,20 +3585,20 @@ symbol.icon:not(.icon--full-color) rect {
   color: inherit
 }
 
-.drawer__close-button:active {
+.drawer__taxes-modal-close-button:active {
   background-color: var(--colorDrawersDim);
 }
 
-.drawer__close-button .icon {
+.drawer__taxes-modal-close-button .icon {
   height: 28px;
   width: 28px;
 }
 
-.drawer__close--left {
+.drawer__taxes-modal-close--left {
   text-align: left
 }
 
-.drawer__close--left .drawer__close-button {
+.drawer__taxes-modal-close--left .drawer__taxes-modal-close-button {
   right: auto;
   left: -20px;
   left: calc(var(--drawer-gutter)*-1);
@@ -6347,7 +6347,7 @@ form+.footer__social {
   }
 }
 
-.modal__close {
+.modal__taxes-modal-close {
   border: 0;
   padding: 15px;
   position: fixed;
@@ -6358,22 +6358,22 @@ form+.footer__social {
 
 @media only screen and (min-width:769px) {
 
-  .modal__close {
+  .modal__taxes-modal-close {
     padding: 30px
   }
 }
 
-.modal__close .icon {
+.modal__taxes-modal-close .icon {
   width: 28px;
   height: 28px;
 }
 
-.modal__close:focus,
-.modal__close:hover {
+.modal__taxes-modal-close:focus,
+.modal__taxes-modal-close:hover {
   color: #fff;
 }
 
-.modal--square .modal__close {
+.modal--square .modal__taxes-modal-close {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -6381,8 +6381,8 @@ form+.footer__social {
   padding: 10px;
 }
 
-.modal--square .modal__close:focus,
-.modal--square .modal__close:hover {
+.modal--square .modal__taxes-modal-close:focus,
+.modal--square .modal__taxes-modal-close:hover {
   color: var(--colorTextBody);
 }
 
@@ -6428,7 +6428,7 @@ form+.footer__social {
     font-size: 16px !important;
   }
 
-  .modal--mobile-friendly .text-close {
+  .modal--mobile-friendly .text-taxes-modal-close {
     display: none;
   }
 }
@@ -6690,7 +6690,7 @@ form+.footer__social {
   padding-bottom: 20px;
 }
 
-.collapsible-trigger[aria-expanded=true] .collapsible-label__closed {
+.collapsible-trigger[aria-expanded=true] .collapsible-label__taxes-modal-closed {
   display: none
 }
 
@@ -7085,7 +7085,7 @@ form+.footer__social {
   display: none;
 }
 
-.product-single__close-media {
+.product-single__taxes-modal-close-media {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -10179,7 +10179,7 @@ html[dir=rtl] .background-media-text__text {
   }
 }
 
-.modal .newsletter .text-close {
+.modal .newsletter .text-taxes-modal-close {
   text-decoration: underline;
 }
 
@@ -11884,7 +11884,7 @@ html[dir=rtl] .product-single__meta .rte {
 
 @media only screen and (max-width:768px) {
 
-  #LoginModal .modal__close {
+  #LoginModal .modal__taxes-modal-close {
     padding: 20px
   }
 }
@@ -12453,14 +12453,19 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
     transform: scale(0.6);
     left: auto;
     right: 10px !important;
-    /* bottom: 85px; */
     bottom: 65px;
+    z-index: 888;
   }
 
-  iframe#tidio-chat-iframe {
+  #tidio-chat iframe#tidio-chat-iframe {
     bottom: 120px !important;
     right: 0px !important;
     transform: scale(0.8) !important;
+    z-index: 888 !important;
+  }
+  /* 左下角优惠50 */
+  #attentive_overlay{
+    z-index: 888 !important;
   }
 }
 
@@ -12597,4 +12602,75 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
 }
 .evm_lookbook_block{
   display: none !important;
+}
+
+.taxes-modals {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 遮罩层颜色 */
+  z-index: 9990; /* 需要比其他页面元素的 z-index 高 */
+}
+@media only screen and (min-width:769px) {
+  .taxes-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9991; /* 比遮罩层高 */
+    box-sizing: border-box;
+  }
+}
+
+.taxes-modal-close {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #333;
+}
+.taxes-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.taxes-content{
+  margin: 16px 44px 30px;
+  font-size: 14px;
+}
+@media only screen and (max-width:768px) {
+  .taxes-modals {
+    z-index: 9999999991; /* 遮罩层 */
+  }
+  .taxes-modal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999999992; /* 比遮罩层高 */
+    box-sizing: border-box;
+  }
+  .taxes-modal-close {
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #333;
+  }
+  .taxes-content{
+    margin: 16px 20px 30px;
+    font-size: 13px;
+  }
 }

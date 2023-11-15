@@ -340,7 +340,7 @@
       },
       "11468047240823483236": {
         "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/checkout-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "heading": "Sezzle Checkout Button",
           "template": "Checkout with %%logo%%",

@@ -123,16 +123,18 @@
             {% endif %}
           </div>
 
-          <div class="cart__item-row text-center">
-            <small>
-              {{ 'cart.general.shipping_at_checkout' | t -}}
-              <br>
-            </small>
+          <!-- 在你的模板文件中 -->
+          <div class="cart__item-row modal_button_title">
+              <p>Shipping, <span id="openModalButton">sale taxes ⓘ</span>, and
+                  discount codes calculated at checkout.</p>
           </div>
+          
+          
           <div class="payment_security_title">
             <span><i class="iconfont icon-yinxingqia"> </i>Payment Security</span>
             <p>Your payment information is safe with us. 25Home does not share your information with others.</p>
           </div>
+
           <ul class="inline-list payment-icons footer__section">
             {% assign enabled_payment_types = 'american_express,apple_pay,diners_club,discover,jcb,master,paypal,venmo,visa,sezzle,afterpay' | remove: ' ' | split: ',' %}
             {% for type in enabled_payment_types %}
@@ -149,7 +151,23 @@
 
 {% schema %}
 {
-  "name": "Cart page"
+  "name": "Cart page",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title",
+      "default": "Tax Information",
+      "info": "sale taxes弹窗标题"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>·Online purchases are subject to applicable sales taxes.</p>",
+      "info": "sale taxes弹窗内容"
+    }
+  ]
 }
 {% endschema %}
 <script>
@@ -231,6 +249,40 @@
     })
   }
 </script>
+<script>
+    const body = document.body;
+    // 将模态框的HTML添加到body的末尾
+    const inhtml = `
+    <div id="myModal" class="taxes-modals">
+      <!-- 模态框内容 -->
+      <div class="taxes-modal">
+        <span class="taxes-modal-close" id="closeModalButton">&times;</span>
+        <div class="taxes-title">{{ section.settings.title }}</div>
+        <div class="taxes-content">{{ section.settings.text }}</div>
+      </div>
+    </div>
+    `
+    body.insertAdjacentHTML('beforeend', inhtml);
+  document.addEventListener("DOMContentLoaded", function () {
+    const openModalButton = document.getElementById("openModalButton");
+    const myModal = document.getElementById("myModal");
+    const closeModalButton = document.getElementById("closeModalButton");
+
+    openModalButton.addEventListener("click", function () {
+        myModal.style.display = "block";
+    });
+
+    closeModalButton.addEventListener("click", function () {
+        myModal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === myModal) {
+            myModal.style.display = "none";
+        }
+    });
+  });
+</script>
 <style>
   .cart_explain_title{
     text-align: left;
@@ -264,5 +316,15 @@
     .form_title_mod{
       display: none;
     }
+  }
+  .modal_button_title{
+    font-size: 12px;
+    color: #222;
+    line-height: 16px;
+  }
+  .modal_button_title span{
+    color: #9f7b63;
+    cursor: pointer; 
+    font-weight: 600;
   }
 </style>
