@@ -18,6 +18,13 @@
       "font_class": "naozhong",
       "unicode": "e890",
       "unicode_decimal": 59536
+    },
+    {
+      "icon_id": "21745674",
+      "name": "快递",
+      "font_class": "kuaidi",
+      "unicode": "e74b",
+      "unicode_decimal": 59211
     }
   ]
 }
