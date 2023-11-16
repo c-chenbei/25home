@@ -407,7 +407,7 @@
                   {%- when 'buy_buttons' -%}
                     <div class="product-block" {{ block.shopify_attributes }} id="product-form-button">
                       {%- unless product.empty? -%}
-                        <div class="whitegloves">
+                        {% comment %} <div class="whitegloves">
                           <div class="whitegloves-title">
                             <input type="checkbox" id="scales" name="scales" />
                             <label for="scales">Scales</label>
@@ -421,7 +421,7 @@
                               <option value="option4">Mon, Nov 06 (8am - 6pm) $109</option>
                             </select>
                           </div>
-                        </div>
+                        </div> {% endcomment %}
                         
                         <div class="product-block">
                           {%- render 'product-form',
@@ -700,7 +700,7 @@
   }
 </style>
 <script>
-  var scalesCheckbox = document.getElementById("scales");
+  {% comment %} var scalesCheckbox = document.getElementById("scales");
   var whiteglovesList = document.querySelector(".whitegloves-list");
   
   scalesCheckbox.addEventListener("change", function() {
@@ -709,9 +709,9 @@
     } else {
       whiteglovesList.style.display = "none";
     }
-  });
-  let collectionsss1 = {{ product | json }}
-  console.log(collectionsss1,'productproductproductproductproduct')
+  }); {% endcomment %}
+  {% comment %} {% comment %} let collectionsss1 = {{ product | json }} {% endcomment %}
+  console.log(collectionsss1,'productproductproductproductproduct') {% endcomment %}
   {% comment %} let collectionsss = {{ collections['Bundle'].products | json }}
   console.log(collectionsss,'collectionssscollectionssscollectionsss') {% endcomment %}
   var expressageBox = document.getElementById('expressage_box');
