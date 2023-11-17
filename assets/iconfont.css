@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1700018186275') format('truetype');
+  src: url('iconfont.ttf?t=1700218931526') format('truetype');
 }
 
 .iconfont {
@@ -11,12 +11,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-huanbao:before {
+  content: "\e603";
+}
+
 .icon-yinxingqia:before {
   content: "\e637";
 }
 
 .icon-naozhong:before {
   content: "\e890";
+}
+
+.icon-xunhuan:before {
+  content: "\e7b1";
 }
 
 .icon-kuaidi:before {

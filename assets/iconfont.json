@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "883876",
+      "name": "环保",
+      "font_class": "huanbao",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
       "icon_id": "955088",
       "name": "银行卡",
       "font_class": "yinxingqia",
@@ -18,6 +25,13 @@
       "font_class": "naozhong",
       "unicode": "e890",
       "unicode_decimal": 59536
+    },
+    {
+      "icon_id": "4425897",
+      "name": "循环",
+      "font_class": "xunhuan",
+      "unicode": "e7b1",
+      "unicode_decimal": 59313
     },
     {
       "icon_id": "21745674",

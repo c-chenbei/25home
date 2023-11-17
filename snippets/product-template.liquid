@@ -388,12 +388,12 @@
                     </div>
 
                     {% comment %} 展示变体 多元素 metafields {% endcomment %}
-                    <div id="expressage_box">
+                    <div id="expressage_box" style="height:30px">
                       {% for variant in product.variants %}
                         {% if variant.metafields.custom.expressage %}
-                          <p class="expressage_type expressage_none">{{ variant.metafields.custom.expressage }}</p>
+                          <div class="expressage_type expressage_none">{{ variant.metafields.custom.expressage }}</div>
                         {% else %}
-                          <p class="expressage_type expressage_none">{{ product.metafields.custom.stock }}</p>
+                          <div class="expressage_type expressage_none">{{ product.metafields.custom.stock }}</div>
                         {% endif %}
                       {% endfor %}
                     </div>
@@ -408,6 +408,7 @@
                     <div class="product-block" {{ block.shopify_attributes }} id="product-form-button">
                       {%- unless product.empty? -%}
                         {% assign deliveryVariants = all_products['white-glove-delivery'].variants %}
+                        {% comment %} <p style="color:red;margin:0;"><i class="iconfont icon-kuaidi"> </i> Free Shipping: </p> {% endcomment %}
 
                         <div class="whitegloves">
                           <span class="whitegloves-h1">
@@ -415,7 +416,7 @@
                             White Glove Delivery
                           </span>
                           <div class="whitegloves-title">
-                            <input type="checkbox" id="deliveryscales" />
+                            <input type="checkbox" id="deliveryscales" style="margin: 3px 13px 3px 5px;"/>
                             <label for="deliveryscales">Is there an elevator？</label>
                           </div>
                           <div class="whitegloves-list">
@@ -437,7 +438,13 @@
                           -%}
                         {% comment %} </div> {% endcomment %}
                       {%- endunless -%}
-
+                      <div class="right-other">
+                        <div><i class="iconfont icon-xunhuan"></i>30-Day Returns</div>
+                        <div data-v-60df7f83="" class="vertical-line"></div>
+                        <div><i class="iconfont icon-kuaidi"></i>Free Shipping</div>
+                        <div data-v-60df7f83="" class="vertical-line"></div>
+                        <div><i class="iconfont icon-huanbao"></i>Sustainably</div>
+                      </div>
                       {%- if block.settings.surface_pickup_enable -%}
                         <div
                           data-store-availability-holder
@@ -611,7 +618,8 @@
     text-align: left;
   }
   .whitegloves-h1 {
-    font-weight: 600;
+    font-size: 14px;
+    {% comment %} font-weight: 600; {% endcomment %}
   }
   .whitegloves-h1 svg{
     margin-right: 5px;
@@ -620,6 +628,7 @@
     display: flex;
     align-items: center;
     height: 30px;
+    font-size: 14px;
   }
   .whitegloves-title label{
     display: inline;
@@ -679,6 +688,20 @@
       letter-spacing: 0;
       font-weight: 0;
     }
+    .right-other{
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 5px 5px 5px;
+      font-size: 16px;
+    }
+    .right-other i {
+      margin-right: 5px;
+    }
+    .vertical-line{
+      width: 1px;
+      height: auto;
+      background: #eee;
+    }
   }
   @media screen and (max-width: 1000px) {
     .priceSuspension-cont{
@@ -708,6 +731,21 @@
       color: #fff;
       border: none;
     }
+    .right-other{
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0px 5px 0px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .right-other i {
+      margin-right: 5px;
+    }
+    .vertical-line{
+      width: 1px;
+      height: auto;
+      background: #eee;
+    }
   }
 </style>
 <script>
@@ -719,7 +757,7 @@
   console.log(collectionsss,'collectionssscollectionssscollectionsss') {% endcomment %}
   {% comment %} 显示货期 {% endcomment %}
   var expressageBox = document.getElementById('expressage_box');
-  var paragraphTags = expressageBox.getElementsByTagName("p");
+  var paragraphTags = expressageBox.getElementsByTagName("div");
   var currentdefault = {{ current_variant | json }};
   var addcartValue = currentdefault.id
   var currentvariant = {{ product.variants | json }};
