@@ -24,10 +24,9 @@
     -%}
 
     <button
-      id="AddToCart"
+      id='AddToCart'
       onclick="atc();" 
       {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
-      name="add"
       data-add-to-cart
       class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
       {% unless current_variant.available %} disabled="disabled"{% endunless %}>
@@ -47,8 +46,7 @@
   <select name="id" data-product-select class="product-single__variants no-js">
     {%- for variant in product.variants -%}
       {%- if variant.available -%}
-        <option {% if variant == product.selected_or_first_available_variant %}
-          selected="selected"{% endif %}
+        <option {% if variant == product.selected_or_first_available_variant %} selected="selected"{% endif %}
           value="{{ variant.id }}">
           {{ variant.title }} - {{ variant.price | money_with_currency }}
         </option>
@@ -66,10 +64,7 @@
   <textarea data-current-variant-json class="hide" aria-hidden="true" aria-label="Variant JSON">
     {{ current_variant | json }}
   </textarea>
-  {% comment %} <textarea data-variant-json class="hide" aria-hidden="true" aria-label="Product JSON">
-    {{ product.variants | json }}
-  </textarea>
-  {%- if product.options.size > 1 -%}
+  {% comment %} {%- if product.options.size > 1 -%}
     <textarea data-current-variant-json class="hide" aria-hidden="true" aria-label="Variant JSON">
       {{ current_variant | json }}
     </textarea>

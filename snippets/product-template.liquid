@@ -407,30 +407,32 @@
                   {%- when 'buy_buttons' -%}
                     <div class="product-block" {{ block.shopify_attributes }} id="product-form-button">
                       {%- unless product.empty? -%}
-                        {% comment %} <div class="whitegloves">
+                        {% assign deliveryVariants = all_products['white-glove-delivery'].variants %}
+
+                        <div class="whitegloves">
+                          <span>White Glove Delivery</span>
                           <div class="whitegloves-title">
-                            <input type="checkbox" id="scales" name="scales" />
-                            <label for="scales">Scales</label>
+                            <input type="checkbox" id="deliveryscales" />
+                            <label for="deliveryscales">Is there an elevator？</label>
                           </div>
                           <div class="whitegloves-list">
-                            <label for="options">Full-Service Delivery: $99 - $119</label>
-                            <select id="options" name="selected_option">
-                              <option value="option1">Fri, Nov 03 (8am - 6pm) $99</option>
-                              <option value="option2">Sat, Nov 04 (8am - 6pm) $119</option>
-                              <option value="option3">Sun, Nov 05 (8am -6pm) $119</option>
-                              <option value="option4">Mon, Nov 06 (8am - 6pm) $109</option>
+                            {% comment %} <label for="deliveryoptions"></label> {% endcomment %}
+                            <select id="deliveryoptions" >
+                              {%- for datas in deliveryVariants -%}
+                                <option value="{{ datas.id }}">{{ datas.title }}</option>
+                              {%- endfor -%}
                             </select>
                           </div>
-                        </div> {% endcomment %}
+                        </div>
                         
-                        <div class="product-block">
+                        {% comment %} <div class="product-block"> {% endcomment %}
                           {%- render 'product-form',
                             form_id: form_id,
                             product: product,
                             show_dynamic_checkout: block.settings.show_dynamic_checkout,
                             current_variant: current_variant
                           -%}
-                        </div>
+                        {% comment %} </div> {% endcomment %}
                       {%- endunless -%}
 
                       {%- if block.settings.surface_pickup_enable -%}
@@ -602,8 +604,8 @@
 </div>
 <style>
   .whitegloves{
-    display: none;
     margin-bottom: 15px;
+    text-align: left;
   }
   .whitegloves-title{
     display: flex;
@@ -615,6 +617,9 @@
     margin: 0px;
     text-transform: none;
     font-size: 14px;
+  }
+  .whitegloves-list{
+    display: none;
   }
   #priceSuspension{
     background-color: var(--colorBody);
@@ -695,28 +700,19 @@
       border: none;
     }
   }
-  .whitegloves-list {
-    display: none;
-  }
 </style>
 <script>
-  {% comment %} var scalesCheckbox = document.getElementById("scales");
-  var whiteglovesList = document.querySelector(".whitegloves-list");
-  
-  scalesCheckbox.addEventListener("change", function() {
-    if (scalesCheckbox.checked) {
-      whiteglovesList.style.display = "block";
-    } else {
-      whiteglovesList.style.display = "none";
-    }
-  }); {% endcomment %}
-  {% comment %} {% comment %} let collectionsss1 = {{ product | json }} {% endcomment %}
+  {% comment %} let collectionsss1 = {{ product | json }}
   console.log(collectionsss1,'productproductproductproductproduct') {% endcomment %}
+  {% comment %} let allproducts = {{ all_products['white-glove-delivery'] | json }}
+  console.log(allproducts,'allproducts') {% endcomment %}
   {% comment %} let collectionsss = {{ collections['Bundle'].products | json }}
   console.log(collectionsss,'collectionssscollectionssscollectionsss') {% endcomment %}
+  {% comment %} 显示货期 {% endcomment %}
   var expressageBox = document.getElementById('expressage_box');
   var paragraphTags = expressageBox.getElementsByTagName("p");
   var currentdefault = {{ current_variant | json }};
+  var addcartValue = currentdefault.id
   var currentvariant = {{ product.variants | json }};
   {% comment %} 首次进入默认展示货期 {% endcomment %}
   currentvariant.forEach(function(item,index) {
@@ -727,6 +723,7 @@
 
   {% comment %} 点击按钮切换货期显示 {% endcomment %}
   document.addEventListener('variant:change', function(evt) {
+    addcartValue = evt.detail.variant.id
     {% comment %} console.log(evt.detail.variant,'555555',paragraphTags); {% endcomment %}
     currentvariant.forEach(function(item,index) {
       if (evt.detail.variant.id == item.id) {
@@ -736,8 +733,8 @@
       }
     })
   });
-
-
+  {% comment %} 显示货期结束 {% endcomment %}
+  {% comment %} 浮动价格 {% endcomment %}
   let headerElement = document.getElementById("SiteHeader"); // header
   let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
   let priceSuspensionCont = document.getElementById("priceSuspension-cont"); // 悬浮盒子
@@ -766,41 +763,48 @@
       buttonSuspension.style.display = 'none'
     }
   });
-  let btn2 = document.getElementById("custom-add-cart");
-  // 添加点击事件监听器
-  btn2.addEventListener('click', function() {
-     // 或者执行其他操作，如跳转到另一个页面或触发其他 JavaScript 事件
-     let addToCartForm = document.querySelector('form[action$="/cart/add"]');
-     let formData = new FormData(addToCartForm);
-     fetch(window.Shopify.routes.root + 'cart/add.js', {
-       method: 'POST',
-       body: formData
-     })
-     .then(response => {
-       window.location.href = '/cart'
-       return response.json();
-     })
-     .catch((error) => {
-       console.error('Error:', error);
-     });
+  {% comment %} 浮动价格结束 {% endcomment %}
+  {% comment %} 添加购物车 {% endcomment %}
+  $('#deliveryscales').on('change', function() {
+    $('.whitegloves-list').toggle()
+    $('.shopify-payment-button').toggle()
+    var isChecked = $(this).prop('checked');
   });
-  // 发送Ajax请求
-  {% comment %} $.ajax({
-    type: 'POST',
-    url: apiUrl,
-    headers: {
-      'X-Shopify-Storefront-Access-Token': accessToken,
-      'Content-Type': 'application/json',
-    },
-    data: JSON.stringify({ query: graphqlQuery }),
-    success: function(response) {
-      // 处理API响应
-      console.log('Product by ID:', response.data.productById);
-      console.log('Product by Name:', response.data.productByName.edges[0].node);
-    },
-    error: function(error) {
-      // 处理错误
-      console.error(error);
+  // 监听 custom-add-cart 的 click 事件
+  $('#custom-add-cart').on('click', function() {
+    handleAddToCart();
+  });
+  // 监听 AddToCart 的 click 事件
+  $('#AddToCart').on('click', function(event) {
+    // 阻止默认提交行为，以便进行自定义处理
+    event.preventDefault();
+    handleAddToCart();
+  });
+
+  function handleAddToCart() {
+    let deliveryValue = $('#deliveryoptions').val();
+    let scalesCheckvalue = $('#deliveryscales').prop('checked');
+
+    let fetchData = {items: [{'id': deliveryValue},{'id': addcartValue}]};
+
+    if (!scalesCheckvalue) {
+      fetchData.items = fetchData.items.filter(item => item.id !== deliveryValue);
     }
-  }); {% endcomment %}
+
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest'
+      },
+      body: JSON.stringify(fetchData)
+    })
+    .then(response => {
+      window.location.href = '/cart';
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  }
+  {% comment %} 添加购物车结束 {% endcomment %}
 </script>

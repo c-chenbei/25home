@@ -85,19 +85,6 @@
             "trust_image": "shopify:\/\/shop_images\/pay.jpg"
           }
         },
-        "984a68ac-5826-4e74-84c4-701d88e7684e": {
-          "type": "text",
-          "settings": {
-            "text": "With removable and washable covers, the Plume feather sofa offers the most perfect solution for hassle-free cleaning. Also The feathers sofa is an original design by 25home and it is incomparably soft! The high-density foam and fluffy feathers embrace your body, making it your favorite place to relax in the next decades."
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "is_tab": false
-          }
-        },
         "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
           "type": "tab",
           "settings": {
@@ -140,7 +127,20 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "984a68ac-5826-4e74-84c4-701d88e7684e": {
+          "type": "text",
+          "settings": {
+            "text": "With removable and washable covers, the Plume feather sofa offers the most perfect solution for hassle-free cleaning. Also The feathers sofa is an original design by 25home and it is incomparably soft! The high-density foam and fluffy feathers embrace your body, making it your favorite place to relax in the next decades."
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
           }
         }
       },
@@ -156,14 +156,14 @@
         "7d5b8ffc-0906-4cf1-be2a-8234ac628adb",
         "buy_buttons",
         "4324e561-4147-44cb-8662-bce6959f660f",
-        "984a68ac-5826-4e74-84c4-701d88e7684e",
-        "description",
         "e9e4f437-3585-4e39-b542-0e25739e9ed0",
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
         "contact",
-        "share"
+        "share",
+        "984a68ac-5826-4e74-84c4-701d88e7684e",
+        "description"
       ],
       "settings": {
         "sku_enable": false,
@@ -427,6 +427,13 @@
             "text": "<p>Yes, our sofa can be customized to match your specific preferences. You can choose custom dimensions, colors, or fabrics to better meet your needs. For more details, please contact our customer service team.<\/p>"
           }
         },
+        "3eaa26c1-e8f2-48ec-918b-8652b5149b2b": {
+          "type": "question",
+          "settings": {
+            "title": "Can I apply a code along with other discount codes?",
+            "text": "<p>No, only one code could be applied for per order. <\/p>"
+          }
+        },
         "c74f612f-535b-4817-bf1e-651c5edec2fc": {
           "type": "question",
           "settings": {
@@ -461,6 +468,7 @@
         "template--16876976799971__39475a83-8d8d-4e5c-9893-e2c562f2f593-question-2",
         "f09d715a-0ece-4652-8baf-b4af7dc6ae43",
         "380509d6-5758-45f7-b68c-3930ead80416",
+        "3eaa26c1-e8f2-48ec-918b-8652b5149b2b",
         "c74f612f-535b-4817-bf1e-651c5edec2fc",
         "5d7cc586-be21-4035-b520-82c50d99d4ed",
         "7b18ee94-8213-4548-9473-1cc295651d5b",

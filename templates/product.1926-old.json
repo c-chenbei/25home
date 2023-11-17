@@ -226,6 +226,13 @@
             "text": "<p>Yes, our sofa can be customized to match your specific preferences. You can choose custom dimensions, colors, or fabrics to better meet your needs. For more details, please contact our customer service team.<\/p>"
           }
         },
+        "e98ff4f3-a77f-4bcf-a654-28815010f6e4": {
+          "type": "question",
+          "settings": {
+            "title": "Can I apply a code along with other discount codes?",
+            "text": "<p>No, only one code could be applied for per order. <\/p>"
+          }
+        },
         "113fe566-f72d-4591-b55a-b810c20d9c71": {
           "type": "question",
           "settings": {
@@ -260,6 +267,7 @@
         "template--16822580347107__d90abeab-7dbd-4a01-9b1f-892d23e3158f-question-2",
         "393a5b94-dd73-4303-9d42-05cc5c928822",
         "857fdd87-3502-4c2c-9a5f-4907eeb0d952",
+        "e98ff4f3-a77f-4bcf-a654-28815010f6e4",
         "113fe566-f72d-4591-b55a-b810c20d9c71",
         "e7549601-90a2-4352-bf25-0b0d38ca96f8",
         "f413d46e-d797-4037-bd8b-8b17dac25ef6",

@@ -106,7 +106,10 @@
               </label>
             </div>
           {% endif %}
-
+          {% comment %} <div>
+            <input type="text" name="discountCode" placeholder="输入折扣码" id="discountCode" />
+            <button type="button" style="border: 1px solid #dbcbb9;padding: 8px;">Apply</button>
+          </div> {% endcomment %}
           <div class="cart__item-row cart__checkout-wrapper">
             <button
               onclick="act2()"
@@ -190,7 +193,7 @@
             item_variant: '{{ item.product.first_available_variant }}',
             price: {{ item.product.price | divided_by: 100.0 }},
             quantity: '{{item.quantity}}'
-          }
+          },
         {% endfor %}
         ]
     });
@@ -254,19 +257,19 @@
   }
 </script>
 <script>
-    const body = document.body;
-    // 将模态框的HTML添加到body的末尾
-    const inhtml = `
-    <div id="myModal" class="taxes-modals">
-      <!-- 模态框内容 -->
-      <div class="taxes-modal">
-        <span class="taxes-modal-close" id="closeModalButton">&times;</span>
-        <div class="taxes-title">{{ section.settings.title }}</div>
-        <div class="taxes-content">{{ section.settings.text }}</div>
-      </div>
+  const body = document.body;
+  // 将模态框的HTML添加到body的末尾
+  const inhtml = `
+  <div id="myModal" class="taxes-modals">
+    <!-- 模态框内容 -->
+    <div class="taxes-modal">
+      <span class="taxes-modal-close" id="closeModalButton">&times;</span>
+      <div class="taxes-title">{{ section.settings.title }}</div>
+      <div class="taxes-content">{{ section.settings.text }}</div>
     </div>
-    `
-    body.insertAdjacentHTML('beforeend', inhtml);
+  </div>
+  `
+  body.insertAdjacentHTML('beforeend', inhtml);
   document.addEventListener("DOMContentLoaded", function () {
     const openModalButton = document.getElementById("openModalButton");
     const myModal = document.getElementById("myModal");

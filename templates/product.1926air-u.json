@@ -192,7 +192,7 @@
         "text": "<p>Modern compared with comfy, this feather sofa is designed for a quality life.<\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/01_0003_05.jpg",
+        "image": "shopify:\/\/shop_images\/01_581d1be8-4c87-4e31-a779-955a41185044.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -427,10 +427,10 @@
             "text": "<p>Yes, our sofa can be customized to match your specific preferences. You can choose custom dimensions, colors, or fabrics to better meet your needs. For more details, please contact our customer service team.<\/p>"
           }
         },
-        "d6379655-fdcb-4dfe-9c1b-7116217ebab7": {
+        "6df7e5cf-3bb8-47b2-a4af-b296a6e406ae": {
           "type": "question",
           "settings": {
-            "title": "Can I apply a code along with other discount codes?",
+            "title": "Can I apply a code along with other discount codes?",
             "text": "<p>No, only one code could be applied for per order. <\/p>"
           }
         },
@@ -468,7 +468,7 @@
         "template--16876976799971__39475a83-8d8d-4e5c-9893-e2c562f2f593-question-2",
         "f09d715a-0ece-4652-8baf-b4af7dc6ae43",
         "380509d6-5758-45f7-b68c-3930ead80416",
-        "d6379655-fdcb-4dfe-9c1b-7116217ebab7",
+        "6df7e5cf-3bb8-47b2-a4af-b296a6e406ae",
         "c74f612f-535b-4817-bf1e-651c5edec2fc",
         "5d7cc586-be21-4035-b520-82c50d99d4ed",
         "7b18ee94-8213-4548-9473-1cc295651d5b",

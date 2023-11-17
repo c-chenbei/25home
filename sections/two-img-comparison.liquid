@@ -52,15 +52,17 @@
                         <span class="swiper--products-caption-right"> {{ block.settings.title2 }} </span>
                       </div>
                   </div>
-                  <div class="slider-example--tooltip"  aria-hidden="true">
-                    <svg viewBox="0 0 19 12" width="19" height="12" style="transform: rotate(180deg)">
-                      <path d="M10.6 1.4 14.2 5H0v2h14.2l-3.6 3.6L12 12l6-6-6-6-1.4 1.4z" fill="currentColor"></path>
-                    </svg>
-                    Drag to explore
-                    <svg viewBox="0 0 19 12" width="19" height="12">
-                      <path d="M10.6 1.4 14.2 5H0v2h14.2l-3.6 3.6L12 12l6-6-6-6-1.4 1.4z" fill="currentColor"></path>
-                    </svg>
-                  </div>
+                  {% if forloop.index == 1 %}
+                    <div class="slider-example--tooltip">
+                      <svg viewBox="0 0 19 12" width="19" height="12" style="transform: rotate(180deg)">
+                        <path d="M10.6 1.4 14.2 5H0v2h14.2l-3.6 3.6L12 12l6-6-6-6-1.4 1.4z" fill="currentColor"></path>
+                      </svg>
+                      Drag to explore
+                      <svg viewBox="0 0 19 12" width="19" height="12">
+                        <path d="M10.6 1.4 14.2 5H0v2h14.2l-3.6 3.6L12 12l6-6-6-6-1.4 1.4z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  {% endif %}
               {% endif %}
             {% endcase %}
           </div>
@@ -88,6 +90,7 @@
   .sliderexample {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .slider-example-text{
     padding-right: 22px;
@@ -99,8 +102,8 @@
     margin-bottom: 15px;
   }
   .slider-selector-icon-wrapper{
-    height: 50px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
     border: 1px solid #9f7b63;
     border-radius: 10px;
     display: flex;
@@ -109,15 +112,17 @@
     margin-right: 15px;
     color: #9f7b63;
   }
-  .slider-selector-icon-wrapper svg{
-    width: 31px;
-    height: 18px;
+  .slider-selector-icon-wrapper .icon{
+    width: 30px;
+    height: auto;
+    {% comment %} height: 18px; {% endcomment %}
   }
   .slider-selector-icon-text{
     flex: 1;
+    font-size: 20px;
   }
   .slider-selector-icon-active{
-    color: #fff;
+    color: #fff !important;
     background-color: #9f7b63;
   }
   .slider-example-box{
@@ -159,6 +164,24 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column-reverse;
+    }
+    .slider-selector-icon-wrapper{
+      height: 45px;
+      width: 45px;
+      border: 1px solid #9f7b63;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      color: #9f7b63;
+    }
+    .slider-selector-icon-wrapper .icon{
+      width: 20px;
+      height: auto;
+    }
+    .slider-selector-icon-text{
+      font-size: 14px;
     }
     .slider-example-text{
       display: flex;
