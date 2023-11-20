@@ -17,7 +17,7 @@
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1009.gif",
-            "image_mobile": "shopify:\/\/shop_images\/BLACKFRIDAY-1009-mob.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob11.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -74,7 +74,7 @@
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1811.gif",
-            "image_mobile": "shopify:\/\/shop_images\/BLACKFRIDAY-1005camel-mob.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob1811.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
