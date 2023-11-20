@@ -1,11 +1,17 @@
 <div class="page-full page-content black-five-bg">
-    <div class="rte rte--nomargin 555">
-        {{ page.content }}
+    {% comment %} {%- render 'breadcrumbs' -%}
+    <header class="section-header">
+      <h1 class="section-header__title">{{ page.title | escape }}</h1>
+    </header> {% endcomment %}
+  
+    <div class="rte rte--nomargin">
+      {{ page.content }}
     </div>
   </div>
   {% schema %}
   {
     "name": "Black-Five-Flash-Sale",
+    "class": "Black-Five-Flash-Sale",
     "tag": "section"
   }
   {% endschema %}

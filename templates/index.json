@@ -22,23 +22,23 @@
             "focal_point": "center center"
           }
         },
-        "slideshow-0": {
+        "de956e8a-ef55-498f-bf05-5a6d86f3452e": {
           "type": "image",
           "settings": {
             "top_subheading": "",
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/products\/crawford-leather-lounge-modular-sectional",
+            "link": "shopify:\/\/collections\/limited-flash-sale",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/1920x890-2.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/750x1100-2.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1811.gif",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob1811.gif",
             "overlay_opacity": 0,
-            "focal_point": "top center"
+            "focal_point": "center center"
           }
         },
         "1c54d0f8-f3f9-4143-b388-6b881e214c6d": {
@@ -60,23 +60,23 @@
             "focal_point": "center center"
           }
         },
-        "de956e8a-ef55-498f-bf05-5a6d86f3452e": {
+        "slideshow-0": {
           "type": "image",
           "settings": {
             "top_subheading": "",
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/collections\/limited-flash-sale",
+            "link": "shopify:\/\/products\/crawford-leather-lounge-modular-sectional",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1811.gif",
-            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob1811.gif",
+            "image": "shopify:\/\/shop_images\/1920x890-2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/750x1100-2.jpg",
             "overlay_opacity": 0,
-            "focal_point": "center center"
+            "focal_point": "top center"
           }
         },
         "2f3dc6ea-f7d6-44d8-90a2-7f03159efad9": {
@@ -102,9 +102,9 @@
       },
       "block_order": [
         "slideshow-1",
-        "slideshow-0",
-        "1c54d0f8-f3f9-4143-b388-6b881e214c6d",
         "de956e8a-ef55-498f-bf05-5a6d86f3452e",
+        "1c54d0f8-f3f9-4143-b388-6b881e214c6d",
+        "slideshow-0",
         "2f3dc6ea-f7d6-44d8-90a2-7f03159efad9"
       ],
       "custom_css": [
