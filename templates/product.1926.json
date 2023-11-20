@@ -185,6 +185,8 @@
         "share"
       ],
       "settings": {
+        "title": "White Glove Delivery Pricing",
+        "text": "<p>The base white glove service fee (floors 1-3) is $169. <\/p><p>Each additional floor will incur a service fee of $50.<br\/><strong>Note:<\/strong> White Glove service is only available for residences with an elevator. <\/p><p>Thank you for your understanding and cooperation.<\/p>",
         "sku_enable": false,
         "image_position": "left",
         "image_size": "medium",
