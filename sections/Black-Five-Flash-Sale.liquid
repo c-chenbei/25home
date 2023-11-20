@@ -1,0 +1,19 @@
+<div class="page-full page-content black-five-bg">
+    <div class="rte rte--nomargin 555">
+        {{ page.content }}
+    </div>
+  </div>
+  {% schema %}
+  {
+    "name": "Black-Five-Flash-Sale",
+    "tag": "section"
+  }
+  {% endschema %}
+{% style %}
+    .black-five-bg {
+        min-height: 500px;
+        background-image: url({{ 'black-bg.jpg' | asset_url }});
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+{%- endstyle -%}

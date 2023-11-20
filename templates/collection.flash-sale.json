@@ -47,6 +47,55 @@
         "space_below": false
       }
     },
+    "7be3130a-2242-4b8f-9b08-08f7592ad34f": {
+      "type": "featured-collections",
+      "blocks": {
+        "1f41f15f-be2e-4696-8ae5-691e1d989d1f": {
+          "type": "collection",
+          "settings": {
+            "collection": "flash-sale-feather-sofa",
+            "title": "Feathers Sofa",
+            "focal_point": "center center"
+          }
+        },
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "flash-sale-tables-chairs",
+            "title": "Accent Chairs",
+            "focal_point": "center center"
+          }
+        },
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "flash-sale-air-leather",
+            "title": "Air Leather",
+            "focal_point": "center center"
+          }
+        },
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "flash-sale-sofas",
+            "title": "Sofas",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1f41f15f-be2e-4696-8ae5-691e1d989d1f",
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-2",
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-3",
+        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-1"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
     "main-collection": {
       "type": "main-collection",
       "blocks": {
@@ -83,61 +132,12 @@
         "enable_color_swatches": false,
         "enable_sort": true
       }
-    },
-    "7be3130a-2242-4b8f-9b08-08f7592ad34f": {
-      "type": "featured-collections",
-      "blocks": {
-        "1f41f15f-be2e-4696-8ae5-691e1d989d1f": {
-          "type": "collection",
-          "settings": {
-            "collection": "flash-sale-feather-sofa",
-            "title": "",
-            "focal_point": "center center"
-          }
-        },
-        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "flash-sale-tables-chairs",
-            "title": "",
-            "focal_point": "center center"
-          }
-        },
-        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "flash-sale-air-leather",
-            "title": "",
-            "focal_point": "center center"
-          }
-        },
-        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "flash-sale-sofas",
-            "title": "",
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "1f41f15f-be2e-4696-8ae5-691e1d989d1f",
-        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-2",
-        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-3",
-        "template--16737866645731__7be3130a-2242-4b8f-9b08-08f7592ad34f-collection-1"
-      ],
-      "settings": {
-        "title": "",
-        "divider": false,
-        "per_row": 4,
-        "enable_gutter": true
-      }
     }
   },
   "order": [
     "collection-header",
     "1645173779f26ecbf5",
-    "main-collection",
-    "7be3130a-2242-4b8f-9b08-08f7592ad34f"
+    "7be3130a-2242-4b8f-9b08-08f7592ad34f",
+    "main-collection"
   ]
 }

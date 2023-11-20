@@ -9,6 +9,7 @@
   data-section-id="{{ section.id }}"
   data-section-type="collection-template"
 >
+{% comment %}collection-list  {% endcomment %}
   {%- if section.settings.title != blank -%}
     <div class="page-width">
       <div class="section-header{% if section.settings.view_all %}{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}{% endif %}">
@@ -65,7 +66,6 @@
           {%- endunless -%}
           <div class="grid__item">
             <div class="grid grid--uniform">
-              {{ grid_item_width }}
 
               {%- for i in (1..product_limit) -%}
                 <div class="grid__item grid-product {{ grid_item_width }}" data-aos="row-of-{{ per_row }}">
