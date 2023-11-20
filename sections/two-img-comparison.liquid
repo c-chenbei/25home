@@ -33,17 +33,15 @@
                   <div class="slider-example-img" id="slider{{ forloop.index }}">
                       <two-img-comparison class="slider-example-focus">
                         <img
-                          class="lazyload"
                           width="100%"
                           slot="first"
-                          data-src="{{ block.settings.image1 | img_url: 'x510' }}"
+                          src="{{ block.settings.image1 | img_url: 'x510' }}"
                           alt="{{ block.settings.title1 | escape }}"
                         >
                         <img
-                          class="lazyload"
                           width="100%"
                           slot="second"
-                          data-src="{{ block.settings.image2 | img_url: 'x510' }}"
+                          src="{{ block.settings.image2 | img_url: 'x510' }}"
                           alt="{{ block.settings.title2 | escape }}"
                         >
                       </two-img-comparison>
