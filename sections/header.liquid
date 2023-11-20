@@ -226,7 +226,24 @@
         {% comment %} 倒计时  {% endcomment %}
         {%- if section.settings.countdown_target_show -%}
           {%- if section.settings.countdown_target_img  != blank -%}
-            <div class='header-countdown' style="background-image: url({{ section.settings.countdown_target_img | img_url: '1920x35' }});background-repeat: no-repeat;background-size: cover">
+            {% comment %} section.settings.image_mobile {% endcomment %}
+            <div class='header-countdown' id="header-countdown-bg">
+              {%- style -%}
+                @media only screen and (min-width:769px) {
+                  #header-countdown-bg {
+                    background-image: url('{{ section.settings.countdown_target_img | img_url }}');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%
+                  }
+                }
+                @media only screen and (max-width:768px) {
+                  #header-countdown-bg {
+                    background-image: url('{{ section.settings.image_mobile | img_url }}');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%
+                  }
+                }
+              {%- endstyle -%}
           {%- else -%}
             <div class='header-countdown' style="background-color:{{ section.settings.countdown_target_bg}};">
           {%- endif -%}
@@ -420,8 +437,13 @@
       },
       {
         "type": "image_picker",
-        "label": "背景图片",
+        "label": "pc背景图片",
         "id": "countdown_target_img"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Mobile背景图片"
       },
       {
         "type": "color",
