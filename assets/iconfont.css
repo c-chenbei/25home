@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1700218931526') format('truetype');
+  src: url('iconfont.ttf?t=1700462243371') format('truetype');
 }
 
 .iconfont {
@@ -29,5 +29,9 @@
 
 .icon-kuaidi:before {
   content: "\e74b";
+}
+
+.icon-baozhengjin:before {
+  content: "\e635";
 }
 

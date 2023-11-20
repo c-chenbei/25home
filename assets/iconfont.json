@@ -39,6 +39,13 @@
       "font_class": "kuaidi",
       "unicode": "e74b",
       "unicode_decimal": 59211
+    },
+    {
+      "icon_id": "25870414",
+      "name": "保证金",
+      "font_class": "baozhengjin",
+      "unicode": "e635",
+      "unicode_decimal": 58933
     }
   ]
 }
