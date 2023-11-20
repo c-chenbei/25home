@@ -60,7 +60,8 @@
   --color-bg: {{ settings.color_body_bg | default: "#fff" }};
   --ico-select: url({{ 'ico-select.svg' | asset_url | split: '?' | first }});
   --ico-select-white: url({{ "ico-select-white.svg" | asset_url | split: '?' | first }});
-  --ico-select-footer: url({{ "ico-select-footer.svg" | asset_url | split: '?' | first }})
+  --ico-select-footer: url({{ "ico-select-footer.svg" | asset_url | split: '?' | first }});
+  --loading-gif: url({{ "3.gif" | asset_url | split: '?' | first }});
 }
 
 @media only screen and (min-width:769px) {
@@ -4012,6 +4013,20 @@ symbol.icon:not(.icon--full-color) rect {
   margin: -1px 0 0 -50px;
   z-index: 4;
   opacity: 0
+}
+
+.loading_gif:before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  background-image: url("{{ '2.gif' | asset_url | split: '?' | first }}");
+  background-size: cover;
+  /* background: var(--loading-gif) no-repeat; */
+  left: 50%;
+  top: 50%;
+  z-index: 40;
 }
 
 .no-js .loading:after,

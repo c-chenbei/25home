@@ -431,6 +431,7 @@ lazySizesConfig.expFactor = 4;
     // Wait until images inside container have lazyloaded class
     function setAsLoaded() {
       container.classList.remove('loading', 'loading--delayed');
+      container.classList.remove('loading_gif');
       container.classList.add('loaded');
     }
   
@@ -5196,9 +5197,10 @@ lazySizesConfig.expFactor = 4;
     SlideshowSection.prototype = Object.assign({}, SlideshowSection.prototype, {
       init: function() {
         var slides = this.slideshow.querySelectorAll('.slideshow__slide');
-  
+        // console.log(slides,'slidesslides');
         if (this.container.hasAttribute('data-immediate-load')) {
           this.slideshow.classList.remove('loading', 'loading--delayed');
+          this.slideshow.classList.remove('loading_gif');
           this.slideshow.classList.add('loaded');
         } else {
           // Wait for image to load before marking as done
