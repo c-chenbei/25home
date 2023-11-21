@@ -4,7 +4,8 @@
     <h1 class="section-header__title">{{ page.title | escape }}</h1>
   </header>
 
-  <div class="rte rte--nomargin">
+  {% comment %} <div class="rte rte--nomargin"> {% endcomment %}
+  <div class="rte--nomargin">
     {{ page.content }}
   </div>
 </div>
