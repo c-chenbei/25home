@@ -25,8 +25,8 @@
   endif {% endcomment %}
 
 <div class="grid__item {{ grid_item_width }}">
-  <a href="{{ collection.url }}" class="collection-item collection-item--{{ settings.collection_grid_style }}" data-aos="row-of-{{ per_row }}">
 
+  <a href="{{ collection.url }}"  class="collection-item collection-item--{{ settings.collection_grid_style }}" data-aos="row-of-{{ per_row }}">
     {%- liquid
       if settings.collection_grid_image == 'collection' and collection.image
         assign collection_image = collection.image
@@ -42,8 +42,8 @@
       <div class="collection-image collection-image--{{ settings.collection_grid_shape }} image-wrap">
         {%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
         <img
+          data-loading-image="true"
           class="lazyload"
-          src=""
           data-src="{{ img_url }}"
           data-aspectratio="{{ collection_image.aspect_ratio }}"
           data-widths="[360, 540, 720, 900, 1080]"
@@ -61,4 +61,5 @@
     </span>
 
   </a>
+
 </div>

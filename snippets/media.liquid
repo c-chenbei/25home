@@ -53,13 +53,13 @@
 -%}
 
 <div
-  class="product-main-slide {% if is_featured %}starting-slide{% else %}secondary-slide{% endif %}"
+  class="product-main-slide {% if is_featured %}starting-slide{% else %}secondary-slide{% endif %} loading_gif"
   data-index="{{ loopIndex0 }}"
   {% if image_set %}
     data-set-name="{{image_set_group}}"
     data-group="{{image_set_full}}"
   {% endif %}>
-
+  {% comment %} 产品详情页轮播图 {% endcomment %}
   <div data-product-image-main class="product-image-main">
 
     {%- if media.media_type == 'model' -%}
@@ -88,8 +88,8 @@
           assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
           assign zoom_img_url = media.preview_image | img_url: product_zoom_size
         -%}
-
-        <img class="{% if product_zoom_enable %}photoswipe__image{% endif %} lazyload"
+        {% comment %} data-loading-image="true" {% endcomment %}
+        <img class="loading_gif_img{% if product_zoom_enable %} photoswipe__image{% endif %} lazyload"
           data-photoswipe-src="{{ zoom_img_url }}"
           data-photoswipe-width="{{ media_width }}"
           data-photoswipe-height="{{ media_height }}"

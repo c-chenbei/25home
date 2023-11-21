@@ -4015,20 +4015,6 @@ symbol.icon:not(.icon--full-color) rect {
   opacity: 0
 }
 
-.loading_gif:before{
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  transform: translate(-50%, -50%);
-  background-image: url("{{ '2.gif' | asset_url | split: '?' | first }}");
-  background-size: cover;
-  /* background: var(--loading-gif) no-repeat; */
-  left: 50%;
-  top: 50%;
-  z-index: 40;
-}
-
 .no-js .loading:after,
 .no-js .loading:before,
 .no-js .unload:after,
@@ -11659,7 +11645,7 @@ html[dir=rtl] .product-single__meta .rte {
 }
 
 .product-slideshow.flickity-enabled .product-main-slide {
-  display: none;
+  /* display: none; */
 }
 
 .product-slideshow.flickity-enabled .flickity-viewport .product-main-slide {
@@ -12719,3 +12705,33 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
   margin-bottom: 0px;
 }
 /* 打点样式结束 */
+.loading_gif:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  background-image: url("{{ '2.gif' | asset_url }}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+.loading-image {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  transform: translate(-50%, -50%);
+  background-image: url("{{ '2.gif' | asset_url }}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+
+.loading_gif_img{
+  position: absolute;
+  z-index: 2;
+}

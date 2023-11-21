@@ -428,6 +428,7 @@ lazySizesConfig.expFactor = 4;
   })();
   
   theme.loadImageSection = function(container) {
+    // 幻灯片
     // Wait until images inside container have lazyloaded class
     function setAsLoaded() {
       container.classList.remove('loading', 'loading--delayed');

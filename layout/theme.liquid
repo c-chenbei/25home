@@ -434,3 +434,33 @@
 
   timeoutId = setTimeout(tryAddCloseButton, 1000);
 </script>
+<script>
+    document.addEventListener('lazybeforeunveil', function(e) {
+      showLoadingImage(e.target);
+    });
+  
+    document.addEventListener('lazyloaded', function(e) {
+      hideLoadingImage(e.target);
+    });
+  
+  function showLoadingImage(img) {
+    var loadingImageSrc = img.getAttribute('data-loading-image');
+    if (loadingImageSrc) {
+      var loadingDiv = document.createElement('div');
+      loadingDiv.classList.add('loading-image');
+      img.parentNode.insertBefore(loadingDiv, img);
+    }
+  }
+  
+  function hideLoadingImage(img) {
+    var loadingImage = img.previousSibling;
+    {% comment %} console.log(loadingImage.classList,'loadingImage.classList') {% endcomment %}
+    if (loadingImage && loadingImage.nodeType === 1) {
+      if (loadingImage.classList.contains('loading-image')) {
+          loadingImage.parentNode.removeChild(loadingImage);
+      }
+    }
+  }
+  
+
+</script>
