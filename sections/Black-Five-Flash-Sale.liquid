@@ -3,8 +3,8 @@
     <header class="section-header">
       <h1 class="section-header__title">{{ page.title | escape }}</h1>
     </header> {% endcomment %}
-  
-    <div class="rte--nomargin">
+
+    <div class="rte--nomargin" id="beijingtuziyuan" data-imgbg={{ section.settings.image | img_url: '1920x' }}>
       {{ page.content }}
     </div>
   </div>
@@ -12,13 +12,28 @@
   {
     "name": "Black-Five-Flash-Sale",
     "class": "Black-Five-Flash-Sale",
-    "tag": "section"
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "背景图"
+      }
+    ]
   }
   {% endschema %}
   <script>
-    var dynamicbg = document.body;
-    dynamicbg.style.backgroundImage = "url({{ '2_02.jpg' | asset_url }})";
-    dynamicbg.style.backgroundRepeat = 'no-repeat';
-    dynamicbg.style.backgroundSize = 'cover';
+    // 尝试获取元素
+    var beijingtuziyuan = document.getElementById('beijingtuziyuan');
+
+    // 检查是否成功获取到元素
+    if (beijingtuziyuan) {
+      // 获取 data-imgbg 属性的值
+      var dataImgBgValue = beijingtuziyuan.getAttribute('data-imgbg');
+      var dynamicbg = document.body
+      dynamicbg.style.backgroundImage = "url("+dataImgBgValue+")";
+      dynamicbg.style.backgroundRepeat = 'no-repeat';
+      dynamicbg.style.backgroundSize = 'cover';
+    }
 
   </script>
