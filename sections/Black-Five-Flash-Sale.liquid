@@ -4,7 +4,7 @@
       <h1 class="section-header__title">{{ page.title | escape }}</h1>
     </header> {% endcomment %}
   
-    <div class="rte rte--nomargin">
+    <div class="rte--nomargin">
       {{ page.content }}
     </div>
   </div>
@@ -16,34 +16,9 @@
   }
   {% endschema %}
   <script>
-   // 设置一个定时器，每隔一段时间执行一次尝试获取元素的操作
-  var intervalId = setInterval(function() {
-    // 尝试获取元素
-    var dynamicbg = document.getElementById('dynamic-bg');
-
-    // 检查是否获取到了元素
-    if (dynamicbg) {
-      // 如果获取到了元素，执行你的操作
-      console.log('Element found:', dynamicbg);
-
-      // 在这里可以添加你的操作，例如修改元素样式、内容等
-
-      // 清除定时器，停止循环
-      clearInterval(intervalId);
-    } else {
-      // 如果没有获取到元素，可以输出一些信息
-      console.log('Element not found yet...');
-    }
-  }, 2000); // 设置定时器的时间间隔，这里是每隔 1000 毫秒（1 秒）执行一次
-    {% comment %} let defaultBackground = {{ 'black-bg.jpg' | asset_url }} {% endcomment %}
-
+    var dynamicbg = document.body;
+    dynamicbg.style.backgroundImage = "url({{ '2_02.jpg' | asset_url }})";
+    dynamicbg.style.backgroundRepeat = 'no-repeat';
+    dynamicbg.style.backgroundSize = 'cover';
 
   </script>
-{% comment %} {% style %}
-    #dynamic-bg {
-        min-height: 500px;
-        background-image: url({{ 'black-bg.jpg' | asset_url }});
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-{%- endstyle -%} {% endcomment %}
