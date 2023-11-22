@@ -106,10 +106,18 @@
               </label>
             </div>
           {% endif %}
-          {% comment %} <div>
+
+              {% comment %} <form action="/discount/black">
+                <input type="hidden" name="redirect" value="/cart" />
+                <input type="text" name="discount" value="black" placeholder="Discount code" />
+                <input type="submit" value="Apply" />
+              </form>
+              {{ routes.cart_url }} {% endcomment %}
+          {% comment %} <div class="discountform">
             <input type="text" name="discountCode" placeholder="输入折扣码" id="discountCode" />
-            <button type="button" style="border: 1px solid #dbcbb9;padding: 8px;">Apply</button>
+            <button type="button" id="codeButton" style="border: 1px solid #dbcbb9;padding: 8px;">Apply</button>
           </div> {% endcomment %}
+
           <div class="cart__item-row cart__checkout-wrapper">
             <button
               onclick="act2()"
@@ -289,6 +297,57 @@
         }
     });
   });
+
+  $('#codeButton').click(function() {
+    // 获取输入框的值
+    var discountCodeValue = $('#discountCode').val();
+
+    // 打印值到控制台（可根据需要进行其他操作）
+    console.log('Discount Code:', discountCodeValue);
+
+    // 在这里你可以执行其他操作，比如发送给服务器验证等等
+  });
+
+  {% comment %} var discountCode = 'YOUR_DISCOUNT_CODE'; // 替换为您的折扣码
+  fetch('/discount/' + discountCode, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: 'redirect=/cart'
+  }).then(function(response) {
+    if (response.ok) {
+      return response.text();
+    } else {
+      throw new Error('Failed to apply discount code');
+    }
+  }).then(function(data) {
+    // 刷新购物车页面
+    location.reload();
+  }).catch(function(error) {
+    console.error('Error:', error);
+  }); {% endcomment %}
+
+  {% comment %} fetch('/discount/clear', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: 'redirect=/cart'
+  }).then(function(response) {
+    if (response.ok) {
+      return response.text();
+    } else {
+      throw new Error('Failed to remove discount code');
+    }
+  }).then(function(data) {
+    // 刷新购物车页面
+    location.reload();
+  }).catch(function(error) {
+    console.error('Error:', error);
+  }); {% endcomment %}
+  
+
 </script>
 <style>
   .cart_explain_title{

@@ -435,7 +435,7 @@
   timeoutId = setTimeout(tryAddCloseButton, 1000);
 </script>
 <script>
-    document.addEventListener('lazybeforeunveil', function(e) {
+    {% comment %} document.addEventListener('lazybeforeunveil', function(e) {
       showLoadingImage(e.target);
     });
   
@@ -460,7 +460,5 @@
           loadingImage.parentNode.removeChild(loadingImage);
       }
     }
-  }
-  
-
+  } {% endcomment %}
 </script>
