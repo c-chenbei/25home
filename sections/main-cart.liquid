@@ -16,15 +16,10 @@
       <p><i class="fa fa-check"></i> Warranty: One-year limited warranty</p>
     <div>
   </header>
-
+ 
 
   {%- if cart.item_count > 0 -%}
     <p class="form_title_pc form_title">Price Guarantee Until the End of Black Friday</p>
-    {% comment %} <form action="/discount" method="post">
-      <label for="discount_code">折扣码:</label><br>
-      <input type="text" id="discount_code" name="discount_code"><br>
-      <input type="submit" value="提交">
-    </form> {% endcomment %}
     
     <form action="{{ routes.cart_url }}" method="post" novalidate data-location="page" id="CartPageForm">
       <div class="cart__page">
@@ -63,9 +58,9 @@
               <span id="revy-cart-subtotal-label">{{ 'cart.general.subtotal' | t }}</span>
             </div>
             <div data-subtotal>
-              <span class="saso-cart-original-total"
-                ><span id="revy-cart-subtotal-price">{{ cart.total_price | money }}</span></span
-              >
+              <span class="saso-cart-original-total">
+                <span id="revy-cart-subtotal-price">{{ cart.total_price | money }}</span>
+              </span>
               <span class="saso-cart-total"></span>
             </div>
           </div>
@@ -112,18 +107,7 @@
             </div>
           {% endif %}
 
-              {% comment %} <form action="/discount/black">
-                <input type="hidden" name="redirect" value="/cart" />
-                <input type="text" name="discount" value="black" placeholder="Discount code" />
-                <input type="submit" value="Apply" />
-              </form>
-              {{ routes.cart_url }} {% endcomment %}
-          {% comment %} <div class="discountform">
-            <input type="text" name="discountCode" placeholder="输入折扣码" id="discountCode" />
-            <button type="button" id="codeButton" style="border: 1px solid #dbcbb9;padding: 8px;">Apply</button>
-          </div> {% endcomment %}
-
-          {% comment %} <button type="button" id="codeButton" style="border: 1px solid #dbcbb9;padding: 8px;">Apply</button> {% endcomment %}
+          {% comment %} {% render 'discount-code' %} {% endcomment %}
 
           <div class="cart__item-row cart__checkout-wrapper">
             <button
@@ -234,38 +218,23 @@
   if (expressageTypeElement.length > 0) {
     expressageTypeElement.forEach(item => {
       const dataGetValue = item.getAttribute('data-get-value');
-      // 解析日期范围
       const dateRangeMatch = dataGetValue.match(/(\d{1,2}-\d{1,2}) business days delivery/);
       if (dateRangeMatch) {
-        // 提取日期范围
         const dateRange = dateRangeMatch[1];
-
-        // 获取当前日期
         const today = new Date();
-
-        // 解析日期范围的开始和结束天数
         const [startDay, endDay] = dateRange.split('-').map(Number);
-
-        // 计算未来日期范围的起始日期和结束日期
         const startDate = new Date(today);
         startDate.setDate(today.getDate() + startDay);
         let endDate = new Date(today);
         endDate.setDate(today.getDate() + endDay);
-
-        // 获取今天是星期几（0 表示星期日，1 表示星期一，以此类推）
         const dayOfWeek = today.getDay();
-
-        // 如果今天是星期六，加2天；如果今天是星期天，加1天
         if (dayOfWeek === 6) {
           endDate.setDate(endDate.getDate() + 2);
         } else if (dayOfWeek === 0) {
           endDate.setDate(endDate.getDate() + 1);
         }
-      
-        // 格式化日期为 "YYYY/MM/DD"
         const startDateFormatted = `${startDate.getFullYear()}/${(startDate.getMonth() + 1).toString().padStart(2, '0')}/${startDate.getDate()}`;
         const endDateFormatted = `${endDate.getFullYear()}/${(endDate.getMonth() + 1).toString().padStart(2, '0')}/${endDate.getDate()}`;
-        // 更新 p 标签内容
         item.textContent ='Estimated between: '+ startDateFormatted + " - " + endDateFormatted ; 
       }
     })
@@ -305,83 +274,6 @@
     });
   });
 
-  $('#codeButton').click(function() {
-    // 获取输入框的值
-    {% comment %} var discountCodeValue = $('#discountCode').val(); {% endcomment %}
-    fetch('/discount/' + 'black', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: 'redirect=/cart'
-    }).then(function(response) {
-      console.log(response,'responseresponseresponse')
-      if (response.ok) {
-        return response.text();
-      } else {
-        throw new Error('Failed to apply discount code');
-      }
-    }).then(function(data) {
-      // 刷新购物车页面
-      location.reload();
-    }).catch(function(error) {
-      console.error('Error:', error);
-    });
-
-
-    {% comment %} fetch('/discount/clear', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: 'redirect=/cart'
-    }).then(function(data) {
-      // 刷新购物车页面
-      location.reload();
-    }).catch(function(error) {
-      console.error('Error:', error);
-    }); {% endcomment %}
-  })
-  {% comment %} var discountCode = 'YOUR_DISCOUNT_CODE'; // 替换为您的折扣码
-  fetch('/discount/' + discountCode, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    body: 'redirect=/cart'
-  }).then(function(response) {
-    if (response.ok) {
-      return response.text();
-    } else {
-      throw new Error('Failed to apply discount code');
-    }
-  }).then(function(data) {
-    // 刷新购物车页面
-    location.reload();
-  }).catch(function(error) {
-    console.error('Error:', error);
-  }); {% endcomment %}
-
-  {% comment %} fetch('/discount/clear', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    body: 'redirect=/cart'
-  }).then(function(response) {
-    if (response.ok) {
-      return response.text();
-    } else {
-      throw new Error('Failed to remove discount code');
-    }
-  }).then(function(data) {
-    // 刷新购物车页面
-    location.reload();
-  }).catch(function(error) {
-    console.error('Error:', error);
-  }); {% endcomment %}
-  
-
 </script>
 <style>
   .cart_explain_title{
@@ -390,7 +282,6 @@
     padding: 2px 5px;
     width: 60%;
   }
- 
   .form_title{
     font-weight: 800;
     color: #a81527;

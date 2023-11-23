@@ -1,0 +1,367 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "907cef5b-a392-4eee-a648-d1d703b05b97": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "package",
+            "text": "For customized products, please get in touch with our customer service."
+          }
+        },
+        "7a36cbc1-0f7a-4fef-bd00-911917166768": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "text": "EXTRA 15% OFF CODE: SUPER15"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "7d5b8ffc-0906-4cf1-be2a-8234ac628adb": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "4324e561-4147-44cb-8662-bce6959f660f": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/pay.jpg"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
+          "type": "tab",
+          "settings": {
+            "title": "Materials",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.materials.value }}"
+          }
+        },
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Size Chart",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.size_chart.value }}"
+          }
+        },
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Key Features",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.key_feature.value }}"
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Care & Shipping",
+            "content": "<p><\/p><p><\/p>",
+            "page": "care-shipping"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "907cef5b-a392-4eee-a648-d1d703b05b97",
+        "price",
+        "separator",
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4",
+        "7a36cbc1-0f7a-4fef-bd00-911917166768",
+        "variant_picker",
+        "sales_point",
+        "inventory_status",
+        "7d5b8ffc-0906-4cf1-be2a-8234ac628adb",
+        "buy_buttons",
+        "4324e561-4147-44cb-8662-bce6959f660f",
+        "description",
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0",
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
+    "16475055848fed5fca": {
+      "type": "advanced-content",
+      "blocks": {
+        "1647505584ec46177c-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "1647505584ec46177c-1": {
+          "type": "html",
+          "settings": {
+            "code": "<style>\n        div.feature-list{\npadding: 0 3%;\n        }\n        div.list-all{\n            overflow: hidden;\n        }\n        div.list-all .list{\n            float: left;\n            width: 20%;\n        }\n        div.list-all .list img{\n            width: 60%;\nposition: relative;\nleft: -10%;\n        }\n        div.list-all .list p{\nposition: relative;\nleft:20%;\n            text-align: left; \n        }\ndiv.list-all .list .FP{\nfont-weight: bold;\n}\n        div.list-all .list p:last-child{\n            width:80%\n        }\n        @media screen and (max-width: 800px){\n            div.list-all .list{\n            float: left;\n            width: 50%;\n        }\n        }\n    <\/style>\n    <div class=\"feature-list\">\n        <h2>Key Features<\/h2>\n        <div class=\"list-all\">\n        <div class=\"list\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0623\/5878\/2179\/files\/25homekeyfeaturesicon-05.jpg?v=1647573147\" alt=\"\">\n            <p class=\"FP\">Fabric<\/p>\n            <p>Tight olefin fiber weave is inherently scratch<\/p>\n        <\/div>\n        <div class=\"list\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0623\/5878\/2179\/files\/25homekeyfeaturesicon-02.jpg?v=1647573153\" alt=\"\">\n            <p class=\"FP\">Frame<\/p>\n            <p>Sturdy, precision milled Baltic Birch prevents warping<\/p>\n        <\/div>\n        <div class=\"list\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0623\/5878\/2179\/files\/25homekeyfeaturesicon-03.jpg?v=1647573147\" alt=\"\">\n            <p class=\"FP\">Hardware<\/p>\n            <p>Strengthened steel pins & galvanized latches<\/p>\n        <\/div>\n        <div class=\"list\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0623\/5878\/2179\/files\/25homekeyfeaturesicon-01.jpg?v=1647573147\" alt=\"\">\n            <p class=\"FP\">Charger<\/p>\n            <p>Includes a built-in USB charger & 72” power cord<\/p>\n        <\/div>\n        <div class=\"list\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0623\/5878\/2179\/files\/25homekeyfeaturesicon-04.jpg?v=1647573147\" alt=\"\">\n            <p class=\"FP\">Legs<\/p>\n            <p>Choose between responsibly-forested wood or plated steel styles<\/p>\n        <\/div>\n        <\/div>\n    <\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1647505584ec46177c-0",
+        "1647505584ec46177c-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "text-and-image": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_0007_Capture_One_Catalog8708.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Natural Marble Feel",
+        "text": "<p>Appreciate the authentic texture as you glide your fingers along the durable sintered stone surface. Mimicking the look and feel of natural marble, the subtly variegated tabletop features graceful grey veining that catches the eye.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "text-and-image2": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/C_50e4206e-f5a2-4cb5-89f5-6a3e777a5ef6.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Stable Base Design",
+        "text": "<p>Underneath, the sturdy carbon steel frame provides rock-solid support so you can enjoy your meal without worry of tipping.  The unique base design allows ample leg room for guests while preventing side-to-side wobbling.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "580ce2ac-f55e-46eb-8c20-a5781cc3f920": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_0013_Capture_One_Catalog8380.jpg",
+        "image2": "shopify:\/\/shop_images\/1_0018_Capture_One_Catalog8371.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "PU Leather Chair",
+        "text": "<p>Sink into the sleek leather Chair, PU leather hugging your body as you relax into its ergonomic curves. Durable carbon steel legs provide a slim yet sturdy base, with its eco-conscious materials and elegant form, the Gullichsen Chair brings sustainable comfort to you.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials-0",
+        "testimonials-1",
+        "testimonials-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Testimonials",
+        "testimonial-subhedading": "We love seeing how you customized it. Show us how it started and how it’s going by tagging #25home.",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "1652410876b776606e": {
+      "type": "apps",
+      "blocks": {
+        "e13cef9d-2017-4252-8d6d-7873814950e5": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "e13cef9d-2017-4252-8d6d-7873814950e5"
+      ],
+      "settings": {
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16475055848fed5fca",
+    "sub",
+    "text-and-image",
+    "text-and-image2",
+    "580ce2ac-f55e-46eb-8c20-a5781cc3f920",
+    "testimonials",
+    "1652410876b776606e",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return"
+  ]
+}

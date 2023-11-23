@@ -1,33 +1,62 @@
 {
   "sections": {
+    "e845e5fb-34a5-44bf-a936-38500e3ccefb": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16921253019875__e845e5fb-34a5-44bf-a936-38500e3ccefb-image-2": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 100,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/limted-flash-sale-PC-11-15_7953b89d-705d-484e-a6b6-9e1a84c8d025.gif",
+            "image_mobile": "shopify:\/\/shop_images\/limted-flash-sale-_-11-15.gif",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16921253019875__e845e5fb-34a5-44bf-a936-38500e3ccefb-image-2"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
     "main": {
       "type": "Black-Five-Flash-Sale",
       "settings": {
         "image": "shopify:\/\/shop_images\/2_02.jpg"
       }
     },
-    "1659443943cc008088": {
-      "type": "text-and-image",
-      "disabled": true,
+    "6bfdc2be-909d-40a6-aed5-ad331396c5c6": {
+      "type": "featured-collection",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Affiliate_Program_8d63b3ca-0787-4fdc-8482-272380152aa7.jpg",
-        "image_width": 700,
-        "subtitle": "We are here to inspire you to live a five star life.",
-        "title": "AFFILIATE PROGRAM",
-        "text": "<p>Empowered by a range of Nordic designers, our original furniture line set up apart by bringing you high quality, modern and minimalist designs at radically fair prices.<\/p><p>The 25Home team provides affiliates with plenty of the creative resources they need to succeed, while keeping them abreast of upcoming campaigns, new product launches, and more.<\/p><p>All affiliates get up to 3% commission and a generous 30-day referral period.<\/p><p>Interested? Click to apply below.<\/p>",
-        "button_label": "Apply",
-        "button_link": "https:\/\/app.impact.com\/campaign-promo-signup\/25homecom.brand?execution=e3s1",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
+        "title": "Limited Flash Sale",
+        "home_featured_products": "limited-flash-sale",
+        "per_row": 4,
+        "rows": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
         "divider": false
       }
     }
   },
   "order": [
+    "e845e5fb-34a5-44bf-a936-38500e3ccefb",
     "main",
-    "1659443943cc008088"
+    "6bfdc2be-909d-40a6-aed5-ad331396c5c6"
   ]
 }

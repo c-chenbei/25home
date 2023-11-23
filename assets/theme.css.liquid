@@ -61,7 +61,6 @@
   --ico-select: url({{ 'ico-select.svg' | asset_url | split: '?' | first }});
   --ico-select-white: url({{ "ico-select-white.svg" | asset_url | split: '?' | first }});
   --ico-select-footer: url({{ "ico-select-footer.svg" | asset_url | split: '?' | first }});
-  --loading-gif: url({{ "3.gif" | asset_url | split: '?' | first }});
 }
 
 @media only screen and (min-width:769px) {
@@ -459,6 +458,7 @@
   right: auto;
   left: 40px;
 }
+
 @media only screen and (max-width:768px) {
   .hero[data-arrows=true] .flickity-prev-next-button {
     bottom: -16px;
@@ -3314,14 +3314,14 @@ symbol.icon:not(.icon--full-color) rect {
 .icon-circle-checkmark polygon,
 .icon-circle-checkmark polyline,
 .icon-circle-checkmark rect,
-.icon-taxes-modal-close circle,
-.icon-taxes-modal-close ellipse,
-.icon-taxes-modal-close g,
-.icon-taxes-modal-close line,
-.icon-taxes-modal-close path,
-.icon-taxes-modal-close polygon,
-.icon-taxes-modal-close polyline,
-.icon-taxes-modal-close rect,
+.icon-close circle,
+.icon-close ellipse,
+.icon-close g,
+.icon-close line,
+.icon-close path,
+.icon-close polygon,
+.icon-close polyline,
+.icon-close rect,
 .icon-email circle,
 .icon-email ellipse,
 .icon-email g,
@@ -4567,7 +4567,7 @@ form+.footer__social {
   display: block;
 }
 
-.footer__social a .shemei_img{
+.footer__social a .shemei_img {
   width: 32px;
   height: 32px;
 }
@@ -5093,8 +5093,8 @@ form+.footer__social {
 }
 
 .site-header--opening {
-  transform:translateZ(0);
-  transition:transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: translateZ(0);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .site-header__logo {
@@ -7347,13 +7347,16 @@ input[type=image] {
   border-top: 1px solid;
   border-top-color: var(--colorBorder);
 }
+
 @media only screen and (max-width:768px) {
   #MainContent .index-section:nth-last-child(3) {
     /* 25Home in the real world样式规则 */
     margin-bottom: 10px;
   }
 }
+
 @media only screen and (min-width:769px) {
+
   /* .index-section {
     margin: 40px 0;
   } */
@@ -12464,8 +12467,9 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
     transform: scale(0.8) !important;
     z-index: 888 !important;
   }
+
   /* 左下角优惠50 */
-  #attentive_overlay{
+  #attentive_overlay {
     z-index: 888 !important;
   }
 }
@@ -12493,9 +12497,11 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
   margin-bottom: 5px;
   display: inline-block;
 }
-.payment_security_title span .iconfont{
+
+.payment_security_title span .iconfont {
   font-size: 18px;
 }
+
 .payment_security_title .Limitedstock {
   font-size: 14px;
   font-weight: 600;
@@ -12539,11 +12545,12 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
 }
 
 /* faq手风车 */
-.index-section-faq{
+.index-section-faq {
   padding: 40px 0px;
   border-top: 1px solid #dbcbb9;
   border-bottom: 1px solid #dbcbb9;
 }
+
 .faq-box-accordion {
   width: 100%;
   display: flex;
@@ -12552,22 +12559,26 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
 .accordion-item-left {
   width: 40%
 }
-.accordion-item-left .h3{
+
+.accordion-item-left .h3 {
   font-size: 22px;
   line-height: 27px;
   color: #333;
   font-weight: 500;
   text-transform: none;
 }
-.accordion-item-left a{
+
+.accordion-item-left a {
   font-size: 14px;
   color: #9c9c9c;
   text-decoration: underline;
 }
-.accordion-item-right{
+
+.accordion-item-right {
   width: 60%;
   padding-right: 10px;
 }
+
 .accordion-header {
   display: flex;
   justify-content: space-between;
@@ -12576,45 +12587,56 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
   cursor: pointer;
   /*font-family: Rove,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif !important;*/
 }
-.accordion-header .toggle-title{
+
+.accordion-header .toggle-title {
   padding-right: 5px;
 }
-.accordion-header .toggle-icon{
+
+.accordion-header .toggle-icon {
   font-weight: 800;
   transform: scale(1.2);
 }
+
 .accordion-content {
   display: none;
 }
+
 @media only screen and (max-width:1000px) {
   .faq-box-accordion {
     flex-direction: column;
   }
-  .accordion-item-left{
+
+  .accordion-item-left {
     width: 100%;
     margin-bottom: 20px;
   }
-  .accordion-item-left .h3{
+
+  .accordion-item-left .h3 {
     font-size: 17px;
     line-height: 18px;
   }
-  .accordion-item-left .p{
+
+  .accordion-item-left .p {
     font-size: 14px;
     line-height: 15px;
   }
-  .accordion-item-right{
+
+  .accordion-item-right {
     width: 100%;
   }
-  .cbb-frequently-bought-container .cbb-frequently-bought-title{
+
+  .cbb-frequently-bought-container .cbb-frequently-bought-title {
     font-size: 18px !important;
   }
 }
+
 /* faq手风车结束 */
 
 #trustpilot-widget-trustbox-0-wrapper {
   margin-bottom: 40px !important;
 }
-.evm_lookbook_block{
+
+.evm_lookbook_block {
   display: none !important;
 }
 
@@ -12625,9 +12647,12 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 遮罩层颜色 */
-  z-index: 9990; /* 需要比其他页面元素的 z-index 高 */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 遮罩层颜色 */
+  z-index: 9990;
+  /* 需要比其他页面元素的 z-index 高 */
 }
+
 @media only screen and (min-width:769px) {
   .taxes-modal {
     position: absolute;
@@ -12637,7 +12662,8 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
     width: 500px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 9991; /* 比遮罩层高 */
+    z-index: 9991;
+    /* 比遮罩层高 */
     box-sizing: border-box;
   }
 }
@@ -12650,6 +12676,7 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
   font-size: 30px;
   color: #333;
 }
+
 .taxes-title {
   text-align: center;
   font-size: 20px;
@@ -12658,23 +12685,29 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
   line-height: 60px;
   border-bottom: 1px solid #e6e6e6;
 }
-.taxes-content{
+
+.taxes-content {
   margin: 16px 44px 30px;
   font-size: 14px;
 }
+
 @media only screen and (max-width:768px) {
   .taxes-modals {
-    z-index: 9999999991; /* 遮罩层 */
+    z-index: 9999999991;
+    /* 遮罩层 */
   }
+
   .taxes-modal {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #fff;
-    z-index: 9999999992; /* 比遮罩层高 */
+    z-index: 9999999992;
+    /* 比遮罩层高 */
     box-sizing: border-box;
   }
+
   .taxes-modal-close {
     position: absolute;
     top: -5px;
@@ -12683,27 +12716,34 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
     font-size: 30px;
     color: #333;
   }
-  .taxes-content{
+
+  .taxes-content {
     margin: 16px 20px 30px;
     font-size: 13px;
   }
 }
+
 /* 打点样式 */
 .lSAction {
   display: none !important;
 }
-.lSSlideOuter{
+
+.lSSlideOuter {
   margin-bottom: 0 !important;
 }
-.lSSlideWrapper{
+
+.lSSlideWrapper {
   padding-top: 10px !important;
 }
+
 .custom-content .custom__item {
   margin-bottom: 0px;
 }
+
 #evm-lookbook-9547 .slider_caption {
   margin-bottom: 0px;
 }
+
 /* 打点样式结束 */
 /* loading */
 /* .loading_gif:before {
@@ -12735,4 +12775,5 @@ button.h4.footer__title.collapsible-trigger.collapsible-trigger-btn.medium-up--h
   top: 50%;
   z-index: 1;
 }
+
 /* loading */

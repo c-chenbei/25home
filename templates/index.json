@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1009.gif",
-            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob11.gif",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1009_a2b1b064-274e-4cff-ac3e-66a3a692bd18.gif",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob111.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -748,7 +748,7 @@
           }
         },
         "a240a3c5-205e-4d7b-845a-252a67fd9bc5": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox\/blocks\/loox-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "max_width": 1920,
@@ -764,7 +764,7 @@
           }
         },
         "f4a17c2f-23aa-451c-be31-dce194cd51f2": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "maxWidth": 1400,
             "borderRadius": 8,
@@ -786,7 +786,7 @@
           }
         },
         "d3dd45f1-d64b-463f-ac67-8750a185a919": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-gallery-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox\/blocks\/loox-gallery-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "maxWidth": 1100,
@@ -805,7 +805,7 @@
           }
         },
         "ae552e6a-c40a-4a00-8336-ffc3a21e484f": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-testimonial-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox\/blocks\/loox-testimonial-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "maxWidth": 1100,
