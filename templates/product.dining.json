@@ -4,7 +4,7 @@
       "type": "main-product",
       "blocks": {
         "907cef5b-a392-4eee-a648-d1d703b05b97": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "contentSize": 16,
@@ -128,7 +128,6 @@
         },
         "contact": {
           "type": "contact",
-          "disabled": true,
           "settings": {
             "title": "Ask a question",
             "phone": false
@@ -210,61 +209,6 @@
         "max_width": true
       }
     },
-    "text-and-image": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/1_0002_Capture_One_Catalog8681.jpg",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "Cage Base",
-        "text": "<p>Underneath, the white dining table is supported by a striking gold metal base consisting of curved beams that join together to form an open cage-like structure.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
-    "text-and-image2": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/1_0006_CaptureOneCatalog8656.jpg",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "Turntable",
-        "text": "<p><\/p><p>In the center, a handy rotating lazy susan turns for easy passing of dishes. With its balance of elegance and utility, this visually striking table is sure to become a cherished gathering place.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "left",
-        "divider": false
-      }
-    },
-    "580ce2ac-f55e-46eb-8c20-a5781cc3f920": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Capture_One_Catalog8482.jpg",
-        "image2": "shopify:\/\/shop_images\/8423.jpg",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "PU Leather Chair",
-        "text": "<p>Sink into the sleek leather Chair, PU leather hugging your body as you relax into its ergonomic curves. Durable carbon steel legs provide a slim yet sturdy base, with its eco-conscious materials and elegant form, the Gullichsen Chair brings sustainable comfort to you.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
     "testimonials": {
       "type": "testimonials",
       "blocks": {
@@ -315,7 +259,7 @@
       "type": "apps",
       "blocks": {
         "e13cef9d-2017-4252-8d6d-7873814950e5": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
@@ -355,9 +299,6 @@
     "main",
     "16475055848fed5fca",
     "sub",
-    "text-and-image",
-    "text-and-image2",
-    "580ce2ac-f55e-46eb-8c20-a5781cc3f920",
     "testimonials",
     "1652410876b776606e",
     "product-recommendations",

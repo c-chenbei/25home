@@ -1,4 +1,5 @@
-<div class="page-full page-content black-five-bg">
+{% comment %} <div class="page-full page-content black-five-bg"> {% endcomment %}
+<div class="page-full black-five-bg">
     {% comment %} {%- render 'breadcrumbs' -%}
     <header class="section-header">
       <h1 class="section-header__title">{{ page.title | escape }}</h1>
@@ -22,6 +23,7 @@
     ]
   }
   {% endschema %}
+
   <script>
     // 尝试获取元素
     var beijingtuziyuan = document.getElementById('beijingtuziyuan');
@@ -32,8 +34,8 @@
       var dataImgBgValue = beijingtuziyuan.getAttribute('data-imgbg');
       var dynamicbg = document.body
       dynamicbg.style.backgroundImage = "url("+dataImgBgValue+")";
-      dynamicbg.style.backgroundRepeat = 'no-repeat';
-      dynamicbg.style.backgroundSize = 'cover';
+      {% comment %} dynamicbg.style.backgroundRepeat = 'no-repeat'; {% endcomment %}
+      dynamicbg.style.backgroundSize = 'contain';
     }
 
   </script>

@@ -37,12 +37,18 @@
     },
     "main": {
       "type": "Black-Five-Flash-Sale",
+      "custom_css": [
+
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/2_02.jpg"
+        "image": "shopify:\/\/shop_images\/1920-1450.jpg"
       }
     },
     "6bfdc2be-909d-40a6-aed5-ad331396c5c6": {
       "type": "featured-collection",
+      "custom_css": [
+        ".grid-product__content {min-height: 482px; background: #fff;}"
+      ],
       "settings": {
         "title": "Limited Flash Sale",
         "home_featured_products": "limited-flash-sale",

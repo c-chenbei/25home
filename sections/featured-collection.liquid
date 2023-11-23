@@ -93,7 +93,7 @@
 
             {% if product.handle contains 'docapp-free-gift-' %}{% continue %}{% endif %}
 
-            {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width, per_row: per_row -%}
+            {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width, per_row: per_row,collection_name: collection.title -%}
           {%- endfor -%}
 
           {%- if section.settings.view_all -%}

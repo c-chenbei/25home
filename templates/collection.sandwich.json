@@ -8,13 +8,48 @@
         "parallax": true
       }
     },
+    "299504d7-cf50-4a85-910e-c64b15337752": {
+      "type": "slideshow",
+      "blocks": {
+        "c1d4866b-2569-4b0f-afd3-da6bdef8d990": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1009_bb7d4f79-341c-4512-8519-236a74a53008.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob11-1.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "c1d4866b-2569-4b0f-afd3-da6bdef8d990"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
     "1645173779f26ecbf5": {
       "type": "promo-grid",
       "blocks": {
         "8f9fd4ec-c2df-41e9-815e-388589d926a6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1009.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1009_bb7d4f79-341c-4512-8519-236a74a53008.jpg",
             "link": "",
             "width": "100"
           }
@@ -23,6 +58,7 @@
       "block_order": [
         "8f9fd4ec-c2df-41e9-815e-388589d926a6"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,
@@ -98,6 +134,7 @@
   },
   "order": [
     "collection-header",
+    "299504d7-cf50-4a85-910e-c64b15337752",
     "1645173779f26ecbf5",
     "main-collection",
     "fed6b8bf-4424-4995-ac81-844cca8fa10d"

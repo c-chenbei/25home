@@ -1,5 +1,40 @@
 {
   "sections": {
+    "8817e249-2da8-450b-bb95-61a985d0fa95": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16800481083619__8817e249-2da8-450b-bb95-61a985d0fa95-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1926_f1ef9e14-7f73-46d1-8f88-eb04cd9f3973.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob11-4_10981fd1-cbfa-4f48-9f0c-9a4a5eb93184.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16800481083619__8817e249-2da8-450b-bb95-61a985d0fa95-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
     "collection-header": {
       "type": "collection-header",
       "settings": {
@@ -14,7 +49,7 @@
         "8f9fd4ec-c2df-41e9-815e-388589d926a6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BLACKFRIDAY-1926G_0f31fe14-b891-43be-8113-dfb0f1213c43.jpg",
+            "image": "shopify:\/\/shop_images\/BLACKFRIDAY-1926G_7e0e34cf-a3a1-41aa-a236-cb1b02ac138d.jpg",
             "link": "shopify:\/\/collections\/plume-sofa",
             "width": "100"
           }
@@ -23,6 +58,7 @@
       "block_order": [
         "8f9fd4ec-c2df-41e9-815e-388589d926a6"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,
@@ -170,6 +206,7 @@
     }
   },
   "order": [
+    "8817e249-2da8-450b-bb95-61a985d0fa95",
     "collection-header",
     "1645173779f26ecbf5",
     "main-collection",

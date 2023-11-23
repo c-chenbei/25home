@@ -1,5 +1,40 @@
 {
   "sections": {
+    "9519b014-f976-4446-8ff7-077f7cbe464e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16800480821475__9519b014-f976-4446-8ff7-077f7cbe464e-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1005_0e45f5ea-6f5c-4ef1-a21f-d1ef2c49ff3a.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob11-2.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16800480821475__9519b014-f976-4446-8ff7-077f7cbe464e-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
     "collection-header": {
       "type": "collection-header",
       "settings": {
@@ -14,7 +49,7 @@
         "b54cb5d7-cfc3-4acb-9a3e-410e5b4a9983": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1005.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1005_0e45f5ea-6f5c-4ef1-a21f-d1ef2c49ff3a.jpg",
             "link": "",
             "width": "100"
           }
@@ -23,6 +58,7 @@
       "block_order": [
         "b54cb5d7-cfc3-4acb-9a3e-410e5b4a9983"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,
@@ -89,6 +125,7 @@
     }
   },
   "order": [
+    "9519b014-f976-4446-8ff7-077f7cbe464e",
     "collection-header",
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
     "main-collection",
