@@ -90,7 +90,6 @@
 
         {%- else -%}
           {%- for product in collections[section.settings.home_featured_products].products limit: product_limit -%}
-
             {% if product.handle contains 'docapp-free-gift-' %}{% continue %}{% endif %}
 
             {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width, per_row: per_row,collection_name: collection.title -%}
@@ -175,7 +174,7 @@
       "label": "Rows of products",
       "default": 1,
       "min": 1,
-      "max": 5,
+      "max": 10,
       "step": 1
     },
     {

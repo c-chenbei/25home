@@ -11,19 +11,19 @@
       <div class="black-count-down">
         <div class="black-box">
           <div class="black-number" id="countdowns_hours">00</div>
-          <div>DAY</div>
+          <div class=font>HRS</div>
         </div>
         <div class="black-box">
           <div class="black-number" id="countdowns_minutes">00</div>
-          <div>HRS</div>
+          <div class=font>MIN</div>
         </div>
         <div class="black-box">
           <div class="black-number" id="countdowns_seconds">00</div>
-          <div>MIN</div>
+          <div class=font>SEC</div>
         </div>
         <div class="black-box">
           <div class="black-number" id="countdowns_milliseconds">00</div>
-          <div>SEC</div>
+          <div class=font>MSE</div>
         </div>
         {% comment %} <span class="black-number" id="countdowns_minutes">00</span>
         <span class="black-number" id="countdowns_seconds">00</span>
@@ -308,6 +308,11 @@
       font-weight: 600;
       text-align: center;
     }
+    .black-count-down .font {
+      font-size: 16px;
+      color: red;
+      font-weight: 600;
+    }
   }
   
   @media only screen and (max-width:768px){
@@ -330,6 +335,11 @@
       height: 45px;
       font-weight: 600;
       text-align: center;
+    }
+    .black-count-down .font {
+      font-size: 16px;
+      color: red;
+      font-weight: 600;
     }
   }
   {% comment %} .countdown {

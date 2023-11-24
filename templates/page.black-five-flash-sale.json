@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/limted-flash-sale-PC-11-15_7953b89d-705d-484e-a6b6-9e1a84c8d025.gif",
-            "image_mobile": "shopify:\/\/shop_images\/limted-flash-sale-_-11-15.gif",
+            "image": "shopify:\/\/shop_images\/PC_c0dd6e4f-926e-4569-881e-67df03ee315b.gif",
+            "image_mobile": "shopify:\/\/shop_images\/ef347c51094a0e778262053b8fa4f597_51efee05-f640-430d-8fd0-105cb8b3254e.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -41,7 +41,8 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_579885ca-c026-41b2-b2e8-9e7bf3830f55.jpg"
+        "image": "shopify:\/\/shop_images\/1_579885ca-c026-41b2-b2e8-9e7bf3830f55.jpg",
+        "countdown_target_show": true
       }
     },
     "6bfdc2be-909d-40a6-aed5-ad331396c5c6": {
@@ -57,7 +58,7 @@
         "title": "Limited Flash Sale",
         "home_featured_products": "limited-flash-sale",
         "per_row": 4,
-        "rows": 5,
+        "rows": 10,
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
