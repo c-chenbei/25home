@@ -168,7 +168,6 @@
                   {%- if block.settings.image != blank -%}
                     {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                     <img loading="eager" class="hero__image hero__image--{{ block.id }} lazyload{% if has_mobile_image %} small--hide{% endif %} lazyautosizes lazyloaded"
-                      src="{{ block.settings.image | img_url: '300x' }}"
                       data-src="{{ img_url }}"
                       data-aspectratio="{{ block.settings.image.aspect_ratio }}"
                       data-sizes="auto"
@@ -177,7 +176,6 @@
                     {%- if has_mobile_image -%}
                       {%- assign img_url_mobile = block.settings.image_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                       <img loading="eager" class="hero__image hero__image--{{ block.id }} lazyload medium-up--hide lazyautosizes lazyloaded"
-                        src="{{ block.settings.image_mobile | img_url: '300x' }}"
                         data-src="{{ img_url_mobile }}"
                         data-aspectratio="{{ block.settings.image_mobile.aspect_ratio }}"
                         data-sizes="auto"

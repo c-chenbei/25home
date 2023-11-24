@@ -219,6 +219,7 @@
     expressageTypeElement.forEach(item => {
       const dataGetValue = item.getAttribute('data-get-value');
       const dateRangeMatch = dataGetValue.match(/(\d{1,2}-\d{1,2}) business days delivery/);
+
       if (dateRangeMatch) {
         const dateRange = dateRangeMatch[1];
         const today = new Date();

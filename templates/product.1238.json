@@ -4,7 +4,7 @@
       "type": "main-product",
       "blocks": {
         "907cef5b-a392-4eee-a648-d1d703b05b97": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "contentSize": 16,
@@ -195,7 +195,7 @@
         "text": "<p>Choose your own configuration to custom fit your living space. This genuine leather modular sectional provides the ultimate refined relaxation.<\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/00-1920.jpg",
+        "image": "shopify:\/\/shop_images\/01_3ca52357-6230-453b-82ca-154bd1e2bb4d.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -206,7 +206,7 @@
     "a68b65f6-fb9a-4ab2-b71e-ca134410e138": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/01_5b7813f0-ce49-48e9-9579-0880919c6fe9.gif",
+        "image": "shopify:\/\/shop_images\/02_69f20348-45a5-489e-b1d3-0ccea68d45b0.gif",
         "image_width": 700,
         "subtitle": "",
         "title": "MODULAR DESIGN",
@@ -227,7 +227,7 @@
         "66a30ffe-7978-4eab-824c-9ccd2ff034f3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_0002_011.jpg",
+            "image": "shopify:\/\/shop_images\/09_505cd7ce-b0fd-482e-9c1a-71737609c3d8.jpg",
             "link": "",
             "width": "50%",
             "alignment": "top-middle"
@@ -257,7 +257,7 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_0006_07.jpg",
+        "image": "shopify:\/\/shop_images\/03_6165e098-b04e-45ca-b436-906966d27a3b.jpg",
         "image2": "shopify:\/\/shop_images\/1_0007_6.jpg",
         "image_width": 700,
         "subtitle": "",
@@ -279,7 +279,7 @@
         "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Materials-1-11-13.jpg",
+            "image": "shopify:\/\/shop_images\/Materials-1_eeeb43fd-3cd6-43f1-87f5-1ed9805eeaf7.jpg",
             "link": "",
             "width": "50%",
             "alignment": "top-middle"
@@ -309,7 +309,7 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_0003_010_44409588-70d6-45f8-b801-dbcb76919af0.jpg",
+        "image": "shopify:\/\/shop_images\/08_f930e263-cb04-4cfc-a948-d56f8d94d8ae.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "Plush Comfort",
@@ -351,7 +351,7 @@
         "text": "",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/05_b30895ee-1f8a-4b89-baee-7feeb9291652.png",
+        "image": "shopify:\/\/shop_images\/01_3ca52357-6230-453b-82ca-154bd1e2bb4d.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -428,7 +428,7 @@
       "type": "apps",
       "blocks": {
         "e13cef9d-2017-4252-8d6d-7873814950e5": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,

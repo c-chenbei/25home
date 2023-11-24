@@ -799,9 +799,9 @@ function updateCountdown2() {
     const timeRemaining2 = targetDate2 - now2;
     if (timeRemaining2 <= 0) {
       window.clearInterval(timer2);
-      let millis = document.getElementById("hander_countdowns_seconds")
-      if (millis){
-        millis.textContent = '00'
+      let millis2 = document.getElementById("hander_countdowns_seconds")
+      if (millis2){
+        millis2.textContent = '00'
       }
     } else {
         detectionIndex2++;
@@ -818,9 +818,9 @@ function updateCountdown2() {
         const countdowns_minutes2 = document.querySelectorAll("#hander_countdowns_minutes")
         const countdowns_seconds2 = document.querySelectorAll("#hander_countdowns_seconds")
 
-        if (countdowns_days2.length > 0 && detectionIndex2 == 20) {
+        if (countdowns_days2.length == 0 && detectionIndex2 == 20) {
           detectionIndex2 = 0
-          window.clearInterval(timer);
+          window.clearInterval(timer2);
           return
         }
 

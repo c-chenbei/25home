@@ -27,7 +27,7 @@
         "template--16800480821475__9519b014-f976-4446-8ff7-077f7cbe464e-image-1"
       ],
       "settings": {
-        "section_height": "650px",
+        "section_height": "natural",
         "mobile_height": "auto",
         "parallax": false,
         "style": "bars",

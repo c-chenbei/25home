@@ -348,6 +348,12 @@
           "template": "Checkout with %%logo%%",
           "mode": "light"
         }
+      },
+      "4314224506098761161": {
+        "type": "shopify:\/\/apps\/omega-pinterest-tag\/blocks\/app-embed-block\/136e8791-2d03-4768-b1f4-95b67b07067f",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },

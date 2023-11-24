@@ -10,19 +10,21 @@
       "label": "Flash Sale的倒计时时间",
       "id": "countdown_target_datetimes",
       "default": "2023/10/26/17/32/30",
-      "info": "倒计时的日期和时间格式为 'YYYY（年）/MM（月）/DD（日）/HH（时）/mm（分）/ss（秒）'。"
+      "info": "倒计时的日期和时间格式为 'YYYY（年）/MM（月）/DD（日）/HH（时）/mm（分）/ss（秒）'。秒杀倒计时是在产品详情页面， 购物车页面显示的  全局可访问显示"
     }
   ],
   "blocks": []
 }
 {% endschema %}
+{% comment %} 秒杀倒计时是在产品详情页面， 购物车页面显示的  全局可访问 {% endcomment %}
 <script>
     //倒计时
   const element = document.getElementById("input-countdowns");
   {% comment %} console.log(element,'targetDateStrtargetDateStr') {% endcomment %}
   const targetDateStr = element.getAttribute("data-input-countdowns");
-  {% comment %} console.log(targetDateStr,'targetDateStrtargetDateStr') {% endcomment %}
   const targetDateParts = targetDateStr.split("/");
+  {% comment %} console.log(targetDateParts,'targetDateStrtargetDateStr') {% endcomment %}
+
   const year = parseInt(targetDateParts[0]);
   const month = parseInt(targetDateParts[1]) - 1; // 月份从 0 开始
   const day = parseInt(targetDateParts[2]);
@@ -51,19 +53,21 @@
           {% comment %} const days = Math.floor(totalHours / 24); // 将小时转换为天
           const hourss = totalHours % 24; // 获取不满一天的小时数 {% endcomment %}
           //  // 不显示days 就用hours = totalHours
-          const hours = totalHours;
+          let hours = totalHours;
 
-          const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
-          const seconds = Math.floor((timeRemaining / 1000) % 60);
+          let minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
+          let seconds = Math.floor((timeRemaining / 1000) % 60);
           const milliseconds = timeRemaining % 1000;
-
+          let timeobj = {hours:hours,minutes:minutes,seconds:seconds};
+          localStorage.setItem('myKeytime', JSON.stringify(timeobj));
+          {% comment %} console.log(hours,minutes,seconds) {% endcomment %}
           //const countdowns_days = document.querySelectorAll("#countdowns_days")
           const countdowns_hours = document.querySelectorAll("#countdowns_hours")
           const countdowns_minutes = document.querySelectorAll("#countdowns_minutes")
           const countdowns_seconds = document.querySelectorAll("#countdowns_seconds")
           const countdowns_milliseconds = document.querySelectorAll("#countdowns_milliseconds")
 
-          if (countdowns_hours.length == 0 && detectionIndex == 20) {
+          if (countdowns_hours.length == 0 && detectionIndex == 30) {
             detectionIndex = 0
             window.clearInterval(timer);
             return

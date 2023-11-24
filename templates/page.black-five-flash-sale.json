@@ -41,20 +41,24 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1920-1450.jpg"
+        "image": "shopify:\/\/shop_images\/1_579885ca-c026-41b2-b2e8-9e7bf3830f55.jpg"
       }
     },
     "6bfdc2be-909d-40a6-aed5-ad331396c5c6": {
       "type": "featured-collection",
       "custom_css": [
-        ".grid-product__content {min-height: 482px; background: #fff;}"
+        ".grid {list-style: none; padding: 0; margin: 0 0 0 -22px; display: grid; grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));}",
+        ".grid__item {width: 100%;}",
+        ".grid-product__content {height: 100%; background: #fff;}",
+        ".text-center {grid-column: span 4;}",
+        "@media only screen and (max-width: 768px) {.grid {grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); } .text-center {grid-column: span 2; }}"
       ],
       "settings": {
         "title": "Limited Flash Sale",
         "home_featured_products": "limited-flash-sale",
         "per_row": 4,
         "rows": 5,
-        "mobile_scrollable": true,
+        "mobile_scrollable": false,
         "view_all": true,
         "divider": false
       }

@@ -35,8 +35,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1811_33feea0e-5044-4e64-ae3a-bca100f1c059.gif",
-            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob1811_b0635032-5b4b-46f0-ac3d-c04b80e6c6d6.gif",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-flash-sale.gif",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-flashsale-mob.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -73,8 +73,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/1920x890-2.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/750x1100-2.jpg",
+            "image": "shopify:\/\/shop_images\/1920x890_57975a09-a19c-4891-a6f8-c0542c8bbd01.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/750x1100_5da363a2-41b3-4e7c-ac04-0e62caf029e2.jpg",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
@@ -375,8 +375,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-Contemporary-Luxury.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-Contemporary-Luxury-mob.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-NEW-ARRIVAL11.24.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-Contemporary-Luxury-mob_c5231e1b-e9d5-4c65-98aa-024fa5eee18f.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -748,7 +748,7 @@
           }
         },
         "a240a3c5-205e-4d7b-845a-252a67fd9bc5": {
-          "type": "shopify:\/\/apps\/loox\/blocks\/loox-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "max_width": 1920,
@@ -764,7 +764,7 @@
           }
         },
         "f4a17c2f-23aa-451c-be31-dce194cd51f2": {
-          "type": "shopify:\/\/apps\/loox\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "maxWidth": 1400,
             "borderRadius": 8,
@@ -786,7 +786,7 @@
           }
         },
         "d3dd45f1-d64b-463f-ac67-8750a185a919": {
-          "type": "shopify:\/\/apps\/loox\/blocks\/loox-gallery-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-gallery-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "maxWidth": 1100,
@@ -805,7 +805,7 @@
           }
         },
         "ae552e6a-c40a-4a00-8336-ffc3a21e484f": {
-          "type": "shopify:\/\/apps\/loox\/blocks\/loox-testimonial-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-testimonial-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "maxWidth": 1100,
