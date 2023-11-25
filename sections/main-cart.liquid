@@ -218,8 +218,7 @@
   if (expressageTypeElement.length > 0) {
     expressageTypeElement.forEach(item => {
       const dataGetValue = item.getAttribute('data-get-value');
-      const dateRangeMatch = dataGetValue.match(/(\d{1,2}-\d{1,2}) business days delivery/);
-
+      const dateRangeMatch = dataGetValue.match(/(\d{1,2}-\d{1,2})/);
       if (dateRangeMatch) {
         const dateRange = dateRangeMatch[1];
         const today = new Date();
@@ -240,6 +239,10 @@
       }
     })
   }
+  $('.cart__checkout').on('click', function(event) {
+    // 阻止默认提交行为，以便进行自定义处理
+    event.preventDefault();
+  });
 </script>
 <script>
   const body = document.body;

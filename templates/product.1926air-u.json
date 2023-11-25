@@ -4,7 +4,7 @@
       "type": "main-product",
       "blocks": {
         "907cef5b-a392-4eee-a648-d1d703b05b97": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "contentSize": 16,
@@ -192,7 +192,7 @@
         "text": "<p>Modern compared with comfy, this feather sofa is designed for a quality life.<\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/01_581d1be8-4c87-4e31-a779-955a41185044.jpg",
+        "image": "shopify:\/\/shop_images\/01_0004_01_d7ed4e76-e449-4d6b-805b-8c3c7d4d7b0a.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -547,7 +547,7 @@
       "type": "apps",
       "blocks": {
         "e13cef9d-2017-4252-8d6d-7873814950e5": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
