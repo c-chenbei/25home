@@ -15,7 +15,7 @@
             {%- endif -%}
           </div>
         {%- when 'text' -%}
-          <div class="rte">
+          <div class="rte narrow_screen_rich">
             {%- if block.settings.text != blank -%}
               {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
               {{ block.settings.text }}
@@ -33,14 +33,23 @@
       {%- endcase -%}
     </div>
   {%- endfor -%}
+
 </div>
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
+{%- style -%}
+  {% if template.name contains 'collection' %}
+    .collection_rich_text .narrow_screen_rich{
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  {% endif %}
+{%- endstyle -%}
 
 {% schema %}
   {
     "name": "Rich text",
-    "class": "index-section",
+    "class": "index-section collection_rich_text",
     "settings": [
       {
         "type": "select",
