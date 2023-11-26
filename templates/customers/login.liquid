@@ -1,4 +1,4 @@
-<div class="page-width page-width--tiny page-content">
+<div class="page-width page-content">
   <header class="section-header">
     <h1 class="section-header__title">{{ 'customer.login.title' | t }}</h1>
   </header>
@@ -8,13 +8,12 @@
   </div>
 
   <div id="CustomerLoginForm" class="form-vertical">
-    {%- form 'customer_login' -%}
+    {%- form 'customer_login',class: 'multielectors' -%}
 
       {{ form.errors | default_errors }}
 
       <label for="CustomerEmail">{{ 'customer.login.email' | t }}</label>
       <input type="email" name="customer[email]" id="CustomerEmail" class="input-full{% if form.errors contains 'email' %} error{% endif %}" autocorrect="off" autocapitalize="off" autofocus>
-
       {%- if form.password_needed -%}
         <div class="grid">
           <div class="grid__item one-half">
@@ -39,6 +38,12 @@
       <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
 
     {%- endform -%}
+    <div class="skipbox">
+      <div class="Guest">
+        <div class="divider"><span>OR</span></div>
+        <button id="login_skipbtn" class="btn btn--full">Checkout as a Guest</button>
+      </div>
+    </div>
   </div>
 
   <div id="RecoverPasswordForm" class="hide">
@@ -81,3 +86,21 @@
     {%- endform -%}
   {%- endif -%}
 </div>
+<script>
+  // 解析URL，获取参数对象
+  var urlParams = new URLSearchParams(window.location.search);
+  var nameValue = urlParams.get('affirm');
+  if (nameValue) {
+    $(".skipbox").css("display","block")
+    var hiddenInput = $('<input>', {
+      type: 'hidden',
+      name: 'checkout_url',
+      value: '/checkout'
+    });
+    $('.multielectors').append(hiddenInput);
+  }
+  $("#login_skipbtn").click(function() {
+    window.location.href = '/checkout';
+  });
+
+</script>

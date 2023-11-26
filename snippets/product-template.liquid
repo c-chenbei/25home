@@ -25,7 +25,6 @@
 
   assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
 -%}
-
 <div
   id="ProductSection-{{ section_id }}-{{ product.id }}"
   class="product-section"
@@ -43,7 +42,6 @@
   data-modal="{{ isModal }}"
 >
   {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
-
   <div class="page-content page-content--product">
     <div class="page-width">
       <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
@@ -64,7 +62,7 @@
             -%}
           </div>
         {%- endif -%}
-
+        
         <div class="grid__item {{ product_description_width }}">
           <div class="product-single__meta">
             <div class="product-block product-block--header">
@@ -160,9 +158,7 @@
                       -%}
                     </div>
                   {%- when 'price' -%}
-                    <div id="priceSuspension" >
-                      <div id="priceSuspension-cont">
-                        <div class="product-block product-block--price product-block--sticky" {{ block.shopify_attributes }}>
+                        <div class="product-block product-block--price" {{ block.shopify_attributes }}>
                           {%- assign hide_sale_price = true -%}
                           {%- if product.compare_at_price_max > product.price -%}
                             {%- if current_variant.compare_at_price > current_variant.price -%}
@@ -174,11 +170,7 @@
                               data-product-price
                               class="product__price product__price-savings"
                             >
-                              {%- unless product.empty? -%}
-                                {{ current_variant.price | money }}
-                              {%- else -%}
-                                {{ 1999 | money }}
-                              {%- endunless -%}
+                              {{ current_variant.price | money }}
                             </span>
                             {% comment %} 划线价格 {% endcomment %}
                             <span
@@ -199,6 +191,7 @@
                               {{- 'products.general.sale_price' | t -}}
                             </span>
                           {%- else -%}
+                            {% comment %} 正常价 {% endcomment %}
                             <span id="price-fallback-selectors" data-product-price class="product__price product__price-savings">
                                 {{ current_variant.price | money }}
                             </span>
@@ -299,32 +292,6 @@
                             </div>
                           {%- endif -%}
                         {% endcomment %}
-                        <div id="buttonSuspension">
-                          {%- liquid
-                            assign default_text = 'products.product.add_to_cart' | t
-                            assign button_text = 'products.product.add_to_cart' | t
-                            if template == 'product.preorder'
-                              assign default_text = 'products.product.preorder' | t
-                              assign button_text = 'products.product.preorder' | t
-                            endif
-                            unless current_variant.available
-                              assign button_text = 'products.product.sold_out' | t
-                            endunless
-                          -%}
-                          <button
-                            id="custom-add-cart"
-                            type="button"
-                            name="add"
-                            data-add-to-cart
-                            class="btn btn--full add-to-cart btn--secondary"
-                            {% unless current_variant.available %} disabled="disabled"{% endunless %}>
-                            <span data-add-to-cart-text data-default-text="{{ default_text }}">
-                              {{ button_text }}
-                            </span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
                   {%- when 'quantity_selector' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       <div class="product__quantity">
@@ -614,155 +581,41 @@
         {%- endunless -%}
       </div>
     </div>
+    <div id="priceSuspension">
+      <div id="priceSuspension-cont">
+        {% assign first_media = product.media[0].preview_image.src %}
+        <img src="{{ first_media | img_url: '76x' }}" id="product_sticky_img" style="width:76px;">
+        <div id="buttonSuspension">
+          <span data-product-price class="product__price product__price-savings" id="product_sticky_price">
+            {{ current_variant.price | money }}
+          </span>
+          {%- liquid
+            assign default_text = 'products.product.add_to_cart' | t
+            assign button_text = 'products.product.add_to_cart' | t
+            if template == 'product.preorder'
+              assign default_text = 'products.product.preorder' | t
+              assign button_text = 'products.product.preorder' | t
+            endif
+            unless current_variant.available
+              assign button_text = 'products.product.sold_out' | t
+            endunless
+          -%}
+          <button
+            id="custom-add-cart"
+            type="button"
+            name="add"
+            data-add-to-cart
+            class="btn btn--full add-to-cart btn--secondary"
+            {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+            <span data-add-to-cart-text data-default-text="{{ default_text }}">
+              {{ button_text }}
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<style>
-  .whitegloves{
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  .whitegloves-h1 {
-    font-size: 14px;
-    cursor: pointer;
-    {% comment %} font-weight: 600; {% endcomment %}
-  }
-  .whitegloves-h1 svg{
-    margin-right: 5px;
-    color: #9f7b63;
-  }
-  .whitegloves-title{
-    display: flex;
-    align-items: center;
-    height: 30px;
-    font-size: 14px;
-  }
-  .whitegloves-title label{
-    display: inline;
-    margin: 0px;
-    text-transform: none;
-    font-size: 14px;
-  }
-  .whitegloves-list{
-    display: none;
-  }
-  #priceSuspension{
-    background-color: var(--colorBody);
-  }
-  .suspension-class{
-    position: fixed;
-    width: 100%;
-    right: 0px;
-    z-index: 20;
-  }
-  @media screen and (min-width:1001px){
-    .priceSuspension-cont{
-      max-width: 1500px;
-      margin: 0 auto;
-      padding: 0 40px;
-      display: flex;
-      flex: 1;
-      justify-content: space-between;
-      align-items: center;
-    }
-    #buttonSuspension{
-      display: none;
-    }
-    #buttonSuspension .payment-buttons{
-      {% comment %} display: flex;
-      align-items: center; {% endcomment %}
-      margin-top: 10px;
-    }
-    #buttonSuspension .payment-buttons .add-to-cart{
-      min-height: 30px;
-      line-height: 30px;
-      width: 200px;
-      padding: 0;
-      letter-spacing: 0;
-      font-weight: 0;
-      margin-right: 5px;
-      margin-bottom: 10px;
-    }
-    #buttonSuspension .payment-buttons .shopify-payment-button{
-      min-height: auto;
-      margin-top: 0px;
-    }
-    #buttonSuspension .payment-buttons .shopify-payment-button__button{
-      min-height: 30px;
-      line-height: 30px;
-      width: 200px;
-      padding: 0;
-      letter-spacing: 0;
-      font-weight: 0;
-    }
-    .right-other{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 15px 5px 5px 5px;
-      font-size: 16px;
-    }
-    .right-other div {
-      width: 50%;
-    }
-    .right-other i {
-      margin-right: 5px;
-    }
-    .vertical-line{
-      width: 1px;
-      height: auto;
-      background: #eee;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    .priceSuspension-cont{
-      padding: 0 17px;
-      text-align: left;
-    }
-    .product-block--sticky {
-      margin-top: 0px !important;
-      margin-bottom: 0px !important;
-    }
-    #buttonSuspension{
-      display: none;
-      position: fixed;
-      bottom: 0px;
-      left: 0px;
-      width: 100%;
-      text-align: center;
-    }
-    #buttonSuspension .add-to-cart{
-      min-height: 35px;
-      line-height: 35px;
-      width: 70%;
-      padding: 0;
-      letter-spacing: 0;
-      font-weight: 0;
-      background-color: var(--colorBtnPrimary);
-      color: #fff;
-      border: none;
-    }
-    .right-other{
-      text-align: left;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 15px 0px 5px 0px;
-      font-size: 12px;
-      font-weight: 600;
-    }
-    .right-other div {
-      width: 50%;
-    }
-    .right-other i {
-      margin-right: 5px;
-    }
-    .vertical-line{
-      width: 1px;
-      height: auto;
-      background: #eee;
-    }
-  }
-</style>
 <script>
   {% comment %} let collectionsss1 = {{ product | json }}
   console.log(collectionsss1,'productproductproductproductproduct') {% endcomment %}
@@ -786,7 +639,7 @@
   {% comment %} 点击按钮切换货期显示 {% endcomment %}
   document.addEventListener('variant:change', function(evt) {
     addcartValue = evt.detail.variant.id
-    {% comment %} console.log(evt.detail.variant,'555555',paragraphTags); {% endcomment %}
+    {% comment %} console.log(evt.detail.variant,'555555'); {% endcomment %}
     currentvariant.forEach(function(item,index) {
       if (evt.detail.variant.id == item.id) {
         paragraphTags[index].classList.remove('expressage_none');
@@ -799,30 +652,18 @@
   {% comment %} 浮动价格 {% endcomment %}
   let headerElement = document.getElementById("SiteHeader"); // header
   let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
-  let priceSuspensionCont = document.getElementById("priceSuspension-cont"); // 悬浮盒子
-  var elementsWithClassName = priceSuspensionCont.getElementsByClassName("product-block");
-
   let productformbutton = document.getElementById("product-form-button"); // 原架构按钮
   var distanceToTop = productformbutton.getBoundingClientRect().top + window.scrollY;
     {% comment %} console.log("距离顶部的位置：" + distanceToTop + " 像素"); {% endcomment %}
-  let buttonSuspension = document.getElementById("buttonSuspension"); // 新添加浮动按钮
     // 添加滚动事件监听器
   window.addEventListener("scroll", function() {
     // 获取当前滚动条的垂直位置
     var scrollTop = window.scrollY || document.documentElement.scrollTop;
     // 检查是否滚动超过780像素
     if (scrollTop > distanceToTop) {
-      // 滚动超过780像素时执行的代码
-      priceSuspensionElement.classList.add("suspension-class");
-      priceSuspensionCont.classList.add("priceSuspension-cont");
-      elementsWithClassName[0].style.marginBottom = '0px';
       priceSuspensionElement.style.top = headerElement.offsetHeight + 'px'
-      buttonSuspension.style.display = 'block'
     } else {
-      priceSuspensionElement.classList.remove("suspension-class");
-      priceSuspensionCont.classList.remove("priceSuspension-cont");
-      elementsWithClassName[0].style.marginBottom = '25px'
-      buttonSuspension.style.display = 'none'
+      priceSuspensionElement.style.top = '-100px'
     }
   });
   {% comment %} 浮动价格结束 {% endcomment %}
@@ -838,7 +679,6 @@
   });
   // 监听 AddToCart 的 click 事件
   $('#AddToCart').on('click', function(event) {
-    // 阻止默认提交行为，以便进行自定义处理
     event.preventDefault();
     handleAddToCart();
   });
@@ -890,23 +730,17 @@
   </div>
   `
   body.insertAdjacentHTML('beforeend', inhtml);
-  document.addEventListener("DOMContentLoaded", function () {
-    const whiteglovesOpen = document.getElementById("whitegloves-open");
-    const myModal = document.getElementById("myModal");
-    const closeModalButton = document.getElementById("closeModalButton");
+  $("#whitegloves-open").click(function() {
+      $("#myModal").css("display", "block");
+  });
 
-    whiteglovesOpen.addEventListener("click", function () {
-        myModal.style.display = "block";
-    });
+  $("#closeModalButton").click(function() {
+      $("#myModal").css("display", "none");
+  });
 
-    closeModalButton.addEventListener("click", function () {
-        myModal.style.display = "none";
-    });
-
-    window.addEventListener("click", function (event) {
-        if (event.target === myModal) {
-            myModal.style.display = "none";
-        }
-    });
+  $(window).click(function(event) {
+      if (event.target.id === "myModal") {
+          $("#myModal").css("display", "none");
+      }
   });
 </script>

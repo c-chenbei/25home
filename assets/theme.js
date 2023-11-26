@@ -6459,7 +6459,10 @@ lazySizesConfig.expFactor = 4;
         if (variant) {
           // Regular price
           this.cache.price.innerHTML = theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat);
-  
+          $('#product_sticky_price').text(theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat));
+          $('#product_sticky_img').attr('src', variant.featured_image.src);
+
+          // console.log(this.cache.price,'this.cache.price');
           // Sale price, if necessary
           if (variant.compare_at_price > variant.price) {
             this.cache.comparePrice.innerHTML = theme.Currency.formatMoney(variant.compare_at_price, theme.settings.moneyFormat);

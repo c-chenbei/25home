@@ -1,0 +1,172 @@
+.whitegloves {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.whitegloves-h1 {
+  font-size: 14px;
+  cursor: pointer;
+}
+.whitegloves-h1 svg {
+  margin-right: 5px;
+  color: #9f7b63;
+}
+
+.whitegloves-title {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-size: 14px;
+}
+.whitegloves-title label {
+  display: inline;
+  margin: 0px;
+  text-transform: none;
+  font-size: 14px;
+}
+
+.whitegloves-list {
+  display: none;
+}
+
+#priceSuspension {
+  background-color: var(--colorBody);
+  position: fixed;
+  width: 100%;
+  right: 0px;
+  z-index: 20;
+}
+
+#buttonSuspension {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1001px) {
+  #priceSuspension-cont {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #buttonSuspension .add-to-cart {
+    line-height: 35px;
+    width: 200px;
+    padding: 0;
+    letter-spacing: 0;
+  }
+  .right-other {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 5px 5px 5px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #priceSuspension-cont {
+    padding: 0 17px;
+    text-align: left;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #buttonSuspension .add-to-cart {
+    line-height: 35px;
+    width: 150px;
+    padding: 0;
+    letter-spacing: 0;
+  }
+  .right-other {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0px 5px 0px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+.right-other div {
+  width: 50%;
+}
+
+.right-other i {
+  margin-right: 5px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: auto;
+  background: #eee;
+}
+
+#RecoverPasswordForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#CustomerLoginForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#CustomerLoginForm .skipbox {
+  display: none;
+}
+#CustomerLoginForm .skipbox .Guest {
+  display: flex;
+  align-items: center;
+}
+#CustomerLoginForm .skipbox .divider {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #686868;
+  padding: 6px;
+  position: relative;
+  margin: 0 100px;
+}
+#CustomerLoginForm .skipbox .divider:before {
+  content: "";
+  width: 35px;
+  height: 1px;
+  background-color: #686868;
+  position: absolute;
+  left: 40px;
+  top: 22px;
+}
+#CustomerLoginForm .skipbox .divider:after {
+  content: "";
+  width: 35px;
+  height: 1px;
+  background-color: #686868;
+  position: absolute;
+  top: 22px;
+  right: 40px;
+}
+#CustomerLoginForm .skipbox .divider span {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  #CustomerLoginForm {
+    flex-direction: column;
+  }
+  #CustomerLoginForm .skipbox {
+    display: none;
+    margin-left: 0;
+    width: 300px;
+  }
+  #CustomerLoginForm .skipbox .divider {
+    display: none;
+  }
+}

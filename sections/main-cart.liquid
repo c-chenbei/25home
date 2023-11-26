@@ -111,7 +111,6 @@
 
           <div class="cart__item-row cart__checkout-wrapper">
             <button
-              onclick="act2()"
               type="submit"
               name="checkout"
               data-terms-required="{{ settings.cart_terms_conditions_enable }}"
@@ -211,6 +210,18 @@
   })();
 </script>
 <script>
+  $('.cart__checkout').on('click', function(event) {
+    {% comment %} btn--loading {% endcomment %}
+    // 阻止默认提交行为，以便进行自定义处理
+    $(this).addClass('btn--loading');
+    event.preventDefault();
+    act2();
+    if ({{customer | json}}) {
+      window.location.href = '/checkout';
+    }else{
+      window.location.href = '/account/login?affirm=1';
+    }
+  });
   //const cart_discount = JSON.parse(localStorage.getItem('asCartContents'));
   //console.log(cart_discount,'cart_discountcart_discount')
   // 获取包含日期范围的 data-get-value 属性内容
@@ -239,10 +250,6 @@
       }
     })
   }
-  $('.cart__checkout').on('click', function(event) {
-    // 阻止默认提交行为，以便进行自定义处理
-    event.preventDefault();
-  });
 </script>
 <script>
   const body = document.body;
@@ -259,21 +266,17 @@
   `
   body.insertAdjacentHTML('beforeend', inhtml);
   document.addEventListener("DOMContentLoaded", function () {
-    const openModalButton = document.getElementById("openModalButton");
-    const myModal = document.getElementById("myModal");
-    const closeModalButton = document.getElementById("closeModalButton");
-
-    openModalButton.addEventListener("click", function () {
-        myModal.style.display = "block";
+    $("#openModalButton").click(function() {
+        $("#myModal").css("display", "block");
     });
 
-    closeModalButton.addEventListener("click", function () {
-        myModal.style.display = "none";
+    $("#closeModalButton").click(function() {
+        $("#myModal").css("display", "none");
     });
 
-    window.addEventListener("click", function (event) {
-        if (event.target === myModal) {
-            myModal.style.display = "none";
+    $(window).click(function(event) {
+        if (event.target.id === "myModal") {
+            $("#myModal").css("display", "none");
         }
     });
   });
