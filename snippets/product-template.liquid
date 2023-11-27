@@ -46,7 +46,7 @@
     <div class="page-width">
       <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if image_position == 'left' -%}
-          <div class="grid__item {{ product_image_width }} product-single__sticky">
+          <div class="grid__item {{ product_image_width }} product-single__sticky" id="product-single_sticky-top">
             {%- render 'product-images',
               section_id: section_id,
               product: product,
@@ -375,6 +375,7 @@
                     <div class="product-block" {{ block.shopify_attributes }} id="product-form-button">
                       {%- unless product.empty? -%}
                         {% assign deliveryVariants = all_products['white-glove-delivery'].variants %}
+                        {% assign carefreeVariants = all_products['care-free-plan'].variants %}
                         {% comment %} <p style="color:red;margin:0;"><i class="iconfont icon-kuaidi"> </i> Free Shipping: </p> {% endcomment %}
 
                         <div class="whitegloves">
@@ -386,7 +387,7 @@
                             <input type="checkbox" id="deliveryscales" style="margin: 3px 13px 3px 5px;"/>
                             <label for="deliveryscales">Is there an elevator？</label>
                           </div>
-                          <div class="whitegloves-list">
+                          <div class="whitegloves-list" id="whiteglovesid">
                             {% comment %} <label for="deliveryoptions"></label> {% endcomment %}
                             <select id="deliveryoptions" >
                               {%- for datas in deliveryVariants -%}
@@ -394,7 +395,23 @@
                               {%- endfor -%}
                             </select>
                           </div>
+
+                          {% comment %} <div class="whitegloves-title">
+                            <input type="checkbox" id="inputcarefree" style="margin: 3px 13px 3px 5px;"/>
+                            <label for="inputcarefree">Care Free Plan</label>
+                            <span id="carefree-open">ⓘ</span>
+                          </div>
+                          <div class="whitegloves-list" id="carefreeid">
+                            <select id="carefreeptions" >
+                              {%- for datas in carefreeVariants -%}
+                                <option value="{{ datas.id }}">{{ datas.title }}</option>
+                              {%- endfor -%}
+                            </select>
+                          </div> {% endcomment %}
+
                         </div>
+
+                        
                         
                         {% comment %} <div class="product-block"> {% endcomment %}
                           {%- render 'product-form',
@@ -649,16 +666,20 @@
     })
   });
   {% comment %} 显示货期结束 {% endcomment %}
+
   {% comment %} 浮动价格 {% endcomment %}
   let headerElement = document.getElementById("SiteHeader"); // header
   let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
-  let productformbutton = document.getElementById("product-form-button"); // 原架构按钮
-  var distanceToTop = productformbutton.getBoundingClientRect().top + window.scrollY;
-    {% comment %} console.log("距离顶部的位置：" + distanceToTop + " 像素"); {% endcomment %}
+  let productformbutton = document.getElementById("product-single_sticky-top");
+  var distanceToTop = productformbutton.getBoundingClientRect().top + productformbutton.offsetHeight + window.scrollY;
+  {% comment %} console.log(distanceToTop,getDeviceType()) {% endcomment %}
+  distanceToTop += getDeviceType() ? -30 : 300;
     // 添加滚动事件监听器
   window.addEventListener("scroll", function() {
     // 获取当前滚动条的垂直位置
     var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    {% comment %} console.log(scrollTop,distanceToTop) {% endcomment %}
+    
     // 检查是否滚动超过780像素
     if (scrollTop > distanceToTop) {
       priceSuspensionElement.style.top = headerElement.offsetHeight + 'px'
@@ -667,11 +688,25 @@
     }
   });
   {% comment %} 浮动价格结束 {% endcomment %}
+
   {% comment %} 添加购物车 {% endcomment %}
   $('#deliveryscales').on('change', function() {
-    $('.whitegloves-list').toggle()
-    $('.shopify-payment-button').toggle()
-    var isChecked = $(this).prop('checked');
+    $('#whiteglovesid').toggle()
+    if ($('#deliveryscales').is(':checked') || $('#inputcarefree').is(':checked')) {
+      $('.shopify-payment-button').hide();
+    } else {
+      $('.shopify-payment-button').show();
+    }
+    {% comment %} var isChecked = $(this).prop('checked'); {% endcomment %}
+  });
+  $('#inputcarefree').on('change', function() {
+    $('#carefreeid').toggle()
+    if ($('#deliveryscales').is(':checked') || $('#inputcarefree').is(':checked')) {
+      $('.shopify-payment-button').hide();
+    } else {
+      $('.shopify-payment-button').show();
+    }
+    {% comment %} var iscarefree = $(this).prop('checked'); {% endcomment %}
   });
   // 监听 custom-add-cart 的 click 事件
   $('#custom-add-cart').on('click', function() {
@@ -741,6 +776,36 @@
   $(window).click(function(event) {
       if (event.target.id === "myModal") {
           $("#myModal").css("display", "none");
+      }
+  });
+
+  const inhtml2 = `
+  <div id="myModal2" class="taxes-modals">
+    <!-- 模态框内容 -->
+    <div class="taxes-modal">
+      <span class="taxes-modal-close" id="closeModalButton2">&times;</span>
+      <div class="taxes-title">Protect Your Investment with Care Free</div>
+      <div class="taxes-content">
+        <span style="display: flex;">·Accident coverage (stains, rips, chips, burns, etc.) </span>
+        <span style="display: flex;">·Structural failures (damaged frames, hardware and electrical issues)</span>
+        <p style="color:red;"><strong>WIN-WIN Offer: </strong> If no claim is made you are refunded the price of the plan for a future purchase in the form of a voucher</p>
+        <span style="display: flex;">Support available online or via phone, fast repairs and $0 deductible</span>
+      </div>
+    </div>
+  </div>
+  `
+  body.insertAdjacentHTML('beforeend', inhtml2);
+  $("#carefree-open").click(function() {
+      $("#myModal2").css("display", "block");
+  });
+
+  $("#closeModalButton2").click(function() {
+      $("#myModal2").css("display", "none");
+  });
+
+  $(window).click(function(event) {
+      if (event.target.id === "myModal2") {
+          $("#myModal2").css("display", "none");
       }
   });
 </script>

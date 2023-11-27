@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/PC_c0dd6e4f-926e-4569-881e-67df03ee315b.gif",
-            "image_mobile": "shopify:\/\/shop_images\/ef347c51094a0e778262053b8fa4f597_51efee05-f640-430d-8fd0-105cb8b3254e.gif",
+            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1005.gif",
+            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1005.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -41,7 +41,7 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_579885ca-c026-41b2-b2e8-9e7bf3830f55.jpg",
+        "image": "shopify:\/\/shop_images\/03_abcf28ab-902d-40fe-8d7b-d83920d201bd.jpg",
         "countdown_target_show": true
       }
     },

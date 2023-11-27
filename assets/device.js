@@ -19,7 +19,20 @@ function getProductMetafields(productId) {
       }
     });
   }
-  
-  // 调用函数并传递产品 ID
-//   getProductMetafields('YOUR_PRODUCT_ID');
-  
+
+
+// 删除商品
+// fetch('/cart/change.js', {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json'
+//   },
+//   body: JSON.stringify({
+//     quantity: 0,
+//     id: variant_id
+//   })
+// })
+// .then(response => response.json())
+// .then(cart => {
+//   // 成功删除后的处理
+// });

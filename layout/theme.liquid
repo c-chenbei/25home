@@ -217,11 +217,11 @@
     
     <link rel="stylesheet" href="{{ 'iconfont.css' | asset_url }}" type="text/css">
 
+    <script src="{{ 'device.js' | asset_url }}"></script>
     <script src="{{ 'vendor-scripts-v10.js' | asset_url | split: '?' | first }}" defer="defer"></script>
     <!-- <script src="{{ 'theme.min.js' | asset_url }}" defer="defer"></script> -->
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     {{ 'jquery.min.js' | asset_url | script_tag }}
-    <script src="{{ 'device.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'twoimg-comparison.js' | asset_url }}" defer="defer"></script>
 
     {%- if request.page_type contains 'customers/' -%}

@@ -10,14 +10,14 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/pages\/black-friday-sale",
+            "link": "shopify:\/\/pages\/cyber-monday-sale",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1009_8fc2e8c4-ebd8-4037-9b02-7cce9158de63.gif",
-            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob11_c75e3f35-5220-46f4-a9de-ffbbe9572e4e.gif",
+            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1009.gif",
+            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1009_b200a3ed-01ff-4c8f-a290-667ffadd7595.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -29,14 +29,14 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/pages\/limited-flash-sale-1",
+            "link": "shopify:\/\/pages\/limited-flash-sale",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-flash-sale.gif",
-            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-flashsale-mob.gif",
+            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1005.gif",
+            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1005.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -54,8 +54,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1926_f1ef9e14-7f73-46d1-8f88-eb04cd9f3973.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-mob11-4_10981fd1-cbfa-4f48-9f0c-9a4a5eb93184.jpg",
+            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1926.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1926.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }

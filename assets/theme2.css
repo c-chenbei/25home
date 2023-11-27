@@ -27,6 +27,7 @@
 
 .whitegloves-list {
   display: none;
+  margin-bottom: 8px;
 }
 
 #priceSuspension {
@@ -47,7 +48,7 @@
   #priceSuspension-cont {
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 42px;
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -168,5 +169,8 @@
   }
   #CustomerLoginForm .skipbox .divider {
     display: none;
+  }
+  .multielectors {
+    width: 300px;
   }
 }
