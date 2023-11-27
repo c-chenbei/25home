@@ -9,7 +9,7 @@
       {%- endif -%}
       <p>{{ 'cart.general.continue_browsing_html' | t: url: routes.all_products_collection_url }}</p>
     </div>
-    <p class="form_title_mod form_title">Cyber Monday price-match guarantee until Dec. 3rd</p>
+    <p class="form_title_mod form_title">{{ section.settings.text2 }}</p>
     <div class="cart_explain_title">
       <p><i class="fa fa-check"></i> Free Shipping: Free shipping for curbside delivery</p>
       <p><i class="fa fa-check"></i> 30-Day Hassle-Free Returns: You have a full 30 days to return it hassle-free</p>
@@ -19,7 +19,7 @@
  
 
   {%- if cart.item_count > 0 -%}
-    <p class="form_title_pc form_title">Cyber Monday price-match guarantee until Dec. 3rd</p>
+    <p class="form_title_pc form_title">{{ section.settings.text2 }}</p>
     
     <form action="{{ routes.cart_url }}" method="post" novalidate data-location="page" id="CartPageForm">
       <div class="cart__page">
@@ -171,6 +171,12 @@
       "label": "Text",
       "default": "<p>·Online purchases are subject to applicable sales taxes.</p>",
       "info": "sale taxes弹窗内容"
+    },
+    {
+      "type": "text",
+      "id": "text2",
+      "label": "活动说明",
+      "default": "Cyber Monday price-match guarantee until Dec. 3rd"
     }
   ]
 }
