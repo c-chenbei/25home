@@ -62,7 +62,7 @@
               </div>
             {%- else -%}
               <a href="{{ link.url }}" class="mobile-nav__link mobile-nav__link--top-level {% if link.title == "FLASH SALE" %} flash-text-shandong{% endif %}
-                {% if link.title == "Cyber Monday" %} flash-text-shandong2{% endif %}"{% if link.active %} data-active="true"{% endif %}>{{ link.title }}</a>
+                {% if forloop.index == 5 %} flash-text-shandong2{% endif %}"{% if link.active %} data-active="true"{% endif %}>{{ link.title }}</a>
             {%- endif -%}
 
             {%- if has_dropdown -%}

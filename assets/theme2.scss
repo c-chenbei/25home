@@ -25,6 +25,9 @@
 .whitegloves-list {
   display: none;
   margin-bottom: 8px;
+  input{
+    margin: 3px 13px 3px 5px;
+  }
 }
 #priceSuspension {
   background-color: var(--colorBody);

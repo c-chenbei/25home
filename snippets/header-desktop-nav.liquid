@@ -30,7 +30,7 @@
       <a href="{{ link.url }}" class="site-nav__link site-nav__link--underline
         {% if has_dropdown %} site-nav__link--has-dropdown{% endif %} 
         {% if link.title == "FLASH SALE" %} flash-text-shandong{% endif %}
-        {% if link.title == "Cyber Monday" %} flash-text-shandong2{% endif %}">
+        {% if forloop.index == 5 %} flash-text-shandong2{% endif %}">
         {{ link.title }}
       </a>
       {%- if is_megamenu -%}

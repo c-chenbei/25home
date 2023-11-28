@@ -1,5 +1,40 @@
 {
   "sections": {
+    "bc33c292-2379-41e9-9356-ddacd272762c": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16911683158243__bc33c292-2379-41e9-9356-ddacd272762c-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/merry-christmas-1127.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/merry-christmas-1127mob.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16911683158243__bc33c292-2379-41e9-9356-ddacd272762c-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467": {
       "type": "promo-grid",
       "blocks": {
@@ -15,6 +50,7 @@
       "block_order": [
         "329637ea-0fed-483c-9ac2-494a8ef4de5e"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,
@@ -90,6 +126,7 @@
     }
   },
   "order": [
+    "bc33c292-2379-41e9-9356-ddacd272762c",
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
     "collection-header",
     "main-collection",
