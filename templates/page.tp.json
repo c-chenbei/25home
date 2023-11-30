@@ -35,61 +35,81 @@
         "autoplay_speed": 5
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "ea00a566-c564-4c52-b2ed-32bb7b1bddae": {
-      "type": "newsletter",
-      "blocks": {
-        "template--16741586043107__ea00a566-c564-4c52-b2ed-32bb7b1bddae-form-1": {
-          "type": "form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--16741586043107__ea00a566-c564-4c52-b2ed-32bb7b1bddae-form-1"
-      ],
-      "settings": {
-        "color_background": "#f9f9f9",
-        "color_text": "#1c1d1d"
-      }
-    },
-    "9a1e8996-c4ab-41f6-8852-555a8fefcb45": {
+    "b4dabb37-0e60-45db-b1aa-da0bcb0cfcc8": {
       "type": "rich-text",
       "blocks": {
-        "template--16741586043107__9a1e8996-c4ab-41f6-8852-555a8fefcb45-heading-1": {
+        "template--16938765582563__b4dabb37-0e60-45db-b1aa-da0bcb0cfcc8-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "Sign up and take a spin"
-          }
-        },
-        "template--16741586043107__9a1e8996-c4ab-41f6-8852-555a8fefcb45-text-1": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Join in 25Home as a valued member and unlock an exclusive opportunity to participate in our exciting <strong>Gift Card Giveaway<\/strong> Event!<\/p><p>By subscribing as our user, you stand a chance to win a remarkable<strong> $2499 gift card<\/strong>, granting you access to an incredible shopping spree like no other. Our Customer Service will Notify the Lucky Winners<\/p>"
+            "title": "Trade And Business Services"
           }
         }
       },
       "block_order": [
-        "template--16741586043107__9a1e8996-c4ab-41f6-8852-555a8fefcb45-heading-1",
-        "template--16741586043107__9a1e8996-c4ab-41f6-8852-555a8fefcb45-text-1"
+        "template--16938765582563__b4dabb37-0e60-45db-b1aa-da0bcb0cfcc8-heading-1"
       ],
       "settings": {
         "align_text": "center",
         "narrow_column": true,
         "divider": false
       }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "9ba94a0b-60b3-4591-9419-1e148b313114": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16938765582563__9ba94a0b-60b3-4591-9419-1e148b313114-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/pc_b6a28c0e-4f22-43ea-baa7-3db788e7cb4b.png",
+            "image_mobile": "shopify:\/\/shop_images\/pc_b6a28c0e-4f22-43ea-baa7-3db788e7cb4b.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16938765582563__9ba94a0b-60b3-4591-9419-1e148b313114-image-1"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "89142cad-e74e-42e9-af2a-7a353792b91e": {
+      "type": "contact-form",
+      "settings": {
+        "title": "JOIN NOW",
+        "text": "",
+        "show_phone": true,
+        "narrow_column": true
+      }
     }
   },
   "order": [
     "e893163b-e28a-4455-8253-fcc8089d9621",
+    "b4dabb37-0e60-45db-b1aa-da0bcb0cfcc8",
     "main",
-    "ea00a566-c564-4c52-b2ed-32bb7b1bddae",
-    "9a1e8996-c4ab-41f6-8852-555a8fefcb45"
+    "9ba94a0b-60b3-4591-9419-1e148b313114",
+    "89142cad-e74e-42e9-af2a-7a353792b91e"
   ]
 }

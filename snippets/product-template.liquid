@@ -373,6 +373,7 @@
 
                   {%- when 'buy_buttons' -%}
                     <div class="product-block" {{ block.shopify_attributes }} id="product-form-button">
+
                       {%- unless product.empty? -%}
                         {% assign deliveryVariants = all_products['white-glove-delivery'].variants %}
                         {% assign carefreeVariants = all_products['care-free-plan'].variants %}
@@ -397,8 +398,7 @@
                           </div>
                         </div>
 
-                        {% comment %} <div class="mulberry-container"></div> {% endcomment %}
-                        
+                        <div class="mulberry-inline-container"></div>
                         {% comment %} <div class="product-block"> {% endcomment %}
                           {%- render 'product-form',
                             form_id: form_id,
@@ -620,6 +620,10 @@
   </div>
 </div>
 <script>
+  {% comment %} document.addEventListener('page:loaded', function() {
+    console.log('222222222222222222222222222222222')
+    console.log(mulberry,'1111')
+  }); {% endcomment %}
   {% comment %} mulberry.core.renderInlineOffer({
     container: '.mulberry-container',
     offer: offer,

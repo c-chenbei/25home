@@ -88,12 +88,20 @@
             "rows_per_page": 20,
             "mobile_flush_grid": false
           }
+        },
+        "a90998e1-7dfb-4fda-a03f-8e2bc0260d57": {
+          "type": "collection_link",
+          "disabled": true,
+          "settings": {
+            "collection_tag": "<h2><\/h2><h2><strong>POPULAR CATEGORY<\/strong><\/h2><p><a href=\"\/collections\/plume-sectional\" target=\"_blank\" title=\"Plume Sofa & Sectional\"><strong>Feathers Sofas<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/crawford-leather-sofa-sectional\" target=\"_blank\" title=\"Crawford Leather Sofa & Sectional\"><strong>Modern Sectionals<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/plume-sectional\" target=\"_blank\" title=\"Plume Sofa & Sectional\"><strong>Beige Sectionals<\/strong><\/a><strong> Gray Sectionals Sectional Couches Modular Sectionals<\/strong><\/p>"
+          }
         }
       },
       "block_order": [
         "collection_description",
         "subcollections",
-        "product_grid"
+        "product_grid",
+        "a90998e1-7dfb-4fda-a03f-8e2bc0260d57"
       ],
       "settings": {
         "enable_sidebar": true,
