@@ -395,23 +395,9 @@
                               {%- endfor -%}
                             </select>
                           </div>
-
-                          {% comment %} <div class="whitegloves-title">
-                            <input type="checkbox" id="inputcarefree"/>
-                            <label for="inputcarefree">25Home Protection Plan</label>
-                            <div id="carefree-open" style="cursor: pointer;">ⓘ</div>
-                          </div>
-                          <div class="whitegloves-list" id="carefreeid">
-                            <select id="carefreeptions" >
-                              {%- for datas in carefreeVariants -%}
-                                <option value="{{ datas.id }}">{{ datas.title }}</option>
-                              {%- endfor -%}
-                            </select>
-                          </div> {% endcomment %}
-
                         </div>
 
-                        
+                        {% comment %} <div class="mulberry-container"></div> {% endcomment %}
                         
                         {% comment %} <div class="product-block"> {% endcomment %}
                           {%- render 'product-form',
@@ -634,6 +620,11 @@
   </div>
 </div>
 <script>
+  {% comment %} mulberry.core.renderInlineOffer({
+    container: '.mulberry-container',
+    offer: offer,
+  }); {% endcomment %}
+
   {% comment %} let collectionsss1 = {{ product | json }}
   console.log(collectionsss1,'productproductproductproductproduct') {% endcomment %}
   {% comment %} let allproducts = {{ all_products['white-glove-delivery'] | json }}
@@ -687,22 +678,14 @@
   {% comment %} 添加购物车 {% endcomment %}
   $('#deliveryscales').on('change', function() {
     $('#whiteglovesid').toggle()
-    if ($('#deliveryscales').is(':checked') || $('#inputcarefree').is(':checked')) {
+    if ($('#deliveryscales').is(':checked')) {
       $('.shopify-payment-button').hide();
     } else {
       $('.shopify-payment-button').show();
     }
     {% comment %} var isChecked = $(this).prop('checked'); {% endcomment %}
   });
-  $('#inputcarefree').on('change', function() {
-    $('#carefreeid').toggle()
-    if ($('#deliveryscales').is(':checked') || $('#inputcarefree').is(':checked')) {
-      $('.shopify-payment-button').hide();
-    } else {
-      $('.shopify-payment-button').show();
-    }
-    {% comment %} var iscarefree = $(this).prop('checked'); {% endcomment %}
-  });
+
   // 监听 custom-add-cart 的 click 事件
   $('#custom-add-cart').on('click', function() {
     handleAddToCart();
@@ -715,16 +698,11 @@
 
   function handleAddToCart() {
     let deliveryValue = $('#deliveryoptions').val();
-    let carefreeValue = $('#carefreeptions').val();
     let scalesCheckvalue = $('#deliveryscales').prop('checked');
-    let carefreevalue = $('#inputcarefree').prop('checked');
     let fetchData = {items: [{id: addcartValue}]};
 
     if (scalesCheckvalue) {
       fetchData.items.unshift({id: deliveryValue});
-    }
-    if (carefreevalue) {
-      fetchData.items.unshift({id: carefreeValue});
     }
 
     fetch(window.Shopify.routes.root + 'cart/add.js', {

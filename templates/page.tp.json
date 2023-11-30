@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/landing-page-pc_9cabaff4-49eb-4f8d-9570-4ed4cd6ff9e8.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/landing-page-mob.jpg",
+            "image": "shopify:\/\/shop_images\/Trade-Program.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Trade-Program-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -27,7 +27,7 @@
         "template--16741586043107__e893163b-e28a-4455-8253-fcc8089d9621-image-1"
       ],
       "settings": {
-        "section_height": "650px",
+        "section_height": "natural",
         "mobile_height": "auto",
         "parallax": false,
         "style": "bars",

@@ -150,7 +150,12 @@
     }
   }
 }
-
+.collection_link{
+  a{
+    text-decoration: underline;
+    padding: 5px 15px;
+  }
+}
 @media screen and (max-width: 1000px) {
   #CustomerLoginForm{
     flex-direction: column;
