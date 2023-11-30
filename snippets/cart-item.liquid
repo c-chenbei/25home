@@ -146,6 +146,10 @@
       </div>
       <div class="code-hint">Flash sale items can't be applied to discount code</div>
     {% endif %}
+    {% if variable contains 'HOT SOFA PICKS' %}
+      <div class="count-down-list"></div>
+      <div class="code-hint">CYBER WEEK 50% OFF</div>
+    {% endif %}
   </div>
 </div>
 <style>
@@ -191,3 +195,7 @@
     color: #cb2929;
   }
 </style>
+{% comment %} <script>
+console.log({{variable | json}},'variablevariable')
+console.log({{product.product | json}},'variablevariable')
+</script> {% endcomment %}

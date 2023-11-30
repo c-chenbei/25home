@@ -1,10 +1,46 @@
 {
   "sections": {
+    "07d87ca7-11e6-4e02-8d19-017a1f83c288": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16884170817763__07d87ca7-11e6-4e02-8d19-017a1f83c288-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/collection-banner-3_a04a227b-0d4e-4aa8-9543-7ac70d49e804.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/collection-banner-mob-3_4b3158b9-642a-4416-a50d-cc4630d25aad.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16884170817763__07d87ca7-11e6-4e02-8d19-017a1f83c288-image-1"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467": {
       "type": "promo-grid",
       "blocks": {
         "329637ea-0fed-483c-9ac2-494a8ef4de5e": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-new-2_8e050a9c-4eb1-46c6-b380-3e1143b6f073.jpg",
             "link": "",
@@ -15,6 +51,7 @@
       "block_order": [
         "329637ea-0fed-483c-9ac2-494a8ef4de5e"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,
@@ -90,6 +127,7 @@
     }
   },
   "order": [
+    "07d87ca7-11e6-4e02-8d19-017a1f83c288",
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
     "collection-header",
     "main-collection",

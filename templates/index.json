@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1009.gif",
-            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1009_b200a3ed-01ff-4c8f-a290-667ffadd7595.gif",
+            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1009-11.29.gif",
+            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1009-11.29.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -54,8 +54,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1926.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1926.jpg",
+            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1926-11.29.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1926-11.29.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -142,6 +142,37 @@
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
+      }
+    },
+    "77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16800481509603__77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "hot-sofa-picks",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16800481509603__77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16800481509603__77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c-collection-1",
+        "template--16800481509603__77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c-collection-2"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false,
+        "per_row": 2,
+        "enable_gutter": true
       }
     },
     "976c332f-9325-4e60-98e2-e7576f5c249d": {
@@ -527,22 +558,6 @@
         "divider": false
       }
     },
-    "background-image-text": {
-      "type": "background-image-text",
-      "disabled": true,
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "Large image with text box",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "shopify:\/\/collections\/all",
-        "focal_point": "80% 0",
-        "layout": "left",
-        "height": 750,
-        "framed": false,
-        "parallax": true
-      }
-    },
     "165778003649565f02": {
       "type": "advanced-content",
       "blocks": {
@@ -881,6 +896,7 @@
     "slideshow",
     "a8c5aae9-e652-461e-bf73-ce0f0328ce67",
     "16541605899760848b",
+    "77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c",
     "976c332f-9325-4e60-98e2-e7576f5c249d",
     "76415bed-98c0-4afe-ba11-c3022a0bfb24",
     "69e5f742-4404-4724-831f-62c720ad05de",
@@ -894,7 +910,6 @@
     "featured-collection",
     "f2dc5a74-1c36-4a8c-8f8e-04da262027b0",
     "1661238415653f32c5",
-    "background-image-text",
     "165778003649565f02",
     "blog-posts",
     "16560549040e4cf3a8",

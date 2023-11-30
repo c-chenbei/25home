@@ -192,7 +192,7 @@
         "text": "<p>Modern compared with comfy, this feather loveseat is designed for a quality life.<\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/01101.png",
+        "image": "shopify:\/\/shop_images\/01_082402b9-f668-49d4-84ac-6f820a2ae6a2.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -242,7 +242,7 @@
     "6e674af9-855e-4fa5-b22e-b552e9d45a0a": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/GIF-03_b316665f-4c74-4b5c-a1d2-5cf82929b358.gif",
+        "image": "shopify:\/\/shop_images\/03_789c3257-daf8-42fa-a2e2-9153351c1d0d.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "UNIQUE STURDY&BOUNCE",
@@ -294,7 +294,7 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_47111b1b-b5e3-40a5-8ffe-d3776ca9e181.gif",
+        "image": "shopify:\/\/shop_images\/07_d6ad8629-4db6-490d-b5cb-72eb1588fffd.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "Modular design",
@@ -312,24 +312,6 @@
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/010_d1427bd5-1afc-4e21-ac15-98eecc94ee63.jpg",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "Diverse Colors",
-        "text": "<p>Choose from 9 stylish colors to find the perfect match for your home's décor. From rich bold tones to airy neutrals, our spectrum of shade options ensures there’s a Feathers sofa to complement your personal taste and space. And we offer free color swatches.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
-    "d5028c99-6fb5-47cd-b831-7a4b5aef648f": {
-      "type": "text-and-image",
-      "settings": {
         "image": "shopify:\/\/shop_images\/10001.gif",
         "image_width": 700,
         "subtitle": "",
@@ -341,7 +323,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -365,7 +347,7 @@
     "e98f6446-12e0-4de3-8e8b-c6abd33c8571": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/1926g.png",
+        "image": "shopify:\/\/shop_images\/05_a3241708-a3e8-4985-9e20-e44a840049c8.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "Line and Curve in Harmony",
@@ -376,7 +358,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -394,7 +376,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -406,7 +388,7 @@
         "text": "",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/01_cddab09c-5e63-47e4-9640-f6562736da96.jpg",
+        "image": "shopify:\/\/shop_images\/01_60e130c5-9ff7-45d3-a4bd-4338274c0203.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -592,7 +574,6 @@
     "c1e2a991-ad27-44f4-9ed7-7bcbf1447338",
     "text-and-image2",
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
-    "d5028c99-6fb5-47cd-b831-7a4b5aef648f",
     "182d5f2c-98f1-4a9d-9d87-11539d1e79fa",
     "e98f6446-12e0-4de3-8e8b-c6abd33c8571",
     "2dbda7cb-8b91-4d98-b6ed-65d727630e0b",

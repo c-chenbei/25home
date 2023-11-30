@@ -1,17 +1,9 @@
 {
   "sections": {
-    "collection-header": {
-      "type": "collection-header",
-      "settings": {
-        "enable": true,
-        "collection_image_enable": true,
-        "parallax": true
-      }
-    },
-    "df20cfee-171e-4962-bf0b-1b2e4e24236c": {
+    "f92fceb7-e167-4783-862f-8bcc159dc3b1": {
       "type": "slideshow",
       "blocks": {
-        "template--16800481050851__df20cfee-171e-4962-bf0b-1b2e4e24236c-image-1": {
+        "template--16951553327331__f92fceb7-e167-4783-862f-8bcc159dc3b1-image-1": {
           "type": "image",
           "settings": {
             "top_subheading": "",
@@ -24,15 +16,15 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/collection-banner-5_2bd43b7d-51c5-4675-bf52-3b9002870c8a.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/collection-banner-mob-5_49a0efb0-c378-4e1e-947b-1418885397ac.jpg",
+            "image": "shopify:\/\/shop_images\/NEW-ARRIVALS-PC.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/NEW-ARRIVALS.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
         }
       },
       "block_order": [
-        "template--16800481050851__df20cfee-171e-4962-bf0b-1b2e4e24236c-image-1"
+        "template--16951553327331__f92fceb7-e167-4783-862f-8bcc159dc3b1-image-1"
       ],
       "settings": {
         "section_height": "natural",
@@ -46,17 +38,17 @@
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467": {
       "type": "promo-grid",
       "blocks": {
-        "b54cb5d7-cfc3-4acb-9a3e-410e5b4a9983": {
+        "329637ea-0fed-483c-9ac2-494a8ef4de5e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-1811_05f53959-5e07-48b8-92e6-5281fdca4ca4.jpg",
+            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-new_61f6801d-8f44-4678-8811-3c2a21ae4df2.jpg",
             "link": "",
             "width": "100"
           }
         }
       },
       "block_order": [
-        "b54cb5d7-cfc3-4acb-9a3e-410e5b4a9983"
+        "329637ea-0fed-483c-9ac2-494a8ef4de5e"
       ],
       "disabled": true,
       "settings": {
@@ -64,6 +56,14 @@
         "gutter_size": 0,
         "space_above": true,
         "space_below": true
+      }
+    },
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false
       }
     },
     "main-collection": {
@@ -117,6 +117,7 @@
       "block_order": [
         "template--15867369095395__eb2e4990-a0ce-4a2e-a35e-c0953e725d6d-text-1"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "left",
         "narrow_column": false,
@@ -125,9 +126,9 @@
     }
   },
   "order": [
-    "collection-header",
-    "df20cfee-171e-4962-bf0b-1b2e4e24236c",
+    "f92fceb7-e167-4783-862f-8bcc159dc3b1",
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
+    "collection-header",
     "main-collection",
     "eb2e4990-a0ce-4a2e-a35e-c0953e725d6d"
   ]

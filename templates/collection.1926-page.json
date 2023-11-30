@@ -1,5 +1,40 @@
 {
   "sections": {
+    "971dc977-1d01-48a9-978d-f0099633b703": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16800480624867__971dc977-1d01-48a9-978d-f0099633b703-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/collection-banner-4_18e110a8-cadc-4f94-b299-0cc925536db9.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/collection-banner-mob-4_5f370d2e-d53d-41ea-8406-26ce727e8215.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16800480624867__971dc977-1d01-48a9-978d-f0099633b703-image-1"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
     "c02fe0a6-7581-405f-aced-77a1c9fe7fb5": {
       "type": "rich-text",
       "blocks": {
@@ -35,6 +70,7 @@
       "block_order": [
         "b54cb5d7-cfc3-4acb-9a3e-410e5b4a9983"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,
@@ -164,6 +200,7 @@
     }
   },
   "order": [
+    "971dc977-1d01-48a9-978d-f0099633b703",
     "c02fe0a6-7581-405f-aced-77a1c9fe7fb5",
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
     "collection-header",
