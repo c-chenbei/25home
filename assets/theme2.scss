@@ -173,6 +173,9 @@
     text-decoration: underline;
     padding: 5px 15px;
   }
+  a:first-of-type {
+    padding-left: 0px;
+  }
 }
 @media screen and (max-width: 1000px) {
   #CustomerLoginForm{

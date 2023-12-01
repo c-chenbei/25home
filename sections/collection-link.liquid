@@ -1,0 +1,36 @@
+{% comment %} <div class="page-full page-content black-five-bg"> {% endcomment %}
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+  <div class="page-width">
+      {% if section.settings.collection_tag != blank %}
+        <div class="collection_link">
+          {{section.settings.collection_tag}}
+        </div>
+      {% endif %}
+  </div>
+{%- if section.settings.divider -%}</div>{%- endif -%}
+{% schema %}
+  {
+    "name": "collectionlink",
+    "class": "index-section collectionlink",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "type": "richtext",
+        "id": "collection_tag",
+        "label": "Text",
+        "default": "<p><strong>POPULAR CATEGORY<\/strong><\/p><p><a href=\"\/collections\/modern-sectionals\" title=\"Modern Sectionals\">Modern Sectionals<\/a> <a href=\"\/collections\/reclining-sofas\" title=\"Reclining Sofas\">Reclining Sofas<\/a> <a href=\"\/collections\/beige-sectionals\" title=\"Beige Sectionals\">Beige Sectionals<\/a> <a href=\"\/collections\/leather-sectionals\" title=\"Leather Sectionals\">Leather Sectionals<\/a>  <a href=\"\/collections\/sandwich-sofas\" title=\"Sandwich Sofas\">Sandwich Sofas<\/a><\/p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "collectionlink"
+      }
+    ]
+  }
+{% endschema %}

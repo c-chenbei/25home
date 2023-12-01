@@ -88,19 +88,12 @@
             "rows_per_page": 20,
             "mobile_flush_grid": false
           }
-        },
-        "a90998e1-7dfb-4fda-a03f-8e2bc0260d57": {
-          "type": "collection_link",
-          "settings": {
-            "collection_tag": "<h2><\/h2><h3><strong>POPULAR CATEGORY<\/strong><\/h3><p><a href=\"\/collections\/leather-sectionals\" target=\"_blank\" title=\"Leather Sectionals\"><strong>Feathers Sofas<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/modern-sectionals\" target=\"_blank\" title=\"Modern Sectionals\"><strong>Modern Sectionals<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/beige-sectionals\" target=\"_blank\" title=\"Beige Sectionals\"><strong>Beige Sectionals<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/gray-sectionals\" title=\"Gray Sectionals\"><strong>Gray Sectionals<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/sectional-couches\" title=\"Sectional Couches\"><strong>Sectional Couches<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/modular-sectionals\" title=\"Modular Sectionals\"><strong>Modular Sectionals<\/strong><\/a><\/p>"
-          }
         }
       },
       "block_order": [
         "collection_description",
         "subcollections",
-        "product_grid",
-        "a90998e1-7dfb-4fda-a03f-8e2bc0260d57"
+        "product_grid"
       ],
       "settings": {
         "enable_sidebar": true,

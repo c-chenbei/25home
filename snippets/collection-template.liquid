@@ -149,10 +149,6 @@
               {%- render 'quick-shop-modal', product: product -%}
             {%- endfor -%}
           {%- endif -%}
-        {%- when 'collection_link' -%}
-          <div class="collection_link">
-            {{block.settings.collection_tag}}
-          </div>
       {%- endcase -%}
     </div>
   {%- endfor -%}
