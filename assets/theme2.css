@@ -70,6 +70,16 @@
     margin: 15px 5px 5px 5px;
     font-size: 16px;
   }
+  .priceSuspension-title p {
+    font-size: 20px;
+    line-height: 25px;
+    color: #9f7b63;
+    font-weight: 900;
+    margin: 0;
+  }
+  .priceSuspension-img {
+    display: none;
+  }
 }
 @media screen and (max-width: 1000px) {
   #priceSuspension-cont {
@@ -94,6 +104,12 @@
     margin: 15px 0px 5px 0px;
     font-size: 12px;
     font-weight: 600;
+  }
+  .priceSuspension-title {
+    display: none;
+  }
+  .priceSuspension-img {
+    width: 76px;
   }
 }
 .right-other div {
@@ -181,4 +197,35 @@
   .multielectors {
     width: 300px;
   }
+}
+.section-header-amend {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+.section-header-amend .breadcrumb {
+  margin: 0;
+}
+.section-header-amend .current-font {
+  font-size: 12.75px;
+  margin-left: 5px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-header-amend {
+    width: 100%;
+    padding: 0 17px;
+  }
+}
+.page-content-custom {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
