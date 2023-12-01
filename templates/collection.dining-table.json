@@ -103,6 +103,13 @@
         "enable_sort": true
       }
     },
+    "c0c6e697-5557-4ea1-bbd9-d9cf9bc3bf07": {
+      "type": "collection-link",
+      "settings": {
+        "divider": false,
+        "collection_tag": "<p><strong>POPULAR CATEGORY<\/strong><\/p><p><a href=\"\/collections\/modern-dining-tables\" title=\"Modern Dining Tables\">Modern Dining Tables<\/a> <a href=\"\/collections\/round-dining-tables\" title=\"Round Dining Tables\">Round Dining Tables<\/a> <a href=\"\/collections\/rectangle-dining-tables\" title=\"Rectangle Dining Tables\">Rectangle Dining Tables<\/a> <a href=\"\/collections\/marble-dining-table\" title=\"Marble Dining Table\">Marble Dining Tables<\/a><\/p>"
+      }
+    },
     "eb2e4990-a0ce-4a2e-a35e-c0953e725d6d": {
       "type": "rich-text",
       "blocks": {
@@ -129,6 +136,7 @@
     "bc33c292-2379-41e9-9356-ddacd272762c",
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
     "main-collection",
+    "c0c6e697-5557-4ea1-bbd9-d9cf9bc3bf07",
     "eb2e4990-a0ce-4a2e-a35e-c0953e725d6d"
   ]
 }

@@ -115,12 +115,32 @@
               "link_text": "30-day postage paid returns",
               "link": ""
             }
+          },
+          "7d857161-a944-4aa6-9e2d-c0f191b98912": {
+            "type": "title_scroll",
+            "settings": {
+              "show_scroll_bar": true,
+              "scroll_bar_title1": "Cyber Week | price guarantee until Dec. 3rd",
+              "scroll_bar_link1": "shopify:\/\/pages\/cyber-monday-sale",
+              "scroll_bar_title2": "Free Shipping Sitewide | 30-Day Returns",
+              "scroll_bar_link2": "shopify:\/\/pages\/shipping-and-delivery",
+              "scroll_bar_title3": "Afterpay&amp;Sezzle | 4 interest-free | Buy Now Pay Later→",
+              "scroll_bar_link3": "shopify:\/\/pages\/buy-now-pay-later",
+              "scroll_bar_title4": "Limited Flash Sale: UP TO 70% OFF | shop now→",
+              "scroll_bar_link4": "shopify:\/\/pages\/limited-flash-sale",
+              "scroll_bar_title5": "",
+              "scroll_bar_link5": "",
+              "hander-autoplay-Speed": "3000",
+              "scroll_background": "#000",
+              "scroll_text": "#fff"
+            }
           }
         },
         "block_order": [
           "1524770014057",
           "1524770292306",
-          "1524770296206"
+          "1524770296206",
+          "7d857161-a944-4aa6-9e2d-c0f191b98912"
         ],
         "settings": {
           "main_menu_link_list": "main-menu",
