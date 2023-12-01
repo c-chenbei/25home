@@ -1,5 +1,13 @@
 {
   "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
     "f92fceb7-e167-4783-862f-8bcc159dc3b1": {
       "type": "slideshow",
       "blocks": {
@@ -56,14 +64,6 @@
         "gutter_size": 0,
         "space_above": true,
         "space_below": true
-      }
-    },
-    "collection-header": {
-      "type": "collection-header",
-      "settings": {
-        "enable": true,
-        "collection_image_enable": false,
-        "parallax": false
       }
     },
     "main-collection": {
@@ -126,9 +126,9 @@
     }
   },
   "order": [
+    "collection-header",
     "f92fceb7-e167-4783-862f-8bcc159dc3b1",
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
-    "collection-header",
     "main-collection",
     "eb2e4990-a0ce-4a2e-a35e-c0953e725d6d"
   ]

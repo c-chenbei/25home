@@ -1,5 +1,13 @@
 {
   "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true
+      }
+    },
     "8817e249-2da8-450b-bb95-61a985d0fa95": {
       "type": "slideshow",
       "blocks": {
@@ -33,14 +41,6 @@
         "style": "bars",
         "autoplay": true,
         "autoplay_speed": 5
-      }
-    },
-    "collection-header": {
-      "type": "collection-header",
-      "settings": {
-        "enable": true,
-        "collection_image_enable": true,
-        "parallax": true
       }
     },
     "1645173779f26ecbf5": {
@@ -91,9 +91,8 @@
         },
         "a90998e1-7dfb-4fda-a03f-8e2bc0260d57": {
           "type": "collection_link",
-          "disabled": true,
           "settings": {
-            "collection_tag": "<h2><\/h2><h2><strong>POPULAR CATEGORY<\/strong><\/h2><p><a href=\"\/collections\/plume-sectional\" target=\"_blank\" title=\"Plume Sofa & Sectional\"><strong>Feathers Sofas<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/crawford-leather-sofa-sectional\" target=\"_blank\" title=\"Crawford Leather Sofa & Sectional\"><strong>Modern Sectionals<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/plume-sectional\" target=\"_blank\" title=\"Plume Sofa & Sectional\"><strong>Beige Sectionals<\/strong><\/a><strong> Gray Sectionals Sectional Couches Modular Sectionals<\/strong><\/p>"
+            "collection_tag": "<h2><\/h2><h3><strong>POPULAR CATEGORY<\/strong><\/h3><p><a href=\"\/collections\/leather-sectionals\" target=\"_blank\" title=\"Leather Sectionals\"><strong>Feathers Sofas<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/modern-sectionals\" target=\"_blank\" title=\"Modern Sectionals\"><strong>Modern Sectionals<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/beige-sectionals\" target=\"_blank\" title=\"Beige Sectionals\"><strong>Beige Sectionals<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/gray-sectionals\" title=\"Gray Sectionals\"><strong>Gray Sectionals<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/sectional-couches\" title=\"Sectional Couches\"><strong>Sectional Couches<\/strong><\/a><strong> <\/strong><a href=\"\/collections\/modular-sectionals\" title=\"Modular Sectionals\"><strong>Modular Sectionals<\/strong><\/a><\/p>"
           }
         }
       },
@@ -207,8 +206,8 @@
     }
   },
   "order": [
-    "8817e249-2da8-450b-bb95-61a985d0fa95",
     "collection-header",
+    "8817e249-2da8-450b-bb95-61a985d0fa95",
     "1645173779f26ecbf5",
     "main-collection",
     "ec082308-b411-432d-abb7-9873c2baf57f",
