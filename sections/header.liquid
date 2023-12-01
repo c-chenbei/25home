@@ -262,19 +262,34 @@
         {%- endif -%}  
 
         {% comment %} 滚动模块  {% endcomment %}
-        {%- if section.settings.show_scroll_bar -%}
-          <div class="header-text-scroll" style='background-color: {{section.settings.scroll_background}};'>
-            <div class="carousel-container" data-scroll-time="{{section.settings.hander-autoplay-Speed}}" style="color:{{section.settings.scroll_text}}">
-              <span class="prev-button"><</span>
-                {{ section.settings.scroll_bar_content }}
-              {% comment %} <div>Very long text that should be truncated with ellipsis</div>
-              <div>Another long text that should be truncated with ellipsis</div>
-              <div>Short text</div>
-              <div>More long text to test ellipsis</div> {% endcomment %}
-              <span class="next-button">></span>
-            </div>
-          </div>
-        {%- endif -%}
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'title_scroll' -%}
+              {%- if block.settings.show_scroll_bar -%}
+                <div class="header-text-scroll" style='background-color: {{block.settings.scroll_background}};'>
+                  <div class="carousel-container" data-scroll-time="{{block.settings.hander-autoplay-Speed}}" style="color:{{block.settings.scroll_text}}">
+                    <span class="prev-button"><</span>
+                      {%- if block.settings.scroll_bar_title1 != blank  -%}
+                      <div><a href="{{ block.settings.scroll_bar_link1 }}" target="_blank" style="color: inherit">{{ block.settings.scroll_bar_title1 }}</a></div>
+                      {%- endif -%}
+                      {%- if block.settings.scroll_bar_title2 != blank  -%}
+                      <div><a href="{{ block.settings.scroll_bar_link2 }}" target="_blank" style="color: inherit">{{ block.settings.scroll_bar_title2 }}</a></div>
+                      {%- endif -%}
+                      {%- if block.settings.scroll_bar_title3 != blank -%}
+                      <div><a href="{{ block.settings.scroll_bar_link3 }}" target="_blank" style="color: inherit">{{ block.settings.scroll_bar_title3 }}</a></div>
+                      {%- endif -%}
+                      {%- if block.settings.scroll_bar_title4 != blank -%}
+                      <div><a href="{{ block.settings.scroll_bar_link4 }}" target="_blank" style="color: inherit">{{ block.settings.scroll_bar_title4 }}</a></div>
+                      {%- endif -%}
+                      {%- if block.settings.scroll_bar_title5 != blank -%}
+                      <div><a href="{{ block.settings.scroll_bar_link5 }}" target="_blank" style="color: inherit">{{ block.settings.scroll_bar_title5 }}</a></div>
+                      {%- endif -%}
+                    <span class="next-button">></span>
+                  </div>
+                </div>
+              {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
 
 
         <div class="page-width">
@@ -456,82 +471,6 @@
         "id": "countdown_target__color",
         "label": "文字颜色",
         "default": "#000"
-      }, 
-      {
-        "type": "paragraph",
-        "content": " ----- 滚动条 ----- "
-      },
-      {
-        "type": "checkbox",
-        "id": "show_scroll_bar",
-        "label": "显示滚动条模块",
-        "default": true
-      },
-      {
-        "type": "html",
-        "id": "scroll_bar_content",
-        "label": "滚动条内容",
-        "default": "<div>Free Shipping Sitewide | 30-Day Returns</div><div>Afterpay | 4 interest-free | Buy Now Pay Later→</div><div>Limited Flash Sale: UP TO 65% OFF | shop now→</div>"
-      },
-      {
-        "type": "select",
-        "id": "hander-autoplay-Speed",
-        "label": "轮播速度",
-        "default": "3000",
-        "options": [
-          {
-            "value": "1000",
-            "label": "1s"
-          },
-          {
-            "value": "2000",
-            "label": "2s"
-          },
-          {
-            "value": "3000",
-            "label": "3s"
-          },
-          {
-            "value": "4000",
-            "label": "4s"
-          },
-          {
-            "value": "5000",
-            "label": "5s"
-          },
-          {
-            "value": "6000",
-            "label": "6s"
-          },
-          {
-            "value": "7000",
-            "label": "7s"
-          },
-          {
-            "value": "8000",
-            "label": "8s"
-          },
-          {
-            "value": "9000",
-            "label": "9s"
-          },
-          {
-            "value": "10000",
-            "label": "10s"
-          }
-        ]
-      },
-      {
-        "type": "color",
-        "id": "scroll_background",
-        "label": "背景颜色",
-        "default": "#000"
-      },
-      {
-        "type": "color",
-        "id": "scroll_text",
-        "label": "文字颜色",
-        "default": "#fff"
       },
       {
         "type": "checkbox",
@@ -770,6 +709,133 @@
             "type": "url",
             "id": "image_with_link2",
             "label": "图片2连接"
+          }
+        ]
+      },
+      {
+        "type": "title_scroll",
+        "name": "文字滚动",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "show_scroll_bar",
+            "label": "显示滚动条模块",
+            "default": true
+          },
+          {
+            "type": "text",
+            "label": "title1",
+            "id": "scroll_bar_title1",
+            "default": "Cyber Week | price guarantee until Dec. 3rd"
+          },
+          {
+            "type": "url",
+            "id": "scroll_bar_link1",
+            "label": "link1"
+          },
+          {
+            "type": "text",
+            "label": "title2",
+            "id": "scroll_bar_title2",
+            "default": "Free Shipping Sitewide | 30-Day Returns"
+          },
+          {
+            "type": "url",
+            "id": "scroll_bar_link2",
+            "label": "link2"
+          },
+          {
+            "type": "text",
+            "label": "title3",
+            "id": "scroll_bar_title3",
+            "default": "Afterpay&amp;Sezzle | 4 interest-free | Buy Now Pay Later→"
+          },
+          {
+            "type": "url",
+            "id": "scroll_bar_link3",
+            "label": "link3"
+          },
+          {
+            "type": "text",
+            "label": "title4",
+            "id": "scroll_bar_title4",
+            "default": "Limited Flash Sale: UP TO 70% OFF | shop now→"
+          },
+          {
+            "type": "url",
+            "id": "scroll_bar_link4",
+            "label": "link4"
+          },
+          {
+            "type": "text",
+            "label": "title5",
+            "id": "scroll_bar_title5"
+          },
+          {
+            "type": "url",
+            "id": "scroll_bar_link5",
+            "label": "link5"
+          },
+          {
+            "type": "select",
+            "id": "hander-autoplay-Speed",
+            "label": "轮播速度",
+            "default": "3000",
+            "options": [
+              {
+                "value": "1000",
+                "label": "1s"
+              },
+              {
+                "value": "2000",
+                "label": "2s"
+              },
+              {
+                "value": "3000",
+                "label": "3s"
+              },
+              {
+                "value": "4000",
+                "label": "4s"
+              },
+              {
+                "value": "5000",
+                "label": "5s"
+              },
+              {
+                "value": "6000",
+                "label": "6s"
+              },
+              {
+                "value": "7000",
+                "label": "7s"
+              },
+              {
+                "value": "8000",
+                "label": "8s"
+              },
+              {
+                "value": "9000",
+                "label": "9s"
+              },
+              {
+                "value": "10000",
+                "label": "10s"
+              }
+            ]
+          },
+          {
+            "type": "color",
+            "id": "scroll_background",
+            "label": "背景颜色",
+            "default": "#000"
+          },
+          {
+            "type": "color",
+            "id": "scroll_text",
+            "label": "文字颜色",
+            "default": "#fff"
           }
         ]
       }

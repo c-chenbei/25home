@@ -52,14 +52,15 @@
     </div>
   {%- else -%}
     {%- assign disable_sticky_header = true -%}
-    <div class="page-width page-content page-content--top">
-      <header class="section-header section-header--flush">
-        {%- render 'breadcrumbs' -%}
-        <h1 class="section-header__title">
+    {% comment %} <div class="page-width page-content page-content--top"> {% endcomment %}
+      {% comment %} <header class="section-header section-header--flush"> {% endcomment %}
+      <header class="section-header-amend">
+        {%- render 'breadcrumbs' -%} <span class="current-font"> {{ collection.title }}</span>
+        {% comment %} <h1 class="section-header__title">
           {{ collection.title }}
-        </h1>
+        </h1> {% endcomment %}
       </header>
-    </div>
+    {% comment %} </div> {% endcomment %}
   {%- endif -%}
 {% else %}
   {%- assign disable_sticky_header = true -%}
@@ -90,13 +91,13 @@
         "type": "checkbox",
         "id": "collection_image_enable",
         "label": "Show collection image",
-        "default": true
+        "default": false
       },
       {
         "type": "checkbox",
         "id": "parallax",
         "label": "Parallax image",
-        "default": true
+        "default": false
       }
     ]
   }

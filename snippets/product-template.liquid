@@ -41,8 +41,13 @@
   {% endunless %}
   data-modal="{{ isModal }}"
 >
+  {%- if settings.show_breadcrumbs and isModal != true -%}
+    <header class="section-header-amend">
+      {%- render 'breadcrumbs' -%} <span class="current-font"> {{ product.title }}</span>
+    </header>
+  {%- endif -%}
   {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
-  <div class="page-content page-content--product">
+  <div class="page-content-custom">
     <div class="page-width">
       <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if image_position == 'left' -%}
@@ -66,10 +71,6 @@
         <div class="grid__item {{ product_description_width }}">
           <div class="product-single__meta">
             <div class="product-block product-block--header">
-              {%- if settings.show_breadcrumbs and isModal != true -%}
-                {%- render 'breadcrumbs' -%}
-              {%- endif -%}
-
               {%- if settings.vendor_enable -%}
                 <div class="product-single__vendor">
                   {%- assign vendor_handle = product.vendor | handleize -%}
@@ -587,7 +588,18 @@
     <div id="priceSuspension">
       <div id="priceSuspension-cont">
         {% assign first_media = product.media[0].preview_image.src %}
-        <img src="{{ first_media | img_url: '76x' }}" id="product_sticky_img" style="width:76px;">
+        <img src="{{ first_media | img_url: '76x' }}" id="product_sticky_img" class="priceSuspension-img">
+        <div class="priceSuspension-title">
+          <p>{{ product.title }}</p>
+          <a class="loox-product" href="#looxReviews">
+            <div
+              class="loox-rating product"
+              data-id="{{ product.id }}"
+              data-rating="{{ product.metafields.loox.avg_rating }}"
+              data-raters="{{ product.metafields.loox.num_reviews }}"
+            ></div>
+          </a>
+        </div>
         <div id="buttonSuspension">
           <span data-product-price class="product__price product__price-savings" id="product_sticky_price">
             {{ current_variant.price | money }}
@@ -665,9 +677,14 @@
   {% comment %} 浮动价格 {% endcomment %}
   let headerElement = document.getElementById("SiteHeader"); // header
   let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
-  let productformbutton = document.getElementById("product-single_sticky-top");
-  var distanceToTop = productformbutton.getBoundingClientRect().top + productformbutton.offsetHeight + window.scrollY;
-  distanceToTop += getDeviceType() ? -30 : 100;
+  if (getDeviceType()) {
+    let productformbutton = document.getElementById("product-single_sticky-top");
+    var distanceToTop = productformbutton.getBoundingClientRect().top + productformbutton.offsetHeight + window.scrollY - 30;
+  } else {
+    let productformbutton = document.getElementById("AddToCart");
+    var distanceToTop = productformbutton.getBoundingClientRect().top  + window.scrollY;
+  }
+  {% comment %} distanceToTop += getDeviceType() ? -30 : 100; {% endcomment %}
   window.addEventListener("scroll", function() {
     var scrollTop = window.scrollY || document.documentElement.scrollTop;
     {% comment %} console.log(scrollTop,distanceToTop) {% endcomment %}
