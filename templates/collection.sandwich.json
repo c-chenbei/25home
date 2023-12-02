@@ -103,6 +103,13 @@
         "enable_sort": true
       }
     },
+    "3935ca18-28bf-4fb3-b023-0c7f7a50f909": {
+      "type": "collection-link",
+      "settings": {
+        "divider": false,
+        "collection_tag": "<p>POPULAR CATEGORY<br\/><a href=\"\/collections\/modern-sectionals\" title=\"Modern Sectionals\">Modern Sectionals<\/a> <a href=\"\/collections\/sandwich-sofas\" title=\"Sandwich Sofas\">Sandwich Sofas<\/a> <a href=\"\/collections\/modular-sectionals\" title=\"Modular Sectionals\">Modular Sectionals<\/a> <a href=\"\/collections\/reclining-sofas\" title=\"Reclining Sofas\">Reclining Sofas<\/a> <a href=\"\/collections\/leather-sectionals\" title=\"Leather Sectionals\">Leather Sectionals<\/a> <a href=\"\/collections\/sectional-couches\" title=\"Sectional Couches\">Sectional Couches<\/a><\/p>"
+      }
+    },
     "fed6b8bf-4424-4995-ac81-844cca8fa10d": {
       "type": "rich-text",
       "blocks": {
@@ -137,6 +144,7 @@
     "299504d7-cf50-4a85-910e-c64b15337752",
     "1645173779f26ecbf5",
     "main-collection",
+    "3935ca18-28bf-4fb3-b023-0c7f7a50f909",
     "fed6b8bf-4424-4995-ac81-844cca8fa10d"
   ]
 }

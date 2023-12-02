@@ -698,7 +698,8 @@
         "cc676dbf-0432-45f6-aead-98cdc40a44b1"
       ],
       "custom_css": [
-        ".slideshow-wrapper {margin-bottom: 80px;}"
+        ".slideshow-wrapper {margin-bottom: 80px;}",
+        "@media screen and (max-width: 1000px) {.slideshow-wrapper {margin-bottom: 25px;}}"
       ],
       "settings": {
         "section_height": "natural",

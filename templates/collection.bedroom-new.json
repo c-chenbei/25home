@@ -67,6 +67,13 @@
         "enable_sort": true
       }
     },
+    "5d339dde-7c92-4bee-b9dd-ac1b45c39853": {
+      "type": "collection-link",
+      "settings": {
+        "divider": false,
+        "collection_tag": "<p><strong>POPULAR CATEGORY<\/strong><br\/><\/p><p><a href=\"\/collections\/leather-beds\" title=\"Leather Beds\">Leather Beds<\/a> <a href=\"\/collections\/queen-beds\" title=\"Queen Beds\">Queen Beds<\/a> <a href=\"\/collections\/king-beds\" title=\"King Beds\">King Beds<\/a> <a href=\"\/collections\/beige-beds\" title=\"Beige Beds\">Beige Beds<\/a> <a href=\"\/collections\/gray-beds\" title=\"Gray Beds\">Gray Beds<\/a><\/p>"
+      }
+    },
     "eb2e4990-a0ce-4a2e-a35e-c0953e725d6d": {
       "type": "rich-text",
       "blocks": {
@@ -92,6 +99,7 @@
     "collection-header",
     "752e95b7-9dd8-4f8a-bc4b-f826b2d9b467",
     "main-collection",
+    "5d339dde-7c92-4bee-b9dd-ac1b45c39853",
     "eb2e4990-a0ce-4a2e-a35e-c0953e725d6d"
   ]
 }

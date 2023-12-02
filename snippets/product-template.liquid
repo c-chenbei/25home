@@ -149,7 +149,7 @@
                     </div>
                   {%- when 'description' -%}
                     <div
-                      class="product-block{% if block.settings.is_tab %} product-block--tab{% endif %}"
+                      class="product-block custom-description{% if block.settings.is_tab %} product-block--tab{% endif %}"
                       {{ block.shopify_attributes }}
                     >
                       {%- render 'product-description',

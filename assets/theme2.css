@@ -227,6 +227,35 @@
     width: 100%;
     padding: 0 17px;
   }
+  .appear-delay {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+  .custom-description h2 {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+  .product-single__title {
+    font-size: 16px;
+  }
+  #insta-feed h2 {
+    font-size: 14px;
+  }
+  .theme-block h2 {
+    font-size: 14px;
+  }
+  .custom__item-inner h2 {
+    font-size: 14px;
+  }
+  .article__grid-meta .article__title {
+    display: block;
+    font-size: 13px;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+  .index-section {
+    margin: 25px 0;
+  }
 }
 .page-content-custom {
   padding-top: 0px;
