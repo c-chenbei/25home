@@ -177,6 +177,13 @@
         "title": ""
       }
     },
+    "cb42a8ee-80b8-4d6d-a7c5-219556736c2f": {
+      "type": "collection-link",
+      "settings": {
+        "divider": false,
+        "collection_tag": "<p><strong>POPULAR CATEGORIES<\/strong><\/p><p><a href=\"\/collections\/feathers-sofas\" title=\"Feathers Sofas\">Feathers Sofas<\/a> <a href=\"\/collections\/modern-sectionals\" title=\"Modern Sectionals\">Modern Sectionals<\/a> <a href=\"\/collections\/beige-sectionals\" title=\"Beige Sectionals\">Beige Sectionals<\/a> <a href=\"\/collections\/gray-sectionals\" title=\"Gray Sectionals\">Gray Sectionals<\/a> <a href=\"\/collections\/sectional-couches\" title=\"Sectional Couches\">Sectional Couches<\/a> <a href=\"\/collections\/modular-sectionals\" title=\"Modular Sectionals\">Modular Sectionals<\/a><\/p>"
+      }
+    },
     "479b4007-2342-476d-8729-d09b7cc5f3f2": {
       "type": "rich-text",
       "blocks": {
@@ -204,6 +211,7 @@
     "1645173779f26ecbf5",
     "main-collection",
     "ec082308-b411-432d-abb7-9873c2baf57f",
+    "cb42a8ee-80b8-4d6d-a7c5-219556736c2f",
     "479b4007-2342-476d-8729-d09b7cc5f3f2"
   ]
 }
