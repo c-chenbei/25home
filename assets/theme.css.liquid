@@ -1501,27 +1501,31 @@ html {
 .page-width--tiny {
   max-width: 450px;
 }
-
+.page-content,
+.shopify-email-marketing-confirmation__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.shopify-policy__container {
+  max-width: 1000px;
+}
 @media only screen and (max-width:768px) {
   .page-width--flush-small {
     padding: 0;
   }
-}
-
-.page-content,
-.shopify-email-marketing-confirmation__container,
-.shopify-policy__container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  .shopify-policy__container {
+    padding: 40px 17px;
+  }
 }
 
 @media only screen and (min-width:769px) {
-
   .page-content,
-  .shopify-email-marketing-confirmation__container,
-  .shopify-policy__container {
+  .shopify-email-marketing-confirmation__container {
     padding-top: 45px;
     padding-bottom: 75px;
+  }
+  .shopify-policy__container {
+    padding: 45px 40px 75px 40px;
   }
 }
 
