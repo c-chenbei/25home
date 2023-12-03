@@ -171,10 +171,7 @@
 .collection_link{
   a{
     text-decoration: underline;
-    padding: 5px 15px;
-  }
-  a:first-of-type {
-    padding-left: 0px;
+    padding: 5px 15px 5px 0px;
   }
 }
 @media screen and (max-width: 1000px) {
