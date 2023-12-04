@@ -26,6 +26,17 @@
         </div>
       </div>
     </div>
+    {%- style -%}
+      .black-box{
+        background-image: url({{ section.settings.image2 | img_url: 'master' }});
+      }
+      .black-box .black-number{
+        color: {{ section.settings.color_font }}
+      }
+      .black-box .font{
+        color: {{ section.settings.color_font2 }}
+      }
+    {%- endstyle -%}
     {%- endif -%}  
     <div class="rte--nomargin" id="beijingtuziyuan" data-imgbg="{{ section.settings.image | img_url: 'master' }}">
       {{ page.content }}
@@ -47,6 +58,23 @@
       "label": "倒计时",
       "id": "countdown_target_show",
       "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "倒计时背景图"
+    },
+    {
+      "type": "color",
+      "id": "color_font",
+      "label": "倒计时数字",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_font2",
+      "label": "倒计时单位",
+      "default": "#ffffff"
     }
   ]
 }
@@ -83,7 +111,6 @@
       align-items: center;
       width: 110px;
       height: 125px;
-      background-image: url("{{ 'daojishidi.png' | asset_url }}");
       background-repeat: no-repeat;
       background-size: 100% 100%;
       margin: 0 20px;
@@ -101,7 +128,6 @@
     }
     .black-count-down .font {
       font-size: 16px;
-      color: #fff;
       font-weight: 600;
     }
   }
@@ -114,7 +140,6 @@
       align-items: center;
       width: 70px;
       height: 85px;
-      background-image: url("{{ 'daojishidi.png' | asset_url }}");
       background-repeat: no-repeat;
       background-size: 100% 100%;
       margin: 0 10px;
@@ -133,7 +158,6 @@
     }
     .black-count-down .font {
       font-size: 16px;
-      color: red;
       font-weight: 600;
     }
   }
