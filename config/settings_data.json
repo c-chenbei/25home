@@ -120,8 +120,8 @@
             "type": "title_scroll",
             "settings": {
               "show_scroll_bar": true,
-              "scroll_bar_title1": "Cyber Week | price guarantee until Dec. 3rd",
-              "scroll_bar_link1": "shopify:\/\/pages\/cyber-monday-sale",
+              "scroll_bar_title1": "",
+              "scroll_bar_link1": "",
               "scroll_bar_title2": "Free Shipping Sitewide | 30-Day Returns",
               "scroll_bar_link2": "shopify:\/\/pages\/return-and-refund-policy",
               "scroll_bar_title3": "Afterpay&amp;Sezzle | 4 interest-free | Buy Now Pay Later→",
@@ -145,12 +145,12 @@
         "settings": {
           "main_menu_link_list": "main-menu",
           "countdown_target_show": true,
-          "countdown_target_content": "Cyber Week | UP TO 60% OFF | Code: <b>CYBER\/CYBER12<\/b>",
-          "countdown_target_datetime": "2023\/12\/04\/16\/00\/00",
-          "countdown_target_link": "shopify:\/\/pages\/cyber-monday-sale",
-          "countdown_target_img": "shopify:\/\/shop_images\/23714d83d1faac4a6127afe09e9b41d3_d6150433-d3cb-4005-abf4-c480b8e72dd6.jpg",
-          "image_mobile": "shopify:\/\/shop_images\/mob_e5bd5736-c350-4358-92c9-ce2235d649ac.jpg",
-          "countdown_target_bg": "#deb58c",
+          "countdown_target_content": "PRE CHRISTMAS🎄UP TO 48% OFF🎄Code: <b>XMAS<\/b>",
+          "countdown_target_datetime": "2023\/12\/11\/16\/00\/00",
+          "countdown_target_link": "",
+          "countdown_target_img": "shopify:\/\/shop_images\/23714d83d1faac4a6127afe09e9b41d3_412c45af-e0d5-4a6f-a736-20bf4e731c69.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/mob_1232bed6-6202-46ef-aa7e-f48115163cb9.jpg",
+          "countdown_target_bg": "#de8c8c",
           "countdown_target__color": "#ffffff",
           "mega_menu_images": true,
           "main_menu_alignment": "center-left",
@@ -314,7 +314,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2023\/12\/04\/16\/00\/00"
+          "countdown_target_datetimes": "2023\/12\/07\/16\/00\/00"
         }
       }
     },

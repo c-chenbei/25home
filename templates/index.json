@@ -10,14 +10,14 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/pages\/cyber-monday-sale",
+            "link": "shopify:\/\/collections\/sandwich",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1009-11.29.gif",
-            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1009-11.29.gif",
+            "image": "shopify:\/\/shop_images\/merry-christmas-4.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/merry-christmas-1009mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -35,8 +35,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1005.gif",
-            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1005.gif",
+            "image": "shopify:\/\/shop_images\/merrychristmas-flashsale.gif",
+            "image_mobile": "shopify:\/\/shop_images\/merrychristmas-flashsale-mob.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -54,8 +54,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-1926-11.29.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/CYBER-WEEK-SALE-mob-1926-11.29.jpg",
+            "image": "shopify:\/\/shop_images\/merry-christmas1926-1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/merry-christmas-1926mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -73,8 +73,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/1920x890_57975a09-a19c-4891-a6f8-c0542c8bbd01.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/750x1100_5da363a2-41b3-4e7c-ac04-0e62caf029e2.jpg",
+            "image": "shopify:\/\/shop_images\/collection-2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/collection-mob-2.jpg",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
@@ -699,7 +699,7 @@
       ],
       "custom_css": [
         ".slideshow-wrapper {margin-bottom: 80px;}",
-        "@media screen and (max-width: 1000px) {.slideshow-wrapper {margin-bottom: 25px;}}"
+        "@media screen and (max-width: 1000px) {.slideshow-wrapper {margin-bottom: 25px; }}"
       ],
       "settings": {
         "section_height": "natural",

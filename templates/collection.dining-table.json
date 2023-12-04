@@ -24,8 +24,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/merry-christmas-1127.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/merry-christmas-700mob.jpg",
+            "image": "shopify:\/\/shop_images\/iwEcAqNqcGcDAQTRB4AF0QN6BrAFO7atgdBM2QVeodKUFIUBB9IDXGGACAAJomltCgAL0gAgNjM.jpg_720x720q90.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/iwEdAqNqcGcDAQTRAu4F0QK8BrDHIaWh1RmCgQVeodKUFIUAB9IDXGGACAAJomltCgAL0gAJTcg.jpg_720x720q90.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -35,7 +35,7 @@
         "template--16911683158243__bc33c292-2379-41e9-9356-ddacd272762c-image-1"
       ],
       "settings": {
-        "section_height": "650px",
+        "section_height": "natural",
         "mobile_height": "auto",
         "parallax": false,
         "style": "bars",

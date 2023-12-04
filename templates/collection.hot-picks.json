@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/1920x890_a9fef5ff-9c2e-44f9-8726-d129bdc7e4d2.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/750x700-1.jpg",
+            "image": "shopify:\/\/shop_images\/collection-1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/collection-mob-1.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
