@@ -17,7 +17,7 @@
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/Trade-Program.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Trade-Program-mob.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Trade-Program-mob_4f6cc6e8-4b4b-4ebf-9986-010664a70fb6.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -77,7 +77,7 @@
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/pc_66f2ef53-0fd7-4541-8d50-b66e91d6d457.png",
-            "image_mobile": "shopify:\/\/shop_images\/mob.png",
+            "image_mobile": "shopify:\/\/shop_images\/mob01.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -99,7 +99,7 @@
       "type": "contact-form",
       "settings": {
         "title": "JOIN NOW",
-        "text": "",
+        "text": "<p>After receiving your email, we'll respond promptly. Kindly keep an eye on your inbox for correspondence from <a href=\"mailto:trade@25home.com\">trade@25home.com<\/a>. <\/p>",
         "show_phone": true,
         "narrow_column": true
       }
