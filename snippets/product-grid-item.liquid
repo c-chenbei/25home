@@ -38,7 +38,7 @@
   data-product-id="{{ product.id }}"
 >
   {% comment %} 活动角标 {% endcomment %}
-  {% if collection_SALE == true %}
+  {% if product.tags contains 'Flash Sale' %}
     <div class="grid-card__content">
       <span
         class="grid-card__badge"
