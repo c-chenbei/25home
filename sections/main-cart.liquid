@@ -31,12 +31,10 @@
             {% endif %}
             {%- render 'cart-item', product: item -%}
           {%- endfor -%}
-          {% comment %} {%- if White_Glove == false -%}
-            <div style="height: 800px">
-              <div style="font-size: 24px;font-weight: 600;">You Might Need</div>
-              {{ White_Glove }}
-            </div>
-          {% endif %} {% endcomment %}
+
+          {%- if White_Glove == false -%}
+            {%- render 'cart-white-glove-delivery' -%}
+          {% endif %}
         </div>
         {% comment %} 购物车页面结算{% endcomment %}
         <div class="cart__page-col">

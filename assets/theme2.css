@@ -258,3 +258,104 @@
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+@media screen and (min-width: 1001px) {
+  .cart-white .white__title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .cart-white .white__item {
+    display: flex;
+  }
+  .cart-white .white__item .white__image {
+    flex: 0 0 150px;
+    margin-right: 22px;
+  }
+  .cart-white .white__item .white__item-details {
+    flex: 1 1 auto;
+  }
+  .cart-white .white__item .white__item-details .white__item-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__glove--title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__glove--title label {
+    margin-bottom: 0px;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__glove-list #white__glove-options {
+    padding: 6px 10px;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__item-add {
+    float: right;
+    border: 1px solid #2f2e33;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__item-add .white__item-btn {
+    width: 95px;
+    height: 42px;
+    line-height: 42px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .cart-white {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dbcbb9;
+  }
+  .cart-white .white__title {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .cart-white .white__item {
+    display: flex;
+  }
+  .cart-white .white__item .white__image {
+    flex: 0 0 50px;
+    margin-right: 22px;
+  }
+  .cart-white .white__item .white__item-details {
+    flex: 1 1 auto;
+  }
+  .cart-white .white__item .white__item-details .white__item-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__glove--title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__glove--title label {
+    margin-bottom: 0px;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__glove-list #white__glove-options {
+    width: 100%;
+    padding: 4px 5px;
+    font-size: 12px;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__item-add {
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid #2f2e33;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .cart-white .white__item .white__item-details .white__item-subs .white__item-add .white__item-btn {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+  }
+}

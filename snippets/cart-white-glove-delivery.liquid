@@ -1,0 +1,66 @@
+{%- assign whitedeliveryVariant = all_products['white-glove-delivery'] -%}
+{%- assign img_url2 = whitedeliveryVariant | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+{% comment %} {% assign whitedeliveryVariant = all_products['white-glove-delivery'].variants %} {% endcomment %}
+<div class="cart-white">
+  <div class="white__title">You Might Need</div>
+  <div class="white__item">
+    <div class="white__image">
+      <img
+        class="lazyload"
+        data-src="{{ img_url2 }}"
+        data-widths="[180, 360, 540]"
+        data-aspectratio="{{ whitedeliveryVariant.aspect_ratio }}"
+        data-sizes="auto"
+        alt="{{ whitedeliveryVariant.title | escape }}"
+      >
+    </div>
+    <div class="white__item-details">
+      <div class="white__item-title">{{ whitedeliveryVariant.title }}</div>
+      <div class="white__item-subs">
+        <div class="white__glove--title">
+          <input type="checkbox" id="white__glove-delivery" checked>
+          <label for="white__glove-delivery">Is there an elevator？</label>
+        </div>
+        <div class="white__glove-list" id="white__glove-id">
+          {% comment %} <label for="white__glove-options"></label> {% endcomment %}
+          <select id="white__glove-options">
+            {%- for datas in whitedeliveryVariant.variants -%}
+              <option value="{{ datas.id }}">{{ datas.title }}</option>
+            {%- endfor -%}
+          </select>
+        </div>
+        <div class="white__item-add">
+          <div class="white__item-btn">Add</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $('#white__glove-delivery').on('change', function() {
+    $('#white__glove-id').toggle()
+    $('.white__item-add').toggle()
+  });
+  $('.white__item-btn').on('click', function() {
+    $(this).addClass('btn--loading');
+    let wdeliveryValue = $('#white__glove-options').val();
+    let wscalesCheckvalue = $('#white__glove-delivery').prop('checked');
+    if (wscalesCheckvalue) {
+      let wfetchData = {items: [{id: wdeliveryValue}]};
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest'
+        },
+        body: JSON.stringify(wfetchData)
+      })
+      .then(response => {
+        window.location.reload()
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    }
+  });
+</script>
