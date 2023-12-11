@@ -101,13 +101,18 @@
             {{ product.final_price | money }}
           </span>
         {% else %}
-          <span class="cart__price">
+          {% if variable contains 'Flash Sale' %}
+            <span class="cart__price cart__price--strikethrough">
+              {{ product.product.compare_at_price | money }}
+            </span>
+          {% endif %}
+          <span class="cart__price" style="{% if variable contains 'Flash Sale' %} color: #cb2929 {% endif %}">
             {{ product.original_price | money }}
           </span>
         {% endif %}
         {% comment %} product.original_price=0 就是赠品 显示他的划线价  {% endcomment %}
         {% if product.original_price == 0 %}
-          <p class="cj_compare_at_price" data-detection_price="{{product.original_price}}">{{ product.product.compare_at_price | money }}</p>
+          <p class="cj_compare_at_price">{{ product.product.compare_at_price | money }}</p>
         {% endif %}
         
 
