@@ -394,16 +394,17 @@
       "type": "hero-video",
       "settings": {
         "title": "",
+        "video_link": "shopify:\/\/products\/25home-exclusive-freebie",
         "title_size": 80,
         "subheading": "",
         "link_text": "",
-        "link": "shopify:\/\/products\/piano-sofa",
+        "link": "",
         "color_accent": "rgba(0,0,0,0)",
         "text_align": "vertical-center horizontal-center",
         "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/bdbc33e242e447a09129a5e7d09e9d66.mp4",
         "overlay_opacity": 0,
         "section_height": "100vh",
-        "mobile_height": "100vh"
+        "mobile_height": "250px"
       }
     },
     "1662091818f72278f9": {

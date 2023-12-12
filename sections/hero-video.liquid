@@ -51,6 +51,7 @@
   class="video-parent-section hero hero--{{ section.id }} hero--{{ section.settings.section_height }} hero--mobile--{{ section.settings.mobile_height }}"
   data-mobile-natural="false"
   data-aos="hero__animation">
+  <a href="{{ section.settings.video_link }}" style="height:100%;display: block;">
 
   <div class="hero__media hero__media--{{ section.id }}">
     <div class="hero__media-container">
@@ -96,6 +97,7 @@
 
     </div>
   </div>
+  </a>
 
   <div class="hero__text-wrap">
     <div class="page-width">
@@ -158,6 +160,11 @@
         "id": "title",
         "label": "Heading",
         "default": "Bring your\nbrand to life."
+      },
+      {
+        "type": "url",
+        "id": "video_link",
+        "label": "video link"
       },
       {
         "type": "range",

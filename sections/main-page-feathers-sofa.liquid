@@ -2,23 +2,38 @@
   {%- render 'breadcrumbs' -%}
 </header>
 <div class="main-feathers-sofa">
-  <div class="bannders_img">
-    <a class="bannder_a" href="{{ block.settings.links }}"></a>
-    <img class="shemei_img" src="{{ block.settings.bannder_img | img_url: 'master' }}" alt="img">
-    <div class="hander-title-h6">
-      <div class="title-t">25Home<div class="R">R</div></div>
-      <div class="title-f">Original Design by</div>
-    </div>
-    <div class="bannder_code">
-      <div class="bannder_title1">feathers sofa</div>
-      <div class="bannder_title2">EXTRA <span style="color:#FFD68C">{{ block.settings.title }}</span></div>
-      <div class="bannder_title3">USE CODE: {{ block.settings.title2 }} <div class="shopnow">shop now</div></div>
-    </div>
-  </div>
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {% when 'bannder'%}
+        <div class="bannders_img">
+          <a class="bannder_a" href="{{ block.settings.links }}"></a>
+          <img class="shemei_img" src="{{ block.settings.bannder_img | img_url: 'master' }}" alt="img">
+          <div class="hander-title-h6">
+            <div class="title-t">25Home<div class="R">R</div></div>
+            <div class="title-f">Original Design by</div>
+          </div>
+          <div class="bannder_code">
+            <div class="bannder_title1">feathers sofa</div>
+            <div class="bannder_title2">EXTRA <span style="color:#FFD68C">{{ block.settings.title }}</span></div>
+            <div class="bannder_title3">USE CODE: {{ block.settings.title2 }} <div class="shopnow">shop now</div></div>
+          </div>
+        </div>
+    {% endcase %}
+  {%- endfor -%}
   <div class="width_box carousel-wrapper">
     <div class="swiper">
       <div class="swiper-wrapper">
-          <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-white-plume-sectional?variant=43395027828963"><img src="{{ '222.png' | asset_url }}" alt="img"></a></div>
+        {%- for block in section.blocks -%}
+          {% case block.type %}
+            {% when 'swiper_wrapper'%}
+              <div class="swiper-slide">
+                <a href="{{ block.settings.swiper_link }}">
+                  <img src="{{ block.settings.swiper_img | img_url: 'master' }}" alt="img">
+                </a>
+              </div>
+            {% endcase %}
+          {%- endfor -%}
+          {% comment %} <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-white-plume-sectional?variant=43395027828963"><img src="{{ '222.png' | asset_url }}" alt="img"></a></div>
           <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-dark-grey-polyester-plume-sectional?variant=43395057385699"><img src="{{ '1010.png' | asset_url }}" alt="img"></a></div>
           <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-linen-plume-sectional?variant=43863080173795"><img src="{{ '444.png' | asset_url }}" alt="img"></a></div>
           <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-blue-plume-sectional?variant=44175107195107"><img src="{{ '555.png' | asset_url }}" alt="img"></a></div>
@@ -26,7 +41,7 @@
           <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-vegan-leather-plume-sectional?variant=43866731774179"><img src="{{ '666.png' | asset_url }}" alt="img"></a></div>
           <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-boucle-white-plume-sectional?variant=43844850942179"><img src="{{ '777.png' | asset_url }}" alt="img"></a></div>
           <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-dark-gray-plume-sectional?variant=42796168544483"><img src="{{ '888.png' | asset_url }}" alt="img"></a></div>
-          <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-vegan-leather-plume-sectional?variant=43866732134627"><img src="{{ '999.png' | asset_url }}" alt="img"></a></div>
+          <div class="swiper-slide"><a href="https://25home.com/collections/plume-sofa/products/aalto-boutique-vegan-leather-plume-sectional?variant=43866732134627"><img src="{{ '999.png' | asset_url }}" alt="img"></a></div> {% endcomment %}
       </div>
       <div class="swiper-button-prev swiper-button-top"><</div>
       <div class="swiper-button-next swiper-button-top">></div>
@@ -136,7 +151,6 @@
     {
       "type": "bannder",
       "name": "bannder",
-      "limit": 1,
       "settings": [
         {
           "type": "image_picker",
@@ -159,6 +173,23 @@
           "id": "title2",
           "label": "USE CODE",
           "default": "SUPER15"
+        }
+      ]
+    },
+    {
+      "type": "swiper_wrapper",
+      "name": "swiper_wrapper",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "swiper_img",
+          "label": "swiper_img"
+        },
+        {
+          "type": "url",
+          "id": "swiper_link",
+          "label": "link"
         }
       ]
     },
