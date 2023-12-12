@@ -7521,7 +7521,7 @@ lazySizesConfig.expFactor = 4;
   // faq 手风车
   theme.windmill = function() {
     const accordionItems = document.querySelectorAll('.accordion-item');
-    accordionItems.forEach(item => {
+    accordionItems.forEach((item,index) => {
       const header = item.querySelector('.accordion-header');
       const content = item.querySelector('.accordion-content');
       const toggleIcon = header.querySelector('.toggle-icon');
@@ -7542,6 +7542,9 @@ lazySizesConfig.expFactor = 4;
           toggleIcon.textContent = '-';
         }
       });
+      if (index === 0) {
+        header.click();
+      }
     });
   }
 

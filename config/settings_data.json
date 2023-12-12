@@ -146,7 +146,7 @@
           "main_menu_link_list": "main-menu",
           "countdown_target_show": true,
           "countdown_target_content": "PRE CHRISTMAS🎄UP TO 48% OFF🎄Code: <b>XMAS<\/b>",
-          "countdown_target_datetime": "2023\/12\/11\/16\/00\/00",
+          "countdown_target_datetime": "2023\/12\/18\/16\/00\/00",
           "countdown_target_link": "",
           "countdown_target_img": "shopify:\/\/shop_images\/23714d83d1faac4a6127afe09e9b41d3_412c45af-e0d5-4a6f-a736-20bf4e731c69.jpg",
           "image_mobile": "shopify:\/\/shop_images\/mob_1232bed6-6202-46ef-aa7e-f48115163cb9.jpg",
@@ -314,7 +314,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2023\/12\/11\/16\/00\/00"
+          "countdown_target_datetimes": "2023\/12\/14\/16\/00\/00"
         }
       }
     },
@@ -362,12 +362,6 @@
           "heading": "Sezzle Checkout Button",
           "template": "Checkout with %%logo%%",
           "mode": "light"
-        }
-      },
-      "4314224506098761161": {
-        "type": "shopify:\/\/apps\/omega-pinterest-tag\/blocks\/app-embed-block\/136e8791-2d03-4768-b1f4-95b67b07067f",
-        "disabled": false,
-        "settings": {
         }
       }
     }

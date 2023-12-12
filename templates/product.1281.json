@@ -4,7 +4,7 @@
       "type": "main-product",
       "blocks": {
         "907cef5b-a392-4eee-a648-d1d703b05b97": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "contentSize": 16,
@@ -190,14 +190,14 @@
       "settings": {
         "subtitle": "",
         "title": "",
-        "text": "<p>Our L-shaped leather sectional creates a welcoming social area with the spacious seated design made for relaxing conversations.<\/p>",
+        "text": "",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/02_69f8bb08-74f6-4963-8c08-32e00e64bdc4.png",
+        "image": "shopify:\/\/shop_images\/03_08c9f483-ecb5-41b2-95a4-415c57c7a718.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 650,
-        "framed": true,
+        "framed": false,
         "parallax": false
       }
     },
@@ -207,8 +207,8 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/0001_3483e7e8-2836-44b8-9c18-d3edd2875bbc.jpg",
-        "image2": "shopify:\/\/shop_images\/04_a6eea460-2942-4b80-81a8-392c6a033ae8.jpg",
+        "image": "shopify:\/\/shop_images\/1_0002_08_b05932f1-8ef4-47c4-ad8e-0421bf3b4dc5.jpg",
+        "image2": "shopify:\/\/shop_images\/1_0001_09_1dadbaf8-8438-4495-9f59-284ce2294490.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "Genuine leather",
@@ -326,7 +326,7 @@
         "f3f24f1e-b63f-4e96-9af3-8b59cd1c8200": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/002_0001.jpg",
+            "image": "shopify:\/\/shop_images\/1_0003_07_6ebd3c0f-5c0b-4113-bb50-b86c1ead71ad.jpg",
             "link": "",
             "width": "50%",
             "alignment": "top-middle"
@@ -369,7 +369,7 @@
         "text": "",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/5aa540276382f3fc583ee09a042ea077.png",
+        "image": "shopify:\/\/shop_images\/04_9ab4a7eb-5e4b-4904-9f8f-a2b9f08132c7.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 650,
@@ -446,7 +446,7 @@
       "type": "apps",
       "blocks": {
         "e13cef9d-2017-4252-8d6d-7873814950e5": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,

@@ -390,84 +390,20 @@
         "divider": false
       }
     },
-    "166123871604845a26": {
-      "type": "slideshow",
-      "blocks": {
-        "645742b5-edec-4413-8dbb-c9af84475c78": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "shopify:\/\/products\/piano-sofa",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/BLACK-FRIDAY-NEW-ARRIVAL11.24.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/BLACK-FRIDAY-Contemporary-Luxury-mob_c5231e1b-e9d5-4c65-98aa-024fa5eee18f.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "1661238716ba9313fd-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/hygge-sofas-sectionals",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#fcf4ef",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/1003-2.png",
-            "image_mobile": "shopify:\/\/shop_images\/2_4fb2ca33-e56e-4184-b94f-67cde912796e.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "1661238716ba9313fd-0": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "Pad & Box Collection",
-            "title": "",
-            "title_size": 40,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/pad-sofa",
-            "link_text": "Shop Now",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/2_d1646135-d09a-4af0-baa8-d2f223871386.png",
-            "image_mobile": "shopify:\/\/shop_images\/2-m_7c4db3b5-4f74-4ba5-b1c4-74aa0164bdfe.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "645742b5-edec-4413-8dbb-c9af84475c78",
-        "1661238716ba9313fd-1",
-        "1661238716ba9313fd-0"
-      ],
-      "custom_css": [
-        ".hero__link a.btn {color: #e8a06c !important;}"
-      ],
+    "cb1ef09f-bf66-458f-b393-48214b859d9a": {
+      "type": "hero-video",
       "settings": {
-        "section_height": "natural",
-        "mobile_height": "auto",
-        "parallax": false,
-        "style": "dots",
-        "autoplay": true,
-        "autoplay_speed": 5
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "",
+        "link": "shopify:\/\/products\/piano-sofa",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/bdbc33e242e447a09129a5e7d09e9d66.mp4",
+        "overlay_opacity": 0,
+        "section_height": "100vh",
+        "mobile_height": "100vh"
       }
     },
     "1662091818f72278f9": {
@@ -476,7 +412,7 @@
         "title": "",
         "home_featured_products": "new-arrivals",
         "per_row": 4,
-        "rows": 1,
+        "rows": 2,
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
@@ -716,6 +652,8 @@
         "ae77543c-6a99-43dd-b339-827dede42fea": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
+            "title_color": "",
+            "alignment": "center",
             "html_area": ""
           }
         }
@@ -905,7 +843,7 @@
     "ba9aef6b-b619-427d-b916-5bd5eb2924f0",
     "1645791937abcdc3ed",
     "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d",
-    "166123871604845a26",
+    "cb1ef09f-bf66-458f-b393-48214b859d9a",
     "1662091818f72278f9",
     "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4",
     "featured-collection",
