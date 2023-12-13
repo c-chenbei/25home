@@ -365,7 +365,7 @@
                         {% endif %}
                       {% endfor %}
                     </div>
-
+                    <div>{{product.metafields.custom.introduce}}</div>
                     {% comment %}
                       {% unless product.metafields.custom.stock==blank %}
                         <p style="font-size:1.0em;font-weight:bold;margin-bottom:5px;"><b style="font-size:1.0em">•</b> {{product.metafields.custom.stock}}</p>
@@ -552,6 +552,8 @@
                     <div>
                       {%- render 'countdown_timer', product: product, block: block.settings -%}
                     </div>
+                  {%- when 'introduce' -%}
+                    <div>{{product.metafields.custom.introduce }}</div>
                 {%- endcase -%}
               {%- else -%}
                 <div
@@ -632,6 +634,7 @@
   </div>
 </div>
 <script>
+  console.log({{product.metafields.custom.introduce }})
   {% comment %} let collectionsss1 = {{ product | json }}
   console.log(collectionsss1,'productproductproductproductproduct') {% endcomment %}
   {% comment %} let allproducts = {{ all_products['white-glove-delivery'] | json }}

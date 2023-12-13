@@ -5,7 +5,7 @@
   {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'bannder'%}
-        <div class="bannders_img">
+        <div class="bannders_img feathers-margin-bottom">
           <a class="bannder_a" href="{{ block.settings.links }}"></a>
           <img class="shemei_img" src="{{ block.settings.bannder_img | img_url: 'master' }}" alt="img">
           <div class="hander-title-h6">
@@ -14,13 +14,13 @@
           </div>
           <div class="bannder_code">
             <div class="bannder_title1">feathers sofa</div>
-            <div class="bannder_title2">EXTRA <span style="color:#FFD68C">{{ block.settings.title }}</span></div>
-            <div class="bannder_title3">USE CODE: {{ block.settings.title2 }} <div class="shopnow">shop now</div></div>
+            <div class="bannder_title2">EXTRA <span style="color:#FFD68C">{{ block.settings.banndertitle }}</span></div>
+            <div class="bannder_title3">USE CODE: {{ block.settings.banndertitle2 }} <div class="shopnow">shop now</div></div>
           </div>
         </div>
     {% endcase %}
   {%- endfor -%}
-  <div class="width_box carousel-wrapper">
+  <div class="width_box carousel-wrapper feathers-margin-bottom">
     <div class="swiper">
       <div class="swiper-wrapper">
         {%- for block in section.blocks -%}
@@ -47,72 +47,114 @@
       <div class="swiper-button-next swiper-button-top">></div>
     </div>
   </div>
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {% when 'feathers_Equilibrium'%}
+      <div class="feathers-Equilibrium feathers-margin-bottom">
+        <img class="lazyload shemei_img" src="{{ block.settings.Equilibrium_img | img_url: 'master' }}" alt="img">
+      </div>
+    {% endcase %}
+  {%- endfor -%}
 
-  <div class="feathers-Equilibrium">
-    <img class="lazyload shemei_img" src="{{ 'Equilibrium.png' | asset_url }}" alt="img">
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {% when 'feathers_box'%}
+      <div class="width_box feathers-box feathers-margin-bottom">
+        <div class="feathers-feature">
+          <div class="rows-item text-rights">
+            <div class="item-title">Disassemble<div class="item-title-bg">25 Home</div></div>
+            <div class="item-font">The thoughtful zipper design allows the cover of the Plume couch to be removed, making it easy to wash and clean. The covers are made of a breathable fabric that is machine washable, keeping your feather sofa fresh.</div>
+          </div>
+          <img class="items_img" src="{{ block.settings.one_img | img_url: 'master' }}" alt="img">
+        </div>
+        <div class="feathers-feature">
+          <img class="items_img text-rights" src="{{ block.settings.two_img | img_url: 'master' }}" alt="img">
+          <div class="rows-item">
+            <div class="item-title">modular design<div class="item-title-bg">25 Home</div></div>
+            <div class="item-font">Our Plume feather sofa has a modular design so you can customize your configuration to perfectly fit your space.</div>
+            <div class="item-btn"><a href="{{ block.settings.two_link }}">shop now</a></div>
+          </div>
+        </div>
+        <div class="feathers-feature">
+          <div class="rows-item text-rights">
+            <div class="item-title">BETTER MATERIALS<div class="item-title-bg">25 Home</div></div>
+            <div class="item-font">With removable and washable sofa covers, the Plume Sectional Sofa offers the perfect solution for hassle-free cleaning. The material is wear-resistant and scratch-resistant. Sofa covers can be easily removed for cleaning and replacement. The high-density foam and fluffy feathers embrace your body, making it your favorite place to relax for the next decades.</div>
+          </div>
+          <img class="items_img" src="{{ block.settings.three_img | img_url: 'master' }}" alt="img">
+        </div>
+      </div>
+    {% endcase %}
+  {%- endfor -%}
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {% when 'feathers_gongyi'%}
+      <div class="feathers-gongyi feathers-margin-bottom">
+        <img  class="lazyload shemei_img" src="{{ block.settings.gongyi_img | img_url: 'master' }}" alt="img" >
+        <div class="gongyi-hander">
+          <div class="gongyi-title">Unique Sturdy & Built to Last Over a Decade</div>
+          <div class="gongyi-text">
+            Our Feathers sofa provides up to 10 years of unwavering comfort and support thanks to its premium materials and expert craftsmanship. Sink into plush relaxation you can enjoy today and for years to come. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.</div>
+        </div>
+      </div>
+    {% endcase %}
+  {%- endfor -%}
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {% when 'feathers_Diverse'%}
+      <div class="width_box feathers-Diverse feathers-margin-bottom">
+        <div class="feathers-feature">
+          <div class="rows-item">
+            <div class="item-title">Diverse Colors<div class="item-title-bg">25 Home</div></div>
+            <div class="item-font">Choose from 9 stylish colors to find the perfect match for your home's décor. From rich bold tones to airy neutrals, our spectrum of shade options ensures there’s a Feathers sofa to complement your personal taste and space. And we offer free color swatches.</div>
+            <div class="item-btn"><a href="{{ block.settings.Diverseone_link }}">shop now</a></div>
+          </div>
+          <img class="items_img" src="{{ block.settings.Diverseone_img | img_url: 'master' }}" alt="img">
+        </div>
+        <div class="feathers-feature">
+          <div class="rows-item">
+            <div class="item-title item-title-s">Versatile Sofa Legs</div>
+            <div class="item-font">Free Sofa Legs Included! The sofa legs come with 2 installation options: flush with the ground or 3inches above the ground, providing convenience for using a robotic vacuum cleaner and other tools for easy cleaning.</div>
+            <div class="item-btn"><a href="{{ block.settings.Diversetwo_link }}">shop now</a></div>
+          </div>
+          <img class="items_img" src="{{ block.settings.Diversetwo_img | img_url: 'master' }}" alt="img">
+        </div>
+        <div class="feathers-feature">
+          <div class="rows-item">
+            <div class="item-title item-title-s">Easy Assembly 10- 15 Mins</div>
+            <div class="item-font">With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks. A one-step solution that frees your hands, without the burden of instruction manual.</div>
+            <div class="item-btn"><a href="{{ block.settings.Diversethree_link }}">shop now</a></div>
+          </div>
+          <img class="items_img" src="{{ block.settings.Diversethree_img | img_url: 'master' }}" alt="img">
+        </div>
+      </div>
+    {% endcase %}
+  {%- endfor -%}
+
+  <div class="feathers-fabric feathers-margin-bottom">
+    <div class="width_box fabric-font">
+      <div class="item-title">TEXTURE FABRIC<div class="item-title-bg">25 Home</div></div>
+      <div class="grid-container">
+        <div class="grid-item">Box 1</div>
+        <div class="grid-item">Box 2</div>
+        <div class="grid-item">Box 3</div>
+        <div class="grid-item">Box 4</div>
+      </div>
+    </div>
   </div>
 
-  <div class="width_box feathers-box">
-    <div class="feathers-feature">
-      <div class="rows-item text-rights">
-        <div class="item-title">Disassemble<div class="item-title-bg">25 Home</div></div>
-        <div class="item-font">The thoughtful zipper design allows the cover of the Plume couch to be removed, making it easy to wash and clean. The covers are made of a breathable fabric that is machine washable, keeping your feather sofa fresh.</div>
-      </div>
-      <img class="items_img" src="{{ 'Disassemble.gif' | asset_url }}" alt="img">
-    </div>
-    <div class="feathers-feature">
-      <img class="items_img text-rights" src="{{ 'modular design.gif' | asset_url }}" alt="img">
-      <div class="rows-item">
-        <div class="item-title">modular design<div class="item-title-bg">25 Home</div></div>
-        <div class="item-font">Our Plume feather sofa has a modular design so you can customize your configuration to perfectly fit your space.</div>
-        <div class="item-btn">shop now</div>
-      </div>
-    </div>
-    <div class="feathers-feature">
-      <div class="rows-item text-rights">
-        <div class="item-title">BETTER MATERIALS<div class="item-title-bg">25 Home</div></div>
-        <div class="item-font">With removable and washable sofa covers, the Plume Sectional Sofa offers the perfect solution for hassle-free cleaning. The material is wear-resistant and scratch-resistant. Sofa covers can be easily removed for cleaning and replacement. The high-density foam and fluffy feathers embrace your body, making it your favorite place to relax for the next decades.</div>
-      </div>
-      <img class="items_img" src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img">
-    </div>
-  </div>
 
-  <div class="feathers-gongyi">
-    <img  class="lazyload shemei_img" src="{{ 'gongyi.png' | asset_url }}" alt="img" >
-    <div class="gongyi-hander">
-      <div class="gongyi-title">Unique Sturdy & Built to Last Over a Decade</div>
-      <div class="gongyi-text">
-        Our Feathers sofa provides up to 10 years of unwavering comfort and support thanks to its premium materials and expert craftsmanship. Sink into plush relaxation you can enjoy today and for years to come. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.</div>
-    </div>
-  </div>
-
-  <div class="width_box feathers-Diverse">
-    <div class="feathers-feature">
-      <div class="rows-item">
-        <div class="item-title">Diverse Colors<div class="item-title-bg">25 Home</div></div>
-        <div class="item-font">Choose from 9 stylish colors to find the perfect match for your home's décor. From rich bold tones to airy neutrals, our spectrum of shade options ensures there’s a Feathers sofa to complement your personal taste and space. And we offer free color swatches.</div>
-        <div class="item-btn"><a>shop now</a></div>
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {% when 'feathers_ins'%}
+      <div class="feathers-ins feathers-margin-bottom">
+        <div class="grid-item"><img src="{{ block.settings.ins_img1 | img_url: 'master' }}" alt="img"></div>
+        <div class="grid-item"><img src="{{ block.settings.ins_img2 | img_url: 'master' }}" alt="img"></div>
+        <div class="grid-item"><img src="{{ block.settings.ins_img3 | img_url: 'master' }}" alt="img"></div>
+        <div class="grid-item"><img src="{{ block.settings.ins_img4 | img_url: 'master' }}" alt="img"></div>
+        <div class="grid-item"><img src="{{ block.settings.ins_img5 | img_url: 'master' }}" alt="img"></div>
       </div>
-      <img class="items_img" src="{{ 'Versatile Sofa Legs.gif' | asset_url }}" alt="img">
-    </div>
-    <div class="feathers-feature">
-      <div class="rows-item">
-        <div class="item-title item-title-s">Versatile Sofa Legs</div>
-        <div class="item-font">Free Sofa Legs Included! The sofa legs come with 2 installation options: flush with the ground or 3inches above the ground, providing convenience for using a robotic vacuum cleaner and other tools for easy cleaning.</div>
-        <div class="item-btn"><a>shop now</a></div>
-      </div>
-      <img class="items_img" src="{{ 'Diverse Colors.gif' | asset_url }}" alt="img">
-    </div>
-    <div class="feathers-feature">
-      <div class="rows-item">
-        <div class="item-title item-title-s">Easy Assembly 10- 15 Mins</div>
-        <div class="item-font">With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks. A one-step solution that frees your hands, without the burden of instruction manual.</div>
-        <div class="item-btn"><a>shop now</a></div>
-      </div>
-      <img class="items_img" src="{{ 'Easy Assembly.png' | asset_url }}" alt="img">
-    </div>
-  </div>
-
+    {% endcase %}
+  {%- endfor -%}
   <div class="feathers-footer">
     <div class="width_box footer-font">
       <div class="footer-left">
@@ -151,6 +193,7 @@
     {
       "type": "bannder",
       "name": "bannder",
+      "limit": 1,
       "settings": [
         {
           "type": "image_picker",
@@ -164,13 +207,13 @@
         },
         {
           "type": "text",
-          "id": "title",
+          "id": "banndertitle",
           "label": "EXTRA",
           "default": "15% OFF"
         },
         {
           "type": "text",
-          "id": "title2",
+          "id": "banndertitle2",
           "label": "USE CODE",
           "default": "SUPER15"
         }
@@ -179,7 +222,6 @@
     {
       "type": "swiper_wrapper",
       "name": "swiper_wrapper",
-      "limit": 1,
       "settings": [
         {
           "type": "image_picker",
@@ -190,6 +232,136 @@
           "type": "url",
           "id": "swiper_link",
           "label": "link"
+        }
+      ]
+    },
+    {
+      "type": "feathers_Equilibrium",
+      "name": "feathers_Equilibrium",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "Equilibrium_img",
+          "label": "Equilibrium_img"
+        }
+      ]
+    },
+    {
+      "type": "feathers_box",
+      "name": "feathers_box",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "one_img",
+          "label": "one_img"
+        },
+        {
+          "type": "url",
+          "id": "one_link",
+          "label": "one_link"
+        },
+        {
+          "type": "image_picker",
+          "id": "two_img",
+          "label": "two_img"
+        },
+        {
+          "type": "url",
+          "id": "two_link",
+          "label": "two_link"
+        },
+        {
+          "type": "image_picker",
+          "id": "three_img",
+          "label": "three_img"
+        },
+        {
+          "type": "url",
+          "id": "three_link",
+          "label": "three_link"
+        }
+      ]
+    },
+    {
+      "type": "feathers_gongyi",
+      "name": "feathers_gongyi",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "gongyi_img",
+          "label": "gongyi_img"
+        }
+      ]
+    },
+    {
+      "type": "feathers_Diverse",
+      "name": "feathers_Diverse",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "Diverseone_img",
+          "label": "Diverseone_img"
+        },
+        {
+          "type": "url",
+          "id": "Diverseone_link",
+          "label": "Diverseone_link"
+        },
+        {
+          "type": "image_picker",
+          "id": "Diversetwo_img",
+          "label": "Diversetwo_img"
+        },
+        {
+          "type": "url",
+          "id": "Diversetwo_link",
+          "label": "Diversetwo_link"
+        },
+        {
+          "type": "image_picker",
+          "id": "Diversethree_img",
+          "label": "Diversethree_img"
+        },
+        {
+          "type": "url",
+          "id": "Diversethree_link",
+          "label": "Diversethree_link"
+        }
+      ]
+    },
+    {
+      "type": "feathers_ins",
+      "name": "feathers_ins",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "ins_img1",
+          "label": "ins_img"
+        },
+        {
+          "type": "image_picker",
+          "id": "ins_img2",
+          "label": "ins_img"
+        },
+        {
+          "type": "image_picker",
+          "id": "ins_img3",
+          "label": "ins_img"
+        },
+        {
+          "type": "image_picker",
+          "id": "ins_img4",
+          "label": "ins_img"
+        },
+        {
+          "type": "image_picker",
+          "id": "ins_img5",
+          "label": "ins_img"
         }
       ]
     },
@@ -229,6 +401,13 @@
     background-size: cover;
     width: 100%;
     height: 79rem;
+  }
+  .feathers-fabric{
+    background: url("{{ 'caizhi_bg.png' | asset_url }}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 58rem;
   }
 </style>
 <script>

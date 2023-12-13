@@ -8,8 +8,8 @@
           "settings": {
             "bannder_img": "shopify:\/\/shop_images\/03_08c9f483-ecb5-41b2-95a4-415c57c7a718.jpg",
             "links": "",
-            "title": "15% OFF",
-            "title2": "SUPER15"
+            "banndertitle": "15% OFF",
+            "banndertitle2": "SUPER15"
           }
         },
         "925621a6-5916-40a3-8c39-dfbefeb304df": {
@@ -17,6 +17,47 @@
           "settings": {
             "swiper_img": "shopify:\/\/shop_images\/1269-1.jpg",
             "swiper_link": ""
+          }
+        },
+        "5298cc41-b85e-4f6f-9ff3-a8c27a63f7c3": {
+          "type": "swiper_wrapper",
+          "settings": {
+            "swiper_img": "shopify:\/\/shop_images\/03_08c9f483-ecb5-41b2-95a4-415c57c7a718.jpg",
+            "swiper_link": ""
+          }
+        },
+        "34379246-1319-443e-8e3b-92381e66a795": {
+          "type": "feathers_Equilibrium",
+          "settings": {
+            "Equilibrium_img": "shopify:\/\/shop_images\/1811T2.jpg"
+          }
+        },
+        "683c7b62-3e79-48bf-b73b-cc1ad6bb8a40": {
+          "type": "feathers_box",
+          "settings": {
+            "one_img": "shopify:\/\/shop_images\/3_d854b97e-264e-4d23-bc66-a774197478fb.png",
+            "one_link": "",
+            "two_img": "shopify:\/\/shop_images\/4_5463bbb9-ff54-4b88-ab8a-1426d6b77cea.jpg",
+            "two_link": "",
+            "three_img": "shopify:\/\/shop_images\/2_4b7a7dd2-4690-4849-a0bd-bfe3af583c5a.jpg",
+            "three_link": ""
+          }
+        },
+        "ee1b0c34-e13a-4aa0-a84f-c611bc228bc6": {
+          "type": "feathers_gongyi",
+          "settings": {
+            "gongyi_img": "shopify:\/\/shop_images\/04_9ab4a7eb-5e4b-4904-9f8f-a2b9f08132c7.jpg"
+          }
+        },
+        "2d19ee57-7be1-460c-a28f-e638bae1b57d": {
+          "type": "feathers_Diverse",
+          "settings": {
+            "Diverseone_img": "shopify:\/\/shop_images\/3_d854b97e-264e-4d23-bc66-a774197478fb.png",
+            "Diverseone_link": "",
+            "Diversetwo_img": "shopify:\/\/shop_images\/4_5463bbb9-ff54-4b88-ab8a-1426d6b77cea.jpg",
+            "Diversetwo_link": "",
+            "Diversethree_img": "shopify:\/\/shop_images\/2_4b7a7dd2-4690-4849-a0bd-bfe3af583c5a.jpg",
+            "Diversethree_link": ""
           }
         },
         "21df913a-427b-41ad-ae28-a03ed45f8eda": {
@@ -44,10 +85,16 @@
       "block_order": [
         "68aa2675-3b35-4d67-8173-ed2cc5507f0f",
         "925621a6-5916-40a3-8c39-dfbefeb304df",
+        "5298cc41-b85e-4f6f-9ff3-a8c27a63f7c3",
+        "34379246-1319-443e-8e3b-92381e66a795",
+        "683c7b62-3e79-48bf-b73b-cc1ad6bb8a40",
+        "ee1b0c34-e13a-4aa0-a84f-c611bc228bc6",
+        "2d19ee57-7be1-460c-a28f-e638bae1b57d",
         "21df913a-427b-41ad-ae28-a03ed45f8eda",
         "17376ea4-aae1-4ed8-bd24-783d7db5fc01",
         "31255909-284b-49f9-8596-2885a47c5eab"
       ],
+      "disabled": true,
       "settings": {
       }
     },
