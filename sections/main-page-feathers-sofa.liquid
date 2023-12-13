@@ -2,7 +2,7 @@
   {%- render 'breadcrumbs' -%}
 </header>
 <div class="main-feathers-sofa">
-  {%- for block in section.blocks -%}
+  {% comment %} {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'bannder'%}
         <div class="bannders_img feathers-margin-bottom">
@@ -128,20 +128,80 @@
         </div>
       </div>
     {% endcase %}
-  {%- endfor -%}
+  {%- endfor -%} {% endcomment %}
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {% when 'feathers_fabric'%}
+        <div class="feathers-fabric feathers-margin-bottom">
+          <div class="width_box fabric-font">
+            <div class="item-title">TEXTURE FABRIC<div class="item-title-bg">25 Home</div></div>
+            <div class="grid-container">
+              <div class="grid-item">
+                <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                <div class="right_box">
+                  <div class="icon_list">
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                  </div>
+                  <div class="right_box_title">polyester</div>
+                  <div class="right_box_text">Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.</div>
+                  <div class="right_box_pice">from <span> $200.00</span></div>
+                  <div class="right_box_btn">BUY NOW  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                <div class="right_box">
+                  <div class="icon_list">
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                  </div>
+                  <div class="right_box_title">polyester</div>
+                  <div class="right_box_text">Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.</div>
+                  <div class="right_box_pice">from <span> $200.00</span></div>
+                  <div class="right_box_btn">BUY NOW  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                <div class="right_box">
+                  <div class="icon_list">
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                  </div>
+                  <div class="right_box_title">polyester</div>
+                  <div class="right_box_text">Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.</div>
+                  <div class="right_box_pice">from <span> $200.00</span></div>
+                  <div class="right_box_btn">BUY NOW  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                <div class="right_box">
+                  <div class="icon_list">
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
+                  </div>
+                  <div class="right_box_title">polyester</div>
+                  <div class="right_box_text">Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.</div>
+                  <div class="right_box_pice">from <span> $200.00</span></div>
+                  <div class="right_box_btn">BUY NOW  </div>
+                </div>
+              </div>
 
-  <div class="feathers-fabric feathers-margin-bottom">
-    <div class="width_box fabric-font">
-      <div class="item-title">TEXTURE FABRIC<div class="item-title-bg">25 Home</div></div>
-      <div class="grid-container">
-        <div class="grid-item">Box 1</div>
-        <div class="grid-item">Box 2</div>
-        <div class="grid-item">Box 3</div>
-        <div class="grid-item">Box 4</div>
-      </div>
-    </div>
-  </div>
-
+            </div>
+          </div>
+        </div>
+    {% endcase %}
+  {%- endfor -%} 
 
   {%- for block in section.blocks -%}
     {% case block.type %}
@@ -330,6 +390,43 @@
           "type": "url",
           "id": "Diversethree_link",
           "label": "Diversethree_link"
+        }
+      ]
+    },
+    {
+      "type": "feathers_fabric",
+      "name": "feathers-fabric",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "fabric_img",
+          "label": "fabric_img"
+        },
+        {
+          "type": "url",
+          "id": "fabric_link",
+          "label": "fabric_link"
+        },
+        {
+          "type": "image_picker",
+          "id": "fabrictwo_img",
+          "label": "fabrictwo_img"
+        },
+        {
+          "type": "url",
+          "id": "fabrictwo_link",
+          "label": "fabrictwo_link"
+        },
+        {
+          "type": "image_picker",
+          "id": "fabricthree_img",
+          "label": "fabricthree_img"
+        },
+        {
+          "type": "url",
+          "id": "fabricthree_link",
+          "label": "fabricthree_link"
         }
       ]
     },

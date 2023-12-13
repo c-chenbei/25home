@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .whitegloves {
   margin-bottom: 15px;
   text-align: left;
@@ -443,9 +442,9 @@
   font-family: "HarmonyOS_Sans_SC_Medium";
 }
 .main-feathers-sofa .width_box {
+  width: 78.2rem;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 .main-feathers-sofa .feathers-margin-bottom {
   margin-bottom: 5rem;
@@ -712,17 +711,17 @@
 .main-feathers-sofa .feathers-fabric .fabric-font .item-title {
   text-transform: uppercase;
   position: relative;
-  top: 6.5rem;
   font-size: 2rem;
   line-height: 2rem;
   font-weight: 500;
   color: #FFFFFF;
   z-index: 2;
-  margin-bottom: 25px;
+  padding-top: 8rem;
+  margin-bottom: 4rem;
 }
 .main-feathers-sofa .feathers-fabric .fabric-font .item-title .item-title-bg {
   position: absolute;
-  top: -25px;
+  top: 7rem;
   left: -17px;
   z-index: -1;
   font-size: 2rem;
@@ -731,10 +730,61 @@
   transform: rotate(-10deg);
   opacity: 0.79;
 }
-.main-feathers-sofa .feathers-fabric .fabric-font .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 两列，每列平均占据剩余空间 */
-  gap: 20px; /* 间隙为 20 像素 */
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item {
+  float: left;
+  display: flex;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  width: 50%;
+}
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item img {
+  width: 50%;
+}
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box {
+  width: 50%;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  padding: 1.2rem 2.2rem;
+}
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .icon_list {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .icon_list img {
+  width: 2rem;
+  height: 2rem;
+}
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_text {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_pice {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  color: #FF9B00;
+  margin-bottom: 0.5rem;
+}
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_pice span {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_btn {
+  cursor: pointer;
+  width: 10rem;
+  font-size: 1rem;
+  background-color: #ffd68c;
+  color: #000000;
+  display: inline-block;
 }
 .main-feathers-sofa .feathers-ins {
   display: grid;
