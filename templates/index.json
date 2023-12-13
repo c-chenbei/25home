@@ -458,27 +458,7 @@
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": false,
-        "view_all": false,
-        "divider": false
-      }
-    },
-    "f2dc5a74-1c36-4a8c-8f8e-04da262027b0": {
-      "type": "rich-text",
-      "blocks": {
-        "b3b310f4-a34c-4363-9306-4f11b8f958ba": {
-          "type": "button",
-          "settings": {
-            "link": "shopify:\/\/collections\/living-room-set",
-            "link_text": "VIEW ALL"
-          }
-        }
-      },
-      "block_order": [
-        "b3b310f4-a34c-4363-9306-4f11b8f958ba"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
+        "view_all": true,
         "divider": false
       }
     },
@@ -848,7 +828,6 @@
     "1662091818f72278f9",
     "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4",
     "featured-collection",
-    "f2dc5a74-1c36-4a8c-8f8e-04da262027b0",
     "1661238415653f32c5",
     "165778003649565f02",
     "blog-posts",

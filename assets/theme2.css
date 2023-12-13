@@ -360,6 +360,85 @@
     text-align: center;
   }
 }
+.introduce {
+  margin: 50px 0px;
+}
+.introduce .introduce-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #9f7b63;
+}
+.introduce .introduce_box {
+  display: flex;
+  justify-content: space-between;
+}
+.introduce .introduce_box .introduce_current_variant {
+  margin-top: 20px;
+  width: 55%;
+}
+.introduce .introduce_box .introduce_current_variant .current_variant .click_svariant {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: rgba(26, 26, 26, 0.12);
+}
+.introduce .introduce_box .introduce_current_variant .current_variant .selected {
+  border-color: #000000;
+}
+.introduce .introduce_box .introduce_current_variant .introduce_metafields {
+  margin-top: 10px;
+}
+.introduce .introduce_box .introduce-img {
+  width: 40%;
+}
+.introduce .kong {
+  height: 30px;
+}
+
+@media screen and (max-width: 1001px) {
+  .introduce {
+    margin-bottom: 30px;
+  }
+  .introduce .introduce-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #9f7b63;
+    margin-bottom: 10px;
+  }
+  .introduce .introduce_box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .introduce .introduce_box .introduce_current_variant {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .introduce .introduce_box .introduce_current_variant .current_variant .click_svariant {
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: rgba(26, 26, 26, 0.12);
+  }
+  .introduce .introduce_box .introduce_current_variant .introduce_metafields {
+    margin-top: 10px;
+  }
+  .introduce .introduce_box .introduce_current_variant .selected {
+    border-color: #000000;
+  }
+  .introduce .introduce_box .introduce-img {
+    width: 100%;
+  }
+  .introduce .kong {
+    height: 30px;
+  }
+}
 .main-feathers-sofa {
   font-family: "HarmonyOS_Sans_SC_Medium";
 }

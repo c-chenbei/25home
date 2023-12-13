@@ -6830,6 +6830,7 @@ lazySizesConfig.expFactor = 4;
       },
   
       updateVariantImage: function(evt) {
+        console.log(evt,'evtevt');
         var variant = evt.detail.variant;
         var sizedImgUrl = theme.Images.getSizedImageUrl(variant.featured_media.preview_image.src, this.settings.imageSize);
   

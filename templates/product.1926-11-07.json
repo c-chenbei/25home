@@ -85,6 +85,18 @@
             "trust_image": "shopify:\/\/shop_images\/pay.jpg"
           }
         },
+        "984a68ac-5826-4e74-84c4-701d88e7684e": {
+          "type": "text",
+          "settings": {
+            "text": "Among the original designs by 25Home, Feathers Sofa stands out as one of the most beloved modular sofas. Choose from a variety of materials and combinations for your modular reclining sofa, featuring wear-resistant, scratch-resistant fabric. Removable and machine-washable sofa covers ensure hassle-free cleaning and replacement. The high-density foam and fluffy feathers provide long-lasting relaxation in your favorite spot for decades to come."
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
         "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
           "type": "tab",
           "settings": {
@@ -130,18 +142,6 @@
           "disabled": true,
           "settings": {
           }
-        },
-        "984a68ac-5826-4e74-84c4-701d88e7684e": {
-          "type": "text",
-          "settings": {
-            "text": "With removable and washable sofa covers, the Plume Sectional Sofa offers the perfect solution for hassle-free cleaning. Also The feathers sofa is an original design by25home and it is incomparably soft!  Featuring customizable reclining seats for superior comfort, you can choose from a variety of materials and combination forms for your modular reclining sofa. The material is wear-resistant and scratch-resistant. Sofa covers can be easily removed for cleaning and replacement. The high-density foam and fluffy feathers embrace your body, making it your favorite place to relax for the next decades."
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "is_tab": false
-          }
         }
       },
       "block_order": [
@@ -156,14 +156,14 @@
         "7d5b8ffc-0906-4cf1-be2a-8234ac628adb",
         "buy_buttons",
         "4324e561-4147-44cb-8662-bce6959f660f",
+        "984a68ac-5826-4e74-84c4-701d88e7684e",
+        "description",
         "e9e4f437-3585-4e39-b542-0e25739e9ed0",
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
         "contact",
-        "share",
-        "984a68ac-5826-4e74-84c4-701d88e7684e",
-        "description"
+        "share"
       ],
       "settings": {
         "sku_enable": false,
@@ -209,8 +209,8 @@
         "image": "shopify:\/\/shop_images\/1_0014_012.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Equilibrium Comfort",
-        "text": "<p>We select the premium foam and feather as the inside filling of the Plume Loveseat. It's softer than 87.3% of the sofas on the market. It's an Loveseat for sinking into<\/p>",
+        "title": "",
+        "text": "<h3><strong>Equilibrium Comfort<\/strong><\/h3><p>We select the premium foam and feathers as the inside filling of the Feathers Sofa. It's softer than 87.3% of the sofas on the market. It's a loveseat for sinking into. Feathers down filling outclasses synthetic or polyester foam alternatives in terms of all-weather comfort, durability, breathability, luxurious aesthetic, and an unsurpassed soft, cloud-like cushioned feel.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -227,8 +227,8 @@
         "image": "shopify:\/\/shop_images\/01.gif",
         "image_width": 700,
         "subtitle": "",
-        "title": "Better materials",
-        "text": "<p>The thoughtful zipper design allows the cover of the Plume couch to be removed, making it easy to wash and clean. The covers are made of a breathable fabric that is machine washable, keeping your feather sofa fresh. <\/p><p>The most fantastic thing is that you can change the whole cover (which we offer in a variety of styles and colors) when you're tired of the same old one. Then, voila! You have a brand new sofa! The removable, breathable covers make maintaining and customizing your Plume Loveseat incredibly simple.<\/p>",
+        "title": "",
+        "text": "<h3><strong>Removable and Washable Covers<\/strong><\/h3><p>Feathers Sofa combines style with practicality, featuring removable and washable covers for effortless maintenance. The machine washable covers ensure long-lasting freshness. Enjoy both style and practicality with the thoughtful design of the Feathers Sofa.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -245,8 +245,8 @@
         "image": "shopify:\/\/shop_images\/GIF-03_b316665f-4c74-4b5c-a1d2-5cf82929b358.gif",
         "image_width": 700,
         "subtitle": "",
-        "title": "UNIQUE STURDY&BOUNCE",
-        "text": "<p>Incorporating Suspension Serpentine Springs, 6-way Elastic Support, and Terylene Mesh for enhanced durability and comfort. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
+        "title": "",
+        "text": "<h3><strong>UNIQUE STURDY&BOUNCE<\/strong><\/h3><p>Incorporating Suspension Serpentine Springs, 6-way Elastic Support, and Terylene Mesh for enhanced durability and comfort. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -297,8 +297,8 @@
         "image": "shopify:\/\/shop_images\/1_47111b1b-b5e3-40a5-8ffe-d3776ca9e181.gif",
         "image_width": 700,
         "subtitle": "",
-        "title": "Modular design",
-        "text": "<p>Our Plume feather sofa has a modular design so you can customize your configuration to perfectly fit your space. Select from our range of components like chaises, corners, and ottomans to create your ideal layout.<\/p>",
+        "title": "",
+        "text": "<h3><strong>Modular design<\/strong><\/h3><p>The Feathers Sofa Series introduces a versatile modular design, catering to various preferences with options like loveseats, 4-seater sofas, 6-seater sofas, L-shaped sectionals, and U-shaped sectionals. Embrace customizable arrangements that effortlessly adapt to your living spaces, ensuring both flexibility and style in every configuration of the Feathers Sofa.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -315,8 +315,44 @@
         "image": "shopify:\/\/shop_images\/010_d1427bd5-1afc-4e21-ac15-98eecc94ee63.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Diverse Colors",
-        "text": "<p>Choose from 9 stylish colors to find the perfect match for your home's décor. From rich bold tones to airy neutrals, our spectrum of shade options ensures there’s a Feathers sofa to complement your personal taste and space. And we offer free color swatches.<\/p>",
+        "title": "",
+        "text": "<h3><strong>Diverse Colors and Fabrics<\/strong><\/h3><p>Choose from 9 stylish colors and 4 fabrics to find the perfect match for your home's decor. From rich bold tones to airy neutrals, our spectrum of shade options, combined with a variety of fabrics, ensures there’s a Feathers Sofa to complement your taste and space. We offer free swatches, allowing you to experience the diverse fabrics firsthand before making your choice.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "2a24ecbc-6edf-425c-b8e3-ded019e8095a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/oeko-tex-600.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>OEKO-TEX Certified<\/strong><\/h3><p>Prioritize your health and the environment with our OEKO-TEX certified cover fabrics. Free from \"forever chemicals,\" toxic flame retardants, formaldehyde, and harmful components, our covers offer a safe and eco-friendly choice.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "2dbda7cb-8b91-4d98-b6ed-65d727630e0b": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11111.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>5-10 Minutes Assembly<\/strong><\/h3><p>Experience the ease of assembly with Feathers Sofa's innovative design, featuring convenient buckle connections. With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks. Enjoy the freedom of effortless setup, freeing your hands for a more enjoyable experience. In just 5-10 minutes, you can have your Feathers Sofa fully assembled.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -333,8 +369,8 @@
         "image": "shopify:\/\/shop_images\/10001.gif",
         "image_width": 700,
         "subtitle": "",
-        "title": "VERSATILE SOFA LEGS",
-        "text": "<p>Free Sofa Legs Included! The sofa legs come with 2 installation options: flush with the ground or 3inches above the ground, providing convenience for using a robotic vacuum cleaner and other tools for easy cleaning.<\/p>",
+        "title": "",
+        "text": "<h3><strong>VERSATILE SOFA LEGS<\/strong><\/h3><p>Free Sofa Legs Included! The feathers sofa legs come with 2 installation options: flush with the ground or 3inches above the ground, providing convenience for using a robotic vacuum cleaner and other tools for easy cleaning.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -368,8 +404,8 @@
         "image": "shopify:\/\/shop_images\/1926g.png",
         "image_width": 700,
         "subtitle": "",
-        "title": "Line and Curve in Harmony",
-        "text": "<p>The perfect balance of chic line on the front view and curved silhouette on the side view makes it versatile for any space and style. Modern compared with comfy, Plume Sectionals designed for a quality life.<\/p>",
+        "title": "",
+        "text": "<h3><strong>Unique Sturdy&Built to Last Over a Decade<\/strong><\/h3><p>Our Feathers Sofa provides up to 10 years of unwavering comfort and support thanks to its premium materials and expert craftsmanship. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -377,24 +413,6 @@
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
-        "divider": false
-      }
-    },
-    "2dbda7cb-8b91-4d98-b6ed-65d727630e0b": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/11111.jpg",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "EASY ASSEMBLY",
-        "text": "<p>With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks. A one-step solution that frees your hands, without the burden of instruction manual.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "left",
         "divider": false
       }
     },
@@ -592,10 +610,11 @@
     "c1e2a991-ad27-44f4-9ed7-7bcbf1447338",
     "text-and-image2",
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
+    "2a24ecbc-6edf-425c-b8e3-ded019e8095a",
+    "2dbda7cb-8b91-4d98-b6ed-65d727630e0b",
     "d5028c99-6fb5-47cd-b831-7a4b5aef648f",
     "182d5f2c-98f1-4a9d-9d87-11539d1e79fa",
     "e98f6446-12e0-4de3-8e8b-c6abd33c8571",
-    "2dbda7cb-8b91-4d98-b6ed-65d727630e0b",
     "f29adaa4-3414-4aff-9b1d-01fd981fe423",
     "39475a83-8d8d-4e5c-9893-e2c562f2f593",
     "product-recommendations",

@@ -30,7 +30,7 @@
           }
         },
         "907cef5b-a392-4eee-a648-d1d703b05b97": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "contentSize": 16,
@@ -161,6 +161,13 @@
           "type": "share",
           "settings": {
           }
+        },
+        "f1be35fd-b757-417a-9331-fbfb4530c09e": {
+          "type": "introduce",
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
         }
       },
       "block_order": [
@@ -182,11 +189,10 @@
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
         "contact",
-        "share"
+        "share",
+        "f1be35fd-b757-417a-9331-fbfb4530c09e"
       ],
       "settings": {
-        "title": "White Glove Delivery Pricing",
-        "text": "<p>The base white glove service fee (floors 1-3) is $169. <\/p><p>Each additional floor will incur a service fee of $50.<br\/><strong>Note:<\/strong> White Glove service is only available for residences with an elevator. <\/p><p>Thank you for your understanding and cooperation.<\/p>",
         "sku_enable": false,
         "image_position": "left",
         "image_size": "medium",
@@ -202,7 +208,7 @@
       "type": "apps",
       "blocks": {
         "e13cef9d-2017-4252-8d6d-7873814950e5": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,

@@ -365,6 +365,7 @@
                         {% endif %}
                       {% endfor %}
                     </div>
+
                     {% comment %} <div>{{product.metafields.custom.introduce}}</div> {% endcomment %}
                     {% comment %}
                       {% unless product.metafields.custom.stock==blank %}
@@ -552,8 +553,6 @@
                     <div>
                       {%- render 'countdown_timer', product: product, block: block.settings -%}
                     </div>
-                  {%- when 'introduce' -%}
-                    <div>{{product.metafields.custom.introduce }}</div>
                 {%- endcase -%}
               {%- else -%}
                 <div
@@ -564,6 +563,7 @@
                   <div class="placeholder-content" style="min-height: 86px;"></div>
                 </div>
               {%- endfor -%}
+
             </div>
           </div>
         </div>
@@ -586,6 +586,33 @@
           </div>
         {%- endunless -%}
       </div>
+      {%- for block in blocks -%}
+        {%- case block.type -%}
+          {%- when 'introduce' -%}
+            <div class="introduce" id="introduce">
+              <div class="introduce-title"> {{ block.settings.title }}</div>
+              <div class="introduce_box">
+                <div class="introduce_current_variant">
+                  <div class="current_variant">
+                    {% assign lastOption = product.options_with_values | last %}
+                    {%- for value in lastOption.values -%}
+                      <button data-title="{{value}}" class="click_svariant">{{ value }}</button>
+                    {%- endfor -%}
+                  {% comment %} {%- for option in product.options_with_values -%}
+                    {% if option.name == 'Size' %}
+                      {%- for value in option.values -%}
+                        <button data-title="{{value}}" class="click_svariant">{{ value }}</button>
+                      {%- endfor -%}
+                    {% endif %}
+                  {%- endfor -%} {% endcomment %}
+                </div>
+                <div class="introduce_metafields"></div>
+                </div>
+                <img class="introduce-img" src="{{ current_variant.featured_image.src | img_url: 'master' }}" alt="img">
+              </div>
+            </div>
+          {%- endcase -%}
+        {%- endfor -%}
     </div>
     <div id="priceSuspension">
       <div id="priceSuspension-cont">
@@ -634,7 +661,6 @@
   </div>
 </div>
 <script>
-  console.log({{product.metafields.custom.introduce }})
   {% comment %} let collectionsss1 = {{ product | json }}
   console.log(collectionsss1,'productproductproductproductproduct') {% endcomment %}
   {% comment %} let allproducts = {{ all_products['white-glove-delivery'] | json }}
@@ -647,6 +673,8 @@
   var currentdefault = {{ current_variant | json }};
   var addcartValue = currentdefault.id
   var currentvariant = {{ product.variants | json }};
+
+
   {% comment %} 首次进入默认展示货期 {% endcomment %}
   currentvariant.forEach(function(item,index) {
     if (currentdefault.id == item.id) {
@@ -796,4 +824,36 @@
       $("#myModal2").css("display", "none");
     }
   });
+  const click_svariant = document.querySelectorAll('.click_svariant');
+  click_svariant.forEach((item,index) => {
+    item.addEventListener('click', () => {
+      click_svariant.forEach((el) => {
+        el.classList.remove('selected');
+      });
+      item.classList.add('selected');
+      currentvariant.forEach(function(text,index) {
+        if (text.name.includes(item.dataset.title)) {
+          $(".introduce-img").attr("src", text.featured_image.src);
+        }
+      })
+    });
+    if (index === 0) {
+      item.click();
+    }
+  });
+  
+  var introduceString = '{{ product.metafields.custom.introduce }}'
+  if (introduceString) {
+    var introduceObject = JSON.parse(introduceString);
+    let divitem = ''
+    introduceObject.children.forEach(item => {
+      if (item.children[0].value) {
+        divitem += '<div>'+ item.children[0].value + '</div>'
+      } else {
+        divitem += '<div class="kong">'+ item.children[0].value + '</div>'
+      }
+    })
+    $(".introduce_metafields").html(divitem);
+  }
+
 </script>
