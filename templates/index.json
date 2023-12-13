@@ -384,7 +384,7 @@
         "title": "Promotion",
         "home_featured_products": "promotion",
         "per_row": 4,
-        "rows": 2,
+        "rows": 1,
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false

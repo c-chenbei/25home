@@ -365,7 +365,7 @@
                         {% endif %}
                       {% endfor %}
                     </div>
-                    <div>{{product.metafields.custom.introduce}}</div>
+                    {% comment %} <div>{{product.metafields.custom.introduce}}</div> {% endcomment %}
                     {% comment %}
                       {% unless product.metafields.custom.stock==blank %}
                         <p style="font-size:1.0em;font-weight:bold;margin-bottom:5px;"><b style="font-size:1.0em">•</b> {{product.metafields.custom.stock}}</p>
