@@ -164,9 +164,9 @@
         },
         "f1be35fd-b757-417a-9331-fbfb4530c09e": {
           "type": "introduce",
+          "disabled": true,
           "settings": {
-            "title": "Dimensions",
-            "phone": false
+            "title": "Dimensions"
           }
         }
       },
