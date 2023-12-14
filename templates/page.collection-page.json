@@ -15,122 +15,213 @@
         "925621a6-5916-40a3-8c39-dfbefeb304df": {
           "type": "swiper_wrapper",
           "settings": {
-            "swiper_img": "shopify:\/\/shop_images\/1269-1.jpg",
-            "swiper_link": ""
+            "swiper_img": "shopify:\/\/shop_images\/222_0bc92dc9-b4a9-436f-a1f4-7d2cb18b8a8a.png",
+            "mobile_img": "shopify:\/\/shop_images\/1_1f29b555-8c49-4f4c-8de9-9ea5791a843c.png",
+            "swiper_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-white-plume-sectional"
           }
         },
         "5298cc41-b85e-4f6f-9ff3-a8c27a63f7c3": {
           "type": "swiper_wrapper",
           "settings": {
-            "swiper_img": "shopify:\/\/shop_images\/03_08c9f483-ecb5-41b2-95a4-415c57c7a718.jpg",
-            "swiper_link": ""
+            "swiper_img": "shopify:\/\/shop_images\/1010.png",
+            "mobile_img": "shopify:\/\/shop_images\/9_b474796a-f480-439c-9b99-80191537773c.png",
+            "swiper_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-dark-grey-polyester-plume-sectional"
+          }
+        },
+        "88fff1ec-330a-4ed9-a8c6-2349a5e9b70d": {
+          "type": "swiper_wrapper",
+          "settings": {
+            "swiper_img": "shopify:\/\/shop_images\/444.png",
+            "mobile_img": "shopify:\/\/shop_images\/3_4f20802e-2968-4e12-9614-562da62ca53c.png",
+            "swiper_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-blue-plume-sectional"
+          }
+        },
+        "2d968a5d-d274-4e8e-9562-46d42113f6d9": {
+          "type": "swiper_wrapper",
+          "settings": {
+            "swiper_img": "shopify:\/\/shop_images\/555.png",
+            "mobile_img": "shopify:\/\/shop_images\/4_0f31389b-3229-4649-8c3f-5056409e6304.png",
+            "swiper_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-blue-plume-sectional"
+          }
+        },
+        "0776ef79-e386-48e4-93dc-8ebb7c6365c3": {
+          "type": "swiper_wrapper",
+          "settings": {
+            "swiper_img": "shopify:\/\/shop_images\/333.png",
+            "mobile_img": "shopify:\/\/shop_images\/2_a5656083-169e-45d2-bb93-c78098ee9806.png",
+            "swiper_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-linen-plume-sectional"
+          }
+        },
+        "76d28551-4907-4877-8df5-13801a796eca": {
+          "type": "swiper_wrapper",
+          "settings": {
+            "swiper_img": "shopify:\/\/shop_images\/777.png",
+            "mobile_img": "shopify:\/\/shop_images\/6_c16122d6-d67e-4d36-bd52-5dc0afec7edc.png",
+            "swiper_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-boucle-white-plume-sectional"
+          }
+        },
+        "d0a1783e-e7b1-4b5f-8abd-6dff8a38db93": {
+          "type": "swiper_wrapper",
+          "settings": {
+            "swiper_img": "shopify:\/\/shop_images\/999.png",
+            "mobile_img": "shopify:\/\/shop_images\/8_220e39b3-e9ae-4c50-8b3b-c0a16fa1672e.png",
+            "swiper_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-vegan-leather-plume-sectional"
+          }
+        },
+        "89a31b08-1fe2-4858-ae9d-4a73961f481f": {
+          "type": "swiper_wrapper",
+          "settings": {
+            "swiper_img": "shopify:\/\/shop_images\/888.png",
+            "mobile_img": "shopify:\/\/shop_images\/7_deedbb7b-edc5-48d1-bad4-8ec5492aed64.png",
+            "swiper_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-dark-gray-plume-sectional"
+          }
+        },
+        "39c72a17-0887-4914-936d-05d9f1febe35": {
+          "type": "swiper_wrapper",
+          "settings": {
+            "swiper_img": "shopify:\/\/shop_images\/666_78304a0a-9550-490b-8e92-826ca3d82103.png",
+            "mobile_img": "shopify:\/\/shop_images\/5_28f6f859-f781-4163-a078-215d32b3a9de.png",
+            "swiper_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/aalto-boutique-plume-sectional"
           }
         },
         "34379246-1319-443e-8e3b-92381e66a795": {
           "type": "feathers_Equilibrium",
           "settings": {
-            "Equilibrium_img": "shopify:\/\/shop_images\/1811T2.jpg"
+            "Equilibrium_img": "shopify:\/\/shop_images\/Equilibrium.png"
           }
         },
         "683c7b62-3e79-48bf-b73b-cc1ad6bb8a40": {
           "type": "feathers_box",
           "settings": {
-            "one_img": "shopify:\/\/shop_images\/3_d854b97e-264e-4d23-bc66-a774197478fb.png",
+            "one_img": "shopify:\/\/shop_images\/Disassemble.gif",
             "one_link": "",
-            "two_img": "shopify:\/\/shop_images\/4_5463bbb9-ff54-4b88-ab8a-1426d6b77cea.jpg",
-            "two_link": "",
-            "three_img": "shopify:\/\/shop_images\/2_4b7a7dd2-4690-4849-a0bd-bfe3af583c5a.jpg",
+            "two_img": "shopify:\/\/shop_images\/modular_design.gif",
+            "two_link": "https:\/\/25home.com\/collections\/plume-sofa",
+            "three_img": "shopify:\/\/shop_images\/BETTER_MATERIALS.gif",
             "three_link": ""
           }
         },
         "ee1b0c34-e13a-4aa0-a84f-c611bc228bc6": {
           "type": "feathers_gongyi",
           "settings": {
-            "gongyi_img": "shopify:\/\/shop_images\/04_9ab4a7eb-5e4b-4904-9f8f-a2b9f08132c7.jpg"
+            "gongyi_img": "shopify:\/\/shop_images\/gongyi.png"
           }
         },
         "2d19ee57-7be1-460c-a28f-e638bae1b57d": {
           "type": "feathers_Diverse",
           "settings": {
-            "Diverseone_img": "shopify:\/\/shop_images\/3_d854b97e-264e-4d23-bc66-a774197478fb.png",
-            "Diverseone_link": "",
-            "Diversetwo_img": "shopify:\/\/shop_images\/4_5463bbb9-ff54-4b88-ab8a-1426d6b77cea.jpg",
-            "Diversetwo_link": "",
-            "Diversethree_img": "shopify:\/\/shop_images\/2_4b7a7dd2-4690-4849-a0bd-bfe3af583c5a.jpg",
-            "Diversethree_link": ""
+            "Diverseone_img": "shopify:\/\/shop_images\/Diverse_Colors.gif",
+            "Diverseone_link": "https:\/\/25home.com\/collections\/plume-sofa",
+            "Diversetwo_img": "shopify:\/\/shop_images\/Versatile_Sofa_Legs.gif",
+            "Diversetwo_link": "https:\/\/25home.com\/collections\/plume-sofa",
+            "Diversethree_img": "shopify:\/\/shop_images\/Easy_Assembly.png",
+            "Diversethree_link": "https:\/\/25home.com\/collections\/plume-sofa"
           }
         },
         "5ac58820-5896-49cc-af1c-52d724516a83": {
           "type": "feathers_fabric",
           "settings": {
-            "fabric_img": "shopify:\/\/shop_images\/2_bc46b74c-bcc8-4d4c-80d1-846b4ab8289f.jpg",
+            "fabric_img": "shopify:\/\/shop_images\/10002_582eb2ae-5e66-4a86-8b89-30b3f7541748.jpg",
             "fabric_title": "polyester",
             "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
             "fabric_price": "200.00",
-            "fabric_link": ""
+            "fabric_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/polyester-covers-feathers-loveseat"
           }
         },
         "85505b6c-df12-42f1-83f0-71c5fba17768": {
           "type": "feathers_fabric",
           "settings": {
-            "fabric_img": "shopify:\/\/shop_images\/3_8a2eca12-e1bf-42e5-bcfc-dc6e22f21456.jpg",
+            "fabric_img": "shopify:\/\/shop_images\/10001_abc5991f-63ba-4d00-a914-be877acc33a2.jpg",
             "fabric_title": "polyester",
             "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
             "fabric_price": "200.00",
-            "fabric_link": ""
+            "fabric_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/air-leather-covers-feathers-armchair"
           }
         },
         "bdd67380-0b3d-4731-950d-ceb9bdbaf19c": {
           "type": "feathers_fabric",
           "settings": {
-            "fabric_img": "shopify:\/\/shop_images\/110l.jpg",
+            "fabric_img": "shopify:\/\/shop_images\/10001_7fd34483-13c6-49ca-b883-1e2d88363935.jpg",
             "fabric_title": "polyester",
             "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
             "fabric_price": "200.00",
-            "fabric_link": ""
+            "fabric_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/boucle-white-covers-feathers-armchair"
           }
         },
         "627b5255-c195-46ff-a643-f8c57e4d2c14": {
           "type": "feathers_fabric",
           "settings": {
-            "fabric_img": "shopify:\/\/shop_images\/4_8d0c0abd-34bc-4beb-afcf-24e55232e6af.jpg",
+            "fabric_img": "shopify:\/\/shop_images\/10001_438803a2-9120-4901-a09f-87907298d089.jpg",
             "fabric_title": "polyester",
             "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
             "fabric_price": "200.00",
-            "fabric_link": ""
+            "fabric_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/linen-covers-feathers-armchair"
           }
         },
         "e403c6e2-16fe-4bf7-9ba5-9d6989cb7b6e": {
           "type": "feathers_ins",
           "settings": {
-            "ins_img1": "shopify:\/\/shop_images\/P5_P7_P9_13a385ad-6664-44d1-8289-f8f699503c12.jpg",
-            "ins_img2": "shopify:\/\/shop_images\/10_b4db6058-715a-4377-97b2-7ce00a3334b2.jpg",
-            "ins_img3": "shopify:\/\/shop_images\/11_0435ec15-9c3b-4cfb-8f32-44390947ac77.jpg",
-            "ins_img4": "shopify:\/\/shop_images\/3_a3ee53de-2f90-4bfd-aece-afb7ddc7dd22.jpg",
-            "ins_img5": "shopify:\/\/shop_images\/1_e960627a-c2ba-420c-a4a5-c5cd448e71d1.jpg"
+            "ins_img1": "shopify:\/\/shop_images\/1_d34bf050-ab70-4915-86fc-706ff8568f58.png",
+            "ins_img2": "shopify:\/\/shop_images\/2_dd38fc5c-082c-426e-8c26-f15960b6ae7f.png",
+            "ins_img3": "shopify:\/\/shop_images\/3_81388f65-c213-4731-9864-a72527264276.png",
+            "ins_img4": "shopify:\/\/shop_images\/4_39edc327-242f-4994-81a6-a05a54c896e0.png",
+            "ins_img5": "shopify:\/\/shop_images\/5_37cb0335-b713-4088-86cc-8fd9d3b1c87c.png"
           }
         },
         "21df913a-427b-41ad-ae28-a03ed45f8eda": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "What is Feathers Sofa?",
+            "text": "<p>The design philosophy of this Feathers Sofa emphasizes comfort and luxury. It features feather filling for a soft and relaxed sitting experience. Its modular design allows it to adapt to various spaces and requirements. This sofa prioritizes comfort, flexibility, and a sense of luxury.<\/p>"
           }
         },
         "17376ea4-aae1-4ed8-bd24-783d7db5fc01": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "What is a modular sofa?",
+            "text": "<p>A modular sofa is a type of sofa composed of individual seat components or modules that can be arranged to create various seating configurations, such as a loveseat, L-shaped sectional, and U-shaped sectional, among others. These modules typically include corner units, armless chairs, ottomans, and chaise lounges, allowing you to assemble them in different ways to meet your living spaces and seating requirements. Shop all our Feathers modular designs.<\/p>"
           }
         },
         "31255909-284b-49f9-8596-2885a47c5eab": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "What color and fabric options are available for the sofa?",
+            "text": "<p>Our sofa is offered in a variety of colors, including beige, gray, light gray, dark gray, white, black, brown, and camel. Additionally, you can customize the sofa with different fabrics such as polyester, air leather, linen, and boucle. These color and fabric choices provide flexibility to match your sofa with your home decor and personal style while considering comfort and aesthetics.<\/p>"
+          }
+        },
+        "f4d4fe7f-389d-4110-8c85-14d5e5df58d9": {
+          "type": "question",
+          "settings": {
+            "title": "Can I customize the sofa?",
+            "text": "<p>Yes, our sofa can be customized to match your specific preferences. You can choose custom dimensions, colors, or fabrics to better meet your needs. For more details, please contact our customer service team.<\/p>"
+          }
+        },
+        "3a143b1e-98d4-4b5b-a134-ed3f9a37e416": {
+          "type": "question",
+          "settings": {
+            "title": "Is this sofa easy to clean?",
+            "text": "<p>Yes, our sofa is designed for easy maintenance. Sofa covers are designed to be removable and machine washable, making maintenance and cleaning convenient.<\/p>"
+          }
+        },
+        "97e35154-5ee8-42b4-9335-bfd0886d1ea2": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer matching furniture pieces?",
+            "text": "<p>Absolutely, we provide complementary furniture pieces like sofa covers, TV stands, coffee tables, and side tables. You can select additional furniture items to complete your home decor.<\/p>"
+          }
+        },
+        "7e2772a1-f492-48ef-a32d-7ea73c575d59": {
+          "type": "question",
+          "settings": {
+            "title": "What are the sofa's dimensions?",
+            "text": "<p>The sofa's dimensions vary based on the chosen configuration. Please refer to our product page for detailed size information to ensure it fits your space.<\/p>"
+          }
+        },
+        "d86aa328-8613-46b3-9a04-7ce98f36a5d9": {
+          "type": "question",
+          "settings": {
+            "title": "Is there a warranty for the sofa?",
+            "text": "<p>Yes, we offer a limited product warranty for a specific period. Check our product page or contact our customer service for detailed warranty information.<\/p>"
           }
         }
       },
@@ -138,6 +229,13 @@
         "68aa2675-3b35-4d67-8173-ed2cc5507f0f",
         "925621a6-5916-40a3-8c39-dfbefeb304df",
         "5298cc41-b85e-4f6f-9ff3-a8c27a63f7c3",
+        "88fff1ec-330a-4ed9-a8c6-2349a5e9b70d",
+        "2d968a5d-d274-4e8e-9562-46d42113f6d9",
+        "0776ef79-e386-48e4-93dc-8ebb7c6365c3",
+        "76d28551-4907-4877-8df5-13801a796eca",
+        "d0a1783e-e7b1-4b5f-8abd-6dff8a38db93",
+        "89a31b08-1fe2-4858-ae9d-4a73961f481f",
+        "39c72a17-0887-4914-936d-05d9f1febe35",
         "34379246-1319-443e-8e3b-92381e66a795",
         "683c7b62-3e79-48bf-b73b-cc1ad6bb8a40",
         "ee1b0c34-e13a-4aa0-a84f-c611bc228bc6",
@@ -149,10 +247,16 @@
         "e403c6e2-16fe-4bf7-9ba5-9d6989cb7b6e",
         "21df913a-427b-41ad-ae28-a03ed45f8eda",
         "17376ea4-aae1-4ed8-bd24-783d7db5fc01",
-        "31255909-284b-49f9-8596-2885a47c5eab"
+        "31255909-284b-49f9-8596-2885a47c5eab",
+        "f4d4fe7f-389d-4110-8c85-14d5e5df58d9",
+        "3a143b1e-98d4-4b5b-a134-ed3f9a37e416",
+        "97e35154-5ee8-42b4-9335-bfd0886d1ea2",
+        "7e2772a1-f492-48ef-a32d-7ea73c575d59",
+        "d86aa328-8613-46b3-9a04-7ce98f36a5d9"
       ],
-      "disabled": true,
       "settings": {
+        "footer_pc_img": "shopify:\/\/shop_images\/e269ae5ba51e3730cf907ce795ef6ae5.png",
+        "fabric_pc_img": "shopify:\/\/shop_images\/caizhi_bg.png"
       }
     },
     "f4d25254-c171-48eb-8c4e-f1385d02aeaa": {

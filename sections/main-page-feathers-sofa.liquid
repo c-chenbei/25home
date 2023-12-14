@@ -3,7 +3,7 @@
 </header> {% endcomment %}
 {% assign has_mobile_image = false %}
 {%- for block in section.blocks -%}
-  {% if block.settings.mobile_img != blank and block.type == 'bannder'  %}
+  {% if block.settings.mobile_img != blank  %}
     {% assign has_mobile_image = true %}
   {% endif %}
 {%- endfor -%}
@@ -202,7 +202,9 @@
     </div>
   </div>
 </div>
+<div class="mobile-feathers-sofa">
 
+</div>
 {% schema %}
 {
   "name": "main-page-feathers-sofa",
@@ -532,7 +534,6 @@
   }
 {% endstyle %}
 <script>
-  {% comment %} if (!getDeviceType()){ {% endcomment %}
     var deviceWidth
     setHtmlFontSize()
     if (window.addEventListener) {
@@ -541,14 +542,15 @@
       }, false)
     }
     function setHtmlFontSize () {
-        {% comment %} deviceWidth = document.documentElement.clientWidth > 1920 ? 1920 : document.documentElement.clientWidth
-        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 100 + 'px !important' {% endcomment %}
-
-        deviceWidth = document.documentElement.clientWidth
-        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + (deviceWidth / 750) * 100 + 'px !important'
-        console.log((deviceWidth / 750) * 100)
+        /*750代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是 为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+        if (getDeviceType()){
+          deviceWidth = document.documentElement.clientWidth
+          document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 750 * 100 + 'px !important'
+        } else{ 
+          deviceWidth = document.documentElement.clientWidth > 1920 ? 1920 : document.documentElement.clientWidth
+          document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 100 + 'px !important'
+        } 
     }
-  {% comment %} } {% endcomment %}
 
 
 
