@@ -60,6 +60,56 @@
             "Diversethree_link": ""
           }
         },
+        "5ac58820-5896-49cc-af1c-52d724516a83": {
+          "type": "feathers_fabric",
+          "settings": {
+            "fabric_img": "shopify:\/\/shop_images\/2_bc46b74c-bcc8-4d4c-80d1-846b4ab8289f.jpg",
+            "fabric_title": "polyester",
+            "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
+            "fabric_price": "200.00",
+            "fabric_link": ""
+          }
+        },
+        "85505b6c-df12-42f1-83f0-71c5fba17768": {
+          "type": "feathers_fabric",
+          "settings": {
+            "fabric_img": "shopify:\/\/shop_images\/3_8a2eca12-e1bf-42e5-bcfc-dc6e22f21456.jpg",
+            "fabric_title": "polyester",
+            "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
+            "fabric_price": "200.00",
+            "fabric_link": ""
+          }
+        },
+        "bdd67380-0b3d-4731-950d-ceb9bdbaf19c": {
+          "type": "feathers_fabric",
+          "settings": {
+            "fabric_img": "shopify:\/\/shop_images\/110l.jpg",
+            "fabric_title": "polyester",
+            "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
+            "fabric_price": "200.00",
+            "fabric_link": ""
+          }
+        },
+        "627b5255-c195-46ff-a643-f8c57e4d2c14": {
+          "type": "feathers_fabric",
+          "settings": {
+            "fabric_img": "shopify:\/\/shop_images\/4_8d0c0abd-34bc-4beb-afcf-24e55232e6af.jpg",
+            "fabric_title": "polyester",
+            "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
+            "fabric_price": "200.00",
+            "fabric_link": ""
+          }
+        },
+        "e403c6e2-16fe-4bf7-9ba5-9d6989cb7b6e": {
+          "type": "feathers_ins",
+          "settings": {
+            "ins_img1": "shopify:\/\/shop_images\/P5_P7_P9_13a385ad-6664-44d1-8289-f8f699503c12.jpg",
+            "ins_img2": "shopify:\/\/shop_images\/10_b4db6058-715a-4377-97b2-7ce00a3334b2.jpg",
+            "ins_img3": "shopify:\/\/shop_images\/11_0435ec15-9c3b-4cfb-8f32-44390947ac77.jpg",
+            "ins_img4": "shopify:\/\/shop_images\/3_a3ee53de-2f90-4bfd-aece-afb7ddc7dd22.jpg",
+            "ins_img5": "shopify:\/\/shop_images\/1_e960627a-c2ba-420c-a4a5-c5cd448e71d1.jpg"
+          }
+        },
         "21df913a-427b-41ad-ae28-a03ed45f8eda": {
           "type": "question",
           "settings": {
@@ -90,11 +140,15 @@
         "683c7b62-3e79-48bf-b73b-cc1ad6bb8a40",
         "ee1b0c34-e13a-4aa0-a84f-c611bc228bc6",
         "2d19ee57-7be1-460c-a28f-e638bae1b57d",
+        "5ac58820-5896-49cc-af1c-52d724516a83",
+        "85505b6c-df12-42f1-83f0-71c5fba17768",
+        "bdd67380-0b3d-4731-950d-ceb9bdbaf19c",
+        "627b5255-c195-46ff-a643-f8c57e4d2c14",
+        "e403c6e2-16fe-4bf7-9ba5-9d6989cb7b6e",
         "21df913a-427b-41ad-ae28-a03ed45f8eda",
         "17376ea4-aae1-4ed8-bd24-783d7db5fc01",
         "31255909-284b-49f9-8596-2885a47c5eab"
       ],
-      "disabled": true,
       "settings": {
       }
     },

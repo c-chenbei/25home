@@ -359,9 +359,9 @@
                     <div id="expressage_box" style="height:30px">
                       {% for variant in product.variants %}
                         {% if variant.metafields.custom.expressage %}
-                          <div class="expressage_type expressage_none">{{ variant.metafields.custom.expressage }}</div>
+                          <div id="expressage_date" data-get-value="{{ variant.metafields.custom.expressage }}" class="expressage_type expressage_none">{{ variant.metafields.custom.expressage }}</div>
                         {% else %}
-                          <div class="expressage_type expressage_none">{{ product.metafields.custom.stock }}</div>
+                          <div id="expressage_date" data-get-value="{{ product.metafields.custom.stock }}" class="expressage_type expressage_none">{{ product.metafields.custom.stock }}</div>
                         {% endif %}
                       {% endfor %}
                     </div>
@@ -855,5 +855,17 @@
     })
     $(".introduce_metafields").html(divitem);
   }
-
+  const expressage_date = document.querySelectorAll('#expressage_date');
+  if (expressage_date.length > 0) {
+    expressage_date.forEach(item => {
+      const dataGetValue = item.getAttribute('data-get-value');
+      const dateRangeMatch = dataGetValue.match(/(\d{1,2}-\d{1,2})/);
+      if (dateRangeMatch) {
+        const dateRange = dateRangeMatch[1];
+        if(dateRange == "35-52"){
+          item.textContent = 'Pre-order 4-7 weeks delivery'
+        }
+      }
+    })
+  }
 </script>

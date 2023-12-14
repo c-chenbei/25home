@@ -705,6 +705,9 @@
 .main-feathers-sofa .feathers-Diverse .feathers-feature .items_img {
   width: 35rem;
 }
+.main-feathers-sofa .feathers-fabric {
+  padding-bottom: 6rem;
+}
 .main-feathers-sofa .feathers-fabric .fabric-font {
   color: #FFFFFF;
 }
@@ -730,8 +733,11 @@
   transform: rotate(-10deg);
   opacity: 0.79;
 }
+.main-feathers-sofa .feathers-fabric .fabric-font .grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item {
-  float: left;
   display: flex;
   padding-right: 2rem;
   padding-bottom: 2rem;

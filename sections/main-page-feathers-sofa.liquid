@@ -2,7 +2,7 @@
   {%- render 'breadcrumbs' -%}
 </header>
 <div class="main-feathers-sofa">
-  {% comment %} {%- for block in section.blocks -%}
+  {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'bannder'%}
         <div class="bannders_img feathers-margin-bottom">
@@ -128,80 +128,36 @@
         </div>
       </div>
     {% endcase %}
-  {%- endfor -%} {% endcomment %}
-  {%- for block in section.blocks -%}
-    {% case block.type %}
-      {% when 'feathers_fabric'%}
+  {%- endfor -%}
+
         <div class="feathers-fabric feathers-margin-bottom">
           <div class="width_box fabric-font">
             <div class="item-title">TEXTURE FABRIC<div class="item-title-bg">25 Home</div></div>
             <div class="grid-container">
-              <div class="grid-item">
-                <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                <div class="right_box">
-                  <div class="icon_list">
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                  </div>
-                  <div class="right_box_title">polyester</div>
-                  <div class="right_box_text">Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.</div>
-                  <div class="right_box_pice">from <span> $200.00</span></div>
-                  <div class="right_box_btn">BUY NOW  </div>
-                </div>
-              </div>
-              <div class="grid-item">
-                <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                <div class="right_box">
-                  <div class="icon_list">
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                  </div>
-                  <div class="right_box_title">polyester</div>
-                  <div class="right_box_text">Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.</div>
-                  <div class="right_box_pice">from <span> $200.00</span></div>
-                  <div class="right_box_btn">BUY NOW  </div>
-                </div>
-              </div>
-              <div class="grid-item">
-                <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                <div class="right_box">
-                  <div class="icon_list">
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                  </div>
-                  <div class="right_box_title">polyester</div>
-                  <div class="right_box_text">Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.</div>
-                  <div class="right_box_pice">from <span> $200.00</span></div>
-                  <div class="right_box_btn">BUY NOW  </div>
-                </div>
-              </div>
-              <div class="grid-item">
-                <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                <div class="right_box">
-                  <div class="icon_list">
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                    <img src="{{ 'BETTER MATERIALS.gif' | asset_url }}" alt="img" >
-                  </div>
-                  <div class="right_box_title">polyester</div>
-                  <div class="right_box_text">Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.</div>
-                  <div class="right_box_pice">from <span> $200.00</span></div>
-                  <div class="right_box_btn">BUY NOW  </div>
-                </div>
-              </div>
-
+              {%- for block in section.blocks -%}
+                {% case block.type %}
+                  {% when 'feathers_fabric'%}
+                    <div class="grid-item">
+                      <img src="{{ block.settings.fabric_img | img_url: 'master' }}" alt="img" >
+                      <div class="right_box">
+                        <div class="icon_list">
+                          <img src="{{ block.settings.icon_img1 | img_url: 'master' }}" alt="img" >
+                          <img src="{{ block.settings.icon_img2 | img_url: 'master' }}" alt="img" >
+                          <img src="{{ block.settings.icon_img3 | img_url: 'master' }}" alt="img" >
+                          <img src="{{ block.settings.icon_img4 | img_url: 'master' }}" alt="img" >
+                        </div>
+                        <div class="right_box_title">{{ block.settings.fabric_title }}</div>
+                        <div class="right_box_text">{{ block.settings.fabric_text }}</div>
+                        <div class="right_box_pice">from <span> ${{ block.settings.fabric_price }}</span></div>
+                        <div class="right_box_btn"><a href="{{ block.settings.fabric_link }}">BUY NOW</a></div>
+                      </div>
+                    </div>
+                {% endcase %}
+              {%- endfor -%} 
             </div>
           </div>
         </div>
-    {% endcase %}
-  {%- endfor -%} 
+
 
   {%- for block in section.blocks -%}
     {% case block.type %}
@@ -396,7 +352,7 @@
     {
       "type": "feathers_fabric",
       "name": "feathers-fabric",
-      "limit": 1,
+      "limit": 4,
       "settings": [
         {
           "type": "image_picker",
@@ -404,29 +360,47 @@
           "label": "fabric_img"
         },
         {
+          "type": "image_picker",
+          "id": "icon_img1",
+          "label": "icon_img1"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_img2",
+          "label": "icon_img2"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_img3",
+          "label": "icon_img3"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_img4",
+          "label": "icon_img4"
+        },
+        {
+          "type": "text",
+          "id": "fabric_title",
+          "label": "title",
+          "default": "polyester"
+        },
+        {
+          "type": "text",
+          "id": "fabric_text",
+          "label": "text",
+          "default": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric."
+        },
+        {
+          "type": "text",
+          "id": "fabric_price",
+          "label": "price",
+          "default": "200.00"
+        },
+        {
           "type": "url",
           "id": "fabric_link",
           "label": "fabric_link"
-        },
-        {
-          "type": "image_picker",
-          "id": "fabrictwo_img",
-          "label": "fabrictwo_img"
-        },
-        {
-          "type": "url",
-          "id": "fabrictwo_link",
-          "label": "fabrictwo_link"
-        },
-        {
-          "type": "image_picker",
-          "id": "fabricthree_img",
-          "label": "fabricthree_img"
-        },
-        {
-          "type": "url",
-          "id": "fabricthree_link",
-          "label": "fabricthree_link"
         }
       ]
     },
@@ -502,9 +476,8 @@
   .feathers-fabric{
     background: url("{{ 'caizhi_bg.png' | asset_url }}");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
-    height: 58rem;
   }
 </style>
 <script>

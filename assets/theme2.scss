@@ -406,7 +406,7 @@
     height: 30px;
   }
 }
-@media screen and (max-width: 1001px) {
+@media screen and (max-width: 1000px) {
   .introduce{
     margin-bottom: 30px;
     .introduce-title{
@@ -734,6 +734,7 @@
     }
   }
   .feathers-fabric{
+    padding-bottom: 6rem;
     .fabric-font{
       color: #FFFFFF;
       .item-title{
@@ -764,8 +765,9 @@
         // gap: 2rem; /* 间隙为 20 像素 */
         // position: relative;
         // top: 10rem;
+        display: flex;
+        flex-wrap: wrap;
         .grid-item{
-          float: left;
           display: flex;
           padding-right: 2rem;
           padding-bottom: 2rem;
