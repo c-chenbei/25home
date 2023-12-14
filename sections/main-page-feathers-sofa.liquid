@@ -8,7 +8,7 @@
   {% endif %}
 {%- endfor -%}
 <div class="main-feathers-sofa">
-  {% comment %} {%- for block in section.blocks -%}
+  {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'bannder'%}
         <div class="bannders_img feathers-margin-bottom">
@@ -172,7 +172,7 @@
         <div class="grid-item"><img src="{{ block.settings.ins_img5 | img_url: 'master' }}" alt="img"></div>
       </div>
     {% endcase %}
-  {%- endfor -%} {% endcomment %}
+  {%- endfor -%}
   <div class="feathers-footer">
     <div class="width_box footer-font">
       <div class="footer-left">
@@ -211,22 +211,22 @@
     {
       "type": "image_picker",
       "id": "footer_pc_img",
-      "label": "pc-背景图"
+      "label": "footer-pc-背景图"
     },
     {
       "type": "image_picker",
       "id": "footer_mobile_img",
-      "label": "pc-背景图"
+      "label": "footer-pc-背景图"
     },
     {
       "type": "image_picker",
       "id": "fabric_pc_img",
-      "label": "pc-背景图"
+      "label": "fabric-pc-背景图"
     },
     {
       "type": "image_picker",
       "id": "fabric_mobile_img",
-      "label": "pc-背景图"
+      "label": "fabric-pc-背景图"
     }
   ],
   "blocks": [
@@ -527,6 +527,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
+      background: #000;
     }
   }
 {% endstyle %}
@@ -540,8 +541,12 @@
       }, false)
     }
     function setHtmlFontSize () {
-        deviceWidth = document.documentElement.clientWidth > 1920 ? 1920 : document.documentElement.clientWidth
-        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 100 + 'px !important'
+        {% comment %} deviceWidth = document.documentElement.clientWidth > 1920 ? 1920 : document.documentElement.clientWidth
+        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 100 + 'px !important' {% endcomment %}
+
+        deviceWidth = document.documentElement.clientWidth
+        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + (deviceWidth / 750) * 100 + 'px !important'
+        console.log((deviceWidth / 750) * 100)
     }
   {% comment %} } {% endcomment %}
 
