@@ -460,7 +460,6 @@
       margin-bottom: 5rem;
     }
     .shemei_img{
-      display: block;
       width: 100%;
     }
     .bannders_img{
@@ -473,10 +472,6 @@
         width: 100%;
         z-index: 1;
         cursor: pointer;
-      }
-      .shemei_img{
-        width: 100%;
-        display: block;
       }
       .hander-title-h6{
         width: 15rem;
@@ -582,9 +577,9 @@
         }
       }
     }
-    .feathers-Equilibrium{
-      // margin-bottom: 125px;
-    }
+    // .feathers-Equilibrium{
+    //   margin-bottom: 1px;
+    // }
     .feathers-box{
       .feathers-feature-box{
         display: flex;
@@ -906,15 +901,13 @@
   .main-feathers-sofa{
     font-family: 'HarmonyOS_Sans_SC_Medium';
     .width_box{
-      width: 78.2rem;
-      max-width: 1500px;
-      margin: 0 auto;
+      width: 100%;
+      padding: 0 17px;
     }
     .feathers-margin-bottom{
       margin-bottom: 5rem;
     }
     .shemei_img{
-      display: block;
       width: 100%;
     }
     .bannders_img{
@@ -927,10 +920,6 @@
         width: 100%;
         z-index: 1;
         cursor: pointer;
-      }
-      .shemei_img{
-        width: 100%;
-        display: block;
       }
       .hander-title-h6{
         width: 15rem;
@@ -1012,6 +1001,7 @@
     }
 
     .carousel-wrapper{
+      padding: 0;
       .swiper{
         .swiper-slide{
           a{
@@ -1031,14 +1021,11 @@
           color: #000;
           font-weight: 600;
         }
-        .swiper-button-next{
-          right: 40%;
-        }
       }
     }
-    .feathers-Equilibrium{
-      // margin-bottom: 125px;
-    }
+    // .feathers-Equilibrium{
+    //   margin-bottom: 1px;
+    // }
     .feathers-box{
       .feathers-feature-box{
         display: flex;

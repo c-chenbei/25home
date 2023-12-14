@@ -2,20 +2,20 @@
   {%- render 'breadcrumbs' -%}
 </header> {% endcomment %}
 {% assign has_mobile_image = false %}
-{%- for block in section.blocks limit: 1 -%}
-  {% if block.settings.Mobile_img != blank %}
+{%- for block in section.blocks -%}
+  {% if block.settings.mobile_img != blank and block.type == 'bannder'  %}
     {% assign has_mobile_image = true %}
   {% endif %}
 {%- endfor -%}
 <div class="main-feathers-sofa">
-  {%- for block in section.blocks -%}
+  {% comment %} {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'bannder'%}
         <div class="bannders_img feathers-margin-bottom">
           <a class="bannder_a" href="{{ block.settings.links }}"></a>
-          <img class="shemei_img {% if has_mobile_image %} small--hide{% endif %}" src="{{ block.settings.bannder_img | img_url: 'master' }}" alt="img">
+          <img class="shemei_img{% if has_mobile_image %} small--hide{% endif %}" src="{{ block.settings.bannder_img | img_url: 'master' }}" alt="img">
           {%- if has_mobile_image -%}
-            <img class="shemei_img" src="{{ block.settings.Mobile_img | img_url: 'master' }}" alt="img">
+            <img class="shemei_img medium-up--hide" src="{{ block.settings.mobile_img | img_url: 'master' }}" alt="img">
           {% endif %}
           <div class="hander-title-h6">
             <div class="title-t">25Home<div class="R">R</div></div>
@@ -37,7 +37,10 @@
             {% when 'swiper_wrapper'%}
               <div class="swiper-slide">
                 <a href="{{ block.settings.swiper_link }}">
-                  <img src="{{ block.settings.swiper_img | img_url: 'master' }}" alt="img">
+                  <img src="{{ block.settings.swiper_img | img_url: 'master' }}" class="{% if has_mobile_image %} small--hide{% endif %}" alt="img">
+                  {%- if has_mobile_image -%}
+                    <img class="medium-up--hide" src="{{ block.settings.mobile_img | img_url: 'master' }}" alt="{{ block.settings.mobile_img.alt }}">
+                  {% endif %}
                 </a>
               </div>
             {% endcase %}
@@ -169,7 +172,7 @@
         <div class="grid-item"><img src="{{ block.settings.ins_img5 | img_url: 'master' }}" alt="img"></div>
       </div>
     {% endcase %}
-  {%- endfor -%}
+  {%- endfor -%} {% endcomment %}
   <div class="feathers-footer">
     <div class="width_box footer-font">
       <div class="footer-left">
@@ -204,6 +207,28 @@
 {
   "name": "main-page-feathers-sofa",
   "class": "main-page-feathers-sofa",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "footer_pc_img",
+      "label": "pc-背景图"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_mobile_img",
+      "label": "pc-背景图"
+    },
+    {
+      "type": "image_picker",
+      "id": "fabric_pc_img",
+      "label": "pc-背景图"
+    },
+    {
+      "type": "image_picker",
+      "id": "fabric_mobile_img",
+      "label": "pc-背景图"
+    }
+  ],
   "blocks": [
     {
       "type": "bannder",
@@ -217,7 +242,7 @@
         },
         {
           "type": "image_picker",
-          "id": "Mobile_img",
+          "id": "mobile_img",
           "label": "Mobile image"
         },
         {
@@ -247,6 +272,11 @@
           "type": "image_picker",
           "id": "swiper_img",
           "label": "swiper_img"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_img",
+          "label": "mobile_img"
         },
         {
           "type": "url",
@@ -469,21 +499,37 @@
   }]
 }
 {% endschema %}
-<style>
-  .feathers-footer{
-    background: url("{{ 'feathers-footerbg.png' | asset_url }}");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 79rem;
+{% style %}
+  @media screen and (min-width: 760px) {
+    .feathers-fabric{
+      background: url("{{ section.settings.fabric_pc_img | img_url: 'master' }}");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+    }
+    .feathers-footer{
+      background: url("{{ section.settings.footer_pc_img | img_url: 'master' }}");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 79rem;
+    }
   }
-  .feathers-fabric{
-    background: url("{{ 'caizhi_bg.png' | asset_url }}");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
+  @media screen and (max-width: 750px) {
+    .feathers-fabric{
+      background: url("{{ section.settings.fabric_mobile_img | img_url: 'master' }}");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+    }
+    .feathers-footer{
+      background: url("{{ section.settings.footer_mobile_img | img_url: 'master' }}");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+    }
   }
-</style>
+{% endstyle %}
 <script>
   {% comment %} if (!getDeviceType()){ {% endcomment %}
     var deviceWidth

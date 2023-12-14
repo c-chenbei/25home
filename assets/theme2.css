@@ -450,7 +450,6 @@
     margin-bottom: 5rem;
   }
   .main-feathers-sofa .shemei_img {
-    display: block;
     width: 100%;
   }
   .main-feathers-sofa .bannders_img {
@@ -464,10 +463,6 @@
     width: 100%;
     z-index: 1;
     cursor: pointer;
-  }
-  .main-feathers-sofa .bannders_img .shemei_img {
-    width: 100%;
-    display: block;
   }
   .main-feathers-sofa .bannders_img .hander-title-h6 {
     width: 15rem;
@@ -873,15 +868,13 @@
     font-family: "HarmonyOS_Sans_SC_Medium";
   }
   .main-feathers-sofa .width_box {
-    width: 78.2rem;
-    max-width: 1500px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 17px;
   }
   .main-feathers-sofa .feathers-margin-bottom {
     margin-bottom: 5rem;
   }
   .main-feathers-sofa .shemei_img {
-    display: block;
     width: 100%;
   }
   .main-feathers-sofa .bannders_img {
@@ -895,10 +888,6 @@
     width: 100%;
     z-index: 1;
     cursor: pointer;
-  }
-  .main-feathers-sofa .bannders_img .shemei_img {
-    width: 100%;
-    display: block;
   }
   .main-feathers-sofa .bannders_img .hander-title-h6 {
     width: 15rem;
@@ -977,6 +966,9 @@
     line-height: 2rem;
     background-color: #FFD68C;
   }
+  .main-feathers-sofa .carousel-wrapper {
+    padding: 0;
+  }
   .main-feathers-sofa .carousel-wrapper .swiper .swiper-slide a {
     display: block;
     width: 100%;
@@ -992,9 +984,6 @@
     line-height: 1.5rem;
     color: #000;
     font-weight: 600;
-  }
-  .main-feathers-sofa .carousel-wrapper .swiper .swiper-button-next {
-    right: 40%;
   }
   .main-feathers-sofa .feathers-box .feathers-feature-box {
     display: flex;
