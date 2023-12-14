@@ -130,6 +130,24 @@
             "title": "Frequently asked question",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
+        },
+        "5ac58820-5896-49cc-af1c-52d724516a83": {
+          "type": "feathers_fabric",
+          "settings": {
+            "fabric_link": "",
+            "fabrictwo_link": "",
+            "fabricthree_link": ""
+          }
+        },
+        "e403c6e2-16fe-4bf7-9ba5-9d6989cb7b6e": {
+          "type": "feathers_ins",
+          "settings": {
+            "ins_img1": "shopify:\/\/shop_images\/P5_P7_P9_13a385ad-6664-44d1-8289-f8f699503c12.jpg",
+            "ins_img2": "shopify:\/\/shop_images\/10_b4db6058-715a-4377-97b2-7ce00a3334b2.jpg",
+            "ins_img3": "shopify:\/\/shop_images\/11_0435ec15-9c3b-4cfb-8f32-44390947ac77.jpg",
+            "ins_img4": "shopify:\/\/shop_images\/3_a3ee53de-2f90-4bfd-aece-afb7ddc7dd22.jpg",
+            "ins_img5": "shopify:\/\/shop_images\/1_e960627a-c2ba-420c-a4a5-c5cd448e71d1.jpg"
+          }
         }
       },
       "block_order": [
@@ -147,7 +165,9 @@
         "e403c6e2-16fe-4bf7-9ba5-9d6989cb7b6e",
         "21df913a-427b-41ad-ae28-a03ed45f8eda",
         "17376ea4-aae1-4ed8-bd24-783d7db5fc01",
-        "31255909-284b-49f9-8596-2885a47c5eab"
+        "31255909-284b-49f9-8596-2885a47c5eab",
+        "5ac58820-5896-49cc-af1c-52d724516a83",
+        "e403c6e2-16fe-4bf7-9ba5-9d6989cb7b6e"
       ],
       "settings": {
       }
