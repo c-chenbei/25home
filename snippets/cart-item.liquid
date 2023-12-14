@@ -101,12 +101,12 @@
             {{ product.final_price | money }}
           </span>
         {% else %}
-          {% if variable contains 'Flash Sale' %}
+          {% if variable contains 'Flash Sale' or variable contains 'HOT SOFA PICKS' %}
             <span class="cart__price cart__price--strikethrough">
               {{ product.product.compare_at_price | money }}
             </span>
           {% endif %}
-          <span class="cart__price" style="{% if variable contains 'Flash Sale' %} color: #cb2929 {% endif %}">
+          <span class="cart__price" style="{% if variable contains 'Flash Sale' or variable contains 'HOT SOFA PICKS' %} color: #cb2929 {% endif %}">
             {{ product.original_price | money }}
           </span>
         {% endif %}

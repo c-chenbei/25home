@@ -1,13 +1,22 @@
-<header class="section-header-amend">
+{% comment %} <header class="section-header-amend">
   {%- render 'breadcrumbs' -%}
-</header>
+</header> {% endcomment %}
+{% assign has_mobile_image = false %}
+{%- for block in section.blocks limit: 1 -%}
+  {% if block.settings.Mobile_img != blank %}
+    {% assign has_mobile_image = true %}
+  {% endif %}
+{%- endfor -%}
 <div class="main-feathers-sofa">
   {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'bannder'%}
         <div class="bannders_img feathers-margin-bottom">
           <a class="bannder_a" href="{{ block.settings.links }}"></a>
-          <img class="shemei_img" src="{{ block.settings.bannder_img | img_url: 'master' }}" alt="img">
+          <img class="shemei_img {% if has_mobile_image %} small--hide{% endif %}" src="{{ block.settings.bannder_img | img_url: 'master' }}" alt="img">
+          {%- if has_mobile_image -%}
+            <img class="shemei_img" src="{{ block.settings.Mobile_img | img_url: 'master' }}" alt="img">
+          {% endif %}
           <div class="hander-title-h6">
             <div class="title-t">25Home<div class="R">R</div></div>
             <div class="title-f">Original Design by</div>
@@ -121,33 +130,33 @@
     {% endcase %}
   {%- endfor -%}
 
-        <div class="feathers-fabric feathers-margin-bottom">
-          <div class="width_box fabric-font">
-            <div class="item-title">TEXTURE FABRIC<div class="item-title-bg">25 Home</div></div>
-            <div class="grid-container">
-              {%- for block in section.blocks -%}
-                {% case block.type %}
-                  {% when 'feathers_fabric'%}
-                    <div class="grid-item">
-                      <img src="{{ block.settings.fabric_img | img_url: 'master' }}" alt="img" >
-                      <div class="right_box">
-                        <div class="icon_list">
-                          <img src="{{ block.settings.icon_img1 | img_url: 'master' }}" alt="img" >
-                          <img src="{{ block.settings.icon_img2 | img_url: 'master' }}" alt="img" >
-                          <img src="{{ block.settings.icon_img3 | img_url: 'master' }}" alt="img" >
-                          <img src="{{ block.settings.icon_img4 | img_url: 'master' }}" alt="img" >
-                        </div>
-                        <div class="right_box_title">{{ block.settings.fabric_title }}</div>
-                        <div class="right_box_text">{{ block.settings.fabric_text }}</div>
-                        <div class="right_box_pice">from <span> ${{ block.settings.fabric_price }}</span></div>
-                        <div class="right_box_btn"><a href="{{ block.settings.fabric_link }}">BUY NOW</a></div>
-                      </div>
-                    </div>
-                {% endcase %}
-              {%- endfor -%} 
-            </div>
-          </div>
-        </div>
+  <div class="feathers-fabric feathers-margin-bottom">
+    <div class="width_box fabric-font">
+      <div class="item-title">TEXTURE FABRIC<div class="item-title-bg">25 Home</div></div>
+      <div class="grid-container">
+        {%- for block in section.blocks -%}
+          {% case block.type %}
+            {% when 'feathers_fabric'%}
+              <div class="grid-item">
+                <img src="{{ block.settings.fabric_img | img_url: 'master' }}" alt="img" >
+                <div class="right_box">
+                  <div class="icon_list">
+                    <img src="{{ block.settings.icon_img1 | img_url: 'master' }}" alt="img" >
+                    <img src="{{ block.settings.icon_img2 | img_url: 'master' }}" alt="img" >
+                    <img src="{{ block.settings.icon_img3 | img_url: 'master' }}" alt="img" >
+                    <img src="{{ block.settings.icon_img4 | img_url: 'master' }}" alt="img" >
+                  </div>
+                  <div class="right_box_title">{{ block.settings.fabric_title }}</div>
+                  <div class="right_box_text">{{ block.settings.fabric_text }}</div>
+                  <div class="right_box_pice">from <span> ${{ block.settings.fabric_price }}</span></div>
+                  <div class="right_box_btn"><a href="{{ block.settings.fabric_link }}">BUY NOW</a></div>
+                </div>
+              </div>
+          {% endcase %}
+        {%- endfor -%} 
+      </div>
+    </div>
+  </div>
 
   {%- for block in section.blocks -%}
     {% case block.type %}
@@ -205,6 +214,11 @@
           "type": "image_picker",
           "id": "bannder_img",
           "label": "bannder_img"
+        },
+        {
+          "type": "image_picker",
+          "id": "Mobile_img",
+          "label": "Mobile image"
         },
         {
           "type": "url",
@@ -471,17 +485,20 @@
   }
 </style>
 <script>
-  var deviceWidth
-  setHtmlFontSize()
-  if (window.addEventListener) {
-    window.addEventListener('resize', function () {
-        setHtmlFontSize()
-    }, false)
-  }
-  function setHtmlFontSize () {
-      deviceWidth = document.documentElement.clientWidth > 1920 ? 1920 : document.documentElement.clientWidth
-      document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 100 + 'px !important'
-  }
+  {% comment %} if (!getDeviceType()){ {% endcomment %}
+    var deviceWidth
+    setHtmlFontSize()
+    if (window.addEventListener) {
+      window.addEventListener('resize', function () {
+          setHtmlFontSize()
+      }, false)
+    }
+    function setHtmlFontSize () {
+        deviceWidth = document.documentElement.clientWidth > 1920 ? 1920 : document.documentElement.clientWidth
+        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 100 + 'px !important'
+    }
+  {% comment %} } {% endcomment %}
+
 
 
   var mySwiper = new Swiper ('.swiper', {

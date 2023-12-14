@@ -7,6 +7,7 @@
           "type": "bannder",
           "settings": {
             "bannder_img": "shopify:\/\/shop_images\/03_08c9f483-ecb5-41b2-95a4-415c57c7a718.jpg",
+            "Mobile_img": "shopify:\/\/shop_images\/salo-lounge.jpg",
             "links": "",
             "banndertitle": "15% OFF",
             "banndertitle2": "SUPER15"
@@ -119,6 +120,7 @@
         },
         "17376ea4-aae1-4ed8-bd24-783d7db5fc01": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
@@ -126,6 +128,7 @@
         },
         "31255909-284b-49f9-8596-2885a47c5eab": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
@@ -149,6 +152,7 @@
         "17376ea4-aae1-4ed8-bd24-783d7db5fc01",
         "31255909-284b-49f9-8596-2885a47c5eab"
       ],
+      "disabled": true,
       "settings": {
       }
     },
