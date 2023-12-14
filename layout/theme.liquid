@@ -467,3 +467,18 @@
     }
   } {% endcomment %}
 </script>
+<script>
+  const expressageTypeElement = document.querySelectorAll('#datechanged');
+  if (expressageTypeElement.length > 0) {
+    expressageTypeElement.forEach(item => {
+      const dataGetValue = item.getAttribute('data-get-value');
+      const dateRangeMatch = dataGetValue.match(/(\d{1,2}-\d{1,2})/);
+      if (dateRangeMatch) {
+        const dateRange = dateRangeMatch[1];
+        if(dateRange == "35-52"){
+          item.innerHTML = `<i style="font-size:1.0em">•</i> ` + 'Pre-order 4-7 weeks delivery'
+        }
+      }
+    })
+  }
+</script>

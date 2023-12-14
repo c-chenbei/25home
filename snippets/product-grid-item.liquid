@@ -200,7 +200,7 @@
           {{ product.title }}
         </div>
         {% unless product.metafields.custom.stock == blank %}
-          <p style="font-size:0.8em;margin-bottom:2px;font-style:italic;">
+          <p id="datechanged" data-get-value="{{ product.metafields.custom.stock }}" style="font-size:0.8em;margin-bottom:2px;font-style:italic;">
             <i style="font-size:1.0em">•</i> {{ product.metafields.custom.stock }}
           </p>
         {% endunless %}
