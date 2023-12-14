@@ -6486,6 +6486,18 @@ form+.footer__social {
   z-index: 1;
 }
 
+@media only screen and (max-width:768px) {
+  .js-qty__num {
+    display: block;
+    background: none;
+    text-align: center;
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0;
+    z-index: 1;
+  }
+}
+
 .js-qty__adjust {
   cursor: pointer;
   position: absolute;
@@ -11164,7 +11176,16 @@ html[dir=rtl] .background-media-text__text {
   font-size: calc(var(--typeBaseSize) + 1px);
   margin-bottom: 8px;
 }
-
+@media only screen and (max-width:768px) {
+  .cart__item-name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #cart_expressage_type{
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
 .cart__item--variants {
   margin-bottom: 10px
 }

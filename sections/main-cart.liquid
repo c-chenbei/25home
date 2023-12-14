@@ -2,13 +2,15 @@
   {%- render 'breadcrumbs' -%}
 
   <header class="section-header text-center{% if cart.item_count == 0 %} section-header--404{% endif %}">
-    <h1 class="section-header__title">{{ 'cart.general.title' | t }}</h1>
-    <div class="rte text-spacing">
+    <h1 class="section-header__title chongzhi_h1">{{ 'cart.general.title' | t }}
+    <div class="rte text-spacing chongzhi_div">
       {%- if cart.item_count == 0 -%}
-        <p>{{ 'cart.general.empty' | t }}</p>
+        <p class="chongzhi_p">{{ 'cart.general.empty' | t }}</p>
       {%- endif -%}
-      <p>{{ 'cart.general.continue_browsing_html' | t: url: routes.all_products_collection_url }}</p>
+      <p class="chongzhi_p">{{ 'cart.general.continue_browsing_html' | t: url: routes.all_products_collection_url }}</p>
     </div>
+    </h1>
+    
     <p class="form_title_mod form_title">{{ section.settings.text2 }}</p>
     <div class="cart_explain_title">
       <p><i class="fa fa-check"></i> Free Shipping: Free shipping for curbside delivery</p>
@@ -320,6 +322,20 @@
     .form_title_pc{
       display: none;
     }
+    .chongzhi_h1{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 900;
+    }
+    .chongzhi_div{
+      margin: 0px 0px !important;
+    }
+    .chongzhi_p{
+      font-weight: normal;
+      font-size: 11px;
+      margin: 0 0 !important;
+    }
   }
   @media screen and (min-width: 1001px) {
     .form_title_pc{
@@ -327,6 +343,9 @@
     }
     .form_title_mod{
       display: none;
+    }
+    .chongzhi_p{
+      font-size: 16px;
     }
   }
   .modal_button_title{

@@ -565,20 +565,20 @@
   .main-feathers-sofa .carousel-wrapper .swiper .swiper-button-next {
     right: 40%;
   }
-  .main-feathers-sofa .feathers-box .feathers-feature {
+  .main-feathers-sofa .feathers-box .feathers-feature-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 124px;
+    margin-bottom: 5rem;
   }
-  .main-feathers-sofa .feathers-box .feathers-feature .text-rights {
+  .main-feathers-sofa .feathers-box .feathers-feature-box .text-rights {
     margin-right: 5rem;
   }
-  .main-feathers-sofa .feathers-box .feathers-feature .rows-item {
+  .main-feathers-sofa .feathers-box .feathers-feature-box .rows-item {
     width: 30.8rem;
     padding-left: 3rem;
   }
-  .main-feathers-sofa .feathers-box .feathers-feature .rows-item .item-title {
+  .main-feathers-sofa .feathers-box .feathers-feature-box .rows-item .item-title {
     text-transform: uppercase;
     position: relative;
     font-size: 2.5rem;
@@ -588,7 +588,7 @@
     z-index: 2;
     margin-bottom: 25px;
   }
-  .main-feathers-sofa .feathers-box .feathers-feature .rows-item .item-title .item-title-bg {
+  .main-feathers-sofa .feathers-box .feathers-feature-box .rows-item .item-title .item-title-bg {
     position: absolute;
     top: -25px;
     left: -17px;
@@ -599,7 +599,7 @@
     transform: rotate(-10deg);
     opacity: 0.3;
   }
-  .main-feathers-sofa .feathers-box .feathers-feature .rows-item .item-font {
+  .main-feathers-sofa .feathers-box .feathers-feature-box .rows-item .item-font {
     font-size: 1.2rem;
     line-height: 1.5rem;
     white-space: pre-wrap;
@@ -607,7 +607,7 @@
     text-align: justify;
     vertical-align: top;
   }
-  .main-feathers-sofa .feathers-box .feathers-feature .rows-item .item-btn {
+  .main-feathers-sofa .feathers-box .feathers-feature-box .rows-item .item-btn {
     cursor: pointer;
     margin-top: 1.5rem;
     text-transform: uppercase;
@@ -620,7 +620,7 @@
     color: #000;
     background-color: #ffd68c;
   }
-  .main-feathers-sofa .feathers-box .feathers-feature .items_img {
+  .main-feathers-sofa .feathers-box .feathers-feature-box .items_img {
     width: 35rem;
   }
   .main-feathers-sofa .feathers-gongyi {
