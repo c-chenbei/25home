@@ -731,8 +731,12 @@
     padding-bottom: 2rem;
     width: 50%;
   }
-  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item img {
+  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item a {
     width: 50%;
+  }
+  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item a img {
+    width: 100%;
+    display: block;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box {
     width: 50%;
@@ -1137,12 +1141,16 @@
     width: 100%;
     margin-bottom: 0.43rem;
   }
-  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item img {
+  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item a {
     width: 50%;
+  }
+  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item a img {
+    width: 100%;
+    display: block;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box {
     width: 50%;
-    background-color: #FFFFFF;
+    background-color: #F9F9F9;
     color: #000000;
     text-align: center;
     padding: 0.3rem 0.3rem 0 0.3rem;

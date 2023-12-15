@@ -381,23 +381,6 @@
         "divider": false
       }
     },
-    "182d5f2c-98f1-4a9d-9d87-11539d1e79fa": {
-      "type": "background-image-text",
-      "disabled": true,
-      "settings": {
-        "subtitle": "",
-        "title": "",
-        "text": "",
-        "button_label": "",
-        "button_link": "",
-        "image": "shopify:\/\/shop_images\/5aa540276382f3fc583ee09a042ea077.png",
-        "focal_point": "center",
-        "layout": "left",
-        "height": 650,
-        "framed": true,
-        "parallax": false
-      }
-    },
     "e98f6446-12e0-4de3-8e8b-c6abd33c8571": {
       "type": "text-and-image",
       "settings": {
@@ -418,6 +401,7 @@
     },
     "5dfc7049-aa08-4722-a024-774c3189a7ec": {
       "type": "product-introduce",
+      "disabled": true,
       "settings": {
         "title": "Dimensions"
       }
@@ -429,8 +413,8 @@
         "title": "",
         "text": "",
         "button_label": "",
-        "button_link": "",
-        "image": "shopify:\/\/shop_images\/01_cddab09c-5e63-47e4-9640-f6562736da96.jpg",
+        "button_link": "shopify:\/\/products\/aalto-boutique-white-plume-sectional",
+        "image": "shopify:\/\/shop_images\/loveseat_3dddb3cb-d098-4020-9b02-3aa3680bb0da.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -619,7 +603,6 @@
     "2a24ecbc-6edf-425c-b8e3-ded019e8095a",
     "2dbda7cb-8b91-4d98-b6ed-65d727630e0b",
     "d5028c99-6fb5-47cd-b831-7a4b5aef648f",
-    "182d5f2c-98f1-4a9d-9d87-11539d1e79fa",
     "e98f6446-12e0-4de3-8e8b-c6abd33c8571",
     "5dfc7049-aa08-4722-a024-774c3189a7ec",
     "f29adaa4-3414-4aff-9b1d-01fd981fe423",

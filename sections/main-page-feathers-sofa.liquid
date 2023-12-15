@@ -207,18 +207,21 @@
             {% case block.type %}
               {% when 'feathers_fabric'%}
                 <div class="grid-item">
-                  <img src="{{ block.settings.fabric_img | img_url: 'master' }}" alt="img" >
-                  <div class="right_box">
-                    <div class="icon_list">
-                      <img src="{{ block.settings.icon_img1 | img_url: 'master' }}" alt="img" >
-                      <img src="{{ block.settings.icon_img2 | img_url: 'master' }}" alt="img" >
-                      <img src="{{ block.settings.icon_img3 | img_url: 'master' }}" alt="img" >
-                      <img src="{{ block.settings.icon_img4 | img_url: 'master' }}" alt="img" >
-                    </div>
-                    <div class="right_box_title">{{ block.settings.fabric_title }}</div>
-                    <div class="right_box_text">{{ block.settings.fabric_text }}</div>
-                    <div class="right_box_pice">from <span> ${{ block.settings.fabric_price }}</span></div>
-                    <div class="right_box_btn"><a href="{{ block.settings.fabric_link }}">BUY NOW</a></div>
+                  <a href="{{ block.settings.fabric_link }}">
+                    <img src="{{ block.settings.fabric_img | img_url: 'master' }}" alt="img" >
+                  </a>
+
+                    <div class="right_box">
+                      <div class="icon_list">
+                        <img src="{{ block.settings.icon_img1 | img_url: 'master' }}" alt="img" >
+                        <img src="{{ block.settings.icon_img2 | img_url: 'master' }}" alt="img" >
+                        <img src="{{ block.settings.icon_img3 | img_url: 'master' }}" alt="img" >
+                        <img src="{{ block.settings.icon_img4 | img_url: 'master' }}" alt="img" >
+                      </div>
+                      <div class="right_box_title">{{ block.settings.fabric_title }}</div>
+                      <div class="right_box_text">{{ block.settings.fabric_text }}</div>
+                      <div class="right_box_pice">from <span> ${{ block.settings.fabric_price }}</span></div>
+                      <div class="right_box_btn">BUY NOW</div>
                   </div>
                 </div>
             {% endcase %}

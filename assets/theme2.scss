@@ -758,8 +758,12 @@
             padding-right: 2rem;
             padding-bottom: 2rem;
             width: 50%;
-            img{
+            a{
               width: 50%;
+              img{
+                width: 100%;
+                display: block;
+              }
             }
             .right_box{
               width: 50%;
@@ -1181,12 +1185,16 @@
             display: flex;
             width: 100%;
             margin-bottom: 0.43rem;
-            img{
+            a{
               width: 50%;
+              img{
+                width: 100%;
+                display: block;
+              }
             }
             .right_box{
               width: 50%;
-              background-color: #FFFFFF;
+              background-color: #F9F9F9;
               color: #000000;
               text-align: center;
               padding: 0.3rem 0.3rem 0 0.3rem;
