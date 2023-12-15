@@ -2,8 +2,9 @@
   {%- if section.settings.title != blank -%}
     <header class="section-header">
       <h2 class="section-header__title">
-        {{ section.settings.title | escape }}
+        <a href="{{ section.settings.title_link }}" style="color: #9f7b63;">{{ section.settings.title | escape }}</a>
       </h2>
+      <div class="section-header_content">{{ section.settings.content}}</div>
     </header>
   {%- endif -%}
 
@@ -150,12 +151,18 @@
     pointer-events: none;
     -webkit-touch-callout: none;
     white-space: nowrap;
-    font-size: 18px;
+    font-size: 13px;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate3d(-50%, -100%, 0);
-    margin-top: calc((49.2134831461%) / 2 + 80px);
+    margin-top: calc((49.2134831461%) / 2 - 100px);
+  }
+  .slider-example--tooltip svg{
+    height: 10px;
+  }
+  .section-header_content{
+    font-size: 16px;
   }
   @media only screen and (max-width:1000px) {
     .sliderexample {
@@ -202,12 +209,24 @@
       pointer-events: none;
       -webkit-touch-callout: none;
       white-space: nowrap;
-      font-size: 14px;
+      font-size: 10px;
       position: absolute;
-      top: 0;
+      top: 65px;
       left: 50%;
-      transform: translate3d(-50%, -100%, 0);
-      margin: calc(49.2957746479% - 50px) 0 0;
+    }
+    .slider-example--tooltip svg{
+      height: 8px;
+    }
+    .swiper--products-caption-left{
+      font-size: 10px;
+      line-height: 10px;
+    }
+    .swiper--products-caption-right{
+      font-size: 10px;
+      line-height: 10px;
+    }
+    .section-header_content{
+      font-size: 12px;
     }
   }
 </style>
@@ -239,13 +258,13 @@
 
   sliders[0].click();
 
-  document.addEventListener('DOMContentLoaded', () => {
+  {% comment %} document.addEventListener('DOMContentLoaded', () => {
     const twoimgcomparison = document.querySelector('two-img-comparison');
     const sliderexampletooltip = document.querySelector('.slider-example--tooltip');
     twoimgcomparison.addEventListener('slide', (event) => {
       sliderexampletooltip.style.display = 'none';
     });
-  });
+  }); {% endcomment %}
   
 </script>
 {% schema %}
@@ -257,8 +276,19 @@
     {
       "type": "text",
       "id": "title",
-      "label": "Heading",
-      "default": "测试"
+      "label": "title",
+      "default": "FEATHERS SOFAS"
+    },
+    {
+      "type": "url",
+      "id": "title_link",
+      "label": "title_link"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "content",
+      "default": "Chill Out in Softness. Original Design by 25Home"
     }
   ],
   "blocks": [
