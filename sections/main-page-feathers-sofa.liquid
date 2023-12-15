@@ -66,7 +66,6 @@
     {%- endfor -%}
   </div>
 
-{% comment %} 
   {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'feathers_box'%}
@@ -95,7 +94,30 @@
         </div>
       </div>
       {%- if has_mobile_image -%}
-        123465798
+        <div class="width_box feathers-box_mobile medium-up--hide">
+          <div class="feathers-feature-box">
+            <div class="rows-item">
+              <div class="item-title">{{ block.settings.one_title }}<div class="item-title-bg">25 Home</div></div>
+              <div class="item-font">{{ block.settings.one_content }}</div>
+            </div>
+            <img class="items_img" src="{{ block.settings.one_img | img_url: 'master' }}" alt="img">
+          </div>
+          <div class="feathers-feature-box">
+            <div class="rows-item">
+              <div class="item-title">{{ block.settings.two_title }}<div class="item-title-bg">25 Home</div></div>
+              <div class="item-font">{{ block.settings.two_content }}</div>
+            </div>
+            <img class="items_img" src="{{ block.settings.two_img | img_url: 'master' }}" alt="img">
+            <div class="item-btn"><a href="{{ block.settings.two_link }}">shop now</a></div>
+          </div>
+          <div class="feathers-feature-box">
+            <div class="rows-item">
+              <div class="item-title">{{ block.settings.three_title }}<div class="item-title-bg">25 Home</div></div>
+              <div class="item-font">{{ block.settings.three_content }}</div>
+            </div>
+            <img class="items_img" src="{{ block.settings.three_img | img_url: 'master' }}" alt="img">
+          </div>
+        </div>
       {% endif %}
     {% endcase %}
   {%- endfor -%}
@@ -112,10 +134,10 @@
         </div>
       </div>
       {%- if has_mobile_image -%}
-        789465
+        <img  class="lazyload shemei_img gongyi_mobile_img medium-up--hide"  src="{{ block.settings.gongyi_mobile_img | img_url: 'master' }}" alt="img" >
       {% endif %}
     {% endcase %}
-  {%- endfor -%} {% endcomment %}
+  {%- endfor -%}
 
   <div class="mobiledis">
     {%- for block in section.blocks -%}
@@ -148,7 +170,7 @@
           </div>
         </div>
         {%- if has_mobile_image -%}
-          <div class="width_box feathers-Diverse feathers-margin-bottom">
+          <div class="width_box feathers-Diverse feathers-margin-bottom medium-up--hide">
             <div class="feature-mobile1">
               <div class="item-title">{{ block.settings.one_title }}<div class="item-title-bg">25 Home</div></div>
               <img class="items_img" src="{{ block.settings.Diverseone_mobile_img | img_url: 'master' }}" alt="img">
@@ -426,6 +448,11 @@
           "type": "image_picker",
           "id": "gongyi_img",
           "label": "gongyi_img"
+        },
+        {
+          "type": "image_picker",
+          "id": "gongyi_mobile_img",
+          "label": "gongyi_mobile_img"
         },
         {
           "type": "text",
