@@ -218,6 +218,7 @@
     },
     "a30d08c9-f6f4-43de-aee8-c03bec1231ff": {
       "type": "product-introduce",
+      "disabled": true,
       "settings": {
         "title": "Dimensions"
       }
