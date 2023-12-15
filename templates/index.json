@@ -189,7 +189,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<h2><a href=\"\/pages\/collection-page\" title=\"collection page\">SHOP BY COLLECTION<\/a><\/h2><p>Following the steps below, be your own sofa designer. <\/p>"
+            "text": "<h2><a href=\"\/collections\/plume-sofa\" title=\"Feathers Sofas & Sectionals\">FEATHERS SOFAS<\/a><\/h2><p>Chill Out in Softness. Original Design by 25Home<\/p>"
           }
         },
         "f51587d3-fe8c-4c2a-8d62-d2cb7210f9dd": {
@@ -633,6 +633,7 @@
         "ae77543c-6a99-43dd-b339-827dede42fea": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
+            "title": "",
             "title_color": "",
             "alignment": "center",
             "html_area": ""

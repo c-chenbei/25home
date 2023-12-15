@@ -780,6 +780,10 @@
     color: #000000;
     display: inline-block;
   }
+  .main-feathers-sofa .swiper-container {
+    width: 100%;
+    overflow: hidden;
+  }
   .main-feathers-sofa .feathers-footer {
     color: #FFFFFF;
     padding: 3rem 0;
