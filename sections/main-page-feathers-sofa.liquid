@@ -3,7 +3,7 @@
 </header> {% endcomment %}
 {% assign has_mobile_image = false %}
 {%- for block in section.blocks -%}
-  {% if block.settings.mobile_img != blank  %}
+  {% if block.settings.mobile_img != blank and block.type == 'bannder'  %}
     {% assign has_mobile_image = true %}
   {% endif %}
 {%- endfor -%}
@@ -29,59 +29,63 @@
         </div>
     {% endcase %}
   {%- endfor -%}
-  <div class="width_box carousel-wrapper feathers-margin-bottom">
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        {%- for block in section.blocks -%}
-          {% case block.type %}
-            {% when 'swiper_wrapper'%}
-              <div class="swiper-slide">
-                <a href="{{ block.settings.swiper_link }}">
-                  <img src="{{ block.settings.swiper_img | img_url: 'master' }}" class="{% if has_mobile_image %} small--hide{% endif %}" alt="img">
-                  {%- if has_mobile_image -%}
-                    <img class="medium-up--hide" src="{{ block.settings.mobile_img | img_url: 'master' }}" alt="{{ block.settings.mobile_img.alt }}">
-                  {% endif %}
-                </a>
-              </div>
-            {% endcase %}
-          {%- endfor -%}
+  <div class="mobiledis">
+    <div class="width_box carousel-wrapper feathers-margin-bottom">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            {% case block.type %}
+              {% when 'swiper_wrapper'%}
+                <div class="swiper-slide">
+                  <a href="{{ block.settings.swiper_link }}">
+                    <img src="{{ block.settings.swiper_img | img_url: 'master' }}" class="{% if has_mobile_image %} small--hide{% endif %}" alt="img">
+                    {%- if has_mobile_image -%}
+                      <img class="medium-up--hide" src="{{ block.settings.mobile_img | img_url: 'master' }}" alt="{{ block.settings.mobile_img.alt }}">
+                    {% endif %}
+                  </a>
+                </div>
+              {% endcase %}
+            {%- endfor -%}
+        </div>
+        <div class="swiper-button-prev swiper-button-top"><</div>
+        <div class="swiper-button-next swiper-button-top">></div>
       </div>
-      <div class="swiper-button-prev swiper-button-top"><</div>
-      <div class="swiper-button-next swiper-button-top">></div>
     </div>
+    {%- for block in section.blocks -%}
+      {% case block.type %}
+        {% when 'feathers_Equilibrium'%}
+        <div class="feathers-Equilibrium feathers-margin-bottom">
+          <img class="lazyload shemei_img {% if has_mobile_image %} small--hide{% endif %}" src="{{ block.settings.Equilibrium_img | img_url: 'master' }}" alt="img">
+          {%- if has_mobile_image -%}
+            <img class="shemei_img medium-up--hide" src="{{ block.settings.Equilibrium_mobile_img | img_url: 'master' }}" alt="img">
+          {% endif %}
+        </div>
+      {% endcase %}
+    {%- endfor -%}
   </div>
-  {%- for block in section.blocks -%}
-    {% case block.type %}
-      {% when 'feathers_Equilibrium'%}
-      <div class="feathers-Equilibrium feathers-margin-bottom">
-        <img class="lazyload shemei_img" src="{{ block.settings.Equilibrium_img | img_url: 'master' }}" alt="img">
-      </div>
-    {% endcase %}
-  {%- endfor -%}
-
   {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'feathers_box'%}
       <div class="width_box feathers-box feathers-margin-bottom">
         <div class="feathers-feature-box">
           <div class="rows-item text-rights">
-            <div class="item-title">Disassemble<div class="item-title-bg">25 Home</div></div>
-            <div class="item-font">The thoughtful zipper design allows the cover of the Plume couch to be removed, making it easy to wash and clean. The covers are made of a breathable fabric that is machine washable, keeping your feather sofa fresh.</div>
+            <div class="item-title">{{ block.settings.one_title }}<div class="item-title-bg">25 Home</div></div>
+            <div class="item-font">{{ block.settings.one_content }}</div>
           </div>
           <img class="items_img" src="{{ block.settings.one_img | img_url: 'master' }}" alt="img">
         </div>
         <div class="feathers-feature-box">
           <img class="items_img text-rights" src="{{ block.settings.two_img | img_url: 'master' }}" alt="img">
           <div class="rows-item">
-            <div class="item-title">modular design<div class="item-title-bg">25 Home</div></div>
-            <div class="item-font">Our Plume feather sofa has a modular design so you can customize your configuration to perfectly fit your space.</div>
+            <div class="item-title">{{ block.settings.two_title }}<div class="item-title-bg">25 Home</div></div>
+            <div class="item-font">{{ block.settings.two_content }}</div>
             <div class="item-btn"><a href="{{ block.settings.two_link }}">shop now</a></div>
           </div>
         </div>
         <div class="feathers-feature-box">
           <div class="rows-item text-rights">
-            <div class="item-title">BETTER MATERIALS<div class="item-title-bg">25 Home</div></div>
-            <div class="item-font">With removable and washable sofa covers, the Plume Sectional Sofa offers the perfect solution for hassle-free cleaning. The material is wear-resistant and scratch-resistant. Sofa covers can be easily removed for cleaning and replacement. The high-density foam and fluffy feathers embrace your body, making it your favorite place to relax for the next decades.</div>
+            <div class="item-title">{{ block.settings.three_title }}<div class="item-title-bg">25 Home</div></div>
+            <div class="item-font">{{ block.settings.three_content }}</div>
           </div>
           <img class="items_img" src="{{ block.settings.three_img | img_url: 'master' }}" alt="img">
         </div>
@@ -94,9 +98,8 @@
       <div class="feathers-gongyi feathers-margin-bottom">
         <img  class="lazyload shemei_img" src="{{ block.settings.gongyi_img | img_url: 'master' }}" alt="img" >
         <div class="gongyi-hander">
-          <div class="gongyi-title">Unique Sturdy & Built to Last Over a Decade</div>
-          <div class="gongyi-text">
-            Our Feathers sofa provides up to 10 years of unwavering comfort and support thanks to its premium materials and expert craftsmanship. Sink into plush relaxation you can enjoy today and for years to come. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.</div>
+          <div class="gongyi-title">{{ block.settings.gongyi_title }}</div>
+          <div class="gongyi-text">{{ block.settings.gongyi_content }}</div>
         </div>
       </div>
     {% endcase %}
@@ -107,24 +110,24 @@
       <div class="width_box feathers-Diverse feathers-margin-bottom">
         <div class="feathers-feature">
           <div class="rows-item">
-            <div class="item-title">Diverse Colors<div class="item-title-bg">25 Home</div></div>
-            <div class="item-font">Choose from 9 stylish colors to find the perfect match for your home's décor. From rich bold tones to airy neutrals, our spectrum of shade options ensures there’s a Feathers sofa to complement your personal taste and space. And we offer free color swatches.</div>
+            <div class="item-title">{{ block.settings.one_title }}<div class="item-title-bg">25 Home</div></div>
+            <div class="item-font">{{ block.settings.one_content }}</div>
             <div class="item-btn"><a href="{{ block.settings.Diverseone_link }}">shop now</a></div>
           </div>
           <img class="items_img" src="{{ block.settings.Diverseone_img | img_url: 'master' }}" alt="img">
         </div>
         <div class="feathers-feature">
           <div class="rows-item">
-            <div class="item-title item-title-s">Versatile Sofa Legs</div>
-            <div class="item-font">Free Sofa Legs Included! The sofa legs come with 2 installation options: flush with the ground or 3inches above the ground, providing convenience for using a robotic vacuum cleaner and other tools for easy cleaning.</div>
+            <div class="item-title item-title-s">{{ block.settings.two_title }}</div>
+            <div class="item-font">{{ block.settings.two_content }}</div>
             <div class="item-btn"><a href="{{ block.settings.Diversetwo_link }}">shop now</a></div>
           </div>
           <img class="items_img" src="{{ block.settings.Diversetwo_img | img_url: 'master' }}" alt="img">
         </div>
         <div class="feathers-feature">
           <div class="rows-item">
-            <div class="item-title item-title-s">Easy Assembly 10- 15 Mins</div>
-            <div class="item-font">With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks. A one-step solution that frees your hands, without the burden of instruction manual.</div>
+            <div class="item-title item-title-s">{{ block.settings.three_title }}</div>
+            <div class="item-font">{{ block.settings.three_content }}</div>
             <div class="item-btn"><a href="{{ block.settings.Diversethree_link }}">shop now</a></div>
           </div>
           <img class="items_img" src="{{ block.settings.Diversethree_img | img_url: 'master' }}" alt="img">
@@ -164,15 +167,18 @@
   {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'feathers_ins'%}
-      <div class="feathers-ins feathers-margin-bottom">
-        <div class="grid-item"><img src="{{ block.settings.ins_img1 | img_url: 'master' }}" alt="img"></div>
-        <div class="grid-item"><img src="{{ block.settings.ins_img2 | img_url: 'master' }}" alt="img"></div>
-        <div class="grid-item"><img src="{{ block.settings.ins_img3 | img_url: 'master' }}" alt="img"></div>
-        <div class="grid-item"><img src="{{ block.settings.ins_img4 | img_url: 'master' }}" alt="img"></div>
-        <div class="grid-item"><img src="{{ block.settings.ins_img5 | img_url: 'master' }}" alt="img"></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="{{ block.settings.ins_img1 | img_url: 'master' }}" alt="img"></div>
+          <div class="swiper-slide"><img src="{{ block.settings.ins_img2 | img_url: 'master' }}" alt="img"></div>
+          <div class="swiper-slide"><img src="{{ block.settings.ins_img3 | img_url: 'master' }}" alt="img"></div>
+          <div class="swiper-slide"><img src="{{ block.settings.ins_img4 | img_url: 'master' }}" alt="img"></div>
+          <div class="swiper-slide"><img src="{{ block.settings.ins_img5 | img_url: 'master' }}" alt="img"></div>
+        </div>
       </div>
     {% endcase %}
   {%- endfor -%}
+
   <div class="feathers-footer">
     <div class="width_box footer-font">
       <div class="footer-left">
@@ -181,7 +187,7 @@
           <div class="footer-handers-title">Asked Questions</div>
           <div class="footer-handers-title2">Still having questions? Visit our <a href="/pages/faqs" target="_blank">FAQs</a> or <a href="/pages/contact" target="_blank">Contact Us</a>.</div>
         </div>
-        <div class="footer-btns" id="backToTopBtns">back to top</div>
+        <div class="footer-btns pc-footer-btns" id="backToTopBtns">back to top</div>
       </div>
       <div class="footer-right">
         {%- for block in section.blocks -%}
@@ -197,14 +203,13 @@
                 </div>
               </div>
           {% endcase %}
-      {%- endfor -%}
+        {%- endfor -%}
       </div>
+      <div class="mo-footer-btns" id="backToTopBtns">back to top</div>
     </div>
   </div>
 </div>
-<div class="mobile-feathers-sofa">
 
-</div>
 {% schema %}
 {
   "name": "main-page-feathers-sofa",
@@ -296,6 +301,11 @@
           "type": "image_picker",
           "id": "Equilibrium_img",
           "label": "Equilibrium_img"
+        },
+        {
+          "type": "image_picker",
+          "id": "Equilibrium_mobile_img",
+          "label": "Equilibrium_mobile_img"
         }
       ]
     },
@@ -315,6 +325,16 @@
           "label": "one_link"
         },
         {
+          "type": "text",
+          "id": "one_title",
+          "label": "one_title"
+        },
+        {
+          "type": "text",
+          "id": "one_content",
+          "label": "one_content"
+        },
+        {
           "type": "image_picker",
           "id": "two_img",
           "label": "two_img"
@@ -325,6 +345,16 @@
           "label": "two_link"
         },
         {
+          "type": "text",
+          "id": "two_title",
+          "label": "two_title"
+        },
+        {
+          "type": "text",
+          "id": "two_content",
+          "label": "two_content"
+        },
+        {
           "type": "image_picker",
           "id": "three_img",
           "label": "three_img"
@@ -333,6 +363,16 @@
           "type": "url",
           "id": "three_link",
           "label": "three_link"
+        },
+        {
+          "type": "text",
+          "id": "three_title",
+          "label": "three_title"
+        },
+        {
+          "type": "text",
+          "id": "three_content",
+          "label": "three_content"
         }
       ]
     },
@@ -345,6 +385,16 @@
           "type": "image_picker",
           "id": "gongyi_img",
           "label": "gongyi_img"
+        },
+        {
+          "type": "text",
+          "id": "gongyi_title",
+          "label": "gongyi_title"
+        },
+        {
+          "type": "text",
+          "id": "gongyi_content",
+          "label": "gongyi_content"
         }
       ]
     },
@@ -364,6 +414,16 @@
           "label": "Diverseone_link"
         },
         {
+          "type": "text",
+          "id": "one_title",
+          "label": "one_title"
+        },
+        {
+          "type": "text",
+          "id": "one_content",
+          "label": "one_content"
+        },
+        {
           "type": "image_picker",
           "id": "Diversetwo_img",
           "label": "Diversetwo_img"
@@ -374,6 +434,16 @@
           "label": "Diversetwo_link"
         },
         {
+          "type": "text",
+          "id": "two_title",
+          "label": "two_title"
+        },
+        {
+          "type": "text",
+          "id": "two_content",
+          "label": "two_content"
+        },
+        {
           "type": "image_picker",
           "id": "Diversethree_img",
           "label": "Diversethree_img"
@@ -382,6 +452,16 @@
           "type": "url",
           "id": "Diversethree_link",
           "label": "Diversethree_link"
+        },
+        {
+          "type": "text",
+          "id": "three_title",
+          "label": "three_title"
+        },
+        {
+          "type": "text",
+          "id": "three_content",
+          "label": "three_content"
         }
       ]
     },
@@ -529,7 +609,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
-      background: #000;
     }
   }
 {% endstyle %}
@@ -542,17 +621,36 @@
       }, false)
     }
     function setHtmlFontSize () {
-        /*750代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是 为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
-        if (getDeviceType()){
-          deviceWidth = document.documentElement.clientWidth
-          document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 750 * 100 + 'px !important'
-        } else{ 
-          deviceWidth = document.documentElement.clientWidth > 1920 ? 1920 : document.documentElement.clientWidth
-          document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 100 + 'px !important'
-        } 
+      if (!getDeviceType()){
+        deviceWidth = document.documentElement.clientWidth > 1920 ? 1920 : document.documentElement.clientWidth
+        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 100 + 'px !important'
+      } else {
+        deviceWidth = document.documentElement.clientWidth
+        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + (deviceWidth / 750) * 100 + 'px !important'
+      }
     }
 
-
+    if (!getDeviceType()){
+      var moSwiper = new Swiper('.swiper-container',{
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        slidesPerView: 5,
+        spaceBetween: 30,
+      })
+    } else {
+      var moSwiper = new Swiper('.swiper-container',{
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 20,
+      })
+    }
 
   var mySwiper = new Swiper ('.swiper', {
     loop: true, // 循环模式选项
@@ -564,7 +662,7 @@
       prevEl: '.swiper-button-prev',
     },
   })
-  $('#backToTopBtns').click(function() {
+  $('.pc-footer-btns, .mo-footer-btns').click(function() {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
   });
 </script>

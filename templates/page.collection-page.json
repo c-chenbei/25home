@@ -7,6 +7,7 @@
           "type": "bannder",
           "settings": {
             "bannder_img": "shopify:\/\/shop_images\/03_08c9f483-ecb5-41b2-95a4-415c57c7a718.jpg",
+            "mobile_img": "shopify:\/\/shop_images\/750.jpg",
             "links": "",
             "banndertitle": "15% OFF",
             "banndertitle2": "SUPER15"

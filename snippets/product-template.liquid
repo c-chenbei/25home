@@ -598,13 +598,6 @@
                     {%- for value in lastOption.values -%}
                       <button data-title="{{value}}" class="click_svariant">{{ value }}</button>
                     {%- endfor -%}
-                  {% comment %} {%- for option in product.options_with_values -%}
-                    {% if option.name == 'Size' %}
-                      {%- for value in option.values -%}
-                        <button data-title="{{value}}" class="click_svariant">{{ value }}</button>
-                      {%- endfor -%}
-                    {% endif %}
-                  {%- endfor -%} {% endcomment %}
                 </div>
                 <div class="introduce_metafields"></div>
                 </div>
