@@ -161,13 +161,6 @@
           "type": "share",
           "settings": {
           }
-        },
-        "f1be35fd-b757-417a-9331-fbfb4530c09e": {
-          "type": "introduce",
-          "disabled": true,
-          "settings": {
-            "title": "Dimensions"
-          }
         }
       },
       "block_order": [
@@ -189,8 +182,7 @@
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
         "contact",
-        "share",
-        "f1be35fd-b757-417a-9331-fbfb4530c09e"
+        "share"
       ],
       "settings": {
         "sku_enable": false,

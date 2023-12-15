@@ -103,13 +103,6 @@
           "type": "share",
           "settings": {
           }
-        },
-        "f42abd9c-e261-4176-bc2d-be89ca6da688": {
-          "type": "introduce",
-          "settings": {
-            "title": "Ask a question",
-            "phone": false
-          }
         }
       },
       "block_order": [
@@ -126,8 +119,7 @@
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "tab",
         "contact",
-        "share",
-        "f42abd9c-e261-4176-bc2d-be89ca6da688"
+        "share"
       ],
       "settings": {
         "sku_enable": false,

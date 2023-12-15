@@ -175,43 +175,6 @@
         "enable_gutter": true
       }
     },
-    "976c332f-9325-4e60-98e2-e7576f5c249d": {
-      "type": "rich-text",
-      "blocks": {
-        "template--15867369324771__976c332f-9325-4e60-98e2-e7576f5c249d-heading-1": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "SHOP BY COLLECTION"
-          }
-        },
-        "b846a64c-026d-4225-aca6-61123a8de113": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<h2><a href=\"\/collections\/plume-sofa\" title=\"Feathers Sofas & Sectionals\">FEATHERS SOFAS<\/a><\/h2><p>Chill Out in Softness. Original Design by 25Home<\/p>"
-          }
-        },
-        "f51587d3-fe8c-4c2a-8d62-d2cb7210f9dd": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link": "shopify:\/\/pages\/collection-page",
-            "link_text": "shop collection"
-          }
-        }
-      },
-      "block_order": [
-        "template--15867369324771__976c332f-9325-4e60-98e2-e7576f5c249d-heading-1",
-        "b846a64c-026d-4225-aca6-61123a8de113",
-        "f51587d3-fe8c-4c2a-8d62-d2cb7210f9dd"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
     "76415bed-98c0-4afe-ba11-c3022a0bfb24": {
       "type": "advanced-content",
       "blocks": {
@@ -263,9 +226,9 @@
           "settings": {
             "title": "4+ Fabrics",
             "svg": "<svg t=\"1699953818591\" class=\"icon\" viewbox=\"0 0 1066 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"4510\" width=\"32\" height=\"32\"><path d=\"M846.771689 1005.273749c-36.685557 0-110.759705 0-162.464611-35.918612l0 3.962551L98.488578 973.317688c-52.855324 0-95.868181-43.012857-95.868181-95.868181L2.620397 182.405193c0-52.855324 43.012857-95.868181 95.868181-95.868181l543.189115 0c39.369866-86.537012 155.817751-86.537012 205.093996-86.537012 54.644863 0 192.311572 0 215.128199 118.493072l3.259518 0L1064.967669 860.257146C1058.512545 1005.273749 905.251279 1005.273749 846.771689 1005.273749zM846.771689 760.234677c-128.655099 0-154.475596 34.640369-154.475596 90.563475s25.820497 90.563475 154.475596 90.563475 154.475596-34.640369 154.475596-90.563475S975.426788 760.234677 846.771689 760.234677zM98.488578 150.449132c-17.639745 0-31.95606 14.316315-31.95606 31.95606l0 695.044314c0 17.575833 14.316315 31.95606 31.95606 31.95606l529.895394 0L628.383972 150.449132 98.488578 150.449132zM846.771689 696.322556c34.896018 0 103.409812 0 154.475596 30.677818L1001.247285 154.411684c0-55.923106-25.820497-90.563475-154.475596-90.563475s-154.475596 34.640369-154.475596 90.563475l0 572.588691C743.361877 696.322556 811.875671 696.322556 846.771689 696.322556z\" fill=\"#272636\" p-id=\"4511\"><\/path><\/svg>",
-            "image1": "shopify:\/\/shop_images\/03_f4bae72b-3a4f-49c7-b505-3c8ae148a453.png",
+            "image1": "shopify:\/\/shop_images\/16453-510_93f9b8e0-f7a1-4a9a-b736-145d7bb28e21.jpg",
             "title1": "POLYESTER FEATHERS SECTIONAL",
-            "image2": "shopify:\/\/shop_images\/08_918fdcb8-544f-4e19-a2fa-70f1bef73bea.png",
+            "image2": "shopify:\/\/shop_images\/Capture_One_Catalog1326-510.jpg",
             "title2": "AIR LEATHER FEATHERS SECTIONAL"
           }
         },
@@ -274,7 +237,7 @@
           "settings": {
             "title": "6+ Shapes",
             "svg": "<svg t=\"1699953800959\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"3113\" width=\"32\" height=\"32\"><path d=\"M879.243636 676.491636a28.485818 28.485818 0 1 1 25.506909 51.013819l-379.99709 189.998545a28.485818 28.485818 0 0 1-25.50691 0L119.249455 727.505455a28.485818 28.485818 0 1 1 25.506909-51.013819L512 860.16z m0-189.998545a28.485818 28.485818 0 0 1 25.506909 51.013818l-379.99709 189.998546a28.485818 28.485818 0 0 1-25.50691 0l-379.99709-189.998546a28.485818 28.485818 0 0 1 25.506909-51.013818L512 670.114909z m-379.997091-379.997091a28.485818 28.485818 0 0 1 25.50691 0l379.99709 189.998545a28.485818 28.485818 0 0 1 0 51.013819l-379.99709 189.998545a28.485818 28.485818 0 0 1-25.50691 0L119.249455 347.508364a28.485818 28.485818 0 0 1 0-51.013819zM512 163.886545L195.723636 322.001455 512 480.116364l316.276364-158.114909L512 163.886545z\" fill=\"#333333\" p-id=\"3114\"><\/path><\/svg>",
-            "image1": "shopify:\/\/shop_images\/031-510.jpg",
+            "image1": "shopify:\/\/shop_images\/08472-510.jpg",
             "title1": "FEATHERS SECTIONAL",
             "image2": "shopify:\/\/shop_images\/027-510.png",
             "title2": "FEATHERS  SOFA"
@@ -301,6 +264,15 @@
             "image2": "shopify:\/\/shop_images\/100.png",
             "title2": "HIGH-LEGS"
           }
+        },
+        "f89daf72-f9a7-44ef-b7ab-ae81417eac11": {
+          "type": "strongs",
+          "settings": {
+            "title": "20+ clooections",
+            "svg": "<svg viewbox=\"0 0 40 24\" width=\"40\" height=\"24\" class=\"svg-icon--sofa\" aria-hidden=\"true\"><path d=\"M34.3,18.74c.33.06,1.29.49,1.45.87a22.44,22.44,0,0,1,.73,3.89V18.74h0\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M20,1.47V15H5.06a1,1,0,0,1-1.06-1V1.47A1,1,0,0,1,5.06.5H18.92A1,1,0,0,1,20,1.47Z\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M36,7.82h2.47a1,1,0,0,1,1,1l0,7a3,3,0,0,1-3,2.91H3.5a3,3,0,0,1-3-2.91l0-7a1,1,0,0,1,1-1H4\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M4,11.64a29.59,29.59,0,0,1,8-1.44,30.11,30.11,0,0,1,8,1.43\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M20,15H34.88a1,1,0,0,0,1.07-1V1.48a1,1,0,0,0-1.06-1H21.12a1.08,1.08,0,0,0-1.13,1\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M20,11.64a29.37,29.37,0,0,1,8-1.43,29.62,29.62,0,0,1,8,1.44\" fill=\"none\" stroke=\"currentColor\" stroke-miterlimit=\"10\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><path d=\"M5.67,18.74a2.74,2.74,0,0,0-1.45.87A22.19,22.19,0,0,0,3.5,23.5V18.74h0\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" fill-rule=\"evenodd\" vector-effect=\"non-scaling-stroke\"><\/path><\/svg>",
+            "title1": "Image1下方名称",
+            "title2": "Image2下方名称"
+          }
         }
       },
       "block_order": [
@@ -308,10 +280,13 @@
         "4b106b20-cb73-4a49-b145-1cfe6aa8e984",
         "065996cc-b2aa-4b8a-9f3f-2babfd138062",
         "e03dcb24-1559-44d2-9b40-3999eb68d74c",
-        "5d1b4e8e-b031-406e-83d0-c746aed8b4e0"
+        "5d1b4e8e-b031-406e-83d0-c746aed8b4e0",
+        "f89daf72-f9a7-44ef-b7ab-ae81417eac11"
       ],
       "settings": {
-        "title": ""
+        "title": "FEATHERS SOFAS",
+        "title_link": "shopify:\/\/collections\/plume-sofa",
+        "content": "Chill Out in Softness. Original Design by 25Home"
       }
     },
     "b10af564-5ea1-4cfc-a965-0519a30a30ca": {
@@ -818,7 +793,6 @@
     "a8c5aae9-e652-461e-bf73-ce0f0328ce67",
     "16541605899760848b",
     "77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c",
-    "976c332f-9325-4e60-98e2-e7576f5c249d",
     "76415bed-98c0-4afe-ba11-c3022a0bfb24",
     "69e5f742-4404-4724-831f-62c720ad05de",
     "b10af564-5ea1-4cfc-a965-0519a30a30ca",

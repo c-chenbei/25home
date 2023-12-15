@@ -586,26 +586,6 @@
           </div>
         {%- endunless -%}
       </div>
-      {%- for block in blocks -%}
-        {%- case block.type -%}
-          {%- when 'introduce' -%}
-            <div class="introduce" id="introduce">
-              <div class="introduce-title"> {{ block.settings.title }}</div>
-              <div class="introduce_box">
-                <div class="introduce_current_variant">
-                  <div class="current_variant">
-                    {% assign lastOption = product.options_with_values | last %}
-                    {%- for value in lastOption.values -%}
-                      <button data-title="{{value}}" class="click_svariant">{{ value }}</button>
-                    {%- endfor -%}
-                </div>
-                <div class="introduce_metafields"></div>
-                </div>
-                <img class="introduce-img" src="{{ current_variant.featured_image.src | img_url: 'master' }}" alt="img">
-              </div>
-            </div>
-          {%- endcase -%}
-        {%- endfor -%}
     </div>
     <div id="priceSuspension">
       <div id="priceSuspension-cont">
@@ -817,37 +797,6 @@
       $("#myModal2").css("display", "none");
     }
   });
-  const click_svariant = document.querySelectorAll('.click_svariant');
-  click_svariant.forEach((item,index) => {
-    item.addEventListener('click', () => {
-      click_svariant.forEach((el) => {
-        el.classList.remove('selected');
-      });
-      item.classList.add('selected');
-      currentvariant.forEach(function(text,index) {
-        if (text.name.includes(item.dataset.title)) {
-          $(".introduce-img").attr("src", text.featured_image.src);
-        }
-      })
-    });
-    if (index === 0) {
-      item.click();
-    }
-  });
-  
-  var introduceString = '{{ product.metafields.custom.introduce }}'
-  if (introduceString) {
-    var introduceObject = JSON.parse(introduceString);
-    let divitem = ''
-    introduceObject.children.forEach(item => {
-      if (item.children[0].value) {
-        divitem += '<div>'+ item.children[0].value + '</div>'
-      } else {
-        divitem += '<div class="kong">'+ item.children[0].value + '</div>'
-      }
-    })
-    $(".introduce_metafields").html(divitem);
-  }
   const expressage_date = document.querySelectorAll('#expressage_date');
   if (expressage_date.length > 0) {
     expressage_date.forEach(item => {
