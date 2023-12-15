@@ -597,10 +597,6 @@
   .main-feathers-sofa .feathers-box .feathers-feature-box .rows-item .item-font {
     font-size: 1.2rem;
     line-height: 1.5rem;
-    white-space: pre-wrap;
-    word-break: break-all;
-    text-align: justify;
-    vertical-align: top;
   }
   .main-feathers-sofa .feathers-box .feathers-feature-box .rows-item .item-btn {
     cursor: pointer;
@@ -680,10 +676,6 @@
   .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item .item-font {
     font-size: 1.2rem;
     line-height: 1.5rem;
-    white-space: pre-wrap;
-    word-break: break-all;
-    text-align: justify;
-    vertical-align: top;
   }
   .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item .item-btn {
     cursor: pointer;
@@ -1014,10 +1006,6 @@
   .main-feathers-sofa .feathers-box_mobile .feathers-feature-box .rows-item .item-font {
     font-size: 0.2rem;
     line-height: 0.2rem;
-    white-space: pre-wrap;
-    word-break: break-all;
-    text-align: justify;
-    vertical-align: top;
   }
   .main-feathers-sofa .feathers-box_mobile .feathers-feature-box .item-btn {
     cursor: pointer;
@@ -1092,10 +1080,6 @@
   .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item .item-font {
     font-size: 0.2rem;
     line-height: 0.2rem;
-    white-space: pre-wrap;
-    word-break: break-all;
-    text-align: justify;
-    vertical-align: top;
   }
   .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item .item-btn {
     cursor: pointer;
