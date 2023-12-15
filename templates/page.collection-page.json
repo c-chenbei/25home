@@ -6,7 +6,7 @@
         "68aa2675-3b35-4d67-8173-ed2cc5507f0f": {
           "type": "bannder",
           "settings": {
-            "bannder_img": "shopify:\/\/shop_images\/03_08c9f483-ecb5-41b2-95a4-415c57c7a718.jpg",
+            "bannder_img": "shopify:\/\/shop_images\/1_3afb8a2c-dcea-48b6-9e44-e605f03bed39.png",
             "mobile_img": "shopify:\/\/shop_images\/750.jpg",
             "links": "",
             "banndertitle": "15% OFF",
@@ -96,16 +96,24 @@
           "settings": {
             "one_img": "shopify:\/\/shop_images\/Disassemble.gif",
             "one_link": "",
+            "one_title": "Washable Cover",
+            "one_content": "The thoughtful zipper design allows the cover of the Plume couch to be removed, making it easy to wash and clean. The covers are made of a breathable fabric that is machine washable, keeping your feather sofa fresh.",
             "two_img": "shopify:\/\/shop_images\/modular_design.gif",
             "two_link": "https:\/\/25home.com\/collections\/plume-sofa",
+            "two_title": "Modular Design",
+            "two_content": "Our Plume feather sofa has a modular design so you can customize your configuration to perfectly fit your space.",
             "three_img": "shopify:\/\/shop_images\/BETTER_MATERIALS.gif",
-            "three_link": ""
+            "three_link": "",
+            "three_title": "Kids & Pets Friendly",
+            "three_content": "The Feathers Sectional Sofa offers hassle-free cleaning with removable, washable covers. Its durable, high-quality fabric withstands kids and pets without you worrying about wear and tear. The scratch-resistant material and high-density, feather-filled cushions embrace you in relaxation and comfort for years."
           }
         },
         "ee1b0c34-e13a-4aa0-a84f-c611bc228bc6": {
           "type": "feathers_gongyi",
           "settings": {
-            "gongyi_img": "shopify:\/\/shop_images\/gongyi.png"
+            "gongyi_img": "shopify:\/\/shop_images\/gongyi.png",
+            "gongyi_title": "Unique Sturdy&Built to Last Over a Decade",
+            "gongyi_content": "Our Feathers sofa provides up to 10 years of unwavering comfort and support thanks to its premium materials and expert craftsmanship. Sink into plush relaxation you can enjoy today and for years to come. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat."
           }
         },
         "2d19ee57-7be1-460c-a28f-e638bae1b57d": {
@@ -113,10 +121,16 @@
           "settings": {
             "Diverseone_img": "shopify:\/\/shop_images\/Diverse_Colors.gif",
             "Diverseone_link": "https:\/\/25home.com\/collections\/plume-sofa",
+            "one_title": "Versatile Sofa Legs",
+            "one_content": "Free Sofa Legs Included! The sofa legs come with 2 installation options: flush with the ground or 3 inches above the ground, providing convenience for using a robotic vacuum cleaner and other tools for easy cleaning.",
             "Diversetwo_img": "shopify:\/\/shop_images\/Versatile_Sofa_Legs.gif",
             "Diversetwo_link": "https:\/\/25home.com\/collections\/plume-sofa",
+            "two_title": "Diverse Colors",
+            "two_content": "Choose from 9 stylish colors to find the perfect match for your home's decor. From rich bold tones to airy neutrals, our spectrum of shade options ensures there’s a Feathers sofa to complement your personal taste and space. And we offer free color swatches.",
             "Diversethree_img": "shopify:\/\/shop_images\/Easy_Assembly.png",
-            "Diversethree_link": "https:\/\/25home.com\/collections\/plume-sofa"
+            "Diversethree_link": "https:\/\/25home.com\/collections\/plume-sofa",
+            "three_title": "Easy Assembly 10- 15 Mins",
+            "three_content": "With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks. A one-step solution that frees your hands, without the burden of instruction manual."
           }
         },
         "5ac58820-5896-49cc-af1c-52d724516a83": {
@@ -124,8 +138,8 @@
           "settings": {
             "fabric_img": "shopify:\/\/shop_images\/10002_582eb2ae-5e66-4a86-8b89-30b3f7541748.jpg",
             "fabric_title": "polyester",
-            "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
-            "fabric_price": "200.00",
+            "fabric_text": "It is long-wearing, easy-care, colorfast, wallet-friendly and versatile for all decor preferences.",
+            "fabric_price": "176.00",
             "fabric_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/polyester-covers-feathers-loveseat"
           }
         },
@@ -133,9 +147,9 @@
           "type": "feathers_fabric",
           "settings": {
             "fabric_img": "shopify:\/\/shop_images\/10001_abc5991f-63ba-4d00-a914-be877acc33a2.jpg",
-            "fabric_title": "polyester",
-            "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
-            "fabric_price": "200.00",
+            "fabric_title": "Air leather",
+            "fabric_text": "It is a new type of fabric, that combines the appearance and texture of real leather and the breathability of the cotton.",
+            "fabric_price": "108.00",
             "fabric_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/air-leather-covers-feathers-armchair"
           }
         },
@@ -143,9 +157,9 @@
           "type": "feathers_fabric",
           "settings": {
             "fabric_img": "shopify:\/\/shop_images\/10001_7fd34483-13c6-49ca-b883-1e2d88363935.jpg",
-            "fabric_title": "polyester",
-            "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
-            "fabric_price": "200.00",
+            "fabric_title": "BOUCLE",
+            "fabric_text": "It offers great texture, comfort, and durability making it a versatile, easy-care upholstery choice",
+            "fabric_price": "180.00",
             "fabric_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/boucle-white-covers-feathers-armchair"
           }
         },
@@ -153,9 +167,9 @@
           "type": "feathers_fabric",
           "settings": {
             "fabric_img": "shopify:\/\/shop_images\/10001_438803a2-9120-4901-a09f-87907298d089.jpg",
-            "fabric_title": "polyester",
-            "fabric_text": "Introducing our stylish and practical sofa covers crafted from high-quality white boucle fabric.",
-            "fabric_price": "200.00",
+            "fabric_title": "LINEN",
+            "fabric_text": "It is breathable, pliable, and skin-friendly, waterproof, and anti-fouling.",
+            "fabric_price": "194.00",
             "fabric_link": "https:\/\/25home.com\/collections\/plume-sofa\/products\/linen-covers-feathers-armchair"
           }
         },
@@ -257,7 +271,9 @@
       ],
       "settings": {
         "footer_pc_img": "shopify:\/\/shop_images\/e269ae5ba51e3730cf907ce795ef6ae5.png",
-        "fabric_pc_img": "shopify:\/\/shop_images\/caizhi_bg.png"
+        "footer_mobile_img": "shopify:\/\/shop_images\/s.png",
+        "fabric_pc_img": "shopify:\/\/shop_images\/caizhi_bg.png",
+        "fabric_mobile_img": "shopify:\/\/shop_images\/e269ae5ba51e3730cf907ce795ef6ae5_74b1264e-a23a-45a6-ab9b-005d6bda3aa4.png"
       }
     },
     "f4d25254-c171-48eb-8c4e-f1385d02aeaa": {

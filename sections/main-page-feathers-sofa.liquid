@@ -29,6 +29,8 @@
         </div>
     {% endcase %}
   {%- endfor -%}
+
+
   <div class="mobiledis">
     <div class="width_box carousel-wrapper feathers-margin-bottom">
       <div class="swiper">
@@ -63,10 +65,12 @@
       {% endcase %}
     {%- endfor -%}
   </div>
+
+{% comment %} 
   {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'feathers_box'%}
-      <div class="width_box feathers-box feathers-margin-bottom">
+      <div class="width_box feathers-box feathers-margin-bottom {% if has_mobile_image %} small--hide{% endif %}">
         <div class="feathers-feature-box">
           <div class="rows-item text-rights">
             <div class="item-title">{{ block.settings.one_title }}<div class="item-title-bg">25 Home</div></div>
@@ -90,84 +94,121 @@
           <img class="items_img" src="{{ block.settings.three_img | img_url: 'master' }}" alt="img">
         </div>
       </div>
+      {%- if has_mobile_image -%}
+        123465798
+      {% endif %}
     {% endcase %}
   {%- endfor -%}
+
+
   {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'feathers_gongyi'%}
-      <div class="feathers-gongyi feathers-margin-bottom">
+      <div class="feathers-gongyi feathers-margin-bottom {% if has_mobile_image %} small--hide{% endif %}">
         <img  class="lazyload shemei_img" src="{{ block.settings.gongyi_img | img_url: 'master' }}" alt="img" >
         <div class="gongyi-hander">
           <div class="gongyi-title">{{ block.settings.gongyi_title }}</div>
           <div class="gongyi-text">{{ block.settings.gongyi_content }}</div>
         </div>
       </div>
+      {%- if has_mobile_image -%}
+        789465
+      {% endif %}
     {% endcase %}
-  {%- endfor -%}
-  {%- for block in section.blocks -%}
-    {% case block.type %}
-      {% when 'feathers_Diverse'%}
-      <div class="width_box feathers-Diverse feathers-margin-bottom">
-        <div class="feathers-feature">
-          <div class="rows-item">
-            <div class="item-title">{{ block.settings.one_title }}<div class="item-title-bg">25 Home</div></div>
-            <div class="item-font">{{ block.settings.one_content }}</div>
-            <div class="item-btn"><a href="{{ block.settings.Diverseone_link }}">shop now</a></div>
-          </div>
-          <img class="items_img" src="{{ block.settings.Diverseone_img | img_url: 'master' }}" alt="img">
-        </div>
-        <div class="feathers-feature">
-          <div class="rows-item">
-            <div class="item-title item-title-s">{{ block.settings.two_title }}</div>
-            <div class="item-font">{{ block.settings.two_content }}</div>
-            <div class="item-btn"><a href="{{ block.settings.Diversetwo_link }}">shop now</a></div>
-          </div>
-          <img class="items_img" src="{{ block.settings.Diversetwo_img | img_url: 'master' }}" alt="img">
-        </div>
-        <div class="feathers-feature">
-          <div class="rows-item">
-            <div class="item-title item-title-s">{{ block.settings.three_title }}</div>
-            <div class="item-font">{{ block.settings.three_content }}</div>
-            <div class="item-btn"><a href="{{ block.settings.Diversethree_link }}">shop now</a></div>
-          </div>
-          <img class="items_img" src="{{ block.settings.Diversethree_img | img_url: 'master' }}" alt="img">
-        </div>
-      </div>
-    {% endcase %}
-  {%- endfor -%}
+  {%- endfor -%} {% endcomment %}
 
-  <div class="feathers-fabric feathers-margin-bottom">
-    <div class="width_box fabric-font">
-      <div class="item-title">TEXTURE FABRIC<div class="item-title-bg">25 Home</div></div>
-      <div class="grid-container">
-        {%- for block in section.blocks -%}
-          {% case block.type %}
-            {% when 'feathers_fabric'%}
-              <div class="grid-item">
-                <img src="{{ block.settings.fabric_img | img_url: 'master' }}" alt="img" >
-                <div class="right_box">
-                  <div class="icon_list">
-                    <img src="{{ block.settings.icon_img1 | img_url: 'master' }}" alt="img" >
-                    <img src="{{ block.settings.icon_img2 | img_url: 'master' }}" alt="img" >
-                    <img src="{{ block.settings.icon_img3 | img_url: 'master' }}" alt="img" >
-                    <img src="{{ block.settings.icon_img4 | img_url: 'master' }}" alt="img" >
-                  </div>
-                  <div class="right_box_title">{{ block.settings.fabric_title }}</div>
-                  <div class="right_box_text">{{ block.settings.fabric_text }}</div>
-                  <div class="right_box_pice">from <span> ${{ block.settings.fabric_price }}</span></div>
-                  <div class="right_box_btn"><a href="{{ block.settings.fabric_link }}">BUY NOW</a></div>
-                </div>
+  <div class="mobiledis">
+    {%- for block in section.blocks -%}
+      {% case block.type %}
+        {% when 'feathers_Diverse'%}
+        <div class="width_box feathers-Diverse feathers-margin-bottom {% if has_mobile_image %} small--hide{% endif %}">
+          <div class="feathers-feature">
+            <div class="rows-item">
+              <div class="item-title">{{ block.settings.one_title }}<div class="item-title-bg">25 Home</div></div>
+              <div class="item-font">{{ block.settings.one_content }}</div>
+              <div class="item-btn"><a href="{{ block.settings.Diverseone_link }}">shop now</a></div>
+            </div>
+            <img class="items_img" src="{{ block.settings.Diverseone_img | img_url: 'master' }}" alt="img">
+          </div>
+          <div class="feathers-feature">
+            <div class="rows-item">
+              <div class="item-title item-title-s">{{ block.settings.two_title }}</div>
+              <div class="item-font">{{ block.settings.two_content }}</div>
+              <div class="item-btn"><a href="{{ block.settings.Diversetwo_link }}">shop now</a></div>
+            </div>
+            <img class="items_img" src="{{ block.settings.Diversetwo_img | img_url: 'master' }}" alt="img">
+          </div>
+          <div class="feathers-feature">
+            <div class="rows-item">
+              <div class="item-title item-title-s">{{ block.settings.three_title }}</div>
+              <div class="item-font">{{ block.settings.three_content }}</div>
+              <div class="item-btn"><a href="{{ block.settings.Diversethree_link }}">shop now</a></div>
+            </div>
+            <img class="items_img" src="{{ block.settings.Diversethree_img | img_url: 'master' }}" alt="img">
+          </div>
+        </div>
+        {%- if has_mobile_image -%}
+          <div class="width_box feathers-Diverse feathers-margin-bottom">
+            <div class="feature-mobile1">
+              <div class="item-title">{{ block.settings.one_title }}<div class="item-title-bg">25 Home</div></div>
+              <img class="items_img" src="{{ block.settings.Diverseone_mobile_img | img_url: 'master' }}" alt="img">
+              <div class="item-font">{{ block.settings.one_content }}</div>
+            </div>
+            <div class="feathers-feature feature-mobile2">
+              <img class="items_img" src="{{ block.settings.Diversetwo_mobile_img | img_url: 'master' }}" alt="img">
+              <div class="rows-item">
+                <div class="item-title item-title-s">{{ block.settings.two_title }}</div>
+                <div class="item-font">{{ block.settings.two_content }}</div>
+                <div class="item-btn"><a href="{{ block.settings.Diversetwo_link }}">shop now</a></div>
               </div>
-          {% endcase %}
-        {%- endfor -%} 
+            </div>
+            <div class="feathers-feature feature-mobile3">
+              <div class="rows-item">
+                <div class="item-title item-title-s">{{ block.settings.three_title }}</div>
+                <div class="item-font">{{ block.settings.three_content }}</div>
+                <div class="item-btn"><a href="{{ block.settings.Diversethree_link }}">shop now</a></div>
+              </div>
+              <img class="items_img" src="{{ block.settings.Diversethree_mobile_img | img_url: 'master' }}" alt="img">
+            </div>
+          </div>
+        {% endif %}
+      {% endcase %}
+    {%- endfor -%}
+
+    <div class="feathers-fabric feathers-margin-bottom">
+      <div class="width_box fabric-font">
+        <div class="item-title">TEXTURE FABRIC<div class="item-title-bg">25 Home</div></div>
+        <div class="grid-container">
+          {%- for block in section.blocks -%}
+            {% case block.type %}
+              {% when 'feathers_fabric'%}
+                <div class="grid-item">
+                  <img src="{{ block.settings.fabric_img | img_url: 'master' }}" alt="img" >
+                  <div class="right_box">
+                    <div class="icon_list">
+                      <img src="{{ block.settings.icon_img1 | img_url: 'master' }}" alt="img" >
+                      <img src="{{ block.settings.icon_img2 | img_url: 'master' }}" alt="img" >
+                      <img src="{{ block.settings.icon_img3 | img_url: 'master' }}" alt="img" >
+                      <img src="{{ block.settings.icon_img4 | img_url: 'master' }}" alt="img" >
+                    </div>
+                    <div class="right_box_title">{{ block.settings.fabric_title }}</div>
+                    <div class="right_box_text">{{ block.settings.fabric_text }}</div>
+                    <div class="right_box_pice">from <span> ${{ block.settings.fabric_price }}</span></div>
+                    <div class="right_box_btn"><a href="{{ block.settings.fabric_link }}">BUY NOW</a></div>
+                  </div>
+                </div>
+            {% endcase %}
+          {%- endfor -%} 
+        </div>
       </div>
     </div>
-  </div>
 
+  </div>
+  
   {%- for block in section.blocks -%}
     {% case block.type %}
       {% when 'feathers_ins'%}
-      <div class="swiper-container">
+      <div class="swiper-container feathers-margin-bottom">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="{{ block.settings.ins_img1 | img_url: 'master' }}" alt="img"></div>
           <div class="swiper-slide"><img src="{{ block.settings.ins_img2 | img_url: 'master' }}" alt="img"></div>
@@ -217,23 +258,23 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "footer_pc_img",
-      "label": "footer-pc-背景图"
-    },
-    {
-      "type": "image_picker",
-      "id": "footer_mobile_img",
-      "label": "footer-pc-背景图"
-    },
-    {
-      "type": "image_picker",
       "id": "fabric_pc_img",
       "label": "fabric-pc-背景图"
     },
     {
       "type": "image_picker",
       "id": "fabric_mobile_img",
-      "label": "fabric-pc-背景图"
+      "label": "fabric-mobile-背景图"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_pc_img",
+      "label": "footer-pc-背景图"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_mobile_img",
+      "label": "footer-mobile-背景图"
     }
   ],
   "blocks": [
@@ -409,6 +450,11 @@
           "label": "Diverseone_img"
         },
         {
+          "type": "image_picker",
+          "id": "Diverseone_mobile_img",
+          "label": "Diverseone_mobile_img"
+        },
+        {
           "type": "url",
           "id": "Diverseone_link",
           "label": "Diverseone_link"
@@ -429,6 +475,11 @@
           "label": "Diversetwo_img"
         },
         {
+          "type": "image_picker",
+          "id": "Diversetwo_mobile_img",
+          "label": "Diversetwo_mobile_img"
+        },
+        {
           "type": "url",
           "id": "Diversetwo_link",
           "label": "Diversetwo_link"
@@ -447,6 +498,11 @@
           "type": "image_picker",
           "id": "Diversethree_img",
           "label": "Diversethree_img"
+        },
+        {
+          "type": "image_picker",
+          "id": "Diversethree_mobile_img",
+          "label": "Diversethree_mobile_img"
         },
         {
           "type": "url",
@@ -609,6 +665,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
+      height: 14rem;
     }
   }
 {% endstyle %}

@@ -1064,44 +1064,65 @@
     color: #FFFFFF;
     line-height: 1.6rem;
   }
+  .main-feathers-sofa .feathers-Diverse {
+    background-color: #9e938d;
+    padding-top: 0.7rem;
+    padding-bottom: 0.8rem;
+    color: #ffffff;
+    margin-bottom: 1.1rem;
+  }
+  .main-feathers-sofa .feathers-Diverse .feature-mobile1 {
+    width: 100%;
+  }
+  .main-feathers-sofa .feathers-Diverse .feature-mobile1 .item-title {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 0.39rem;
+    line-height: 0.39rem;
+    font-weight: 600;
+    z-index: 2;
+    margin-bottom: 0.86rem;
+  }
+  .main-feathers-sofa .feathers-Diverse .feature-mobile1 .item-title .item-title-bg {
+    position: absolute;
+    top: -0.3rem;
+    left: -0.1rem;
+    z-index: -1;
+    font-size: 0.47rem;
+    line-height: 0.47rem;
+    font-family: Julietta;
+    color: #FFD68C;
+    transform: rotate(-10deg);
+    opacity: 0.5;
+  }
+  .main-feathers-sofa .feathers-Diverse .feature-mobile1 .item-font {
+    font-size: 0.2rem;
+    line-height: 0.2rem;
+    margin: 0.43rem 0 0.84rem 0rem;
+  }
   .main-feathers-sofa .feathers-Diverse .feathers-feature {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
   }
   .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item {
-    width: 27.5rem;
-    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.3rem;
   }
   .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item .item-title {
     text-transform: uppercase;
-    position: relative;
-    font-size: 2rem;
-    line-height: 2rem;
-    font-weight: 500;
-    color: #000000;
-    z-index: 2;
-    margin-bottom: 25px;
-  }
-  .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item .item-title .item-title-bg {
-    position: absolute;
-    top: -25px;
-    left: -17px;
-    z-index: -1;
-    font-size: 2rem;
-    font-family: Julietta;
-    color: #FFD68C;
-    transform: rotate(-10deg);
-    opacity: 0.3;
-  }
-  .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item .item-title-s {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    font-weight: 600;
+    margin-bottom: 0.22rem;
+    text-align: center;
   }
   .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item .item-font {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 0.2rem;
+    line-height: 0.2rem;
     white-space: pre-wrap;
     word-break: break-all;
     text-align: justify;
@@ -1109,57 +1130,54 @@
   }
   .main-feathers-sofa .feathers-Diverse .feathers-feature .rows-item .item-btn {
     cursor: pointer;
-    margin-top: 1.5rem;
+    margin-top: 0.3rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 0.25rem;
     font-weight: 500;
-    width: 10rem;
-    height: 2rem;
-    line-height: 2rem;
+    width: 2.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
     text-align: center;
     color: #000;
     background-color: #ffd68c;
   }
   .main-feathers-sofa .feathers-Diverse .feathers-feature .items_img {
-    width: 35rem;
+    width: 3.46rem;
+    height: 3.9rem;
   }
   .main-feathers-sofa .feathers-fabric {
-    padding-bottom: 6rem;
+    padding-bottom: 0.84rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font {
-    color: #FFFFFF;
+    color: #000000;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .item-title {
     text-transform: uppercase;
     position: relative;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 0.39rem;
+    line-height: 0.39rem;
     font-weight: 500;
-    color: #FFFFFF;
+    color: #000000;
     z-index: 2;
-    padding-top: 8rem;
-    margin-bottom: 4rem;
+    padding-top: 0.96rem;
+    padding-left: 0.2rem;
+    margin-bottom: 0.59rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .item-title .item-title-bg {
     position: absolute;
-    top: 7rem;
-    left: -17px;
+    top: 0.7rem;
+    left: 0;
     z-index: -1;
-    font-size: 2rem;
+    font-size: 0.47rem;
     font-family: Julietta;
-    color: #FFD68C;
+    color: #9E938D;
     transform: rotate(-10deg);
     opacity: 0.79;
   }
-  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item {
     display: flex;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    width: 50%;
+    width: 100%;
+    margin-bottom: 0.43rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item img {
     width: 50%;
@@ -1169,43 +1187,45 @@
     background-color: #FFFFFF;
     color: #000000;
     text-align: center;
-    padding: 1.2rem 2.2rem;
+    padding: 0.3rem 0.3rem 0 0.3rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .icon_list {
-    margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-bottom: 0.3rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .icon_list img {
-    width: 2rem;
-    height: 2rem;
+    width: 0.2rem;
+    margin: 0 0.16rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_title {
     text-transform: uppercase;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 0.3rem;
+    line-height: 0.3rem;
+    margin-bottom: 0.2rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_text {
-    font-size: 0.9rem;
-    line-height: 0.9rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.16rem;
+    line-height: 0.16rem;
+    margin-bottom: 0.2rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_pice {
-    font-size: 1.1rem;
-    line-height: 1.1rem;
+    font-size: 0.24rem;
+    line-height: 0.24rem;
     color: #FF9B00;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.11rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_pice span {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 0.36rem;
+    line-height: 0.36rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_btn {
     cursor: pointer;
-    width: 10rem;
-    font-size: 1rem;
+    width: 2rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    font-size: 0.21rem;
     background-color: #ffd68c;
     color: #000000;
     display: inline-block;
@@ -1213,6 +1233,7 @@
   .main-feathers-sofa .swiper-container {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 1.2rem;
   }
   .main-feathers-sofa .swiper-container .swiper-wrapper {
     display: flex;
