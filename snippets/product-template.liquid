@@ -674,7 +674,7 @@
     let headerElement = document.getElementById("SiteHeader"); // header
     let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
     let expressage_box = document.getElementById("expressage_box");
-    let expressage_boxtop = expressage_box.getBoundingClientRect().top - 150
+    let expressage_boxtop = expressage_box.getBoundingClientRect().top - 150;
 
     let mobtype = getDeviceType()
     if (mobtype) {
@@ -685,19 +685,23 @@
       let productformbutton = document.getElementById("AddToCart");
       var distanceToTop = productformbutton.getBoundingClientRect().top  + window.scrollY;
     }
-    {% comment %} distanceToTop += getDeviceType() ? -30 : 100; {% endcomment %}
     window.addEventListener("scroll", function() {
       var scrollTop = window.scrollY || document.documentElement.scrollTop;
-      if (scrollTop > distanceToTop && scrollTop < expressage_boxtop) {
-        if (mobtype) {
+      if (mobtype) {
+        if (scrollTop > distanceToTop && scrollTop < expressage_boxtop) {
           priceSuspensionElement.style.top = '0px'
         } else {
-          priceSuspensionElement.style.top = headerElement.offsetHeight + 'px'
+          priceSuspensionElement.style.top = '-500px'
         }
-      } else {
-        priceSuspensionElement.style.top = '-500px'
+      }else {
+        if (scrollTop > distanceToTop) {
+          priceSuspensionElement.style.top = headerElement.offsetHeight + 'px'
+        } else {
+          priceSuspensionElement.style.top = '-500px'
+        }
       }
     });
+    {% comment %} distanceToTop += getDeviceType() ? -30 : 100; {% endcomment %}
   },1000)
   
   {% comment %} 浮动价格结束 {% endcomment %}
