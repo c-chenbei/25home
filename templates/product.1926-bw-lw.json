@@ -186,13 +186,14 @@
     },
     "background-image-text": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "",
         "text": "<p>Modern compared with comfy, this feather loveseat is designed for a quality life.<\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/01_082402b9-f668-49d4-84ac-6f820a2ae6a2.jpg",
+        "image": "shopify:\/\/shop_images\/01101.png",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -242,11 +243,11 @@
     "6e674af9-855e-4fa5-b22e-b552e9d45a0a": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/03_789c3257-daf8-42fa-a2e2-9153351c1d0d.jpg",
+        "image": "shopify:\/\/shop_images\/GIF-03_b316665f-4c74-4b5c-a1d2-5cf82929b358.gif",
         "image_width": 700,
         "subtitle": "",
         "title": "",
-        "text": "<h3><strong>Unique Sturdy&Bounce<\/strong><\/h3><p>Incorporating Suspension Serpentine Springs, 6-way Elastic Support, and Terylene Mesh for enhanced durability and comfort. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
+        "text": "<h3><strong>UNIQUE STURDY&BOUNCE<\/strong><\/h3><p>Incorporating Suspension Serpentine Springs, 6-way Elastic Support, and Terylene Mesh for enhanced durability and comfort. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -294,11 +295,11 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/07_d6ad8629-4db6-490d-b5cb-72eb1588fffd.jpg",
+        "image": "shopify:\/\/shop_images\/1_47111b1b-b5e3-40a5-8ffe-d3776ca9e181.gif",
         "image_width": 700,
         "subtitle": "",
         "title": "",
-        "text": "<h3><strong>Modular Design<\/strong><\/h3><p>The Feathers Sofa Series introduces a versatile modular design, catering to various preferences with options like loveseats, 4-seater sofas, 6-seater sofas, L-shaped sectionals, and U-shaped sectionals. Embrace customizable arrangements that effortlessly adapt to your living spaces, ensuring both flexibility and style in every configuration of the Feathers Sofa.<\/p>",
+        "text": "<h3><strong>Modular design<\/strong><\/h3><p>The Feathers Sofa Series introduces a versatile modular design, catering to various preferences with options like loveseats, 4-seater sofas, 6-seater sofas, L-shaped sectionals, and U-shaped sectionals. Embrace customizable arrangements that effortlessly adapt to your living spaces, ensuring both flexibility and style in every configuration of the Feathers Sofa.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -312,11 +313,11 @@
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/06_82f12ce0-9942-4e5d-b671-ca4bf3a71220.jpg",
+        "image": "shopify:\/\/shop_images\/010_d1427bd5-1afc-4e21-ac15-98eecc94ee63.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "",
-        "text": "<h3><strong>Variety Colors and Fabrics<\/strong><\/h3><p>Choose from 9 stylish colors and 4 fabrics to find the perfect match for your home's decor. From rich bold tones to airy neutrals, our spectrum of shade options, combined with a variety of fabrics, ensures there’s a Feathers Sofa to complement your taste and space. We offer free swatches, allowing you to experience the diverse fabrics firsthand before making your choice.<\/p>",
+        "text": "<h3><strong>Diverse Colors and Fabrics<\/strong><\/h3><p>Choose from 9 stylish colors and 4 fabrics to find the perfect match for your home's decor. From rich bold tones to airy neutrals, our spectrum of shade options, combined with a variety of fabrics, ensures there’s a Feathers Sofa to complement your taste and space. We offer free swatches, allowing you to experience the diverse fabrics firsthand before making your choice.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -327,7 +328,7 @@
         "divider": false
       }
     },
-    "ecc7f0e2-5862-4fa2-9072-2f85b7e6616f": {
+    "2a24ecbc-6edf-425c-b8e3-ded019e8095a": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/oeko-tex-600.jpg",
@@ -363,14 +364,14 @@
         "divider": false
       }
     },
-    "22efc8a3-6e08-498b-b9dc-c9c185999187": {
+    "d5028c99-6fb5-47cd-b831-7a4b5aef648f": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/10001.gif",
         "image_width": 700,
         "subtitle": "",
         "title": "",
-        "text": "<h3><strong>Versatile Sofa Legs<\/strong><\/h3><p>Free Sofa Legs Included! The feathers sofa legs come with 2 installation options: flush with the ground or 3inches above the ground, providing convenience for using a robotic vacuum cleaner and other tools for easy cleaning.<\/p>",
+        "text": "<h3><strong>VERSATILE SOFA LEGS<\/strong><\/h3><p>Free Sofa Legs Included! The feathers sofa legs come with 2 installation options: flush with the ground or 3inches above the ground, providing convenience for using a robotic vacuum cleaner and other tools for easy cleaning.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -401,11 +402,11 @@
     "e98f6446-12e0-4de3-8e8b-c6abd33c8571": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/05_a3241708-a3e8-4985-9e20-e44a840049c8.jpg",
+        "image": "shopify:\/\/shop_images\/linen_9d4c717d-7a8e-4360-90d2-4b4dc2bfeaac.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "",
-        "text": "<h3><strong>Unique Sturdy&Built to Last Over a Decade <\/strong><\/h3><p>Our Feathers Sofa provides up to 10 years of unwavering comfort and support thanks to its premium materials and expert craftsmanship. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
+        "text": "<h3><strong>Unique Sturdy&Built to Last Over a Decade<\/strong><\/h3><p>Our Feathers Sofa provides up to 10 years of unwavering comfort and support thanks to its premium materials and expert craftsmanship. From the chrome-plated iron latch to the wood frame, every part of our furniture is well-chosen for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -416,15 +417,23 @@
         "divider": false
       }
     },
+    "5dfc7049-aa08-4722-a024-774c3189a7ec": {
+      "type": "product-introduce",
+      "disabled": true,
+      "settings": {
+        "title": "Dimensions"
+      }
+    },
     "f29adaa4-3414-4aff-9b1d-01fd981fe423": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "",
         "text": "",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/01_60e130c5-9ff7-45d3-a4bd-4338274c0203.jpg",
+        "image": "shopify:\/\/shop_images\/01_cddab09c-5e63-47e4-9640-f6562736da96.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -610,11 +619,12 @@
     "c1e2a991-ad27-44f4-9ed7-7bcbf1447338",
     "text-and-image2",
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
-    "ecc7f0e2-5862-4fa2-9072-2f85b7e6616f",
+    "2a24ecbc-6edf-425c-b8e3-ded019e8095a",
     "2dbda7cb-8b91-4d98-b6ed-65d727630e0b",
-    "22efc8a3-6e08-498b-b9dc-c9c185999187",
+    "d5028c99-6fb5-47cd-b831-7a4b5aef648f",
     "182d5f2c-98f1-4a9d-9d87-11539d1e79fa",
     "e98f6446-12e0-4de3-8e8b-c6abd33c8571",
+    "5dfc7049-aa08-4722-a024-774c3189a7ec",
     "f29adaa4-3414-4aff-9b1d-01fd981fe423",
     "39475a83-8d8d-4e5c-9893-e2c562f2f593",
     "product-recommendations",

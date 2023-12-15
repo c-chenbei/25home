@@ -590,7 +590,7 @@
     <div id="priceSuspension">
       <div id="priceSuspension-cont">
         {% assign first_media = product.media[0].preview_image.src %}
-        <img src="{{ first_media | img_url: '76x' }}" id="product_sticky_img" class="priceSuspension-img">
+        <img src="{{ first_media | img_url: 'master' }}" id="product_sticky_img" class="priceSuspension-img">
         <div class="priceSuspension-title">
           <p>{{ product.title }}</p>
           <a class="loox-product" href="#looxReviews">
@@ -670,25 +670,36 @@
   {% comment %} 显示货期结束 {% endcomment %}
 
   {% comment %} 浮动价格 {% endcomment %}
-  let headerElement = document.getElementById("SiteHeader"); // header
-  let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
-  if (getDeviceType()) {
-    let productformbutton = document.getElementById("product-single_sticky-top");
-    var distanceToTop = productformbutton.getBoundingClientRect().top + productformbutton.offsetHeight + window.scrollY - 30;
-  } else {
-    let productformbutton = document.getElementById("AddToCart");
-    var distanceToTop = productformbutton.getBoundingClientRect().top  + window.scrollY;
-  }
-  {% comment %} distanceToTop += getDeviceType() ? -30 : 100; {% endcomment %}
-  window.addEventListener("scroll", function() {
-    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    {% comment %} console.log(scrollTop,distanceToTop) {% endcomment %}
-    if (scrollTop > distanceToTop) {
-      priceSuspensionElement.style.top = headerElement.offsetHeight + 'px'
+  setTimeout(function(){
+    let headerElement = document.getElementById("SiteHeader"); // header
+    let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
+    let expressage_box = document.getElementById("expressage_box");
+    let expressage_boxtop = expressage_box.getBoundingClientRect().top - 150
+
+    let mobtype = getDeviceType()
+    if (mobtype) {
+      let productformbutton = document.getElementById("product-single_sticky-top");
+      var distanceToTop = productformbutton.getBoundingClientRect().top + (productformbutton.offsetHeight/2) + window.scrollY;
+      priceSuspensionElement.style.zIndex = 222;
     } else {
-      priceSuspensionElement.style.top = '-100px'
+      let productformbutton = document.getElementById("AddToCart");
+      var distanceToTop = productformbutton.getBoundingClientRect().top  + window.scrollY;
     }
-  });
+    {% comment %} distanceToTop += getDeviceType() ? -30 : 100; {% endcomment %}
+    window.addEventListener("scroll", function() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop > distanceToTop && scrollTop < expressage_boxtop) {
+        if (mobtype) {
+          priceSuspensionElement.style.top = '0px'
+        } else {
+          priceSuspensionElement.style.top = headerElement.offsetHeight + 'px'
+        }
+      } else {
+        priceSuspensionElement.style.top = '-500px'
+      }
+    });
+  },1000)
+  
   {% comment %} 浮动价格结束 {% endcomment %}
 
   {% comment %} 添加购物车 {% endcomment %}

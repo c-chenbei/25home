@@ -341,9 +341,8 @@
         "2e2cfc38-78a9-4966-869a-6cbe2d47bbf6",
         "261a3e70-0699-40d1-ba28-027d3ac833ca"
       ],
-      "disabled": true,
       "settings": {
-        "title": "ALL Collection",
+        "title": "",
         "divider": false,
         "per_row": 3,
         "enable_gutter": true

@@ -216,6 +216,12 @@
       "settings": {
       }
     },
+    "a30d08c9-f6f4-43de-aee8-c03bec1231ff": {
+      "type": "product-introduce",
+      "settings": {
+        "title": "Dimensions"
+      }
+    },
     "16475055848fed5fca": {
       "type": "advanced-content",
       "blocks": {
@@ -402,6 +408,7 @@
   "order": [
     "main",
     "1652410876b776606e",
+    "a30d08c9-f6f4-43de-aee8-c03bec1231ff",
     "16475055848fed5fca",
     "sub",
     "background-image-text",
