@@ -749,8 +749,7 @@
     justify-content: space-evenly;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .icon_list img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box .right_box_title {
     text-transform: uppercase;

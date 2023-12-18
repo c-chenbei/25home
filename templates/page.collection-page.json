@@ -142,6 +142,10 @@
           "type": "feathers_fabric",
           "settings": {
             "fabric_img": "shopify:\/\/shop_images\/10002_582eb2ae-5e66-4a86-8b89-30b3f7541748.jpg",
+            "icon_img1": "shopify:\/\/shop_images\/2f4b4ad088dab2ea8ed0377b7ef90802.png",
+            "icon_img2": "shopify:\/\/shop_images\/23a38ca6b5892a7fb15ccdebf6e207ca.png",
+            "icon_img3": "shopify:\/\/shop_images\/30f6d7accf6498ed402473a1ef03ce70.png",
+            "icon_img4": "shopify:\/\/shop_images\/ffc4072bdc21a43dde979e28a2398320.png",
             "fabric_title": "polyester",
             "fabric_text": "It is long-wearing, easy-care, colorfast, wallet-friendly and versatile for all decor preferences.",
             "fabric_price": "176.00",
@@ -152,6 +156,10 @@
           "type": "feathers_fabric",
           "settings": {
             "fabric_img": "shopify:\/\/shop_images\/10001_abc5991f-63ba-4d00-a914-be877acc33a2.jpg",
+            "icon_img1": "shopify:\/\/shop_images\/07e7d50cfc079991c520aed349ba6b7a.png",
+            "icon_img2": "shopify:\/\/shop_images\/23a38ca6b5892a7fb15ccdebf6e207ca.png",
+            "icon_img3": "shopify:\/\/shop_images\/30f6d7accf6498ed402473a1ef03ce70.png",
+            "icon_img4": "shopify:\/\/shop_images\/ffc4072bdc21a43dde979e28a2398320.png",
             "fabric_title": "Air leather",
             "fabric_text": "It is a new type of fabric, that combines the appearance and texture of real leather and the breathability of the cotton.",
             "fabric_price": "108.00",
@@ -162,6 +170,10 @@
           "type": "feathers_fabric",
           "settings": {
             "fabric_img": "shopify:\/\/shop_images\/10001_7fd34483-13c6-49ca-b883-1e2d88363935.jpg",
+            "icon_img1": "shopify:\/\/shop_images\/2f4b4ad088dab2ea8ed0377b7ef90802.png",
+            "icon_img2": "shopify:\/\/shop_images\/23a38ca6b5892a7fb15ccdebf6e207ca.png",
+            "icon_img3": "shopify:\/\/shop_images\/30f6d7accf6498ed402473a1ef03ce70.png",
+            "icon_img4": "shopify:\/\/shop_images\/ffc4072bdc21a43dde979e28a2398320.png",
             "fabric_title": "BOUCLE",
             "fabric_text": "It offers great texture, comfort, and durability making it a versatile, easy-care upholstery choice",
             "fabric_price": "180.00",
@@ -172,6 +184,10 @@
           "type": "feathers_fabric",
           "settings": {
             "fabric_img": "shopify:\/\/shop_images\/10001_438803a2-9120-4901-a09f-87907298d089.jpg",
+            "icon_img1": "shopify:\/\/shop_images\/2f4b4ad088dab2ea8ed0377b7ef90802.png",
+            "icon_img2": "shopify:\/\/shop_images\/23a38ca6b5892a7fb15ccdebf6e207ca.png",
+            "icon_img3": "shopify:\/\/shop_images\/30f6d7accf6498ed402473a1ef03ce70.png",
+            "icon_img4": "shopify:\/\/shop_images\/ffc4072bdc21a43dde979e28a2398320.png",
             "fabric_title": "LINEN",
             "fabric_text": "It is breathable, pliable, and skin-friendly, waterproof, and anti-fouling.",
             "fabric_price": "194.00",
