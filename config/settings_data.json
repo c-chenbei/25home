@@ -146,7 +146,7 @@
           "main_menu_link_list": "main-menu",
           "countdown_target_show": true,
           "countdown_target_content": "PRE CHRISTMAS🎄UP TO 48% OFF🎄Code: <b>XMAS<\/b>",
-          "countdown_target_datetime": "2023\/12\/18\/16\/00\/00",
+          "countdown_target_datetime": "2023\/12\/25\/16\/00\/00",
           "countdown_target_link": "",
           "countdown_target_img": "shopify:\/\/shop_images\/23714d83d1faac4a6127afe09e9b41d3_412c45af-e0d5-4a6f-a736-20bf4e731c69.jpg",
           "image_mobile": "shopify:\/\/shop_images\/mob_1232bed6-6202-46ef-aa7e-f48115163cb9.jpg",
@@ -314,7 +314,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2023\/12\/18\/16\/00\/00"
+          "countdown_target_datetimes": "2023\/12\/21\/16\/00\/00"
         }
       }
     },
@@ -374,6 +374,12 @@
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
+        }
+      },
+      "18071877742361319197": {
+        "type": "shopify:\/\/apps\/all-in-1-free-gift-on-cart\/blocks\/instant-load\/5942fed7-47f4-451f-a42f-9077b6214264",
+        "disabled": false,
+        "settings": {
         }
       }
     }
