@@ -746,11 +746,6 @@
           }
         }
         .grid-container{
-          // display: grid;
-          // grid-template-columns: repeat(2, 1fr); /* 两列，每列平均占据剩余空间 */
-          // gap: 2rem; /* 间隙为 20 像素 */
-          // position: relative;
-          // top: 10rem;
           display: flex;
           flex-wrap: wrap;
           .grid-item{
@@ -758,12 +753,9 @@
             padding-right: 2rem;
             padding-bottom: 2rem;
             width: 50%;
-            a{
+            img{
               width: 50%;
-              img{
-                width: 100%;
-                display: block;
-              }
+              display: block;
             }
             .right_box{
               width: 50%;
@@ -897,9 +889,6 @@
     .width_box{
       width: 100%;
       padding: 0 17px;
-    }
-    .feathers-margin-bottom{
-      // margin-bottom: 5rem;
     }
     .shemei_img{
       width: 100%;
@@ -1185,12 +1174,9 @@
             display: flex;
             width: 100%;
             margin-bottom: 0.43rem;
-            a{
+            img{
               width: 50%;
-              img{
-                width: 100%;
-                display: block;
-              }
+              display: block;
             }
             .right_box{
               width: 50%;

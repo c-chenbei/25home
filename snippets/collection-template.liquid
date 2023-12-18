@@ -125,6 +125,8 @@
             -%}
 
             {%- for product in collection.products -%}
+{% if product.handle contains "docapp-free-gift-" %}{% continue %}{% endif %}
+
               {% if product.handle contains 'docapp-free-gift-' %}{% continue %}{% endif %}
               {%- render 'product-grid-item',
                 product: product,
@@ -145,6 +147,8 @@
 
           {%- if settings.quick_shop_enable -%}
             {%- for product in collection.products -%}
+{% if product.handle contains "docapp-free-gift-" %}{% continue %}{% endif %}
+
               {% if product.handle contains 'docapp-free-gift-' %}{% continue %}{% endif %}
               {%- render 'quick-shop-modal', product: product -%}
             {%- endfor -%}

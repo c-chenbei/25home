@@ -49,8 +49,8 @@
               {% endcase %}
             {%- endfor -%}
         </div>
-        <div class="swiper-button-prev swiper-button-top"><</div>
-        <div class="swiper-button-next swiper-button-top">></div>
+        <!-- <div class="swiper-button-prev swiper-button-top"><</div>
+        <div class="swiper-button-next swiper-button-top">></div> -->
       </div>
     </div>
     {%- for block in section.blocks -%}
@@ -206,24 +206,23 @@
           {%- for block in section.blocks -%}
             {% case block.type %}
               {% when 'feathers_fabric'%}
-                <div class="grid-item">
-                  <a href="{{ block.settings.fabric_link }}">
-                    <img src="{{ block.settings.fabric_img | img_url: 'master' }}" alt="img" >
-                  </a>
-
-                    <div class="right_box">
-                      <div class="icon_list">
-                        <img src="{{ block.settings.icon_img1 | img_url: 'master' }}" alt="img" >
-                        <img src="{{ block.settings.icon_img2 | img_url: 'master' }}" alt="img" >
-                        <img src="{{ block.settings.icon_img3 | img_url: 'master' }}" alt="img" >
-                        <img src="{{ block.settings.icon_img4 | img_url: 'master' }}" alt="img" >
+                  <a href="{{ block.settings.fabric_link }}" class="grid-item">
+                    {% comment %} <div class="grid-item"> {% endcomment %}
+                        <img src="{{ block.settings.fabric_img | img_url: 'master' }}" alt="img" >
+                        <div class="right_box">
+                          <div class="icon_list">
+                            <img src="{{ block.settings.icon_img1 | img_url: 'master' }}" alt="img" >
+                            <img src="{{ block.settings.icon_img2 | img_url: 'master' }}" alt="img" >
+                            <img src="{{ block.settings.icon_img3 | img_url: 'master' }}" alt="img" >
+                            <img src="{{ block.settings.icon_img4 | img_url: 'master' }}" alt="img" >
+                          </div>
+                          <div class="right_box_title">{{ block.settings.fabric_title }}</div>
+                          <div class="right_box_text">{{ block.settings.fabric_text }}</div>
+                          <div class="right_box_pice">from <span> ${{ block.settings.fabric_price }}</span></div>
+                          <div class="right_box_btn">BUY NOW</div>
                       </div>
-                      <div class="right_box_title">{{ block.settings.fabric_title }}</div>
-                      <div class="right_box_text">{{ block.settings.fabric_text }}</div>
-                      <div class="right_box_pice">from <span> ${{ block.settings.fabric_price }}</span></div>
-                      <div class="right_box_btn">BUY NOW</div>
-                  </div>
-                </div>
+                    {% comment %} </div> {% endcomment %}
+                  </a>
             {% endcase %}
           {%- endfor -%} 
         </div>
@@ -746,10 +745,10 @@
     autoplay: {
       delay: 3000,//1秒切换一次
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
   })
   $('.pc-footer-btns, .mo-footer-btns').click(function() {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
