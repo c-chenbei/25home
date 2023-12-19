@@ -50,7 +50,7 @@
   {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
   <div class="page-content page-content--product page-content-custom">
     <div class="page-width">
-      <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
+      <div class="grid">
         {%- if image_position == 'left' -%}
           <div class="grid__item {{ product_image_width }} product-single__sticky" id="product-single_sticky-top">
             {%- render 'product-images',
@@ -580,23 +580,6 @@
             </div>
           </div>
         </div>
-
-        {%- unless image_position == 'left' -%}
-          <div class="grid__item {{ product_image_width }} product-single__sticky">
-            {%- render 'product-images',
-              section_id: section_id,
-              product: product,
-              isModal: isModal,
-              image_position: image_position,
-              product_zoom_size: product_zoom_size,
-              product_image_size: product_image_size,
-              thumbnail_arrows: thumbnail_arrows,
-              thumbnail_position: thumbnail_position,
-              video_looping: video_looping,
-              video_style: video_style
-            -%}
-          </div>
-        {%- endunless -%}
       </div>
     </div>
     <div id="priceSuspension">

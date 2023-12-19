@@ -4,7 +4,7 @@
     assign isModal = true
   endif
 -%}
-{%- render 'mew-product-template',
+{%- render 'new-product-template',
   product: product,
   section_id: section.id,
   blocks: section.blocks,
@@ -15,7 +15,6 @@
   isModal: isModal,
   thumbnail_position: section.settings.thumbnail_position,
   thumbnail_arrows: section.settings.thumbnail_arrows,
-  mobile_layout: section.settings.mobile_layout,
   video_looping: section.settings.enable_video_looping,
   video_style: section.settings.product_video_style
 -%}
@@ -99,22 +98,6 @@
       "type": "checkbox",
       "id": "thumbnail_arrows",
       "label": "Show thumbnail arrows"
-    },
-    {
-      "type": "select",
-      "id": "mobile_layout",
-      "label": "Mobile layout",
-      "default": "partial",
-      "options": [
-        {
-          "value": "partial",
-          "label": "75% width"
-        },
-        {
-          "value": "full",
-          "label": "Full width"
-        }
-      ]
     },
     {
       "type": "checkbox",

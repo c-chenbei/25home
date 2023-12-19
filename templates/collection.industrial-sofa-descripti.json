@@ -24,8 +24,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/merry-christmas-collection-banner-1005.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/merry-christmas-collection-mob-1005_f7393ce0-e355-46a7-ac52-e756cc0a9a64.jpg",
+            "image": "shopify:\/\/shop_images\/collection-banner-1005.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/collection-1005-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
