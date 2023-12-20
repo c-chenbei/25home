@@ -1,0 +1,420 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "907cef5b-a392-4eee-a648-d1d703b05b97": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "package",
+            "text": "For customized products, please get in touch with our customer service."
+          }
+        },
+        "7a36cbc1-0f7a-4fef-bd00-911917166768": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "text": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "7d5b8ffc-0906-4cf1-be2a-8234ac628adb": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "4324e561-4147-44cb-8662-bce6959f660f": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/pay.jpg"
+          }
+        },
+        "d4fdb2a6-1e10-42d8-addc-b53b5112e4c1": {
+          "type": "text",
+          "settings": {
+            "text": "Sink into luxury with our Marshmallow beige L-Shaped Sectional sofa, featuring 3D tactile comfort and a unique curved design. This versatile sectional, with its breathable polyester, doubles as an ergonomic and stylish masterpiece for your living room. Each small square offers delightful body comfort, and the multifunctional armrest adds flexibility with its widened design. The chaise transforms into a single bed for ultimate relaxation. This durable and chic sectional embodies the essence of a modern, flexible, and comfortable living space."
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
+          "type": "tab",
+          "settings": {
+            "title": "Materials",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.materials.value }}"
+          }
+        },
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Size Chart",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.size_chart.value }}"
+          }
+        },
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36": {
+          "type": "tab",
+          "settings": {
+            "title": "Key Features",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.key_feature.value }}"
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Care & Shipping",
+            "content": "<p><\/p><p><\/p>",
+            "page": "care-shipping"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "907cef5b-a392-4eee-a648-d1d703b05b97",
+        "price",
+        "separator",
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4",
+        "7a36cbc1-0f7a-4fef-bd00-911917166768",
+        "variant_picker",
+        "sales_point",
+        "inventory_status",
+        "7d5b8ffc-0906-4cf1-be2a-8234ac628adb",
+        "buy_buttons",
+        "4324e561-4147-44cb-8662-bce6959f660f",
+        "d4fdb2a6-1e10-42d8-addc-b53b5112e4c1",
+        "description",
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0",
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "<p>Luxuriate in our Marshmallow Beige L-Shaped Sectional – a 3D tactile comfort masterpiece with a unique curved design. Versatile, chic, and durable for a modern living space.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/1289-1.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 750,
+        "framed": true,
+        "parallax": false
+      }
+    },
+    "4c26ec0e-f500-4a72-b63f-b956a5f74240": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/9_1ed12ded-1ac6-43a1-b0a8-740c27db98ea.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Marshmallow shape<\/strong><\/h3><p>With a unique design of numerous small squares, the sectional chaise seamlessly integrates with the luxury sofa seat. The breathable polyester is soft and skin-friendly, creating a luxurious experience akin to being in a giant marshmallow. This l-shaped sectional boasts a modern and stylish aesthetic, making it a unique piece of art in your living room. This sofa is not just a piece of furniture; it's a statement of elegance and comfort, enhancing the overall ambiance of your home.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "text-and-image": {
+      "type": "text-and-image",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/8_15cbf153-74ce-45c2-ae56-23b13a24799e.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Ergonomic Design<\/strong><\/h3><p>Each small square of the Marshmallow Beige L-Shaped Sectional features a streamlined and curved design that not only enhances its overall appearance but also conforms to every inch of your body. Providing the utmost comfort and support, coupled with an extra-large seating depth, it enables you to recline freely, without constraints, and savor every moment of reading or a movie night.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "text-and-image2": {
+      "type": "text-and-image",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/12_4d719652-7e0d-4de6-aaae-ecc7c6d6a867.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>High Resilience<\/strong><\/h3><p>The entire sofa is filled with high-density rebound sponge, offering a plump, elastic, and dreamy texture. The chaise section especially highlights the supportive role of the high-resilience sponge for your lower limbs, allowing you to fully recline and lean on the sofa. Durable and long-lasting, it's a cost-effective choice for every household.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11_09461a84-8c49-4b1a-ae60-50087fa63009.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Multifunctional Armrest<\/strong><\/h3><p>Breaking away from traditional armrest shapes, the beige modular sectional adopts an embedded low armrest with a widened design. In addition to providing support for the arms, it can also serve as a soft headrest or a small snack table. With at least four functions—lying, leaning, sitting, and placing—it embodies the wisdom of your home decor.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "c0a2847d-f8e1-4279-b884-f2cc3568d53a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/10_75a4faca-b9bd-4de3-b476-900bf409bf8f.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Unimaginable Flexibility<\/strong><\/h3><p>Experience unparalleled comfort with our beige sectional crafted from breathable and high-strength polyester fiber. Renowned for its softness, flexibility, and skin-friendly properties, this fabric offers exceptional scratch resistance, ensuring enduring durability and vibrancy. Easy to clean and maintain, our stylish sofa seamlessly combines comfort and practicality, radiating brilliance in your living room.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "a701c0b6-89be-4517-a248-5c9f0f9aa83a": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/1289-2.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 750,
+        "framed": true,
+        "parallax": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials-0",
+        "testimonials-1",
+        "testimonials-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Testimonials",
+        "testimonial-subhedading": "We love seeing how you customized it. Show us how it started and how it’s going by tagging #25home.",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+      }
+    },
+    "1652410876b776606e": {
+      "type": "apps",
+      "blocks": {
+        "e13cef9d-2017-4252-8d6d-7873814950e5": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "e13cef9d-2017-4252-8d6d-7873814950e5"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "background-image-text",
+    "4c26ec0e-f500-4a72-b63f-b956a5f74240",
+    "text-and-image",
+    "text-and-image2",
+    "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
+    "c0a2847d-f8e1-4279-b884-f2cc3568d53a",
+    "a701c0b6-89be-4517-a248-5c9f0f9aa83a",
+    "product-recommendations",
+    "testimonials",
+    "recently-viewed",
+    "collection-return",
+    "1652410876b776606e"
+  ]
+}
