@@ -144,6 +144,35 @@
         "divider": false
       }
     },
+    "cb1ef09f-bf66-458f-b393-48214b859d9a": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "video_link": "shopify:\/\/products\/piano-sofa",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/013adfd8b0ac4070aa5d261c2008dd36.mp4",
+        "overlay_opacity": 0,
+        "section_height": "100vh",
+        "mobile_height": "250px"
+      }
+    },
+    "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Promotion",
+        "home_featured_products": "promotion",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": false,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c": {
       "type": "featured-collections",
       "blocks": {
@@ -168,6 +197,7 @@
         "template--16800481509603__77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c-collection-1",
         "template--16800481509603__77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c-collection-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "divider": false,
@@ -343,39 +373,10 @@
         "divider": false
       }
     },
-    "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Promotion",
-        "home_featured_products": "promotion",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": false,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "cb1ef09f-bf66-458f-b393-48214b859d9a": {
-      "type": "hero-video",
-      "settings": {
-        "title": "",
-        "video_link": "shopify:\/\/products\/piano-sofa",
-        "title_size": 80,
-        "subheading": "",
-        "link_text": "",
-        "link": "",
-        "color_accent": "rgba(0,0,0,0)",
-        "text_align": "vertical-center horizontal-center",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/013adfd8b0ac4070aa5d261c2008dd36.mp4",
-        "overlay_opacity": 0,
-        "section_height": "100vh",
-        "mobile_height": "250px"
-      }
-    },
     "1662091818f72278f9": {
       "type": "featured-collection",
       "settings": {
-        "title": "",
+        "title": "New Arrivals",
         "home_featured_products": "new-arrivals",
         "per_row": 4,
         "rows": 2,
@@ -782,14 +783,14 @@
     "slideshow",
     "a8c5aae9-e652-461e-bf73-ce0f0328ce67",
     "16541605899760848b",
+    "cb1ef09f-bf66-458f-b393-48214b859d9a",
+    "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d",
     "77a61ec3-e87e-42d2-830a-cb2d6b4d8c5c",
     "76415bed-98c0-4afe-ba11-c3022a0bfb24",
     "69e5f742-4404-4724-831f-62c720ad05de",
     "b10af564-5ea1-4cfc-a965-0519a30a30ca",
     "ba9aef6b-b619-427d-b916-5bd5eb2924f0",
     "1645791937abcdc3ed",
-    "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d",
-    "cb1ef09f-bf66-458f-b393-48214b859d9a",
     "1662091818f72278f9",
     "e6b99ded-9769-4aa8-ac8c-2def66d6a4b4",
     "featured-collection",
