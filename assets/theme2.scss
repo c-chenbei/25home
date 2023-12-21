@@ -425,19 +425,19 @@
         .current_variant{
           .click_svariant{
             font-size: 12px;
-            margin-bottom: 10px;
-            margin-right: 10px;
+            margin-bottom: 5px;
+            margin-right: 5px;
             border-radius: 25px;
             border: 1px solid;
             border-color: rgb(26, 26, 26, .12);
           }
+          .selected{
+            border-color: #000000;
+          }
         }
         .introduce_metafields{
           margin-top: 20px;
-          font-weight: 600;
-        }
-        .selected{
-          border-color: #000000;
+          font-size: 14px;
         }
       }
       .introduce-img{
