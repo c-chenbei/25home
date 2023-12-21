@@ -227,11 +227,11 @@
           ]
       });
     };
-    if ({{customer | json}}) {
+    {% comment %} if ({{customer | json}}) { {% endcomment %}
       window.location.href = '/checkout';
-    }else{
+    {% comment %} }else{
       window.location.href = '/account/login?affirm=1';
-    }
+    } {% endcomment %}
   });
 
 
