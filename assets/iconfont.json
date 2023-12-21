@@ -34,6 +34,13 @@
       "unicode_decimal": 59313
     },
     {
+      "icon_id": "6665683",
+      "name": "献爱心",
+      "font_class": "airudiantubiaohuizhi-zhuanqu_xianaixin",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
       "icon_id": "21745674",
       "name": "快递",
       "font_class": "kuaidi",
