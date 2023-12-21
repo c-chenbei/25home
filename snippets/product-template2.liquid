@@ -139,62 +139,61 @@
 
         <div class="grid__item {{ product_description_width }}">
           <div class="product-single__meta">
-            {% comment %}
-              <div class="product-block--header">
-                {%- if settings.vendor_enable -%}
-                  <div class="product-single__vendor">
-                    {%- assign vendor_handle = product.vendor | handleize -%}
-                    {%- if collections[vendor_handle] != empty -%}
-                      <a href="{{ routes.collections_url }}/{{ collections[vendor_handle].handle }}">
-                        {{ collections[vendor_handle].title }}
-                      </a>
-                    {%- else -%}
-                      {{ product.vendor | link_to_vendor }}
-                    {%- endif -%}
-                  </div>
-                {%- endif -%}
-
-                {%- if isModal -%}
-                  <p class="h2 product-single__title">
-                    {{ product.title }}
-                  </p>
-                {%- else -%}
-                  <h1 class="h2 product-single__title">
-                    {%- unless product.empty? -%}
-                      {{ product.title }}
-                    {%- else -%}
-                      {{ 'home_page.onboarding.product_title' | t }}
-                    {%- endunless -%}
-                  </h1>
-                  <!-- Start Areviews product title Rating Code -->
-                  <div class="areviews_header_stars"></div>
-                  <!-- End Areviews product title Rating Code -->
-                {%- endif -%}
-                <div class="trust-badge">
-                  <a class="loox-product" href="#looxReviews">
-                    <div
-                      class="loox-rating product"
-                      data-id="{{ product.id }}"
-                      data-rating="{{ product.metafields.loox.avg_rating }}"
-                      data-raters="{{ product.metafields.loox.num_reviews }}"
-                    ></div>
-                  </a>
-                  <div class="google-trusted-badge" style="text-align:left;">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0623/5878/2179/files/google_trusted_store_icon_156385c2-8215-41df-a513-2a9dbed24ba8.png?v=1680242247"
-                      alt="google-trusted-badge"
-                    >
-                  </div>
+            <div class="product-block--header new-title-2">
+              {%- if settings.vendor_enable -%}
+                <div class="product-single__vendor">
+                  {%- assign vendor_handle = product.vendor | handleize -%}
+                  {%- if collections[vendor_handle] != empty -%}
+                    <a href="{{ routes.collections_url }}/{{ collections[vendor_handle].handle }}">
+                      {{ collections[vendor_handle].title }}
+                    </a>
+                  {%- else -%}
+                    {{ product.vendor | link_to_vendor }}
+                  {%- endif -%}
                 </div>
-                {%- if sku_enable -%}
-                  <p data-sku class="product-single__sku">
-                    {%- if current_variant.sku -%}
-                      {{ current_variant.sku }}
-                    {%- endif -%}
-                  </p>
-                {%- endif -%}
+              {%- endif -%}
+
+              {%- if isModal -%}
+                <p class="h2 product-single__title">
+                  {{ product.title }}
+                </p>
+              {%- else -%}
+                <h1 class="h2 product-single__title">
+                  {%- unless product.empty? -%}
+                    {{ product.title }}
+                  {%- else -%}
+                    {{ 'home_page.onboarding.product_title' | t }}
+                  {%- endunless -%}
+                </h1>
+                <!-- Start Areviews product title Rating Code -->
+                <div class="areviews_header_stars"></div>
+                <!-- End Areviews product title Rating Code -->
+              {%- endif -%}
+              <div class="trust-badge">
+                <a class="loox-product" href="#looxReviews">
+                  <div
+                    class="loox-rating product"
+                    data-id="{{ product.id }}"
+                    data-rating="{{ product.metafields.loox.avg_rating }}"
+                    data-raters="{{ product.metafields.loox.num_reviews }}"
+                  ></div>
+                </a>
+                <div class="google-trusted-badge" style="text-align:left;">
+                  {% comment %} <img
+                    src="https://cdn.shopify.com/s/files/1/0623/5878/2179/files/google_trusted_store_icon_156385c2-8215-41df-a513-2a9dbed24ba8.png?v=1680242247"
+                    alt="google-trusted-badge"
+                  > {% endcomment %}
+                </div>
               </div>
-            {% endcomment %}
+              {%- if sku_enable -%}
+                <p data-sku class="product-single__sku">
+                  {%- if current_variant.sku -%}
+                    {{ current_variant.sku }}
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
+            </div>
+
             <div data-product-blocks>
               {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
               {%- for block in blocks -%}
@@ -232,7 +231,7 @@
                       -%}
                     </div>
                   {%- when 'price' -%}
-                    {% comment %} <div class="product-block--price" {{ block.shopify_attributes }}>
+                    <div class="product-block--price new-price-2" {{ block.shopify_attributes }}>
                       {%- assign hide_sale_price = true -%}
                       {%- if product.compare_at_price_max > product.price -%}
                         {%- if current_variant.compare_at_price > current_variant.price -%}
@@ -307,7 +306,7 @@
                         <span data-unit-price>{{ current_variant.unit_price | money }}</span>/
                         {{ unit_price_base_unit }}
                       </div>
-                    </div> {% endcomment %}
+                    </div>
                     {% comment %}
                       {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                         <div class="product__policies rte small--text-center">

@@ -89,18 +89,11 @@
         "d4fdb2a6-1e10-42d8-addc-b53b5112e4c1": {
           "type": "text",
           "settings": {
-            "text": "The Cube L-shaped Leather Modular Sectional is the epitome of modern luxury. Crafted through a dynamic and imaginative block design, this leather sectional brings a touch of high-quality living to your home."
-          }
-        },
-        "984a68ac-5826-4e74-84c4-701d88e7684e": {
-          "type": "text",
-          "settings": {
-            "text": "The soft and durable leather is complemented by a full-bodied, stylish design. Its ergonomic curves ensure a comfortable and relaxed posture, while the expansive armrests provide optimal support for your arms, releasing tension throughout your entire body. Indulge in the most thoughtful furniture experience that brings solace to your day, offering a top-tier blend of sophistication and comfort."
+            "text": "The Cube L-shaped Leather Modular Sectional is the epitome of modern luxury. Crafted through a dynamic and imaginative block design, this leather sectional brings a touch of high-quality living to your home. The soft and durable leather is complemented by a full-bodied, stylish design. Its ergonomic curves ensure a comfortable and relaxed posture, while the expansive armrests provide optimal support for your arms, releasing tension throughout your entire body. Indulge in the most thoughtful furniture experience that brings solace to your day, offering a top-tier blend of sophistication and comfort."
           }
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
             "is_tab": false
           }
@@ -115,7 +108,6 @@
         },
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": "Size Chart",
             "content": "",
@@ -166,7 +158,6 @@
         "buy_buttons",
         "4324e561-4147-44cb-8662-bce6959f660f",
         "d4fdb2a6-1e10-42d8-addc-b53b5112e4c1",
-        "984a68ac-5826-4e74-84c4-701d88e7684e",
         "description",
         "e9e4f437-3585-4e39-b542-0e25739e9ed0",
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",

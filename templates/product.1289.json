@@ -94,7 +94,6 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
             "is_tab": false
           }
@@ -109,7 +108,6 @@
         },
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": "Size Chart",
             "content": "",
@@ -185,6 +183,12 @@
       "disabled": true,
       "settings": {
         "max_width": true
+      }
+    },
+    "c3de2598-d35f-4c07-aad3-d0e686bf96e2": {
+      "type": "product-introduce",
+      "settings": {
+        "title": "Dimensions"
       }
     },
     "background-image-text": {
@@ -404,6 +408,7 @@
   "order": [
     "main",
     "sub",
+    "c3de2598-d35f-4c07-aad3-d0e686bf96e2",
     "background-image-text",
     "4c26ec0e-f500-4a72-b63f-b956a5f74240",
     "text-and-image",
