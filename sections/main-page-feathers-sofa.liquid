@@ -717,37 +717,39 @@
         document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + (deviceWidth / 750) * 100 + 'px !important'
       }
     }
-
-    if (!getDeviceType()){
-      var moSwiper = new Swiper('.swiper-container',{
+    document.addEventListener('page:loaded', function() {
+      if (!getDeviceType()){
+        var moSwiper = new Swiper('.swiper-container',{
+          loop: true,
+          autoplay: {
+            delay: 3000,
+          },
+          slidesPerView: 5,
+          spaceBetween: 30,
+        })
+      } else {
+        var moSwiper = new Swiper('.swiper-container',{
+          loop: true,
+          autoplay: {
+            delay: 3000,
+          },
+          slidesPerView: "auto",
+          centeredSlides: true,
+        })
+      }
+  
+      var mySwiper = new Swiper ('.swiper', {
         loop: true,
         autoplay: {
           delay: 3000,
         },
-        slidesPerView: 5,
-        spaceBetween: 30,
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
       })
-    } else {
-      var moSwiper = new Swiper('.swiper-container',{
-        loop: true,
-        autoplay: {
-          delay: 3000,
-        },
-        slidesPerView: "auto",
-        centeredSlides: true,
-      })
-    }
-
-  var mySwiper = new Swiper ('.swiper', {
-    loop: true, // 循环模式选项
-    autoplay: {
-      delay: 3000,//1秒切换一次
-    },
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-  })
+    });
+    
   $('.pc-footer-btns, .mo-footer-btns').click(function() {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
   });

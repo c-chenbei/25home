@@ -177,6 +177,12 @@
         "max_width": true
       }
     },
+    "9a39f906-3053-4dbf-8d19-eb2951b07e3c": {
+      "type": "product-introduce",
+      "settings": {
+        "title": "Dimensions"
+      }
+    },
     "background-image-text": {
       "type": "background-image-text",
       "disabled": true,
@@ -211,7 +217,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -229,7 +235,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -247,7 +253,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -299,7 +305,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -317,7 +323,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -335,7 +341,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -353,7 +359,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -371,7 +377,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -406,14 +412,8 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
-      }
-    },
-    "9a39f906-3053-4dbf-8d19-eb2951b07e3c": {
-      "type": "product-introduce",
-      "settings": {
-        "title": "Dimensions"
       }
     },
     "f29adaa4-3414-4aff-9b1d-01fd981fe423": {
@@ -604,6 +604,7 @@
   "order": [
     "main",
     "sub",
+    "9a39f906-3053-4dbf-8d19-eb2951b07e3c",
     "background-image-text",
     "text-and-image",
     "708b5192-fc51-4d11-9912-d9f7d78e8b18",
@@ -616,7 +617,6 @@
     "d5028c99-6fb5-47cd-b831-7a4b5aef648f",
     "182d5f2c-98f1-4a9d-9d87-11539d1e79fa",
     "e98f6446-12e0-4de3-8e8b-c6abd33c8571",
-    "9a39f906-3053-4dbf-8d19-eb2951b07e3c",
     "f29adaa4-3414-4aff-9b1d-01fd981fe423",
     "39475a83-8d8d-4e5c-9893-e2c562f2f593",
     "product-recommendations",
