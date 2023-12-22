@@ -764,9 +764,11 @@
             padding-right: 2rem;
             padding-bottom: 2rem;
             width: 50%;
-            img{
+            .left_img{
               width: 50%;
-              display: block;
+              img{
+                display: block;
+              }
             }
             .right_box{
               width: 50%;
@@ -1184,9 +1186,11 @@
             display: flex;
             width: 100%;
             margin-bottom: 0.43rem;
-            img{
+            .left_img{
               width: 50%;
-              display: block;
+              img{
+                display: block;
+              }
             }
             .right_box{
               width: 50%;

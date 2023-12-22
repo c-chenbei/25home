@@ -733,8 +733,10 @@
     padding-bottom: 2rem;
     width: 50%;
   }
-  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item img {
+  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .left_img {
     width: 50%;
+  }
+  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .left_img img {
     display: block;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box {
@@ -1139,8 +1141,10 @@
     width: 100%;
     margin-bottom: 0.43rem;
   }
-  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item img {
+  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .left_img {
     width: 50%;
+  }
+  .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .left_img img {
     display: block;
   }
   .main-feathers-sofa .feathers-fabric .fabric-font .grid-container .grid-item .right_box {
