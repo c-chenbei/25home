@@ -42,7 +42,7 @@
                   <a href="{{ block.settings.swiper_link }}">
                     <img src="{{ block.settings.swiper_img | img_url: 'master' }}" class="{% if has_mobile_image %} small--hide{% endif %}" alt="img">
                     {%- if has_mobile_image -%}
-                      <img class="medium-up--hide" src="{{ block.settings.mobile_img | img_url: 'master' }}" alt="{{ block.settings.mobile_img.alt }}">
+                      <img style="object-fit: cover;" class="medium-up--hide" src="{{ block.settings.mobile_img | img_url: 'master' }}" alt="{{ block.settings.mobile_img.alt }}">
                     {% endif %}
                   </a>
                 </div>
