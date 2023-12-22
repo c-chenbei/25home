@@ -6236,9 +6236,9 @@ lazySizesConfig.expFactor = 4;
           // Price-related
           priceWrapper: this.container.querySelector(this.selectors.priceWrapper),
           comparePriceA11y: this.container.querySelector(this.selectors.comparePriceA11y),
-          comparePrice: this.container.querySelector(this.selectors.comparePrice),
-          price: this.container.querySelector(this.selectors.price),
-          savePrice: this.container.querySelector(this.selectors.savePrice),
+          comparePrice: this.container.querySelectorAll(this.selectors.comparePrice),
+          price: this.container.querySelectorAll(this.selectors.price),
+          savePrice: this.container.querySelectorAll(this.selectors.savePrice),
           priceA11y: this.container.querySelector(this.selectors.priceA11y)
         };
       },
@@ -6458,35 +6458,51 @@ lazySizesConfig.expFactor = 4;
   
         if (variant) {
           // Regular price
-          this.cache.price.innerHTML = theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat);
-          $('#product_sticky_price').text(theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat));
+          // this.cache.price.innerHTML = theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat);
+          this.cache.price.forEach(item => {
+            item.innerHTML = theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat);
+          })
           $('#product_sticky_img').attr('src', variant.featured_image.src);
-
-          // console.log(this.cache.price,'this.cache.price');
           // Sale price, if necessary
           if (variant.compare_at_price > variant.price) {
-            this.cache.comparePrice.innerHTML = theme.Currency.formatMoney(variant.compare_at_price, theme.settings.moneyFormat);
+            console.log(this.cache.savePrice,'相差价格')
+            // this.cache.comparePrice.innerHTML = theme.Currency.formatMoney(variant.compare_at_price, theme.settings.moneyFormat);
+            this.cache.comparePrice.forEach(item=>{
+              item.textContent = theme.Currency.formatMoney(variant.compare_at_price, theme.settings.moneyFormat);
+            })
             this.cache.priceWrapper.classList.remove(classes.hidden);
-            this.cache.price.classList.add(classes.onSale);
+            // this.cache.price.classList.add(classes.onSale);
+            this.cache.price.forEach(item => {
+              item.classList.add(classes.onSale);
+            })
             this.cache.comparePriceA11y.setAttribute('aria-hidden', 'false');
             this.cache.priceA11y.setAttribute('aria-hidden', 'false');
   
             var savings = variant.compare_at_price - variant.price;
-  
             if (theme.settings.saveType == 'percent') {
               savings = Math.round(((savings) * 100) / variant.compare_at_price) + '%';
             } else {
               savings = theme.Currency.formatMoney(savings, theme.settings.moneyFormat);
             }
   
-            this.cache.savePrice.classList.remove(classes.hidden);
-            this.cache.savePrice.innerHTML = theme.strings.savePrice.replace('[saved_amount]', savings);
+            // this.cache.savePrice.classList.remove(classes.hidden);
+            // this.cache.savePrice.innerHTML = theme.strings.savePrice.replace('[saved_amount]', savings);
+            this.cache.savePrice.forEach(items => {
+              items.classList.remove(classes.hidden)
+              items.innerHTML = theme.strings.savePrice.replace('[saved_amount]', savings);
+            })
           } else {
             if (this.cache.priceWrapper) {
               this.cache.priceWrapper.classList.add(classes.hidden);
             }
-            this.cache.savePrice.classList.add(classes.hidden);
-            this.cache.price.classList.remove(classes.onSale);
+            // this.cache.savePrice.classList.add(classes.hidden);
+            this.cache.savePrice.forEach(item => {
+              item.classList.add(classes.hidden);
+            })
+            // this.cache.price.classList.remove(classes.onSale);
+            this.cache.price.forEach(item => {
+              item.classList.remove(classes.onSale)
+            })
             if (this.cache.comparePriceA11y) {
               this.cache.comparePriceA11y.setAttribute('aria-hidden', 'true');
             }
