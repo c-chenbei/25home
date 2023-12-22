@@ -137,11 +137,6 @@
             "title": "Ask a question",
             "phone": false
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -162,8 +157,7 @@
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
-        "contact",
-        "share"
+        "contact"
       ],
       "settings": {
         "sku_enable": false,

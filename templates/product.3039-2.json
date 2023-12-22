@@ -3,32 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "0d889340-e9c9-4824-9cd0-192bb3e9c045": {
-          "type": "shopify:\/\/apps\/afterpay-on-site-messaging\/blocks\/payments-messaging\/f45a5524-d177-4475-bf59-281efd2215a8",
-          "settings": {
-            "text_align": "left",
-            "margin_top": 16,
-            "margin_bottom": 16,
-            "color": "",
-            "size": "md",
-            "intro_text": "Pay",
-            "show_interest_free": true,
-            "payment_amount_is_bold": true,
-            "show_with": true,
-            "logo_type": "badge",
-            "logo_theme": "black-on-mint",
-            "modal_link_style": "circled-info-icon",
-            "modal_theme": "mint",
-            "breakpoint": 1980,
-            "text_align_mobile": "inherit",
-            "margin_top_mobile": 16,
-            "margin_bottom_mobile": 16,
-            "show_lower_limit": true,
-            "show_upper_limit": true,
-            "show_if_outside_limits": true,
-            "product": "{{product}}"
-          }
-        },
         "907cef5b-a392-4eee-a648-d1d703b05b97": {
           "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
@@ -54,14 +28,14 @@
           "settings": {
           }
         },
-        "fd32b768-1267-4926-a44b-97e212417fdd": {
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4": {
           "type": "sales_point",
           "settings": {
             "icon": "package",
             "text": "For customized products, please get in touch with our customer service."
           }
         },
-        "a5510342-8f2e-49e7-8cc0-3ccae8d41652": {
+        "7a36cbc1-0f7a-4fef-bd00-911917166768": {
           "type": "sales_point",
           "disabled": true,
           "settings": {
@@ -118,14 +92,6 @@
             "is_tab": false
           }
         },
-        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
-          "type": "tab",
-          "settings": {
-            "title": "Size Chart",
-            "content": "",
-            "page": "{{ product.metafields.my_fields.size_chart.value }}"
-          }
-        },
         "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
           "type": "tab",
           "settings": {
@@ -134,8 +100,18 @@
             "page": "{{ product.metafields.my_fields.materials.value }}"
           }
         },
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Size Chart",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.size_chart.value }}"
+          }
+        },
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Key Features",
             "content": "",
@@ -159,12 +135,11 @@
         }
       },
       "block_order": [
-        "0d889340-e9c9-4824-9cd0-192bb3e9c045",
         "907cef5b-a392-4eee-a648-d1d703b05b97",
         "price",
         "separator",
-        "fd32b768-1267-4926-a44b-97e212417fdd",
-        "a5510342-8f2e-49e7-8cc0-3ccae8d41652",
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4",
+        "7a36cbc1-0f7a-4fef-bd00-911917166768",
         "variant_picker",
         "sales_point",
         "inventory_status",
@@ -172,8 +147,8 @@
         "buy_buttons",
         "4324e561-4147-44cb-8662-bce6959f660f",
         "description",
-        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "e9e4f437-3585-4e39-b542-0e25739e9ed0",
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
         "contact"
@@ -181,7 +156,7 @@
       "settings": {
         "sku_enable": false,
         "image_position": "left",
-        "image_size": "large",
+        "image_size": "medium",
         "product_zoom_enable": true,
         "thumbnail_position": "beside",
         "thumbnail_arrows": true,
@@ -190,27 +165,7 @@
         "product_video_style": "muted"
       }
     },
-    "1652410876b776606e": {
-      "type": "apps",
-      "blocks": {
-        "e13cef9d-2017-4252-8d6d-7873814950e5": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 20,
-            "hide_thumbnails": false,
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "e13cef9d-2017-4252-8d6d-7873814950e5"
-      ],
-      "settings": {
-      }
-    },
-    "a30d08c9-f6f4-43de-aee8-c03bec1231ff": {
+    "765aa79f-47cb-4dd6-af44-8af8f9d2d277": {
       "type": "product-introduce",
       "disabled": true,
       "settings": {
@@ -253,58 +208,6 @@
       "disabled": true,
       "settings": {
         "max_width": true
-      }
-    },
-    "background-image-text": {
-      "type": "background-image-text",
-      "disabled": true,
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "About your brand",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "focal_point": "center",
-        "layout": "left",
-        "height": 550,
-        "framed": false,
-        "parallax": false
-      }
-    },
-    "text-and-image": {
-      "type": "text-and-image",
-      "disabled": true,
-      "settings": {
-        "image_width": 700,
-        "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
-    "text-and-image2": {
-      "type": "text-and-image",
-      "disabled": true,
-      "settings": {
-        "image_width": 700,
-        "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "left",
-        "divider": false
       }
     },
     "testimonials": {
@@ -353,6 +256,26 @@
         "color_text": "#1c1d1d"
       }
     },
+    "1652410876b776606e": {
+      "type": "apps",
+      "blocks": {
+        "e13cef9d-2017-4252-8d6d-7873814950e5": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "e13cef9d-2017-4252-8d6d-7873814950e5"
+      ],
+      "settings": {
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -371,48 +294,17 @@
       "type": "collection-return",
       "settings": {
       }
-    },
-    "a7def26e-72a7-4b4d-9122-1342d4520a5e": {
-      "type": "faq",
-      "blocks": {
-        "template--16800482361571__a7def26e-72a7-4b4d-9122-1342d4520a5e-question-1": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
-          }
-        },
-        "template--16800482361571__a7def26e-72a7-4b4d-9122-1342d4520a5e-question-2": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16800482361571__a7def26e-72a7-4b4d-9122-1342d4520a5e-question-1",
-        "template--16800482361571__a7def26e-72a7-4b4d-9122-1342d4520a5e-question-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "FAQs"
-      }
     }
   },
   "order": [
     "main",
-    "1652410876b776606e",
-    "a30d08c9-f6f4-43de-aee8-c03bec1231ff",
+    "765aa79f-47cb-4dd6-af44-8af8f9d2d277",
     "16475055848fed5fca",
     "sub",
-    "background-image-text",
-    "text-and-image",
-    "text-and-image2",
     "testimonials",
+    "1652410876b776606e",
     "product-recommendations",
     "recently-viewed",
-    "collection-return",
-    "a7def26e-72a7-4b4d-9122-1342d4520a5e"
+    "collection-return"
   ]
 }

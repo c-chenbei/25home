@@ -24,15 +24,13 @@
             "margin_top_mobile": 16,
             "margin_bottom_mobile": 16,
             "show_lower_limit": true,
-            "min_order": 10,
             "show_upper_limit": true,
-            "max_order": 8000,
             "show_if_outside_limits": true,
             "product": "{{product}}"
           }
         },
         "907cef5b-a392-4eee-a648-d1d703b05b97": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "contentSize": 16,
@@ -55,11 +53,10 @@
           "type": "countdown_timer",
           "settings": {
             "countdown_target_content": "<span style=\"font-weight:600\">Flash sale items can't be applied to discount code<\/span>",
+            "countdown_target__color": "#a81527",
             "countdown_target_flashing": false,
-            "countdown_target_datetime": "2023\/10\/26\/15\/00\/00",
             "countdown_target_link": "",
-            "countdown_target_bg": "rgb(222, 181, 140)",
-            "countdown_target__color": "#a81527"
+            "countdown_target_bg": "#deb58c"
           }
         },
         "separator": {
@@ -169,11 +166,6 @@
             "title": "Ask a question",
             "phone": false
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -195,8 +187,7 @@
         "e9e4f437-3585-4e39-b542-0e25739e9ed0",
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
-        "contact",
-        "share"
+        "contact"
       ],
       "settings": {
         "sku_enable": false,
@@ -214,7 +205,7 @@
       "type": "apps",
       "blocks": {
         "e13cef9d-2017-4252-8d6d-7873814950e5": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,

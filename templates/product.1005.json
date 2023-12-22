@@ -100,11 +100,6 @@
             "title": "Ask a question",
             "phone": false
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -121,8 +116,7 @@
         "e9e4f437-3585-4e39-b542-0e25739e9ed0",
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
         "tab",
-        "contact",
-        "share"
+        "contact"
       ],
       "settings": {
         "sku_enable": false,
@@ -140,7 +134,7 @@
       "type": "apps",
       "blocks": {
         "e13cef9d-2017-4252-8d6d-7873814950e5": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,

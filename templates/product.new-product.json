@@ -98,11 +98,6 @@
             "title": "Ask a question",
             "phone": false
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -118,8 +113,7 @@
         "description",
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "tab",
-        "contact",
-        "share"
+        "contact"
       ],
       "settings": {
         "sku_enable": false,

@@ -25,7 +25,7 @@
       });
       item.classList.add('selected');
       productvariant.forEach(function(text,index) {
-        if (text.name.includes(item.dataset.title)) {
+        if (text.options.includes(item.dataset.title)) {
           $(".introduce-img").attr("src", text.featured_image.src);
         }
       })
