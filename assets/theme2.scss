@@ -1335,7 +1335,13 @@
 }
 @media screen and (min-width: 751px) {
   .new-style{
-    display: none;
+    // display: none;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 0 40px;
+    .product-single__title{
+      margin-bottom: 0px;
+    }
   }
   .new-title-2{
     .product-single__title{
