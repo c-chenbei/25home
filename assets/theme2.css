@@ -402,9 +402,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .product-introduce {
-    margin-top: 0px;
-  }
   .introduce .introduce-title {
     font-size: 20px;
     line-height: 20px;
