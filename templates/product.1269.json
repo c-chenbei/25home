@@ -178,12 +178,6 @@
         "max_width": true
       }
     },
-    "ca332cb0-8690-410c-90d7-f1f11317f2ad": {
-      "type": "product-introduce",
-      "settings": {
-        "title": "Dimensions"
-      }
-    },
     "background-image-text": {
       "type": "background-image-text",
       "settings": {
@@ -198,6 +192,12 @@
         "height": 750,
         "framed": true,
         "parallax": false
+      }
+    },
+    "ca332cb0-8690-410c-90d7-f1f11317f2ad": {
+      "type": "product-introduce",
+      "settings": {
+        "title": "Dimensions"
       }
     },
     "4c26ec0e-f500-4a72-b63f-b956a5f74240": {
@@ -385,8 +385,8 @@
   "order": [
     "main",
     "sub",
-    "ca332cb0-8690-410c-90d7-f1f11317f2ad",
     "background-image-text",
+    "ca332cb0-8690-410c-90d7-f1f11317f2ad",
     "4c26ec0e-f500-4a72-b63f-b956a5f74240",
     "text-and-image",
     "text-and-image2",

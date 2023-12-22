@@ -40,10 +40,11 @@
     var introduceObject = JSON.parse(introduceString);
     let divitem = ''
     introduceObject.children.forEach(item => {
-      if (item.children[0].value) {
-        divitem += '<div>'+ item.children[0].value + '</div>'
+      let value = item.children[0].value.trim()
+      if (value) {
+        divitem += '<div>'+ value + '</div>'
       } else {
-        divitem += '<div class="kong">'+ item.children[0].value + '</div>'
+        divitem += '<div class="kong">'+ value + '</div>'
       }
     })
     $(".introduce_metafields").html(divitem);

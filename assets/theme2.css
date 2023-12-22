@@ -394,11 +394,11 @@
 .introduce .introduce_box .introduce_current_variant .introduce_metafields {
   margin-top: 20px;
 }
+.introduce .introduce_box .introduce_current_variant .kong {
+  height: 30px;
+}
 .introduce .introduce_box .introduce-img {
   width: 40%;
-}
-.introduce .kong {
-  height: 30px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -418,7 +418,6 @@
     flex-direction: column-reverse;
   }
   .introduce .introduce_box .introduce_current_variant {
-    margin-top: 20px;
     width: 100%;
   }
   .introduce .introduce_box .introduce_current_variant .current_variant .click_svariant {
@@ -436,11 +435,11 @@
     margin-top: 20px;
     font-size: 14px;
   }
+  .introduce .introduce_box .introduce_current_variant .kong {
+    height: 10px;
+  }
   .introduce .introduce_box .introduce-img {
     width: 100%;
-  }
-  .introduce .kong {
-    height: 30px;
   }
 }
 @media screen and (min-width: 751px) {

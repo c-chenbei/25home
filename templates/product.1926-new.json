@@ -304,6 +304,12 @@
         "max_width": true
       }
     },
+    "9189d05a-f776-4f0f-9c6c-1ce23dadf361": {
+      "type": "product-introduce",
+      "settings": {
+        "title": "Dimensions"
+      }
+    },
     "background-image-text": {
       "type": "background-image-text",
       "disabled": true,
@@ -428,6 +434,7 @@
     "1652410876b776606e",
     "16475055848fed5fca",
     "sub",
+    "9189d05a-f776-4f0f-9c6c-1ce23dadf361",
     "background-image-text",
     "text-and-image",
     "text-and-image2",

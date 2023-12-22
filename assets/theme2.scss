@@ -404,13 +404,13 @@
       .introduce_metafields{
         margin-top: 20px;
       }
+      .kong {
+        height: 30px;
+      }
     }
     .introduce-img{
       width: 40%;
     }
-  }
-  .kong {
-    height: 30px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -430,7 +430,6 @@
       display: flex;
       flex-direction: column-reverse;
       .introduce_current_variant{
-        margin-top: 20px;
         width: 100%;
         .current_variant{
           .click_svariant{
@@ -449,14 +448,15 @@
           margin-top: 20px;
           font-size: 14px;
         }
+        .kong {
+          height: 10px;
+        }
       }
       .introduce-img{
         width: 100%;
       }
     }
-    .kong {
-      height: 30px;
-    }
+
   }
 }
 @media screen and (min-width: 751px) {
