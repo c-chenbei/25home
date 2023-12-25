@@ -11,6 +11,7 @@
             "pattern": "",
             "hideText": false,
             "alignment": "",
+            "layout": "",
             "textColor": "",
             "starColor": "",
             "showAllReviews": false,
@@ -260,6 +261,24 @@
         "divider": false
       }
     },
+    "94c53401-a2e5-4b72-a244-fb47c8b6e739": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/oeko-tex-600_3384cc8e-554f-44b4-9e6f-13137bf9ecdf.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>OEKO-TEX CERTIFIED<\/strong><\/h3><p>Prioritize your health and the environment with our OEKO-TEX certified cover fabrics. Free from \"forever chemicals,\" toxic flame retardants, formaldehyde, and harmful components, our covers offer a safe and eco-friendly choice.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
       "type": "text-and-image",
       "settings": {
@@ -274,7 +293,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -292,7 +311,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -406,6 +425,7 @@
     "4c26ec0e-f500-4a72-b63f-b956a5f74240",
     "text-and-image",
     "text-and-image2",
+    "94c53401-a2e5-4b72-a244-fb47c8b6e739",
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
     "c0a2847d-f8e1-4279-b884-f2cc3568d53a",
     "a701c0b6-89be-4517-a248-5c9f0f9aa83a",
