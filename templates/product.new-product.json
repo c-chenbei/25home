@@ -126,12 +126,6 @@
         "product_video_style": "muted"
       }
     },
-    "sub": {
-      "type": "product-full-width",
-      "settings": {
-        "max_width": true
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -145,18 +139,11 @@
       "settings": {
         "recent_count": 5
       }
-    },
-    "collection-return": {
-      "type": "collection-return",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
-    "sub",
     "product-recommendations",
-    "recently-viewed",
-    "collection-return"
+    "recently-viewed"
   ]
 }
