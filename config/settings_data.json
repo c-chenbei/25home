@@ -146,7 +146,7 @@
           "main_menu_link_list": "main-menu",
           "countdown_target_show": true,
           "countdown_target_content": "Merry Christmas🎄UP TO 55% OFF🎄Code: <b>XMAS<\/b>",
-          "countdown_target_datetime": "2023\/12\/25\/16\/00\/00",
+          "countdown_target_datetime": "2023\/12\/26\/16\/00\/00",
           "countdown_target_link": "",
           "countdown_target_img": "shopify:\/\/shop_images\/23714d83d1faac4a6127afe09e9b41d3_fc379317-f1f6-4fd6-b467-65aeb16f267f.jpg",
           "image_mobile": "shopify:\/\/shop_images\/mob_b729803f-a6f7-40a7-be55-c7e376822c79.jpg",
@@ -314,7 +314,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2023\/12\/25\/16\/00\/00"
+          "countdown_target_datetimes": "2023\/12\/28\/16\/00\/00"
         }
       }
     },
@@ -330,12 +330,6 @@
       },
       "16156609502398088594": {
         "type": "shopify:\/\/apps\/omega-multi-facebook-pixels\/blocks\/app-embed-block\/ecdcc423-3dbd-480c-85e8-fdb9789cf058",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "11724500921838622758": {
-        "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
         "disabled": false,
         "settings": {
         }
@@ -379,6 +373,12 @@
       "18071877742361319197": {
         "type": "shopify:\/\/apps\/all-in-1-free-gift-on-cart\/blocks\/instant-load\/5942fed7-47f4-451f-a42f-9077b6214264",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "11724500921838622758": {
+        "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
+        "disabled": true,
         "settings": {
         }
       }

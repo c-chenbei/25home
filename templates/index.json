@@ -3,6 +3,25 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/xmas-gift_01fe0a50-8ec4-4a7f-896f-7ce93a46adf9.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/xmas-gift-mob_633f57f4-5231-449b-87f8-2c7a7848b6fa.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        },
         "slideshow-1": {
           "type": "image",
           "settings": {
@@ -16,8 +35,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/xmas-1009.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/xmas-1009-mob.jpg",
+            "image": "shopify:\/\/shop_images\/xmas-1009_d3e00a86-a5c1-4699-9032-d05dae2f6fdf.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/xmas-1009-mob_51816911-460e-4f42-9efc-6b79149dbe52.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -60,25 +79,6 @@
             "focal_point": "center center"
           }
         },
-        "slideshow-0": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/all-leather",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/lQDPJwwg3QMMYBvNA3rNB4CwtjLeNlQozRgFdDA7hWZRAA_1920_890.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/lQDPKG_mkn-AMBvNAyDNAu6wglCbMQbIstgFdDA7hWZRAQ_750_800.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "top center"
-          }
-        },
         "2f3dc6ea-f7d6-44d8-90a2-7f03159efad9": {
           "type": "image",
           "disabled": true,
@@ -101,10 +101,10 @@
         }
       },
       "block_order": [
+        "slideshow-0",
         "slideshow-1",
         "de956e8a-ef55-498f-bf05-5a6d86f3452e",
         "1c54d0f8-f3f9-4143-b388-6b881e214c6d",
-        "slideshow-0",
         "2f3dc6ea-f7d6-44d8-90a2-7f03159efad9"
       ],
       "custom_css": [
