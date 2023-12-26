@@ -238,8 +238,15 @@
   #insta-feed h2 {
     font-size: 14px;
   }
-  .theme-block h2 {
-    font-size: 14px;
+  .theme-block {
+    h2{
+      font-size: 14px;
+    }
+    p{
+      margin: 0;
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
   .custom__item-inner h2 {
     font-size: 14px;
@@ -1408,4 +1415,28 @@
 }
 .main-product{
   margin-top: 0px;
+}
+.new-product-template-content{
+  .new-page-width{
+    width: 19.2rem;
+    margin: 0 auto;
+    padding: 0 0.88rem;
+  }
+  .new-product-swiper{
+    width: 11.66rem; 
+    height: 6.56rem;
+    overflow: hidden;
+    .swiper-wrapper{
+      width: 11.66rem; 
+      height: 6.56rem;
+    }
+    .swiper-product__thumbs{
+      width: 11.66rem;
+      overflow: hidden;
+      .swiper-slide{
+        width: 1.82rem;
+        height: 1.12rem;
+      }
+    }
+  }
 }

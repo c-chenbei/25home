@@ -94,13 +94,13 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
             "is_tab": false
           }
         },
         "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Materials",
             "content": "",
@@ -117,6 +117,7 @@
         },
         "9fcc0f80-4627-49ac-8f0e-cdad8f272c36": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Key Features",
             "content": "",
