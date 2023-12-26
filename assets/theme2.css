@@ -1347,6 +1347,12 @@
 .new-product-template-content {
   font-family: HarmonyOS Sans SC;
 }
+.new-product-template-content .section-header-amend {
+  max-width: none;
+  width: 19.2rem;
+  margin: 0 auto;
+  padding: 0 0.88rem;
+}
 .new-product-template-content .new-page-width {
   width: 19.2rem;
   margin: 0 auto;
@@ -1410,12 +1416,72 @@
   line-height: 0.27rem;
   margin-bottom: 0.05rem;
 }
-.new-product-template-content .new-page-width .product-grid .xingxing {
+.new-product-template-content .new-page-width .product-grid .product-block--xingxing {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.25rem;
 }
-.new-product-template-content .new-page-width .product-grid .xingxing img {
+.new-product-template-content .new-page-width .product-grid .product-block--xingxing img {
   width: 0.64rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--countdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  padding-left: 0.21rem;
+  padding-right: 0.15rem;
+  font-size: 0.13rem;
+  height: 0.37rem;
+  margin-bottom: 0.26rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--countdown #hander_countdowns {
+  display: flex;
+  align-items: center;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--countdown #hander_countdowns .number {
+  width: 0.24rem;
+  height: 0.21rem;
+  line-height: 0.21rem;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 6px;
+  color: #000000;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--countdown #hander_countdowns .dian {
+  line-height: 0.21rem;
+  margin: 0 0.03rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--price {
+  margin-bottom: 0.05rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--price .product__price {
+  font-size: 0.25rem;
+  font-weight: 500;
+  color: #DEB58C;
+  line-height: 0.25rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--price .product__price--compare {
+  font-size: 0.16rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #000000;
+  line-height: 0.16rem;
+  opacity: 0.2;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--delivery {
+  font-size: 0.13rem;
+  font-weight: bold;
+  color: #000000;
+  line-height: 0.13rem;
+  margin-bottom: 0.3rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-title {
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: #000000;
+  line-height: 0.2rem;
 }

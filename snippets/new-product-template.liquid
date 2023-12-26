@@ -1,6 +1,7 @@
 <div class="new-product-template-content" data-section-id="{{ section_id }}"
   data-product-id="{{ product.id }}"
   data-section-type="product">
+  {% assign current_variant = product.selected_or_first_available_variant %}
   <header class="section-header-amend">
     {%- render 'breadcrumbs' -%}
     <span class="current-font"> {{ product.title }}</span>
@@ -33,10 +34,12 @@
       </div>
     </div>
     <div class="product-grid" data-product-blocks>
+      {% comment %} title {% endcomment %}
       <div class="product-title">
         CRAWFORD LEATHER LOUNGE MOD-ULAR SECTIONAL
       </div>
-      <div class="xingxing">
+      {% comment %} 星星 {% endcomment %}
+      <div class="product-block--xingxing">
         <a class="loox-product" href="#looxReviews">
           <div
             class="loox-rating product"
@@ -48,14 +51,51 @@
         <img src="https://cdn.shopify.com/s/files/1/0623/5878/2179/files/google_trusted_store_icon_156385c2-8215-41df-a513-2a9dbed24ba8.png?v=1680242247"
           alt="google-trusted-badge">
       </div>
-      {%- for block in blocks -%}
+      {% comment %} 倒计时 {% endcomment %}
+      <a class="product-block--countdown">
+        <div class="countdown_target_content" >BLACK FRIDAY</div>
+        <div id="hander_countdowns">
+            Ends in
+            <span class="dian"></span>
+          {% comment %} <span class="number" id="countdowns_days">00</span><span class="dian">:</span> {% endcomment %}
+          <span class="number" id="countdowns_hours">00</span><span class="dian">:</span>
+          <span class="number" id="countdowns_minutes">00</span><span class="dian">:</span>
+          <span class="number" id="countdowns_seconds">00</span><span class="dian">:</span>
+          <span class="number" id="countdowns_milliseconds">0</span>
+        </div>
+      </a>
+      {% comment %} 价格 {% endcomment %}
+      <div class="product-block--price">
+        {% comment %} 正常价 {% endcomment %}
+        <span
+          id="price-fallback-selectors"
+          data-product-price
+          class="product__price"
+        >
+          {{ current_variant.price | money }}
+        </span>
+        {% comment %} 划线价格 {% endcomment %}
+        <span data-compare-price class="product__price--compare">
+            {{ current_variant.compare_at_price | money }}
+        </span>
+      </div>
+      {% comment %} 货期 {% endcomment %}
+      <div class="product-block--delivery">
+        Pre-order 35-52 business days delivery
+      </div>
+      {% comment %} 变体按钮 {% endcomment %}
+      <div class="product-block--variant">
+        <div class="variant-title">Color</div>
+        <div class="variant-btn">
+          
+        </div>
+      </div>
+      {% comment %} {%- for block in blocks -%}
         {%- case block.type -%}
           {%- when 'countdown_timer' -%}
-            <div class="new-countdown">
-              {%- render 'countdown_timer', product: product, block: block.settings -%}
-            </div>
+        
         {%- endcase -%}
-      {%- endfor -%}
+      {%- endfor -%} {% endcomment %}
     </div>
   </div>
 </div>

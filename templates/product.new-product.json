@@ -15,6 +15,7 @@
             "pattern": "",
             "hideText": false,
             "alignment": "",
+            "layout": "",
             "textColor": "",
             "starColor": "",
             "showAllReviews": false,
@@ -98,6 +99,16 @@
             "title": "Ask a question",
             "phone": false
           }
+        },
+        "6f688172-0393-43db-9e04-f1f8676bd4c8": {
+          "type": "countdown_timer",
+          "settings": {
+            "countdown_target_content": "",
+            "countdown_target__color": "#f9f9f9",
+            "countdown_target_flashing": false,
+            "countdown_target_link": "",
+            "countdown_target_bg": "#000000"
+          }
         }
       },
       "block_order": [
@@ -113,7 +124,8 @@
         "description",
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
         "tab",
-        "contact"
+        "contact",
+        "6f688172-0393-43db-9e04-f1f8676bd4c8"
       ],
       "settings": {
         "sku_enable": false,
