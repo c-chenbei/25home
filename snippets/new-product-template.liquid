@@ -1,37 +1,62 @@
 <div class="new-product-template-content" data-section-id="{{ section_id }}"
   data-product-id="{{ product.id }}"
   data-section-type="product">
-  {% comment %} <div class="page-width"> {% endcomment %}
-
+  <header class="section-header-amend">
+    {%- render 'breadcrumbs' -%}
+    <span class="current-font"> {{ product.title }}</span>
+  </header>
   <div class="new-page-width">
-    <div class="new-product-swiper">
-      <div class="swiper-wrapper" id="swiperWrapper">
-        {% comment %}
-          {%- for media in product.media -%}
-            {%- liquid
-              assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
-            -%}
-            <div class="swiper-slide">
-              <img class="lazyload" data-sizes="auto" data-src="{{ img_url }}"  alt="img">
-            </div>
-          {%- endfor -%}
-        {% endcomment %}
+    <div class="product-swipers">
+      {% comment %} 主图滑动区域 {% endcomment %}
+      <div class="swiper new-product-swiper">
+        <div class="swiper-wrapper" id="swiperWrapper">
+          {% comment %}
+            {%- for media in product.media -%}
+              {%- liquid
+                assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+              -%}
+              <div class="swiper-slide">
+                <img class="lazyload" data-sizes="auto" data-src="{{ img_url }}"  alt="img">
+              </div>
+            {%- endfor -%}
+          {% endcomment %}
+        </div>
+      </div>
+      {% comment %} 缩略图 {% endcomment %}
+      <div class="swiperthumbs">
+        <div class="swiper swiper-product__thumbs">
+          <div class="swiper-wrapper" id="swiperWrapperthumbs">
+          </div>
+          <div class="swiper-button-prev"><</div>
+          <div class="swiper-button-next">></div>
+        </div>
       </div>
     </div>
-    <div class="swiper-product__thumbs" id="swiperthumbs">
-      {%- for media in product.media -%}
-        {%- liquid
-          assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
-        -%}
-        <div class="swiper-slide">
-          <img class="lazyload" data-sizes="auto" data-src="{{ img_url }}"  alt="img">
-        </div>
+    <div class="product-grid" data-product-blocks>
+      <div class="product-title">
+        CRAWFORD LEATHER LOUNGE MOD-ULAR SECTIONAL
+      </div>
+      <div class="xingxing">
+        <a class="loox-product" href="#looxReviews">
+          <div
+            class="loox-rating product"
+            data-id="{{ product.id }}"
+            data-rating="{{ product.metafields.loox.avg_rating }}"
+            data-raters="{{ product.metafields.loox.num_reviews }}"
+          ></div>
+        </a>
+        <img src="https://cdn.shopify.com/s/files/1/0623/5878/2179/files/google_trusted_store_icon_156385c2-8215-41df-a513-2a9dbed24ba8.png?v=1680242247"
+          alt="google-trusted-badge">
+      </div>
+      {%- for block in blocks -%}
+        {%- case block.type -%}
+          {%- when 'countdown_timer' -%}
+            <div class="new-countdown">
+              {%- render 'countdown_timer', product: product, block: block.settings -%}
+            </div>
+        {%- endcase -%}
       {%- endfor -%}
     </div>
-    {% comment %}
-      <img data-sizes="auto" data-aspectratio="1.0" data-widths="[360, 540, 720, 900, 1080]"
-      class="lazyload" data-src="https://25home.com/cdn/shop/files/1926-2_40fd686b-ea42-4bc0-9217-a47fd9483d25_1080x.jpg?v=1697162568"  alt="img">
-    {% endcomment %}
   </div>
 </div>
 <script>
@@ -42,23 +67,46 @@
   }
   $(document).ready(function () {
     var $swiperWrapper = $('#swiperWrapper');
-    $.each(productMedia, function (index, media) {
+    var $swiperWrapperthumbs = $('#swiperWrapperthumbs');
+    productMedia.forEach((media,index) => {
       var $swiperSlide = $('<div>', { class: 'swiper-slide' });
       // 创建 img 元素
       var $imgElement = $('<img>', {
         class: 'lazyload',
+        'data-index': index,
         'data-sizes': 'auto',
         'data-src': getImageUrl(media.src),
         alt: 'img'
       });
 
       $swiperSlide.append($imgElement);
-      $swiperWrapper.append($swiperSlide);
-    });
-    var moSwiper = new Swiper('.new-product-swiper',{
+      $swiperWrapper.append($swiperSlide.clone());
+      $swiperWrapperthumbs.append($swiperSlide);
+
+          // 默认第一个添加 selected 类
+      if (index === 0) {
+        $swiperSlide.addClass('selected');
+      }
+    })
+
+    var mainSwiper  = new Swiper('.new-product-swiper',{
       slidesPerView: 1,
     })
-    var moSwiper = new Swiper('.swiper-product__thumbs',{
+    var thumbsSwiper = new Swiper('.swiper-product__thumbs',{
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        click: function (event) {
+          $('.swiper-product__thumbs .swiper-slide').removeClass('selected');
+          var clickedIndex = thumbsSwiper.clickedIndex;
+          $('.swiper-product__thumbs .swiper-slide').eq(clickedIndex).addClass('selected');
+          mainSwiper.slideTo(clickedIndex);
+        },
+      },
     })
   });
   var deviceWidth

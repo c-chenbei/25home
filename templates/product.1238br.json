@@ -181,6 +181,7 @@
     },
     "background-image-text": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "",
@@ -215,7 +216,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -244,6 +245,7 @@
         "66a30ffe-7978-4eab-824c-9ccd2ff034f3",
         "858cc6e8-1dbe-4401-ab92-a4f38ec4aff6"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
@@ -255,8 +257,7 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/03_6165e098-b04e-45ca-b436-906966d27a3b.jpg",
-        "image2": "shopify:\/\/shop_images\/1_0007_6.jpg",
+        "image": "shopify:\/\/shop_images\/1_16c7fb42-fda3-4260-8bfc-a63bd0adfe7a.png",
         "image_width": 700,
         "subtitle": "",
         "title": "Broad armrests",
@@ -307,7 +308,7 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/08_f930e263-cb04-4cfc-a948-d56f8d94d8ae.jpg",
+        "image": "shopify:\/\/shop_images\/Capture_One_Catalog1863.png",
         "image_width": 700,
         "subtitle": "",
         "title": "Plush Comfort",
@@ -326,7 +327,7 @@
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/Capture_One_Catalog2048.png",
-        "image2": "shopify:\/\/shop_images\/1_0005_8.jpg",
+        "image2": "shopify:\/\/shop_images\/Capture_One_Catalog1873.png",
         "image_width": 700,
         "subtitle": "",
         "title": "Easy Assembly",
@@ -343,6 +344,7 @@
     },
     "4a63b4e4-1df3-444d-abc9-68b947fefbb1": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/1_832bc8c4-5df9-4fa3-9e98-e8c39720436f.png",
         "image_width": 700,
@@ -361,6 +363,7 @@
     },
     "a701c0b6-89be-4517-a248-5c9f0f9aa83a": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "",
         "title": "",

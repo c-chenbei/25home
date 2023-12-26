@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/xmas-flash-sale.gif",
-            "image_mobile": "shopify:\/\/shop_images\/xmas-flash-sale-mob.gif",
+            "image": "shopify:\/\/shop_images\/yearend-flashsale.gif",
+            "image_mobile": "shopify:\/\/shop_images\/yearend-flashsale-mob.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -41,11 +41,11 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/97128d96a1a4b8ba1f765bf30134f529_ed98bf18-375b-42a4-a7d2-b2102456d24f.jpg",
+        "image": "shopify:\/\/shop_images\/bg.jpg",
         "countdown_target_show": true,
-        "image2": "shopify:\/\/shop_images\/daojishidi.png",
-        "color_font": "#ffffff",
-        "color_font2": "#ffffff"
+        "image2": "shopify:\/\/shop_images\/dafdcd033a4d8dd6670c35d671373ae2.png",
+        "color_font": "#663b29",
+        "color_font2": "#9b5639"
       }
     },
     "6bfdc2be-909d-40a6-aed5-ad331396c5c6": {
@@ -58,10 +58,10 @@
         "@media only screen and (max-width: 768px) {.grid {grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); } .text-center {grid-column: span 2; }}"
       ],
       "settings": {
-        "title": "Limited Flash Sale",
+        "title": "",
         "home_featured_products": "limited-flash-sale",
         "per_row": 4,
-        "rows": 10,
+        "rows": 11,
         "mobile_scrollable": false,
         "view_all": false,
         "divider": false

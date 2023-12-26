@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/xmas-gift_01fe0a50-8ec4-4a7f-896f-7ce93a46adf9.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/xmas-gift-mob_0ee28696-886a-4f2b-bbf7-2f56e7d85ee9.jpg",
+            "image": "shopify:\/\/shop_images\/yearend-giveaway.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/yearend-giveaway-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
@@ -35,8 +35,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/xmas-1009_d3e00a86-a5c1-4699-9032-d05dae2f6fdf.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/xmas-1009-mob_51816911-460e-4f42-9efc-6b79149dbe52.jpg",
+            "image": "shopify:\/\/shop_images\/yearend-1009.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/yearend-1009-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -54,8 +54,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/xmas-flash-sale.gif",
-            "image_mobile": "shopify:\/\/shop_images\/xmas-flash-sale-mob.gif",
+            "image": "shopify:\/\/shop_images\/yearend-flashsale.gif",
+            "image_mobile": "shopify:\/\/shop_images\/yearend-flashsale-mob.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -73,28 +73,27 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/xmas-1926.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/xmas-1926-mob.jpg",
+            "image": "shopify:\/\/shop_images\/yearend-1926.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/yearend-1926-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
         },
         "2f3dc6ea-f7d6-44d8-90a2-7f03159efad9": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/pages\/military-discount",
+            "link": "https:\/\/25home.com\/collections\/new-arrivals\/products\/marshmallow-beige-l-shaped-sectional",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/lQDPJxcJAwBs8MzNA3rNB4CwRv-yA4yD9jIFPnhZDMC1AQ_1920_890.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/lQDPJwyyYdQhEMzNBEzNAu6wC8RvdPB9XDAFPnhZDMC1AA_750_1100.jpg",
+            "image": "shopify:\/\/shop_images\/yearend-new.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/yearend-new-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -164,10 +163,10 @@
     "febe61b8-c6d2-4a49-b4ca-70ecb7c14b6d": {
       "type": "featured-collection",
       "settings": {
-        "title": "Promotion",
+        "title": "Featured Collection",
         "home_featured_products": "promotion",
         "per_row": 4,
-        "rows": 1,
+        "rows": 2,
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
@@ -379,7 +378,7 @@
         "title": "New Arrivals",
         "home_featured_products": "new-arrivals",
         "per_row": 4,
-        "rows": 2,
+        "rows": 1,
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false

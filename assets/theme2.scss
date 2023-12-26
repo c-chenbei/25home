@@ -1417,25 +1417,79 @@
   margin-top: 0px;
 }
 .new-product-template-content{
+  font-family: HarmonyOS Sans SC;
   .new-page-width{
     width: 19.2rem;
     margin: 0 auto;
     padding: 0 0.88rem;
-  }
-  .new-product-swiper{
-    width: 11.66rem; 
-    height: 6.56rem;
-    overflow: hidden;
-    .swiper-wrapper{
-      width: 11.66rem; 
-      height: 6.56rem;
+    &::after{
+      content: "";
+      display: table;
+      clear: both;
     }
-    .swiper-product__thumbs{
+    .product-swipers{
       width: 11.66rem;
-      overflow: hidden;
-      .swiper-slide{
-        width: 1.82rem;
-        height: 1.12rem;
+      min-height: 6.56rem;
+      position: sticky;
+      top: 165px;
+      float: left;
+      .new-product-swiper{
+        margin-bottom: 0.3rem;
+        .swiper-wrapper{
+          max-height: 6.56rem;
+        }
+      }
+      .swiperthumbs{
+        position: relative;
+        padding: 0 50px;
+        .swiper-product__thumbs{
+          position: initial;
+          .swiper-slide{
+            width: 1.82rem;
+          }
+          .selected{
+            border: 2px solid #000000;
+          }
+          .swiper-button-prev{
+            left: 0px;
+            font-size: 0.35rem;
+            font-weight: 600;
+            color: #000000;
+            line-height: 0.49rem;
+          }
+          .swiper-button-next{
+            right: 0px;
+            font-size: 0.35rem;
+            font-weight: 600;
+            color: #000000;
+            line-height: 0.49rem;
+          }
+        }
+      }
+    }
+    .product-grid{
+      width: 4.67rem;
+      height: 22rem;
+      float: left;
+      margin-left: 1.1rem;
+      .product-title{
+        font-size: 0.25rem;
+        font-weight: bold;
+        color: #000000;
+        line-height: 0.27rem;
+        margin-bottom: 0.05rem;
+      }
+      .xingxing{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.25rem;
+        img{
+          width: 0.64rem;
+        }
+      }
+      .new-countdown{
+        
       }
     }
   }
