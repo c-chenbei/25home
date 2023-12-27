@@ -1,6 +1,6 @@
-<div class="new-product-template-content" data-section-id="{{ section_id }}"
-  data-product-id="{{ product.id }}"
-  data-section-type="product">
+<div class="new-product-template-content"
+  >
+
   {% assign current_variant = product.selected_or_first_available_variant %}
   <header class="section-header-amend">
     {%- render 'breadcrumbs' -%}
@@ -11,16 +11,6 @@
       {% comment %} 主图滑动区域 {% endcomment %}
       <div class="swiper new-product-swiper">
         <div class="swiper-wrapper" id="swiperWrapper">
-          {% comment %}
-            {%- for media in product.media -%}
-              {%- liquid
-                assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
-              -%}
-              <div class="swiper-slide">
-                <img class="lazyload" data-sizes="auto" data-src="{{ img_url }}"  alt="img">
-              </div>
-            {%- endfor -%}
-          {% endcomment %}
         </div>
       </div>
       {% comment %} 缩略图 {% endcomment %}
@@ -53,7 +43,7 @@
       </div>
       {% comment %} 倒计时 {% endcomment %}
       <a class="product-block--countdown">
-        <div class="countdown_target_content" >BLACK FRIDAY</div>
+        <div class="countdown_target_content" >FLASH SALE</div>
         <div id="hander_countdowns">
             Ends in
             <span class="dian"></span>
@@ -85,11 +75,78 @@
       </div>
       {% comment %} 变体按钮 {% endcomment %}
       <div class="product-block--variant">
-        <div class="variant-title">Color</div>
-        <div class="variant-btn">
-          
+      </div>
+      <div class="product-block--whitegloves">
+        {%- assign deliveryVariants = all_products['white-glove-delivery'].variants -%}
+        {%- assign carefreeVariants = all_products['care-free-plan'].variants -%}
+        <div class="whitegloves-title" id="whitegloves-open">
+          White Glove Delivery ⓘ
+        </div>
+        <div class="whitegloves-switch">
+          {% comment %} <input type="checkbox" id="deliveryscales">
+          <label for="deliveryscales">Is there an elevator？</label> {% endcomment %}
+          <input id="deliveryscales" class="cmn-toggle cmn-toggle-round" type="checkbox">
+          <label for="deliveryscales"></label>
+          Is there an elevator？
+        </div>
+        <div class="whitegloves-list" id="whiteglovesid">
+          <select id="deliveryoptions">
+            {%- for datas in deliveryVariants -%}
+              <option value="{{ datas.id }}">{{ datas.title }}</option>
+            {%- endfor -%}
+          </select>
         </div>
       </div>
+      {% comment %} mulberry {% endcomment %}
+      <div class="mulberry-inline-container"></div>
+      {% comment %} 提交按钮 {% endcomment %}
+      <div class="product-block--addcart">
+        <button>Add to cart</button>
+        <button>buy it now</button>
+      </div>
+
+      {% comment %} Shopify-Afterpay {% endcomment %}
+      <div id="product-prices" style="text-align: left;margin-top:10px"></div>
+      <!-- Sezzle Static Widget -->
+      <div id="sezzle-widget" style="text-align: left;"></div>
+      {{ 'sezzle-static-widget.js' | asset_url | script_tag }}
+      <script>
+        var renderSezzle = new AwesomeSezzle({
+            amount: '{{ product.selected_or_first_available_variant.price | money }}',
+            theme: 'light',
+            modalTheme: 'color',
+            {% comment %} maxWidth: 400, {% endcomment %}
+            marginTop: 0,
+            marginBottom: 0,
+            marginLeft: 0,
+            marginRight: 0,
+            alignment: 'left',
+            alignmentSwitchMinWidth: 576,
+            alignmentSwitchType: 'center',
+            textColor: '#111',
+            fontFamily: 'HarmonyOS Sans SC',
+            fontSize: 14,
+            logoSize: 1.0,
+            logoStyle: {},
+            {% comment %} numberOfPayments: 12, {% endcomment %}
+            language: 'en',
+            parseMode: 'default',
+            merchantLocale: 'North America',
+            widgetTemplate: {en: 'Pay in 4 interest-free payments of %%price%% with %%logo%% %%info%%', fr: 'Payez en 4 versements sans intérêt de %%price%% avec %%logo%% %%info%%'},
+            ineligibleWidgetTemplate: '%%logo%% Pay in 4 interest-free payments on purchases $35-$2,500. %%info%%',
+            {% comment %} widgetTemplate: {en: 'Starting at %%price%% /mo or 0% APR with %%logo%% %%info%%'}, {% endcomment %}
+            minPrice: 3500, // Amount in cents
+            maxPrice: 250000 // Amount in cents
+        })
+        renderSezzle.init();
+        document.onchange = function(){
+          var newPrice = document.getElementById("price-fallback-selectors");
+          renderSezzle.alterPrice(newPrice.textContent);
+          console.log(renderSezzle,'renderSezzlerenderSezzle')
+          $('.sezzle-button-text').css('font-weight', '500 !important');
+        }
+      </script>
+      <!-- End Sezzle Static Widget -->
       {% comment %} {%- for block in blocks -%}
         {%- case block.type -%}
           {%- when 'countdown_timer' -%}
@@ -100,6 +157,108 @@
   </div>
 </div>
 <script>
+  $('#deliveryscales').on('change', function() {
+    $('#whiteglovesid').toggle()
+  });
+  const body = document.body;
+  const inhtml = `
+  <div id="myModal" class="taxes-modals">
+    <!-- 模态框内容 -->
+    <div class="taxes-modal">
+      <span class="taxes-modal-close" id="closeModalButton">&times;</span>
+      <div class="taxes-title">White Glove Delivery Pricing</div>
+      <ul class="taxes-content">
+        <li>The base white glove service fee (floors 1-3) is $169. </li>
+        <li>Each additional floor will incur a service fee of $50.</li>
+        <p style="color:red;"><strong>Note:</strong> White Glove service is only available for residences with an elevator.</p>
+        <div>White glove delivery details:</div>
+        <li>Bring your item(s) from the truck into your home</li>
+        <li>Unpack the merchandise</li>
+        <li>Remove and recycle the packaging(unrelated household waste removal not included)</li>
+      </ul>
+    </div>
+  </div>
+  `
+  body.insertAdjacentHTML('beforeend', inhtml);
+  $("#whitegloves-open").click(function() {
+      $("#myModal").css("display", "block");
+  });
+
+  $("#closeModalButton").click(function() {
+      $("#myModal").css("display", "none");
+  });
+
+  let blockS = [
+    {
+      title: 'color',
+      value: ['red', 'green', 'blue']
+    },{
+      title: 'size',
+      img: 'https://25home.myshopify.com/cdn/shop/files/1926-3_15597195-e331-4ca3-ad61-3523a046ec3d_1512x.jpg?v=1697162569',
+      value: ['3 - PIECE - ARMLESS LOVESEAT + CORNER CHAIR + ARMLESS LOVESEAT', '4 - PIECE - ARMLESS LOVESEAT + CORNER CHAIR + ARMLESS LOVESEAT','5 - 456','789']
+    }
+  ];
+
+  let html = '';
+  blockS.forEach(block => {
+    if (block.title === 'color') {
+      html += `<div class="variant-title">${ block.title }</div>`;
+      html += '<div class="variant-color">';
+      block.value.forEach(color => {
+        html += `<div class="variant-input" data-title="${color}" style="background-color: ${color};"></div>`;
+      });
+      html += '</div>';
+    } else if (block.title === 'size') {
+      html += `<div class="variant-title">${ block.title }</div>`;
+      html += '<div class="variant-options">';
+      block.value.forEach(size => {
+        html += `
+          <div class="variant-options-value" data-title="${size}">
+            <img src="${block.img}" alt="img">
+            <div class="title">${size}</div>
+          </div>
+        `;
+      });
+      html += '</div>';
+    }
+  });
+  document.querySelector('.product-block--variant').innerHTML = html;
+
+  // 用于存储选中的值
+  let selectedValues = {
+    color: null,
+    size: null
+  };
+  blockS.forEach(block => {
+    if (block.title === 'color') {
+      block.value.forEach((color, index) => {
+        let variantInput = $(`.variant-color .variant-input[data-title="${color}"]`);
+        if (index === 0) {
+          variantInput.addClass('color-selected');
+          selectedValues.color = color;
+        }
+        variantInput.on('click', function () {
+          $('.variant-color .variant-input').removeClass('color-selected');
+          variantInput.addClass('color-selected');
+          selectedValues.color = color;
+        });
+      });
+    } else if (block.title === 'size') {
+      block.value.forEach((size, index) => {
+        let variantOption = $(`.variant-options .variant-options-value[data-title="${size}"]`);
+        if (index === 0) {
+          variantOption.addClass('options-selected');
+          selectedValues.size = size;
+        }
+        variantOption.on('click', function () {
+          $('.variant-options .variant-options-value').removeClass('options-selected');
+          variantOption.addClass('options-selected');
+          selectedValues.size = size;
+        });
+      });
+    }
+  });
+
   var productMedia = {{ product.media | json }}
   function getImageUrl(src) {
     var lastDotPosition = src.lastIndexOf('.');

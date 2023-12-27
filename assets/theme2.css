@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .whitegloves {
   margin-bottom: 15px;
   text-align: left;
@@ -1431,7 +1432,7 @@
   align-items: center;
   background: #000;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 0.06rem;
   padding-left: 0.21rem;
   padding-right: 0.15rem;
   font-size: 0.13rem;
@@ -1448,7 +1449,7 @@
   line-height: 0.21rem;
   text-align: center;
   background: #FFFFFF;
-  border-radius: 6px;
+  border-radius: 0.03rem;
   color: #000000;
 }
 .new-product-template-content .new-page-width .product-grid .product-block--countdown #hander_countdowns .dian {
@@ -1484,4 +1485,148 @@
   font-weight: bold;
   color: #000000;
   line-height: 0.2rem;
+  margin-bottom: 0.17rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-color {
+  margin-bottom: 0.3rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-color .variant-input {
+  width: 0.39rem;
+  height: 0.39rem;
+  border-radius: 50%;
+  margin-right: 0.12rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-color .color-selected {
+  box-shadow: 0 0 0 0px #000, 0 0 0 2px #fff, 0 0 0 4px #000;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-options {
+  max-height: 3.47rem;
+  overflow: auto;
+  padding: 5px 10px 5px 5px;
+  margin-bottom: 0.3rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-options::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-options::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px #9b9ba3;
+  background: rgba(152, 155, 163, 0.5);
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-options .variant-options-value {
+  height: 1.02rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0.1rem;
+  border: 2px solid #e2e2e2;
+  border-radius: 6px;
+  padding: 0.3rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-options .variant-options-value img {
+  width: 0.7rem;
+  margin-right: 0.35rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-options .variant-options-value .title {
+  text-align: left;
+  font-size: 0.13rem;
+  font-weight: 500;
+  color: #000000;
+  line-height: 0.15rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--variant .variant-options .options-selected {
+  border: 2px solid #000000;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves {
+  margin-bottom: 0.2rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-title {
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: #000000;
+  line-height: 0.2rem;
+  cursor: pointer;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch {
+  display: flex;
+  align-items: center;
+  font-size: 0.15rem;
+  line-height: 0.15rem;
+  margin-bottom: 0.1rem;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch .cmn-toggle {
+  width: 0px;
+  margin: 0px;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border: none;
+  margin-right: 0.1rem;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch input.cmn-toggle-round + label {
+  width: 0.34rem;
+  height: 0.2rem;
+  background-color: #dddddd;
+  border-radius: 30px;
+  margin-bottom: 0px;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch input.cmn-toggle-round + label:before,
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch input.cmn-toggle-round + label:after {
+  width: 0.18rem; /*开关按钮小圆球的宽度*/
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch input.cmn-toggle-round:checked + label:before {
+  background-color: #DEB58C;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-switch input.cmn-toggle-round:checked + label:after {
+  margin-left: 0.14rem; /*开关滑开后小球距离左侧的距离*/
+}
+.new-product-template-content .new-page-width .product-grid .product-block--whitegloves .whitegloves-list select {
+  width: 100%;
+  height: 0.34rem;
+  padding: 0px 0px 0px 0.1rem;
+  border-color: #000000;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--addcart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--addcart button {
+  width: 2.28rem;
+  height: 0.43rem;
+  color: #ffffff;
+  background-color: #000000;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+.new-product-template-content .new-page-width .product-grid .product-block--addcart .mulberry-inline-container {
+  display: none;
 }
