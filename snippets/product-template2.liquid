@@ -413,11 +413,10 @@
                     <div class="" {{ block.shopify_attributes }} id="product-form-button">
                       {%- unless product.empty? -%}
                         {% assign deliveryVariants = all_products['white-glove-delivery'].variants %}
-                        {% assign carefreeVariants = all_products['care-free-plan'].variants %}
 
                         <div class="whitegloves">
                           <span class="whitegloves-h1" id="whitegloves-open">
-                            <svg
+                            {% comment %} <svg
                               t="1700104263368"
                               class="icon"
                               viewBox="0 0 1024 1024"
@@ -428,7 +427,7 @@
                               height="200"
                             >
                               <path d="M1017.408 477.205333L626.368 88.32c-3.989333-4.010667-9.429333-2.986667-15.082667-2.986667h-0.085333c-5.696 0-11.114667-0.96-15.125333 3.114667L245.205333 441.536 275.626667 471.466667 611.413333 130.410667 950.784 469.333333H853.333333a21.333333 21.333333 0 0 0-21.333333 21.333334v341.333333H597.333333v-124.565333a21.248 21.248 0 0 0-6.656-15.466667l-70.997333-67.434667a21.333333 21.333333 0 0 0-14.677333-5.866666H362.666667a21.333333 21.333333 0 0 0-21.333334 21.333333v192h-21.333333V576a21.333333 21.333333 0 0 0-21.333333-21.333333H21.333333a21.333333 21.333333 0 0 0-21.333333 21.333333v277.333333a21.333333 21.333333 0 0 0 21.333333 21.333334h68.416a37.674667 37.674667 0 0 0-0.298666 4.864c0 31.104 24.32 57.365333 53.077333 57.365333 30.549333 0 53.376-32.832 53.418667-62.229333H415.786667c-0.170667 2.602667-0.213333 4.842667-0.213334 6.528 0 30.656 24.405333 56.554667 53.290667 56.554666 31.509333 0 53.461333-31.146667 53.461333-59.093333 0-1.450667-0.064-2.773333-0.192-3.989333H853.333333a21.333333 21.333333 0 0 0 21.333334-21.333334V512h127.658666c8.618667 0 16.426667-4.394667 19.712-12.373333a19.968 19.968 0 0 0-4.629333-22.421334zM277.333333 832H168.384a21.376 21.376 0 0 0-21.013333 25.066667c1.792 10.112 3.562667 16 5.696 20.352-1.28 8.192-7.530667 16.384-10.517334 16.832-4.266667 0-9.685333-6.272-10.346666-13.312 2.069333-4.650667 4.437333-10.88 6.784-23.722667A21.333333 21.333333 0 0 0 117.994667 832H42.666667V597.333333h234.666666v234.666667z m217.536 0a21.333333 21.333333 0 0 0-21.034666 25.024c2.112 11.946667 3.968 17.749333 5.781333 22.506667-0.469333 7.850667-7.04 15.552-10.773333 15.552-5.269333 0-10.624-7.018667-10.624-13.888 0-2.944 0.981333-10.026667 1.962666-14.144A21.333333 21.333333 0 0 0 443.84 832H384v-170.666667h112.469333L554.666667 716.586667V832h-59.797334z" fill="#2c2c2c" p-id="22380"></path><path d="M614.101333 247.338667l30.122667-30.208 147.669333 147.242666-30.144 30.229334z" fill="#2c2c2c" p-id="22381"></path>
-                            </svg>
+                            </svg> {% endcomment %}
                             White Glove Delivery ⓘ
                           </span>
                           <div class="whitegloves-title">
@@ -443,6 +442,29 @@
                               {%- endfor -%}
                             </select>
                           </div>
+                        </div>
+
+                        <div id="cover_box">
+                          {%- assign feathers_sofa = all_products['feathers-sofa-covers'].variants -%}
+                          {% for variant in product.variants %}
+                            <div id='sofas' class="expressage_none">
+                              {%- if variant.metafields.custom.cover == true -%}
+                                <div class="sofas_title">
+                                  {% comment %} <svg t="1703748265987" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3947" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M857.5 404.3v-14.8-9.8c-5.2-68.9-25.8-142.7-155-142.7H304.7c-134.3 0-139.5 108.3-139.5 172.2-41.3 0-67.2 19.7-67.2 49.2v231.3c0 39.3 46.5 49.2 67.2 49.2h15.5v49.2h36.2v-49.2h583.8v49.2h36.2v-49.2H873c20.7 0 51.7-14.8 51.7-49.2V458.4c0-29.5-25.9-49.2-67.2-54.1z m-36.2-29.5v29.6c-41.3 4.9-67.2 24.6-67.2 54.1v39.4c0 24.6 5.2 68.9 0 73.8H526.8v-310h170.5c93-0.1 118.9 49.1 124 113.1zM304.7 261.6h191.2v305.1H289.2c-5.2 0-10.3 0-10.3-4.9-15.5-4.9-10.3-44.3-10.3-73.8v-34.5c0-29.5-25.8-49.2-67.2-54.1-0.1-78.8 10.3-137.8 103.3-137.8z m583.8 423.2c0 14.8-10.3 14.8-15.5 14.8H165.1s-36.2 0-36.2-14.8V458.4c0-9.8 25.8-19.7 51.7-19.7 25.8 0 51.7 9.8 51.7 19.7v29.5c0 39.4-5.2 83.6 15.5 103.3 10.3 9.8 25.8 14.8 41.3 14.8h465c10.3 0 20.7-4.9 25.8-9.8 15.5-19.7 15.5-59.1 10.3-98.4v-39.4c0-9.8 25.8-19.7 51.7-19.7 25.8 0 51.7 9.8 51.7 19.7v226.4h-5.1z" fill="#9f7b63" p-id="3948"></path></svg> {% endcomment %}
+                                  {{ section.settings.cover_title }}
+                                </div>
+                                <div class="sofas_box">
+                                  {%- for item in feathers_sofa -%}
+                                    <div class="cover_img" onclick="selectImage(this, '{{ item.id }}')">
+                                      <img src="{{ item.featured_image.src | img_url: '75x' }}" alt="img">
+                                      <div class="img_title">{{ item.title }}</div>
+                                    </div>
+                                  {%- endfor -%}
+                                </div>
+                                
+                              {%- endif -%}
+                            </div>
+                          {% endfor %}
                         </div>
 
                         <div class="mulberry-inline-container"></div>
@@ -466,7 +488,7 @@
                         {% comment %} </div> {% endcomment %}
                       {%- endunless -%}
 
-                      <div id="product-prices" style="text-align: left;margin-top:10px"></div>
+                      <div id="product-prices" style="margin-top:10px"></div>
                       <!-- Sezzle Static Widget -->
                       <div id="sezzle-widget" style="text-align: left;"></div>
                       {{ 'sezzle-static-widget.js' | asset_url | script_tag }}
@@ -505,11 +527,6 @@
                         }
                       </script>
                       <!-- End Sezzle Static Widget -->
-                      {%- style -%}
-                        square-placement {
-                          text-align: left;
-                        }
-                      {%- endstyle -%}
                       <div class="right-other">
                         <div><i class="iconfont icon-baozhengjin"></i>Price Guarantee</div>
 
@@ -744,195 +761,228 @@
   </div>
 </div>
 <script>
-    {% comment %} let collectionsss1 = {{ product | json }}
-    console.log(collectionsss1,'productproductproductproductproduct') {% endcomment %}
-    {% comment %} let allproducts = {{ all_products['white-glove-delivery'] | json }}
-    console.log(allproducts,'allproducts') {% endcomment %}
-    {% comment %} let collectionsss = {{ collections['Bundle'].products | json }}
-    console.log(collectionsss,'collectionssscollectionssscollectionsss') {% endcomment %}
-    {% comment %} 显示货期 {% endcomment %}
-    var expressageBox = document.getElementById('expressage_box');
-    var paragraphTags = expressageBox.getElementsByTagName("div");
-    var currentdefault = {{ current_variant | json }};
-    var addcartValue = currentdefault.id
-    var currentvariant = {{ product.variants | json }};
-  
-  
-    {% comment %} 首次进入默认展示货期 {% endcomment %}
+  {% comment %} 布套 {% endcomment %}
+  let coverimgidvalue = '';
+  let firstImageElement = ''
+  function selectByDefault(doms) {
+    firstImageElement = doms.querySelector('.cover_img');
+    if(firstImageElement){
+      firstImageElement.click();
+    }else{
+      coverimgidvalue = ''
+    }
+    shopifyPaymentButton()
+  }
+  function selectImage(element, itemTitle) {
+    document.querySelectorAll('.cover_img').forEach(selectedImage => {
+      selectedImage.classList.remove('selected');
+    });
+    element.classList.add('selected');
+    coverimgidvalue = itemTitle;
+  }
+  {% comment %} let collectionsss1 = {{ product | json }}
+  console.log(collectionsss1,'productproductproductproductproduct') {% endcomment %}
+  {% comment %} let allproducts = {{ all_products['white-glove-delivery'] | json }}
+  console.log(allproducts,'allproducts') {% endcomment %}
+  {% comment %} let collectionsss = {{ collections['Bundle'].products | json }}
+  console.log(collectionsss,'collectionssscollectionssscollectionsss') {% endcomment %}
+  {% comment %} 显示货期 {% endcomment %}
+  var expressageBox = document.getElementById('expressage_box');
+  var paragraphTags = expressageBox.getElementsByTagName("div");
+  var coverBox = document.getElementById('cover_box');
+  var coverTags = coverBox.querySelectorAll('#sofas');
+  var currentdefault = {{ current_variant | json }};
+  var addcartValue = currentdefault.id
+  var currentvariant = {{ product.variants | json }};
+
+  {% comment %} console.log(,'currentdefaultcurrentdefault') {% endcomment %}
+  {% comment %} 首次进入默认展示货期 {% endcomment %}
+  currentvariant.forEach(function(item,index) {
+    if (currentdefault.id == item.id) {
+      paragraphTags[index].classList.remove('expressage_none');
+      coverTags[index].classList.remove('expressage_none');
+      selectByDefault(coverTags[index]);
+    }
+  })
+
+  {% comment %} 点击按钮切换货期显示 {% endcomment %}
+  document.addEventListener('variant:change', function(evt) {
+    addcartValue = evt.detail.variant.id
+    {% comment %} console.log(evt.detail.variant,'555555'); {% endcomment %}
     currentvariant.forEach(function(item,index) {
-      if (currentdefault.id == item.id) {
+      if (evt.detail.variant.id == item.id) {
         paragraphTags[index].classList.remove('expressage_none');
+        coverTags[index].classList.remove('expressage_none');
+        selectByDefault(coverTags[index]);
+      } else{
+        paragraphTags[index].classList.add('expressage_none');
+        coverTags[index].classList.add('expressage_none');
       }
     })
-  
-    {% comment %} 点击按钮切换货期显示 {% endcomment %}
-    document.addEventListener('variant:change', function(evt) {
-      addcartValue = evt.detail.variant.id
-      {% comment %} console.log(evt.detail.variant,'555555'); {% endcomment %}
-      currentvariant.forEach(function(item,index) {
-        if (evt.detail.variant.id == item.id) {
-          paragraphTags[index].classList.remove('expressage_none');
-        } else{
-          paragraphTags[index].classList.add('expressage_none');
-        }
-      })
-    });
-    {% comment %} 显示货期结束 {% endcomment %}
-  
-    {% comment %} 浮动价格 {% endcomment %}
-    setTimeout(function(){
-      let headerElement = document.getElementById("SiteHeader"); // header
-      let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
-      let expressage_box = document.getElementById("expressage_box");
-      let expressage_boxtop = expressage_box.getBoundingClientRect().top - 150;
-  
-      let mobtype = getDeviceType()
+  });
+  {% comment %} 浮动价格 {% endcomment %}
+  setTimeout(function(){
+    let headerElement = document.getElementById("SiteHeader"); // header
+    let priceSuspensionElement = document.getElementById("priceSuspension"); // 悬浮盒子
+    let expressage_box = document.getElementById("expressage_box");
+    let expressage_boxtop = expressage_box.getBoundingClientRect().top - 150;
+
+    let mobtype = getDeviceType()
+    if (mobtype) {
+      let productformbutton = document.getElementById("product-single_sticky-top");
+      var distanceToTop = productformbutton.getBoundingClientRect().top + (productformbutton.offsetHeight/2) + window.scrollY;
+      priceSuspensionElement.style.zIndex = 222;
+    } else {
+      let productformbutton = document.getElementById("AddToCart");
+      var distanceToTop = productformbutton.getBoundingClientRect().top  + window.scrollY;
+    }
+    window.addEventListener("scroll", function() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
       if (mobtype) {
-        let productformbutton = document.getElementById("product-single_sticky-top");
-        var distanceToTop = productformbutton.getBoundingClientRect().top + (productformbutton.offsetHeight/2) + window.scrollY;
-        priceSuspensionElement.style.zIndex = 222;
-      } else {
-        let productformbutton = document.getElementById("AddToCart");
-        var distanceToTop = productformbutton.getBoundingClientRect().top  + window.scrollY;
-      }
-      window.addEventListener("scroll", function() {
-        var scrollTop = window.scrollY || document.documentElement.scrollTop;
-        if (mobtype) {
-          if (scrollTop > distanceToTop && scrollTop < expressage_boxtop) {
-            priceSuspensionElement.style.top = '0px'
-          } else {
-            priceSuspensionElement.style.top = '-500px'
-          }
-        }else {
-          if (scrollTop > distanceToTop) {
-            priceSuspensionElement.style.top = headerElement.offsetHeight + 'px'
-          } else {
-            priceSuspensionElement.style.top = '-500px'
-          }
+        if (scrollTop > distanceToTop && scrollTop < expressage_boxtop) {
+          priceSuspensionElement.style.top = '0px'
+        } else {
+          priceSuspensionElement.style.top = '-500px'
         }
-      });
-      {% comment %} distanceToTop += getDeviceType() ? -30 : 100; {% endcomment %}
-    },1000)
-    
-    {% comment %} 浮动价格结束 {% endcomment %}
-  
-    {% comment %} 添加购物车 {% endcomment %}
-    $('#deliveryscales').on('change', function() {
-      $('#whiteglovesid').toggle()
-      if ($('#deliveryscales').is(':checked')) {
-        $('.shopify-payment-button').hide();
-      } else {
-        $('.shopify-payment-button').show();
+      }else {
+        if (scrollTop > distanceToTop) {
+          priceSuspensionElement.style.top = headerElement.offsetHeight + 'px'
+        } else {
+          priceSuspensionElement.style.top = '-500px'
+        }
       }
-      {% comment %} var isChecked = $(this).prop('checked'); {% endcomment %}
     });
+    {% comment %} distanceToTop += getDeviceType() ? -30 : 100; {% endcomment %}
+  },1000)
   
-    // 监听 custom-add-cart 的 click 事件
-    $('#custom-add-cart').on('click', function() {
-      handleAddToCart();
-    });
-    // 监听 AddToCart 的 click 事件
-    $('#AddToCart').on('click', function(event) {
-      event.preventDefault();
-      handleAddToCart();
-    });
-  
-    function handleAddToCart() {
-      let deliveryValue = $('#deliveryoptions').val();
-      let scalesCheckvalue = $('#deliveryscales').prop('checked');
-      let fetchData = {items: [{id: addcartValue}]};
-  
-      if (scalesCheckvalue) {
-        fetchData.items.unshift({id: deliveryValue});
-      }
-  
-      fetch(window.Shopify.routes.root + 'cart/add.js', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Requested-With': 'XMLHttpRequest'
-        },
-        body: JSON.stringify(fetchData)
-      })
-      .then(response => {
-        window.location.href = '/cart';
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+  {% comment %} 浮动价格结束 {% endcomment %}
+  function shopifyPaymentButton() {
+    if ($('#deliveryscales').is(':checked') || firstImageElement){
+      $('.shopify-payment-button').hide();
+    }else{
+      $('.shopify-payment-button').show();
     }
-    {% comment %} 添加购物车结束 {% endcomment %}
-    const body = document.body;
-    const inhtml = `
-    <div id="myModal" class="taxes-modals">
-      <!-- 模态框内容 -->
-      <div class="taxes-modal">
-        <span class="taxes-modal-close" id="closeModalButton">&times;</span>
-        <div class="taxes-title">White Glove Delivery Pricing</div>
-        <div class="taxes-content">
-          <span style="display: flex;">·The base white glove service fee (floors 1-3) is $169. </span>
-          <span style="display: flex;">·Each additional floor will incur a service fee of $50.</span>
-          <p style="color:red;"><strong>Note:</strong> White Glove service is only available for residences with an elevator.</p>
-          <span style="display: flex;">White glove delivery details:</span>
-          <span style="display: flex;">·Bring your item(s) from the truck into your home</span>
-          <span style="display: flex;">·Unpack the merchandise</span>
-          <p >·Remove and recycle the packaging(unrelated household waste removal not included)</p>
-        </div>
+  }
+  {% comment %} 添加购物车 {% endcomment %}
+  $('#deliveryscales').on('change', function() {
+    $('#whiteglovesid').toggle()
+    shopifyPaymentButton()
+    {% comment %} if ($('#deliveryscales').is(':checked')) {
+      $('.shopify-payment-button').hide();
+    } else {
+      $('.shopify-payment-button').show();
+    } {% endcomment %}
+    {% comment %} var isChecked = $(this).prop('checked'); {% endcomment %}
+  });
+
+  // 监听 custom-add-cart 的 click 事件
+  $('#custom-add-cart').on('click', function() {
+    handleAddToCart();
+  });
+  // 监听 AddToCart 的 click 事件
+  $('#AddToCart').on('click', function(event) {
+    event.preventDefault();
+    handleAddToCart();
+  });
+
+  function handleAddToCart() {
+    let deliveryValue = $('#deliveryoptions').val();
+    let scalesCheckvalue = $('#deliveryscales').prop('checked');
+    let fetchData = {items: [{id: addcartValue}]};
+
+    if (scalesCheckvalue) {
+      fetchData.items.unshift({id: deliveryValue});
+    }
+    if (coverimgidvalue) {
+      fetchData.items.unshift({id: coverimgidvalue});
+    }
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest'
+      },
+      body: JSON.stringify(fetchData)
+    })
+    .then(response => {
+      window.location.href = '/cart';
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  }
+  {% comment %} 添加购物车结束 {% endcomment %}
+  const body = document.body;
+  const inhtml = `
+  <div id="myModal" class="taxes-modals">
+    <!-- 模态框内容 -->
+    <div class="taxes-modal">
+      <span class="taxes-modal-close" id="closeModalButton">&times;</span>
+      <div class="taxes-title">White Glove Delivery Pricing</div>
+      <div class="taxes-content">
+        <span style="display: flex;">·The base white glove service fee (floors 1-3) is $169. </span>
+        <span style="display: flex;">·Each additional floor will incur a service fee of $50.</span>
+        <p style="color:red;"><strong>Note:</strong> White Glove service is only available for residences with an elevator.</p>
+        <span style="display: flex;">White glove delivery details:</span>
+        <span style="display: flex;">·Bring your item(s) from the truck into your home</span>
+        <span style="display: flex;">·Unpack the merchandise</span>
+        <p >·Remove and recycle the packaging(unrelated household waste removal not included)</p>
       </div>
     </div>
-    `
-    body.insertAdjacentHTML('beforeend', inhtml);
-    $("#whitegloves-open").click(function() {
-        $("#myModal").css("display", "block");
-    });
-  
-    $("#closeModalButton").click(function() {
-        $("#myModal").css("display", "none");
-    });
-  
-    const inhtml2 = `
-    <div id="myModal2" class="taxes-modals">
-      <!-- 模态框内容 -->
-      <div class="taxes-modal">
-        <span class="taxes-modal-close" id="closeModalButton2">&times;</span>
-        <div class="taxes-title">Protect Your Investment with Care Free</div>
-        <div class="taxes-content">
-          <span style="display: flex;">·Accident coverage (stains, rips, chips, burns, etc.) </span>
-          <span style="display: flex;">·Structural failures (damaged frames, hardware and electrical issues)</span>
-          <p style="color:red;"><strong>WIN-WIN Offer: </strong> If no claim is made you are refunded the price of the plan for a future purchase in the form of a voucher</p>
-          <span style="display: flex;">Support available online or via phone, fast repairs and $0 deductible</span>
-        </div>
+  </div>
+  `
+  body.insertAdjacentHTML('beforeend', inhtml);
+  $("#whitegloves-open").click(function() {
+      $("#myModal").css("display", "block");
+  });
+
+  $("#closeModalButton").click(function() {
+      $("#myModal").css("display", "none");
+  });
+
+  const inhtml2 = `
+  <div id="myModal2" class="taxes-modals">
+    <!-- 模态框内容 -->
+    <div class="taxes-modal">
+      <span class="taxes-modal-close" id="closeModalButton2">&times;</span>
+      <div class="taxes-title">Protect Your Investment with Care Free</div>
+      <div class="taxes-content">
+        <span style="display: flex;">·Accident coverage (stains, rips, chips, burns, etc.) </span>
+        <span style="display: flex;">·Structural failures (damaged frames, hardware and electrical issues)</span>
+        <p style="color:red;"><strong>WIN-WIN Offer: </strong> If no claim is made you are refunded the price of the plan for a future purchase in the form of a voucher</p>
+        <span style="display: flex;">Support available online or via phone, fast repairs and $0 deductible</span>
       </div>
     </div>
-    `
-    body.insertAdjacentHTML('beforeend', inhtml2);
-    $("#carefree-open").click(function() {
-        $("#myModal2").css("display", "block");
-    });
-  
-    $("#closeModalButton2").click(function() {
-        $("#myModal2").css("display", "none");
-    });
-  
-    $(window).click(function(event) {
-      if (event.target.id === "myModal") {
-        $("#myModal").css("display", "none");
-      }
-      if (event.target.id === "myModal2") {
-        $("#myModal2").css("display", "none");
-      }
-    });
-    const expressage_date = document.querySelectorAll('#expressage_date');
-    if (expressage_date.length > 0) {
-      expressage_date.forEach(item => {
-        const dataGetValue = item.getAttribute('data-get-value');
-        const dateRangeMatch = dataGetValue.match(/(\d{1,2}-\d{1,2})/);
-        if (dateRangeMatch) {
-          const dateRange = dateRangeMatch[1];
-          if(dateRange == "35-52"){
-            item.textContent = 'Pre-order 4-7 weeks delivery'
-          }
-        }
-      })
+  </div>
+  `
+  body.insertAdjacentHTML('beforeend', inhtml2);
+  $("#carefree-open").click(function() {
+      $("#myModal2").css("display", "block");
+  });
+
+  $("#closeModalButton2").click(function() {
+      $("#myModal2").css("display", "none");
+  });
+
+  $(window).click(function(event) {
+    if (event.target.id === "myModal") {
+      $("#myModal").css("display", "none");
     }
+    if (event.target.id === "myModal2") {
+      $("#myModal2").css("display", "none");
+    }
+  });
+  const expressage_date = document.querySelectorAll('#expressage_date');
+  if (expressage_date.length > 0) {
+    expressage_date.forEach(item => {
+      const dataGetValue = item.getAttribute('data-get-value');
+      const dateRangeMatch = dataGetValue.match(/(\d{1,2}-\d{1,2})/);
+      if (dateRangeMatch) {
+        const dateRange = dateRangeMatch[1];
+        if(dateRange == "35-52"){
+          item.textContent = 'Pre-order 4-7 weeks delivery'
+        }
+      }
+    })
+  }
 </script>

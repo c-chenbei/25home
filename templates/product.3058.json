@@ -11,6 +11,7 @@
             "pattern": "",
             "hideText": false,
             "alignment": "",
+            "layout": "",
             "textColor": "",
             "starColor": "",
             "showAllReviews": false,
@@ -164,6 +165,40 @@
         "mobile_layout": "full",
         "enable_video_looping": false,
         "product_video_style": "muted"
+      }
+    },
+    "7d1cad0a-6fee-4bd5-91d4-b44440d7bc01": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16884243071203__7d1cad0a-6fee-4bd5-91d4-b44440d7bc01-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/lQDPJwSQjHmfUJvNB1PND6CwHLoggxmwmdsFfTqDcSe6AA_4000_1875.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16884243071203__7d1cad0a-6fee-4bd5-91d4-b44440d7bc01-image-1"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
       }
     },
     "16475055848fed5fca": {
@@ -353,6 +388,7 @@
   },
   "order": [
     "main",
+    "7d1cad0a-6fee-4bd5-91d4-b44440d7bc01",
     "16475055848fed5fca",
     "sub",
     "26b75655-fb60-4c02-8d75-b8082778b961",

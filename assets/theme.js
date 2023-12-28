@@ -6465,7 +6465,7 @@ lazySizesConfig.expFactor = 4;
           $('#product_sticky_img').attr('src', variant.featured_image.src);
           // Sale price, if necessary
           if (variant.compare_at_price > variant.price) {
-            console.log(this.cache.savePrice,'相差价格')
+            // console.log(this.cache.savePrice,'相差价格')
             // this.cache.comparePrice.innerHTML = theme.Currency.formatMoney(variant.compare_at_price, theme.settings.moneyFormat);
             this.cache.comparePrice.forEach(item=>{
               item.textContent = theme.Currency.formatMoney(variant.compare_at_price, theme.settings.moneyFormat);

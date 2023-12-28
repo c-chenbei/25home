@@ -89,7 +89,7 @@
         "984a68ac-5826-4e74-84c4-701d88e7684e": {
           "type": "text",
           "settings": {
-            "text": "Let the symphony of sensations orchestrated by our Electric Massage Chair transport you to a sanctuary of luxury, where time stands still, and indulgence knows no bounds. The lavish display screen With a mere touch, embark on a journey of rejuvenation as the chair intuitively adapts to your desires. With the materials that caress the skin, this masterpiece of sophistication transcends the ordinary, elevating your well-being to a realm of extraordinary bliss."
+            "text": "Introducing our revolutionary Sailboat Adjustable Deep Sofa – where comfort meets customization! Just like adjusting the sails on a boat to catch the perfect breeze, our sofa allows you to tailor the seat depth to your liking. Whether you prefer a snug and cozy feel or crave a more spacious lounging experience, the Sailboat Sofa has you covered. It's your personal retreat, and the adjustable depth ensures that every moment spent on this sofa is tailored to your unique comfort preferences."
           }
         },
         "description": {
@@ -100,7 +100,6 @@
         },
         "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": "Materials",
             "content": "",
@@ -180,12 +179,6 @@
         "max_width": true
       }
     },
-    "5dfc7049-aa08-4722-a024-774c3189a7ec": {
-      "type": "product-introduce",
-      "settings": {
-        "title": "Dimensions"
-      }
-    },
     "background-image-text": {
       "type": "background-image-text",
       "settings": {
@@ -200,6 +193,12 @@
         "height": 750,
         "framed": true,
         "parallax": false
+      }
+    },
+    "5dfc7049-aa08-4722-a024-774c3189a7ec": {
+      "type": "product-introduce",
+      "settings": {
+        "title": "Dimensions"
       }
     },
     "text-and-image": {
@@ -244,7 +243,7 @@
     "6e674af9-855e-4fa5-b22e-b552e9d45a0a": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Capture_One_Catalog1403.png",
+        "image": "shopify:\/\/shop_images\/iwEcAqNqcGcDAQTRA-gF0QPoBrBCKnGvC8wh-AV9bZ2C0p8AB9J7GJBDCAAJomltCgAL0gAEnjI.jpg_720x720q90.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "",
@@ -594,8 +593,8 @@
   "order": [
     "main",
     "sub",
-    "5dfc7049-aa08-4722-a024-774c3189a7ec",
     "background-image-text",
+    "5dfc7049-aa08-4722-a024-774c3189a7ec",
     "text-and-image",
     "708b5192-fc51-4d11-9912-d9f7d78e8b18",
     "6e674af9-855e-4fa5-b22e-b552e9d45a0a",

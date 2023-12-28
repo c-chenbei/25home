@@ -1,5 +1,5 @@
 .whitegloves {
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
   text-align: left;
 }
 .whitegloves-h1 {
@@ -1415,6 +1415,61 @@
 }
 .main-product{
   margin-top: 0px;
+}
+#cover_box{
+  .expressage_none{
+    display: none;
+  }
+  #sofas{
+    margin-bottom: 10px;
+    .sofas_title{
+      font-size: 13px;
+      margin-bottom: 5px;
+      text-align: left;
+      background-color: #dbcbb9;
+      font-weight: 600;
+      svg{
+        margin-right: 5px;
+        color: #9f7b63;
+      }
+    }
+    .sofas_box{
+      display: flex;
+      justify-content: space-between;
+      .cover_img{
+        text-align: center;
+        width: 80px;
+        position: relative;
+        img{
+          width: 80px;
+          height: 80px;
+          padding: 3px;
+          border: 2px solid rgba(245,244,242,0.2);
+        }
+        .img_title{
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+      .selected{
+        img{
+          border: 2px solid rgb(0, 0, 0);
+        }
+        // box-shadow: 0 0 0 2px #000000;
+        &::after{
+          height: 40%;
+          width: 25%;
+          border-right: 3px solid #fff;
+          border-bottom: 3px solid #fff;
+          content: "";
+          transform: rotate(45deg);
+          position: absolute;
+          top: 10%;
+          left: 40%;
+        }
+      }
+    }
+  }
 }
 .new-product-template-content{
   font-family: HarmonyOS Sans SC;

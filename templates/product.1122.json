@@ -103,7 +103,6 @@
         },
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": "Size Chart",
             "content": "",
@@ -205,7 +204,7 @@
         "max_width": true
       }
     },
-    "f8c8c834-09e5-4d16-9bb3-6ebde2edf874": {
+    "26b75655-fb60-4c02-8d75-b8082778b961": {
       "type": "product-introduce",
       "settings": {
         "title": "Dimensions"
@@ -213,13 +212,12 @@
     },
     "text-and-image": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_0007_Capture_One_Catalog8708.jpg",
+        "image": "shopify:\/\/shop_images\/24_c1b78074-c566-45bc-a6c7-08b0e5ec04f3.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Natural Marble Feel",
-        "text": "<p>Appreciate the authentic texture as you glide your fingers along the durable sintered stone surface. Mimicking the look and feel of natural marble, the subtly variegated tabletop features graceful grey veining that catches the eye.<\/p>",
+        "title": "",
+        "text": "<h4><strong>Multi-angle adjustment<\/strong><\/h4><p>The convertible sofa's electrically adjustable angle from 110° to 160° ensures smooth and seamless customization. Each angle provides a bespoke experience, accompanying you in moments of movie watching, chatting with friends, beauty routines, and rejuvenating afternoon naps—every warm and comforting moment.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -232,13 +230,12 @@
     },
     "text-and-image2": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/C_50e4206e-f5a2-4cb5-89f5-6a3e777a5ef6.jpg",
+        "image": "shopify:\/\/shop_images\/5_e63ae5bb-bd81-4c03-aaa1-c3cb85bd6c11.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Stable Base Design",
-        "text": "<p>Underneath, the sturdy carbon steel frame provides rock-solid support so you can enjoy your meal without worry of tipping.  The unique base design allows ample leg room for guests while preventing side-to-side wobbling.<\/p>",
+        "title": "",
+        "text": "<h4><strong>USB Charging<\/strong><\/h4><p>Sofa equipped with USB charging port for convenient and quick charging, meeting your charging needs anytime.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -251,14 +248,12 @@
     },
     "580ce2ac-f55e-46eb-8c20-a5781cc3f920": {
       "type": "text-and-image",
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_0013_Capture_One_Catalog8380.jpg",
-        "image2": "shopify:\/\/shop_images\/1_0018_Capture_One_Catalog8371.jpg",
+        "image": "shopify:\/\/shop_images\/7_97f1c9f9-5787-406a-a649-539a9bd9562f.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "PU Leather Chair",
-        "text": "<p>Sink into the sleek leather Chair, PU leather hugging your body as you relax into its ergonomic curves. Durable carbon steel legs provide a slim yet sturdy base, with its eco-conscious materials and elegant form, the Gullichsen Chair brings sustainable comfort to you.<\/p>",
+        "title": "",
+        "text": "<h4><strong>Ergonomic Design<\/strong><\/h4><p>The segmented large backrest perfectly fits the neck, shoulders, and waist, smooth armrests support your arms, and the raised footrests bring you bed-like comfort. The sofa has 7 support areas, allowing you to immerse yourself in this softness from head to toe, whether you sit, lean, or lie down.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -359,7 +354,7 @@
     "main",
     "16475055848fed5fca",
     "sub",
-    "f8c8c834-09e5-4d16-9bb3-6ebde2edf874",
+    "26b75655-fb60-4c02-8d75-b8082778b961",
     "text-and-image",
     "text-and-image2",
     "580ce2ac-f55e-46eb-8c20-a5781cc3f920",
