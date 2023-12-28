@@ -867,11 +867,6 @@
   $('#deliveryscales').on('change', function() {
     $('#whiteglovesid').toggle()
     shopifyPaymentButton()
-    {% comment %} if ($('#deliveryscales').is(':checked')) {
-      $('.shopify-payment-button').hide();
-    } else {
-      $('.shopify-payment-button').show();
-    } {% endcomment %}
     {% comment %} var isChecked = $(this).prop('checked'); {% endcomment %}
   });
 
