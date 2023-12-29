@@ -445,26 +445,46 @@
                         </div>
 
                         <div id="cover_box">
-                          {%- assign feathers_sofa = all_products['feathers-sofa-covers'].variants -%}
                           {% for variant in product.variants %}
                             <div id='sofas' class="expressage_none">
-                              {%- if variant.metafields.custom.cover == true -%}
+                              {%- if variant.metafields.custom.productcover or variant.metafields.custom.productcover2 or variant.metafields.custom.productcover3 or variant.metafields.custom.productcover4 -%}
                                 <div class="sofas_title">
-                                  {% comment %} <svg t="1703748265987" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3947" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M857.5 404.3v-14.8-9.8c-5.2-68.9-25.8-142.7-155-142.7H304.7c-134.3 0-139.5 108.3-139.5 172.2-41.3 0-67.2 19.7-67.2 49.2v231.3c0 39.3 46.5 49.2 67.2 49.2h15.5v49.2h36.2v-49.2h583.8v49.2h36.2v-49.2H873c20.7 0 51.7-14.8 51.7-49.2V458.4c0-29.5-25.9-49.2-67.2-54.1z m-36.2-29.5v29.6c-41.3 4.9-67.2 24.6-67.2 54.1v39.4c0 24.6 5.2 68.9 0 73.8H526.8v-310h170.5c93-0.1 118.9 49.1 124 113.1zM304.7 261.6h191.2v305.1H289.2c-5.2 0-10.3 0-10.3-4.9-15.5-4.9-10.3-44.3-10.3-73.8v-34.5c0-29.5-25.8-49.2-67.2-54.1-0.1-78.8 10.3-137.8 103.3-137.8z m583.8 423.2c0 14.8-10.3 14.8-15.5 14.8H165.1s-36.2 0-36.2-14.8V458.4c0-9.8 25.8-19.7 51.7-19.7 25.8 0 51.7 9.8 51.7 19.7v29.5c0 39.4-5.2 83.6 15.5 103.3 10.3 9.8 25.8 14.8 41.3 14.8h465c10.3 0 20.7-4.9 25.8-9.8 15.5-19.7 15.5-59.1 10.3-98.4v-39.4c0-9.8 25.8-19.7 51.7-19.7 25.8 0 51.7 9.8 51.7 19.7v226.4h-5.1z" fill="#9f7b63" p-id="3948"></path></svg> {% endcomment %}
                                   {{ section.settings.cover_title }}
                                 </div>
                                 <div class="sofas_box">
+                                  {%- assign feathers_sofa = all_products[variant.metafields.custom.productcover].variants -%}
                                   {%- for item in feathers_sofa -%}
                                     <div class="cover_img" onclick="selectImage(this, '{{ item.id }}')">
                                       <img src="{{ item.featured_image.src | img_url: '75x' }}" alt="img">
                                       <div class="img_title">{{ item.title }}</div>
                                     </div>
                                   {%- endfor -%}
+                                  {%- assign feathers_sofa2 = all_products[variant.metafields.custom.productcover2].variants -%}
+                                  {%- for item in feathers_sofa2 -%}
+                                    <div class="cover_img" onclick="selectImage(this, '{{ item.id }}')">
+                                      <img src="{{ item.featured_image.src | img_url: '75x' }}" alt="img">
+                                      <div class="img_title">{{ item.title }}</div>
+                                    </div>
+                                  {%- endfor -%}
+                                  {%- assign feathers_sofa3 = all_products[variant.metafields.custom.productcover3].variants -%}
+                                  {%- for item in feathers_sofa3 -%}
+                                    <div class="cover_img" onclick="selectImage(this, '{{ item.id }}')">
+                                      <img src="{{ item.featured_image.src | img_url: '75x' }}" alt="img">
+                                      <div class="img_title">{{ item.title }}</div>
+                                    </div>
+                                  {%- endfor -%}
+                                  {%- assign feathers_sofa4 = all_products[variant.metafields.custom.productcover4].variants -%}
+                                  {%- for item in feathers_sofa4 -%}
+                                    <div class="cover_img" onclick="selectImage(this, '{{ item.id }}')">
+                                      <img src="{{ item.featured_image.src | img_url: '75x' }}" alt="img">
+                                      <div class="img_title">{{ item.title }}</div>
+                                    </div>
+                                  {%- endfor -%}
                                 </div>
-                                
                               {%- endif -%}
                             </div>
                           {% endfor %}
+                          
                         </div>
 
                         <div class="mulberry-inline-container"></div>

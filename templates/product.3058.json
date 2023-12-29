@@ -185,6 +185,7 @@
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/lQDPJwSQjHmfUJvNB1PND6CwHLoggxmwmdsFfTqDcSe6AA_4000_1875.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/lQDPJwSQjHmfUJvNB1PND6CwHLoggxmwmdsFfTqDcSe6AA_4000_1875.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }

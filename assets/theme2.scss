@@ -1435,11 +1435,12 @@
     }
     .sofas_box{
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       .cover_img{
         text-align: center;
         width: 80px;
         position: relative;
+        margin-right: 5px;
         img{
           width: 80px;
           height: 80px;

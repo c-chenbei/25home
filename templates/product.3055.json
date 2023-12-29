@@ -167,6 +167,41 @@
         "cover_title": "Buy a Sofa, Get a Matching Free Sofa Cover Set"
       }
     },
+    "2a3282bc-df7e-4c8f-a27f-e54140666895": {
+      "type": "slideshow",
+      "blocks": {
+        "template--17023076368611__2a3282bc-df7e-4c8f-a27f-e54140666895-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/ce3c59446dc6c4f7148990d4da1e7b20_75946883-85b2-4926-95dc-ea5188d3a574.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/ce3c59446dc6c4f7148990d4da1e7b20_75946883-85b2-4926-95dc-ea5188d3a574.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--17023076368611__2a3282bc-df7e-4c8f-a27f-e54140666895-image-1"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
     "765aa79f-47cb-4dd6-af44-8af8f9d2d277": {
       "type": "product-introduce",
       "settings": {
@@ -299,6 +334,7 @@
   },
   "order": [
     "main",
+    "2a3282bc-df7e-4c8f-a27f-e54140666895",
     "765aa79f-47cb-4dd6-af44-8af8f9d2d277",
     "16475055848fed5fca",
     "sub",
