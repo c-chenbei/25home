@@ -15,6 +15,7 @@
             "pattern": "",
             "hideText": false,
             "alignment": "",
+            "layout": "",
             "textColor": "",
             "starColor": "",
             "showAllReviews": false,
@@ -87,13 +88,14 @@
         "tab": {
           "type": "tab",
           "settings": {
-            "title": "Care & Shipping",
+            "title": "Care & Clean",
             "content": "<p><\/p><p><\/p>",
             "page": "care-shipping"
           }
         },
         "contact": {
           "type": "contact",
+          "disabled": true,
           "settings": {
             "title": "Ask a question",
             "phone": false
@@ -124,13 +126,14 @@
       "settings": {
         "sku_enable": false,
         "image_position": "left",
-        "image_size": "medium",
+        "image_size": "large",
         "product_zoom_enable": true,
         "thumbnail_position": "beside",
         "thumbnail_arrows": true,
         "mobile_layout": "full",
         "enable_video_looping": false,
-        "product_video_style": "muted"
+        "product_video_style": "muted",
+        "cover_title": "Buy a Sofa, Get a Matching Free Sofa Cover Set"
       }
     },
     "34053edd-c2b1-4f52-9ebd-eb4bd355b4ed": {

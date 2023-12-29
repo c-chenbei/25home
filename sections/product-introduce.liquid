@@ -17,7 +17,9 @@
 </div>
 <script>
   var productvariant = {{ product.variants | json }};
+  let defProduct = productvariant[0].option1
   const click_svariant = document.querySelectorAll('.click_svariant');
+
   click_svariant.forEach((item,index) => {
     item.addEventListener('click', () => {
       click_svariant.forEach((el) => {
@@ -25,7 +27,7 @@
       });
       item.classList.add('selected');
       productvariant.forEach(function(text,index) {
-        if (text.options.includes(item.dataset.title)) {
+        if (text.option1 == defProduct && text.options.includes(item.dataset.title)) {
           $(".introduce-img").attr("src", text.featured_image.src);
         }
       })
