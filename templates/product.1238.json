@@ -208,8 +208,8 @@
         "image": "shopify:\/\/shop_images\/02_69f20348-45a5-489e-b1d3-0ccea68d45b0.gif",
         "image_width": 700,
         "subtitle": "",
-        "title": "MODULAR DESIGN",
-        "text": "<p>Modular sofas adapt as your needs change. Reconfigure the layout, add new components, or take sections apart to move through tight spaces. With easy DIY assembly, you can construct and reconstruct our modular sofas with absolute flexibility.<\/p>",
+        "title": "",
+        "text": "<h3><strong>MODULAR DESIGN<\/strong><\/h3><p>Modular sofas adapt as your needs change. Reconfigure the layout, add new components, or take sections apart to move through tight spaces. With easy DIY assembly, you can construct and reconstruct our modular sofas with absolute flexibility.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -220,118 +220,14 @@
         "divider": false
       }
     },
-    "5a1293d8-8d37-4784-ba3e-c70feb0fe813": {
-      "type": "advanced-content",
-      "blocks": {
-        "66a30ffe-7978-4eab-824c-9ccd2ff034f3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/09_505cd7ce-b0fd-482e-9c1a-71737609c3d8.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "top-middle"
-          }
-        },
-        "858cc6e8-1dbe-4401-ab92-a4f38ec4aff6": {
-          "type": "html",
-          "settings": {
-            "code": "<h1>\n\t<span style='color:#374151;font-family:Söhne, ui-sans-serif, system-ui, -apple-system, \"font-size:16px;background-color:#F7F7F8;'>Timeless Luxury<\/span>\n<\/h1>\n<p>\n\tThe sofa features high-quality, seamless genuine leather for an indulgent feel. Absent of seams that may weaken over time, the continuous leather retains its integrity to prevent splitting or cracking. Its high-quality composition repels scratches and scuffs, maintaining its refined patina after years of use. \n<\/p>\n<p>\n\tProviding long-lasting comfort and style, the genuine leather material offers uninterrupted luxury that is resistant to daily wear. Sink into its sensual feel knowing the leather will only look better with age.\n<\/p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "66a30ffe-7978-4eab-824c-9ccd2ff034f3",
-        "858cc6e8-1dbe-4401-ab92-a4f38ec4aff6"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "text-and-image": {
-      "type": "text-and-image",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/03_6165e098-b04e-45ca-b436-906966d27a3b.jpg",
-        "image2": "shopify:\/\/shop_images\/1_0007_6.jpg",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "Broad armrests",
-        "text": "<p>The expansive armrests extend outward with ample room to rest your arms in comfort. Their generous width provides a stable surface for convenient side placement of drinks, books, and more while lounging.<\/p><p>Flowing seamlessly from the sophistication of the linear back cushions, the armrests complete the tailored silhouette in style. Their rounded edges soften the visual lines for a refined modern look.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
-    "c1e2a991-ad27-44f4-9ed7-7bcbf1447338": {
-      "type": "advanced-content",
-      "blocks": {
-        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Materials-1_eeeb43fd-3cd6-43f1-87f5-1ed9805eeaf7.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "top-middle"
-          }
-        },
-        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1": {
-          "type": "html",
-          "settings": {
-            "code": "<p>\n\t<br>\n<\/p>\n<p>\n\t<br>\n<\/p>\n<h1>\n\tFillings\n<\/h1>\n<p>\n\t<br>\n<\/p>\n<h3>\n<\/h3>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2 style=\"text-align:center;\">\n<\/h2>\n<h2>\n<\/h2>\n<p>\n\t<strong>cushion filling: <\/strong>High density foam+5A grade down<br>\n<strong> backrest filling: <\/strong><span>5A grade down<\/span> \n<\/p>\n<p>\n\twhich provides the sectional with better shape retention, support, and resilience.\n<\/p>\n<p>\n\t<strong>Sturdy solid wood frame + serpentine springs<\/strong> \n<\/p>\n<p>\n\tIncredibly Sturdy: from the durable fabric to the solid wood frame, every part of our furniture is well-chosen and assembled for durability. The maximum weight capacity is 500 pounds per seat.\n<\/p>\n<p>\n\t<br>\n<\/p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-image-1",
-        "template--16766029463779__c1e2a991-ad27-44f4-9ed7-7bcbf1447338-html-1"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "text-and-image2": {
-      "type": "text-and-image",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/08_f930e263-cb04-4cfc-a948-d56f8d94d8ae.jpg",
-        "image_width": 700,
-        "subtitle": "",
-        "title": "Plush Comfort",
-        "text": "<p>The sectional's seat cushions brim with a plush combination of high-density foam and down filling. This optimized blend contours to your shape, cushioning pressure points with its malleable support. <\/p><p>The foam provides a firm yet softly resilient base, avoiding that sinking feeling while maintaining comfort. Quilted down implants add loft for a pillow feel that embodies lounge-worthy luxury. Together the seat cushions provide lasting fullness that gently envelops you in sublime softness and ergonomic comfort.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_label2": "",
-        "button_link2": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
-    "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
+    "a89344e1-88c2-40a9-8739-d39c2b2259ff": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Capture_One_Catalog2048.png",
-        "image2": "shopify:\/\/shop_images\/1_0005_8.jpg",
+        "image": "shopify:\/\/shop_images\/fabrics.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Easy Assembly",
-        "text": "<p>With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks.<\/p>",
+        "title": "",
+        "text": "<h3><strong>Better Material-genuine leather<\/strong><\/h3><p>The sofa features high-quality, seamless genuine leather for an indulgent feel. Absent of seams that may weaken over time, the continuous leather retains its integrity to prevent splitting or cracking. Its high-quality composition repels scratches and scuffs, maintaining its refined patina after years of use.<\/p><p>Providing long-lasting comfort and style, the genuine leather material offers uninterrupted luxury that is resistant to daily wear. Sink into its sensual feel knowing the leather will only look better with age.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -342,14 +238,18 @@
         "divider": false
       }
     },
-    "4a63b4e4-1df3-444d-abc9-68b947fefbb1": {
+    "text-and-image2": {
       "type": "text-and-image",
+      "custom_css": [
+
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1238.gif",
+        "image": "shopify:\/\/shop_images\/fabrics-4.jpg",
+        "image2": "shopify:\/\/shop_images\/fabrics-1.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Diverse Colors",
-        "text": "<p>Choose from 3 stylish colors to find the perfect match for your home's decor. From rich bold tones to airy neutrals, our spectrum of shade options ensures there’s a Crawford Leather Sofa to complement your taste and space. <\/p>",
+        "title": "",
+        "text": "<h3><strong>Fillings<\/strong><\/h3><p><strong>cushion filling: <\/strong>High density foam+5A grade down<br\/><strong>backrest filling: <\/strong>5A grade down<\/p><p>They provide the sofa with better shape retention, support, and resilience.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -357,6 +257,101 @@
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
+        "divider": false
+      }
+    },
+    "4a63b4e4-1df3-444d-abc9-68b947fefbb1": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1238.gif",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Diverse Colors<\/strong><\/h3><p>Choose from 3 stylish colors to find the perfect match for your home's decor. From rich bold tones to airy neutrals, our spectrum of shade options ensures there’s a Crawford Leather Sofa to complement your taste and space. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "text-and-image": {
+      "type": "text-and-image",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/03_3e726d8b-0aac-49c0-a675-2cb45c8bf157.jpg",
+        "image2": "shopify:\/\/shop_images\/1_0007_6.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Broad armrests<\/strong><\/h3><p>The expansive armrests extend outward with ample room to rest your arms in comfort. Their generous width provides a stable surface for convenient side placement of drinks, books, and more while lounging.<\/p><p>Flowing seamlessly from the sophistication of the linear back cushions, the armrests complete the tailored silhouette in style. Their rounded edges soften the visual lines for a refined modern look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "20c5c090-813b-4237-9eb7-5b0984870705": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabrics-6.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Precise Artisanal Stitching<\/strong><\/h3><p>Our master craftsmen employ meticulous hand-sewn techniques for stitching the sofa. Using purely manual tailoring methods, each single needle piercing and line placement is executed with immense precision - seen in the tight, even tension and spacing of just 0.1mm between stitches.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Capture_One_Catalog2048.png",
+        "image2": "shopify:\/\/shop_images\/1_0005_8.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Easy Assembly<\/strong><\/h3><p>With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "f3fc9001-60ce-4d24-b19a-84cdd0743017": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabrics-3.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Incredibly Sturdy<\/strong><\/h3><p>Sturdy solid wood frame + serpentine springs<\/p><p>From the durable fabric to the solid wood frame, every part of our furniture is well-chosen and assembled for durability. The maximum weight capacity is 500 pounds per seat.<br\/><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
         "divider": false
       }
     },
@@ -468,12 +463,13 @@
     "background-image-text",
     "2115dd96-302e-4cb8-974e-765a98278767",
     "a68b65f6-fb9a-4ab2-b71e-ca134410e138",
-    "5a1293d8-8d37-4784-ba3e-c70feb0fe813",
-    "text-and-image",
-    "c1e2a991-ad27-44f4-9ed7-7bcbf1447338",
+    "a89344e1-88c2-40a9-8739-d39c2b2259ff",
     "text-and-image2",
-    "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
     "4a63b4e4-1df3-444d-abc9-68b947fefbb1",
+    "text-and-image",
+    "20c5c090-813b-4237-9eb7-5b0984870705",
+    "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
+    "f3fc9001-60ce-4d24-b19a-84cdd0743017",
     "a701c0b6-89be-4517-a248-5c9f0f9aa83a",
     "product-recommendations",
     "testimonials",

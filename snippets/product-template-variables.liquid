@@ -13,7 +13,7 @@
   endif
 -%}
 
-<script type="application/ld+json">
+{% comment %} <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Product",
@@ -54,4 +54,45 @@
       "height": 1024
     }
   }
-</script>
+</script> {% endcomment %}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "offers": [
+      {%- for variant in product.variants -%}
+        {
+          "@type" : "Offer",
+          {%- if variant.sku != blank -%}
+            "sku": "{{ variant.sku }}",
+          {%- endif -%}
+          "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+          "price" : "{{ variant.price | divided_by: 100.00 }}",
+          "priceCurrency" : "{{ cart.currency.iso_code }}",
+          "url" : "{{ shop.url | append: variant.url }}"
+        }{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ],
+    "brand": "{{ product.vendor }}",
+    "sku": "{{ current_variant.sku }}",
+    "name": "{{ product.title }}",
+    "description": "{{ product.description | strip_html }}",
+    "category": "",
+    "url": "{{ shop.url }}{{ product.url }}",
+    {%- if is_barcode_available and is_valid_gtin_length %}
+      "{{gtin_option}}": "{{ current_variant.barcode }}",
+      "productId": "{{ current_variant.barcode }}",
+    {%- elsif is_barcode_available %}
+      "mpn": "{{ current_variant.barcode }}",
+      "productId": "{{ current_variant.barcode }}",
+    {%- endif -%}
+    "image": {
+      "@type": "ImageObject",
+      "url": "https:{{ product.featured_media.preview_image | img_url: '1024x1024' }}",
+      "name": "{{ product.title }}",
+      "width": 1024,
+      "height": 1024
+    }
+  }
+  </script>
+  
