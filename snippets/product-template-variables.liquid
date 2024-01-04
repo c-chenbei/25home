@@ -59,20 +59,17 @@
   {
     "@context": "http://schema.org",
     "@type": "Product",
-    "offers": [
-      {%- for variant in product.variants -%}
-        {
-          "@type" : "Offer",
-          {%- if variant.sku != blank -%}
-            "sku": "{{ variant.sku }}",
-          {%- endif -%}
-          "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-          "price" : "{{ variant.price | divided_by: 100.00 }}",
-          "priceCurrency" : "{{ cart.currency.iso_code }}",
-          "url" : "{{ shop.url | append: variant.url }}"
-        }{% unless forloop.last %},{% endunless %}
-      {%- endfor -%}
-    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "price": "{{ current_variant.price | divided_by: 100.00 | json }}",
+      "url" : {{ shop.url | append: current_variant.url | json }},
+      "availability": "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+      "seller": {
+        "@type": "Organization",
+        "name": "{{ shop.name }}"
+      }
+    },
     "brand": "{{ product.vendor }}",
     "sku": "{{ current_variant.sku }}",
     "name": "{{ product.title }}",
