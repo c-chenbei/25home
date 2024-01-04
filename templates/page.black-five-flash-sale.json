@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/lQHPKISlHIRotmPNA3rNB4CwJPC14YtusWoFe9YHDK8gAA_1920_890.gif",
-            "image_mobile": "shopify:\/\/shop_images\/lQHPJwXXDqPmdWPNAyDNAu6w5aKI7npZc80Fe9YHDK8gAQ_750_800.gif",
+            "image": "shopify:\/\/shop_images\/new-year-flashsale-pc_766d6692-4684-45ff-a935-239d09457789.gif",
+            "image_mobile": "shopify:\/\/shop_images\/new-year-flashsale-mob_80eec285-ba7e-4373-ba11-05c4526cb372.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -43,7 +43,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/bg.jpg",
         "countdown_target_show": true,
-        "image2": "shopify:\/\/shop_images\/dafdcd033a4d8dd6670c35d671373ae2.png",
+        "image2": "shopify:\/\/shop_images\/dafdcd033a4d8dd6670c35d671373ae2_a88953a0-a6f8-4919-90a9-7d43606cda2d.png",
         "color_font": "#663b29",
         "color_font2": "#9b5639"
       }

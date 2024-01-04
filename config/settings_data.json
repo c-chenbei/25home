@@ -145,13 +145,13 @@
         "settings": {
           "main_menu_link_list": "main-menu",
           "countdown_target_show": true,
-          "countdown_target_content": "End of Year Sale🌟UP TO 55% OFF🌟Code: <b>YEAREND<\/b>",
-          "countdown_target_datetime": "2024\/1\/2\/16\/00\/00",
+          "countdown_target_content": "Happy New Year | UP TO 50% OFF | Code: <b>NEW<\/b>",
+          "countdown_target_datetime": "2024\/1\/8\/16\/00\/00",
           "countdown_target_link": "",
-          "countdown_target_img": "shopify:\/\/shop_images\/11_f9b77405-17a7-4ef1-9650-c0171223cc98.jpg",
-          "image_mobile": "shopify:\/\/shop_images\/mob11.jpg",
+          "countdown_target_img": "shopify:\/\/shop_images\/pc_db25144a-4b6d-4d55-96d2-1b6c6b67413e.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/mob_ecc0fb36-cd8f-4ff9-9350-ab206575f91a.jpg",
           "countdown_target_bg": "#de8c8c",
-          "countdown_target__color": "#653a27",
+          "countdown_target__color": "#000000",
           "mega_menu_images": true,
           "main_menu_alignment": "center-left",
           "header_style": "sticky",
@@ -314,7 +314,7 @@
       "input-countdown": {
         "type": "input-countdown",
         "settings": {
-          "countdown_target_datetimes": "2024\/01\/01\/16\/00\/00"
+          "countdown_target_datetimes": "2024\/01\/04\/16\/00\/00"
         }
       }
     },

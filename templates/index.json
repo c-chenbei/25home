@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/yearend-giveaway_7e744f61-005a-40fb-960e-1ff9ac13e59c.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/yearend-giveaway-mob_52643b48-0572-458e-9de9-b840e740f647.jpg",
+            "image": "shopify:\/\/shop_images\/new-year-giveaway.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/newyear-give-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
@@ -35,8 +35,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/yearend1009.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/yearend1009-mob_aa2e2738-c054-4766-b3e2-1b69d6a75e52.jpg",
+            "image": "shopify:\/\/shop_images\/new-year1009.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/newyear-1009-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -54,8 +54,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/yearend-flashsale.gif",
-            "image_mobile": "shopify:\/\/shop_images\/yearend-flashsale-mob.gif",
+            "image": "shopify:\/\/shop_images\/new-year-flashsale-pc.gif",
+            "image_mobile": "shopify:\/\/shop_images\/new-year-flashsale-mob.gif",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -73,8 +73,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/yearend-1926_5cb72a81-a1a0-40e9-8177-ab2e8a7a8370.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/yearend-1926-mob_a53a1264-0e9d-4490-81ed-7d969856422a.jpg",
+            "image": "shopify:\/\/shop_images\/new-year1926.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/newyear-1926-mob_93f75b95-994d-4b7b-a62f-d6c6bcc2e2af.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -86,14 +86,14 @@
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "https:\/\/25home.com\/collections\/new-arrivals\/products\/marshmallow-beige-l-shaped-sectional",
+            "link": "shopify:\/\/collections\/pad-sofa",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/yearend-1811-collection.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/yearend-1811-collection-mob.jpg",
+            "image": "shopify:\/\/shop_images\/newyear-collection-1811.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/newyear-collection-1811-mob.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -378,7 +378,7 @@
         "title": "New Arrivals",
         "home_featured_products": "new-arrivals",
         "per_row": 4,
-        "rows": 1,
+        "rows": 2,
         "mobile_scrollable": false,
         "view_all": true,
         "divider": false
@@ -509,8 +509,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/logo-1_fb769a93-fed1-4462-a2a7-583a9980fc2e.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/logo-mob-1_704e1a26-7867-4c09-8fd0-da44d3808d75.jpg",
+            "image": "shopify:\/\/shop_images\/logo-1_9adeb70c-6ada-4a20-9c02-4be625430ad9.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/logo-mob-1_829fb1ee-4903-4b7c-8fa5-8b6f5c49c5b4.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -528,8 +528,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/logo-2_104d7230-b4bd-4728-9197-8015e19a17dc.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/logo-mob-2_efba8453-1644-4bbf-9075-5bce8c81fd57.jpg",
+            "image": "shopify:\/\/shop_images\/logo-2_77e67d30-ff23-4aeb-979e-c931700ccbbb.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/logo-mob-2_67d954d4-7158-4e96-9438-5425f7a4ca82.jpg",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
@@ -547,8 +547,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/logo-3_daa03f57-edde-4ef4-9a37-ce6182df2726.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/logo-mob-3_b514c524-b672-44ad-9e94-8fc33ab04a5d.jpg",
+            "image": "shopify:\/\/shop_images\/logo-3_66728de0-235c-43b3-8ade-326960b36afb.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/logo-mob-3_4d6db012-e91d-4d64-9936-6a935d080e26.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -566,8 +566,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/logo-4_df5e0f6c-1e19-4c90-a88c-aa16eef53017.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/logo-mob-4_c0132ef7-e5aa-4e52-869e-c5dc71edb1cd.jpg",
+            "image": "shopify:\/\/shop_images\/logo-4_8fb28726-4d15-4090-a4a9-31c582a56b59.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/logo-mob-4_df82adcb-19ba-47dc-bbcd-ded143a7226e.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }

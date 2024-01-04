@@ -26,6 +26,7 @@
       "block_order": [
         "template--16800480624867__971dc977-1d01-48a9-978d-f0099633b703-image-1"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "natural",
         "mobile_height": "auto",
