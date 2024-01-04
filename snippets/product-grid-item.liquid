@@ -217,7 +217,13 @@
 
         <div class="grid-product__price">
           {% comment %} 正常价 {% endcomment %}
-          <span class="grid-product__price--savings-mod">{{ product.price | money }}</span>
+          {%- if product.price_varies -%}
+            {%- assign price = current_variant.price | money -%}
+            {% comment %} <span class="grid-product__price--savings-mod">{{ 'products.general.from_text_html' | t: price: price }}</span> {% endcomment %}
+            <span class="grid-product__price--savings-mod">{{ price }}</span>
+          {%- else -%}
+            <span class="grid-product__price--savings-mod">{{ product.price | money }}</span>
+          {%- endif -%}
 
           {% comment %} 划线价 {% endcomment %}
           {%- if on_sale -%}

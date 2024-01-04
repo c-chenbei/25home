@@ -17,7 +17,9 @@
 </div>
 <script>
   var productvariant = {{ product.variants | json }};
+  var optionswithvalues = {{ product.options_with_values | json }};
   let defProduct = productvariant[0].option1
+  const introduceImg = $(".introduce-img");
   const click_svariant = document.querySelectorAll('.click_svariant');
 
   click_svariant.forEach((item,index) => {
@@ -26,9 +28,10 @@
         el.classList.remove('selected');
       });
       item.classList.add('selected');
-      productvariant.forEach(function(text,index) {
-        if (text.option1 == defProduct && text.options.includes(item.dataset.title)) {
-          $(".introduce-img").attr("src", text.featured_image.src);
+      productvariant.forEach(function(text) {
+        let hasOption = optionswithvalues.length > 1 ? text.option1 === defProduct && text.options.includes(item.dataset.title) : text.options.includes(item.dataset.title);
+        if (hasOption) {
+          introduceImg.attr("src", text.featured_image.src);
         }
       })
     });
