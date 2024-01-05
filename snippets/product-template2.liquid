@@ -25,6 +25,8 @@
 
   assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
 -%}
+{%- render 'product-template-variables', product: product, current_variant: current_variant -%}
+
 <div
   id="ProductSection-{{ section_id }}-{{ product.id }}"
   class="product-section"
@@ -115,7 +117,6 @@
       </div>
     </div>
   {%- endif -%}
-  {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
   <div class="page-content page-content--product page-content-custom">
     <div class="page-width">
       <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">

@@ -246,6 +246,43 @@
         "max_width": true
       }
     },
+    "d9ec837f-57a0-43ee-9dc7-dda6ed4452d2": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_0002_Capture_One_Catalog8681_42fb1ecb-1f9f-48d2-ba2f-7ada12e80679.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>Striking Gold<\/strong><\/h3><p>Underneath, the white dining table is supported by a striking gold metal base consisting of curved beams that join together to form an open cage-like structure. In the center, a handy rotating lazy susan turns for easy passing of dishes.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "533ab43e-f260-4ccb-b91b-ddb4bf836f5f": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_0020_Capture_One_Catalog8421.jpg",
+        "image2": "shopify:\/\/shop_images\/Capture_One_Catalog8482_2d009782-27c6-483b-b536-41e4795d625c.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>PU leather Chairs<\/strong><\/h3><p>Sink into the sleek leather Chair, PU leather hugging your body as you relax into its ergonomic curves. Durable carbon steel legs provide a slim yet sturdy base, with its eco-conscious materials and elegant form, the Gullichsen Chair brings sustainable comfort to you.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "testimonials": {
       "type": "testimonials",
       "blocks": {
@@ -338,6 +375,8 @@
     "765aa79f-47cb-4dd6-af44-8af8f9d2d277",
     "16475055848fed5fca",
     "sub",
+    "d9ec837f-57a0-43ee-9dc7-dda6ed4452d2",
+    "533ab43e-f260-4ccb-b91b-ddb4bf836f5f",
     "testimonials",
     "1652410876b776606e",
     "product-recommendations",

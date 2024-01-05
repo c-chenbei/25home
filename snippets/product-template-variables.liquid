@@ -13,7 +13,7 @@
   endif
 -%}
 
-{% comment %} <script type="application/ld+json">
+<script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Product",
@@ -54,8 +54,8 @@
       "height": 1024
     }
   }
-</script> {% endcomment %}
-<script type="application/ld+json">
+</script>
+{% comment %} <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Product",
@@ -73,7 +73,7 @@
     "brand": "{{ product.vendor }}",
     "sku": "{{ current_variant.sku }}",
     "name": "{{ product.title }}",
-    "description": "{{ product.description | strip_html }}",
+    {% comment %} "description": "{{ product.description | strip_html }}", {% endcomment %}
     "category": "",
     "url": "{{ shop.url }}{{ product.url }}",
     {%- if is_barcode_available and is_valid_gtin_length %}
@@ -91,5 +91,5 @@
       "height": 1024
     }
   }
-  </script>
+</script> {% endcomment %}
   
