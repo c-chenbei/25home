@@ -383,7 +383,7 @@
 }
 .introduce .introduce_box .introduce_current_variant {
   margin-top: 20px;
-  width: 55%;
+  width: 50%;
 }
 .introduce .introduce_box .introduce_current_variant .current_variant .click_svariant {
   margin-bottom: 10px;
@@ -403,7 +403,7 @@
   height: 30px;
 }
 .introduce .introduce_box .introduce-img {
-  width: 40%;
+  width: 45%;
 }
 
 @media screen and (max-width: 1000px) {

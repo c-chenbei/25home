@@ -11,7 +11,9 @@
       </div>
       <div class="introduce_metafields"></div>
       </div>
-      <img class="introduce-img" src="{{ product.selected_or_first_available_variant.featured_image.src | img_url: 'master' }}" alt="img">
+      <div class="introduce-img">
+        <img class="introduceImg" src="{{ product.selected_or_first_available_variant.featured_image.src | img_url: 'master' }}" alt="img">
+      </div>
     </div>
   </div>
 </div>
@@ -19,7 +21,7 @@
   var productvariant = {{ product.variants | json }};
   var optionswithvalues = {{ product.options_with_values | json }};
   let defProduct = productvariant[0].option1
-  const introduceImg = $(".introduce-img");
+  const introduceImg = $(".introduceImg");
   const click_svariant = document.querySelectorAll('.click_svariant');
 
   click_svariant.forEach((item,index) => {
