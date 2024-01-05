@@ -241,6 +241,25 @@
         "divider": false
       }
     },
+    "6cd04506-b1a1-43da-952b-d3347d9cc02e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabrics-4_8f024fbd-cc92-4df5-959e-4666255af8be.jpg",
+        "image2": "shopify:\/\/shop_images\/fabrics-1_06adff01-12f5-4dcb-af9b-728006cdbe90.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "FILLINGS",
+        "text": "<p><strong>cushion filling: <\/strong>High density foam+5A grade down<br\/><strong>backrest filling: <\/strong>5A grade down<\/p><p>They provide the sofa with better shape retention, support, and resilience.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
     "text-and-image2": {
       "type": "text-and-image",
       "custom_css": [
@@ -258,7 +277,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -271,6 +290,24 @@
         "subtitle": "",
         "title": "Ground-Hugging Design",
         "text": "<p>Utilizes hidden sofa feet, enhancing the aesthetic appeal when paired with a carpet. This design not only adds a touch of luxury but also provides stable support.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "6fb32281-a93d-48b3-a276-9b592f182687": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabrics-3_3de317b3-b66b-4b96-8113-09b8e6821208.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "INCREDIBLY STURDY",
+        "text": "<p>Sturdy solid wood frame + serpentine springs<\/p><p>From the durable fabric to the solid wood frame, every part of our furniture is well-chosen and assembled for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -391,8 +428,10 @@
     "ca332cb0-8690-410c-90d7-f1f11317f2ad",
     "4c26ec0e-f500-4a72-b63f-b956a5f74240",
     "text-and-image",
+    "6cd04506-b1a1-43da-952b-d3347d9cc02e",
     "text-and-image2",
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
+    "6fb32281-a93d-48b3-a276-9b592f182687",
     "a701c0b6-89be-4517-a248-5c9f0f9aa83a",
     "product-recommendations",
     "testimonials",

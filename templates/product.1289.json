@@ -262,6 +262,25 @@
         "divider": false
       }
     },
+    "599b6d26-4fe2-4f17-aa77-c26aadf7b33a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabrics-4_8f024fbd-cc92-4df5-959e-4666255af8be.jpg",
+        "image2": "shopify:\/\/shop_images\/fabrics-1_06adff01-12f5-4dcb-af9b-728006cdbe90.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>FILLINGS<\/strong><\/h3><p><strong>cushion filling: <\/strong>High density foam+5A grade down<br\/><strong>backrest filling: <\/strong>5A grade down<\/p><p>They provide the sofa with better shape retention, support, and resilience.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "94c53401-a2e5-4b72-a244-fb47c8b6e739": {
       "type": "text-and-image",
       "settings": {
@@ -276,7 +295,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -294,7 +313,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -312,7 +331,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -330,7 +349,7 @@
         "button_link2": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -444,6 +463,7 @@
     "4c26ec0e-f500-4a72-b63f-b956a5f74240",
     "text-and-image",
     "text-and-image2",
+    "599b6d26-4fe2-4f17-aa77-c26aadf7b33a",
     "94c53401-a2e5-4b72-a244-fb47c8b6e739",
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
     "c0a2847d-f8e1-4279-b884-f2cc3568d53a",

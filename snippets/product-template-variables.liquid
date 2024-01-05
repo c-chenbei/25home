@@ -13,7 +13,7 @@
   endif
 -%}
 
-<script type="application/ld+json">
+{% comment %} <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Product",
@@ -54,17 +54,18 @@
       "height": 1024
     }
   }
-</script>
-{% comment %} <script type="application/ld+json">
+</script> {% endcomment %}
+<script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Product",
     "offers": {
       "@type": "Offer",
-      "priceCurrency": {{ cart.currency.iso_code | json }},
       "price": "{{ current_variant.price | divided_by: 100.00 | json }}",
       "url" : {{ shop.url | append: current_variant.url | json }},
-      "availability": "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "priceValidUntil": "{{ 'now' | date: '%Y-%m-%d' }}",
+      "availability": "http://schema.org/InStock",
       "seller": {
         "@type": "Organization",
         "name": "{{ shop.name }}"
@@ -73,7 +74,7 @@
     "brand": "{{ product.vendor }}",
     "sku": "{{ current_variant.sku }}",
     "name": "{{ product.title }}",
-    {% comment %} "description": "{{ product.description | strip_html }}", {% endcomment %}
+    "description": "{{ product.description | strip_html }}",
     "category": "",
     "url": "{{ shop.url }}{{ product.url }}",
     {%- if is_barcode_available and is_valid_gtin_length %}
@@ -91,5 +92,5 @@
       "height": 1024
     }
   }
-</script> {% endcomment %}
+</script>
   

@@ -362,6 +362,24 @@
         "divider": false
       }
     },
+    "cdcdc2f9-bacc-4a13-ab3f-18247b47b9df": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabrics-3_3de317b3-b66b-4b96-8113-09b8e6821208.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "INCREDIBLY STURDY",
+        "text": "<p>Sturdy solid wood frame + serpentine springs<\/p><p>From the durable fabric to the solid wood frame, every part of our furniture is well-chosen and assembled for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "182d5f2c-98f1-4a9d-9d87-11539d1e79fa": {
       "type": "background-image-text",
       "settings": {
@@ -476,6 +494,7 @@
     "text-and-image2",
     "135b36e7-34c1-4b27-9e1a-89640cec7d06",
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
+    "cdcdc2f9-bacc-4a13-ab3f-18247b47b9df",
     "182d5f2c-98f1-4a9d-9d87-11539d1e79fa",
     "product-recommendations",
     "testimonials",
