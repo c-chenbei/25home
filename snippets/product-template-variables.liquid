@@ -27,6 +27,25 @@
       "seller": {
         "@type": "Organization",
         "name": "{{ shop.name }}"
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "USD"
+        },
+        "shippingDestination": [
+          {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          }
+        ]
       }
     },
     "brand": "{{ product.vendor }}",
@@ -49,11 +68,13 @@
       "width": 1024,
       "height": 1024
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "{{ product.average_rating | divided_by: 20 }}",
-      "reviewCount": "{{ product.reviews_count }}"
-    },
+    {% if product.reviews_count %}
+      "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "{{ product.average_rating | divided_by: 20 }}",
+          "reviewCount": "{{ product.reviews_count }}"
+      },
+    {% endif %}
     "review": [
       {%- for review in product.reviews -%}
       {
