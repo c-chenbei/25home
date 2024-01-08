@@ -1678,3 +1678,53 @@
 .new-product-template-content .new-page-width .product-grid .product-block--addcart .mulberry-inline-container {
   display: none;
 }
+
+.affiliate-program img {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .affiliate-program .affiliate-mb {
+    display: none;
+  }
+  .affiliate-program .footer {
+    position: relative;
+  }
+  .affiliate-program .footer a {
+    position: absolute;
+    bottom: 6%;
+    display: block;
+    height: 9%;
+  }
+  .affiliate-program .footer .btn_1 {
+    left: 20%;
+    width: 23%;
+  }
+  .affiliate-program .footer .btn_2 {
+    right: 21%;
+    width: 28%;
+  }
+}
+@media screen and (max-width: 799px) {
+  .affiliate-program .affiliate-pc {
+    display: none;
+  }
+  .affiliate-program .footer {
+    position: relative;
+  }
+  .affiliate-program .footer a {
+    position: absolute;
+    bottom: 6%;
+    display: block;
+    height: 8%;
+  }
+  .affiliate-program .footer .btn_1 {
+    left: 13%;
+    width: 28%;
+  }
+  .affiliate-program .footer .btn_2 {
+    right: 15%;
+    width: 34%;
+  }
+}

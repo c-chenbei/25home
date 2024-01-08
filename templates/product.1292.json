@@ -87,12 +87,6 @@
             "trust_image": "shopify:\/\/shop_images\/pay.jpg"
           }
         },
-        "d4fdb2a6-1e10-42d8-addc-b53b5112e4c1": {
-          "type": "text",
-          "settings": {
-            "text": "The Cube L-shaped Leather Modular Sectional is the epitome of modern luxury. Crafted through a dynamic and imaginative block design, this leather sectional brings a touch of high-quality living to your home. The soft and durable leather is complemented by a full-bodied, stylish design. Its ergonomic curves ensure a comfortable and relaxed posture, while the expansive armrests provide optimal support for your arms, releasing tension throughout your entire body. Indulge in the most thoughtful furniture experience that brings solace to your day, offering a top-tier blend of sophistication and comfort."
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -152,7 +146,6 @@
         "7d5b8ffc-0906-4cf1-be2a-8234ac628adb",
         "buy_buttons",
         "4324e561-4147-44cb-8662-bce6959f660f",
-        "d4fdb2a6-1e10-42d8-addc-b53b5112e4c1",
         "description",
         "e9e4f437-3585-4e39-b542-0e25739e9ed0",
         "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
@@ -188,7 +181,7 @@
         "text": "<p>Experience the perfect blend of modern design and enhanced comfort with the Leather Sofa, making it the centerpiece of relaxation in any contemporary living space. <\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/001_674e7a5c-1e20-4975-9c82-645c4efd2fea.jpg",
+        "image": "shopify:\/\/shop_images\/002_cdb6fa81-9113-4756-ab70-ec1509ab4362.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 750,
@@ -220,6 +213,43 @@
         "divider": false
       }
     },
+    "874e0aef-bfdd-4d4f-94e0-7e08a9e6593a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1292fabrics-6.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "",
+        "text": "<h3><strong>PRECISE ARTISANAL STITCHING<\/strong><\/h3><p>Our master craftsmen employ meticulous hand-sewn techniques for stitching the sofa. Using purely manual tailoring methods, each single needle piercing and line placement is executed with immense precision - seen in the tight, even tension and spacing of just 0.1mm between stitches.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "6cd04506-b1a1-43da-952b-d3347d9cc02e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabrics-4_8f024fbd-cc92-4df5-959e-4666255af8be.jpg",
+        "image2": "shopify:\/\/shop_images\/fabrics-1_06adff01-12f5-4dcb-af9b-728006cdbe90.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "FILLINGS",
+        "text": "<p><strong>cushion filling: <\/strong>High density foam+5A grade down<br\/><strong>backrest filling: <\/strong>5A grade down<\/p><p>They provide the sofa with better shape retention, support, and resilience.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
     "text-and-image": {
       "type": "text-and-image",
       "custom_css": [
@@ -241,15 +271,14 @@
         "divider": false
       }
     },
-    "6cd04506-b1a1-43da-952b-d3347d9cc02e": {
+    "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/fabrics-4_8f024fbd-cc92-4df5-959e-4666255af8be.jpg",
-        "image2": "shopify:\/\/shop_images\/fabrics-1_06adff01-12f5-4dcb-af9b-728006cdbe90.jpg",
+        "image": "shopify:\/\/shop_images\/1_0000_capture_one_3017.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "FILLINGS",
-        "text": "<p><strong>cushion filling: <\/strong>High density foam+5A grade down<br\/><strong>backrest filling: <\/strong>5A grade down<\/p><p>They provide the sofa with better shape retention, support, and resilience.<\/p>",
+        "title": "",
+        "text": "<h3><strong>Convenient Sofa Cover<\/strong><\/h3><p>Crafted with genuine leather and featuring breathable perforations, our sofa's throw pillow offers both style and functionality. Filled with plush down, it's easily removable for hassle-free cleaning, ensuring convenience and a fresh look for your space.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -282,15 +311,14 @@
         "divider": false
       }
     },
-    "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
+    "6bdf7d0d-ca93-485e-8619-7be3cfec07c3": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_0003_10.jpg",
-        "image2": "shopify:\/\/shop_images\/1_0005_8.jpg",
+        "image": "shopify:\/\/shop_images\/1_0014_capture_one_3083.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Ground-Hugging Design",
-        "text": "<p>Utilizes hidden sofa feet, enhancing the aesthetic appeal when paired with a carpet. This design not only adds a touch of luxury but also provides stable support.<\/p>",
+        "title": "",
+        "text": "<h3><strong>5-10 MINUTES ASSEMBLY<\/strong><\/h3><p>Experience the ease of assembly with Leather Sofa's innovative design, featuring convenient buckle connections. With just a 'click,' our special toggle latch design ensures furniture assembly is as effortless as building with LEGO blocks. In just 5-10 minutes, you can have your Feathers Sofa fully assembled.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_label2": "",
@@ -317,6 +345,22 @@
         "align_text": "left",
         "layout": "right",
         "divider": false
+      }
+    },
+    "c8a6f233-4eba-46e1-8244-0693250561e1": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/001_674e7a5c-1e20-4975-9c82-645c4efd2fea.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 750,
+        "framed": true,
+        "parallax": false
       }
     },
     "a701c0b6-89be-4517-a248-5c9f0f9aa83a": {
@@ -428,11 +472,14 @@
     "background-image-text",
     "ca332cb0-8690-410c-90d7-f1f11317f2ad",
     "4c26ec0e-f500-4a72-b63f-b956a5f74240",
-    "text-and-image",
+    "874e0aef-bfdd-4d4f-94e0-7e08a9e6593a",
     "6cd04506-b1a1-43da-952b-d3347d9cc02e",
-    "text-and-image2",
+    "text-and-image",
     "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
+    "text-and-image2",
+    "6bdf7d0d-ca93-485e-8619-7be3cfec07c3",
     "6fb32281-a93d-48b3-a276-9b592f182687",
+    "c8a6f233-4eba-46e1-8244-0693250561e1",
     "a701c0b6-89be-4517-a248-5c9f0f9aa83a",
     "product-recommendations",
     "testimonials",
