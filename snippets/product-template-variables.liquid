@@ -48,6 +48,25 @@
       "name": "{{ product.title | replace: '"', '\"' }}",
       "width": 1024,
       "height": 1024
-    }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "{{ product.average_rating | divided_by: 20 }}",
+      "reviewCount": "{{ product.reviews_count }}"
+    },
+    "review": [
+      {%- for review in product.reviews -%}
+      {
+        "@type": "Review",
+        "author": "{{ review.author }}",
+        "datePublished": "{{ review.created_at | date: '%Y-%m-%d' }}",
+        "description": "{{ review.body | strip_html }}",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "{{ review.rating | plus: 0 }}"
+        }
+      }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ]
   }
 </script>
