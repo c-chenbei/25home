@@ -1,0 +1,442 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "907cef5b-a392-4eee-a648-d1d703b05b97": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "package",
+            "text": "For customized products, please get in touch with our customer service."
+          }
+        },
+        "7a36cbc1-0f7a-4fef-bd00-911917166768": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "text": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "7d5b8ffc-0906-4cf1-be2a-8234ac628adb": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "4324e561-4147-44cb-8662-bce6959f660f": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/pay.jpg"
+          }
+        },
+        "d4fdb2a6-1e10-42d8-addc-b53b5112e4c1": {
+          "type": "text",
+          "settings": {
+            "text": "The Cube L-shaped Leather Modular Sectional is the epitome of modern luxury. Crafted through a dynamic and imaginative block design, this leather sectional brings a touch of high-quality living to your home. The soft and durable leather is complemented by a full-bodied, stylish design. Its ergonomic curves ensure a comfortable and relaxed posture, while the expansive armrests provide optimal support for your arms, releasing tension throughout your entire body. Indulge in the most thoughtful furniture experience that brings solace to your day, offering a top-tier blend of sophistication and comfort."
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0": {
+          "type": "tab",
+          "settings": {
+            "title": "Materials",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.materials.value }}"
+          }
+        },
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e": {
+          "type": "tab",
+          "settings": {
+            "title": "Size Chart",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.size_chart.value }}"
+          }
+        },
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36": {
+          "type": "tab",
+          "settings": {
+            "title": "Key Features",
+            "content": "",
+            "page": "{{ product.metafields.my_fields.key_feature.value }}"
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Care & Clean",
+            "content": "<p><\/p><p><\/p>",
+            "page": "care-shipping"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        }
+      },
+      "block_order": [
+        "907cef5b-a392-4eee-a648-d1d703b05b97",
+        "price",
+        "separator",
+        "4850b6eb-2b28-4dc8-ad7a-ba24371c3ed4",
+        "7a36cbc1-0f7a-4fef-bd00-911917166768",
+        "variant_picker",
+        "sales_point",
+        "inventory_status",
+        "7d5b8ffc-0906-4cf1-be2a-8234ac628adb",
+        "buy_buttons",
+        "4324e561-4147-44cb-8662-bce6959f660f",
+        "d4fdb2a6-1e10-42d8-addc-b53b5112e4c1",
+        "description",
+        "e9e4f437-3585-4e39-b542-0e25739e9ed0",
+        "46d6cd27-9fc9-46ef-9da3-c94fda2d3c0e",
+        "9fcc0f80-4627-49ac-8f0e-cdad8f272c36",
+        "tab",
+        "contact"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "large",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": false,
+        "product_video_style": "muted",
+        "cover_title": "Buy a Sofa, Get a Matching Free Sofa Cover Set"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "<p> Experience the perfect blend of modern design and enhanced comfort with the Leather Sofa, making it the centerpiece of relaxation in any contemporary living space. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/001_674e7a5c-1e20-4975-9c82-645c4efd2fea.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 750,
+        "framed": true,
+        "parallax": false
+      }
+    },
+    "ca332cb0-8690-410c-90d7-f1f11317f2ad": {
+      "type": "product-introduce",
+      "settings": {
+        "title": "Dimensions"
+      }
+    },
+    "4c26ec0e-f500-4a72-b63f-b956a5f74240": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_4b7a7dd2-4690-4849-a0bd-bfe3af583c5a.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Cube-Style Design",
+        "text": "<p>Cubic block design allows for various combinations to meet different spatial requirements. It's easy to assemble and move, integrating fashion and spatial planning, reflecting the wisdom of your lifestyle.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "text-and-image": {
+      "type": "text-and-image",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_5463bbb9-ff54-4b88-ab8a-1426d6b77cea.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Ergonomic Design",
+        "text": "<p>Cloud-like comfort, conforming to ergonomic principles, crafted for relaxation. Contouring the waist and back, the sectional support alleviates fatigue, providing full-body support for both sitting and lying down.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "6cd04506-b1a1-43da-952b-d3347d9cc02e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabrics-4_8f024fbd-cc92-4df5-959e-4666255af8be.jpg",
+        "image2": "shopify:\/\/shop_images\/fabrics-1_06adff01-12f5-4dcb-af9b-728006cdbe90.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "FILLINGS",
+        "text": "<p><strong>cushion filling: <\/strong>High density foam+5A grade down<br\/><strong>backrest filling: <\/strong>5A grade down<\/p><p>They provide the sofa with better shape retention, support, and resilience.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "text-and-image2": {
+      "type": "text-and-image",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_d854b97e-264e-4d23-bc66-a774197478fb.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Generous Seat Depth",
+        "text": "<p>Unrestrained full-body stretch for family members of various body types, friends, and relatives. The widened and thickened seat accommodates sitting cross-legged, lying down or even serves as a temporary bed, meeting nap, and overnight guest needs.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "9781d795-7a9d-4b6f-b626-8716e25d8b1a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_0003_10.jpg",
+        "image2": "shopify:\/\/shop_images\/1_0005_8.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Ground-Hugging Design",
+        "text": "<p>Utilizes hidden sofa feet, enhancing the aesthetic appeal when paired with a carpet. This design not only adds a touch of luxury but also provides stable support.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "6fb32281-a93d-48b3-a276-9b592f182687": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabrics-3_3de317b3-b66b-4b96-8113-09b8e6821208.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "INCREDIBLY STURDY",
+        "text": "<p>Sturdy solid wood frame + serpentine springs<\/p><p>From the durable fabric to the solid wood frame, every part of our furniture is well-chosen and assembled for durability. The maximum weight capacity is 500 pounds per seat.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_label2": "",
+        "button_link2": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "a701c0b6-89be-4517-a248-5c9f0f9aa83a": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/1_e47131ee-1d90-49d3-9ebe-f5a2a464f9d1.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 750,
+        "framed": true,
+        "parallax": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like",
+        "related_count": 5
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonials-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonials-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials-0",
+        "testimonials-1",
+        "testimonials-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Testimonials",
+        "testimonial-subhedading": "We love seeing how you customized it. Show us how it started and how it’s going by tagging #25home.",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+      }
+    },
+    "1652410876b776606e": {
+      "type": "apps",
+      "blocks": {
+        "e13cef9d-2017-4252-8d6d-7873814950e5": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "e13cef9d-2017-4252-8d6d-7873814950e5"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "background-image-text",
+    "ca332cb0-8690-410c-90d7-f1f11317f2ad",
+    "4c26ec0e-f500-4a72-b63f-b956a5f74240",
+    "text-and-image",
+    "6cd04506-b1a1-43da-952b-d3347d9cc02e",
+    "text-and-image2",
+    "9781d795-7a9d-4b6f-b626-8716e25d8b1a",
+    "6fb32281-a93d-48b3-a276-9b592f182687",
+    "a701c0b6-89be-4517-a248-5c9f0f9aa83a",
+    "product-recommendations",
+    "testimonials",
+    "recently-viewed",
+    "collection-return",
+    "1652410876b776606e"
+  ]
+}
